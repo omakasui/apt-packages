@@ -1,0 +1,199 @@
+# =============================================================================
+# omakasui/apt-pkg — .github/workflows/update.yml
+#
+# Triggered by: repository_dispatch "package-updated" from omakasui/build-packages
+#               workflow_dispatch for manual emergency runs
+#
+# Note on .deb files in Git:
+#   GitHub Pages serves files directly from the repository tree.
+#   The .deb binaries must be committed so APT clients can download them.
+#   The pool/ directory is therefore tracked in Git.
+# =============================================================================
+
+name: Update APT repo
+
+on:
+  repository_dispatch:
+    types: [package-updated]
+
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package name (e.g. rofi)'
+        required: true
+        type: string
+      version:
+        description: 'Version (e.g. 2.0.0)'
+        required: true
+        type: string
+
+jobs:
+  update:
+    name: Update APT repo
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout apt-pkg
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Resolve parameters
+        id: params
+        run: |
+          if [[ "${{ github.event_name }}" == "repository_dispatch" ]]; then
+            echo "package=${{ github.event.client_payload.package }}" >> "$GITHUB_OUTPUT"
+            echo "version=${{ github.event.client_payload.version }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "package=${{ inputs.package }}" >> "$GITHUB_OUTPUT"
+            echo "version=${{ inputs.version }}"  >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install APT tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            dpkg-dev apt-utils gnupg2
+
+      - name: Import GPG key
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
+          echo "${{ secrets.GPG_KEY_ID }}:6:"   | gpg --import-ownertrust
+
+      # -------------------------------------------------------------------------
+      # Remove previous versions of this package from the pool (keep latest only).
+      # Matches any file named <package>_<anything>_<arch>.deb so older versions
+      # are pruned before the new one is added.
+      # -------------------------------------------------------------------------
+      - name: Remove old versions from pool
+        run: |
+          PKG="${{ steps.params.outputs.package }}"
+          VERSION="${{ steps.params.outputs.version }}"
+
+          for suite in noble trixie; do
+            for arch in amd64 arm64; do
+              pool_dir="pool/${suite}/${arch}"
+              mkdir -p "$pool_dir"
+
+              # Remove any .deb for this package that is NOT the new version
+              find "$pool_dir" -maxdepth 1 -name "${PKG}_*.deb" \
+                ! -name "${PKG}_${VERSION}_${arch}.deb" \
+                -print -delete
+            done
+          done
+
+      # -------------------------------------------------------------------------
+      # Download .deb assets from the build-pkg GitHub Release.
+      # build-pkg naming:  <pkg>_<version>_<distro>_<arch>.deb
+      # pool naming:       <pkg>_<version>_<arch>.deb  (distro encoded via suite dir)
+      # -------------------------------------------------------------------------
+      - name: Download .deb files from build-pkg
+        env:
+          GH_TOKEN: ${{ secrets.APT_PKG_DISPATCH_TOKEN }}
+        run: |
+          PKG="${{ steps.params.outputs.package }}"
+          VERSION="${{ steps.params.outputs.version }}"
+          TAG="${PKG}-${VERSION}"
+
+          declare -A SUITE_MAP=(
+            [ubuntu2404]="noble"
+            [debian13]="trixie"
+          )
+
+          for distro in ubuntu2404 debian13; do
+            suite="${SUITE_MAP[$distro]}"
+            for arch in amd64 arm64; do
+              pool_dir="pool/${suite}/${arch}"
+              mkdir -p "$pool_dir"
+
+              src="${PKG}_${VERSION}_${distro}_${arch}.deb"
+              dst="${pool_dir}/${PKG}_${VERSION}_${arch}.deb"
+
+              echo "Downloading ${src} → ${dst}..."
+              gh release download "$TAG" \
+                --repo omakasui/build-pkg \
+                --pattern "$src" \
+                --output "$dst"
+            done
+          done
+
+      # -------------------------------------------------------------------------
+      # Regenerate APT metadata.
+      #
+      # IMPORTANT: dpkg-scanpackages must be run from the repository root and
+      # receive the full relative path to the pool dir (e.g. pool/noble/amd64).
+      # This ensures the generated Filename: fields are correct full paths, e.g.:
+      #   Filename: pool/noble/amd64/rofi_2.0.0_amd64.deb
+      # Running it from inside the pool dir would generate bare filenames that
+      # APT cannot resolve against the repository base URL.
+      # -------------------------------------------------------------------------
+      - name: Regenerate APT metadata
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+        run: |
+          for suite in noble trixie; do
+            for arch in amd64 arm64; do
+              pkg_dir="dists/${suite}/main/binary-${arch}"
+              pool_dir="pool/${suite}/${arch}"
+              mkdir -p "$pkg_dir"
+
+              if [[ -z "$(ls -A "$pool_dir" 2>/dev/null)" ]]; then
+                echo "No .deb files in ${pool_dir}, skipping..."
+                continue
+              fi
+
+              echo "Generating Packages for ${suite}/${arch}..."
+              # Run from repo root so Filename: paths are correct
+              dpkg-scanpackages --arch "${arch}" "${pool_dir}" /dev/null \
+                > "${pkg_dir}/Packages"
+              gzip -k -f "${pkg_dir}/Packages"
+              xz   -k -f "${pkg_dir}/Packages"
+            done
+
+            echo "Generating Release for ${suite}..."
+            apt-ftparchive \
+              -o APT::FTPArchive::Release::Origin="omakasui" \
+              -o APT::FTPArchive::Release::Label="omakasui-apt-pkg" \
+              -o APT::FTPArchive::Release::Suite="${suite}" \
+              -o APT::FTPArchive::Release::Codename="${suite}" \
+              -o APT::FTPArchive::Release::Architectures="amd64 arm64" \
+              -o APT::FTPArchive::Release::Components="main" \
+              -o APT::FTPArchive::Release::Description="omakasui custom packages" \
+              release "dists/${suite}" > "dists/${suite}/Release"
+
+            echo "Signing ${suite}..."
+            gpg --default-key "$GPG_KEY_ID" \
+                --armor --detach-sign --batch --yes \
+                -o "dists/${suite}/Release.gpg" \
+                "dists/${suite}/Release"
+
+            gpg --default-key "$GPG_KEY_ID" \
+                --clearsign --batch --yes \
+                -o "dists/${suite}/InRelease" \
+                "dists/${suite}/Release"
+          done
+
+          gpg --armor --export "$GPG_KEY_ID" > omakasui.gpg.key
+
+      # -------------------------------------------------------------------------
+      # Commit everything including .deb binaries.
+      # .deb files must be in Git so GitHub Pages can serve them to APT clients.
+      # -------------------------------------------------------------------------
+      - name: Commit and push
+        run: |
+          git config user.name  "omakasui-bot"
+          git config user.email "bot@omakasui.org"
+
+          # Stage metadata and binaries
+          git add dists/ pool/ omakasui.gpg.key
+
+          # Only commit if there are actual changes
+          if git diff --cached --quiet; then
+            echo "Nothing to commit, pool is already up to date."
+          else
+            git commit -m \
+              "apt: ${{ steps.params.outputs.package }} ${{ steps.params.outputs.version }} [$(date '+%Y-%m-%d')]"
+            git push
+          fi
