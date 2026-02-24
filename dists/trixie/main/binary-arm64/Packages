@@ -1,0 +1,19 @@
+Package: rofi
+Version: 2.0.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1592
+Depends: libglib2.0-0t64, libcairo2, libpango-1.0-0, libpangocairo-1.0-0, libgdk-pixbuf2.0-0, libstartup-notification0, libxcb1, libxcb-util1, libxcb-ewmh2, libxcb-icccm4, libxcb-xkb1, libxcb-randr0, libxcb-xinerama0, libxcb-cursor0, libxcb-keysyms1, libxkbcommon0, libxkbcommon-x11-0, libwayland-client0, libxcb-imdkit1
+Filename: pool/trixie/arm64/rofi_2.0.0_arm64.deb
+Size: 613542
+MD5sum: d5d649b5816b18349c519a70ec8358a7
+SHA1: 03cf1e28611f8ad2b7e145098b6294ac626798d9
+SHA256: 77be2947531edcfa1166e03238204441c695f8663f029c1280393d8205588cac
+Section: x11
+Priority: optional
+Homepage: https://github.com/davatorium/rofi
+Description: Window switcher, application launcher and dmenu replacement
+ Rofi is a window switcher, run dialog, ssh-launcher and dmenu replacement
+ that focuses on being fast to use and easily configurable.
+ Supports both X11 and Wayland backends.
+
