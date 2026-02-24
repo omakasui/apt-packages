@@ -1,7 +1,5 @@
 # =============================================================================
-# omakasui/apt-pkg — .github/workflows/update.yml
-#
-# Triggered by: repository_dispatch "package-updated" from omakasui/build-packages
+# Triggered by: repository_dispatch "package-updated" from omakasui/build-apt-packages
 #               workflow_dispatch for manual emergency runs
 #
 # Note on .deb files in Git:
@@ -35,7 +33,7 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout apt-pkg
+      - name: Checkout apt-packages
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -85,11 +83,11 @@ jobs:
           done
 
       # -------------------------------------------------------------------------
-      # Download .deb assets from the build-pkg GitHub Release.
-      # build-pkg naming:  <pkg>_<version>_<distro>_<arch>.deb
+      # Download .deb assets from the build-apt-packages GitHub Release.
+      # build-apt-packages naming:  <pkg>_<version>_<distro>_<arch>.deb
       # pool naming:       <pkg>_<version>_<arch>.deb  (distro encoded via suite dir)
       # -------------------------------------------------------------------------
-      - name: Download .deb files from build-pkg
+      - name: Download .deb files from build-apt-packages
         env:
           GH_TOKEN: ${{ secrets.APT_PKG_DISPATCH_TOKEN }}
         run: |
@@ -113,7 +111,7 @@ jobs:
 
               echo "Downloading ${src} → ${dst}..."
               gh release download "$TAG" \
-                --repo omakasui/build-pkg \
+                --repo omakasui/build-apt-packages \
                 --pattern "$src" \
                 --output "$dst"
             done
@@ -155,7 +153,7 @@ jobs:
             echo "Generating Release for ${suite}..."
             apt-ftparchive \
               -o APT::FTPArchive::Release::Origin="omakasui" \
-              -o APT::FTPArchive::Release::Label="omakasui-apt-pkg" \
+              -o APT::FTPArchive::Release::Label="omakasui-apt-packages" \
               -o APT::FTPArchive::Release::Suite="${suite}" \
               -o APT::FTPArchive::Release::Codename="${suite}" \
               -o APT::FTPArchive::Release::Architectures="amd64 arm64" \
