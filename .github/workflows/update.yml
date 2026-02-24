@@ -116,6 +116,12 @@ jobs:
                 --repo omakasui/build-apt-packages \
                 --pattern "$src" \
                 --output "$dst"
+
+              if [[ ! -f "$dst" ]]; then
+                echo "ERROR: expected file not found after download: $dst"
+                exit 1
+              fi
+              echo "OK: $(du -sh "$dst")"
             done
           done
 
@@ -186,8 +192,14 @@ jobs:
           git config user.name  "omakasui-bot"
           git config user.email "bot@omakasui.org"
 
-          # Stage metadata and binaries
-          git add dists/ pool/ omakasui.gpg.key
+          # Stage metadata and binaries.
+          # Use -f (force) so git-lfs filters or .gitignore rules cannot silently
+          # swallow the .deb binaries; stage them explicitly via find.
+          find pool/ -name "*.deb" -print0 | xargs -0 git add -f
+          git add -f dists/ omakasui.gpg.key
+
+          echo "Staged .deb files:"
+          git diff --cached --name-only | grep '\.deb' || echo "  (none – check download step)"
 
           # Only commit if there are actual changes
           if git diff --cached --quiet; then
