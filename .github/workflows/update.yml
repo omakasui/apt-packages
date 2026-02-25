@@ -225,7 +225,8 @@ jobs:
       # -----------------------------------------------------------------------
       - name: '[rebuild-index] No pool changes - metadata only'
         if: steps.params.outputs.action == 'rebuild-index'
-        run: echo "rebuild-index: regenerating metadata from current pool/ state."
+        run: |
+          echo "rebuild-index: regenerating metadata from current pool state"
 
       # -----------------------------------------------------------------------
       # Regenerate APT metadata (runs for all three actions).
