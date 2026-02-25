@@ -1,28 +1,64 @@
 # =============================================================================
-# Triggered by: repository_dispatch "package-updated" from omakasui/build-apt-packages
-#               workflow_dispatch for manual emergency runs
+# apt-packages / update-apt.yml
+#
+# Triggered by repository_dispatch with three event types:
+#
+#   package-updated   — download new .deb from build-apt-packages release,
+#                       prune old version, regenerate metadata.
+#                       Required payload: package, version, suites
+#
+#   remove-package    — delete all .deb files for a package from pool/,
+#                       regenerate metadata.
+#                       Required payload: package
+#                       Optional payload: suites (defaults to all suites)
+#
+#   rebuild-index     — regenerate APT metadata from whatever is in pool/,
+#                       no pool changes. Use after manual pool edits.
+#                       No payload required.
+#
+# Also accepts workflow_dispatch for manual runs (same three actions via input).
+#
+# Payload field: suites
+#   Space-separated list of suite codenames to operate on.
+#   Example: "trixie" or "trixie noble"
+#   For package-updated this is required — only the declared suites are
+#   downloaded. For remove-package it is optional — omitting it removes
+#   from all suites. For rebuild-index it is ignored (always rebuilds all).
 #
 # Note on .deb files in Git:
 #   GitHub Pages serves files directly from the repository tree.
 #   The .deb binaries must be committed so APT clients can download them.
-#   The pool/ directory is therefore tracked in Git.
+#   The pool/ directory is therefore tracked in Git (*.deb in .gitignore is
+#   bypassed with git add -f).
 # =============================================================================
 
 name: Update APT repo
 
 on:
   repository_dispatch:
-    types: [package-updated]
+    types: [package-updated, remove-package, rebuild-index]
 
   workflow_dispatch:
     inputs:
-      package:
-        description: 'Package name (e.g. rofi)'
+      action:
+        description: 'Action to perform'
         required: true
+        type: choice
+        options:
+          - package-updated
+          - remove-package
+          - rebuild-index
+      package:
+        description: 'Package name — required for package-updated and remove-package'
+        required: false
         type: string
       version:
-        description: 'Version (e.g. 2.0.0)'
-        required: true
+        description: 'Version — required for package-updated only'
+        required: false
+        type: string
+      suites:
+        description: 'Suites — space-separated, e.g. "trixie" or "trixie noble". Required for package-updated.'
+        required: false
         type: string
 
 jobs:
@@ -38,15 +74,23 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      # -----------------------------------------------------------------------
+      # Resolve action + parameters from either repository_dispatch or
+      # workflow_dispatch into unified step outputs.
+      # -----------------------------------------------------------------------
       - name: Resolve parameters
         id: params
         run: |
           if [[ "${{ github.event_name }}" == "repository_dispatch" ]]; then
-            echo "package=${{ github.event.client_payload.package }}" >> "$GITHUB_OUTPUT"
-            echo "version=${{ github.event.client_payload.version }}" >> "$GITHUB_OUTPUT"
+            echo "action=${{ github.event.action }}"                          >> "$GITHUB_OUTPUT"
+            echo "package=${{ github.event.client_payload.package }}"         >> "$GITHUB_OUTPUT"
+            echo "version=${{ github.event.client_payload.version }}"         >> "$GITHUB_OUTPUT"
+            echo "suites=${{ github.event.client_payload.suites }}"           >> "$GITHUB_OUTPUT"
           else
+            echo "action=${{ inputs.action }}"   >> "$GITHUB_OUTPUT"
             echo "package=${{ inputs.package }}" >> "$GITHUB_OUTPUT"
             echo "version=${{ inputs.version }}"  >> "$GITHUB_OUTPUT"
+            echo "suites=${{ inputs.suites }}"    >> "$GITHUB_OUTPUT"
           fi
 
       - name: Install APT tools
@@ -62,48 +106,56 @@ jobs:
             | awk -F: '/^fpr/{print $10; exit}')
           echo "${FINGERPRINT}:6:" | gpg --import-ownertrust
 
-      # -------------------------------------------------------------------------
-      # Remove previous versions of this package from the pool (keep latest only).
-      # Matches any file named <package>_<anything>_<arch>.deb so older versions
-      # are pruned before the new one is added.
-      # -------------------------------------------------------------------------
-      - name: Remove old versions from pool
+      # -----------------------------------------------------------------------
+      # ACTION: package-updated
+      # Remove old versions of this package, download the new .deb from the
+      # build-apt-packages GitHub Release.
+      # Only operates on the suites declared in the payload.
+      # -----------------------------------------------------------------------
+      - name: '[package-updated] Prune old versions from pool'
+        if: steps.params.outputs.action == 'package-updated'
         run: |
           PKG="${{ steps.params.outputs.package }}"
           VERSION="${{ steps.params.outputs.version }}"
+          SUITES="${{ steps.params.outputs.suites }}"
 
-          for suite in noble trixie; do
-            for arch in amd64 arm64; do
+          if [[ -z "$SUITES" ]]; then
+            echo "ERROR: suites payload is required for package-updated"
+            exit 1
+          fi
+
+          for suite in $SUITES; do
+            for arch in amd64 arm64 all; do
               pool_dir="pool/${suite}/${arch}"
               mkdir -p "$pool_dir"
-
-              # Remove any .deb for this package that is NOT the new version
               find "$pool_dir" -maxdepth 1 -name "${PKG}_*.deb" \
                 ! -name "${PKG}_${VERSION}_${arch}.deb" \
                 -print -delete
             done
           done
 
-      # -------------------------------------------------------------------------
-      # Download .deb assets from the build-apt-packages GitHub Release.
-      # build-apt-packages naming:  <pkg>_<version>_<distro>_<arch>.deb
-      # pool naming:       <pkg>_<version>_<arch>.deb  (distro encoded via suite dir)
-      # -------------------------------------------------------------------------
-      - name: Download .deb files from build-apt-packages
+      - name: '[package-updated] Download .deb from build-apt-packages release'
+        if: steps.params.outputs.action == 'package-updated'
         env:
           GH_TOKEN: ${{ secrets.APT_PKG_DISPATCH_TOKEN }}
         run: |
           PKG="${{ steps.params.outputs.package }}"
           VERSION="${{ steps.params.outputs.version }}"
+          SUITES="${{ steps.params.outputs.suites }}"
           TAG="${PKG}-${VERSION}"
 
-          declare -A SUITE_MAP=(
-            [ubuntu2404]="noble"
-            [debian13]="trixie"
+          # Map suite codename → distro label used in build-apt-packages release assets
+          declare -A DISTRO_MAP=(
+            [noble]="ubuntu2404"
+            [trixie]="debian13"
           )
 
-          for distro in ubuntu2404 debian13; do
-            suite="${SUITE_MAP[$distro]}"
+          for suite in $SUITES; do
+            distro="${DISTRO_MAP[$suite]}"
+            if [[ -z "$distro" ]]; then
+              echo "ERROR: unknown suite '${suite}'. Known suites: noble, trixie"
+              exit 1
+            fi
             for arch in amd64 arm64; do
               pool_dir="pool/${suite}/${arch}"
               mkdir -p "$pool_dir"
@@ -125,16 +177,66 @@ jobs:
             done
           done
 
-      # -------------------------------------------------------------------------
-      # Regenerate APT metadata.
+      # -----------------------------------------------------------------------
+      # ACTION: remove-package
+      # Delete all .deb files for the given package.
+      # If suites is provided, scoped to those suites only.
+      # If suites is empty, removes from the entire pool (all suites).
+      # -----------------------------------------------------------------------
+      - name: '[remove-package] Delete .deb files for package'
+        if: steps.params.outputs.action == 'remove-package'
+        run: |
+          PKG="${{ steps.params.outputs.package }}"
+          SUITES="${{ steps.params.outputs.suites }}"
+
+          if [[ -z "$PKG" ]]; then
+            echo "ERROR: package name is required for remove-package"
+            exit 1
+          fi
+
+          if [[ -n "$SUITES" ]]; then
+            # Scoped removal
+            SEARCH_DIRS=""
+            for suite in $SUITES; do
+              SEARCH_DIRS="$SEARCH_DIRS pool/${suite}"
+            done
+          else
+            # Remove from all suites
+            SEARCH_DIRS="pool/"
+          fi
+
+          echo "Removing ${PKG}_*.deb from: ${SEARCH_DIRS}..."
+          REMOVED=0
+          while IFS= read -r -d '' f; do
+            echo "  rm $f"
+            rm "$f"
+            REMOVED=$((REMOVED + 1))
+          done < <(find $SEARCH_DIRS -maxdepth 3 -name "${PKG}_*.deb" -print0)
+
+          if [[ $REMOVED -eq 0 ]]; then
+            echo "No files found for '${PKG}' — nothing to remove."
+          else
+            echo "Removed ${REMOVED} file(s)."
+          fi
+
+      # -----------------------------------------------------------------------
+      # ACTION: rebuild-index
+      # No pool changes — just regenerate metadata from current pool/ contents.
+      # -----------------------------------------------------------------------
+      - name: '[rebuild-index] No pool changes — metadata only'
+        if: steps.params.outputs.action == 'rebuild-index'
+        run: echo "rebuild-index: regenerating metadata from current pool/ state."
+
+      # -----------------------------------------------------------------------
+      # Regenerate APT metadata (runs for all three actions).
       #
-      # IMPORTANT: dpkg-scanpackages must be run from the repository root and
-      # receive the full relative path to the pool dir (e.g. pool/noble/amd64).
-      # This ensures the generated Filename: fields are correct full paths, e.g.:
-      #   Filename: pool/noble/amd64/rofi_2.0.0_amd64.deb
-      # Running it from inside the pool dir would generate bare filenames that
-      # APT cannot resolve against the repository base URL.
-      # -------------------------------------------------------------------------
+      # dpkg-scanpackages is run from the repo root so Filename: entries in
+      # the Packages index are full paths (e.g. pool/trixie/amd64/pkg.deb).
+      # Running from inside pool/ would produce bare filenames APT cannot resolve.
+      #
+      # arch:all packages live in pool/<suite>/all/ and are included in both
+      # amd64 and arm64 Packages indexes via a merged scan.
+      # -----------------------------------------------------------------------
       - name: Regenerate APT metadata
         env:
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
@@ -142,18 +244,29 @@ jobs:
           for suite in noble trixie; do
             for arch in amd64 arm64; do
               pkg_dir="dists/${suite}/main/binary-${arch}"
-              pool_dir="pool/${suite}/${arch}"
-              mkdir -p "$pkg_dir"
+              pool_arch="pool/${suite}/${arch}"
+              pool_all="pool/${suite}/all"
+              mkdir -p "$pkg_dir" "$pool_arch"
 
-              if [[ -z "$(ls -A "$pool_dir" 2>/dev/null)" ]]; then
-                echo "No .deb files in ${pool_dir}, skipping..."
-                continue
+              # Collect .deb files from both arch-specific and arch:all dirs
+              HAS_DEBS=false
+              [[ -n "$(ls -A "$pool_arch" 2>/dev/null)" ]] && HAS_DEBS=true
+              [[ -d "$pool_all" && -n "$(ls -A "$pool_all" 2>/dev/null)" ]] && HAS_DEBS=true
+
+              if [[ "$HAS_DEBS" == "false" ]]; then
+                echo "No .deb files for ${suite}/${arch}, generating empty Packages..."
+                : > "${pkg_dir}/Packages"
+              else
+                echo "Generating Packages for ${suite}/${arch}..."
+                # Merge arch-specific and arch:all into one Packages index
+                {
+                  dpkg-scanpackages --arch "${arch}" "${pool_arch}" /dev/null 2>/dev/null || true
+                  if [[ -d "$pool_all" && -n "$(ls -A "$pool_all" 2>/dev/null)" ]]; then
+                    dpkg-scanpackages --arch "${arch}" "${pool_all}" /dev/null 2>/dev/null || true
+                  fi
+                } > "${pkg_dir}/Packages"
               fi
 
-              echo "Generating Packages for ${suite}/${arch}..."
-              # Run from repo root so Filename: paths are correct
-              dpkg-scanpackages --arch "${arch}" "${pool_dir}" /dev/null \
-                > "${pkg_dir}/Packages"
               gzip -k -f "${pkg_dir}/Packages"
               xz   -k -f "${pkg_dir}/Packages"
             done
@@ -183,29 +296,38 @@ jobs:
 
           gpg --armor --export "$GPG_KEY_ID" > omakasui.gpg.key
 
-      # -------------------------------------------------------------------------
+      # -----------------------------------------------------------------------
       # Commit everything including .deb binaries.
-      # .deb files must be in Git so GitHub Pages can serve them to APT clients.
-      # -------------------------------------------------------------------------
+      # git add -f bypasses *.deb in .gitignore intentionally.
+      # -----------------------------------------------------------------------
       - name: Commit and push
         run: |
           git config user.name  "omakasui-bot"
           git config user.email "bot@omakasui.org"
 
-          # Stage metadata and binaries.
-          # Use -f (force) so git-lfs filters or .gitignore rules cannot silently
-          # swallow the .deb binaries; stage them explicitly via find.
           find pool/ -name "*.deb" -print0 | xargs -0 git add -f
           git add -f dists/ omakasui.gpg.key
 
-          echo "Staged .deb files:"
-          git diff --cached --name-only | grep '\.deb' || echo "  (none – check download step)"
+          # Stage deletions too (remove-package leaves no files behind)
+          git add -u pool/
 
-          # Only commit if there are actual changes
+          echo "Staged changes:"
+          git diff --cached --name-only || echo "  (none)"
+
           if git diff --cached --quiet; then
-            echo "Nothing to commit, pool is already up to date."
+            echo "Nothing to commit."
           else
-            git commit -m \
-              "apt: ${{ steps.params.outputs.package }} ${{ steps.params.outputs.version }} [$(date '+%Y-%m-%d')]"
+            ACTION="${{ steps.params.outputs.action }}"
+            PKG="${{ steps.params.outputs.package }}"
+            VERSION="${{ steps.params.outputs.version }}"
+
+            case "$ACTION" in
+              package-updated)  MSG="apt: ${PKG} ${VERSION} [$(date '+%Y-%m-%d')]" ;;
+              remove-package)   MSG="apt: remove ${PKG} [$(date '+%Y-%m-%d')]" ;;
+              rebuild-index)    MSG="apt: rebuild index [$(date '+%Y-%m-%d')]" ;;
+              *)                MSG="apt: update [$(date '+%Y-%m-%d')]" ;;
+            esac
+
+            git commit -m "$MSG"
             git push
           fi
