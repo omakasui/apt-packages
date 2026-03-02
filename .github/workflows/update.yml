@@ -137,15 +137,23 @@ jobs:
               mkdir -p "pool/${suite}/all"
               ALL_DST="pool/${suite}/all/${produced}_${VERSION}_all.deb"
 
+              # --output is only for exact asset names; use --dir + rename for pattern-based downloads.
               # Try distro-tagged arch:all (repackage), then plain arch:all, then arch-specific.
-              if gh release download "$TAG" \
-                    --repo omakasui/build-apt-packages \
-                    --pattern "${produced}_${VERSION}_${distro}_all.deb" \
-                    --output "$ALL_DST" 2>/dev/null || \
-                 gh release download "$TAG" \
-                    --repo omakasui/build-apt-packages \
-                    --pattern "${produced}_${VERSION}_all.deb" \
-                    --output "$ALL_DST" 2>/dev/null; then
+              _tmpdir=$(mktemp -d)
+              _downloaded=false
+              for _pat in \
+                  "${produced}_${VERSION}_${distro}_all.deb" \
+                  "${produced}_${VERSION}_all.deb"; do
+                if gh release download "$TAG" \
+                     --repo omakasui/build-apt-packages \
+                     --pattern "$_pat" \
+                     --dir "$_tmpdir" 2>/dev/null; then
+                  mv "$_tmpdir/$_pat" "$ALL_DST" && _downloaded=true && break
+                fi
+              done
+              rm -rf "$_tmpdir"
+
+              if [[ "$_downloaded" == "true" ]]; then
                 echo "OK (arch:all): $(du -sh "$ALL_DST")"
                 continue
               fi
@@ -155,10 +163,13 @@ jobs:
                 mkdir -p "$pool_dir"
                 src="${produced}_${VERSION}_${distro}_${arch}.deb"
                 dst="${pool_dir}/${produced}_${VERSION}_${arch}.deb"
+                _tmpdir=$(mktemp -d)
                 gh release download "$TAG" \
                   --repo omakasui/build-apt-packages \
                   --pattern "$src" \
-                  --output "$dst"
+                  --dir "$_tmpdir"
+                mv "$_tmpdir/$src" "$dst"
+                rm -rf "$_tmpdir"
                 [[ ! -f "$dst" ]] && { echo "ERROR: $dst not found after download"; exit 1; }
                 echo "OK: $(du -sh "$dst")"
               done
