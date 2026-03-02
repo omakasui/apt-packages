@@ -144,7 +144,7 @@ jobs:
           SUITES="${{ steps.params.outputs.suites }}"
           TAG="${PKG}-${VERSION}"
 
-          # Map suite codename → distro label used in build-apt-packages release assets
+          # Map suite codename -> distro label used in build-apt-packages release assets
           declare -A DISTRO_MAP=(
             [noble]="ubuntu2404"
             [trixie]="debian13"
@@ -156,6 +156,22 @@ jobs:
               echo "ERROR: unknown suite '${suite}'. Known suites: noble, trixie"
               exit 1
             fi
+
+            # Try arch:all first (single file covers all architectures)
+            ALL_SRC="${PKG}_${VERSION}_all.deb"
+            ALL_DST="pool/${suite}/all/${PKG}_${VERSION}_all.deb"
+            mkdir -p "pool/${suite}/all"
+
+            if gh release download "$TAG" \
+                --repo omakasui/build-apt-packages \
+                --pattern "$ALL_SRC" \
+                --output "$ALL_DST" 2>/dev/null; then
+              echo "OK (arch:all): $(du -sh "$ALL_DST")"
+              continue
+            fi
+
+            # Fall back to arch-specific files (amd64 + arm64)
+            echo "No arch:all asset found, trying arch-specific..."
             for arch in amd64 arm64; do
               pool_dir="pool/${suite}/${arch}"
               mkdir -p "$pool_dir"
@@ -163,7 +179,7 @@ jobs:
               src="${PKG}_${VERSION}_${distro}_${arch}.deb"
               dst="${pool_dir}/${PKG}_${VERSION}_${arch}.deb"
 
-              echo "Downloading ${src} → ${dst}..."
+              echo "Downloading ${src} -> ${dst}..."
               gh release download "$TAG" \
                 --repo omakasui/build-apt-packages \
                 --pattern "$src" \
