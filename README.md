@@ -25,6 +25,12 @@ sudo apt install <package>
 
 | Package | Version | Distros | Architectures |
 |---------|---------|---------|---------------|
+| omakasui-yaru-theme-icon | 25.04.1 | trixie |  all |
+| omakasui-yaru-theme-gnome-shell | 25.04.1 | trixie |  all |
+| omakasui-yaru-theme-gtk | 25.04.1 | trixie |  all |
+| omakasui-yaru-theme-sound | 25.04.1 | trixie |  all |
+| omakasui-uwsm | 0.26.4 | trixie |  all |
+
 
 ## Supported distributions
 
