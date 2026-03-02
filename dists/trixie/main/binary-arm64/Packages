@@ -1,0 +1,108 @@
+Package: omakasui-yaru-theme-gnome-shell
+Source: yaru-theme
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 2311
+Conflicts: yaru-theme-gnome-shell
+Breaks: gnome-shell (<< 48~)
+Replaces: yaru-theme-gnome-shell
+Provides: yaru-theme-gnome-shell
+Filename: pool/trixie/all/omakasui-yaru-theme-gnome-shell_25.04.1-0ubuntu1_all.deb
+Size: 86956
+MD5sum: 4cedfb0902b0d8aa57165b3412d64f75
+SHA1: 755c031a06b518a8c5c3147e99e83f4605eeeb0b
+SHA256: 763ad6487f984fe398cef2122f393cf712859ff0bc2601a9b0a8123702dae91d
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru GNOME Shell desktop theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the GNOME Shell theme part
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+
+Package: omakasui-yaru-theme-gtk
+Source: yaru-theme
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 28601
+Depends: session-migration, gnome-themes-extra, gtk2-engines-pixbuf, gtk2-engines-murrine, libglib2.0-bin
+Conflicts: yaru-theme-gtk
+Replaces: yaru-theme-gtk
+Provides: yaru-theme-gtk
+Filename: pool/trixie/all/omakasui-yaru-theme-gtk_25.04.1-0ubuntu1_all.deb
+Size: 924744
+MD5sum: 7ed5c9c18d30a392beab86e16a919582
+SHA1: 4226c4eb834924ca7d0f86600fbac671b218c285
+SHA256: 83bf682b7149fb1a08a7640fc5ee59d1a020873c0494d672440492cb67712dfb
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru GTK theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the GTK+ 2 and 3 theme parts
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+
+Package: omakasui-yaru-theme-icon
+Source: yaru-theme
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 110521
+Suggests: humanity-icon-theme
+Conflicts: yaru-theme-icon
+Breaks: gnome-shell-extension-ubuntu-dock (<< 90~)
+Replaces: yaru-theme-icon
+Provides: yaru-theme-icon
+Filename: pool/trixie/all/omakasui-yaru-theme-icon_25.04.1-0ubuntu1_all.deb
+Size: 27481912
+MD5sum: 59cc8305a28450f64f99de336f8be6e5
+SHA1: d323e3844be587abd1a116f5725067d438d5a719
+SHA256: 2e6c29ac8327aa6ef0e460786919a6df55eb354d369dea89f54ec56c79cc2235
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru icon theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the icon theme
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+
+Package: omakasui-yaru-theme-sound
+Source: yaru-theme
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 1368
+Conflicts: yaru-theme-sound
+Replaces: yaru-theme-sound
+Provides: yaru-theme-sound
+Filename: pool/trixie/all/omakasui-yaru-theme-sound_25.04.1-0ubuntu1_all.deb
+Size: 1084644
+MD5sum: 5f2fdf6f6c0d4029ce4c8505f7a24378
+SHA1: 18955693c0757a4eed6d8d6c4f622d2fa4f753e1
+SHA256: 99083602fa1b6052728d337523ea67b1a64bf11ddd2cf9de79ef6bfd4267dc69
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru sound theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the sound theme
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+
