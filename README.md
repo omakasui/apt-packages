@@ -1,7 +1,7 @@
 # omakasui/apt-packages
 
 Custom APT repository for Ubuntu 24.04 (noble) and Debian 13 (trixie).
-Packages are built by [omakasui/build-packages](https://github.com/omakasui/build-packages)
+Packages are built by [omakasui/build-packages](https://github.com/omakasui/build-apt-packages)
 and published here automatically via CI.
 
 ## Installation
