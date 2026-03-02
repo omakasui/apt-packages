@@ -86,11 +86,13 @@ jobs:
             echo "package=${{ github.event.client_payload.package }}"         >> "$GITHUB_OUTPUT"
             echo "version=${{ github.event.client_payload.version }}"         >> "$GITHUB_OUTPUT"
             echo "suites=${{ github.event.client_payload.suites }}"           >> "$GITHUB_OUTPUT"
+            echo "produces=${{ toJson(github.event.client_payload.produces) }}" >> "$GITHUB_OUTPUT"
           else
             echo "action=${{ inputs.action }}"   >> "$GITHUB_OUTPUT"
             echo "package=${{ inputs.package }}" >> "$GITHUB_OUTPUT"
             echo "version=${{ inputs.version }}"  >> "$GITHUB_OUTPUT"
             echo "suites=${{ inputs.suites }}"    >> "$GITHUB_OUTPUT"
+            echo "produces=[]"                   >> "$GITHUB_OUTPUT"
           fi
 
       - name: Install APT tools
@@ -118,19 +120,28 @@ jobs:
           PKG="${{ steps.params.outputs.package }}"
           VERSION="${{ steps.params.outputs.version }}"
           SUITES="${{ steps.params.outputs.suites }}"
+          PRODUCES_JSON='${{ steps.params.outputs.produces }}'
 
           if [[ -z "$SUITES" ]]; then
             echo "ERROR: suites payload is required for package-updated"
             exit 1
           fi
 
+          if [[ "$PRODUCES_JSON" == "null" || "$PRODUCES_JSON" == "[]" || -z "$PRODUCES_JSON" ]]; then
+            PRODUCED_PKGS="$PKG"
+          else
+            PRODUCED_PKGS=$(echo "$PRODUCES_JSON" | jq -r '.[]')
+          fi
+
           for suite in $SUITES; do
             for arch in amd64 arm64 all; do
               pool_dir="pool/${suite}/${arch}"
               mkdir -p "$pool_dir"
-              find "$pool_dir" -maxdepth 1 -name "${PKG}_*.deb" \
-                ! -name "${PKG}_${VERSION}_${arch}.deb" \
-                -print -delete
+              while IFS= read -r produced; do
+                find "$pool_dir" -maxdepth 1 -name "${produced}_*.deb" \
+                  ! -name "${produced}_${VERSION}_${arch}.deb" \
+                  -print -delete
+              done <<< "$PRODUCED_PKGS"
             done
           done
 
@@ -142,7 +153,16 @@ jobs:
           PKG="${{ steps.params.outputs.package }}"
           VERSION="${{ steps.params.outputs.version }}"
           SUITES="${{ steps.params.outputs.suites }}"
+          PRODUCES_JSON='${{ steps.params.outputs.produces }}'
           TAG="${PKG}-${VERSION}"
+
+          # For repackage bundles the payload carries the list of emitted .deb names;
+          # for regular packages it is empty and we fall back to the package name itself.
+          if [[ "$PRODUCES_JSON" == "null" || "$PRODUCES_JSON" == "[]" || -z "$PRODUCES_JSON" ]]; then
+            PRODUCED_PKGS="$PKG"
+          else
+            PRODUCED_PKGS=$(echo "$PRODUCES_JSON" | jq -r '.[]')
+          fi
 
           # Map suite codename -> distro label used in build-apt-packages release assets
           declare -A DISTRO_MAP=(
@@ -157,40 +177,37 @@ jobs:
               exit 1
             fi
 
-            # Try arch:all first (single file covers all architectures)
-            ALL_SRC="${PKG}_${VERSION}_all.deb"
-            ALL_DST="pool/${suite}/all/${PKG}_${VERSION}_all.deb"
-            mkdir -p "pool/${suite}/all"
+            while IFS= read -r produced; do
+              mkdir -p "pool/${suite}/all"
+              ALL_DST="pool/${suite}/all/${produced}_${VERSION}_all.deb"
 
-            if gh release download "$TAG" \
-                --repo omakasui/build-apt-packages \
-                --pattern "$ALL_SRC" \
-                --output "$ALL_DST" 2>/dev/null; then
-              echo "OK (arch:all): $(du -sh "$ALL_DST")"
-              continue
-            fi
-
-            # Fall back to arch-specific files (amd64 + arm64)
-            echo "No arch:all asset found, trying arch-specific..."
-            for arch in amd64 arm64; do
-              pool_dir="pool/${suite}/${arch}"
-              mkdir -p "$pool_dir"
-
-              src="${PKG}_${VERSION}_${distro}_${arch}.deb"
-              dst="${pool_dir}/${PKG}_${VERSION}_${arch}.deb"
-
-              echo "Downloading ${src} -> ${dst}..."
-              gh release download "$TAG" \
-                --repo omakasui/build-apt-packages \
-                --pattern "$src" \
-                --output "$dst"
-
-              if [[ ! -f "$dst" ]]; then
-                echo "ERROR: expected file not found after download: $dst"
-                exit 1
+              # Try distro-tagged arch:all first (repackage), then plain arch:all (build)
+              if gh release download "$TAG" \
+                    --repo omakasui/build-apt-packages \
+                    --pattern "${produced}_${VERSION}_${distro}_all.deb" \
+                    --output "$ALL_DST" 2>/dev/null || \
+                 gh release download "$TAG" \
+                    --repo omakasui/build-apt-packages \
+                    --pattern "${produced}_${VERSION}_all.deb" \
+                    --output "$ALL_DST" 2>/dev/null; then
+                echo "OK (arch:all): $(du -sh "$ALL_DST")"
+                continue
               fi
-              echo "OK: $(du -sh "$dst")"
-            done
+
+              # Fall back to arch-specific files (amd64 + arm64)
+              for arch in amd64 arm64; do
+                pool_dir="pool/${suite}/${arch}"
+                mkdir -p "$pool_dir"
+                src="${produced}_${VERSION}_${distro}_${arch}.deb"
+                dst="${pool_dir}/${produced}_${VERSION}_${arch}.deb"
+                gh release download "$TAG" \
+                  --repo omakasui/build-apt-packages \
+                  --pattern "$src" \
+                  --output "$dst"
+                [[ ! -f "$dst" ]] && { echo "ERROR: $dst not found after download"; exit 1; }
+                echo "OK: $(du -sh "$dst")"
+              done
+            done <<< "$PRODUCED_PKGS"
           done
 
       # -----------------------------------------------------------------------
