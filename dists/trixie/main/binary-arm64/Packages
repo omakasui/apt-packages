@@ -1,3 +1,40 @@
+Package: omakasui-uwsm
+Source: uwsm
+Version: 0.26.4
+Architecture: all
+Maintainer: Vladimir-csp <4061903+Vladimir-csp@users.noreply.github.com>
+Installed-Size: 360
+Depends: python3:any, init-system-helpers (>= 1.52), systemd, util-linux, python3-xdg, python3-dbus
+Recommends: whiptail, walker | fuzzel | wofi | rofi | hyprlauncher | tofi | bemenu | wmenu | dmenu, libnotify-bin, inotify-tools
+Suggests: dbus-broker
+Conflicts: uwsm
+Replaces: uwsm
+Provides: uwsm
+Filename: pool/trixie/all/omakasui-uwsm_0.26.4_all.deb
+Size: 88664
+MD5sum: 91e57332f70a10d827eeffa0548aa933
+SHA1: 8170854fc58973876d130f824b0547e53365b122
+SHA256: dd4cd54a6f8c9b99ecbd41daacfced83383537e5d443d1b2a3207657e96c704b
+Section: x11
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/uwsm
+Description: Wayland session manager for standalone compositors
+ uwsm (Universal Wayland Session Manager) provides a lightweight, modular
+ session management framework for Wayland environments based on systemd user
+ units and various helpers.
+ .
+ It handles various session-related tasks for standalone Wayland compositors,
+ such as:
+ - startup from login shell or DM
+ - dynamic loading and cleanup of environment variables for graphical session
+ - binding lifetime of graphical session and login session together
+ .
+ It sets the stage for systemd to do launch and lifecycle management,
+ XDG autostart, clean shutdown.
+ .
+ dbus-broker is recommended for better systemd integration and environment
+ cleanup.
+
 Package: omakasui-yaru-theme-gnome-shell
 Source: yaru-theme
 Version: 25.04.1-0ubuntu1
