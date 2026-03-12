@@ -1,9 +1,3 @@
 name            = "packages-omakasui-org"
 main            = "worker.js"
 compatibility_date = "2025-12-01"
-
-# Route only pool/* through the worker; all other paths are served by
-# GitHub Pages as normal.
-routes = [
-  { pattern = "packages.omakasui.org/pool/*", zone_name = "omakasui.org" },
-]
