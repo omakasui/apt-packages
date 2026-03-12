@@ -1,0 +1,178 @@
+# Triggered by repository_dispatch from build-apt-packages, or manually via workflow_dispatch.
+# Actions: package-updated | remove-package | rebuild-index | clean-pool
+name: Update APT repo
+
+on:
+  repository_dispatch:
+    types: [package-updated, remove-package, rebuild-index, clean-pool]
+
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        type: choice
+        options:
+          - package-updated
+          - remove-package
+          - rebuild-index
+          - clean-pool
+      package:
+        description: 'Package name — required for package-updated and remove-package'
+        required: false
+        type: string
+      version:
+        description: 'Version — required for package-updated only'
+        required: false
+        type: string
+      suites:
+        description: 'Suites — space-separated, e.g. "trixie" or "trixie noble". Required for package-updated.'
+        required: false
+        type: string
+      pattern:
+        description: 'Glob pattern for clean-pool (e.g. "omakasui-lazygit*")'
+        required: false
+        type: string
+
+# All known suite codenames. Update here when adding a new distro.
+# Must stay in sync with build-matrix.yml in omakasui/build-apt-packages.
+env:
+  ALL_SUITES: "trixie noble"
+
+jobs:
+  update:
+    name: Update APT repo
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Resolve parameters
+        id: params
+        run: |
+          if [[ "${{ github.event_name }}" == "repository_dispatch" ]]; then
+            echo "action=${{ github.event.action }}"                  >> "$GITHUB_OUTPUT"
+            echo "package=${{ github.event.client_payload.package }}" >> "$GITHUB_OUTPUT"
+            echo "version=${{ github.event.client_payload.version }}" >> "$GITHUB_OUTPUT"
+            echo "suites=${{ github.event.client_payload.suites }}"   >> "$GITHUB_OUTPUT"
+            echo "pattern=${{ github.event.client_payload.pattern }}" >> "$GITHUB_OUTPUT"
+            PRODUCES=$(echo '${{ toJson(github.event.client_payload.produces) }}' | jq -c '.')
+            echo "produces=${PRODUCES}"                               >> "$GITHUB_OUTPUT"
+          else
+            echo "action=${{ inputs.action }}"   >> "$GITHUB_OUTPUT"
+            echo "package=${{ inputs.package }}" >> "$GITHUB_OUTPUT"
+            echo "version=${{ inputs.version }}"  >> "$GITHUB_OUTPUT"
+            echo "suites=${{ inputs.suites }}"    >> "$GITHUB_OUTPUT"
+            echo "pattern=${{ inputs.pattern }}" >> "$GITHUB_OUTPUT"
+            echo "produces=[]"                   >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install APT tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            dpkg-dev apt-utils gnupg2
+
+      - name: Import GPG key
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
+          FINGERPRINT=$(gpg --fingerprint --with-colons "${{ secrets.GPG_KEY_ID }}" \
+            | awk -F: '/^fpr/{print $10; exit}')
+          echo "${FINGERPRINT}:6:" | gpg --import-ownertrust
+
+      - name: '[package-updated] Register package in index manifest'
+        if: steps.params.outputs.action == 'package-updated'
+        env:
+          GH_TOKEN: ${{ secrets.APT_PKG_DISPATCH_TOKEN }}
+        run: |
+          PRODUCES_JSON='${{ steps.params.outputs.produces }}'
+          if [[ "$PRODUCES_JSON" == "null" || "$PRODUCES_JSON" == "[]" || -z "$PRODUCES_JSON" ]]; then
+            PRODUCES=""
+          else
+            PRODUCES=$(echo "$PRODUCES_JSON" | jq -r '.[]' | tr '\n' ' ')
+          fi
+
+          bash scripts/register-package.sh \
+            --pkg      "${{ steps.params.outputs.package }}" \
+            --version  "${{ steps.params.outputs.version }}" \
+            --suites   "${{ steps.params.outputs.suites }}" \
+            --produces "$PRODUCES"
+
+      - name: '[remove-package] Remove entries from index manifest'
+        if: steps.params.outputs.action == 'remove-package'
+        run: |
+          bash scripts/remove-entries.sh \
+            --package "${{ steps.params.outputs.package }}" \
+            --suites  "${{ steps.params.outputs.suites }}"
+
+      - name: '[clean-pool] Remove entries matching pattern from index manifest'
+        if: steps.params.outputs.action == 'clean-pool'
+        run: |
+          bash scripts/remove-entries.sh \
+            --pattern "${{ steps.params.outputs.pattern }}" \
+            --suites  "${{ steps.params.outputs.suites }}"
+
+      - name: '[rebuild-index] no-op'
+        if: steps.params.outputs.action == 'rebuild-index'
+        run: echo "Rebuilding index from existing index/packages.tsv."
+
+      - name: Regenerate APT metadata
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+        run: |
+          touch index/packages.tsv
+          bash scripts/update-index.sh --suites "$ALL_SUITES"
+          bash scripts/sign-release.sh --suites "$ALL_SUITES" --key-id "$GPG_KEY_ID"
+
+      - name: Commit and push
+        run: |
+          git config user.name  "omakasui-bot"
+          git config user.email "bot@omakasui.org"
+
+          ACTION="${{ steps.params.outputs.action }}"
+          PKG="${{ steps.params.outputs.package }}"
+          VERSION="${{ steps.params.outputs.version }}"
+          PATTERN="${{ steps.params.outputs.pattern }}"
+          case "$ACTION" in
+            package-updated) MSG="apt: ${PKG} ${VERSION} [$(date '+%Y-%m-%d')]" ;;
+            remove-package)  MSG="apt: remove ${PKG} [$(date '+%Y-%m-%d')]" ;;
+            clean-pool)      MSG="apt: clean ${PATTERN} [$(date '+%Y-%m-%d')]" ;;
+            *)               MSG="apt: rebuild index [$(date '+%Y-%m-%d')]" ;;
+          esac
+
+          # Snapshot artifacts produced in this run before any git reset.
+          DISTS_SNAPSHOT=$(mktemp -d)
+          INDEX_SNAPSHOT=$(mktemp -d)
+          cp -r dists/. "$DISTS_SNAPSHOT/"
+          cp omakasui.gpg.key "$DISTS_SNAPSHOT/"
+          cp index/packages.tsv "$INDEX_SNAPSHOT/" 2>/dev/null || true
+
+          for i in 1 2 3 4 5; do
+            # Always start from the current remote state to avoid merge conflicts.
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Re-apply this run's artifacts on top of the latest remote state.
+            cp -r "$DISTS_SNAPSHOT/." dists/
+            cp "$DISTS_SNAPSHOT/omakasui.gpg.key" omakasui.gpg.key
+            mkdir -p index
+            cp "$INDEX_SNAPSHOT/packages.tsv" index/packages.tsv 2>/dev/null || true
+
+            git add -f dists/ omakasui.gpg.key index/
+            git add -u index/ 2>/dev/null || true
+
+            if git diff --cached --quiet; then
+              echo "Nothing to commit."
+              break
+            fi
+
+            git commit -m "$MSG"
+            git push && break
+            echo "Push failed (attempt ${i}/5), retrying..."
+            sleep $((i * 2))
+          done

@@ -1,0 +1,146 @@
+# No repository_dispatch, no package-updated — manual triggers only.
+# Available actions: remove-package | clean-pool | rebuild-index
+name: Maintain APT repo
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        type: choice
+        options:
+          - rebuild-index
+          - remove-package
+          - clean-pool
+      package:
+        description: 'Package name — required for remove-package'
+        required: false
+        type: string
+      suites:
+        description: 'Space-separated suites (e.g. "noble" or "trixie noble"). Leave empty for all.'
+        required: false
+        type: string
+      pattern:
+        description: 'Glob pattern for clean-pool (e.g. "omakasui-lazygit*")'
+        required: false
+        type: string
+
+# All known suite codenames. Keep in sync with build-matrix.yml in omakasui/build-apt-packages.
+env:
+  ALL_SUITES: "trixie noble"
+
+jobs:
+  maintain:
+    name: Maintain APT repo
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate inputs
+        run: |
+          ACTION="${{ inputs.action }}"
+          case "$ACTION" in
+            remove-package)
+              [[ -z "${{ inputs.package }}" ]] && {
+                echo "ERROR: package is required for remove-package"; exit 1
+              }
+              ;;
+            clean-pool)
+              [[ -z "${{ inputs.pattern }}" ]] && {
+                echo "ERROR: pattern is required for clean-pool"; exit 1
+              }
+              ;;
+            rebuild-index)
+              echo "Rebuilding index from existing packages.tsv."
+              ;;
+          esac
+
+      - name: Install APT tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            dpkg-dev apt-utils gnupg2
+
+      - name: Import GPG key
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
+          FINGERPRINT=$(gpg --fingerprint --with-colons "${{ secrets.GPG_KEY_ID }}" \
+            | awk -F: '/^fpr/{print $10; exit}')
+          echo "${FINGERPRINT}:6:" | gpg --import-ownertrust
+
+      - name: '[remove-package] Remove entries from index manifest'
+        if: inputs.action == 'remove-package'
+        run: |
+          bash scripts/remove-entries.sh \
+            --package "${{ inputs.package }}" \
+            --suites  "${{ inputs.suites }}"
+
+      - name: '[clean-pool] Remove entries matching pattern from index manifest'
+        if: inputs.action == 'clean-pool'
+        run: |
+          bash scripts/remove-entries.sh \
+            --pattern "${{ inputs.pattern }}" \
+            --suites  "${{ inputs.suites }}"
+
+      - name: '[rebuild-index] no-op'
+        if: inputs.action == 'rebuild-index'
+        run: echo "Rebuilding index from existing index/packages.tsv."
+
+      - name: Regenerate APT metadata
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+        run: |
+          touch index/packages.tsv
+          bash scripts/update-index.sh --suites "$ALL_SUITES"
+          bash scripts/sign-release.sh --suites "$ALL_SUITES" --key-id "$GPG_KEY_ID"
+
+      - name: Commit and push
+        run: |
+          git config user.name  "omakasui-bot"
+          git config user.email "bot@omakasui.org"
+
+          ACTION="${{ inputs.action }}"
+          PKG="${{ inputs.package }}"
+          PATTERN="${{ inputs.pattern }}"
+          case "$ACTION" in
+            remove-package) MSG="maint: remove ${PKG} [$(date '+%Y-%m-%d')]" ;;
+            clean-pool)     MSG="maint: clean ${PATTERN} [$(date '+%Y-%m-%d')]" ;;
+            *)              MSG="maint: rebuild index [$(date '+%Y-%m-%d')]" ;;
+          esac
+
+          DISTS_SNAPSHOT=$(mktemp -d)
+          INDEX_SNAPSHOT=$(mktemp -d)
+          cp -r dists/. "$DISTS_SNAPSHOT/"
+          cp omakasui.gpg.key "$DISTS_SNAPSHOT/"
+          cp index/packages.tsv "$INDEX_SNAPSHOT/" 2>/dev/null || true
+
+          for i in 1 2 3 4 5; do
+            # Always start from the current remote state to avoid merge conflicts.
+            git fetch origin main
+            git reset --hard origin/main
+
+            cp -r "$DISTS_SNAPSHOT/." dists/
+            cp "$DISTS_SNAPSHOT/omakasui.gpg.key" omakasui.gpg.key
+            mkdir -p index
+            cp "$INDEX_SNAPSHOT/packages.tsv" index/packages.tsv 2>/dev/null || true
+
+            git add -f dists/ omakasui.gpg.key index/
+            git add -u index/ 2>/dev/null || true
+
+            if git diff --cached --quiet; then
+              echo "Nothing to commit."
+              break
+            fi
+
+            git commit -m "$MSG"
+            git push && break
+            echo "Push failed (attempt ${i}/5), retrying..."
+            sleep $((i * 2))
+          done
