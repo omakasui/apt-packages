@@ -117,8 +117,9 @@ jobs:
 
           DISTS_SNAPSHOT=$(mktemp -d)
           INDEX_SNAPSHOT=$(mktemp -d)
+          GPG_KEY_SNAPSHOT=$(mktemp -d)
           cp -r dists/. "$DISTS_SNAPSHOT/"
-          cp omakasui.gpg.key "$DISTS_SNAPSHOT/"
+          cp omakasui.gpg.key "$GPG_KEY_SNAPSHOT/"
           cp index/packages.tsv "$INDEX_SNAPSHOT/" 2>/dev/null || true
 
           for i in 1 2 3 4 5; do
@@ -127,7 +128,7 @@ jobs:
             git reset --hard origin/main
 
             cp -r "$DISTS_SNAPSHOT/." dists/
-            cp "$DISTS_SNAPSHOT/omakasui.gpg.key" omakasui.gpg.key
+            cp "$GPG_KEY_SNAPSHOT/omakasui.gpg.key" omakasui.gpg.key
             mkdir -p index
             cp "$INDEX_SNAPSHOT/packages.tsv" index/packages.tsv 2>/dev/null || true
 

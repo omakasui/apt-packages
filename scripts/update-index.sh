@@ -2,8 +2,9 @@
 # update-index.sh — Generate Packages/Packages.gz/Packages.xz files
 # for every suite and arch by reading index/packages.tsv.
 #
-# The Filename field is set to the full GitHub Releases URL so that
-# apt downloads binaries directly from GitHub without any proxy.
+# The Filename field is set to a pool-relative path (pool/<tag>/<file>).
+# A Cloudflare Worker on packages.omakasui.org redirects pool/ requests
+# to the matching GitHub Releases asset in omakasui/build-apt-packages.
 #
 # Usage:
 #   update-index.sh --suites "<suite1> <suite2>"
@@ -34,6 +35,18 @@ for suite in $SUITES; do
       [[ "$s" != "$suite" ]] && continue
       # Include arch-specific entries and arch:all entries for every arch.
       [[ "$a" != "$arch" && "$a" != "all" ]] && continue
+
+      # Convert a full GitHub Releases URL to a pool-relative path.
+      # https://github.com/OWNER/REPO/releases/download/TAG/FILE -> pool/TAG/FILE
+      # This is required because apt always treats Filename as a path relative
+      # to the repository base URL — absolute URLs result in a double-URL fetch.
+      # Requests to pool/ are redirected to GitHub Releases by the Cloudflare Worker.
+      if [[ "$url" == https://github.com/*/releases/download/*/* ]]; then
+        _tag="${url%/*}"
+        _tag="${_tag##*/}"
+        _file="${url##*/}"
+        url="pool/${_tag}/${_file}"
+      fi
 
       printf "Package: %s\nVersion: %s\nArchitecture: %s\nFilename: %s\nSize: %s\nMD5sum: %s\nSHA1: %s\nSHA256: %s\n\n" \
         "$name" "$version" "$a" "$url" "$size" "$md5" "$sha1" "$sha256" \
