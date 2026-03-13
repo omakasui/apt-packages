@@ -16,15 +16,6 @@ MD5sum: 24f1bd379ece915384b90cb35aa94179
 SHA1: ae0e8ecd7dbadc5052c1be8d3b8514e6caf76b3f
 SHA256: 5cb82bc4f7d043801140afefe3b9a4e56de3e1794029565b9958d188b2dae317
 
-Package: nautilus-open-any-terminal
-Version: 0.8.1
-Architecture: all
-Filename: pool/nautilus-open-any-terminal-0.8.1/nautilus-open-any-terminal_0.8.1_ubuntu2404_all.deb
-Size: 18528
-MD5sum: 88c6b89cebf06af6ee694d5d0ffc5f08
-SHA1: 42a17d15caf0c5f6e642b932bc6898c65108ed72
-SHA256: 83ce27a7fac0eac03bd9e1328ced1e9cfe9a3ccb7c527aad2c23f28020c72d58
-
 Package: walker
 Version: 2.15.1
 Architecture: amd64
@@ -197,4 +188,27 @@ Size: 871842
 MD5sum: 47232b68f441bda67ba514c5a10fd4bb
 SHA1: 1863692102e8f2de5ed041a19f5f69822899345c
 SHA256: 761d214f84890e55452eac9ceb2c6066ac245578de6ec36f19d225e171666870
+
+Package: nautilus-open-any-terminal
+Version: 0.8.1
+Architecture: all
+Source: nautilus-open-any-terminal
+Maintainer: Felix Buehler <account@buehler.rocks>
+Installed-Size: 183
+Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
+Section: gnome
+Priority: optional
+Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
+Description: Nautilus extension to open any terminal emulator
+ This is an extension for Nautilus which adds a context menu entry
+ for opening various terminal emulators instead of being limited
+ to gnome-terminal.
+Conflicts: nautilus-extension-any-terminal
+Replaces: nautilus-extension-any-terminal
+Provides: nautilus-extension-any-terminal
+Filename: pool/nautilus-open-any-terminal-0.8.1/nautilus-open-any-terminal_0.8.1_ubuntu2404_all.deb
+Size: 18528
+MD5sum: 88c6b89cebf06af6ee694d5d0ffc5f08
+SHA1: 42a17d15caf0c5f6e642b932bc6898c65108ed72
+SHA256: 83ce27a7fac0eac03bd9e1328ced1e9cfe9a3ccb7c527aad2c23f28020c72d58
 
