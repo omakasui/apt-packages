@@ -53,7 +53,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 <suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256> <control_b64>
 ```
 
-`url` is the full GitHub Releases asset URL, written directly into the `Filename` field of the generated `Packages` index. `apt` downloads binaries directly from GitHub — no intermediate storage in this repo.
+`url` is the full GitHub Releases asset URL, stored as source of truth. When generating the `Packages` index, `update-index.sh` converts it to a pool-relative path (`pool/<tag>/<file>`). The Cloudflare Worker on `packages.omakasui.org` redirects `pool/` requests to the corresponding GitHub Releases asset — no binaries are stored in this repo.
 
 ## User setup
 
