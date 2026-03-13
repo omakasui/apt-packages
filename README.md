@@ -2,16 +2,58 @@
 
 APT repository for [omakasui](https://omakasui.org), served via GitHub Pages at `packages.omakasui.org`.
 
-Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this repo. Binary packages are stored as GitHub Release assets in [build-apt-packages](https://github.com/omakasui/build-apt-packages). The `Filename` field in the `Packages` index uses a pool-relative path (`pool/<tag>/<file>`), and a Cloudflare Worker on `packages.omakasui.org` redirects those requests to the corresponding GitHub Releases asset.
+Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this repo. Binary packages are stored as GitHub Release assets in [build-apt-packages](https://github.com/omakasui/build-apt-packages) and referenced directly via their full URL in the `Filename` field of the `Packages` index — no proxy or redirect layer required.
 
+## Suites and architectures
+
+| Suite | Distro | Architectures |
+|---|---|---|
+| `noble` | Ubuntu 24.04 | `amd64`, `arm64` |
+| `trixie` | Debian 13 | `amd64`, `arm64` |
+
+## Packages
+
+| Package | Upstream | Suites | Architectures |
+|---|---|---|---|
+| `cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | all |
+| `elephant` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-calc` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-clipboard` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-desktopapplications` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-files` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-menus` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-providerlist` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-runner` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-symbols` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-todo` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-unicode` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-websearch` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `fastfetch` | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | noble, trixie | amd64, arm64 |
+| `gum` | [gum](https://github.com/charmbracelet/gum) | noble, trixie | amd64, arm64 |
+| `ia-writer-mono` | [iA Writer Mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | all |
+| `jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | all |
+| `lazydocker` | [lazydocker](https://github.com/jesseduffield/lazydocker) | noble, trixie | amd64, arm64 |
+| `lazygit` | [lazygit](https://github.com/jesseduffield/lazygit) | noble, trixie | amd64, arm64 |
+| `makima` | [makima](https://github.com/cyber-sushi/makima) | noble, trixie | amd64, arm64 |
+| `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
+| `omakasui-aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | amd64, arm64 |
+| `omakasui-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
+| `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | all |
+| `gtk4-layer-shell` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | amd64, arm64 |
+| `uwsm` | [uwsm](https://github.com/Vladimir-csp/uwsm) | noble, trixie | amd64, arm64 |
+| `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
+| `yaru-theme` | [Yaru](https://github.com/ubuntu/yaru) | noble, trixie | all |
+| `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
+
+`omakasui-walker` is a metapackage that installs `walker`, `elephant`, and all elephant provider packages in one shot.
 
 ## packages.tsv format
 
 ```
-<suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256>
+<suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256> <control_b64>
 ```
 
-`url` is the full GitHub Releases asset URL, stored as the source of truth. When generating the `Packages` index, `update-index.sh` converts it to a pool-relative path (`pool/<tag>/<file>`). The Cloudflare Worker redirects `pool/` requests to GitHub Releases — `apt` follows the 302 and downloads from GitHub's CDN.
+`url` is the full GitHub Releases asset URL, written directly into the `Filename` field of the generated `Packages` index. `apt` downloads binaries directly from GitHub — no intermediate storage in this repo.
 
 ## User setup
 
