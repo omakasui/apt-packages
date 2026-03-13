@@ -7,15 +7,6 @@ MD5sum: 1dea033031277a9ec1bdf91dc760b91b
 SHA1: 549bdb96eace425f5ae5d1ad6803b944a4170280
 SHA256: d351bf4f902a93f57f0a19190cb25ed57fc5b676486e29c8dcb7389c62423564
 
-Package: walker
-Version: 2.15.1
-Architecture: arm64
-Filename: pool/walker-2.15.1/walker_2.15.1_ubuntu2404_arm64.deb
-Size: 2085494
-MD5sum: 81f2ce555066750dfdfb660af28126ea
-SHA1: 949500340d4eefb9d2b58c44767433b6863a36be
-SHA256: cb65f10beb5de8f8b5b0f3ca380398330fd59fac07ce9b4064a5c9e4bfd1be9e
-
 Package: font-cascadia-mono-nf
 Version: 3.4.0
 Architecture: all
@@ -219,4 +210,21 @@ Size: 63905984
 MD5sum: 2164351e5325b3660487ea388b62586a
 SHA1: 5be3a6e04494d8f0a1982d9ba562dd963b1520d2
 SHA256: aaecf0f419914902cbb903e7c44fa8669a0f711275152ddfa1a282f215d55c12
+
+Package: walker
+Version: 2.15.1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7980
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.15.1/walker_2.15.1_ubuntu2404_arm64.deb
+Size: 2085494
+MD5sum: 81f2ce555066750dfdfb660af28126ea
+SHA1: 949500340d4eefb9d2b58c44767433b6863a36be
+SHA256: cb65f10beb5de8f8b5b0f3ca380398330fd59fac07ce9b4064a5c9e4bfd1be9e
 
