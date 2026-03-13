@@ -240,195 +240,203 @@ Package: elephant
 Version: 2.20.2
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 29720
+Installed-Size: 19528
 Section: utils
 Priority: optional
 Homepage: https://github.com/abenz1267/elephant
-Description: Elephant - powerful data provider daemon for application launchers. Communicates via Unix sockets and Protocol Buffers. Install provider packages (e.g. omakasui-elephant-desktopapps) to add functionality.
- .
+Description: Elephant - powerful data provider daemon for application launchers.
+ Communicates via Unix sockets and Protocol Buffers.
+ Install provider packages to add functionality.
 Filename: pool/elephant-2.20.2/elephant_2.20.2_ubuntu2404_arm64.deb
-Size: 12304298
-MD5sum: 10565965e2f76b31c04585cb647862e6
-SHA1: df00f1558679bfd316faa5f6cb5cf80c8b184f64
-SHA256: 817ff0240d87fc66a7c322ad80c2569b6f789e024c71b7bde7dd922091eba91a
+Size: 6168878
+MD5sum: 6a0f7be1362708024f2233ea30884c0e
+SHA1: 40a94f4798e7cc506ce212275cf301b559afe8e9
+SHA256: aa82230bba89ad6fc19c4c61e4bdbe421e82df5db7a4fa3101de4b4e0d7cdf13
 
 Package: elephant-calc
 Version: 2.20.2
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20752
-Depends: libqalculate23 | libqalculate22 | libqalculate21
+Installed-Size: 20740
+Depends: elephant (= 2.20.2)
 Section: utils
 Priority: optional
 Homepage: https://github.com/abenz1267/elephant
-Description: Elephant calc provider plugin for the walker application launcher. Installs calc.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-calc-2.20.2/elephant-calc_2.20.2_ubuntu2404_arm64.deb
-Size: 6201284
-MD5sum: 0aee2d47870d4e3c018c7294f85e88c2
-SHA1: f93e3490544509bfb1dc3fbb5b5e5b5e1bee1826
-SHA256: e7c9ad81565763dcb9d406994323f4dffab631905d526c06774d9f5369cdc147
+Description: Elephant calc provider plugin for the walker application launcher.
+ Installs calc.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-calc_2.20.2_ubuntu2404_arm64.deb
+Size: 6199460
+MD5sum: f7f7d2e825aba5ba1e8364ba3c7dbf03
+SHA1: ceee1439767bd98c713c1f5c9c1fd37cb8748e10
+SHA256: 7bc9b6b7ca6b43c5531a96831fa6ddd7a09b6225e8e9c6aac2e7a9735515263b
 
 Package: elephant-clipboard
 Version: 2.20.2
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 23444
-Depends: wl-clipboard, imagemagick
+Installed-Size: 23432
+Depends: elephant (= 2.20.2)
 Section: utils
 Priority: optional
 Homepage: https://github.com/abenz1267/elephant
-Description: Elephant clipboard provider plugin for the walker application launcher. Installs clipboard.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-clipboard-2.20.2/elephant-clipboard_2.20.2_ubuntu2404_arm64.deb
-Size: 6550434
-MD5sum: dbb0138f76fa3931d170a6a94c8740af
-SHA1: 953ef4d8023ec88a5c8a70864031cbcfab1e7322
-SHA256: c9d55f08efc0ae3235ea63f7b7c2b851d1836c75f8936c10e7276893ae055404
-
-Package: elephant-files
-Version: 2.20.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22624
-Depends: fd-find
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant files provider plugin for the walker application launcher. Installs files.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-files-2.20.2/elephant-files_2.20.2_ubuntu2404_arm64.deb
-Size: 6955596
-MD5sum: f585ea6b398aa7e019c109dc53e7c42c
-SHA1: 0f55c4ceda8466a08cb981bcbe5b2adb971c0b04
-SHA256: 3e13a99f3f25681c473d0a6329834c6c7cc4107d1f827b3b921f2c9e79c16c41
-
-Package: elephant-menus
-Version: 2.20.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20496
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant menus provider plugin for the walker application launcher. Installs menus.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-menus-2.20.2/elephant-menus_2.20.2_ubuntu2404_arm64.deb
-Size: 6117216
-MD5sum: f97eaa5885533bc8fa89e3e787f49ec6
-SHA1: d4c4dc68a93df755ac639b183b9f4a04f8e43863
-SHA256: c4c619a78a59e7d48158f14f9c65fe5cd3fa5e122dd0005eb470916f2fb637c2
-
-Package: elephant-runner
-Version: 2.20.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20752
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant runner provider plugin for the walker application launcher. Installs runner.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-runner-2.20.2/elephant-runner_2.20.2_ubuntu2404_arm64.deb
-Size: 6209340
-MD5sum: 71cda96f338ddfcff728a180ba463ea7
-SHA1: 7f6fe2f1b6551c21744d03ddec8ae00a9da46482
-SHA256: 9c447432a338587b27edbb2869f7ba6000504d8618b7301bab26eb1d7d4bb55a
-
-Package: elephant-symbols
-Version: 2.20.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 62484
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant symbols provider plugin for the walker application launcher. Installs symbols.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-symbols-2.20.2/elephant-symbols_2.20.2_ubuntu2404_arm64.deb
-Size: 11488236
-MD5sum: 596155571f929e825c62dc71cae11704
-SHA1: efb37f1c68bbc20fb28514b83c3708088eaa60f2
-SHA256: 875cd6ea72e2baac9fef24c521119eb054aa2956fb5fa6b12fc7b6754767db3d
-
-Package: elephant-todo
-Version: 2.20.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 29776
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant todo provider plugin for the walker application launcher. Installs todo.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-todo-2.20.2/elephant-todo_2.20.2_ubuntu2404_arm64.deb
-Size: 8309578
-MD5sum: 2f6d4a814607fac996984dc777e25cea
-SHA1: 00686dd9e4f44266ce8036a12c2c467ccbfe2f02
-SHA256: 23e47f12719d6d6272ed84edeed17135bad233e943ff5fde5cb93e6cbc5b3b6e
-
-Package: elephant-unicode
-Version: 2.20.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22864
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant unicode provider plugin for the walker application launcher. Installs unicode.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-unicode-2.20.2/elephant-unicode_2.20.2_ubuntu2404_arm64.deb
-Size: 6427344
-MD5sum: 653faacb8ee03c8ac5094920ad5ae30e
-SHA1: 2c4ba36301a988a4b98be6ef765eb5db0113bfd9
-SHA256: 46a0ad57782be79ab9032c053f7836355350df1f60f803694ade1edb55567b75
-
-Package: elephant-websearch
-Version: 2.20.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20816
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant websearch provider plugin for the walker application launcher. Installs websearch.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-websearch-2.20.2/elephant-websearch_2.20.2_ubuntu2404_arm64.deb
-Size: 6220158
-MD5sum: 35ee48e66f4acd6cc27d7473d312902f
-SHA1: cba1bb2f083e0742b280e08c1102280b2a470d49
-SHA256: 4ac1df13bf1c5b00202f37159bb487675fba92105f286b282673ec6bfede2bb0
+Description: Elephant clipboard provider plugin for the walker application launcher.
+ Installs clipboard.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-clipboard_2.20.2_ubuntu2404_arm64.deb
+Size: 6549490
+MD5sum: 103682c93f9d9e85d5b20ca66036f15b
+SHA1: 173ab882866310aeb09d04b468b20fb4d364e767
+SHA256: 706a96f1cf3481ab728d6411a5ce08d5d4d34c1f037fd1a3ea4e58042155185e
 
 Package: elephant-desktopapplications
 Version: 2.20.2
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 31220
-Depends: elephant
+Installed-Size: 21316
+Depends: elephant (= 2.20.2)
 Section: utils
 Priority: optional
 Homepage: https://github.com/abenz1267/elephant
-Description: Elephant desktopapplications provider plugin. Enables application launcher entries from .desktop files in walker. Requires omakasui-elephant to be installed and running.
- .
-Filename: pool/elephant-desktopapplications-2.20.2/elephant-desktopapplications_2.20.2_ubuntu2404_arm64.deb
-Size: 12306614
-MD5sum: 95996961f0e5776c61ed1ac8ef575f6a
-SHA1: 093beef351eb18beba9573ef724976d9e796da63
-SHA256: 8bc37ddb3deac35c4af2555e224fb1c139e7eb219a391c9057493e6251415699
+Description: Elephant desktopapplications provider plugin for the walker application launcher.
+ Installs desktopapplications.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-desktopapplications_2.20.2_ubuntu2404_arm64.deb
+Size: 6353580
+MD5sum: d929979a60972e1d64d36f7b72737ec9
+SHA1: 3eab8c3ab0462c5229abc641cbf832e5aba4eb0b
+SHA256: 293ffa12a778ffb36528483b4bcf3beaf27073a81b1b127cf622e25d38abc69a
+
+Package: elephant-files
+Version: 2.20.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22612
+Depends: elephant (= 2.20.2)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant files provider plugin for the walker application launcher.
+ Installs files.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-files_2.20.2_ubuntu2404_arm64.deb
+Size: 6955620
+MD5sum: d9d942c288fd12e448c03400da3d09ba
+SHA1: 92367c4429638ec6941b0f023615c3695893d8cb
+SHA256: 216e6a4b9bc4aedd40a0da9c2696d8b4b8f3393ffb5a0859a8cddd8c7be81f0f
+
+Package: elephant-menus
+Version: 2.20.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 20484
+Depends: elephant (= 2.20.2)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant menus provider plugin for the walker application launcher.
+ Installs menus.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-menus_2.20.2_ubuntu2404_arm64.deb
+Size: 6117288
+MD5sum: 48741c5db4986c3ad874a86c25b49e18
+SHA1: 76a712eaaffb07e5c51d960bc7ea394c1e9fd339
+SHA256: a5d8bbd2b697b787ae248878eedf97debaa34caa11289d92d9db124b1fcc6f78
 
 Package: elephant-providerlist
 Version: 2.20.2
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20816
+Installed-Size: 20804
+Depends: elephant (= 2.20.2)
 Section: utils
 Priority: optional
 Homepage: https://github.com/abenz1267/elephant
-Description: Elephant providerlist provider plugin for the walker application launcher. Installs providerlist.so into /usr/lib/elephant/.
- .
-Filename: pool/elephant-providerlist-2.20.2/elephant-providerlist_2.20.2_ubuntu2404_arm64.deb
-Size: 6220570
-MD5sum: 92241e51795268ad0807e4960b054c0e
-SHA1: 62c51476476fd37db1fa7a973dcdfbdb7602a390
-SHA256: 1ad61753f391b1791f66c19f81858b71b9b18acd38b7e196e066bc1f74c3be2a
+Description: Elephant providerlist provider plugin for the walker application launcher.
+ Installs providerlist.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-providerlist_2.20.2_ubuntu2404_arm64.deb
+Size: 6222810
+MD5sum: 6855cb3e282b932dcc57521bc41af19a
+SHA1: 9fd4be9e3d51d50c3c4e62a9093c53a4630c2a80
+SHA256: 1d61c8e2ef5d4a9b22596378804c0b630514c60eb1cd0693074aee4e2cb45595
+
+Package: elephant-runner
+Version: 2.20.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 20740
+Depends: elephant (= 2.20.2)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant runner provider plugin for the walker application launcher.
+ Installs runner.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-runner_2.20.2_ubuntu2404_arm64.deb
+Size: 6209484
+MD5sum: 5f140a83d2a0dc9ae4b90a7746f8b351
+SHA1: 63dfd6ec0aa2f8d71b38b5fac845a6b25fa2a763
+SHA256: ad1cfa1f33f88edbe74b48ae38fd6c17a53afcb358072609f7c7ee5149911819
+
+Package: elephant-symbols
+Version: 2.20.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 62472
+Depends: elephant (= 2.20.2)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant symbols provider plugin for the walker application launcher.
+ Installs symbols.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-symbols_2.20.2_ubuntu2404_arm64.deb
+Size: 11491272
+MD5sum: cfc7b7bc0d49068d974a4690b7277cde
+SHA1: 235e13b673adc23562a21240bcfb7559aa5c1ecf
+SHA256: 672ef86a1217bde6ad204c2aea890de4f73365b2e74b0641db63bb4839a5f611
+
+Package: elephant-todo
+Version: 2.20.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 29764
+Depends: elephant (= 2.20.2)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant todo provider plugin for the walker application launcher.
+ Installs todo.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-todo_2.20.2_ubuntu2404_arm64.deb
+Size: 8309284
+MD5sum: df3e36be589afbca5dd6b57616d6424a
+SHA1: fd6aac42f80da0a1b0728436bc014bccec12e149
+SHA256: bf6562532bae18d0bb479c36dee7747b70548eda318874887f26888afaaaa642
+
+Package: elephant-unicode
+Version: 2.20.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22852
+Depends: elephant (= 2.20.2)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant unicode provider plugin for the walker application launcher.
+ Installs unicode.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-unicode_2.20.2_ubuntu2404_arm64.deb
+Size: 6428892
+MD5sum: 4606789a2c4b841ff9fe35530e6735fb
+SHA1: 498c6156446bfdc81579ec967c1b9360f36e862c
+SHA256: 8bea1d0af1c587477bcdce54c34f02d3a83a71e8658a61f92ba173af81eb0730
+
+Package: elephant-websearch
+Version: 2.20.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 20804
+Depends: elephant (= 2.20.2)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant websearch provider plugin for the walker application launcher.
+ Installs websearch.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.2/elephant-websearch_2.20.2_ubuntu2404_arm64.deb
+Size: 6227682
+MD5sum: 6f97e26154ddc92dbeb607786d2389ba
+SHA1: 0218f85288da99405870346a0aeefe3064686cc7
+SHA256: 8a4308c9eade5b69e6977b521a3552cb99da20d56810d8f1b35d5e17811af42a
 
