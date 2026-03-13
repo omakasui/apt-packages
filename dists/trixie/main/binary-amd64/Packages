@@ -7,42 +7,6 @@ MD5sum: c195cd08cadd4ef6dcc1b8d4eba48f51
 SHA1: 92034666058cb1053fcfa26a9e2e670f023b1c5b
 SHA256: ca909bb5911eb8f17fb12a60ebf4e54e93cbb34856696cc371d32f43c91e6268
 
-Package: omakasui-yaru-theme-gtk
-Version: 25.04.1-0ubuntu1
-Architecture: all
-Filename: pool/yaru-theme-25.04.1-0ubuntu1/omakasui-yaru-theme-gtk_25.04.1-0ubuntu1_debian13_all.deb
-Size: 926396
-MD5sum: ec9a1a8e47169ffb2c10e09c9b45fa70
-SHA1: 71e8daa0cb5c188caf23a163ea2a4c373351d87e
-SHA256: 33e3fa16d61c63de3354d3253acdb7cb8f0e261796e6e7fa836f6e5a397748dd
-
-Package: omakasui-yaru-theme-icon
-Version: 25.04.1-0ubuntu1
-Architecture: all
-Filename: pool/yaru-theme-25.04.1-0ubuntu1/omakasui-yaru-theme-icon_25.04.1-0ubuntu1_debian13_all.deb
-Size: 27482476
-MD5sum: caf6532afa1a1a4b8ca8cbb78244ff23
-SHA1: 1473462bbf4a0a66caebc968b019376d63fdc898
-SHA256: 52bc0dfec18ef295e05cbc3da86bf53e4d43a9c0678f9a46d785681bcb66cd9e
-
-Package: omakasui-yaru-theme-sound
-Version: 25.04.1-0ubuntu1
-Architecture: all
-Filename: pool/yaru-theme-25.04.1-0ubuntu1/omakasui-yaru-theme-sound_25.04.1-0ubuntu1_debian13_all.deb
-Size: 1084496
-MD5sum: e5bdbf0275035c37c11e1aa5c6d06dc9
-SHA1: 96d1d463f9dfbc79211f120bea7ba487447c2aa8
-SHA256: 8d739e9f976039878dabd7262568f9569fe30155062b35763bc2e289ff3b5028
-
-Package: omakasui-yaru-theme-gnome-shell
-Version: 25.04.1-0ubuntu1
-Architecture: all
-Filename: pool/yaru-theme-25.04.1-0ubuntu1/omakasui-yaru-theme-gnome-shell_25.04.1-0ubuntu1_debian13_all.deb
-Size: 86956
-MD5sum: 948c1c7f4b7164f1ee4a4d61aa2077f4
-SHA1: 28579e48038287e75f050d2884b21aedf90d0ae2
-SHA256: 5dd957508fe081b5443a90cae71fae2d95436ac8fd2b45067186042cb69a1558
-
 Package: font-cascadia-mono-nf
 Version: 3.4.0
 Architecture: all
@@ -296,4 +260,112 @@ Size: 2174930
 MD5sum: 8f6e72e05ba6bf664e1cd437c8683c1f
 SHA1: a4ed0dbbee6ab39c7746d62a8b93f71fbab75866
 SHA256: e63951b812e61626b601c31f242df1f82fae000600ae93dc5d56264443a3ecfa
+
+Package: omakasui-yaru-theme-gtk
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Source: yaru-theme
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 28601
+Depends:  gnome-themes-extra, gtk2-engines-pixbuf, gtk2-engines-murrine, libglib2.0-bin
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru GTK theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the GTK+ 2 and 3 theme parts
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+Conflicts: yaru-theme-gtk
+Replaces: yaru-theme-gtk
+Provides: yaru-theme-gtk
+Filename: pool/yaru-theme-25.04.1-0ubuntu1/omakasui-yaru-theme-gtk_25.04.1-0ubuntu1_debian13_all.deb
+Size: 926396
+MD5sum: ec9a1a8e47169ffb2c10e09c9b45fa70
+SHA1: 71e8daa0cb5c188caf23a163ea2a4c373351d87e
+SHA256: 33e3fa16d61c63de3354d3253acdb7cb8f0e261796e6e7fa836f6e5a397748dd
+
+Package: omakasui-yaru-theme-icon
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Source: yaru-theme
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 110521
+Suggests: humanity-icon-theme
+Breaks: gnome-shell-extension-ubuntu-dock (<< 90~)
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru icon theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the icon theme
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+Conflicts: yaru-theme-icon
+Replaces: yaru-theme-icon
+Provides: yaru-theme-icon
+Filename: pool/yaru-theme-25.04.1-0ubuntu1/omakasui-yaru-theme-icon_25.04.1-0ubuntu1_debian13_all.deb
+Size: 27482476
+MD5sum: caf6532afa1a1a4b8ca8cbb78244ff23
+SHA1: 1473462bbf4a0a66caebc968b019376d63fdc898
+SHA256: 52bc0dfec18ef295e05cbc3da86bf53e4d43a9c0678f9a46d785681bcb66cd9e
+
+Package: omakasui-yaru-theme-sound
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Source: yaru-theme
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 1368
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru sound theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the sound theme
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+Conflicts: yaru-theme-sound
+Replaces: yaru-theme-sound
+Provides: yaru-theme-sound
+Filename: pool/yaru-theme-25.04.1-0ubuntu1/omakasui-yaru-theme-sound_25.04.1-0ubuntu1_debian13_all.deb
+Size: 1084496
+MD5sum: e5bdbf0275035c37c11e1aa5c6d06dc9
+SHA1: 96d1d463f9dfbc79211f120bea7ba487447c2aa8
+SHA256: 8d739e9f976039878dabd7262568f9569fe30155062b35763bc2e289ff3b5028
+
+Package: omakasui-yaru-theme-gnome-shell
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Source: yaru-theme
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 2311
+Breaks: gnome-shell (<< 48~)
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru GNOME Shell desktop theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the GNOME Shell theme part
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+Conflicts: yaru-theme-gnome-shell
+Replaces: yaru-theme-gnome-shell
+Provides: yaru-theme-gnome-shell
+Filename: pool/yaru-theme-25.04.1-0ubuntu1/omakasui-yaru-theme-gnome-shell_25.04.1-0ubuntu1_debian13_all.deb
+Size: 86956
+MD5sum: 948c1c7f4b7164f1ee4a4d61aa2077f4
+SHA1: 28579e48038287e75f050d2884b21aedf90d0ae2
+SHA256: 5dd957508fe081b5443a90cae71fae2d95436ac8fd2b45067186042cb69a1558
 
