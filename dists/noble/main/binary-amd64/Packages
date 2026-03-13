@@ -1,12 +1,3 @@
-Package: lazygit
-Version: 0.60.0
-Architecture: amd64
-Filename: pool/lazygit-0.60.0/lazygit_0.60.0_ubuntu2404_amd64.deb
-Size: 6352122
-MD5sum: e9bfadf19b13f05ea36803f2df9c7fc2
-SHA1: 5aa2ff1d6a1221cea49e79b83b4bc835e4ab5935
-SHA256: 7b8e1a5ee4fe1dda51dcae8079a07a614a7de7a41069d339d2ad764279bfdf2c
-
 Package: zellij
 Version: 0.43.1
 Architecture: amd64
@@ -181,4 +172,21 @@ Size: 4023660
 MD5sum: 46f3d893b547ebb9dd92576bb45f2571
 SHA1: aa2037fd5d596bd0bb8376016c382151b52c972e
 SHA256: 64216054db30db0c4d5ee25ab356ce449791e9537d0abc1183fdeef2a5294cee
+
+Package: lazygit
+Version: 0.60.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21304
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Lazygit - a simple terminal UI for git commands. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven git interface inside any terminal.
+ .
+Filename: pool/lazygit-0.60.0/lazygit_0.60.0_ubuntu2404_amd64.deb
+Size: 6352122
+MD5sum: e9bfadf19b13f05ea36803f2df9c7fc2
+SHA1: 5aa2ff1d6a1221cea49e79b83b4bc835e4ab5935
+SHA256: 7b8e1a5ee4fe1dda51dcae8079a07a614a7de7a41069d339d2ad764279bfdf2c
 
