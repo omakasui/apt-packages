@@ -43,15 +43,6 @@ MD5sum: 88c6b89cebf06af6ee694d5d0ffc5f08
 SHA1: 42a17d15caf0c5f6e642b932bc6898c65108ed72
 SHA256: 83ce27a7fac0eac03bd9e1328ced1e9cfe9a3ccb7c527aad2c23f28020c72d58
 
-Package: font-jetbrains-mono
-Version: 2.304
-Architecture: all
-Filename: pool/jetbrains-mono-2.304/font-jetbrains-mono_2.304_ubuntu2404_all.deb
-Size: 830716
-MD5sum: 7cdaf92dd246174db38866fe6fcac53d
-SHA1: 0ccc9002c890d49d28f56dcb45f269e88f7c5dc6
-SHA256: 612dadb51fc37773a4234b817b611e303abd4c1d0e65acbca9049cdbf1006f79
-
 Package: makima
 Version: 0.10.3
 Architecture: arm64
@@ -167,4 +158,20 @@ Size: 133056
 MD5sum: 5f5b392b6424b6f9caa733ca91626371
 SHA1: 98268da84387be0bd7b7918a97152ecab5969f34
 SHA256: 8b344d8670eee6c44034e46386668e3f83687be6539a17028c84888a8f2c4dab
+
+Package: font-jetbrains-mono
+Version: 2.304
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7704
+Section: fonts
+Priority: optional
+Homepage: https://www.jetbrains.com/lp/mono/
+Description: JetBrains Mono — all TTF variants (Thin to ExtraBold with matching italics). A free and open-source typeface designed for developers.
+ .
+Filename: pool/jetbrains-mono-2.304/font-jetbrains-mono_2.304_ubuntu2404_all.deb
+Size: 830716
+MD5sum: 7cdaf92dd246174db38866fe6fcac53d
+SHA1: 0ccc9002c890d49d28f56dcb45f269e88f7c5dc6
+SHA256: 612dadb51fc37773a4234b817b611e303abd4c1d0e65acbca9049cdbf1006f79
 
