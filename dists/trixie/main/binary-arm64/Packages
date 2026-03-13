@@ -124,15 +124,6 @@ MD5sum: a38e3248469103e1990001d2441dc096
 SHA1: 5e4fd9a640ca6c23f2e7b8bd967fe7ae16675e21
 SHA256: 07913d40cb0b77289ba3bf6302d8efc6d457bbd1230a2f5a7b0a821598ed474c
 
-Package: walker
-Version: 2.15.1
-Architecture: arm64
-Filename: pool/walker-2.15.1/walker_2.15.1_debian13_arm64.deb
-Size: 2085732
-MD5sum: f648fbbe1fff98a8ad89f0e346767983
-SHA1: cfe3c4f3ab49608a05e22041de42685f03a95f57
-SHA256: df649fbaaaa6d5d504da247635683de10bbf48b778d71bdc8731d59651c16fa4
-
 Package: font-cascadia-mono-nf
 Version: 3.4.0
 Architecture: all
@@ -151,15 +142,6 @@ MD5sum: 25f074dcfc57098590dc38cd7844b84c
 SHA1: cadde80fd0349e6b1f73ae1397b51bef1962f995
 SHA256: e896bdf4e2a73076b4ec12380c76b3c7adc607bf0255e690bbd566b9a61d2e4c
 
-Package: font-ia-writer-mono
-Version: 20260310
-Architecture: all
-Filename: pool/ia-writer-mono-20260310/font-ia-writer-mono_20260310_debian13_all.deb
-Size: 133068
-MD5sum: ccf25e9e5ba604d0a439c2924911f297
-SHA1: 49b9c4f76b059f5124d0f50550f6ea7b1fd99cc8
-SHA256: f0ba7a24de8edea935b9c487d3bf2633c8f993dabe59a062e95306b3cc109486
-
 Package: makima
 Version: 0.10.3
 Architecture: arm64
@@ -168,4 +150,29 @@ Size: 833572
 MD5sum: 76aa0eccf28b9fda2c09f2e0fa465ca8
 SHA1: 410583adef9a693879033051a0f5a29339c98265
 SHA256: 273f1242e8560eca838d9f8bea77f3cee325ac8cf5550727b9e2341c47d39d05
+
+Package: font-ia-writer-mono
+Version: 20260310
+Architecture: all
+Installed-Size: 432
+Filename: pool/ia-writer-mono-20260310/font-ia-writer-mono_20260310_debian13_all.deb
+Size: 133068
+MD5sum: ccf25e9e5ba604d0a439c2924911f297
+SHA1: 49b9c4f76b059f5124d0f50550f6ea7b1fd99cc8
+SHA256: f0ba7a24de8edea935b9c487d3bf2633c8f993dabe59a062e95306b3cc109486
+Description: iA Writer Mono S — Static TTF variants (Regular, Italic, Bold, BoldItalic). Designed for writing and coding, used by the iA Writer app.
+ .
+
+Package: walker
+Version: 2.15.1
+Architecture: arm64
+Installed-Size: 8044
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
+Filename: pool/walker-2.15.1/walker_2.15.1_debian13_arm64.deb
+Size: 2085732
+MD5sum: f648fbbe1fff98a8ad89f0e346767983
+SHA1: cfe3c4f3ab49608a05e22041de42685f03a95f57
+SHA256: df649fbaaaa6d5d504da247635683de10bbf48b778d71bdc8731d59651c16fa4
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
 

@@ -31,10 +31,16 @@ for suite in $SUITES; do
     mkdir -p "$pkg_dir"
     : > "${pkg_dir}/Packages"
 
-    while IFS=' ' read -r s a name version url size md5 sha1 sha256 installed_size _rest; do
+    while IFS=' ' read -r s a name version url size md5 sha1 sha256 installed_size depends_b64 desc_b64 _rest; do
       [[ "$s" != "$suite" ]] && continue
       # Include arch-specific entries and arch:all entries for every arch.
       [[ "$a" != "$arch" && "$a" != "all" ]] && continue
+
+      # Decode optional base64-encoded fields (absent in older TSV entries).
+      depends=""
+      [[ -n "$depends_b64" ]] && depends=$(printf '%s' "$depends_b64" | base64 -d 2>/dev/null || echo "")
+      desc=""
+      [[ -n "$desc_b64" ]] && desc=$(printf '%s' "$desc_b64" | base64 -d 2>/dev/null || echo "")
 
       # Convert a full GitHub Releases URL to a pool-relative path.
       # https://github.com/OWNER/REPO/releases/download/TAG/FILE -> pool/TAG/FILE
@@ -53,11 +59,13 @@ for suite in $SUITES; do
         printf "Version: %s\n"      "$version"
         printf "Architecture: %s\n" "$a"
         [[ -n "$installed_size" ]] && printf "Installed-Size: %s\n" "$installed_size"
+        [[ -n "$depends" ]]         && printf "Depends: %s\n"        "$depends"
         printf "Filename: %s\n"     "$url"
         printf "Size: %s\n"         "$size"
         printf "MD5sum: %s\n"       "$md5"
         printf "SHA1: %s\n"         "$sha1"
         printf "SHA256: %s\n"       "$sha256"
+        [[ -n "$desc" ]]            && printf "Description: %s\n"    "$desc"
         printf "\n"
       } >> "${pkg_dir}/Packages"
     done < index/packages.tsv
