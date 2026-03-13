@@ -4,7 +4,7 @@ name: Update APT repo
 
 on:
   repository_dispatch:
-    types: [package-updated, remove-package, rebuild-index, clean-pool]
+    types: [packages-updated, package-updated, remove-package, rebuild-index, clean-pool]
 
   workflow_dispatch:
     inputs:
@@ -72,6 +72,9 @@ jobs:
             echo "pattern=${{ github.event.client_payload.pattern }}" >> "$GITHUB_OUTPUT"
             PRODUCES=$(echo '${{ toJson(github.event.client_payload.produces) }}' | jq -c '.')
             echo "produces=${PRODUCES}"                               >> "$GITHUB_OUTPUT"
+            # packages-updated batch payload: JSON array of {package,version,suites,produces}
+            PKGS_JSON=$(echo '${{ toJson(github.event.client_payload.packages) }}' | jq -c '. // []')
+            echo "packages_json=${PKGS_JSON}"                         >> "$GITHUB_OUTPUT"
           else
             echo "action=${{ inputs.action }}"   >> "$GITHUB_OUTPUT"
             echo "package=${{ inputs.package }}" >> "$GITHUB_OUTPUT"
@@ -99,6 +102,28 @@ jobs:
           FINGERPRINT=$(gpg --fingerprint --with-colons "${{ secrets.GPG_KEY_ID }}" \
             | awk -F: '/^fpr/{print $10; exit}')
           echo "${FINGERPRINT}:6:" | gpg --import-ownertrust
+
+      - name: '[packages-updated] Register all packages in index manifest'
+        if: steps.params.outputs.action == 'packages-updated'
+        env:
+          GH_TOKEN: ${{ secrets.APT_PKG_DISPATCH_TOKEN }}
+        run: |
+          # Iterate the packages JSON array and register each entry in sequence.
+          # Running them sequentially in a single job avoids concurrent push conflicts.
+          PKGS_JSON='${{ steps.params.outputs.packages_json }}'
+          while IFS= read -r entry; do
+            PKG=$(echo      "$entry" | jq -r '.package')
+            VERSION=$(echo  "$entry" | jq -r '.version')
+            SUITES=$(echo   "$entry" | jq -r '.suites')
+            PRODUCES=$(echo "$entry" | jq -r '.produces | if length == 0 then "" else join(" ") end')
+
+            echo "==> Registering: ${PKG} ${VERSION} (suites: ${SUITES})"
+            bash scripts/register-package.sh \
+              --pkg      "$PKG" \
+              --version  "$VERSION" \
+              --suites   "$SUITES" \
+              --produces "$PRODUCES"
+          done < <(echo "$PKGS_JSON" | jq -c '.[]')
 
       - name: '[package-updated] Register package in index manifest'
         if: steps.params.outputs.action == 'package-updated'
@@ -154,10 +179,11 @@ jobs:
           VERSION="${{ steps.params.outputs.version }}"
           PATTERN="${{ steps.params.outputs.pattern }}"
           case "$ACTION" in
-            package-updated) MSG="apt: ${PKG} ${VERSION} [$(date '+%Y-%m-%d')]" ;;
-            remove-package)  MSG="apt: remove ${PKG} [$(date '+%Y-%m-%d')]" ;;
-            clean-pool)      MSG="apt: clean ${PATTERN} [$(date '+%Y-%m-%d')]" ;;
-            *)               MSG="apt: rebuild index [$(date '+%Y-%m-%d')]" ;;
+            packages-updated) MSG="apt: batch update [$(date '+%Y-%m-%d')]" ;;
+            package-updated)  MSG="apt: ${PKG} ${VERSION} [$(date '+%Y-%m-%d')]" ;;
+            remove-package)   MSG="apt: remove ${PKG} [$(date '+%Y-%m-%d')]" ;;
+            clean-pool)       MSG="apt: clean ${PATTERN} [$(date '+%Y-%m-%d')]" ;;
+            *)                MSG="apt: rebuild index [$(date '+%Y-%m-%d')]" ;;
           esac
 
           # Snapshot artifacts produced in this run before any git reset.
