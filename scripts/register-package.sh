@@ -43,15 +43,16 @@ touch index/packages.tsv
 _register_entry() {
   local suite="$1" arch="$2" name="$3" version="$4" url="$5" deb="$6"
 
-  local size md5 sha1 sha256
+  local size md5 sha1 sha256 installed_size
   size=$(wc -c < "$deb")
   md5=$(md5sum       "$deb" | cut -d' ' -f1)
   sha1=$(sha1sum     "$deb" | cut -d' ' -f1)
   sha256=$(sha256sum "$deb" | cut -d' ' -f1)
+  installed_size=$(dpkg-deb --field "$deb" Installed-Size 2>/dev/null || echo "")
 
   # Remove any existing entry for this suite/arch/name, then append the new one.
   grep -v "^${suite} ${arch} ${name} " index/packages.tsv > /tmp/packages.tmp || true
-  echo "${suite} ${arch} ${name} ${version} ${url} ${size} ${md5} ${sha1} ${sha256}" \
+  echo "${suite} ${arch} ${name} ${version} ${url} ${size} ${md5} ${sha1} ${sha256} ${installed_size}" \
     >> /tmp/packages.tmp
   mv /tmp/packages.tmp index/packages.tsv
 

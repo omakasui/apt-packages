@@ -31,7 +31,7 @@ for suite in $SUITES; do
     mkdir -p "$pkg_dir"
     : > "${pkg_dir}/Packages"
 
-    while IFS=' ' read -r s a name version url size md5 sha1 sha256; do
+    while IFS=' ' read -r s a name version url size md5 sha1 sha256 installed_size _rest; do
       [[ "$s" != "$suite" ]] && continue
       # Include arch-specific entries and arch:all entries for every arch.
       [[ "$a" != "$arch" && "$a" != "all" ]] && continue
@@ -48,9 +48,18 @@ for suite in $SUITES; do
         url="pool/${_tag}/${_file}"
       fi
 
-      printf "Package: %s\nVersion: %s\nArchitecture: %s\nFilename: %s\nSize: %s\nMD5sum: %s\nSHA1: %s\nSHA256: %s\n\n" \
-        "$name" "$version" "$a" "$url" "$size" "$md5" "$sha1" "$sha256" \
-        >> "${pkg_dir}/Packages"
+      {
+        printf "Package: %s\n"      "$name"
+        printf "Version: %s\n"      "$version"
+        printf "Architecture: %s\n" "$a"
+        [[ -n "$installed_size" ]] && printf "Installed-Size: %s\n" "$installed_size"
+        printf "Filename: %s\n"     "$url"
+        printf "Size: %s\n"         "$size"
+        printf "MD5sum: %s\n"       "$md5"
+        printf "SHA1: %s\n"         "$sha1"
+        printf "SHA256: %s\n"       "$sha256"
+        printf "\n"
+      } >> "${pkg_dir}/Packages"
     done < index/packages.tsv
 
     gzip -k -f "${pkg_dir}/Packages"
