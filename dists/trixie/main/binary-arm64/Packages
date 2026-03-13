@@ -106,15 +106,6 @@ MD5sum: 76aa0eccf28b9fda2c09f2e0fa465ca8
 SHA1: 410583adef9a693879033051a0f5a29339c98265
 SHA256: 273f1242e8560eca838d9f8bea77f3cee325ac8cf5550727b9e2341c47d39d05
 
-Package: font-ia-writer-mono
-Version: 20260310
-Architecture: all
-Filename: pool/ia-writer-mono-20260310/font-ia-writer-mono_20260310_debian13_all.deb
-Size: 133068
-MD5sum: ccf25e9e5ba604d0a439c2924911f297
-SHA1: 49b9c4f76b059f5124d0f50550f6ea7b1fd99cc8
-SHA256: f0ba7a24de8edea935b9c487d3bf2633c8f993dabe59a062e95306b3cc109486
-
 Package: walker
 Version: 2.15.1
 Architecture: arm64
@@ -205,4 +196,20 @@ Size: 4260486
 MD5sum: 96aba67f80d59d3f37d37cf70c1f3c08
 SHA1: 314e0ae00b1cd1433071c26f208855dc2f2298d9
 SHA256: 9ae145bdd738f65e843f904957496d5aea1c2c182f3f1999b609ed9627f6a68e
+
+Package: font-ia-writer-mono
+Version: 20260310
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 432
+Section: fonts
+Priority: optional
+Homepage: https://github.com/iaolo/iA-Fonts
+Description: iA Writer Mono S — Static TTF variants (Regular, Italic, Bold, BoldItalic). Designed for writing and coding, used by the iA Writer app.
+ .
+Filename: pool/ia-writer-mono-20260310/font-ia-writer-mono_20260310_debian13_all.deb
+Size: 133068
+MD5sum: ccf25e9e5ba604d0a439c2924911f297
+SHA1: 49b9c4f76b059f5124d0f50550f6ea7b1fd99cc8
+SHA256: f0ba7a24de8edea935b9c487d3bf2633c8f993dabe59a062e95306b3cc109486
 
