@@ -33,6 +33,10 @@ on:
         description: 'Glob pattern for clean-pool (e.g. "omakasui-lazygit*")'
         required: false
         type: string
+      produces:
+        description: 'Space-separated list of produced package names (e.g. "omakasui-fastfetch"). Leave empty to use package name.'
+        required: false
+        type: string
 
 # All known suite codenames. Update here when adding a new distro.
 # Must stay in sync with build-matrix.yml in omakasui/build-apt-packages.
@@ -74,7 +78,13 @@ jobs:
             echo "version=${{ inputs.version }}"  >> "$GITHUB_OUTPUT"
             echo "suites=${{ inputs.suites }}"    >> "$GITHUB_OUTPUT"
             echo "pattern=${{ inputs.pattern }}" >> "$GITHUB_OUTPUT"
-            echo "produces=[]"                   >> "$GITHUB_OUTPUT"
+            # Convert space-separated produces input to JSON array.
+            if [[ -n "${{ inputs.produces }}" ]]; then
+              PRODUCES_JSON=$(echo "${{ inputs.produces }}" | tr ' ' '\n' | jq -Rc '[.,inputs]' 2>/dev/null || echo "[]")
+              echo "produces=${PRODUCES_JSON}"    >> "$GITHUB_OUTPUT"
+            else
+              echo "produces=[]"                  >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - name: Install APT tools
