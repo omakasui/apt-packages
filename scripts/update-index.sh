@@ -49,11 +49,8 @@ for suite in $SUITES; do
         url="pool/${_tag}/${_file}"
       fi
 
-      if [[ -n "${control_b64:-}" ]]; then
-        # v2 entry: decode the full control stanza, strip Package/Version/Architecture
-        # (we write those ourselves) and append repo-specific fields.
-        _control=$(printf '%s' "$control_b64" | base64 -d)
-
+      if [[ -n "${control_b64:-}" ]] && _control=$(printf '%s' "$control_b64" | base64 -d 2>/dev/null) && [[ "$_control" == *":"* ]]; then
+        # v2 entry: decoded control stanza contains field headers (e.g. "Maintainer:").
         # Write Package/Version/Architecture first (authoritative from TSV).
         printf "Package: %s\n"      "$name"    >> "${pkg_dir}/Packages"
         printf "Version: %s\n"      "$version" >> "${pkg_dir}/Packages"
