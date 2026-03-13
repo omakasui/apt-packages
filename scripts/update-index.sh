@@ -9,7 +9,8 @@
 # Usage:
 #   update-index.sh --suites "<suite1> <suite2>"
 #
-# TSV format: <suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256>
+# TSV format (v2): <suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256> <control_b64>
+# Legacy format (v1): same but without <control_b64> (9 fields).
 
 set -euo pipefail
 
@@ -31,16 +32,10 @@ for suite in $SUITES; do
     mkdir -p "$pkg_dir"
     : > "${pkg_dir}/Packages"
 
-    while IFS=' ' read -r s a name version url size md5 sha1 sha256 installed_size depends_b64 desc_b64 _rest; do
+    while IFS=' ' read -r s a name version url size md5 sha1 sha256 control_b64 _rest; do
       [[ "$s" != "$suite" ]] && continue
       # Include arch-specific entries and arch:all entries for every arch.
       [[ "$a" != "$arch" && "$a" != "all" ]] && continue
-
-      # Decode optional base64-encoded fields (absent in older TSV entries).
-      depends=""
-      [[ -n "$depends_b64" ]] && depends=$(printf '%s' "$depends_b64" | base64 -d 2>/dev/null || echo "")
-      desc=""
-      [[ -n "$desc_b64" ]] && desc=$(printf '%s' "$desc_b64" | base64 -d 2>/dev/null || echo "")
 
       # Convert a full GitHub Releases URL to a pool-relative path.
       # https://github.com/OWNER/REPO/releases/download/TAG/FILE -> pool/TAG/FILE
@@ -54,20 +49,33 @@ for suite in $SUITES; do
         url="pool/${_tag}/${_file}"
       fi
 
-      {
-        printf "Package: %s\n"      "$name"
-        printf "Version: %s\n"      "$version"
-        printf "Architecture: %s\n" "$a"
-        [[ -n "$installed_size" ]] && printf "Installed-Size: %s\n" "$installed_size"
-        [[ -n "$depends" ]]         && printf "Depends: %s\n"        "$depends"
-        printf "Filename: %s\n"     "$url"
-        printf "Size: %s\n"         "$size"
-        printf "MD5sum: %s\n"       "$md5"
-        printf "SHA1: %s\n"         "$sha1"
-        printf "SHA256: %s\n"       "$sha256"
-        [[ -n "$desc" ]]            && printf "Description: %s\n"    "$desc"
-        printf "\n"
-      } >> "${pkg_dir}/Packages"
+      if [[ -n "${control_b64:-}" ]]; then
+        # v2 entry: decode the full control stanza, strip Package/Version/Architecture
+        # (we write those ourselves) and append repo-specific fields.
+        _control=$(printf '%s' "$control_b64" | base64 -d)
+
+        # Write Package/Version/Architecture first (authoritative from TSV).
+        printf "Package: %s\n"      "$name"    >> "${pkg_dir}/Packages"
+        printf "Version: %s\n"      "$version" >> "${pkg_dir}/Packages"
+        printf "Architecture: %s\n" "$a"       >> "${pkg_dir}/Packages"
+
+        # Append remaining control fields (skip Package/Version/Architecture).
+        printf '%s\n' "$_control" | grep -v -E \
+          '^(Package|Version|Architecture):' >> "${pkg_dir}/Packages"
+
+        # Append repo-specific fields.
+        printf "Filename: %s\n" "$url"    >> "${pkg_dir}/Packages"
+        printf "Size: %s\n"    "$size"   >> "${pkg_dir}/Packages"
+        printf "MD5sum: %s\n"  "$md5"    >> "${pkg_dir}/Packages"
+        printf "SHA1: %s\n"   "$sha1"   >> "${pkg_dir}/Packages"
+        printf "SHA256: %s\n" "$sha256"  >> "${pkg_dir}/Packages"
+        printf "\n"                       >> "${pkg_dir}/Packages"
+      else
+        # Legacy v1 entry (no control stanza): minimal output.
+        printf "Package: %s\nVersion: %s\nArchitecture: %s\nFilename: %s\nSize: %s\nMD5sum: %s\nSHA1: %s\nSHA256: %s\n\n" \
+          "$name" "$version" "$a" "$url" "$size" "$md5" "$sha1" "$sha256" \
+          >> "${pkg_dir}/Packages"
+      fi
     done < index/packages.tsv
 
     gzip -k -f "${pkg_dir}/Packages"

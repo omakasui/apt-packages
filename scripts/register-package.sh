@@ -43,18 +43,19 @@ touch index/packages.tsv
 _register_entry() {
   local suite="$1" arch="$2" name="$3" version="$4" url="$5" deb="$6"
 
-  local size md5 sha1 sha256 installed_size depends_b64 desc_b64
+  local size md5 sha1 sha256 control_b64
   size=$(wc -c < "$deb")
   md5=$(md5sum       "$deb" | cut -d' ' -f1)
   sha1=$(sha1sum     "$deb" | cut -d' ' -f1)
   sha256=$(sha256sum "$deb" | cut -d' ' -f1)
-  installed_size=$(dpkg-deb --field "$deb" Installed-Size 2>/dev/null || echo "")
-  depends_b64=$(dpkg-deb --field "$deb" Depends 2>/dev/null | base64 -w0 || echo "")
-  desc_b64=$(dpkg-deb --field "$deb" Description 2>/dev/null | base64 -w0 || echo "")
+
+  # Capture the full control stanza from the .deb (Maintainer, Depends,
+  # Installed-Size, Description, etc.) and base64-encode it for TSV storage.
+  control_b64=$(dpkg-deb --field "$deb" | base64 -w0)
 
   # Remove any existing entry for this suite/arch/name, then append the new one.
   grep -v "^${suite} ${arch} ${name} " index/packages.tsv > /tmp/packages.tmp || true
-  echo "${suite} ${arch} ${name} ${version} ${url} ${size} ${md5} ${sha1} ${sha256} ${installed_size} ${depends_b64} ${desc_b64}" \
+  echo "${suite} ${arch} ${name} ${version} ${url} ${size} ${md5} ${sha1} ${sha256} ${control_b64}" \
     >> /tmp/packages.tmp
   mv /tmp/packages.tmp index/packages.tsv
 
