@@ -7,15 +7,6 @@ MD5sum: f3531b0cd299f90a5e451cc0fbba272a
 SHA1: 3f2db5ebf4834a1c964bb1f49c8b62676eb8d157
 SHA256: 3df10060b8ceb7b63e1017067715af905ad23257c26bfe1a67714118d9b2ea64
 
-Package: lazydocker
-Version: 0.24.4
-Architecture: arm64
-Filename: pool/lazydocker-0.24.4/lazydocker_0.24.4_ubuntu2404_arm64.deb
-Size: 3611060
-MD5sum: 29b28fc3a838d0824936596d36e00701
-SHA1: bba29a57b920e8de3232ef2a076b5cc5b385f41e
-SHA256: b9e4e1574477a6c4d98715225d79ff47dd679322a8438d8c5da3b7c4aba7b02b
-
 Package: zellij
 Version: 0.43.1
 Architecture: arm64
@@ -174,4 +165,20 @@ Size: 830716
 MD5sum: 7cdaf92dd246174db38866fe6fcac53d
 SHA1: 0ccc9002c890d49d28f56dcb45f269e88f7c5dc6
 SHA256: 612dadb51fc37773a4234b817b611e303abd4c1d0e65acbca9049cdbf1006f79
+
+Package: lazydocker
+Version: 0.24.4
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 11920
+Section: utils
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazydocker
+Description: Lazydocker - a simple terminal UI for Docker and Docker Compose. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven interface to manage containers, images, and volumes. Requires Docker (docker-ce or docker.io) to be installed separately.
+ .
+Filename: pool/lazydocker-0.24.4/lazydocker_0.24.4_ubuntu2404_arm64.deb
+Size: 3611060
+MD5sum: 29b28fc3a838d0824936596d36e00701
+SHA1: bba29a57b920e8de3232ef2a076b5cc5b385f41e
+SHA256: b9e4e1574477a6c4d98715225d79ff47dd679322a8438d8c5da3b7c4aba7b02b
 
