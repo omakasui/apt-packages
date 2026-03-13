@@ -25,9 +25,3 @@ echo "deb [signed-by=/etc/apt/trusted.gpg.d/omakasui-packages.gpg] \
 
 sudo apt-get update
 ```
-
-Or use the install script:
-
-```bash
-curl -fsSL https://packages.omakasui.org/install.sh | bash
-```
