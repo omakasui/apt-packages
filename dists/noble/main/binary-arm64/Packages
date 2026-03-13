@@ -52,15 +52,6 @@ MD5sum: 88c6b89cebf06af6ee694d5d0ffc5f08
 SHA1: 42a17d15caf0c5f6e642b932bc6898c65108ed72
 SHA256: 83ce27a7fac0eac03bd9e1328ced1e9cfe9a3ccb7c527aad2c23f28020c72d58
 
-Package: gtk4-layer-shell
-Version: 1.1.0
-Architecture: arm64
-Filename: pool/gtk4-layer-shell-1.1.0/gtk4-layer-shell_1.1.0_ubuntu2404_arm64.deb
-Size: 39406
-MD5sum: 83af863c91c3459d796efb3d7b1b6ba9
-SHA1: 33f6cd3a1736e063fd6d677e7fb305195a3a3a47
-SHA256: a22bcc0e294a8e2407459d4d58f552bf36a173eed4ae00b9a3233a78af68207f
-
 Package: font-jetbrains-mono
 Version: 2.304
 Architecture: all
@@ -145,4 +136,21 @@ Size: 3931704
 MD5sum: 02fd93e1e5b78fa98f45f9db1cfe7a17
 SHA1: 30dc65feb080ffb59cde565ca6bdf1f18385ef40
 SHA256: 8a2730a1b4eab436a3d29af4d5f856ae3b0369d828706200179c64e7d1f4ece1
+
+Package: gtk4-layer-shell
+Version: 1.1.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 280
+Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: GTK4 Layer Shell - library for the Wayland Layer Shell protocol with GTK4. Provides libgtk4-layer-shell.so and GObject Introspection typelib. Required by GJS/GTK4 apps that use the Layer Shell protocol (e.g. omakasui-aether).
+ .
+Filename: pool/gtk4-layer-shell-1.1.0/gtk4-layer-shell_1.1.0_ubuntu2404_arm64.deb
+Size: 39406
+MD5sum: 83af863c91c3459d796efb3d7b1b6ba9
+SHA1: 33f6cd3a1736e063fd6d677e7fb305195a3a3a47
+SHA256: a22bcc0e294a8e2407459d4d58f552bf36a173eed4ae00b9a3233a78af68207f
 
