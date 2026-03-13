@@ -376,3 +376,20 @@ MD5sum: 9d1d67e104437dde39792d320f08d5d2
 SHA1: 0b00b8ec76d2c19ea0f91d3c9f6d086b3cc186a9
 SHA256: 20e353ba4b9a0ccf1c801a4e0f53f910e4b3fae06f231a9997d4e34a5a6760db
 
+Package: omakasui-walker
+Version: 2.15.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4
+Depends: walker, elephant, elephant-desktopapplications, elephant-calc, elephant-clipboard, elephant-files, elephant-menus, elephant-providerlist, elephant-runner, elephant-symbols, elephant-todo, elephant-unicode, elephant-websearch
+Section: utils
+Priority: optional
+Homepage: https://github.com/omakasui/omakasui
+Description: omakasui-walker — metapackage for walker and elephant providers. Installs walker, elephant, and all elephant provider packages in one shot.
+ .
+Filename: pool/omakasui-walker-2.15.1/omakasui-walker_2.15.1_debian13_all.deb
+Size: 688
+MD5sum: fbe83828c6ae60fcf44a0a4e70616e70
+SHA1: 36e8870d235f00202158c4303ee51192a2e427b6
+SHA256: a9d4d909583e7bb2033d124073dfe96285b3e42ea6b36e0ea4d6869e39159806
+
