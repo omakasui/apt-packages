@@ -1,6 +1,6 @@
 # apt-packages
 
-APT repository for [omakasui](https://github.com/omakasui/omakasui), served via GitHub Pages at `packages.omakasui.org`.
+APT repository for [omakasui](https://omakasui.org), served via GitHub Pages at `packages.omakasui.org`.
 
 Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this repo. Binary packages are stored as GitHub Release assets in [build-apt-packages](https://github.com/omakasui/build-apt-packages). The `Filename` field in the `Packages` index uses a pool-relative path (`pool/<tag>/<file>`), and a Cloudflare Worker on `packages.omakasui.org` redirects those requests to the corresponding GitHub Releases asset.
 
