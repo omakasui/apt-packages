@@ -39,6 +39,11 @@ on:
 env:
   ALL_SUITES: "trixie noble"
 
+# Serialize runs so concurrent package-updated events don't overwrite each other.
+concurrency:
+  group: update-apt-repo
+  cancel-in-progress: false
+
 jobs:
   update:
     name: Update APT repo
