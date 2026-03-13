@@ -43,15 +43,6 @@ MD5sum: 2164351e5325b3660487ea388b62586a
 SHA1: 5be3a6e04494d8f0a1982d9ba562dd963b1520d2
 SHA256: aaecf0f419914902cbb903e7c44fa8669a0f711275152ddfa1a282f215d55c12
 
-Package: elephant-menus
-Version: 2.20.2
-Architecture: arm64
-Filename: pool/elephant-menus-2.20.2/elephant-menus_2.20.2_ubuntu2404_arm64.deb
-Size: 6117340
-MD5sum: 91081192254ee8d3b32fa0184a9a2c12
-SHA1: 7fbf4afc35e70bb67b7d8e33a2c974e3540725b4
-SHA256: e5c26e90bc46a4af207864737c25db42d50c3872a0d6a4a52370364fcee11882
-
 Package: nautilus-open-any-terminal
 Version: 0.8.1
 Architecture: all
@@ -130,4 +121,20 @@ Size: 6922974
 MD5sum: 709a195e99d4aac7b54dac0383e83810
 SHA1: 730e4a34331221b122afad64d4fb9c3224b50526
 SHA256: 204a6f27034054818c1cf03c8c23b530cb27ca0cb5b659a550b2383bb43ad863
+
+Package: elephant-menus
+Version: 2.20.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 20496
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant menus provider plugin for the walker application launcher. Installs menus.so into /usr/lib/elephant/.
+ .
+Filename: pool/elephant-menus-2.20.2/elephant-menus_2.20.2_ubuntu2404_arm64.deb
+Size: 6117340
+MD5sum: 91081192254ee8d3b32fa0184a9a2c12
+SHA1: 7fbf4afc35e70bb67b7d8e33a2c974e3540725b4
+SHA256: e5c26e90bc46a4af207864737c25db42d50c3872a0d6a4a52370364fcee11882
 
