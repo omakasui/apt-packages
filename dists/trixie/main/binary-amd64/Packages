@@ -1,12 +1,3 @@
-Package: zellij
-Version: 0.43.1
-Architecture: amd64
-Filename: pool/zellij-0.43.1/zellij_0.43.1_debian13_amd64.deb
-Size: 12366368
-MD5sum: c195cd08cadd4ef6dcc1b8d4eba48f51
-SHA1: 92034666058cb1053fcfa26a9e2e670f023b1c5b
-SHA256: ca909bb5911eb8f17fb12a60ebf4e54e93cbb34856696cc371d32f43c91e6268
-
 Package: font-cascadia-mono-nf
 Version: 3.4.0
 Architecture: all
@@ -368,4 +359,20 @@ Size: 86956
 MD5sum: 948c1c7f4b7164f1ee4a4d61aa2077f4
 SHA1: 28579e48038287e75f050d2884b21aedf90d0ae2
 SHA256: 5dd957508fe081b5443a90cae71fae2d95436ac8fd2b45067186042cb69a1558
+
+Package: zellij
+Version: 0.43.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 49852
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij - a terminal workspace with batteries included. Installs the official upstream musl release binary for amd64 and arm64. Provides floating panes, layouts, multiplayer collaboration, and a plugin system.
+ .
+Filename: pool/zellij-0.43.1/zellij_0.43.1_debian13_amd64.deb
+Size: 12366368
+MD5sum: c195cd08cadd4ef6dcc1b8d4eba48f51
+SHA1: 92034666058cb1053fcfa26a9e2e670f023b1c5b
+SHA256: ca909bb5911eb8f17fb12a60ebf4e54e93cbb34856696cc371d32f43c91e6268
 
