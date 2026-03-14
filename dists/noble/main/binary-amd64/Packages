@@ -440,3 +440,20 @@ MD5sum: dfada6148391ebc6061868744dfe0354
 SHA1: b8a39ae77ee0bf16450cc5d5020800a4da7bdcae
 SHA256: 6271aaa3cb5a2171184ac9d0a608211937364d9f48329cd1ff745d7fbfaba791
 
+Package: ufw-docker
+Version: 251123
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 48
+Depends: ufw
+Section: net
+Priority: optional
+Homepage: https://github.com/chaifeng/ufw-docker
+Description: ufw-docker — fix the Docker and UFW security flaw. Installs the ufw-docker management script to /usr/local/bin/ufw-docker.
+ .
+Filename: pool/ufw-docker-251123/ufw-docker_251123_ubuntu2404_all.deb
+Size: 8388
+MD5sum: 6f91084658c1879ff73c595e679f3205
+SHA1: 5aede37a6d8b8f5091af53dc615a448aa7d110c8
+SHA256: 76bd5a81a8ba38d991928fde0010d44db03f1191f8458f94a515cfa7b15cd90b
+
