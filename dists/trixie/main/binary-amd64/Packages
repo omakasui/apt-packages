@@ -406,27 +406,27 @@ Description: Elephant - powerful data provider daemon for application launchers.
  Communicates via Unix sockets and Protocol Buffers.
  Install provider packages to add functionality.
 Filename: pool/elephant-2.20.2/elephant_2.20.2_debian13_amd64.deb
-Size: 6337928
-MD5sum: a411b1557306a4b28ef3add11c751819
-SHA1: a905f90ff8fc9750668338ed29ea0b912a5a2dc8
-SHA256: 6695947467e0c100ca205aa68dbe26ad76a5507043b0a60715862e8695fd4be1
+Size: 6335728
+MD5sum: 7244b87716de0c670868dfe5df0b92d5
+SHA1: e121890a6638a09e90c007f570ad17462d788e62
+SHA256: 0faba4adcc0f996c95a3fe641d76da33266d44089ce53ebe4cd9d6f7419570dd
 
 Package: elephant-calc
 Version: 2.20.2
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
 Installed-Size: 21720
-Depends: elephant (= 2.20.2), libqalculate23t64 | libqalculate23 | libqalculate-dev
+Depends: elephant (= 2.20.2), qalc
 Section: utils
 Priority: optional
 Homepage: https://github.com/abenz1267/elephant
 Description: Elephant calc provider plugin for the walker application launcher.
  Installs calc.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-calc_2.20.2_debian13_amd64.deb
-Size: 6035460
-MD5sum: 596f0a4254ab4a2aa8ddedb591218801
-SHA1: a12b3bcaa572e89671c520d29288423f9caf5b14
-SHA256: f9c14509173cbf710e7257b7787ed59959d101a0cb01c45b0878ed5d1ad0ebd6
+Size: 6036252
+MD5sum: c9d9c099af6668b3ead578c1296868b0
+SHA1: 3b813923175cb968ba233db8ef852e1e03de5791
+SHA256: dda514a939c683f8a25a60c0ac2cc4c19907a7a6abad1207d12f3ad98cfdef03
 
 Package: elephant-clipboard
 Version: 2.20.2
@@ -440,10 +440,10 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant clipboard provider plugin for the walker application launcher.
  Installs clipboard.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-clipboard_2.20.2_debian13_amd64.deb
-Size: 6348104
-MD5sum: 7110ff5081801788fa0fc428dfc8de4b
-SHA1: 494ec52515c4f0338b9c52484a235dbae6f99a63
-SHA256: 94468412ee6ef015f1a877690dfd5b5b2461e9fd82961cf292c2e8370025020e
+Size: 6353508
+MD5sum: 0fdeee8c31630eaedfd2a6c6531c326e
+SHA1: 22c888de76efc83ba02862c78566a5b96ed9141f
+SHA256: afa49898f1157d698f0bcb039375805c4a1edfb4e8dd52398a0d8f7c0c3efe81
 
 Package: elephant-desktopapplications
 Version: 2.20.2
@@ -457,10 +457,10 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant desktopapplications provider plugin for the walker application launcher.
  Installs desktopapplications.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-desktopapplications_2.20.2_debian13_amd64.deb
-Size: 6174048
-MD5sum: 7092418642357f3a08a34e86cb3875b2
-SHA1: 3c65e1a4ff9ee1258e31c4b417c65587e61747d7
-SHA256: 2fac5f5e510a8a84de412d034ca15bc1765395f5fc051d0ad37ebbac9da3180b
+Size: 6167980
+MD5sum: 15398804cbf3d65c03a20e6ca1edd9b4
+SHA1: fcd702b341977ea683554afa7fc779653e6ae446
+SHA256: 2f5c3617c728f0b4292b12d2a2685b85621e71b21b6fcdfd765f7a4081ce9fd9
 
 Package: elephant-files
 Version: 2.20.2
@@ -474,10 +474,10 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant files provider plugin for the walker application launcher.
  Installs files.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-files_2.20.2_debian13_amd64.deb
-Size: 6772768
-MD5sum: f6ae4ffd29d238d6dbf628c710df2a9d
-SHA1: b2df5176aab11ed6fed4642e0356311abc5a9ad0
-SHA256: c9021c9e724d24296cc50ec0bbfb79922bfa7668b6c8c24eccf98915f0b01b62
+Size: 6768280
+MD5sum: cd49b21213a2aa6b5b212867904c2243
+SHA1: ab5405fb38f44800c9760adfc5ee850238ef2842
+SHA256: db013835c5c00fd35e0936df6db07ee74ac7370ea087184e98e8c9f8c352c85f
 
 Package: elephant-menus
 Version: 2.20.2
@@ -491,10 +491,10 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant menus provider plugin for the walker application launcher.
  Installs menus.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-menus_2.20.2_debian13_amd64.deb
-Size: 5953836
-MD5sum: 06a3d1b5c2e2c7ed731b20df3b6ca684
-SHA1: aa0506129e3ef98d0682b8a09a70897809a35a41
-SHA256: eef0f013603d940a0b22b898a1a139a174cc29f79006ff4d3b5b7eda65a329c2
+Size: 5955488
+MD5sum: 0d8ad671f8221db04fc2709a27b64891
+SHA1: b18cda83b18aeb763fa8980e8b1700f859e34a15
+SHA256: 2dac51801f7b5063311a301e0bbc1da21000cfc1fadad7d0ac70b5ba778a757e
 
 Package: elephant-providerlist
 Version: 2.20.2
@@ -508,10 +508,10 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant providerlist provider plugin for the walker application launcher.
  Installs providerlist.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-providerlist_2.20.2_debian13_amd64.deb
-Size: 6055640
-MD5sum: 468309e4e20eae6c8de256de659aa370
-SHA1: 77447d63fa750647f8154fd76b65d8ef42498b2d
-SHA256: 6d622e9506881d104fbd6708af2ba05bf4331d5d3d3a7904a3649c1568893c71
+Size: 6052016
+MD5sum: 33fcddc1316ebab18b677c26329727d6
+SHA1: 246a55853f50f8cddade58407d18dc4fffd8dbb1
+SHA256: 3a2f412d91fbbddc953878fdcf19513bb586299886f23a506c605c37b743f979
 
 Package: elephant-runner
 Version: 2.20.2
@@ -525,10 +525,10 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant runner provider plugin for the walker application launcher.
  Installs runner.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-runner_2.20.2_debian13_amd64.deb
-Size: 6048492
-MD5sum: 6752aa1f7fed280d7bedd35c56e3dcdc
-SHA1: 53ed10598edd3b38b4235db1f9082350d802b3b7
-SHA256: 599a4f46f98f37c496ea9722ac8b074d0a79cc8aef900990a9168427defbbde4
+Size: 6046216
+MD5sum: 797d885d53f585b7ddaf240ddfd93391
+SHA1: 295b168883a500267585561ce5244afd9ce18aa6
+SHA256: f95eb7e57bf8c25ebe56a37172e2b05f29b77da5231e6362aaa94bc56751a4e2
 
 Package: elephant-symbols
 Version: 2.20.2
@@ -542,10 +542,10 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant symbols provider plugin for the walker application launcher.
  Installs symbols.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-symbols_2.20.2_debian13_amd64.deb
-Size: 11167164
-MD5sum: 98004705ac2eaa16fc95a3ce7def69e9
-SHA1: 7902a2ebab10d5cea060096690ef78db778de3a7
-SHA256: e5f745e175d706ced0e2448b1a62f499dcd77419ae4288828fa20e1269616315
+Size: 11170536
+MD5sum: a95a83416bb24ee0d152294b4d9c0120
+SHA1: ce5c6e728b05f1c98735627fed30143afff7240f
+SHA256: de5ed4fca00fd6b28db35f7dd118742b7b4c3ac874660a0319087f9f379ef5e0
 
 Package: elephant-todo
 Version: 2.20.2
@@ -559,10 +559,10 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant todo provider plugin for the walker application launcher.
  Installs todo.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-todo_2.20.2_debian13_amd64.deb
-Size: 8014728
-MD5sum: 0e428b92293e339cf69432c26fd8cf4a
-SHA1: 3f70d78f06b7b1e816e52fc59d46efb0df034cbf
-SHA256: 8c4f91506d51df4d02bd0214fbf729f4bb282bd9cf80f6327fbbde7d2e9715a9
+Size: 8016364
+MD5sum: 949909117d93bdf3a6541af3de6c4eb1
+SHA1: c62e120a0005c73a4b363d083b8cf1e6b9a44b96
+SHA256: 29c6ee6e0f135c5e74e8538c47e3284a06179a773ac4dc16e2922fb139139b84
 
 Package: elephant-unicode
 Version: 2.20.2
@@ -576,10 +576,10 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant unicode provider plugin for the walker application launcher.
  Installs unicode.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-unicode_2.20.2_debian13_amd64.deb
-Size: 6226404
-MD5sum: 1fa9629704589f960e84642630c7b0bb
-SHA1: 9aeb26d3567768bddf9d95bd309dbd1b6a2421d3
-SHA256: e222b02c058bb0a21023e0ef357560547976aad4659116fbf2c05811ec649a8f
+Size: 6235728
+MD5sum: 67d225b288ada18e992e7ae07e97d11c
+SHA1: fc15e690e93c0c451815c4ee38f89bc86c8dbade
+SHA256: 6cb07db4db7416ece4c4a5095c428ba3e6237b2f9860c4c268aae2a9498cc30a
 
 Package: elephant-websearch
 Version: 2.20.2
@@ -593,8 +593,8 @@ Homepage: https://github.com/abenz1267/elephant
 Description: Elephant websearch provider plugin for the walker application launcher.
  Installs websearch.so into /usr/lib/elephant/.
 Filename: pool/elephant-2.20.2/elephant-websearch_2.20.2_debian13_amd64.deb
-Size: 6061016
-MD5sum: b851f0dcd6ff052e9909f4e3d83e0cda
-SHA1: d3337cc56818b9caf80a7b994af2b892780ca5e4
-SHA256: a6be6b5bcae6664b390389c14239091a1278ac86bbbcd375d93ba3b364279729
+Size: 6060276
+MD5sum: fa2bbc77b9dc30d12fdf8449cff96d4d
+SHA1: ad8107099b0535d2b674b85a99d365ce5c35d079
+SHA256: c292f68de3d4f54fc922a993fd62f659042e0ecc49dbdd68f67d4fe05ea1a22a
 
