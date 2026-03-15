@@ -29,6 +29,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `elephant-unicode` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
 | `elephant-websearch` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
 | `fastfetch` | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | noble, trixie | amd64, arm64 |
+| `ghostty` | [ghostty](https://github.com/ghostty-org/ghostty) | noble, trixie | amd64, arm64 |
 | `gum` | [gum](https://github.com/charmbracelet/gum) | noble, trixie | amd64, arm64 |
 | `ia-writer-mono` | [iA Writer Mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | all |
 | `jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | all |
@@ -40,12 +41,22 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `omakasui-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
 | `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | all |
 | `gtk4-layer-shell` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | amd64, arm64 |
+| `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | all |
 | `uwsm` | [uwsm](https://github.com/Vladimir-csp/uwsm) | noble, trixie | amd64, arm64 |
 | `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
+| `woff2-font-awesome` | [Font Awesome](https://github.com/FortAwesome/Font-Awesome) | noble, trixie | all |
 | `yaru-theme` | [Yaru](https://github.com/ubuntu/yaru) | noble, trixie | all |
 | `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
 
 `omakasui-walker` is a metapackage that installs `walker`, `elephant`, and all elephant provider packages in one shot.
+
+## Copyright and licensing
+
+The packages distributed through this repository are **third-party software**. Each package remains the property of its respective upstream author(s) and is subject to its own license.
+
+This repository does not claim any ownership over the upstream software. Its sole purpose is to make installation easier on systems running Omakasui by providing pre-built `.deb` packages. All trademarks, copyrights, and licenses belong to their respective holders as listed in the upstream column of the packages table above.
+
+If you are an upstream maintainer and have concerns about the distribution of your software here, please open an issue or contact the omakasui project directly.
 
 ## packages.tsv format
 
