@@ -152,23 +152,6 @@ MD5sum: 88c6b89cebf06af6ee694d5d0ffc5f08
 SHA1: 42a17d15caf0c5f6e642b932bc6898c65108ed72
 SHA256: 83ce27a7fac0eac03bd9e1328ced1e9cfe9a3ccb7c527aad2c23f28020c72d58
 
-Package: omakasui-nvim
-Version: 20260310
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 134584
-Depends: neovim, git, gum
-Section: editors
-Priority: optional
-Homepage: https://github.com/LazyVim/LazyVim
-Description: Pre-built LazyVim configuration with cached plugins. Adapted from omarchy-nvim.
- .
-Filename: pool/omakasui-nvim-20260310/omakasui-nvim_20260310_ubuntu2404_amd64.deb
-Size: 64053724
-MD5sum: 24f1bd379ece915384b90cb35aa94179
-SHA1: ae0e8ecd7dbadc5052c1be8d3b8514e6caf76b3f
-SHA256: 5cb82bc4f7d043801140afefe3b9a4e56de3e1794029565b9958d188b2dae317
-
 Package: walker
 Version: 2.15.1
 Architecture: amd64
@@ -491,4 +474,21 @@ Size: 8733390
 MD5sum: 17684c67079021a865fed6a9556e78c0
 SHA1: 0f268f3d09523b21de04b85c7ca3c991b697fa71
 SHA256: 51237e1ef20293c4cfda74ff53923e911eb0a1222f685d994ff8161091326d4e
+
+Package: omakasui-nvim
+Version: 20260310
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 135740
+Depends: nvim, git, gum, nvim (>= 0.11.6)
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration with cached plugins. Adapted from omarchy-nvim.
+ .
+Filename: pool/omakasui-nvim-20260310/omakasui-nvim_20260310_ubuntu2404_amd64.deb
+Size: 64427772
+MD5sum: 7f5e2b20467028053162ace060845ee1
+SHA1: f34f0964ecaa1e7de7d6a5941c349f4bcfa5eec2
+SHA256: 7c68d837208104dec86484d6162c6976401ef7ff59f503534f01b66708baa059
 
