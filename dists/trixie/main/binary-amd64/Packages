@@ -650,3 +650,20 @@ MD5sum: 203c70970a4fe5321b0cf62eb4e9f431
 SHA1: 6e150cd04a7846a1dae6e8f306c9c2fb4fe85207
 SHA256: 3b0c94ce14c12a0ae96f38bac47fa2c076854989b77f3e073b2be0f07971f6ad
 
+Package: aether
+Version: 3.0.3
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2260
+Depends: gjs, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-soup-3.0, gtk4-layer-shell, imagemagick, gtk4-layer-shell (>= 1.1.0)
+Section: gnome
+Priority: optional
+Homepage: https://github.com/bjarneo/aether
+Description: Aether - create Omarchy/Omakasui themes the easy way. GTK4/libadwaita app for wallpaper-based color extraction and theme generation. Supports wallhaven.cc browsing, image filters, color presets, and Base16 import.
+ .
+Filename: pool/aether-3.0.3/aether_3.0.3_debian13_all.deb
+Size: 335454
+MD5sum: a787bf1839f7d3bd1ad275c8abe56c74
+SHA1: e9fedec4f6b76e75c0b4771000a837a7216fa842
+SHA256: f9a58dd9134d604f9d6cdcdf3ddb8f1a7af28ce4b4af4e5b3d508b1c11aaf3d8
+
