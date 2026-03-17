@@ -15,6 +15,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 
 | Package | Upstream | Suites | Architectures |
 |---|---|---|---|
+| `aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | amd64, arm64 |
 | `cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | all |
 | `elephant` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `elephant-calc` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
@@ -37,7 +38,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `lazygit` | [lazygit](https://github.com/jesseduffield/lazygit) | noble, trixie | amd64, arm64 |
 | `makima` | [makima](https://github.com/cyber-sushi/makima) | noble, trixie | amd64, arm64 |
 | `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
-| `omakasui-aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | amd64, arm64 |
+| `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
 | `omakasui-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
 | `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | all |
 | `gtk4-layer-shell` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | amd64, arm64 |
@@ -49,6 +50,8 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
 
 `omakasui-walker` is a metapackage that installs `walker`, `elephant`, and all elephant provider packages in one shot.
+
+`omakasui-nvim` is a custom configuration of LazyVim, based on the one made by [Omarchy](https://omarchy.org).
 
 ## Copyright and licensing
 
