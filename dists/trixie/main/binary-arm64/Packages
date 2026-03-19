@@ -684,3 +684,57 @@ MD5sum: 7db8968546d7f5268e0abccdad13e76e
 SHA1: 32cec9ebeddf5816ba01a79c0d614643dbdf902a
 SHA256: 9a7e9cdc64a521d1f728fbe91b6d2efb992e8aaa1c1433cd2549c68a90d70a33
 
+Package: omakasui-nvim
+Version: 20260319
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 135744
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omakasui
+ Installs pre-cached config and plugins to /usr/share/omakasui-nvim.
+ Run omakasui-nvim-setup to activate for the current user.
+Filename: pool/omakasui-nvim-20260319/omakasui-nvim_20260319_debian13_all.deb
+Size: 64086592
+MD5sum: ffd811d09efe5748076bd723eb66e416
+SHA1: fa2e7ae7021063aae8dd9ebc3dc5de9d45aae29c
+SHA256: ad6cbca366e408b27493731f8a71e0421881952e0581aca29db49eca5317fb20
+
+Package: omakub-nvim
+Version: 20260319
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 135744
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omakub
+ Installs pre-cached config and plugins to /usr/share/omakub-nvim.
+ Run omakub-nvim-setup to activate for the current user.
+Filename: pool/omakasui-nvim-20260319/omakub-nvim_20260319_debian13_all.deb
+Size: 64087820
+MD5sum: fa4f3c1e73fae1e63714c69457ab4b76
+SHA1: 56f30ad1590851fa38440eb6bcdeeb5154fcc3a7
+SHA256: 6092789ad39305f58573f32fed3479ccbc1d31bb30660be7ffed9a5ddbc554b2
+
+Package: omadeb-nvim
+Version: 20260319
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 135744
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omadeb
+ Installs pre-cached config and plugins to /usr/share/omadeb-nvim.
+ Run omadeb-nvim-setup to activate for the current user.
+Filename: pool/omakasui-nvim-20260319/omadeb-nvim_20260319_debian13_all.deb
+Size: 64082320
+MD5sum: b4d3f653f0ec81cb6351a9313f8ef22a
+SHA1: f805da0a5d82c9846be220b490784c95f4a51576
+SHA256: 857d35a5ef8ebad9c23d56dbca485e886fd0bac7a644f21842dc74da365e7c6f
+
