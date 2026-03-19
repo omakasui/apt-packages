@@ -51,7 +51,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 
 `omakasui-walker` is a metapackage that installs `walker`, `elephant`, and all elephant provider packages in one shot.
 
-`omakasui-nvim` is a custom configuration of LazyVim, based on the one made by [Omarchy](https://omarchy.org).
+`omakasui-nvim` is a custom configuration of LazyVim, based on the one made by [Omarchy](https://omarchy.org). You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-nvim` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-nvim` ([Omadeb](https://omadeb.omakasui.org)).
 
 ## Copyright and licensing
 
