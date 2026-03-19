@@ -40,6 +40,8 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
 | `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
 | `omakasui-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
+| `omakub-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
+| `omadeb-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
 | `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | all |
 | `gtk4-layer-shell` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | amd64, arm64 |
 | `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | all |
