@@ -738,3 +738,23 @@ MD5sum: b4d3f653f0ec81cb6351a9313f8ef22a
 SHA1: f805da0a5d82c9846be220b490784c95f4a51576
 SHA256: 857d35a5ef8ebad9c23d56dbca485e886fd0bac7a644f21842dc74da365e7c6f
 
+Package: alacritty
+Version: 0.16.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 51184
+Depends: libfontconfig1, libfreetype6, libxcb1, libxkbcommon0
+Conflicts: alacritty
+Replaces: alacritty
+Provides: alacritty
+Section: x11
+Priority: optional
+Homepage: https://github.com/alacritty/alacritty
+Description: GPU-accelerated terminal emulator, built from source. Upstream releases do not provide Linux binaries.
+ .
+Filename: pool/alacritty-0.16.1/alacritty_0.16.1_debian13_amd64.deb
+Size: 10247558
+MD5sum: d37b0c0b1b0336ced0c24e577907d4ee
+SHA1: ed06356a0e47eb9b66b21750da9b6e7b2f0e0fa9
+SHA256: e3079ee22b30ec62276d6528f2231cf4e0d35f37d053efe2ebb8c9257739340a
+
