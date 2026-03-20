@@ -16,7 +16,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | Package | Upstream | Suites | Architectures |
 |---|---|---|---|
 | `aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | amd64, arm64 |
-| `cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | all |
+| `alacritty` | [alacritty](https://github.com/alacritty/alacritty) | noble, trixie | amd64, arm64 |
 | `elephant` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `elephant-calc` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
 | `elephant-clipboard` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
@@ -30,10 +30,12 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `elephant-unicode` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
 | `elephant-websearch` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
 | `fastfetch` | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | noble, trixie | amd64, arm64 |
+| `font-cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | all |
+| `font-ia-writer-mono` | [iA Writer Mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | all |
+| `font-jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | all |
 | `ghostty` | [ghostty](https://github.com/ghostty-org/ghostty) | noble, trixie | amd64, arm64 |
 | `gum` | [gum](https://github.com/charmbracelet/gum) | noble, trixie | amd64, arm64 |
-| `ia-writer-mono` | [iA Writer Mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | all |
-| `jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | all |
+| `kitty` | [kitty](https://sw.kovidgoyal.net/kitty/) | noble, trixie | amd64, arm64 |
 | `lazydocker` | [lazydocker](https://github.com/jesseduffield/lazydocker) | noble, trixie | amd64, arm64 |
 | `lazygit` | [lazygit](https://github.com/jesseduffield/lazygit) | noble, trixie | amd64, arm64 |
 | `makima` | [makima](https://github.com/cyber-sushi/makima) | noble, trixie | amd64, arm64 |
@@ -47,7 +49,6 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | all |
 | `uwsm` | [uwsm](https://github.com/Vladimir-csp/uwsm) | noble, trixie | amd64, arm64 |
 | `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
-| `woff2-font-awesome` | [Font Awesome](https://github.com/FortAwesome/Font-Awesome) | noble, trixie | all |
 | `yaru-theme` | [Yaru](https://github.com/ubuntu/yaru) | noble, trixie | all |
 | `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
 
