@@ -15,6 +15,7 @@ VERSION=""
 SUITES=""
 PRODUCES=""
 REPO="omakasui/build-apt-packages"
+CHANNEL="stable"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -23,6 +24,7 @@ while [[ $# -gt 0 ]]; do
     --suites)   SUITES="$2";   shift 2 ;;
     --produces) PRODUCES="$2"; shift 2 ;;
     --repo)     REPO="$2";     shift 2 ;;
+    --channel)  CHANNEL="$2";  shift 2 ;;
     *) echo "ERROR: unknown argument: $1" >&2; exit 1 ;;
   esac
 done
@@ -30,6 +32,7 @@ done
 [[ -z "$PKG" ]]     && { echo "ERROR: --pkg is required";     exit 1; }
 [[ -z "$VERSION" ]] && { echo "ERROR: --version is required"; exit 1; }
 [[ -z "$SUITES" ]]  && { echo "ERROR: --suites is required";  exit 1; }
+[[ "$CHANNEL" != "stable" && "$CHANNEL" != "dev" ]] && { echo "ERROR: --channel must be 'stable' or 'dev'"; exit 1; }
 
 PRODUCED_PKGS="${PRODUCES:-$PKG}"
 
@@ -53,9 +56,12 @@ _register_entry() {
   # Installed-Size, Description, etc.) and base64-encode it for TSV storage.
   control_b64=$(dpkg-deb --field "$deb" | base64 -w0)
 
-  # Remove any existing entry for this suite/arch/name, then append the new one.
-  grep -v "^${suite} ${arch} ${name} " index/packages.tsv > /tmp/packages.tmp || true
-  echo "${suite} ${arch} ${name} ${version} ${url} ${size} ${md5} ${sha1} ${sha256} ${control_b64}" \
+  # Remove any existing entry for this suite/arch/name/channel, then append the new one.
+  # Treats absent channel field (legacy entries) as 'stable'.
+  awk -v s="$suite" -v a="$arch" -v n="$name" -v c="$CHANNEL" \
+    '{ chan=(NF>=11)?$11:"stable"; if ($1==s && $2==a && $3==n && chan==c) next; print }' \
+    index/packages.tsv > /tmp/packages.tmp || true
+  echo "${suite} ${arch} ${name} ${version} ${url} ${size} ${md5} ${sha1} ${sha256} ${control_b64} ${CHANNEL}" \
     >> /tmp/packages.tmp
   mv /tmp/packages.tmp index/packages.tsv
 

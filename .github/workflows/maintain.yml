@@ -29,6 +29,7 @@ on:
 # All known suite codenames. Keep in sync with build-matrix.yml in omakasui/build-apt-packages.
 env:
   ALL_SUITES: "trixie noble"
+  ALL_DEV_SUITES: "trixie-dev noble-dev"
 
 jobs:
   maintain:
@@ -99,7 +100,7 @@ jobs:
         run: |
           touch index/packages.tsv
           bash scripts/update-index.sh --suites "$ALL_SUITES"
-          bash scripts/sign-release.sh --suites "$ALL_SUITES" --key-id "$GPG_KEY_ID"
+          bash scripts/sign-release.sh --suites "$ALL_SUITES $ALL_DEV_SUITES" --key-id "$GPG_KEY_ID"
 
       - name: Commit and push
         run: |

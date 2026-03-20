@@ -9,8 +9,8 @@
 # Usage:
 #   update-index.sh --suites "<suite1> <suite2>"
 #
-# TSV format (v2): <suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256> <control_b64>
-# Legacy format (v1): same but without <control_b64> (9 fields).
+# TSV format (v2): <suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256> <control_b64> [<channel>]
+# Legacy format (v1): same but without <control_b64> (9 fields). Absent channel defaults to 'stable'.
 
 set -euo pipefail
 
@@ -28,14 +28,23 @@ done
 
 for suite in $SUITES; do
   for arch in amd64 arm64; do
-    pkg_dir="dists/${suite}/main/binary-${arch}"
-    mkdir -p "$pkg_dir"
-    : > "${pkg_dir}/Packages"
+    stable_dir="dists/${suite}/main/binary-${arch}"
+    dev_dir="dists/${suite}-dev/main/binary-${arch}"
+    mkdir -p "$stable_dir" "$dev_dir"
+    : > "${stable_dir}/Packages"
+    : > "${dev_dir}/Packages"
 
-    while IFS=' ' read -r s a name version url size md5 sha1 sha256 control_b64 _rest; do
+    while IFS=' ' read -r s a name version url size md5 sha1 sha256 control_b64 entry_channel _ignored; do
       [[ "$s" != "$suite" ]] && continue
       # Include arch-specific entries and arch:all entries for every arch.
       [[ "$a" != "$arch" && "$a" != "all" ]] && continue
+
+      # Route to stable or dev Packages file based on channel field (default: stable for legacy entries).
+      if [[ "${entry_channel:-stable}" == "dev" ]]; then
+        pkg_dir="$dev_dir"
+      else
+        pkg_dir="$stable_dir"
+      fi
 
       # Convert a full GitHub Releases URL to a pool-relative path.
       # https://github.com/OWNER/REPO/releases/download/TAG/FILE -> pool/TAG/FILE
@@ -75,8 +84,10 @@ for suite in $SUITES; do
       fi
     done < index/packages.tsv
 
-    gzip -k -f "${pkg_dir}/Packages"
-    xz   -k -f "${pkg_dir}/Packages"
-    echo "Generated: ${pkg_dir}/Packages ($(grep -c '^Package:' "${pkg_dir}/Packages") entries)"
+    for dir in "$stable_dir" "$dev_dir"; do
+      gzip -k -f "${dir}/Packages"
+      xz   -k -f "${dir}/Packages"
+      echo "Generated: ${dir}/Packages ($(grep -c '^Package:' "${dir}/Packages") entries)"
+    done
   done
 done

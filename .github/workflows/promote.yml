@@ -1,0 +1,172 @@
+# Promotes one or more packages from the dev channel to stable.
+# Finds matching dev entries in index/packages.tsv, removes any superseded stable
+# entries for the same (suite, arch, name), rewrites them as channel=stable, then
+# regenerates and signs the full APT index.
+name: Promote packages to stable
+
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package name to promote from dev to stable'
+        required: true
+        type: string
+      version:
+        description: 'Version to promote (leave empty to promote all dev versions of the package)'
+        required: false
+        type: string
+      suites:
+        description: 'Space-separated suites to promote (e.g. "noble" or "trixie noble"). Leave empty for all.'
+        required: false
+        type: string
+
+# All known suite codenames. Keep in sync with build-matrix.yml in omakasui/build-apt-packages.
+env:
+  ALL_SUITES: "trixie noble"
+  ALL_DEV_SUITES: "trixie-dev noble-dev"
+
+jobs:
+  promote:
+    name: Promote ${{ inputs.package }} to stable
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install APT tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            dpkg-dev apt-utils gnupg2
+
+      - name: Import GPG key
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
+          FINGERPRINT=$(gpg --fingerprint --with-colons "${{ secrets.GPG_KEY_ID }}" \
+            | awk -F: '/^fpr/{print $10; exit}')
+          echo "${FINGERPRINT}:6:" | gpg --import-ownertrust
+
+      - name: Promote package in index manifest
+        run: |
+          PKG="${{ inputs.package }}"
+          VERSION="${{ inputs.version }}"
+          SUITES="${{ inputs.suites }}"
+          [[ -z "$SUITES" ]] && SUITES="$ALL_SUITES"
+
+          touch index/packages.tsv
+
+          # Two-pass awk:
+          # Pass 1 — identify which (suite, arch, name) tuples are being promoted from dev.
+          # Pass 2 — rebuild TSV:
+          #   • Skip stable entries for tuples being promoted (superseded).
+          #   • Rewrite matching dev entries with channel=stable.
+          #   • Keep all other entries unchanged.
+          awk -v pkg="$PKG" -v ver="$VERSION" -v suites="$SUITES" '
+          BEGIN {
+            n = split(suites, sa, " ")
+            for (i = 1; i <= n; i++) suite_set[sa[i]] = 1
+          }
+          {
+            n_fields = NF
+            chan = (n_fields >= 11) ? $11 : "stable"
+            # A dev entry that matches our promotion criteria.
+            is_target = (chan == "dev" && $3 == pkg \
+                         && (ver == "" || $4 == ver) \
+                         && suite_set[$1])
+            lines[NR]      = $0
+            n_f[NR]        = n_fields
+            is_promote[NR] = is_target
+            if (is_target) {
+              promote_key[$1 " " $2 " " $3] = 1
+            }
+          }
+          END {
+            for (i = 1; i <= NR; i++) {
+              split(lines[i], f, " ")
+              chan_i = (n_f[i] >= 11) ? f[11] : "stable"
+              # Drop stable entries that are being superseded by a promotion.
+              if (chan_i == "stable" && f[3] == pkg \
+                  && promote_key[f[1] " " f[2] " " f[3]]) {
+                continue
+              }
+              # Rewrite promoted dev entries as stable.
+              if (is_promote[i]) {
+                if (n_f[i] >= 11) {
+                  f[11] = "stable"
+                } else {
+                  n_f[i]++
+                  f[n_f[i]] = "stable"
+                }
+                line_out = f[1]
+                for (j = 2; j <= n_f[i]; j++) line_out = line_out " " f[j]
+                print line_out
+                promoted++
+                continue
+              }
+              print lines[i]
+            }
+            if (promoted == 0) {
+              print "WARNING: no matching dev entries found for promotion." > "/dev/stderr"
+            } else {
+              printf "Promoted %d entr%s for %s to stable.\n", \
+                promoted, (promoted == 1 ? "y" : "ies"), pkg > "/dev/stderr"
+            }
+          }
+          ' index/packages.tsv > /tmp/packages_promoted.tmp
+
+          mv /tmp/packages_promoted.tmp index/packages.tsv
+
+      - name: Regenerate APT metadata
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+        run: |
+          bash scripts/update-index.sh --suites "$ALL_SUITES"
+          bash scripts/sign-release.sh --suites "$ALL_SUITES $ALL_DEV_SUITES" --key-id "$GPG_KEY_ID"
+
+      - name: Commit and push
+        run: |
+          git config user.name  "omakasui-bot"
+          git config user.email "bot@omakasui.org"
+
+          PKG="${{ inputs.package }}"
+          VERSION="${{ inputs.version }}"
+          if [[ -n "$VERSION" ]]; then
+            MSG="apt: promote ${PKG} ${VERSION} to stable [$(date '+%Y-%m-%d')]"
+          else
+            MSG="apt: promote ${PKG} to stable [$(date '+%Y-%m-%d')]"
+          fi
+
+          DISTS_SNAPSHOT=$(mktemp -d)
+          INDEX_SNAPSHOT=$(mktemp -d)
+          GPG_KEY_SNAPSHOT=$(mktemp -d)
+          cp -r dists/. "$DISTS_SNAPSHOT/"
+          cp omakasui.gpg.key "$GPG_KEY_SNAPSHOT/"
+          cp index/packages.tsv "$INDEX_SNAPSHOT/" 2>/dev/null || true
+
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+
+            cp -r "$DISTS_SNAPSHOT/." dists/
+            cp "$GPG_KEY_SNAPSHOT/omakasui.gpg.key" omakasui.gpg.key
+            mkdir -p index
+            cp "$INDEX_SNAPSHOT/packages.tsv" index/packages.tsv 2>/dev/null || true
+
+            git add -f dists/ omakasui.gpg.key index/
+            git add -u index/ 2>/dev/null || true
+
+            if git diff --cached --quiet; then
+              echo "Nothing to commit."
+              break
+            fi
+
+            git commit -m "$MSG"
+            git push && break
+            echo "Push failed (attempt ${i}/5), retrying..."
+            sleep $((i * 2))
+          done

@@ -37,11 +37,20 @@ on:
         description: 'Space-separated list of produced package names (e.g. "omakasui-fastfetch"). Leave empty to use package name.'
         required: false
         type: string
+      channel:
+        description: 'Publishing channel (stable or dev)'
+        required: false
+        default: 'stable'
+        type: choice
+        options:
+          - stable
+          - dev
 
 # All known suite codenames. Update here when adding a new distro.
 # Must stay in sync with build-matrix.yml in omakasui/build-apt-packages.
 env:
   ALL_SUITES: "trixie noble"
+  ALL_DEV_SUITES: "trixie-dev noble-dev"
 
 # Serialize runs so concurrent package-updated events don't overwrite each other.
 concurrency:
@@ -72,9 +81,12 @@ jobs:
             echo "pattern=${{ github.event.client_payload.pattern }}" >> "$GITHUB_OUTPUT"
             PRODUCES=$(echo '${{ toJson(github.event.client_payload.produces) }}' | jq -c '.')
             echo "produces=${PRODUCES}"                               >> "$GITHUB_OUTPUT"
-            # packages-updated batch payload: JSON array of {package,version,suites,produces}
+            # packages-updated batch payload: JSON array of {package,version,suites,produces,channel}
             PKGS_JSON=$(echo '${{ toJson(github.event.client_payload.packages) }}' | jq -c '. // []')
             echo "packages_json=${PKGS_JSON}"                         >> "$GITHUB_OUTPUT"
+            # Single-package channel (default: stable).
+            CD_CHANNEL='${{ github.event.client_payload.channel }}'
+            echo "channel=${CD_CHANNEL:-stable}"                      >> "$GITHUB_OUTPUT"
           else
             echo "action=${{ inputs.action }}"   >> "$GITHUB_OUTPUT"
             echo "package=${{ inputs.package }}" >> "$GITHUB_OUTPUT"
@@ -88,6 +100,7 @@ jobs:
             else
               echo "produces=[]"                  >> "$GITHUB_OUTPUT"
             fi
+            echo "channel=${{ inputs.channel }}" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Install APT tools
@@ -116,13 +129,15 @@ jobs:
             VERSION=$(echo  "$entry" | jq -r '.version')
             SUITES=$(echo   "$entry" | jq -r '.suites')
             PRODUCES=$(echo "$entry" | jq -r '.produces | if length == 0 then "" else join(" ") end')
+            CHANNEL=$(echo  "$entry" | jq -r '.channel // "stable"')
 
-            echo "==> Registering: ${PKG} ${VERSION} (suites: ${SUITES})"
+            echo "==> Registering: ${PKG} ${VERSION} (suites: ${SUITES}, channel: ${CHANNEL})"
             bash scripts/register-package.sh \
               --pkg      "$PKG" \
               --version  "$VERSION" \
               --suites   "$SUITES" \
-              --produces "$PRODUCES"
+              --produces "$PRODUCES" \
+              --channel  "$CHANNEL"
           done < <(echo "$PKGS_JSON" | jq -c '.[]')
 
       - name: '[package-updated] Register package in index manifest'
@@ -141,7 +156,8 @@ jobs:
             --pkg      "${{ steps.params.outputs.package }}" \
             --version  "${{ steps.params.outputs.version }}" \
             --suites   "${{ steps.params.outputs.suites }}" \
-            --produces "$PRODUCES"
+            --produces "$PRODUCES" \
+            --channel  "${{ steps.params.outputs.channel }}"
 
       - name: '[remove-package] Remove entries from index manifest'
         if: steps.params.outputs.action == 'remove-package'
@@ -167,7 +183,7 @@ jobs:
         run: |
           touch index/packages.tsv
           bash scripts/update-index.sh --suites "$ALL_SUITES"
-          bash scripts/sign-release.sh --suites "$ALL_SUITES" --key-id "$GPG_KEY_ID"
+          bash scripts/sign-release.sh --suites "$ALL_SUITES $ALL_DEV_SUITES" --key-id "$GPG_KEY_ID"
 
       - name: Commit and push
         run: |
