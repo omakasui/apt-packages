@@ -742,3 +742,22 @@ MD5sum: eb7784640e1a7f4605d7c89682246747
 SHA1: 120d2eb8963d584f5de28c8ae52356715ab2c2d9
 SHA256: 8a679233ad33b975758237dcdf54d9baf94b171dc1a6df2a5bcd06eaac3bfd14
 
+Package: kitty
+Version: 0.46.1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 101376
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator
+ Self-contained bundle installed to /opt/kitty.
+Filename: pool/kitty-0.46.1/kitty_0.46.1_debian13_arm64.deb
+Size: 29079996
+MD5sum: e5a49dd1412b977dea1c553efbc21b17
+SHA1: 9b587b2da9d1081786c620d74c01daae17a673da
+SHA256: b3b3f819c2d38e37b28cd36303c713a52291c854751083606fbc367b7ba53f47
+

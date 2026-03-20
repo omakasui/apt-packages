@@ -601,3 +601,22 @@ MD5sum: 7b241cb75d38be6da55d744b6d28d70d
 SHA1: 3e5bfca5942f0910118b7cb5d3417788fa890133
 SHA256: f90da8285b9d7bb5c86a8ed22202dddb2ca3fd9e993dacd563b7c39d9caf59e2
 
+Package: kitty
+Version: 0.46.1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 101376
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator
+ Self-contained bundle installed to /opt/kitty.
+Filename: pool/kitty-0.46.1/kitty_0.46.1_ubuntu2404_arm64.deb
+Size: 31733664
+MD5sum: f086c62549177143431c64122229c945
+SHA1: ec67565a22a78897844b3ddbb66d7f7c4f7274fe
+SHA256: a4a9893bf71a09cbdef18c336c6db85ecb66621be101091c3555e4f19d766ec7
+
