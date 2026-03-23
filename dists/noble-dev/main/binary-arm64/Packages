@@ -144,7 +144,7 @@ Version: 3.6a
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
 Installed-Size: 1260
-Depends: libevent-2.1-7t64 | libevent-2.1-7, libc6, libtinfo6 | libncurses6
+Depends: libc6, libtinfo6 | libncurses6
 Conflicts: tmux
 Replaces: tmux
 Provides: tmux
@@ -154,8 +154,8 @@ Homepage: https://github.com/tmux/tmux
 Description: Terminal multiplexer. Built from source, newer than the distro package. Allows creating multiple terminal sessions within a single window, with persistent sessions that survive disconnections.
  .
 Filename: pool/tmux-3.6a/tmux_3.6a_ubuntu2404_arm64.deb
-Size: 439734
-MD5sum: b8cb2cc0c4424884950a60bc630ae984
-SHA1: e372acb1084ac95b7bfb4e39cc3abb9056da88f9
-SHA256: f2553c9d741e12b77bc5c0a39834ce4005e44a5d969d0867b615c281faf145d8
+Size: 439718
+MD5sum: fda0b6cf6d2ef1e62a317a1168d5df34
+SHA1: 797095f020868e3c70dbd58ffa6da7a8f8c236b0
+SHA256: 570c37204d6c262b826f964e9541ec4f1d3a65b492a240835a0163a20550a878
 

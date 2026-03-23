@@ -241,7 +241,7 @@ Version: 3.6a
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
 Installed-Size: 1248
-Depends: libevent-2.1-7t64 | libevent-2.1-7, libc6, libtinfo6 | libncurses6
+Depends: libc6, libtinfo6 | libncurses6
 Conflicts: tmux
 Replaces: tmux
 Provides: tmux
@@ -251,8 +251,8 @@ Homepage: https://github.com/tmux/tmux
 Description: Terminal multiplexer. Built from source, newer than the distro package. Allows creating multiple terminal sessions within a single window, with persistent sessions that survive disconnections.
  .
 Filename: pool/tmux-3.6a/tmux_3.6a_debian13_amd64.deb
-Size: 448836
-MD5sum: cd883a5e983495cbeb0ba3474a2ad40c
-SHA1: 9d790a3be42e0e53f5e7eaa891de611aa3784fb7
-SHA256: 9e7cbe62f4cc9693196d3d63c3a7d13e443ea7b46e934c9029950b784bc3f540
+Size: 448788
+MD5sum: 72044e60349235ceb69d608ff1be953e
+SHA1: f22a859a6e3b5f33f27128272aea8ee7f7c84098
+SHA256: b22b7e1032fd9acf23d6b0319b7211f960b6d20d249b2ecb4526d0d01e1f902e
 
