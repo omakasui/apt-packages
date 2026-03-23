@@ -33,6 +33,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `font-cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | all |
 | `font-ia-writer-mono` | [iA Writer Mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | all |
 | `font-jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | all |
+| `glab` | [glab](https://gitlab.com/gitlab-org/cli) | noble, trixie | amd64, arm64 |
 | `ghostty` | [ghostty](https://github.com/ghostty-org/ghostty) | noble, trixie | amd64, arm64 |
 | `gum` | [gum](https://github.com/charmbracelet/gum) | noble, trixie | amd64, arm64 |
 | `kitty` | [kitty](https://sw.kovidgoyal.net/kitty/) | noble, trixie | amd64, arm64 |
