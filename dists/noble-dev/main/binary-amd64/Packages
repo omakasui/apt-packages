@@ -140,3 +140,23 @@ MD5sum: bfb1afb034a66d3b7155ab570362c9bd
 SHA1: bbcafb306cf0e4a7ba9fd99db71fc7bdb1d169e4
 SHA256: 6146a0a61d126e5169e6fec65f0e701e5afe4d6f3320ec0f8b78a5d96132b91b
 
+Package: tmux
+Version: 3.6a
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1264
+Depends: libevent-2.1-7t64 | libevent-2.1-7, libc6, libtinfo6 | libncurses6
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer. Built from source, newer than the distro package. Allows creating multiple terminal sessions within a single window, with persistent sessions that survive disconnections.
+ .
+Filename: pool/tmux-3.6a/tmux_3.6a_ubuntu2404_amd64.deb
+Size: 454640
+MD5sum: 46cae636f94449775d0ed7e3078242c0
+SHA1: fbd66a5135f7937ac9fafdd3ecefef3aedaea5d9
+SHA256: b9bd6707a27cf5fc33d55bbfbf2b08d1718ba098c113d0512015333dd7ebd00b
+
