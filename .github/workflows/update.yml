@@ -195,7 +195,10 @@ jobs:
           VERSION="${{ steps.params.outputs.version }}"
           PATTERN="${{ steps.params.outputs.pattern }}"
           case "$ACTION" in
-            packages-updated) MSG="apt: batch update [$(date '+%Y-%m-%d')]" ;;
+            packages-updated)
+              PKGS_LIST=$(echo '${{ steps.params.outputs.packages_json }}' | jq -r '[.[] | "\(.package) \(.version)"] | join(", ")')
+              MSG="apt: ${PKGS_LIST} [$(date '+%Y-%m-%d')]"
+              ;;
             package-updated)  MSG="apt: ${PKG} ${VERSION} [$(date '+%Y-%m-%d')]" ;;
             remove-package)   MSG="apt: remove ${PKG} [$(date '+%Y-%m-%d')]" ;;
             clean-pool)       MSG="apt: clean ${PATTERN} [$(date '+%Y-%m-%d')]" ;;
