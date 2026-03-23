@@ -18,42 +18,45 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | amd64, arm64 |
 | `alacritty` | [alacritty](https://github.com/alacritty/alacritty) | noble, trixie | amd64, arm64 |
 | `elephant` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-calc` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-clipboard` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-desktopapplications` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-files` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-menus` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-providerlist` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-runner` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-symbols` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-todo` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-unicode` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
-| `elephant-websearch` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-calc` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-clipboard` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-desktopapplications` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-files` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-menus` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-providerlist` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-runner` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-symbols` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-todo` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-unicode` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `elephant-websearch` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `fastfetch` | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | noble, trixie | amd64, arm64 |
-| `font-cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | all |
-| `font-ia-writer-mono` | [iA Writer Mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | all |
-| `font-jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | all |
+| `font-cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | amd64, arm64 |
+| `font-ia-writer-mono` | [iA Writer Mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | amd64, arm64 |
+| `font-jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | amd64, arm64 |
 | `glab` | [glab](https://gitlab.com/gitlab-org/cli) | noble, trixie | amd64, arm64 |
 | `ghostty` | [ghostty](https://github.com/ghostty-org/ghostty) | noble, trixie | amd64, arm64 |
+| `gtk4-layer-shell` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | amd64, arm64 |
 | `gum` | [gum](https://github.com/charmbracelet/gum) | noble, trixie | amd64, arm64 |
 | `kitty` | [kitty](https://sw.kovidgoyal.net/kitty/) | noble, trixie | amd64, arm64 |
 | `lazydocker` | [lazydocker](https://github.com/jesseduffield/lazydocker) | noble, trixie | amd64, arm64 |
 | `lazygit` | [lazygit](https://github.com/jesseduffield/lazygit) | noble, trixie | amd64, arm64 |
 | `makima` | [makima](https://github.com/cyber-sushi/makima) | noble, trixie | amd64, arm64 |
 | `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
-| `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
+| `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | amd64, arm64 |
 | `omakasui-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
-| `omakub-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
-| `omadeb-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
-| `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | all |
-| `gtk4-layer-shell` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | amd64, arm64 |
-| `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | all |
+| `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
+| `omakasui-zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | all |
+| `starship` | [starship](https://starship.rs) | noble, trixie | amd64, arm64 |
+| `tmux` | [tmux](https://github.com/tmux/tmux) | noble, trixie | amd64, arm64 |
+| `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | amd64, arm64 |
 | `uwsm` | [uwsm](https://github.com/Vladimir-csp/uwsm) | noble, trixie | amd64, arm64 |
 | `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
-| `yaru-theme` | [Yaru](https://github.com/ubuntu/yaru) | noble, trixie | all |
+| `yaru-theme` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
 
-`omakasui-walker` is a metapackage that installs `walker`, `elephant`, and all elephant provider packages in one shot.
+`omakasui-walker` is a metapackage that installs `walker`, `elephant`, and all elephant provider packages in one shot. You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-walker` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-walker` ([Omadeb](https://omadeb.omakasui.org)).
+
+`omakasui-zellij` is a custom configuration of Zellij, based on the one made by [Omakub](https://omakub.org). You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-zellij` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-zellij` ([Omadeb](https://omadeb.omakasui.org)).
 
 `omakasui-nvim` is a custom configuration of LazyVim, based on the one made by [Omarchy](https://omarchy.org). You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-nvim` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-nvim` ([Omadeb](https://omadeb.omakasui.org)).
 
