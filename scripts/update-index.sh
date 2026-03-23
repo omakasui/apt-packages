@@ -11,6 +11,10 @@
 #
 # TSV format (v2): <suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256> <control_b64> [<channel>]
 # Legacy format (v1): same but without <control_b64> (9 fields). Absent channel defaults to 'stable'.
+#
+# Dev fallback: the *-dev Packages file includes all stable packages as a base,
+# overridden by dev-channel entries when present. This ensures users on the dev
+# channel always have access to every package, not just those explicitly tagged dev.
 
 set -euo pipefail
 
@@ -34,13 +38,28 @@ for suite in $SUITES; do
     : > "${stable_dir}/Packages"
     : > "${dev_dir}/Packages"
 
+    # Collect the set of package names that have an explicit dev entry for this
+    # suite+arch, so stable fallback entries are skipped for those.
+    declare -A _dev_pkgs=()
+    while IFS=' ' read -r s a name _rest; do
+      [[ "$s" != "$suite" ]] && continue
+      [[ "$a" != "$arch" && "$a" != "all" ]] && continue
+      _chan=$(echo "$_rest" | awk '{print $NF}')
+      [[ "$_chan" == "dev" ]] && _dev_pkgs["${a}:${name}"]=1
+    done < index/packages.tsv
+
     while IFS=' ' read -r s a name version url size md5 sha1 sha256 control_b64 entry_channel _ignored; do
       [[ "$s" != "$suite" ]] && continue
       # Include arch-specific entries and arch:all entries for every arch.
       [[ "$a" != "$arch" && "$a" != "all" ]] && continue
 
-      # Route to stable or dev Packages file based on channel field (default: stable for legacy entries).
-      if [[ "${entry_channel:-stable}" == "dev" ]]; then
+      _chan="${entry_channel:-stable}"
+
+      # Route to stable or dev Packages file.
+      # Stable entries are also written to dev as a fallback, unless an explicit
+      # dev entry already exists for this package+arch (in which case the dev
+      # entry will be written instead when its turn comes).
+      if [[ "$_chan" == "dev" ]]; then
         pkg_dir="$dev_dir"
       else
         pkg_dir="$stable_dir"
@@ -61,28 +80,41 @@ for suite in $SUITES; do
       if [[ -n "${control_b64:-}" ]] && _control=$(printf '%s' "$control_b64" | base64 -d 2>/dev/null) && [[ "$_control" == *":"* ]]; then
         # v2 entry: decoded control stanza contains field headers (e.g. "Maintainer:").
         # Write Package/Version/Architecture first (authoritative from TSV).
-        printf "Package: %s\n"      "$name"    >> "${pkg_dir}/Packages"
-        printf "Version: %s\n"      "$version" >> "${pkg_dir}/Packages"
-        printf "Architecture: %s\n" "$a"       >> "${pkg_dir}/Packages"
-
-        # Append remaining control fields (skip Package/Version/Architecture).
-        printf '%s\n' "$_control" | grep -v -E \
-          '^(Package|Version|Architecture):' >> "${pkg_dir}/Packages"
-
-        # Append repo-specific fields.
-        printf "Filename: %s\n" "$url"    >> "${pkg_dir}/Packages"
-        printf "Size: %s\n"    "$size"   >> "${pkg_dir}/Packages"
-        printf "MD5sum: %s\n"  "$md5"    >> "${pkg_dir}/Packages"
-        printf "SHA1: %s\n"   "$sha1"   >> "${pkg_dir}/Packages"
-        printf "SHA256: %s\n" "$sha256"  >> "${pkg_dir}/Packages"
-        printf "\n"                       >> "${pkg_dir}/Packages"
+        _write_entry() {
+          local dir="$1"
+          printf "Package: %s\n"      "$name"    >> "${dir}/Packages"
+          printf "Version: %s\n"      "$version" >> "${dir}/Packages"
+          printf "Architecture: %s\n" "$a"       >> "${dir}/Packages"
+          printf '%s\n' "$_control" | grep -v -E \
+            '^(Package|Version|Architecture):' >> "${dir}/Packages"
+          printf "Filename: %s\n" "$url"    >> "${dir}/Packages"
+          printf "Size: %s\n"    "$size"   >> "${dir}/Packages"
+          printf "MD5sum: %s\n"  "$md5"    >> "${dir}/Packages"
+          printf "SHA1: %s\n"   "$sha1"   >> "${dir}/Packages"
+          printf "SHA256: %s\n" "$sha256"  >> "${dir}/Packages"
+          printf "\n"                       >> "${dir}/Packages"
+        }
+        _write_entry "$pkg_dir"
+        # Stable entries also go to dev as fallback (unless a dev entry exists).
+        if [[ "$_chan" == "stable" && -z "${_dev_pkgs["${a}:${name}"]:-}" ]]; then
+          _write_entry "$dev_dir"
+        fi
       else
         # Legacy v1 entry (no control stanza): minimal output.
-        printf "Package: %s\nVersion: %s\nArchitecture: %s\nFilename: %s\nSize: %s\nMD5sum: %s\nSHA1: %s\nSHA256: %s\n\n" \
-          "$name" "$version" "$a" "$url" "$size" "$md5" "$sha1" "$sha256" \
-          >> "${pkg_dir}/Packages"
+        _write_legacy() {
+          local dir="$1"
+          printf "Package: %s\nVersion: %s\nArchitecture: %s\nFilename: %s\nSize: %s\nMD5sum: %s\nSHA1: %s\nSHA256: %s\n\n" \
+            "$name" "$version" "$a" "$url" "$size" "$md5" "$sha1" "$sha256" \
+            >> "${dir}/Packages"
+        }
+        _write_legacy "$pkg_dir"
+        if [[ "$_chan" == "stable" && -z "${_dev_pkgs["${a}:${name}"]:-}" ]]; then
+          _write_legacy "$dev_dir"
+        fi
       fi
     done < index/packages.tsv
+
+    unset _dev_pkgs
 
     for dir in "$stable_dir" "$dev_dir"; do
       gzip -k -f "${dir}/Packages"
