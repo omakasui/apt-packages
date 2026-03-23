@@ -35,3 +35,57 @@ MD5sum: f5f39e9a16b299d3a83195f0c8baeaa7
 SHA1: 436f636c31cbb7c0f1f399f97d144a3ab28e3b8e
 SHA256: 3cc94f9ae9a849e5b8b24e021964950c6dd93f8ff61a7deafa6b5de975f024ca
 
+Package: omakasui-zellij
+Version: 20260323
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40
+Depends: zellij, gum
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij configuration for omakasui
+ Installs omakub-based zellij config and a setup script.
+ Run omakasui-zellij-setup to activate for the current user.
+Filename: pool/omakasui-zellij-20260323/omakasui-zellij_20260323_ubuntu2404_all.deb
+Size: 3378
+MD5sum: 2bf382fcac7bd2ac5fb9d94822f32e64
+SHA1: 411f98ec612ac816dc6e03689d7a01c0b15d1cd0
+SHA256: 969126d620dc7ab2c0d5ff93f9cc3b35caa40ec3a486e98c09c520cd224c9c87
+
+Package: omakub-zellij
+Version: 20260323
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40
+Depends: zellij, gum
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij configuration for omakub
+ Installs omakub-based zellij config and a setup script.
+ Run omakub-zellij-setup to activate for the current user.
+Filename: pool/omakasui-zellij-20260323/omakub-zellij_20260323_ubuntu2404_all.deb
+Size: 3374
+MD5sum: 98bc981b940ea6aa913792438b1b5c58
+SHA1: 0c17ed5b5ff9b6c79ced95259c4c913389dfb79e
+SHA256: 8c64fa943a45e89d15eb65587a242083855544a448bb84c0a3ffc75ab8044059
+
+Package: omadeb-zellij
+Version: 20260323
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40
+Depends: zellij, gum
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij configuration for omadeb
+ Installs omakub-based zellij config and a setup script.
+ Run omadeb-zellij-setup to activate for the current user.
+Filename: pool/omakasui-zellij-20260323/omadeb-zellij_20260323_ubuntu2404_all.deb
+Size: 3384
+MD5sum: f73202bf31e3a6b53337108b0a450947
+SHA1: 41d853f94a0c29592685fb7219fd7c9772350086
+SHA256: 3a5a316b3d3f7ebb643ae6d839f630da8fe790ce5208d3ed065a36b5cfb77934
+
