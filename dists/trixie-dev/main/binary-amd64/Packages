@@ -1002,23 +1002,6 @@ MD5sum: e599cebf3a4c2f68ba68e2c7a04ff7c2
 SHA1: ec28a22503976725665334268503a363f132628b
 SHA256: 8d17af85cab564418195d076596284f044f3b3ff010aacb8fd7e24423c4dac14
 
-Package: aether
-Version: 4.4.0-omakasui.1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 13636
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Section: gnome
-Priority: optional
-Homepage: https://github.com/omakasui/aether
-Description: Aether - wallpaper-based color extraction and desktop theming. Go/Wails GTK4 app. Supports animated wallpapers (GIF, MP4, WebM), wallhaven.cc browsing, color presets, Base16 import, and per-app templates.
- .
-Filename: pool/aether-4.4.0-omakasui.1/aether_4.4.0-omakasui.1_debian13_amd64.deb
-Size: 5141738
-MD5sum: d3827667c70a8518ed45ac7d98d11124
-SHA1: 257ae84ad404d29169ed2d4f9daea6afab5342d8
-SHA256: 3ee34b4732428cbf52fa36e71f0635488e63a622156a934126ea6e10dada7e3f
-
 Package: omakasui-aether
 Version: 4.4.0-omakasui.1
 Architecture: all
@@ -1075,4 +1058,21 @@ Size: 1412
 MD5sum: 8c9eccbc31b8a3fbce6325121a6de860
 SHA1: 19f803256acfef94e67d43c03c0b0d4b589d4807
 SHA256: c96f9823ddbd13a0592952f73c5cc62b9af7efc9badcfb00e8f124c0e722746c
+
+Package: aether
+Version: 4.4.0-omakasui.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 13648
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Section: gnome
+Priority: optional
+Homepage: https://github.com/omakasui/aether
+Description: Aether - wallpaper-based color extraction and desktop theming. Go/Wails GTK4 app. Supports animated wallpapers (GIF, MP4, WebM), wallhaven.cc browsing, color presets, Base16 import, and per-app templates.
+ .
+Filename: pool/aether-4.4.0-omakasui.1/aether_4.4.0-omakasui.1_debian13_amd64.deb
+Size: 5144890
+MD5sum: c7a812019e1c7aff9edae37ac7c16f71
+SHA1: 10c9dc846c7e28f81a9c7f92b39a487919b48c79
+SHA256: d882654e5839e2855068d63091bfbd09338c0c487925ccd8ade12d91dc273a3c
 
