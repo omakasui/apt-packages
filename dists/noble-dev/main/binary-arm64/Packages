@@ -152,23 +152,6 @@ MD5sum: 88c6b89cebf06af6ee694d5d0ffc5f08
 SHA1: 42a17d15caf0c5f6e642b932bc6898c65108ed72
 SHA256: 83ce27a7fac0eac03bd9e1328ced1e9cfe9a3ccb7c527aad2c23f28020c72d58
 
-Package: walker
-Version: 2.15.1
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 7980
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.1/walker_2.15.1_ubuntu2404_arm64.deb
-Size: 2085494
-MD5sum: 81f2ce555066750dfdfb660af28126ea
-SHA1: 949500340d4eefb9d2b58c44767433b6863a36be
-SHA256: cb65f10beb5de8f8b5b0f3ca380398330fd59fac07ce9b4064a5c9e4bfd1be9e
-
 Package: ufw-docker
 Version: 251123
 Architecture: all
@@ -763,4 +746,21 @@ Size: 10147378
 MD5sum: dbff6a0d46db0bc637edb6d889ccb683
 SHA1: 73f2f066b5e9b60119581d806f542acef0048329
 SHA256: 75407ad6539866ddb06f9d57291232fd754ef8cd4f289c85cc73e8e02cedf558
+
+Package: walker
+Version: 2.15.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7984
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.15.2/walker_2.15.2_ubuntu2404_arm64.deb
+Size: 2086152
+MD5sum: e06e7ded1c51e0fbf5536ab54b200d47
+SHA1: f14e9ce37858355b32d29f606f3d996fad9ebcb3
+SHA256: e32819376df6933960f96359461d28c26ce7d010480a25544c6fadb06a854b05
 

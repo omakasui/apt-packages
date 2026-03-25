@@ -185,23 +185,6 @@ MD5sum: a38e3248469103e1990001d2441dc096
 SHA1: 5e4fd9a640ca6c23f2e7b8bd967fe7ae16675e21
 SHA256: 07913d40cb0b77289ba3bf6302d8efc6d457bbd1230a2f5a7b0a821598ed474c
 
-Package: walker
-Version: 2.15.1
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8044
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.1/walker_2.15.1_debian13_arm64.deb
-Size: 2085732
-MD5sum: f648fbbe1fff98a8ad89f0e346767983
-SHA1: cfe3c4f3ab49608a05e22041de42685f03a95f57
-SHA256: df649fbaaaa6d5d504da247635683de10bbf48b778d71bdc8731d59651c16fa4
-
 Package: omakasui-yaru-theme-gtk
 Version: 25.04.1-0ubuntu1
 Architecture: all
@@ -1000,4 +983,21 @@ Size: 10148446
 MD5sum: c48f47ea9fb069ae25917b95a4ff5445
 SHA1: 14c8aaa887a8558e2aa8f1730557bb28fbdf505e
 SHA256: df02910f2a606f3c723c29a36e4751c370c3463e9301dfa7d40209076b4cc40d
+
+Package: walker
+Version: 2.15.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7984
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.15.2/walker_2.15.2_debian13_arm64.deb
+Size: 2086208
+MD5sum: 8fd5c4c0b1962f4f0c7ff80eb446bf29
+SHA1: 8135ee4e69caddefebc7c5cfb4d2a2d7f645f876
+SHA256: 3f00537b74dcd50c8be718c5b2563cf1b09d7c603c294b95d339df5a335945a1
 

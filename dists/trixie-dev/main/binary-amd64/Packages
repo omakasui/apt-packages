@@ -185,23 +185,6 @@ MD5sum: a38e3248469103e1990001d2441dc096
 SHA1: 5e4fd9a640ca6c23f2e7b8bd967fe7ae16675e21
 SHA256: 07913d40cb0b77289ba3bf6302d8efc6d457bbd1230a2f5a7b0a821598ed474c
 
-Package: walker
-Version: 2.15.1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8192
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.1/walker_2.15.1_debian13_amd64.deb
-Size: 2174930
-MD5sum: 8f6e72e05ba6bf664e1cd437c8683c1f
-SHA1: a4ed0dbbee6ab39c7746d62a8b93f71fbab75866
-SHA256: e63951b812e61626b601c31f242df1f82fae000600ae93dc5d56264443a3ecfa
-
 Package: omakasui-yaru-theme-gtk
 Version: 25.04.1-0ubuntu1
 Architecture: all
@@ -1001,4 +984,21 @@ Size: 10246182
 MD5sum: 4722f8129117e7c4e5ecc6f590301e8e
 SHA1: 84840394fd013d11683f49cb3800ebb6f52a9a19
 SHA256: 63e83410e435b41b76cf16d5bd3000233efc0d6a7cd4dfb7b5f7cc91fb848540
+
+Package: walker
+Version: 2.15.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8192
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.15.2/walker_2.15.2_debian13_amd64.deb
+Size: 2172640
+MD5sum: e599cebf3a4c2f68ba68e2c7a04ff7c2
+SHA1: ec28a22503976725665334268503a363f132628b
+SHA256: 8d17af85cab564418195d076596284f044f3b3ff010aacb8fd7e24423c4dac14
 
