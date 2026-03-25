@@ -765,3 +765,20 @@ MD5sum: 7b6cb471062592309e8d256abd0b3427
 SHA1: 80cda5c2fe64a8f5eb88e4991028ad0665e10df5
 SHA256: d16f69d78b170d80504f9cfca3023b790d73f575254cfe8820c884455c7dc132
 
+Package: aether
+Version: 4.4.0-omakasui.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 13648
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Section: gnome
+Priority: optional
+Homepage: https://github.com/omakasui/aether
+Description: Aether - wallpaper-based color extraction and desktop theming. Go/Wails GTK4 app. Supports animated wallpapers (GIF, MP4, WebM), wallhaven.cc browsing, color presets, Base16 import, and per-app templates.
+ .
+Filename: pool/aether-4.4.0-omakasui.1/aether_4.4.0-omakasui.1_ubuntu2404_amd64.deb
+Size: 5144406
+MD5sum: 579228eaef85e26d08a1481ab1a84566
+SHA1: eaf294238feb1287b6fba46b30fb08d232f9e808
+SHA256: 80d0c42b3b3129b23cce5a09345e88fd475591e1a6eccfbb0985b7da91afd441
+
