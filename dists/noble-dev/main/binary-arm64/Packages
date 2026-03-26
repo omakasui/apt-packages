@@ -830,3 +830,23 @@ MD5sum: 1505981b88f617758c3472f0c276c20e
 SHA1: 8a926fa727e07bf27e4c9f312837ce56d4d2b616
 SHA256: f2805f5f646d5f41687844121fbdebde7f4040832f2f2a9dac9d1aad0556a5ba
 
+Package: libgtk4-layer-shell-0
+Version: 1.1.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 280
+Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
+Conflicts: gtk4-layer-shell, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Replaces: gtk4-layer-shell, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Provides: gtk4-layer-shell, gir1.2-gtk4layershell-1.0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: GTK4 Layer Shell - library for the Wayland Layer Shell protocol with GTK4. Provides libgtk4-layer-shell.so and GObject Introspection typelib. Required by GJS/GTK4 apps that use the Layer Shell protocol (e.g. omakasui-aether).
+ .
+Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell-0_1.1.0_ubuntu2404_arm64.deb
+Size: 39478
+MD5sum: be5051b0aab5bb5a7c3f64531725116c
+SHA1: dfdd03bc600cffaf8302fef644f5f34adb3a3785
+SHA256: cfd075a7a42835527e6b73dd4ac48c1e959aba50a9b2d6f1c3b0a7003a0b7e71
+
