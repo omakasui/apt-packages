@@ -747,23 +747,6 @@ MD5sum: dbff6a0d46db0bc637edb6d889ccb683
 SHA1: 73f2f066b5e9b60119581d806f542acef0048329
 SHA256: 75407ad6539866ddb06f9d57291232fd754ef8cd4f289c85cc73e8e02cedf558
 
-Package: walker
-Version: 2.15.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 7984
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.2/walker_2.15.2_ubuntu2404_arm64.deb
-Size: 2086152
-MD5sum: e06e7ded1c51e0fbf5536ab54b200d47
-SHA1: f14e9ce37858355b32d29f606f3d996fad9ebcb3
-SHA256: e32819376df6933960f96359461d28c26ce7d010480a25544c6fadb06a854b05
-
 Package: aether
 Version: 4.4.0
 Architecture: arm64
@@ -849,4 +832,21 @@ Size: 39478
 MD5sum: be5051b0aab5bb5a7c3f64531725116c
 SHA1: dfdd03bc600cffaf8302fef644f5f34adb3a3785
 SHA256: cfd075a7a42835527e6b73dd4ac48c1e959aba50a9b2d6f1c3b0a7003a0b7e71
+
+Package: walker
+Version: 2.15.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8052
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.15.2/walker_2.15.2_ubuntu2404_arm64.deb
+Size: 2080204
+MD5sum: 4fbb75241e6b72653ca50951b3d51fa6
+SHA1: 2fed1f601f57b9e36aeaa6f3536e05d29576bfe8
+SHA256: fca199da22a1b49af723b19888d7aa676c35c2dc9dcde143b3a8478d6e504849
 

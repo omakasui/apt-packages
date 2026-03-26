@@ -985,23 +985,6 @@ MD5sum: 4722f8129117e7c4e5ecc6f590301e8e
 SHA1: 84840394fd013d11683f49cb3800ebb6f52a9a19
 SHA256: 63e83410e435b41b76cf16d5bd3000233efc0d6a7cd4dfb7b5f7cc91fb848540
 
-Package: walker
-Version: 2.15.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8192
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.2/walker_2.15.2_debian13_amd64.deb
-Size: 2172640
-MD5sum: e599cebf3a4c2f68ba68e2c7a04ff7c2
-SHA1: ec28a22503976725665334268503a363f132628b
-SHA256: 8d17af85cab564418195d076596284f044f3b3ff010aacb8fd7e24423c4dac14
-
 Package: aether
 Version: 4.4.0
 Architecture: amd64
@@ -1087,4 +1070,21 @@ Size: 39486
 MD5sum: 32289dffe8fc1ec5a52bb44d221a0ece
 SHA1: dc39cd45095f7bee5b44adf955e6aeffe1539499
 SHA256: 5b9aa00f2b48247f2b1f5431dae6f8462bf9763b7cc82c5a8490ba563898af8e
+
+Package: walker
+Version: 2.15.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8220
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.15.2/walker_2.15.2_debian13_amd64.deb
+Size: 2175406
+MD5sum: 3b6504a1ed748b85f192130821bdf731
+SHA1: 9974ab86ebe808c0e362ec2c86b558a21898e28a
+SHA256: 6a36723bf305ee8c41902ea8285a47c39b4a28bd871c265fd03c174912107254
 

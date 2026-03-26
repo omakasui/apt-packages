@@ -748,23 +748,6 @@ MD5sum: d01135409907a0ac40b15bc68550814b
 SHA1: a156c5e8304aad33b356a94cbf43bee41c3a03ba
 SHA256: 64441a2dabd28e1d4da0ae7dc1f263c7c557608aaf31820250ccecbfb107cd45
 
-Package: walker
-Version: 2.15.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8192
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.2/walker_2.15.2_ubuntu2404_amd64.deb
-Size: 2174420
-MD5sum: 7b6cb471062592309e8d256abd0b3427
-SHA1: 80cda5c2fe64a8f5eb88e4991028ad0665e10df5
-SHA256: d16f69d78b170d80504f9cfca3023b790d73f575254cfe8820c884455c7dc132
-
 Package: aether
 Version: 4.4.0
 Architecture: amd64
@@ -850,4 +833,21 @@ Size: 39544
 MD5sum: 2fe14a022716549a3d5fb8bc656ead76
 SHA1: 5f16bd1ff5aac298ec37f26af0e3b2148c6dbf0e
 SHA256: 6ba1f8f2590f5917bc5c57e98d3b44e5948a0ebc6bbc3e79de41b8a9933c43b6
+
+Package: walker
+Version: 2.15.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8220
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.15.2/walker_2.15.2_ubuntu2404_amd64.deb
+Size: 2175694
+MD5sum: b4a0c39b4cb48492884acc5ce43f31e4
+SHA1: 992a25acdb4039b7c24ff22ac8e29c9f1c153cce
+SHA256: 0fc89326ee42b40a987b3eef001967cff345bc7a8306d6570626f58d6aa37546
 
