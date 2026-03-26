@@ -1001,63 +1001,6 @@ MD5sum: 8fd5c4c0b1962f4f0c7ff80eb446bf29
 SHA1: 8135ee4e69caddefebc7c5cfb4d2a2d7f645f876
 SHA256: 3f00537b74dcd50c8be718c5b2563cf1b09d7c603c294b95d339df5a335945a1
 
-Package: omakasui-aether
-Version: 4.4.0-omakasui.1
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 16
-Depends: aether, gum
-Section: gnome
-Priority: optional
-Homepage: https://github.com/bjarneo/aether
-Description: Aether theme integration for omakasui
- Creates the symlink between Aether and the omakasui theme system
- so Aether-generated themes appear in the project theme list.
- Run omakasui-aether-setup to activate for the current user.
-Filename: pool/omakasui-aether-4.4.0-omakasui.1/omakasui-aether_4.4.0-omakasui.1_debian13_all.deb
-Size: 1412
-MD5sum: 8151663d57ed6a2aa6ecf24ee08485da
-SHA1: a18c4ec836e54955a27f449ed47b18ecee84a07c
-SHA256: ff8010f99447c1a818f642a99286f3087c7b17812871240272ad6ee48b528fec
-
-Package: omakub-aether
-Version: 4.4.0-omakasui.1
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 16
-Depends: aether, gum
-Section: gnome
-Priority: optional
-Homepage: https://github.com/bjarneo/aether
-Description: Aether theme integration for omakub
- Creates the symlink between Aether and the omakub theme system
- so Aether-generated themes appear in the project theme list.
- Run omakub-aether-setup to activate for the current user.
-Filename: pool/omakasui-aether-4.4.0-omakasui.1/omakub-aether_4.4.0-omakasui.1_debian13_all.deb
-Size: 1412
-MD5sum: 63b178e9b387076db45f4305aa5be822
-SHA1: c0d75e9a6b07acd006a588a30349fd4bce9574f2
-SHA256: fcf7e97f1ff0842a4401532bb73fd7c793fe9cd2253280c3e5db2f66f446de70
-
-Package: omadeb-aether
-Version: 4.4.0-omakasui.1
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 16
-Depends: aether, gum
-Section: gnome
-Priority: optional
-Homepage: https://github.com/bjarneo/aether
-Description: Aether theme integration for omadeb
- Creates the symlink between Aether and the omadeb theme system
- so Aether-generated themes appear in the project theme list.
- Run omadeb-aether-setup to activate for the current user.
-Filename: pool/omakasui-aether-4.4.0-omakasui.1/omadeb-aether_4.4.0-omakasui.1_debian13_all.deb
-Size: 1412
-MD5sum: 8c9eccbc31b8a3fbce6325121a6de860
-SHA1: 19f803256acfef94e67d43c03c0b0d4b589d4807
-SHA256: c96f9823ddbd13a0592952f73c5cc62b9af7efc9badcfb00e8f124c0e722746c
-
 Package: aether
 Version: 4.4.0
 Architecture: arm64
@@ -1072,4 +1015,55 @@ Size: 4233912
 MD5sum: d0687600b8571e2d99262a54287f045b
 SHA1: bf3c234920276f7ade7aae1c5e770574e9984ce5
 SHA256: 53047612b0e1d5a5f67614329c3e8d3f9e2ab075efc28d33949928693cf7c735
+
+Package: omakasui-aether
+Version: 20260323
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 16
+Depends: aether, gum
+Section: gnome
+Priority: optional
+Homepage: https://github.com/bjarneo/aether
+Description: Aether theme integration for omakasui
+ Setup script that links Aether themes into the omakasui theme list.
+Filename: pool/omakasui-aether-20260323/omakasui-aether_20260323_debian13_all.deb
+Size: 1336
+MD5sum: db2818f3c78290ea9e34cb20a3232ef8
+SHA1: 4e2bae3532e5a7771bf1d6fddf3900cf46028825
+SHA256: 3846ce291f7f2ac40d902942e16241c865601e7d0155371b7a368d04aac0e965
+
+Package: omakub-aether
+Version: 20260323
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 16
+Depends: aether, gum
+Section: gnome
+Priority: optional
+Homepage: https://github.com/bjarneo/aether
+Description: Aether theme integration for omakub
+ Setup script that links Aether themes into the omakub theme list.
+Filename: pool/omakasui-aether-20260323/omakub-aether_20260323_debian13_all.deb
+Size: 1340
+MD5sum: 2d69f7435a1b11e588d96ffc79735d18
+SHA1: 02bbd3ec5a5418042fcfa230ef719fe64a74ae15
+SHA256: f62ccf60ae36c811c411b317e3f7bb53efdf04f33a19c556e00978b375183333
+
+Package: omadeb-aether
+Version: 20260323
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 16
+Depends: aether, gum
+Section: gnome
+Priority: optional
+Homepage: https://github.com/bjarneo/aether
+Description: Aether theme integration for omadeb
+ Setup script that links Aether themes into the omadeb theme list.
+Filename: pool/omakasui-aether-20260323/omadeb-aether_20260323_debian13_all.deb
+Size: 1340
+MD5sum: 0dd042f016654490f729a3781c20993d
+SHA1: d0142de6315d305795d2812b6fe1b4c84961c2d2
+SHA256: 8a40094220487b2d678fe9572db84d6df3b27835c73e19152ddd5096617cfcda
 
