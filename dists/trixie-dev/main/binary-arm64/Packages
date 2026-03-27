@@ -982,57 +982,6 @@ MD5sum: d0687600b8571e2d99262a54287f045b
 SHA1: bf3c234920276f7ade7aae1c5e770574e9984ce5
 SHA256: 53047612b0e1d5a5f67614329c3e8d3f9e2ab075efc28d33949928693cf7c735
 
-Package: omakasui-aether
-Version: 20260326.2
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 16
-Depends: aether, gum
-Section: gnome
-Priority: optional
-Homepage: https://github.com/bjarneo/aether
-Description: Aether theme integration for omakasui
- Setup script that links Aether themes into the omakasui theme list.
-Filename: pool/omakasui-aether-20260326.2/omakasui-aether_20260326.2_debian13_all.deb
-Size: 1552
-MD5sum: a9f4d303f369f79f91c3220f93569604
-SHA1: 95758ac888c2bc375e049a5fa029bfe700377caf
-SHA256: 116a3ffe9c6f9ac1877e6f87133323372f354d960e26c7c653cf2df577d5344c
-
-Package: omakub-aether
-Version: 20260326.2
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 16
-Depends: aether, gum
-Section: gnome
-Priority: optional
-Homepage: https://github.com/bjarneo/aether
-Description: Aether theme integration for omakub
- Setup script that links Aether themes into the omakub theme list.
-Filename: pool/omakasui-aether-20260326.2/omakub-aether_20260326.2_debian13_all.deb
-Size: 1548
-MD5sum: 276f69738e4bc99a948044c6594631c2
-SHA1: cd4a9b4da7f71d21424339de29d61a72f94b1b80
-SHA256: 8c4f6d9c960d4742c19e7a706b1abbee73cd1bf5a296cbc6fab0ef534a7c4a87
-
-Package: omadeb-aether
-Version: 20260326.2
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 16
-Depends: aether, gum
-Section: gnome
-Priority: optional
-Homepage: https://github.com/bjarneo/aether
-Description: Aether theme integration for omadeb
- Setup script that links Aether themes into the omadeb theme list.
-Filename: pool/omakasui-aether-20260326.2/omadeb-aether_20260326.2_debian13_all.deb
-Size: 1552
-MD5sum: e4f7692ffd620dc7ad839bf79d52bfc0
-SHA1: c37ec47d4ac59b00cab9cc4b16ef47de615ddec8
-SHA256: 77b1939913d5412e21550eb6fd3f20f3d4bbb2532b331beaa77bc134da0432b8
-
 Package: libgtk4-layer-shell-0
 Version: 1.1.0
 Architecture: arm64
@@ -1086,4 +1035,55 @@ Size: 18831412
 MD5sum: 46e1d3d96a89e0410d5012804ab6a792
 SHA1: 18f34e61cd08a4658fff03afac698b67b15483d6
 SHA256: fa9cdbbd14101e5a4d1d00e8100bb8a027ea38cff0f4fc3f1b7873bcbaa45a62
+
+Package: omakasui-aether
+Version: 20260326.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 16
+Depends: aether, gum
+Section: gnome
+Priority: optional
+Homepage: https://github.com/bjarneo/aether
+Description: Aether theme integration for omakasui
+ Setup script that links Aether themes into the omakasui theme list.
+Filename: pool/omakasui-aether-20260326.2/omakasui-aether_20260326.2_debian13_all.deb
+Size: 1320
+MD5sum: 1da4f9a53a923ef479dbb8af3c192c34
+SHA1: 2d09d9882b34e4321b6efbe218ed599a004c4aaa
+SHA256: ba0cb3c3b7b6a83d1b2e061e36e16949f6212b2061c45c8909811bd0d4d5d404
+
+Package: omakub-aether
+Version: 20260326.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 16
+Depends: aether, gum
+Section: gnome
+Priority: optional
+Homepage: https://github.com/bjarneo/aether
+Description: Aether theme integration for omakub
+ Setup script that links Aether themes into the omakub theme list.
+Filename: pool/omakasui-aether-20260326.2/omakub-aether_20260326.2_debian13_all.deb
+Size: 1324
+MD5sum: 31062f6d4a23bc39e4cc6b45b33790e8
+SHA1: b09b1655ff1b196ada2115cbc5570a8146526754
+SHA256: 31e9b322e9405e385609f2b127d1783fb4e3d1faf9cda046384762d698a0264e
+
+Package: omadeb-aether
+Version: 20260326.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 16
+Depends: aether, gum
+Section: gnome
+Priority: optional
+Homepage: https://github.com/bjarneo/aether
+Description: Aether theme integration for omadeb
+ Setup script that links Aether themes into the omadeb theme list.
+Filename: pool/omakasui-aether-20260326.2/omadeb-aether_20260326.2_debian13_all.deb
+Size: 1324
+MD5sum: d41c59751a9aaaf18a18af60e8c79541
+SHA1: d413e4e5c6f892a2c8590f46925243b9b84a0501
+SHA256: 8e133a9901d99c1c129cce9754e0b65d7a5d42eb8d27726b5d6404d2a462a162
 
