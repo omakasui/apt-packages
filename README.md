@@ -9,7 +9,11 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | Suite | Distro | Architectures |
 |---|---|---|
 | `noble` | Ubuntu 24.04 | `amd64`, `arm64` |
+| `noble-dev` | Ubuntu 24.04 (dev channel) | `amd64`, `arm64` |
 | `trixie` | Debian 13 | `amd64`, `arm64` |
+| `trixie-dev` | Debian 13 (dev channel) | `amd64`, `arm64` |
+
+Dev suites include all stable packages as a base; dev-channel entries take precedence when present.
 
 ## Packages
 
@@ -36,6 +40,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `font-jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | amd64, arm64 |
 | `glab` | [glab](https://gitlab.com/gitlab-org/cli) | noble, trixie | amd64, arm64 |
 | `ghostty` | [ghostty](https://github.com/ghostty-org/ghostty) | noble, trixie | amd64, arm64 |
+| `gnome-shell-extension-grimble-tiling-wm` | [grimble-tiling-wm](https://github.com/erwanlem/grimble-tiling-wm) | noble, trixie | all |
 | `gtk4-layer-shell` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | amd64, arm64 |
 | `gum` | [gum](https://github.com/charmbracelet/gum) | noble, trixie | amd64, arm64 |
 | `kitty` | [kitty](https://sw.kovidgoyal.net/kitty/) | noble, trixie | amd64, arm64 |
@@ -44,8 +49,8 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `makima` | [makima](https://github.com/cyber-sushi/makima) | noble, trixie | amd64, arm64 |
 | `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
 | `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | amd64, arm64 |
-| `omakasui-aether` | [Neovim](https://github.com/bjarneo/aether) | noble, trixie | all |
-| `omakasui-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
+| `omakasui-aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | all |
+| `omakasui-nvim` | [LazyVim](https://github.com/LazyVim/LazyVim) | noble, trixie | all |
 | `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
 | `omakasui-zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | all |
 | `starship` | [starship](https://starship.rs) | noble, trixie | amd64, arm64 |
@@ -53,9 +58,12 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | amd64, arm64 |
 | `uwsm` | [uwsm](https://github.com/Vladimir-csp/uwsm) | noble, trixie | amd64, arm64 |
 | `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
-| `yaru-theme` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
+| `omakasui-yaru-theme-gtk` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
+| `omakasui-yaru-theme-icon` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
+| `omakasui-yaru-theme-sound` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
+| `omakasui-yaru-theme-gnome-shell` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
-| `zoxide` | [zellij](https://github.com/ajeetdsouza/zoxide) | noble, trixie | amd64, arm64 |
+| `zoxide` | [zoxide](https://github.com/ajeetdsouza/zoxide) | noble, trixie | amd64, arm64 |
 
 `omakasui-aether` is used to make it easier to setup aether on Omakasui setups. You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-aether` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-aether` ([Omadeb](https://omadeb.omakasui.org)).
 
@@ -76,10 +84,12 @@ If you are an upstream maintainer and have concerns about the distribution of yo
 ## packages.tsv format
 
 ```
-<suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256> <control_b64>
+<suite> <arch> <name> <version> <url> <size> <md5> <sha1> <sha256> <control_b64> [<channel>]
 ```
 
 `url` is the full GitHub Releases asset URL, stored as source of truth. When generating the `Packages` index, `update-index.sh` converts it to a pool-relative path (`pool/<tag>/<file>`). The Cloudflare Worker on `packages.omakasui.org` redirects `pool/` requests to the corresponding GitHub Releases asset — no binaries are stored in this repo.
+
+The `channel` field is `stable` (default) or `dev`. Pass `--channel dev` to `register-package.sh` to publish to the dev channel, which populates the `*-dev` suites.
 
 ## User setup
 
