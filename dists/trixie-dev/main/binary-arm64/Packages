@@ -567,23 +567,6 @@ MD5sum: 3106565652104afc9350811522ff8d35
 SHA1: f04e3a3f5d0c957701b8a675fff5e2b73ea8d7ea
 SHA256: f2a183c1b06ef5afe3dcb15e3caf891b5c42dc15816bb70e8d68331e68f39a37
 
-Package: ghostty
-Version: 1.3.1
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38084
-Depends: libgtk-4-1, libadwaita-1-0, gtk4-layer-shell, gtk4-layer-shell (>= 1.1.0)
-Section: x11
-Priority: optional
-Homepage: https://github.com/ghostty-org/ghostty
-Description: Ghostty - fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
- .
-Filename: pool/ghostty-1.3.1/ghostty_1.3.1_debian13_arm64.deb
-Size: 18831542
-MD5sum: 89d22c3fa12041a2f980e91c7ded5eda
-SHA1: 4b34f25794ba8e86417cc030c90b7e0a6f74113f
-SHA256: ad0b60c00a1200bd43a92fcc04a391b2bc28f85b9c4171e19b0539df0238460a
-
 Package: aether
 Version: 3.0.3
 Architecture: all
@@ -1086,4 +1069,21 @@ Size: 2080708
 MD5sum: 8f849afe884b2ebff62fdd2651238115
 SHA1: b3bb873626c11e6395c37caf0c39efbd928bc295
 SHA256: dbe04cd15e6eff929c04bfced3b013ef9b8c74673b74742ff3c5f01d8a3ab47c
+
+Package: ghostty
+Version: 1.3.1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 38084
+Depends: libgtk-4-1, libadwaita-1-0, libgtk4-layer-shell-0, libgtk4-layer-shell-0 (>= 1.1.0)
+Section: x11
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty - fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
+ .
+Filename: pool/ghostty-1.3.1/ghostty_1.3.1_debian13_arm64.deb
+Size: 18831412
+MD5sum: 46e1d3d96a89e0410d5012804ab6a792
+SHA1: 18f34e61cd08a4658fff03afac698b67b15483d6
+SHA256: fa9cdbbd14101e5a4d1d00e8100bb8a027ea38cff0f4fc3f1b7873bcbaa45a62
 
