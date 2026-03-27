@@ -868,3 +868,20 @@ MD5sum: aab4f0c8efd84196694d789c3785cf6e
 SHA1: a0c15710dfc4d04de4076124b521f7aec9692cb1
 SHA256: 38bb843811762b6db63889c543ff0dd91cf28fc2174ff222b55886a6320f7fe0
 
+Package: cliamp
+Version: 1.27.8
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 29260
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.27.8/cliamp_1.27.8_ubuntu2404_amd64.deb
+Size: 8397642
+MD5sum: c370b54410692014fac9e7b7c29ec55b
+SHA1: 99062be0a70de84b7e623f2bad5c76e422140b45
+SHA256: c1452516c7e3e64777affa116fe42f9a6af8f3d6e6b93a8399c9074eadfa905f
+
