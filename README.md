@@ -17,6 +17,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 |---|---|---|---|
 | `aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | amd64, arm64 |
 | `alacritty` | [alacritty](https://github.com/alacritty/alacritty) | noble, trixie | amd64, arm64 |
+| `cliamp` | [cliamp](https://github.com/bjarneo/cliamp) | noble, trixie | amd64, arm64 |
 | `elephant` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `elephant-calc` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `elephant-clipboard` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
@@ -43,6 +44,7 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `makima` | [makima](https://github.com/cyber-sushi/makima) | noble, trixie | amd64, arm64 |
 | `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
 | `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | amd64, arm64 |
+| `omakasui-aether` | [Neovim](https://github.com/bjarneo/aether) | noble, trixie | all |
 | `omakasui-nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
 | `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
 | `omakasui-zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | all |
@@ -53,6 +55,9 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 | `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
 | `yaru-theme` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
+| `zoxide` | [zellij](https://github.com/ajeetdsouza/zoxide) | noble, trixie | amd64, arm64 |
+
+`omakasui-aether` is used to make it easier to setup aether on Omakasui setups. You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-aether` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-aether` ([Omadeb](https://omadeb.omakasui.org)).
 
 `omakasui-walker` is a metapackage that installs `walker`, `elephant`, and all elephant provider packages in one shot. You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-walker` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-walker` ([Omadeb](https://omadeb.omakasui.org)).
 
