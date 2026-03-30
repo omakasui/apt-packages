@@ -186,25 +186,6 @@ MD5sum: 107ec539450ff5a17ed7422acafef994
 SHA1: a22615b8133a0abb9a71ab0ff5cc0e22094ac5ed
 SHA256: f3c0a49d968b62a3494fe3602db2e172428a5de42f3e055a3c6dce02c55cf7e0
 
-Package: nvim
-Version: 0.11.6
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 39392
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor. Packaged from official GitHub release binaries for amd64 and arm64. Conflicts with and replaces the distro neovim package.
- .
-Filename: pool/nvim-0.11.6/nvim_0.11.6_ubuntu2404_arm64.deb
-Size: 8643698
-MD5sum: 1edc8b48af887fda2f2fc2cebee65229
-SHA1: a081b3980fc7c1d6ed75c898dff8da8c4142b05b
-SHA256: edc47e75e683ad303443cb3d417d6f4f8113a2bd47db414254b93639f2aae0cb
-
 Package: omakasui-nvim
 Version: 20260310
 Architecture: arm64
@@ -899,4 +880,23 @@ Size: 696
 MD5sum: d9cb4bf2d3fe1a33aa9c0dabc41869e0
 SHA1: 88aec13dd0e4f3952203ba0a5b34fdba644f9c30
 SHA256: 538c4067df387979651864eb384b5b6635817d1a3c96c12e2a5a47825803873b
+
+Package: nvim
+Version: 0.12.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40904
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor. Packaged from official GitHub release binaries for amd64 and arm64. Conflicts with and replaces the distro neovim package.
+ .
+Filename: pool/nvim-0.12.0/nvim_0.12.0_ubuntu2404_arm64.deb
+Size: 8942562
+MD5sum: f20368e5c89c528e736aac1c0c3d6721
+SHA1: fddafa521bcc28718ac11556bf4d044785ca8547
+SHA256: fa605919919ca5743ec2ac94fa39f22c4ac790472fb5345aa6daad44d01cbb06
 
