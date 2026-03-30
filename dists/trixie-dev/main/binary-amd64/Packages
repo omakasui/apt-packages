@@ -606,23 +606,6 @@ MD5sum: 32289dffe8fc1ec5a52bb44d221a0ece
 SHA1: dc39cd45095f7bee5b44adf955e6aeffe1539499
 SHA256: 5b9aa00f2b48247f2b1f5431dae6f8462bf9763b7cc82c5a8490ba563898af8e
 
-Package: walker
-Version: 2.15.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8220
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.2/walker_2.15.2_debian13_amd64.deb
-Size: 2175406
-MD5sum: 3b6504a1ed748b85f192130821bdf731
-SHA1: 9974ab86ebe808c0e362ec2c86b558a21898e28a
-SHA256: 6a36723bf305ee8c41902ea8285a47c39b4a28bd871c265fd03c174912107254
-
 Package: ghostty
 Version: 1.3.1
 Architecture: amd64
@@ -1137,4 +1120,21 @@ Size: 726
 MD5sum: 4b0eb1d0de0023a844922a42a2c89be8
 SHA1: a0f7cded85983b17242576f0afb8ee1ae24258f0
 SHA256: d4825b7885bde276e29b77a29bd551bd30a740835e612b5821c42900ffa0027c
+
+Package: walker
+Version: 2.15.2-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8228
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.15.2-omakasui1/walker_2.15.2-omakasui1_debian13_amd64.deb
+Size: 2177152
+MD5sum: f4ba732093909726091b119b8604ca3a
+SHA1: 64d3eec568310b73ddb4b893951baf52b500aa83
+SHA256: 9e3dfef8c7fc488caf72be57263e1eaf9913cb23fb2795b3bde68e2e6fb0304c
 
