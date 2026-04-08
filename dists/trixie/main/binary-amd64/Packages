@@ -185,23 +185,6 @@ MD5sum: a38e3248469103e1990001d2441dc096
 SHA1: 5e4fd9a640ca6c23f2e7b8bd967fe7ae16675e21
 SHA256: 07913d40cb0b77289ba3bf6302d8efc6d457bbd1230a2f5a7b0a821598ed474c
 
-Package: walker
-Version: 2.15.1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8192
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, gtk4-layer-shell, elephant, gtk4-layer-shell (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.1/walker_2.15.1_debian13_amd64.deb
-Size: 2174930
-MD5sum: 8f6e72e05ba6bf664e1cd437c8683c1f
-SHA1: a4ed0dbbee6ab39c7746d62a8b93f71fbab75866
-SHA256: e63951b812e61626b601c31f242df1f82fae000600ae93dc5d56264443a3ecfa
-
 Package: omakasui-yaru-theme-gtk
 Version: 25.04.1-0ubuntu1
 Architecture: all
@@ -310,39 +293,6 @@ MD5sum: 948c1c7f4b7164f1ee4a4d61aa2077f4
 SHA1: 28579e48038287e75f050d2884b21aedf90d0ae2
 SHA256: 5dd957508fe081b5443a90cae71fae2d95436ac8fd2b45067186042cb69a1558
 
-Package: zellij
-Version: 0.43.1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 49852
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: Zellij - a terminal workspace with batteries included. Installs the official upstream musl release binary for amd64 and arm64. Provides floating panes, layouts, multiplayer collaboration, and a plugin system.
- .
-Filename: pool/zellij-0.43.1/zellij_0.43.1_debian13_amd64.deb
-Size: 12366368
-MD5sum: c195cd08cadd4ef6dcc1b8d4eba48f51
-SHA1: 92034666058cb1053fcfa26a9e2e670f023b1c5b
-SHA256: ca909bb5911eb8f17fb12a60ebf4e54e93cbb34856696cc371d32f43c91e6268
-
-Package: omakasui-walker
-Version: 2.15.1
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4
-Depends: walker, elephant, elephant-desktopapplications, elephant-calc, elephant-clipboard, elephant-files, elephant-menus, elephant-providerlist, elephant-runner, elephant-symbols, elephant-todo, elephant-unicode, elephant-websearch
-Section: utils
-Priority: optional
-Homepage: https://github.com/omakasui/omakasui
-Description: omakasui-walker — metapackage for walker and elephant providers. Installs walker, elephant, and all elephant provider packages in one shot.
- .
-Filename: pool/omakasui-walker-2.15.1/omakasui-walker_2.15.1_debian13_all.deb
-Size: 688
-MD5sum: fbe83828c6ae60fcf44a0a4e70616e70
-SHA1: 36e8870d235f00202158c4303ee51192a2e427b6
-SHA256: a9d4d909583e7bb2033d124073dfe96285b3e42ea6b36e0ea4d6869e39159806
-
 Package: ufw-docker
 Version: 251123
 Architecture: all
@@ -359,210 +309,6 @@ Size: 8382
 MD5sum: bdfabd8efb9154830ceed7e470ffa66d
 SHA1: 0cf93369186c3507d7eb61dfa7b524dbfea72e23
 SHA256: e298f0701243926db6759a89c9e4fc735626cf4f96dd7b86d4626bd464b2cf8c
-
-Package: elephant
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20816
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant - powerful data provider daemon for application launchers.
- Communicates via Unix sockets and Protocol Buffers.
- Install provider packages to add functionality.
-Filename: pool/elephant-2.20.2/elephant_2.20.2_debian13_amd64.deb
-Size: 6335728
-MD5sum: 7244b87716de0c670868dfe5df0b92d5
-SHA1: e121890a6638a09e90c007f570ad17462d788e62
-SHA256: 0faba4adcc0f996c95a3fe641d76da33266d44089ce53ebe4cd9d6f7419570dd
-
-Package: elephant-calc
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21720
-Depends: elephant (= 2.20.2), qalc
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant calc provider plugin for the walker application launcher.
- Installs calc.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-calc_2.20.2_debian13_amd64.deb
-Size: 6036252
-MD5sum: c9d9c099af6668b3ead578c1296868b0
-SHA1: 3b813923175cb968ba233db8ef852e1e03de5791
-SHA256: dda514a939c683f8a25a60c0ac2cc4c19907a7a6abad1207d12f3ad98cfdef03
-
-Package: elephant-clipboard
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 24404
-Depends: elephant (= 2.20.2)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant clipboard provider plugin for the walker application launcher.
- Installs clipboard.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-clipboard_2.20.2_debian13_amd64.deb
-Size: 6353508
-MD5sum: 0fdeee8c31630eaedfd2a6c6531c326e
-SHA1: 22c888de76efc83ba02862c78566a5b96ed9141f
-SHA256: afa49898f1157d698f0bcb039375805c4a1edfb4e8dd52398a0d8f7c0c3efe81
-
-Package: elephant-desktopapplications
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22316
-Depends: elephant (= 2.20.2)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant desktopapplications provider plugin for the walker application launcher.
- Installs desktopapplications.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-desktopapplications_2.20.2_debian13_amd64.deb
-Size: 6167980
-MD5sum: 15398804cbf3d65c03a20e6ca1edd9b4
-SHA1: fcd702b341977ea683554afa7fc779653e6ae446
-SHA256: 2f5c3617c728f0b4292b12d2a2685b85621e71b21b6fcdfd765f7a4081ce9fd9
-
-Package: elephant-files
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 23616
-Depends: elephant (= 2.20.2), fd-find
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant files provider plugin for the walker application launcher.
- Installs files.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-files_2.20.2_debian13_amd64.deb
-Size: 6768280
-MD5sum: cd49b21213a2aa6b5b212867904c2243
-SHA1: ab5405fb38f44800c9760adfc5ee850238ef2842
-SHA256: db013835c5c00fd35e0936df6db07ee74ac7370ea087184e98e8c9f8c352c85f
-
-Package: elephant-menus
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21440
-Depends: elephant (= 2.20.2)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant menus provider plugin for the walker application launcher.
- Installs menus.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-menus_2.20.2_debian13_amd64.deb
-Size: 5955488
-MD5sum: 0d8ad671f8221db04fc2709a27b64891
-SHA1: b18cda83b18aeb763fa8980e8b1700f859e34a15
-SHA256: 2dac51801f7b5063311a301e0bbc1da21000cfc1fadad7d0ac70b5ba778a757e
-
-Package: elephant-providerlist
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21768
-Depends: elephant (= 2.20.2)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant providerlist provider plugin for the walker application launcher.
- Installs providerlist.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-providerlist_2.20.2_debian13_amd64.deb
-Size: 6052016
-MD5sum: 33fcddc1316ebab18b677c26329727d6
-SHA1: 246a55853f50f8cddade58407d18dc4fffd8dbb1
-SHA256: 3a2f412d91fbbddc953878fdcf19513bb586299886f23a506c605c37b743f979
-
-Package: elephant-runner
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21752
-Depends: elephant (= 2.20.2)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant runner provider plugin for the walker application launcher.
- Installs runner.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-runner_2.20.2_debian13_amd64.deb
-Size: 6046216
-MD5sum: 797d885d53f585b7ddaf240ddfd93391
-SHA1: 295b168883a500267585561ce5244afd9ce18aa6
-SHA256: f95eb7e57bf8c25ebe56a37172e2b05f29b77da5231e6362aaa94bc56751a4e2
-
-Package: elephant-symbols
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 63484
-Depends: elephant (= 2.20.2)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant symbols provider plugin for the walker application launcher.
- Installs symbols.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-symbols_2.20.2_debian13_amd64.deb
-Size: 11170536
-MD5sum: a95a83416bb24ee0d152294b4d9c0120
-SHA1: ce5c6e728b05f1c98735627fed30143afff7240f
-SHA256: de5ed4fca00fd6b28db35f7dd118742b7b4c3ac874660a0319087f9f379ef5e0
-
-Package: elephant-todo
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 30856
-Depends: elephant (= 2.20.2)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant todo provider plugin for the walker application launcher.
- Installs todo.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-todo_2.20.2_debian13_amd64.deb
-Size: 8016364
-MD5sum: 949909117d93bdf3a6541af3de6c4eb1
-SHA1: c62e120a0005c73a4b363d083b8cf1e6b9a44b96
-SHA256: 29c6ee6e0f135c5e74e8538c47e3284a06179a773ac4dc16e2922fb139139b84
-
-Package: elephant-unicode
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 23868
-Depends: elephant (= 2.20.2)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant unicode provider plugin for the walker application launcher.
- Installs unicode.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-unicode_2.20.2_debian13_amd64.deb
-Size: 6235728
-MD5sum: 67d225b288ada18e992e7ae07e97d11c
-SHA1: fc15e690e93c0c451815c4ee38f89bc86c8dbade
-SHA256: 6cb07db4db7416ece4c4a5095c428ba3e6237b2f9860c4c268aae2a9498cc30a
-
-Package: elephant-websearch
-Version: 2.20.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21808
-Depends: elephant (= 2.20.2)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant websearch provider plugin for the walker application launcher.
- Installs websearch.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.20.2/elephant-websearch_2.20.2_debian13_amd64.deb
-Size: 6060276
-MD5sum: fa2bbc77b9dc30d12fdf8449cff96d4d
-SHA1: ad8107099b0535d2b674b85a99d365ce5c35d079
-SHA256: c292f68de3d4f54fc922a993fd62f659042e0ecc49dbdd68f67d4fe05ea1a22a
 
 Package: gtk4-layer-shell
 Version: 1.1.0
@@ -581,25 +327,6 @@ MD5sum: 4126f81eec3c87f5b3c3d1cc1d4f8ec5
 SHA1: 23b76b8fac03ff42f9f2a08c348a3ea059f612ea
 SHA256: ee60f51ca12100a7ae7684b00004fdc3d8151267b6bac88d721ac09d9fceaf34
 
-Package: nvim
-Version: 0.11.6
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 39320
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor. Packaged from official GitHub release binaries for amd64 and arm64. Conflicts with and replaces the distro neovim package.
- .
-Filename: pool/nvim-0.11.6/nvim_0.11.6_debian13_amd64.deb
-Size: 8727122
-MD5sum: c4b9107f0486cc5c4e4db9a599a82ad1
-SHA1: 66a1b096a1c35c3a58b34216c7be99f7f2a461ec
-SHA256: 678bc8cea7648618bceb8feba9ab6e7cffbde4650933506e982ff4088d575a33
-
 Package: omakasui-nvim
 Version: 20260310
 Architecture: amd64
@@ -616,23 +343,6 @@ Size: 64427992
 MD5sum: 759442cf9e70c6f71909909568f7db33
 SHA1: 2758b64a9f7afd44a78c2e0777d8476fe79371c1
 SHA256: d820e90a994f132e124a183c5d01044378673e5f2749dda159fc1c1fb73d0677
-
-Package: ghostty
-Version: 1.3.1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40040
-Depends: libgtk-4-1, libadwaita-1-0, gtk4-layer-shell, gtk4-layer-shell (>= 1.1.0)
-Section: x11
-Priority: optional
-Homepage: https://github.com/ghostty-org/ghostty
-Description: Ghostty - fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
- .
-Filename: pool/ghostty-1.3.1/ghostty_1.3.1_debian13_amd64.deb
-Size: 19342396
-MD5sum: 203c70970a4fe5321b0cf62eb4e9f431
-SHA1: 6e150cd04a7846a1dae6e8f306c9c2fb4fe85207
-SHA256: 3b0c94ce14c12a0ae96f38bac47fa2c076854989b77f3e073b2be0f07971f6ad
 
 Package: aether
 Version: 3.0.3
@@ -668,60 +378,6 @@ MD5sum: 7db8968546d7f5268e0abccdad13e76e
 SHA1: 32cec9ebeddf5816ba01a79c0d614643dbdf902a
 SHA256: 9a7e9cdc64a521d1f728fbe91b6d2efb992e8aaa1c1433cd2549c68a90d70a33
 
-Package: omakasui-nvim
-Version: 20260319
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 135744
-Depends: nvim, git, gum
-Section: editors
-Priority: optional
-Homepage: https://github.com/LazyVim/LazyVim
-Description: Pre-built LazyVim configuration for omakasui
- Installs pre-cached config and plugins to /usr/share/omakasui-nvim.
- Run omakasui-nvim-setup to activate for the current user.
-Filename: pool/omakasui-nvim-20260319/omakasui-nvim_20260319_debian13_all.deb
-Size: 64086592
-MD5sum: ffd811d09efe5748076bd723eb66e416
-SHA1: fa2e7ae7021063aae8dd9ebc3dc5de9d45aae29c
-SHA256: ad6cbca366e408b27493731f8a71e0421881952e0581aca29db49eca5317fb20
-
-Package: omakub-nvim
-Version: 20260319
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 135744
-Depends: nvim, git, gum
-Section: editors
-Priority: optional
-Homepage: https://github.com/LazyVim/LazyVim
-Description: Pre-built LazyVim configuration for omakub
- Installs pre-cached config and plugins to /usr/share/omakub-nvim.
- Run omakub-nvim-setup to activate for the current user.
-Filename: pool/omakasui-nvim-20260319/omakub-nvim_20260319_debian13_all.deb
-Size: 64087820
-MD5sum: fa4f3c1e73fae1e63714c69457ab4b76
-SHA1: 56f30ad1590851fa38440eb6bcdeeb5154fcc3a7
-SHA256: 6092789ad39305f58573f32fed3479ccbc1d31bb30660be7ffed9a5ddbc554b2
-
-Package: omadeb-nvim
-Version: 20260319
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 135744
-Depends: nvim, git, gum
-Section: editors
-Priority: optional
-Homepage: https://github.com/LazyVim/LazyVim
-Description: Pre-built LazyVim configuration for omadeb
- Installs pre-cached config and plugins to /usr/share/omadeb-nvim.
- Run omadeb-nvim-setup to activate for the current user.
-Filename: pool/omakasui-nvim-20260319/omadeb-nvim_20260319_debian13_all.deb
-Size: 64082320
-MD5sum: b4d3f653f0ec81cb6351a9313f8ef22a
-SHA1: f805da0a5d82c9846be220b490784c95f4a51576
-SHA256: 857d35a5ef8ebad9c23d56dbca485e886fd0bac7a644f21842dc74da365e7c6f
-
 Package: kitty
 Version: 0.46.1
 Architecture: amd64
@@ -741,24 +397,6 @@ MD5sum: 8d1ebcfa8258b833f9236f5182af86e5
 SHA1: a6f79f6cc46b052c67d5823231b8ebd6c65aab0f
 SHA256: 037466d782d099a52a14d8690a42c86ec2236f4ba11c67b815c41624bfaf3f53
 
-Package: glab
-Version: 1.89.0
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-License: MIT
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 48497
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Filename: pool/glab-1.89.0/glab_1.89.0_debian13_amd64.deb
-Size: 12449428
-MD5sum: e8c365a4b916cec486e713caa3746725
-SHA1: 6f9221cbcfa50e988609abd1b7f0a7e03b3b5a24
-SHA256: b8a527b9dab8b8449a851573ec92a8c3d16c15220cf8cf1994e7ef614e0104e8
-
 Package: starship
 Version: 1.24.2
 Architecture: amd64
@@ -774,6 +412,159 @@ Size: 3792258
 MD5sum: b3b194dd07829182a315302ed44da2d5
 SHA1: fde9c61956759ffbdac7236db437851cf94450ff
 SHA256: 323486327ad0a9949648fb2c6d9a2b6d7ce08e9e28339bde2a22352ea7dfc89a
+
+Package: zellij
+Version: 0.44.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 49484
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij - a terminal workspace with batteries included. Installs the official upstream musl release binary for amd64 and arm64. Provides floating panes, layouts, multiplayer collaboration, and a plugin system.
+ .
+Filename: pool/zellij-0.44.0/zellij_0.44.0_debian13_amd64.deb
+Size: 10810302
+MD5sum: 5ca00c6927016827c9d2ecca066b7ab1
+SHA1: 1864971de7743fee32d87f56a98b304632e59170
+SHA256: 8de6d13602b21fc34df8bdb160722593d11e8d0ddd8f71f4450374db981a6832
+
+Package: glab
+Version: 1.89.0
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+License: MIT
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 48497
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.89.0/glab_1.89.0_debian13_amd64.deb
+Size: 12449088
+MD5sum: 5ecafc27bd178e46dc3db53e449ddce2
+SHA1: ef60d49228ac7e835b942f8bf09176254c3896ad
+SHA256: 12d26e5fcf069857e2996818843bfc5562592a6c20eb8f8fe6e92c93dd07e8ae
+
+Package: yaru-theme-gtk
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Source: yaru-theme
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 28601
+Depends:  gnome-themes-extra, gtk2-engines-pixbuf, gtk2-engines-murrine, libglib2.0-bin
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru GTK theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the GTK+ 2 and 3 theme parts
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+Filename: pool/yaru-theme-25.04.1-0ubuntu1/yaru-theme-gtk_25.04.1-0ubuntu1_debian13_all.deb
+Size: 924668
+MD5sum: 516075dc193dbc262381a2886d7f2615
+SHA1: 27033d157a9978804e629d8ad65b346c882c7e67
+SHA256: 6248f1d198feaacc9d56a470f6d0fb756e89e2cfcb3847bc033af8fa07af77a6
+
+Package: yaru-theme-icon
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Source: yaru-theme
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 110521
+Suggests: humanity-icon-theme
+Breaks: gnome-shell-extension-ubuntu-dock (<< 90~)
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru icon theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the icon theme
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+Filename: pool/yaru-theme-25.04.1-0ubuntu1/yaru-theme-icon_25.04.1-0ubuntu1_debian13_all.deb
+Size: 27481788
+MD5sum: a3e712541e69f2935413cc3549117d9c
+SHA1: 1a08ac1f20a8a75906f2bb185753da69f22ae8bc
+SHA256: 655230c0393a9013375680b2e15e8cad1ca418bf68c1c06db91535c182d77577
+
+Package: yaru-theme-sound
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Source: yaru-theme
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 1368
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru sound theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the sound theme
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+Filename: pool/yaru-theme-25.04.1-0ubuntu1/yaru-theme-sound_25.04.1-0ubuntu1_debian13_all.deb
+Size: 1084616
+MD5sum: c8687afd5c979c6ca15dba8b7ce7a5e6
+SHA1: 8900377777e48f668c5d8c2ccade92fb95322aca
+SHA256: c09c3031804c06e9d5487d6c748a12aad9b3b9c31a2614299d49a2568da14d80
+
+Package: yaru-theme-gnome-shell
+Version: 25.04.1-0ubuntu1
+Architecture: all
+Source: yaru-theme
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Installed-Size: 2311
+Breaks: gnome-shell (<< 48~)
+Section: misc
+Priority: optional
+Homepage: https://community.ubuntu.com/c/desktop/theme-refresh
+Description: Yaru GNOME Shell desktop theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the GNOME Shell theme part
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+Filename: pool/yaru-theme-25.04.1-0ubuntu1/yaru-theme-gnome-shell_25.04.1-0ubuntu1_debian13_all.deb
+Size: 86920
+MD5sum: b6a987c2047563254378c492d1583158
+SHA1: fdca44b621312f1c8c643ffcc152b630a711c662
+SHA256: 0873ceab290dd919c3c57eaf4a63a05d33c22f7966106bb210b722352fea6553
+
+Package: tmux
+Version: 3.6a
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1436
+Depends: libc6, libtinfo6 | libncurses6
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer. Built from source, newer than the distro package. Allows creating multiple terminal sessions within a single window, with persistent sessions that survive disconnections.
+ .
+Filename: pool/tmux-3.6a/tmux_3.6a_debian13_amd64.deb
+Size: 524594
+MD5sum: 3b912e846d890f7e7fc0c51daae7c893
+SHA1: 85e35e5db17aa139c36211144f6ac55aefc58cbf
+SHA256: 01fcc17051d65f39ad80c469295daf92d732f9e15fe5cddcd01496a01dfd116a
 
 Package: alacritty
 Version: 0.16.1
@@ -794,4 +585,539 @@ Size: 10246182
 MD5sum: 4722f8129117e7c4e5ecc6f590301e8e
 SHA1: 84840394fd013d11683f49cb3800ebb6f52a9a19
 SHA256: 63e83410e435b41b76cf16d5bd3000233efc0d6a7cd4dfb7b5f7cc91fb848540
+
+Package: libgtk4-layer-shell-0
+Version: 1.1.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 252
+Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
+Conflicts: gtk4-layer-shell, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Replaces: gtk4-layer-shell, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Provides: gtk4-layer-shell, gir1.2-gtk4layershell-1.0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: GTK4 Layer Shell - library for the Wayland Layer Shell protocol with GTK4. Provides libgtk4-layer-shell.so and GObject Introspection typelib. Required by GJS/GTK4 apps that use the Layer Shell protocol (e.g. omakasui-aether).
+ .
+Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell-0_1.1.0_debian13_amd64.deb
+Size: 39486
+MD5sum: 32289dffe8fc1ec5a52bb44d221a0ece
+SHA1: dc39cd45095f7bee5b44adf955e6aeffe1539499
+SHA256: 5b9aa00f2b48247f2b1f5431dae6f8462bf9763b7cc82c5a8490ba563898af8e
+
+Package: ghostty
+Version: 1.3.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40040
+Depends: libgtk-4-1, libadwaita-1-0, libgtk4-layer-shell-0, libgtk4-layer-shell-0 (>= 1.1.0)
+Section: x11
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty - fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
+ .
+Filename: pool/ghostty-1.3.1/ghostty_1.3.1_debian13_amd64.deb
+Size: 19343524
+MD5sum: 230f0a4f47d2291cbb4680755accba44
+SHA1: 086d659b4510b6946e111639dbd2aaae5ff9f07b
+SHA256: d1e1cb422e51cb99247b297f858566b7c6762615b9b8fb41cc4c85982a510afc
+
+Package: omakub-aether
+Version: 20260327.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 16
+Depends: aether, gum
+Section: gnome
+Priority: optional
+Homepage: https://github.com/bjarneo/aether
+Description: Aether theme integration for omakub
+ Setup script that links Aether themes into the omakub theme list.
+Filename: pool/omakasui-aether-20260327.1/omakub-aether_20260327.1_debian13_all.deb
+Size: 1328
+MD5sum: 99d4b86e30f096ce59b1078dbda51945
+SHA1: b1d9bbc36ff6eac4c6e6f0b77693b06eae30f653
+SHA256: b203feed417faa3d7c6675ec5e042d09337c37c1d8fd490c5eea6c59d1a2153d
+
+Package: omadeb-aether
+Version: 20260327.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 16
+Depends: aether, gum
+Section: gnome
+Priority: optional
+Homepage: https://github.com/bjarneo/aether
+Description: Aether theme integration for omadeb
+ Setup script that links Aether themes into the omadeb theme list.
+Filename: pool/omakasui-aether-20260327.1/omadeb-aether_20260327.1_debian13_all.deb
+Size: 1328
+MD5sum: 88e88db117ac6bb733ebba2d180f6028
+SHA1: f00c4599c8d044d1a7edac8b7c0fdd0bdde0df61
+SHA256: 4b82d47ab1a6dccd80c30d95bf98c73a94ff914a5f34f0277a83a6528a4d251a
+
+Package: omakasui-zellij
+Version: 20260327.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40
+Depends: zellij, gum
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij configuration for omakasui
+ Installs omakub-based zellij config and a setup script.
+ Run omakasui-setup-zellij to activate for the current user.
+Filename: pool/omakasui-zellij-20260327.1/omakasui-zellij_20260327.1_debian13_all.deb
+Size: 3664
+MD5sum: 8c64f294b690898b92683569bea88434
+SHA1: 11b1d0202cca22cb9db424383b1d94ded0244873
+SHA256: b03d8073c8374b4c9c630127ceae800f72c341dedfb499682acd8bccd59cd853
+
+Package: omakub-zellij
+Version: 20260327.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40
+Depends: zellij, gum
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij configuration for omakub
+ Installs omakub-based zellij config and a setup script.
+ Run omakub-setup-zellij to activate for the current user.
+Filename: pool/omakasui-zellij-20260327.1/omakub-zellij_20260327.1_debian13_all.deb
+Size: 3656
+MD5sum: 06d91d905ab0c245dfdb6f13ab6def2a
+SHA1: c6623045a30d26397047df7f9fee6e5b59b93a50
+SHA256: 369d56dc02f8f0517692aa8d869e32bbf703211637d46f6f7d34a6f7b4befe2a
+
+Package: omadeb-zellij
+Version: 20260327.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40
+Depends: zellij, gum
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij configuration for omadeb
+ Installs omakub-based zellij config and a setup script.
+ Run omadeb-setup-zellij to activate for the current user.
+Filename: pool/omakasui-zellij-20260327.1/omadeb-zellij_20260327.1_debian13_all.deb
+Size: 3664
+MD5sum: 2ddd38a992e27278de4d73e2a682e12d
+SHA1: f2f42a65382d2aadbca8b600663fdcb2f503af1f
+SHA256: bd098f338a4d969865c97a030a665848906309fb07bf2c73da28b7ef18371b9a
+
+Package: gnome-shell-extension-grimble-tiling-wm
+Version: 1.2.0-omakasui1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 340
+Depends: gnome-shell
+Section: gnome
+Priority: optional
+Homepage: https://github.com/erwanlem/grimble-tiling-wm
+Description: Grimble Tiling Window Manager - GNOME Shell extension. Brings tiling window manager behaviour to GNOME, with customizable keybindings, multi-monitor support and workspaces. Installs under /usr/local/share/gnome-shell/extensions/grimble@lmt.github.io/.
+ .
+Filename: pool/gnome-shell-extension-grimble-tiling-wm-1.2.0-omakasui1/gnome-shell-extension-grimble-tiling-wm_1.2.0-omakasui1_debian13_all.deb
+Size: 36086
+MD5sum: 94611ad38f43a8782fdad0ceac1ed79a
+SHA1: 8ac6e5adf84215c64c54517e0abb3f550e7ea588
+SHA256: 4824a29c828cba25d54b0b4fb959b0275bbea104c47a0fe51d34bbe317d7a594
+
+Package: omakasui-nvim
+Version: 20260327.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 136060
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omakasui
+ Installs pre-cached config and plugins to /usr/share/omakasui-nvim.
+ Run omakasui-setup-nvim to activate for the current user.
+Filename: pool/omakasui-nvim-20260327.2/omakasui-nvim_20260327.2_debian13_all.deb
+Size: 64245940
+MD5sum: 7b64f03ec0138dd83fca1ec52c8d6b4a
+SHA1: 8029e5eb2464de744fdc906550a7412d6a810156
+SHA256: 7621eb49408e7608f2b6b441bcfd73069d1ef5bff3d6e751c8982b504b8638c2
+
+Package: omakub-nvim
+Version: 20260327.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 136060
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omakub
+ Installs pre-cached config and plugins to /usr/share/omakub-nvim.
+ Run omakub-setup-nvim to activate for the current user.
+Filename: pool/omakasui-nvim-20260327.2/omakub-nvim_20260327.2_debian13_all.deb
+Size: 64257172
+MD5sum: a8c52c58f07d561387267530f5ffe2bd
+SHA1: b94f9f513624935b922c351706d0565cdf4deaad
+SHA256: 7549729aafed5c0e08cf8fc7e5d8db35473624a74c541a5041d9aee23d98fb71
+
+Package: omadeb-nvim
+Version: 20260327.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 136060
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omadeb
+ Installs pre-cached config and plugins to /usr/share/omadeb-nvim.
+ Run omadeb-setup-nvim to activate for the current user.
+Filename: pool/omakasui-nvim-20260327.2/omadeb-nvim_20260327.2_debian13_all.deb
+Size: 64239836
+MD5sum: ab860661e0d8335b350e9f7f23e6ca6f
+SHA1: 72d8a579b1c317b3cd85b1cb94c4439a4447bab7
+SHA256: 489cd840fd78b8376cb4783b998fb520e697f6b9f59a661ca7e67394824b18d5
+
+Package: zoxide
+Version: 0.9.9
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1164
+Section: utils
+Priority: optional
+Homepage: https://github.com/ajeetdsouza/zoxide
+Description: A smarter cd command inspired by z and autojump. Remembers the directories you use most frequently and lets you jump to them in just a few keystrokes. Works with bash, zsh, fish and most other shells.
+ .
+Filename: pool/zoxide-0.9.9/zoxide_0.9.9_debian13_amd64.deb
+Size: 477866
+MD5sum: 0ae95158e357ac411514b7a978a49f5c
+SHA1: 2e1d2f7f0f1f350928c4ab1aeadb9e52ea2ce1cf
+SHA256: 861165e52f659c4ceba90293f604eb1ffcea6ed7fca28ffc38b44d4121844165
+
+Package: elephant
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 20940
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant - powerful data provider daemon for application launchers.
+ Communicates via Unix sockets and Protocol Buffers.
+ Install provider packages to add functionality.
+Filename: pool/elephant-2.20.3-omakasui1/elephant_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6383720
+MD5sum: 6f71b4e283842ad9d843768569797f2a
+SHA1: 7f6228ea738e71753eddd836463d4094b9e5cd6a
+SHA256: da7274d7426cf36f2e461829d877991bf240e067b5b4f13593482952333c93b9
+
+Package: elephant-calc
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21820
+Depends: elephant (= 2.20.3-omakasui1), qalc
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant calc provider plugin for the walker application launcher.
+ Installs calc.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-calc_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6075440
+MD5sum: 3d0f6b82a4285b68e8b2cfcc9babb5e5
+SHA1: 077baa7ff57a897723047e6b3244124e57f2e7d5
+SHA256: 70a62f8a6afe0f47884b3d06706bae3a3c13e21aa4f5ee8eac3a23ccca9c7a08
+
+Package: elephant-clipboard
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 24516
+Depends: elephant (= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant clipboard provider plugin for the walker application launcher.
+ Installs clipboard.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-clipboard_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6386872
+MD5sum: f9b287d809cdcce5adb9721121b29110
+SHA1: 62d1d00df9e6470103e576543142975c74ef80ca
+SHA256: 071bc69fc8cb43ab6be1cd83e2920e2fd8e51b06c4b64524d851321dac16811d
+
+Package: elephant-desktopapplications
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22428
+Depends: elephant (= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant desktopapplications provider plugin for the walker application launcher.
+ Installs desktopapplications.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-desktopapplications_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6214396
+MD5sum: f95f7e89f6ed636e1687ed91d8d0b10f
+SHA1: 0f8dcc2f15403d287c7bcc2f62084dd4b2bcba98
+SHA256: 4925fe22a2cec52ad6acfdfdce4f63df1afb692c63839ea799a9a789af79c9d0
+
+Package: elephant-files
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 23732
+Depends: elephant (= 2.20.3-omakasui1), fd-find
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant files provider plugin for the walker application launcher.
+ Installs files.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-files_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6813092
+MD5sum: 3aa8ae960bb5fe368fcd6ff897ca1585
+SHA1: dfa78283c56eb26561f6e0106704ac8eea904518
+SHA256: 84af8da2f52e57102b7f26220cb22278669cad8e8aaf298a22034c58fb4f5d69
+
+Package: elephant-menus
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21684
+Depends: elephant (= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant menus provider plugin for the walker application launcher.
+ Installs menus.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-menus_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6040264
+MD5sum: 200931eaf9c4fc1df7872afb1fbbbd0c
+SHA1: 2bc23fbdeeef705a0c0ebe40449174f9528931b3
+SHA256: 6637d2f862677d2a1799ba0cc7cb78ed2097c38e1f3672ec62d69430c00492db
+
+Package: elephant-providerlist
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21876
+Depends: elephant (= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant providerlist provider plugin for the walker application launcher.
+ Installs providerlist.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-providerlist_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6090060
+MD5sum: a9d76bfbc79f21d7505c2080781f3e8f
+SHA1: 2c139c1dc76d3e3d8f38b688a33e8f0b759c3aa8
+SHA256: 496c79dcd2ebdedf5d0a72b4414ddf5310054e80837fbc349b6fd0d6b9f4a2e9
+
+Package: elephant-runner
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21860
+Depends: elephant (= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant runner provider plugin for the walker application launcher.
+ Installs runner.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-runner_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6089720
+MD5sum: a90ecbe415a0e56be729052c7014ba0b
+SHA1: 9c27afd1060f194e6801b65c7e344ba1bfe78f1e
+SHA256: e05c8c6d3659f271527d5cb4c1b7d367e9fe8d4153bfb8f8f006fa66a528221c
+
+Package: elephant-symbols
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 63584
+Depends: elephant (= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant symbols provider plugin for the walker application launcher.
+ Installs symbols.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-symbols_2.20.3-omakasui1_debian13_amd64.deb
+Size: 11209900
+MD5sum: 5f5d7cfad4ff293e81a213135f9e9a81
+SHA1: bb17b6443819fa6fe205625237e4f970fc5cf35e
+SHA256: 1c2f830352f2c95c9bb18229303bb213b1ae3bd0b176993eeaa542542b0f34bb
+
+Package: elephant-todo
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 30968
+Depends: elephant (= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant todo provider plugin for the walker application launcher.
+ Installs todo.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-todo_2.20.3-omakasui1_debian13_amd64.deb
+Size: 8060280
+MD5sum: ae0bac3fb26882e6af6cdcce43e24d96
+SHA1: bc2ecef909d808032908ac37a302aeff1c75f476
+SHA256: 6715f20f8b507a9160a03d3595db2f0bd255cc544a3d926e4869e9be27580b4f
+
+Package: elephant-unicode
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 23972
+Depends: elephant (= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant unicode provider plugin for the walker application launcher.
+ Installs unicode.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-unicode_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6270892
+MD5sum: ad1dea17a6e8f72f76704b6d656a5265
+SHA1: 47b6b2b5bfdb9d13c4ceae3bd0dbe51e22691772
+SHA256: f1ab579e64b6744701ae487611cc34885d59993b6c2a3bb7351bbce5139557ff
+
+Package: elephant-websearch
+Version: 2.20.3-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21916
+Depends: elephant (= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant websearch provider plugin for the walker application launcher.
+ Installs websearch.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.20.3-omakasui1/elephant-websearch_2.20.3-omakasui1_debian13_amd64.deb
+Size: 6098128
+MD5sum: 71c0b5ae51ed9dc0e3fc3d6d1f30fc03
+SHA1: 6a50301ebae63760eda7a62eac9102f2ea97fa61
+SHA256: 0932c3c6b5dc4c10a989f90f038b894a71ae8ccba5abc9eb95a7588906f1bd55
+
+Package: nvim
+Version: 0.12.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40820
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor. Packaged from official GitHub release binaries for amd64 and arm64. Conflicts with and replaces the distro neovim package.
+ .
+Filename: pool/nvim-0.12.0/nvim_0.12.0_debian13_amd64.deb
+Size: 9036424
+MD5sum: 0c24a2319e62b2bfb7dd3e1f2907b0c9
+SHA1: ad1f9b575a9aa4fb8f8480d903eda926fd8bd116
+SHA256: 1d16db499469a7430b61cece78e319fdf7a2a9c40ee67436fc175d3d9dee37b2
+
+Package: omakasui-walker
+Version: 20260330.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4
+Depends: walker, elephant, elephant-desktopapplications, elephant-calc, elephant-clipboard, elephant-files, elephant-menus, elephant-providerlist, elephant-runner, elephant-symbols, elephant-todo, elephant-unicode, elephant-websearch, walker (>= 2.15.2), elephant (>= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/omakasui/omakasui
+Description: omakasui-walker — metapackage for walker and elephant providers. Installs walker, elephant, and all elephant provider packages in one shot.
+ .
+Filename: pool/omakasui-walker-20260330.1/omakasui-walker_20260330.1_debian13_all.deb
+Size: 718
+MD5sum: 4610f149252a364213d231cd44506999
+SHA1: 329e3f23ca9f1081cef0cf82fadbb20c54d831c6
+SHA256: 985558ea7591b6d5e5bab9ef383d2cd695cf29cbafc04ee2980117e04c1f6534
+
+Package: omadeb-walker
+Version: 20260330.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4
+Depends: walker, elephant, elephant-desktopapplications, elephant-calc, elephant-clipboard, elephant-files, elephant-menus, elephant-providerlist, elephant-runner, elephant-symbols, elephant-todo, elephant-unicode, elephant-websearch, walker (>= 2.15.2), elephant (>= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/omakasui/omakasui
+Description: omakasui-walker — metapackage for walker and elephant providers. Installs walker, elephant, and all elephant provider packages in one shot.
+ .
+Filename: pool/omakasui-walker-20260330.1/omadeb-walker_20260330.1_debian13_all.deb
+Size: 726
+MD5sum: 033d614c543441e8cb147bc19c1c530b
+SHA1: 66265ff9e1d723d05da267303b154d6b6d23944a
+SHA256: 72874ada3dd3f170aef56a886149912af7ee1854b183304a5e04c1025f4d102f
+
+Package: omakub-walker
+Version: 20260330.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4
+Depends: walker, elephant, elephant-desktopapplications, elephant-calc, elephant-clipboard, elephant-files, elephant-menus, elephant-providerlist, elephant-runner, elephant-symbols, elephant-todo, elephant-unicode, elephant-websearch, walker (>= 2.15.2), elephant (>= 2.20.3-omakasui1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/omakasui/omakasui
+Description: omakasui-walker — metapackage for walker and elephant providers. Installs walker, elephant, and all elephant provider packages in one shot.
+ .
+Filename: pool/omakasui-walker-20260330.1/omakub-walker_20260330.1_debian13_all.deb
+Size: 726
+MD5sum: 4b0eb1d0de0023a844922a42a2c89be8
+SHA1: a0f7cded85983b17242576f0afb8ee1ae24258f0
+SHA256: d4825b7885bde276e29b77a29bd551bd30a740835e612b5821c42900ffa0027c
+
+Package: walker
+Version: 2.15.2-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8224
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.15.2-omakasui1/walker_2.15.2-omakasui1_debian13_amd64.deb
+Size: 2176982
+MD5sum: e9c8f98df4b52ccbfa69df60a7acdf4f
+SHA1: d9169583340dc45936eb704076ef454adc622f06
+SHA256: ae88931fef4f38b3f1523017b6fc452804ca03e144bee237c4bf7af676acf9c2
+
+Package: cliamp
+Version: 1.31.7
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 30400
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.31.7/cliamp_1.31.7_debian13_amd64.deb
+Size: 8792396
+MD5sum: 04706fb35855fd4abab1eee09270013d
+SHA1: 2c4e5ec8864a6e607ff4aa48eb87ddfeb70ff515
+SHA256: 82e397790c84cb1218be7b4d849fd6b153f7447203e5dc99d0e58732809445db
+
+Package: aether
+Version: 4.6.4
+Architecture: amd64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.6.4/aether_4.6.4_debian13_amd64.deb
+Size: 4805320
+MD5sum: 1ae3ddeaa6b09d22e4ee177ba669165f
+SHA1: fd7519b3e7e3dcbb3f7bc89959fa75b46fd75f30
+SHA256: 70921790985bb8268def6f5e738bf5f2877132730e137f3f7039d055137f51c7
 
