@@ -295,26 +295,6 @@ MD5sum: 9400a1dbb3ee8241681d567373dbc443
 SHA1: f99f5819667cb5506096070acfddb4fcaa592eb9
 SHA256: 57a4bff740254b931a495fa299853f13c1ab4bd60b3251db3af224b54cb0c4c1
 
-Package: alacritty
-Version: 0.16.1
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 53164
-Depends: libfontconfig1, libfreetype6, libxcb1, libxkbcommon0
-Conflicts: alacritty
-Replaces: alacritty
-Provides: alacritty
-Section: x11
-Priority: optional
-Homepage: https://github.com/alacritty/alacritty
-Description: GPU-accelerated terminal emulator, built from source. Upstream releases do not provide Linux binaries.
- .
-Filename: pool/alacritty-0.16.1/alacritty_0.16.1_ubuntu2404_arm64.deb
-Size: 10147378
-MD5sum: dbff6a0d46db0bc637edb6d889ccb683
-SHA1: 73f2f066b5e9b60119581d806f542acef0048329
-SHA256: 75407ad6539866ddb06f9d57291232fd754ef8cd4f289c85cc73e8e02cedf558
-
 Package: libgtk4-layer-shell-0
 Version: 1.1.0
 Architecture: arm64
@@ -899,4 +879,24 @@ Size: 3532
 MD5sum: 2e8df3d7ad9718beb6be789ed413c458
 SHA1: 8abaa06849d2f8a4ffd2d2d298543754450db67b
 SHA256: 4bef15b83f50a575731c74a1168f37766a8d8b348019a64271b6199a9a3d9edc
+
+Package: alacritty
+Version: 0.17.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 53200
+Depends: libfontconfig1, libfreetype6, libxcb1, libxkbcommon0
+Conflicts: alacritty
+Replaces: alacritty
+Provides: alacritty
+Section: x11
+Priority: optional
+Homepage: https://github.com/alacritty/alacritty
+Description: GPU-accelerated terminal emulator, built from source. Upstream releases do not provide Linux binaries.
+ .
+Filename: pool/alacritty-0.17.0/alacritty_0.17.0_ubuntu2404_arm64.deb
+Size: 10161076
+MD5sum: 36e27653d66a3e0076970b4dd632c3eb
+SHA1: 7aa3e6bfda0529baaaa7d79f6512b13c58218796
+SHA256: 9bbd696cb72380106e9c85c0530dd862867c1b27e220e8d1533b147b15ad55ab
 
