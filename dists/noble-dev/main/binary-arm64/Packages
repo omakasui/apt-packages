@@ -14,23 +14,6 @@ MD5sum: 709a195e99d4aac7b54dac0383e83810
 SHA1: 730e4a34331221b122afad64d4fb9c3224b50526
 SHA256: 204a6f27034054818c1cf03c8c23b530cb27ca0cb5b659a550b2383bb43ad863
 
-Package: fastfetch
-Version: 2.60.0
-Architecture: arm64
-Depends: libc6 (>= 2.35)
-Description: Fast neofetch-like system information tool
- fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Maintainer: Carter Li <zhangsongcui@live.cn>
-Priority: optional
-Section: devel
-Installed-Size: 15084
-Filename: pool/fastfetch-2.60.0/fastfetch_2.60.0_ubuntu2404_arm64.deb
-Size: 3931704
-MD5sum: 02fd93e1e5b78fa98f45f9db1cfe7a17
-SHA1: 30dc65feb080ffb59cde565ca6bdf1f18385ef40
-SHA256: 8a2730a1b4eab436a3d29af4d5f856ae3b0369d828706200179c64e7d1f4ece1
-
 Package: gum
 Version: 0.17.0
 Architecture: arm64
@@ -899,4 +882,21 @@ Size: 10939208
 MD5sum: c04211edd86e4200ef415e6626e70a9d
 SHA1: 0b2103efcd6f21a68e89d68ab824bfe4fbb81cd1
 SHA256: 8c5b351677a80babf39069f9bb5086d1ace84a600d8d6ef5f70b995aad6d1ffd
+
+Package: fastfetch
+Version: 2.61.0
+Architecture: arm64
+Depends: libc6 (>= 2.35)
+Description: Fast neofetch-like system information tool
+ fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Maintainer: Carter Li <zhangsongcui@live.cn>
+Priority: optional
+Section: devel
+Installed-Size: 15005
+Filename: pool/fastfetch-2.61.0/fastfetch_2.61.0_ubuntu2404_arm64.deb
+Size: 3943014
+MD5sum: 87b6148dd678578fddc5f5b7fec645f7
+SHA1: 2ed11c9941fe3dd7dc2c7c711cb9a563d1dc2ab4
+SHA256: 0025c137af658d713baf763b1e43e006b6aa4e38e02a38a33e3183ba928338d1
 
