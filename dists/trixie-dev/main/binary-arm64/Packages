@@ -640,60 +640,6 @@ MD5sum: 88e88db117ac6bb733ebba2d180f6028
 SHA1: f00c4599c8d044d1a7edac8b7c0fdd0bdde0df61
 SHA256: 4b82d47ab1a6dccd80c30d95bf98c73a94ff914a5f34f0277a83a6528a4d251a
 
-Package: omakasui-zellij
-Version: 20260327.1
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40
-Depends: zellij, gum
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: Zellij configuration for omakasui
- Installs omakub-based zellij config and a setup script.
- Run omakasui-setup-zellij to activate for the current user.
-Filename: pool/omakasui-zellij-20260327.1/omakasui-zellij_20260327.1_debian13_all.deb
-Size: 3664
-MD5sum: 8c64f294b690898b92683569bea88434
-SHA1: 11b1d0202cca22cb9db424383b1d94ded0244873
-SHA256: b03d8073c8374b4c9c630127ceae800f72c341dedfb499682acd8bccd59cd853
-
-Package: omakub-zellij
-Version: 20260327.1
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40
-Depends: zellij, gum
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: Zellij configuration for omakub
- Installs omakub-based zellij config and a setup script.
- Run omakub-setup-zellij to activate for the current user.
-Filename: pool/omakasui-zellij-20260327.1/omakub-zellij_20260327.1_debian13_all.deb
-Size: 3656
-MD5sum: 06d91d905ab0c245dfdb6f13ab6def2a
-SHA1: c6623045a30d26397047df7f9fee6e5b59b93a50
-SHA256: 369d56dc02f8f0517692aa8d869e32bbf703211637d46f6f7d34a6f7b4befe2a
-
-Package: omadeb-zellij
-Version: 20260327.1
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40
-Depends: zellij, gum
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: Zellij configuration for omadeb
- Installs omakub-based zellij config and a setup script.
- Run omadeb-setup-zellij to activate for the current user.
-Filename: pool/omakasui-zellij-20260327.1/omadeb-zellij_20260327.1_debian13_all.deb
-Size: 3664
-MD5sum: 2ddd38a992e27278de4d73e2a682e12d
-SHA1: f2f42a65382d2aadbca8b600663fdcb2f503af1f
-SHA256: bd098f338a4d969865c97a030a665848906309fb07bf2c73da28b7ef18371b9a
-
 Package: gnome-shell-extension-grimble-tiling-wm
 Version: 1.2.0-omakasui1
 Architecture: all
@@ -1136,4 +1082,58 @@ Size: 3479640
 MD5sum: c7660728ed884aac124d7103ebd3dafb
 SHA1: 30d57a497ae4b853186828ae324076cdb083b1f5
 SHA256: 775188b948042173fb28a8875f8e96571d37c03aa470871c27b383e2b10e161d
+
+Package: omakasui-zellij
+Version: 20260408.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40
+Depends: zellij, gum
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij configuration for omakasui
+ Installs omakub-based zellij config and a setup script.
+ Run omakasui-setup-zellij to activate for the current user.
+Filename: pool/omakasui-zellij-20260408.1/omakasui-zellij_20260408.1_debian13_all.deb
+Size: 3688
+MD5sum: a1f76076c8c7bce2ed1ec39bde57ff8d
+SHA1: 34ffde91ddf7b21fd394cb851884b2a61bf17bfe
+SHA256: fddf194c1fc8018217970b81fc5f9021a542ac9af71f2630620575d0cac9ccfa
+
+Package: omakub-zellij
+Version: 20260408.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40
+Depends: zellij, gum
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij configuration for omakub
+ Installs omakub-based zellij config and a setup script.
+ Run omakub-setup-zellij to activate for the current user.
+Filename: pool/omakasui-zellij-20260408.1/omakub-zellij_20260408.1_debian13_all.deb
+Size: 3684
+MD5sum: 932cbc32fd98dea0078e9cc175cbd7d0
+SHA1: 534e6ca9bd257280a6f251ade2a840fb63021630
+SHA256: 697ee1ea911331bbe920c6dc2df547cc79530cb9290c4fba0f98396a358f521c
+
+Package: omadeb-zellij
+Version: 20260408.1
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40
+Depends: zellij, gum
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij configuration for omadeb
+ Installs omakub-based zellij config and a setup script.
+ Run omadeb-setup-zellij to activate for the current user.
+Filename: pool/omakasui-zellij-20260408.1/omadeb-zellij_20260408.1_debian13_all.deb
+Size: 3692
+MD5sum: 7cb4b1c33517ec27d680b1f02aff421e
+SHA1: 5a8b25a0d252a3a0a5262398c1bbf45ed7c50401
+SHA256: 963d6439d07fd721dc6b02f63c93992ca3a958d59b7fda4c425104f4293df910
 
