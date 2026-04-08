@@ -40,7 +40,6 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 | `font-jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | amd64, arm64 |
 | `glab` | [glab](https://gitlab.com/gitlab-org/cli) | noble, trixie | amd64, arm64 |
 | `ghostty` | [ghostty](https://github.com/ghostty-org/ghostty) | noble, trixie | amd64, arm64 |
-| `gnome-shell-extension-grimble-tiling-wm` | [grimble-tiling-wm](https://github.com/erwanlem/grimble-tiling-wm) | noble, trixie | all |
 | `gtk4-layer-shell` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | amd64, arm64 |
 | `gum` | [gum](https://github.com/charmbracelet/gum) | noble, trixie | amd64, arm64 |
 | `kitty` | [kitty](https://sw.kovidgoyal.net/kitty/) | noble, trixie | amd64, arm64 |
@@ -58,10 +57,10 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 | `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | amd64, arm64 |
 | `uwsm` | [uwsm](https://github.com/Vladimir-csp/uwsm) | noble, trixie | amd64, arm64 |
 | `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
-| `omakasui-yaru-theme-gtk` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
-| `omakasui-yaru-theme-icon` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
-| `omakasui-yaru-theme-sound` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
-| `omakasui-yaru-theme-gnome-shell` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
+| `yaru-theme-gtk` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
+| `yaru-theme-icon` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
+| `yaru-theme-sound` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
+| `yaru-theme-gnome-shell` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
 | `zoxide` | [zoxide](https://github.com/ajeetdsouza/zoxide) | noble, trixie | amd64, arm64 |
 
