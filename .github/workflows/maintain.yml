@@ -49,14 +49,14 @@ jobs:
           ACTION="${{ inputs.action }}"
           case "$ACTION" in
             remove-package)
-              [[ -z "${{ inputs.package }}" ]] && {
+              if [[ -z "${{ inputs.package }}" ]]; then
                 echo "ERROR: package is required for remove-package"; exit 1
-              }
+              fi
               ;;
             clean-pool)
-              [[ -z "${{ inputs.pattern }}" ]] && {
+              if [[ -z "${{ inputs.pattern }}" ]]; then
                 echo "ERROR: pattern is required for clean-pool"; exit 1
-              }
+              fi
               ;;
             rebuild-index)
               echo "Rebuilding index from existing packages.tsv."
