@@ -413,22 +413,6 @@ MD5sum: 3aeafd71403c6419d8c4f39c7a5d6aeb
 SHA1: a93d15801fa067ef2c072b5d67618387ff726d9a
 SHA256: 1b685e4b0fc7c4428d1a1e82606751b1eb51963c37d5a99f4c3be5547b44dd54
 
-Package: zellij
-Version: 0.44.0
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 43324
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: Zellij - a terminal workspace with batteries included. Installs the official upstream musl release binary for amd64 and arm64. Provides floating panes, layouts, multiplayer collaboration, and a plugin system.
- .
-Filename: pool/zellij-0.44.0/zellij_0.44.0_debian13_arm64.deb
-Size: 10730014
-MD5sum: 9d5bc64669053d9fede3144890ae6cf8
-SHA1: ed4164e8373537e54491bc9022867d80e91f2802
-SHA256: a9ce03f0a2986472f4741a6d671e02bbc9107ac75895deec853eab9b4c8abb07
-
 Package: glab
 Version: 1.89.0
 Architecture: arm64
@@ -1136,4 +1120,20 @@ Size: 4242960
 MD5sum: b6f6e075401f802a4d0fa25a8e457ff6
 SHA1: 310c36bb66576fd28003f080b04561566bd3f1c0
 SHA256: 84deab463d5d0c352bf4b9e19b9fc657f7f173e4b42e5eb6e4d0387114997c4e
+
+Package: zellij
+Version: 0.44.1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 43956
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij - a terminal workspace with batteries included. Installs the official upstream musl release binary for amd64 and arm64. Provides floating panes, layouts, multiplayer collaboration, and a plugin system.
+ .
+Filename: pool/zellij-0.44.1/zellij_0.44.1_debian13_arm64.deb
+Size: 10939218
+MD5sum: eb984283fd33e9faa8d806e82412913b
+SHA1: f662175c8610627355410c6090c2822630abc038
+SHA256: 31ec302b3fd21b289deb251b8be6b27cd9d72d0386ef16305c45cbfee53dd186
 
