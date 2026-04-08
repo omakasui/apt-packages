@@ -1,5 +1,6 @@
 # Triggered by repository_dispatch from build-apt-packages, or manually via workflow_dispatch.
-# Actions: package-updated | remove-package | rebuild-index | clean-pool
+# Automated dispatch actions: packages-updated | package-updated | remove-package | rebuild-index | clean-pool
+# Manual (workflow_dispatch): package-updated only — use maintain.yml for remove/clean/rebuild.
 name: Update APT repo
 
 on:
@@ -8,33 +9,20 @@ on:
 
   workflow_dispatch:
     inputs:
-      action:
-        description: 'Action to perform'
-        required: true
-        type: choice
-        options:
-          - package-updated
-          - remove-package
-          - rebuild-index
-          - clean-pool
       package:
-        description: 'Package name — required for package-updated and remove-package'
-        required: false
+        description: 'Package name'
+        required: true
         type: string
       version:
-        description: 'Version — required for package-updated only'
-        required: false
+        description: 'Version'
+        required: true
         type: string
       suites:
-        description: 'Suites — space-separated, e.g. "trixie" or "trixie noble". Required for package-updated.'
-        required: false
-        type: string
-      pattern:
-        description: 'Glob pattern for clean-pool (e.g. "omakasui-lazygit*")'
-        required: false
+        description: 'Suites — space-separated, e.g. "trixie" or "trixie noble"'
+        required: true
         type: string
       produces:
-        description: 'Space-separated list of produced package names (e.g. "omakasui-fastfetch"). Leave empty to use package name.'
+        description: 'Space-separated list of produced package names. Leave empty to use package name.'
         required: false
         type: string
       channel:
@@ -88,19 +76,19 @@ jobs:
             CD_CHANNEL='${{ github.event.client_payload.channel }}'
             echo "channel=${CD_CHANNEL:-stable}"                      >> "$GITHUB_OUTPUT"
           else
-            echo "action=${{ inputs.action }}"   >> "$GITHUB_OUTPUT"
-            echo "package=${{ inputs.package }}" >> "$GITHUB_OUTPUT"
-            echo "version=${{ inputs.version }}"  >> "$GITHUB_OUTPUT"
-            echo "suites=${{ inputs.suites }}"    >> "$GITHUB_OUTPUT"
-            echo "pattern=${{ inputs.pattern }}" >> "$GITHUB_OUTPUT"
+            echo "action=package-updated"          >> "$GITHUB_OUTPUT"
+            echo "package=${{ inputs.package }}"   >> "$GITHUB_OUTPUT"
+            echo "version=${{ inputs.version }}"   >> "$GITHUB_OUTPUT"
+            echo "suites=${{ inputs.suites }}"     >> "$GITHUB_OUTPUT"
+            echo "packages_json=[]"                >> "$GITHUB_OUTPUT"
             # Convert space-separated produces input to JSON array.
             if [[ -n "${{ inputs.produces }}" ]]; then
               PRODUCES_JSON=$(echo "${{ inputs.produces }}" | tr ' ' '\n' | jq -Rc '[.,inputs]' 2>/dev/null || echo "[]")
-              echo "produces=${PRODUCES_JSON}"    >> "$GITHUB_OUTPUT"
+              echo "produces=${PRODUCES_JSON}"     >> "$GITHUB_OUTPUT"
             else
-              echo "produces=[]"                  >> "$GITHUB_OUTPUT"
+              echo "produces=[]"                   >> "$GITHUB_OUTPUT"
             fi
-            echo "channel=${{ inputs.channel }}" >> "$GITHUB_OUTPUT"
+            echo "channel=${{ inputs.channel }}"   >> "$GITHUB_OUTPUT"
           fi
 
       - name: Install APT tools
