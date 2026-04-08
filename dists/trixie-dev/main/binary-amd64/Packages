@@ -186,25 +186,6 @@ MD5sum: a787bf1839f7d3bd1ad275c8abe56c74
 SHA1: e9fedec4f6b76e75c0b4771000a837a7216fa842
 SHA256: f9a58dd9134d604f9d6cdcdf3ddb8f1a7af28ce4b4af4e5b3d508b1c11aaf3d8
 
-Package: kitty
-Version: 0.46.1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 106428
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator
- Self-contained bundle installed to /opt/kitty.
-Filename: pool/kitty-0.46.1/kitty_0.46.1_debian13_amd64.deb
-Size: 31267032
-MD5sum: 8d1ebcfa8258b833f9236f5182af86e5
-SHA1: a6f79f6cc46b052c67d5823231b8ebd6c65aab0f
-SHA256: 037466d782d099a52a14d8690a42c86ec2236f4ba11c67b815c41624bfaf3f53
-
 Package: starship
 Version: 1.24.2
 Architecture: amd64
@@ -977,4 +958,23 @@ Size: 9037516
 MD5sum: be34962ba1d86c928a9a3fa748bdeed4
 SHA1: a07f933fe4c4ad0c277ab3117ff21a18033a6342
 SHA256: 4cc4fff613ad8312c08636c04360eb7cce8dc68e57e28ef19740b896d6e57850
+
+Package: kitty
+Version: 0.46.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 106452
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator
+ Self-contained bundle installed to /opt/kitty.
+Filename: pool/kitty-0.46.2/kitty_0.46.2_debian13_amd64.deb
+Size: 31261916
+MD5sum: cb90ac85fdb0e0120d7a95829836e51f
+SHA1: 1c5f9c749aacc8452d98e6971bfd62620f9f35a7
+SHA256: a59f222430b49d130a0059930948b1599ee3649634843d4fcb1105ee9b03fe50
 
