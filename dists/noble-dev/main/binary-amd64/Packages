@@ -255,27 +255,6 @@ MD5sum: 2780943f1b7679892b7e7bf52312a512
 SHA1: 1ee8628d955f08c51e1f6c644c1f89233c11453d
 SHA256: f7a14fe93bbb860aa8172a97c2cbaaad576f41c098a98ec3c383be291d74690d
 
-Package: glab
-Version: 1.89.0
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-License: MIT
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 48497
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.89.0/glab_1.89.0_ubuntu2404_amd64.deb
-Size: 13646828
-MD5sum: f5f39e9a16b299d3a83195f0c8baeaa7
-SHA1: 436f636c31cbb7c0f1f399f97d144a3ab28e3b8e
-SHA256: 3cc94f9ae9a849e5b8b24e021964950c6dd93f8ff61a7deafa6b5de975f024ca
-
 Package: tmux
 Version: 3.6a
 Architecture: amd64
@@ -900,4 +879,24 @@ Size: 9162514
 MD5sum: a5ed1e88e4a5548753b42f53db1530bb
 SHA1: bebc6218e4561e4cb7b9244ed04728676dfff48d
 SHA256: 06ba300a56aab443e0f439b77bba6b5c3c290e13187373a4e3604eac5b30b9cb
+
+Package: glab
+Version: 1.91.0
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 48445
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.91.0/glab_1.91.0_ubuntu2404_amd64.deb
+Size: 13657942
+MD5sum: 3c9c436dceddad29a41a89888b17f871
+SHA1: 0400b5a968baf830abf93eecc34744df310745dc
+SHA256: cd09daa1d3c2d492ff4554a480a3a298a4a600daaa3e7d16a9b6006c01e1f614
 

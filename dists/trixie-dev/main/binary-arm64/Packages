@@ -396,26 +396,6 @@ MD5sum: 3aeafd71403c6419d8c4f39c7a5d6aeb
 SHA1: a93d15801fa067ef2c072b5d67618387ff726d9a
 SHA256: 1b685e4b0fc7c4428d1a1e82606751b1eb51963c37d5a99f4c3be5547b44dd54
 
-Package: glab
-Version: 1.89.0
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 45637
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.89.0/glab_1.89.0_debian13_arm64.deb
-Size: 10925584
-MD5sum: 4630e8dd0eee2590c993b4ac8685f845
-SHA1: 92f26d28d1912c2189172539160a987771fc4536
-SHA256: d7493e2f3074fccdd2d6b6e41cf7b7bc89c93257e502abf410235dca9b70ae90
-
 Package: yaru-theme-gtk
 Version: 25.04.1-0ubuntu1
 Architecture: all
@@ -1136,4 +1116,23 @@ Size: 8221668
 MD5sum: 116c47cbf4e79f79c98ec70bc453ef42
 SHA1: 1bc9e98f1f57eeb9da7d538d663ce22a9ea99c52
 SHA256: 34850cf91f940c1358b5156838f23e38b835074aed9930e20c18739881cca7a6
+
+Package: glab
+Version: 1.91.0
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 45581
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.91.0/glab_1.91.0_debian13_arm64.deb
+Size: 10983428
+MD5sum: 8216a248c73c14b1292bd3431d86b714
+SHA1: 492e5b69b9bb26598ef5e737bcd3da1081643826
+SHA256: 7573b2347ca99f828334e6bfc161f4e0afd5961ea130ceba2f8dc6780064a602
 
