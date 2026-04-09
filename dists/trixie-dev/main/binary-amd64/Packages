@@ -527,23 +527,6 @@ MD5sum: 4b0eb1d0de0023a844922a42a2c89be8
 SHA1: a0f7cded85983b17242576f0afb8ee1ae24258f0
 SHA256: d4825b7885bde276e29b77a29bd551bd30a740835e612b5821c42900ffa0027c
 
-Package: walker
-Version: 2.15.2-omakasui1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8224
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.2-omakasui1/walker_2.15.2-omakasui1_debian13_amd64.deb
-Size: 2176982
-MD5sum: e9c8f98df4b52ccbfa69df60a7acdf4f
-SHA1: d9169583340dc45936eb704076ef454adc622f06
-SHA256: ae88931fef4f38b3f1523017b6fc452804ca03e144bee237c4bf7af676acf9c2
-
 Package: aether
 Version: 4.6.4
 Architecture: amd64
@@ -977,4 +960,21 @@ Size: 6097584
 MD5sum: ed02e636c5715bfa8af378d1c4c355a4
 SHA1: a58b80cfe7d8a05f2005e98a9990d16445d9298e
 SHA256: 6ced89d74a3e54b69d4796cc3b2d402428637a132b00ac37f8767168f7b5556a
+
+Package: walker
+Version: 2.16.0-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8224
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.16.0-omakasui1/walker_2.16.0-omakasui1_debian13_amd64.deb
+Size: 2173334
+MD5sum: 66516ab8a07b5e88f699deb7094e4ea1
+SHA1: a8ca76edc8f9bfbbd202cf5e6a5972e5c9f638cb
+SHA256: 2722e117a9d7b8bff6b4aac4f03586bf8d3998592f6e8169cd850a3dac3bb43a
 

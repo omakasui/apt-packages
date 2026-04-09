@@ -398,23 +398,6 @@ MD5sum: 18a2cdfe543d2986823b7f0cc58e062c
 SHA1: 3b5d7b137bc4207f485f0c186dec4a4922d2fd1c
 SHA256: 1feef50275a1264a7a582fc3ad53ed55c48adcde63c2e62eb2358577dd9c99f2
 
-Package: walker
-Version: 2.15.2-omakasui1
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 7984
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.15.2-omakasui1/walker_2.15.2-omakasui1_ubuntu2404_arm64.deb
-Size: 2084930
-MD5sum: 10849e3679a1e6792159d3831e660c7e
-SHA1: 4ef6b97bc20dff691fe69b06b46f13b0dc7c0338
-SHA256: 550100d171ed3d043926289b140d5333dfa7f7c740e9c2d0ba824405d4b263c3
-
 Package: aether
 Version: 4.6.4
 Architecture: arm64
@@ -847,4 +830,21 @@ Size: 6261138
 MD5sum: 2f17a470291643e3796f76ac6433343a
 SHA1: 7c3c1ad7d428638aa85488c9b47a507c10b24312
 SHA256: 8cc35fb4f43806ed54db66d2c4197272082c0f8391ba3aa2cb8c9ab45a902312
+
+Package: walker
+Version: 2.16.0-omakasui1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7984
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell-0, elephant, libgtk4-layer-shell-0 (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.16.0-omakasui1/walker_2.16.0-omakasui1_ubuntu2404_arm64.deb
+Size: 2084644
+MD5sum: 376c9c7e34858b9143009be93bb1d159
+SHA1: 9274c123f94b19f1fba3385c1fc975d80d7516c5
+SHA256: d755e48367717aee665d34e09aacd63ba35a3c655f821a729afea41dc2637554
 
