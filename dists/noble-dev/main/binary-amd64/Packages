@@ -866,3 +866,22 @@ MD5sum: eb5b546cdf9ee02a31120b4be82d153d
 SHA1: 6525b5e370f6b3fc3a2322e419532baf4d1493b3
 SHA256: 605d32d51c3657904a115804f9839218bead1d1ba2714d636166e485f0e1d42d
 
+Package: localsend
+Version: 1.17.0
+Architecture: amd64
+Maintainer: Tienisto <dev.tien.donam@gmail.com>
+Section: x11
+Priority: optional
+Essential: no
+Installed-Size: 30600
+Description: An open source cross-platform alternative to AirDrop
+Homepage: https://localsend.org/
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Pre-Depends: libc6 (>= 2.31)
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+Filename: pool/localsend-1.17.0/localsend_1.17.0_ubuntu2404_amd64.deb
+Size: 12982418
+MD5sum: 657235c87e733232ff85be516fa637a6
+SHA1: 383ec31a09aedfc22e98287e4f5b136903ba4c0b
+SHA256: db8a1efff5176aaaae3cdaab95b771a5d145ae78ff32ecfc58f55cd24f28b8ae
+
