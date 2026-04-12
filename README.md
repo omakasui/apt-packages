@@ -45,7 +45,7 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 | `kitty` | [kitty](https://sw.kovidgoyal.net/kitty/) | noble, trixie | amd64, arm64 |
 | `lazydocker` | [lazydocker](https://github.com/jesseduffield/lazydocker) | noble, trixie | amd64, arm64 |
 | `lazygit` | [lazygit](https://github.com/jesseduffield/lazygit) | noble, trixie | amd64, arm64 |
-| `makima` | [makima](https://github.com/cyber-sushi/makima) | noble, trixie | amd64, arm64 |
+| `localsend` | [localsend](https://github.com/localsend/localsend) | noble, trixie | all |
 | `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
 | `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | amd64, arm64 |
 | `omakasui-aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | all |
@@ -62,6 +62,7 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 | `yaru-theme-sound` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `yaru-theme-gnome-shell` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
+| `zen-browser` | [zen-browser](https://zen-browser.app/) | noble, trixie | all |
 | `zoxide` | [zoxide](https://github.com/ajeetdsouza/zoxide) | noble, trixie | amd64, arm64 |
 
 `omakasui-aether` is used to make it easier to setup aether on Omakasui setups. You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-aether` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-aether` ([Omadeb](https://omadeb.omakasui.org)).
