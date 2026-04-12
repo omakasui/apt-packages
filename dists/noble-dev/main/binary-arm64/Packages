@@ -505,25 +505,6 @@ MD5sum: 276c152fe65dc79d6809da776ba451c9
 SHA1: f2d5b471de2d7f65cb89110eacab303de821a3fc
 SHA256: 3188274d9fb80b2a7621baa19951f8e104f4bec8161fb71e4a4c0ede797ccbcb
 
-Package: glab
-Version: 1.91.0
-Architecture: arm64
-Section: 
-Priority: optional
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 45581
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.91.0/glab_1.91.0_ubuntu2404_arm64.deb
-Size: 12409532
-MD5sum: 8bcb2cb283f2737abc238eda26874b8e
-SHA1: 074e5ffb6aeaf42a9124c8e908713801512f2db2
-SHA256: 77ff57340828d4867058840be87b066e50c23b1cbcec89da568d2fe5945c98e6
-
 Package: lazygit
 Version: 0.61.0
 Architecture: arm64
@@ -883,4 +864,23 @@ Size: 4763404
 MD5sum: 2ee9cc9dade15d7650db573337ea5f70
 SHA1: fd8b78ec269937da68af56ce2ee50246f9790a5c
 SHA256: 379d478e2e9739a46649b33752be1a146672756d479c21e56fd396ee0696ca23
+
+Package: glab
+Version: 1.92.1
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 45583
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.92.1/glab_1.92.1_ubuntu2404_arm64.deb
+Size: 12421004
+MD5sum: a8d83667882dd3811f7e298b40df76a6
+SHA1: b92c8c6d98e4dd950cc3b8b79cf277bd86a8d00c
+SHA256: 3c74de60937cbf11658f13564cbd660ca7dd54bb6cd46dbc77c202c5fa9d0e84
 
