@@ -62,23 +62,6 @@ MD5sum: 7cdaf92dd246174db38866fe6fcac53d
 SHA1: 0ccc9002c890d49d28f56dcb45f269e88f7c5dc6
 SHA256: 612dadb51fc37773a4234b817b611e303abd4c1d0e65acbca9049cdbf1006f79
 
-Package: makima
-Version: 0.10.3
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2764
-Depends: libc6, libgcc-s1, libudev1
-Section: utils
-Priority: optional
-Homepage: https://github.com/cyber-sushi/makima
-Description: Makima - Linux daemon to remap keyboards, mice, controllers and tablets. Compiled from upstream source using the Rust toolchain. Works on Wayland and X11 via the evdev kernel interface. Supports TOML-based per-device config files and hot plugging.
- .
-Filename: pool/makima-0.10.3/makima_0.10.3_ubuntu2404_amd64.deb
-Size: 871842
-MD5sum: 47232b68f441bda67ba514c5a10fd4bb
-SHA1: 1863692102e8f2de5ed041a19f5f69822899345c
-SHA256: 761d214f84890e55452eac9ceb2c6066ac245578de6ec36f19d225e171666870
-
 Package: nautilus-open-any-terminal
 Version: 0.8.1
 Architecture: all
