@@ -867,3 +867,20 @@ MD5sum: 3fdaffeb4fc1fe5cb7e2d28ac4d0fc69
 SHA1: 2ccbad8dc077d05145c8076d7bb207374163046f
 SHA256: 62982006be63ddf362409e89ea07933f1b87cb21a79327b987048c10958751e6
 
+Package: pinta
+Version: 3.0.5
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 98828
+Depends: libadwaita-1-0
+Section: graphics
+Priority: optional
+Homepage: https://www.pinta-project.com
+Description: Simple GTK4 paint and image editing program. Built from source with .NET 8 and libadwaita. Bundles the .NET 8 runtime in /opt/dotnet-pinta/ — no external dotnet package required. Features layers, effects, unlimited undo, and GNOME integration with automatic light/dark theme switching.
+ .
+Filename: pool/pinta-3.0.5/pinta_3.0.5_ubuntu2404_arm64.deb
+Size: 29413854
+MD5sum: a0fc97ce56afc077ae132105c533583d
+SHA1: 00cd0c2e160751820cec4a230c56dfa54d3f3a2a
+SHA256: 92cb0956167435e43d5838a68dae68a7e0798ac53cdf8e4bc3d0a5b9bcebfc07
+
