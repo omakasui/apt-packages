@@ -1068,3 +1068,20 @@ MD5sum: 925e294849c09e93ed84cbcffd43ea5b
 SHA1: ae4b9b7c3b575b717bacaaa7cfa6ce9f4bece1b0
 SHA256: 5a5cfc4d488c03b3087656735e9b3fe7b92119ad5de43d450b66d65a46c7520d
 
+Package: niri
+Version: 25.11
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 142848
+Depends: libseat1, libpipewire-0.3-0, libpango-1.0-0, libegl1, libgbm1, libxkbcommon0, libinput10, libdbus-1-3, libsystemd0, libdisplay-info1, libpangocairo-1.0-0
+Section: x11
+Priority: optional
+Homepage: https://github.com/niri-wm/niri
+Description: Niri is a scrollable-tiling Wayland compositor. Windows are arranged in columns on an infinite strip. Opening a new window never causes existing windows to resize. Supports multi-monitor, fractional scaling, floating windows, NVIDIA, touchpads, tablets and Xwayland via xwayland-satellite.
+ .
+Filename: pool/niri-25.11/niri_25.11_debian13_arm64.deb
+Size: 21773364
+MD5sum: 6a46dd3c018b372f1a6950e31a762b64
+SHA1: 0bef79420b4dcb88076f69399467e73b568d46b8
+SHA256: 74c394025b9e959b218df103629ff82c4892f1ade1c5a49797e04a4e1673eb88
+
