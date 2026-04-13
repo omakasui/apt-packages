@@ -94,7 +94,7 @@ The `channel` field is `stable` (default) or `dev`. Pass `--channel dev` to `reg
 ## User setup
 
 ```bash
-curl -fsSL https://keyrings.omakasui.org/omakasui-packages.gpg \
+curl -fsSL https://keyrings.omakasui.org/omakasui-packages.gpg.key \
   | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/omakasui-packages.gpg
 
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/omakasui-packages.gpg] \
