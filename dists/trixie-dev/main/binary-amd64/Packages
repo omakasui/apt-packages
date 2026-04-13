@@ -1050,3 +1050,22 @@ MD5sum: 44d6b299ae4ae601d6614a786c74ff1b
 SHA1: 215184b671f3f9674d39d5ac8d6fb8f4e3f54564
 SHA256: 961cd9fdfeeb98923b0685b7db3ea7258a59e15edc0547bbc951b97e76a124fa
 
+Package: btop
+Version: 1.4.6
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2264
+Conflicts: btop
+Replaces: btop
+Provides: btop
+Section: utils
+Priority: optional
+Homepage: https://github.com/aristocratos/btop
+Description: Resource monitor showing usage and stats for processor, memory, disks, network and processes. Statically linked musl binary with GPU support. Replaces the outdated distro package.
+ .
+Filename: pool/btop-1.4.6/btop_1.4.6_debian13_amd64.deb
+Size: 790540
+MD5sum: 587f98720f5575f5d34eae19a4cb7b21
+SHA1: da78dc08de352f5b20705dd1f4fd45bac30f745c
+SHA256: 027eb4d3583d73ceb21fd10a83b0b88fb9edd15b470044bc9986edd242408c4c
+

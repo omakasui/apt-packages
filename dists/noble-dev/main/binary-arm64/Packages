@@ -920,3 +920,22 @@ MD5sum: 5162fae3648538c76f6ce6785d67cf7f
 SHA1: 20266c03a7cecbac993dfb972f1fd0175858cbbc
 SHA256: dff096f54c17b4bd407df50b20364dae0e8482c7edcdb812a3b6e6abd0052e7c
 
+Package: btop
+Version: 1.4.6
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2084
+Conflicts: btop
+Replaces: btop
+Provides: btop
+Section: utils
+Priority: optional
+Homepage: https://github.com/aristocratos/btop
+Description: Resource monitor showing usage and stats for processor, memory, disks, network and processes. Statically linked musl binary with GPU support. Replaces the outdated distro package.
+ .
+Filename: pool/btop-1.4.6/btop_1.4.6_ubuntu2404_arm64.deb
+Size: 738204
+MD5sum: cd675302f27042cc54a066ca8cc16f3b
+SHA1: 91fd5aadd43d1b64ab03a76d46446aa89972539d
+SHA256: 069ac8d1a5b5ed754dc2c6fe20e6384e83a699eefcd0cf66452a7fef7b5a442f
+
