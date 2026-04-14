@@ -301,26 +301,6 @@ MD5sum: 9b4e12b383628dd346bcf3dd768c9a00
 SHA1: 95b11f421dd1f7deec80981db6c5e0db81e666e1
 SHA256: c10fe76931828e2b2678555ce2b2377f43435bdd6d552d7ab3cc09d68bebcd40
 
-Package: libgtk4-layer-shell-0
-Version: 1.1.0
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 280
-Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
-Conflicts: gtk4-layer-shell, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
-Replaces: gtk4-layer-shell, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
-Provides: gtk4-layer-shell, gir1.2-gtk4layershell-1.0
-Section: libs
-Priority: optional
-Homepage: https://github.com/wmww/gtk4-layer-shell
-Description: GTK4 Layer Shell - library for the Wayland Layer Shell protocol with GTK4. Provides libgtk4-layer-shell.so and GObject Introspection typelib. Required by GJS/GTK4 apps that use the Layer Shell protocol (e.g. omakasui-aether).
- .
-Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell-0_1.1.0_debian13_arm64.deb
-Size: 39072
-MD5sum: fffb3f6741d324e33056755cfa8e6cb5
-SHA1: 7b4a0fd56683c8cf5821d2d9a24a064f88282726
-SHA256: 6ded19117cd794c9e710ff4f5c3d129e948f9d2cf0ea218d3e838d37a700dbda
-
 Package: ghostty
 Version: 1.3.1
 Architecture: arm64
@@ -1174,4 +1154,24 @@ Size: 109869996
 MD5sum: feabcf64810add96b444852b9d8d387b
 SHA1: b94b9fcd8ed90c4f758e6fe02af457b6c45262a1
 SHA256: ccac91b92fe42244cabf03b75bf736892430dd0b1229a4fe04403fff79969e8e
+
+Package: libgtk4-layer-shell-0
+Version: 1.1.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 280
+Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
+Conflicts: gtk4-layer-shell, libgtk4-layer-shell-dev
+Replaces: gtk4-layer-shell, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Provides: gtk4-layer-shell, gir1.2-gtk4layershell-1.0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: GTK4 Layer Shell - library for the Wayland Layer Shell protocol with GTK4. Provides libgtk4-layer-shell.so and GObject Introspection typelib. Required by GJS/GTK4 apps that use the Layer Shell protocol (e.g. omakasui-aether).
+ .
+Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell-0_1.1.0_debian13_arm64.deb
+Size: 39066
+MD5sum: e0422d3a2090071d4d074e4367d94f2f
+SHA1: b5ecbf355bdfcd0d1d44785b1da822690753d669
+SHA256: 4635827a7a44defa2d50001744eba020b298ff3cc135e7c59d1d2f3776dfca76
 
