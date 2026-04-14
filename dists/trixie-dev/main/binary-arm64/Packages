@@ -1156,3 +1156,22 @@ MD5sum: 75dc04c39230e3b9192bf7521bbe8fbd
 SHA1: a6dd3b70ebfb97f9f087d55535a3e20fb0234374
 SHA256: c189a7238361abfde4411834bf47203c54bea57bc26098626347d827c490a03d
 
+Package: dbeaver-ce
+Version: 26.0.2
+Architecture: arm64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 206104
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.0.2/dbeaver-ce_26.0.2_debian13_arm64.deb
+Size: 109869996
+MD5sum: feabcf64810add96b444852b9d8d387b
+SHA1: b94b9fcd8ed90c4f758e6fe02af457b6c45262a1
+SHA256: ccac91b92fe42244cabf03b75bf736892430dd0b1229a4fe04403fff79969e8e
+
