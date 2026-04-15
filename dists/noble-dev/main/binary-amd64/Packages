@@ -223,60 +223,6 @@ MD5sum: 2137f42d94cc58b46a27b630a30140f6
 SHA1: 7db139d6f606583cf2cc90e1889fc50b80e2e0c5
 SHA256: 92bccc4007909b364e8b030216ca5d533f33c28a90c1ad7a7dfedde7e742bd99
 
-Package: omakasui-nvim
-Version: 20260327.2
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 136064
-Depends: nvim, git, gum
-Section: editors
-Priority: optional
-Homepage: https://github.com/LazyVim/LazyVim
-Description: Pre-built LazyVim configuration for omakasui
- Installs pre-cached config and plugins to /usr/share/omakasui-nvim.
- Run omakasui-setup-nvim to activate for the current user.
-Filename: pool/omakasui-nvim-20260327.2/omakasui-nvim_20260327.2_ubuntu2404_all.deb
-Size: 64613606
-MD5sum: c1e275a2deffeb434f18b6285a67155a
-SHA1: 63abeacd03bd38fd2dfbc498a64b44fc6e32f580
-SHA256: 3fb5ce9451e1d81ba29ce3686c9b15464ebc0ce4e0101ac1571095a33e49f0b8
-
-Package: omakub-nvim
-Version: 20260327.2
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 136064
-Depends: nvim, git, gum
-Section: editors
-Priority: optional
-Homepage: https://github.com/LazyVim/LazyVim
-Description: Pre-built LazyVim configuration for omakub
- Installs pre-cached config and plugins to /usr/share/omakub-nvim.
- Run omakub-setup-nvim to activate for the current user.
-Filename: pool/omakasui-nvim-20260327.2/omakub-nvim_20260327.2_ubuntu2404_all.deb
-Size: 64611020
-MD5sum: 38f11f6cd0e13d9bb51bf22a5a7361da
-SHA1: abeee0e982547b785567945b3a38b7aa83c13eb1
-SHA256: 37bcd4306b1fb178892f3e7691a2c646ce59d86fe8f1bab7ed1f533645c970ee
-
-Package: omadeb-nvim
-Version: 20260327.2
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 136064
-Depends: nvim, git, gum
-Section: editors
-Priority: optional
-Homepage: https://github.com/LazyVim/LazyVim
-Description: Pre-built LazyVim configuration for omadeb
- Installs pre-cached config and plugins to /usr/share/omadeb-nvim.
- Run omadeb-setup-nvim to activate for the current user.
-Filename: pool/omakasui-nvim-20260327.2/omadeb-nvim_20260327.2_ubuntu2404_all.deb
-Size: 64611788
-MD5sum: 4e6855abc018fd00245028ecab10a9b0
-SHA1: 56ba16616f8fa35d2f0a36c2bff406f55be71a21
-SHA256: 98acd25052e30cdeddcfe4afc00d2081e3b1aad66e5dcecbbc4bc19d9a2992a4
-
 Package: zoxide
 Version: 0.9.9
 Architecture: amd64
@@ -1083,4 +1029,76 @@ Size: 710
 MD5sum: c3aa00d951ff93e9ac07a8376bd41953
 SHA1: 603ef2c8349726b367b6d163a7fdb0ec8ab289d7
 SHA256: cf0be267edd6698281de2fa09275c0421d81bb75b86ed01acbccbf5e9987ec39
+
+Package: omakasui-nvim
+Version: 20260327.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 136824
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omakasui
+ Installs pre-cached config and plugins to /usr/share/omakasui-nvim.
+ Run omakasui-setup-nvim to activate for the current user.
+Filename: pool/omakasui-nvim-20260327.2/omakasui-nvim_20260327.2_ubuntu2404_all.deb
+Size: 64892040
+MD5sum: f92e9d65cae1f9827327bfae33508112
+SHA1: d5f54578c5df4ba27fb07510827091c8839f9f14
+SHA256: c9c565f9aeea98dfa78f8f2309f5ab37a3063aa0e4646c00fca2090a6b45b8d0
+
+Package: omakub-nvim
+Version: 20260327.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 136824
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omakub
+ Installs pre-cached config and plugins to /usr/share/omakub-nvim.
+ Run omakub-setup-nvim to activate for the current user.
+Filename: pool/omakasui-nvim-20260327.2/omakub-nvim_20260327.2_ubuntu2404_all.deb
+Size: 64887210
+MD5sum: 58eb486d6a5e23723b039f63d18cefd2
+SHA1: 619d1148a055afba58a73c329cd040331ffd9117
+SHA256: 2fdc4d999c6f4c1208af439dcbcb9e33f1623914a61a9e48cb5b9491c2767d28
+
+Package: omadeb-nvim
+Version: 20260327.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 136824
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omadeb
+ Installs pre-cached config and plugins to /usr/share/omadeb-nvim.
+ Run omadeb-setup-nvim to activate for the current user.
+Filename: pool/omakasui-nvim-20260327.2/omadeb-nvim_20260327.2_ubuntu2404_all.deb
+Size: 64886940
+MD5sum: 265b303f2a31e98e89a545bd7eeeb139
+SHA1: 1aae43cbb7da3dc62a7ab4703d36fab3682a2ee3
+SHA256: 3916d84233d73005a6267a9226cb1f879c3d332eb4b5c008086e017bdbcbadd2
+
+Package: omari-nvim
+Version: 20260327.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 136824
+Depends: nvim, git, gum
+Section: editors
+Priority: optional
+Homepage: https://github.com/LazyVim/LazyVim
+Description: Pre-built LazyVim configuration for omari
+ Installs pre-cached config and plugins to /usr/share/omari-nvim.
+ Run omari-setup-nvim to activate for the current user.
+Filename: pool/omakasui-nvim-20260327.2/omari-nvim_20260327.2_ubuntu2404_all.deb
+Size: 64891998
+MD5sum: 8e0d50aa000a9c3e64a837250656eff3
+SHA1: b1d452fe0f551f39a01a5a215f23e798bdfce7d6
+SHA256: c4232795a0ea9628c54be42cd7513bdc19aca255b615007572981971e957e382
 
