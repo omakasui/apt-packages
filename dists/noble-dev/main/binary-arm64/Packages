@@ -1119,3 +1119,22 @@ MD5sum: 4f507cb5fcb94d5d51f4670be252286c
 SHA1: da34ff303bbe65d23df76b554729b349335417f8
 SHA256: 3929fb260f4d96443688849c06a51e98846023b1afae97384eea539e3de3fc9d
 
+Package: xdg-terminal-exec
+Version: 0.14.2
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 92
+Depends: bash
+Conflicts: xdg-terminal-exec
+Replaces: xdg-terminal-exec
+Section: utils
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
+Description: Shell-based implementation of the proposed XDG Default Terminal Execution Specification. Launches the user's preferred terminal emulator, selected via desktop entries and configuration files in the XDG hierarchy. Used by GNOME/GLib as the first-choice mechanism for opening terminals.
+ .
+Filename: pool/xdg-terminal-exec-0.14.2/xdg-terminal-exec_0.14.2_ubuntu2404_all.deb
+Size: 14618
+MD5sum: 971696ab9b0ac36ca7a119d4e6459b08
+SHA1: 62707de753349c284f7c6df8e234a3a6f6fe2c37
+SHA256: 4bdb002b3dac1090c3c6d53d030cbed8925ae627fe53eb0dfa437aa4351fb5f3
+
