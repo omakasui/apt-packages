@@ -1267,3 +1267,20 @@ MD5sum: 9c5189e8cd0d7d8bfdbc7426c60c5db7
 SHA1: 3e459d083739c2e3065b1b03b7047ab3adb4cf2b
 SHA256: 0694178d9bb09d13e418f7ab8d2358210324d135a221635743263fd2dce8aafe
 
+Package: wiremix
+Version: 0.10.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4156
+Depends: libpipewire-0.3-0
+Section: sound
+Priority: optional
+Homepage: https://github.com/tsowell/wiremix
+Description: Simple TUI audio mixer for PipeWire. Adjust volumes, route audio between devices and applications, and configure audio device settings like ports and profiles. Interface inspired by ncpamixer and pavucontrol.
+ .
+Filename: pool/wiremix-0.10.0/wiremix_0.10.0_debian13_arm64.deb
+Size: 1324812
+MD5sum: c94f171266797bc8beb3b4a7a60454a5
+SHA1: 4cca0609bf2156f6a7469748be4ed0ffd12fbcdd
+SHA256: ec9cf06309d308aa43aece183b93d0fba4da554bf91f1e669c9cc950ec17ed0e
+
