@@ -1156,3 +1156,23 @@ MD5sum: 65a47a00e067c18706f4f1685b1c9661
 SHA1: 522d6377bd520025a5680098d02db23bb328cf86
 SHA256: 80bfcf98b9db88fcc2d00a881463d96ea9065090f23c7bbf6f5a6dd9ef28e350
 
+Package: swaybg
+Version: 1.2.2-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 112
+Depends: libwayland-client0, libpng16-16t64 | libpng16-16, libjpeg62-turbo | libjpeg-turbo8
+Conflicts: swaybg
+Replaces: swaybg
+Provides: swaybg
+Section: x11
+Priority: optional
+Homepage: https://github.com/swaywm/swaybg
+Description: Wallpaper tool for Wayland compositors. Compatible with any compositor implementing wlr-layer-shell and wl_output version 4, including sway, niri, hyprland and others.
+ .
+Filename: pool/swaybg-1.2.2-omakasui1/swaybg_1.2.2-omakasui1_ubuntu2404_amd64.deb
+Size: 30662
+MD5sum: 044cb564efa27919cf9f07d0d0aa54f3
+SHA1: 3be47c6cd9bc98805a3660be7db3a05ea7396c6e
+SHA256: 93cb4c5dcc25a95aa0fd5006d0b30e2eede927b109bdcd69d63e0d9126449f74
+
