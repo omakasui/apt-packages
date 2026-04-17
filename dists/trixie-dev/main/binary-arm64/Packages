@@ -1250,23 +1250,6 @@ MD5sum: bb3f8518b69bacf7fda22372271d22df
 SHA1: ef676d39c45f5e64ed22fcdccb358486c599fa62
 SHA256: 8aeb41d89392750727a8f88daea7e9183d3aa2dbefbfc9d990109c5e1393f963
 
-Package: cliamp
-Version: 1.35.1
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 29792
-Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
-Section: sound
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
- .
-Filename: pool/cliamp-1.35.1/cliamp_1.35.1_debian13_arm64.deb
-Size: 8231902
-MD5sum: 9c5189e8cd0d7d8bfdbc7426c60c5db7
-SHA1: 3e459d083739c2e3065b1b03b7047ab3adb4cf2b
-SHA256: 0694178d9bb09d13e418f7ab8d2358210324d135a221635743263fd2dce8aafe
-
 Package: wiremix
 Version: 0.10.0
 Architecture: arm64
@@ -1303,4 +1286,21 @@ Size: 32556
 MD5sum: 46335a3b608214fee7f5043f9830e40f
 SHA1: e8512bb6e624f4a098d1724161ea6e748dc681ac
 SHA256: 4757f2175b4a09190c5309327e25f9519ff1ada98479d8e3a0729e9f75fa5cec
+
+Package: cliamp
+Version: 1.35.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 29792
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.35.2/cliamp_1.35.2_debian13_arm64.deb
+Size: 8234636
+MD5sum: 45f42af77e7a8da578c5d0082b9ddcd7
+SHA1: 3f72adf784c6b924c3dd2251447b9f6d66433401
+SHA256: 6a22a5e79b583bdded88b24114bb248c9ad56572c36df1c91a6bac155082d039
 
