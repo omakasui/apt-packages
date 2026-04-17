@@ -749,21 +749,6 @@ MD5sum: dd7241d589d94c7e9512178f24f4a536
 SHA1: d0eed31d0ceb26b556d51f374e662652977ca4f7
 SHA256: 87953fb92e920a8f105dd6af160228959524b5d62d6edb78b075008b21957ce8
 
-Package: aether
-Version: 4.8.2
-Architecture: arm64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.8.2/aether_4.8.2_debian13_arm64.deb
-Size: 4285536
-MD5sum: c8567855741660e633ec6689d09ff846
-SHA1: 1343c89e72a94450adcd511cbd1be35bef4850e5
-SHA256: ace54ad7106fe019d25a520c6d92c38561e12766e060e87f4de03927229f2057
-
 Package: glab
 Version: 1.92.1
 Architecture: arm64
@@ -1303,4 +1288,19 @@ Size: 8234636
 MD5sum: 45f42af77e7a8da578c5d0082b9ddcd7
 SHA1: 3f72adf784c6b924c3dd2251447b9f6d66433401
 SHA256: 6a22a5e79b583bdded88b24114bb248c9ad56572c36df1c91a6bac155082d039
+
+Package: aether
+Version: 4.9.0
+Architecture: arm64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.9.0/aether_4.9.0_debian13_arm64.deb
+Size: 4291384
+MD5sum: 7917ce03f0598f20055573eaffe195d9
+SHA1: f3703e8ab0489e30fb0b9421981af311d0cd0a6f
+SHA256: dfc4861fa192293d70d073f2fd6cd3357e975f909c86d7d122bb19f5623b46c5
 
