@@ -438,22 +438,6 @@ MD5sum: 51ff0cabc7bd7c5eae569baef8633930
 SHA1: f7a475f8fdd8e3e11bb3bf88ec73413521eb2015
 SHA256: c2be0cd2edc726c41b910aaa4592e76652d705dd4e0c82df70fc1366b1a6465e
 
-Package: lazydocker
-Version: 0.25.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 12560
-Section: utils
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazydocker
-Description: Lazydocker - a simple terminal UI for Docker and Docker Compose. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven interface to manage containers, images, and volumes. Requires Docker (docker-ce or docker.io) to be installed separately.
- .
-Filename: pool/lazydocker-0.25.0/lazydocker_0.25.0_debian13_amd64.deb
-Size: 4027492
-MD5sum: f9f36fda3798e33392a824139214c3f7
-SHA1: efb9bc96f8fdc907e45436395dcc8c507c788956
-SHA256: 2c9575ae7344b56d815590f85386eccdb3ca05c5745b7c3b046a6f9e3af6fcbd
-
 Package: nvim
 Version: 0.12.1
 Architecture: amd64
@@ -1304,4 +1288,20 @@ Size: 110746028
 MD5sum: 418fd58ad129f85d553e0bab5021e425
 SHA1: 9f6b2bb0fae430340be3f241524a386511fdfdb3
 SHA256: d6b6f67d35179905c65dfb3d6fd408444fead7a40308ec4d5af0f37e61638341
+
+Package: lazydocker
+Version: 0.25.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 12568
+Section: utils
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazydocker
+Description: Lazydocker - a simple terminal UI for Docker and Docker Compose. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven interface to manage containers, images, and volumes. Requires Docker (docker-ce or docker.io) to be installed separately.
+ .
+Filename: pool/lazydocker-0.25.2/lazydocker_0.25.2_debian13_amd64.deb
+Size: 4028664
+MD5sum: a98d3c983c35bf5be11407423ea7af7b
+SHA1: adec72a96c52d645b1b1ecc80e5bb91b11f85c1f
+SHA256: 1e46eee7de5c251c3dc71a9ddaa6a3fec88adb1828f0b6b843b045396da5ba38
 
