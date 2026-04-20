@@ -783,25 +783,6 @@ MD5sum: 459b47041079da1558c5523b037d6f74
 SHA1: b926759e7069699296b9d7b23907c5649d0a604e
 SHA256: 2ca1478a75da71d69075cb643cd931e6e18f5a57384b995f943ee7e4cf9b5810
 
-Package: dbeaver-ce
-Version: 26.0.2
-Architecture: amd64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 205663
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.0.2/dbeaver-ce_26.0.2_ubuntu2404_amd64.deb
-Size: 112914404
-MD5sum: b521f72c0c09150dad7a83fba4febeb2
-SHA1: 2f5b1608777f2c02c6523e3aefdea3f417bd8639
-SHA256: ab5e2241c47df91febc652ef39f7a30c9634c551c885ea3a20edd8d6481d124a
-
 Package: libgtk4-layer-shell-0
 Version: 1.1.0
 Architecture: amd64
@@ -1175,4 +1156,23 @@ Size: 5227430
 MD5sum: 929e9ac25de5c9a483907ab99ed8cb88
 SHA1: ae8e4e9c47f779cb5a1b00b4935bd2c5946b26ef
 SHA256: 2ed11a2ea188c4ef5f384262fbea13ba1266fc71ca82f459774b92bb58ad6a9e
+
+Package: dbeaver-ce
+Version: 26.0.3
+Architecture: amd64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 205434
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.0.3/dbeaver-ce_26.0.3_ubuntu2404_amd64.deb
+Size: 112681940
+MD5sum: 30369ce781182aaf5430a024804bbbd3
+SHA1: ee3ad9dfb5cfc8e2902726e5f9a2a91b87f14739
+SHA256: 2dd4a825abc453267a5f9871bfc1920db4ef9391f4badc7aa1a4cf0bc09d75bb
 
