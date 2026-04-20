@@ -21,7 +21,10 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 |---|---|---|---|
 | `aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | amd64, arm64 |
 | `alacritty` | [alacritty](https://github.com/alacritty/alacritty) | noble, trixie | amd64, arm64 |
+| `asdcontrol` | [asdcontrol](https://github.com/omakasui/asdcontrol) | noble, trixie | amd64, arm64 |
+| `btop` | [btop](https://github.com/aristocratos/btop) | noble, trixie | amd64, arm64 |
 | `cliamp` | [cliamp](https://github.com/bjarneo/cliamp) | noble, trixie | amd64, arm64 |
+| `dbeaver` | [dbeaver](https://github.com/dbeaver/dbeaver) | noble, trixie | amd64, arm64 |
 | `elephant` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `elephant-calc` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `elephant-clipboard` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
@@ -35,6 +38,7 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 | `elephant-unicode` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `elephant-websearch` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `fastfetch` | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | noble, trixie | amd64, arm64 |
+| `fzf` | [fzf](https://github.com/junegunn/fzf) | noble, trixie | amd64, arm64 |
 | `font-cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | amd64, arm64 |
 | `font-ia-writer-mono` | [iA Writer Mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | amd64, arm64 |
 | `font-jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | amd64, arm64 |
@@ -47,16 +51,21 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 | `lazygit` | [lazygit](https://github.com/jesseduffield/lazygit) | noble, trixie | amd64, arm64 |
 | `localsend` | [localsend](https://github.com/localsend/localsend) | noble, trixie | all |
 | `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
+| `niri` | [Niri](https://github.com/niri-wm/niri) | noble, trixie | amd64, arm64 |
 | `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | amd64, arm64 |
 | `omakasui-aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | all |
 | `omakasui-nvim` | [LazyVim](https://github.com/LazyVim/LazyVim) | noble, trixie | all |
 | `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
 | `omakasui-zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | all |
+| `pinta` | [Pinta](https://github.com/PintaProject/Pinta) | noble, trixie | all |
 | `starship` | [starship](https://starship.rs) | noble, trixie | amd64, arm64 |
+| `swaybg` | [swaybg](https://github.com/swaywm/swaybg) | noble, trixie | amd64, arm64 |
 | `tmux` | [tmux](https://github.com/tmux/tmux) | noble, trixie | amd64, arm64 |
 | `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | amd64, arm64 |
 | `uwsm` | [uwsm](https://github.com/Vladimir-csp/uwsm) | noble, trixie | amd64, arm64 |
 | `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
+| `wiremix` | [wiremix](https://github.com/tsowell/wiremix) | noble, trixie | amd64, arm64 |
+| `xdg-terminal-exec` | [xdg-terminal-exec](https://github.com/Vladimir-csp/xdg-terminal-exec) | noble, trixie | amd64, arm64 |
 | `yaru-theme-gtk` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `yaru-theme-icon` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `yaru-theme-sound` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
