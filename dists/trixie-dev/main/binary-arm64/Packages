@@ -1356,3 +1356,20 @@ MD5sum: 599603bf960abc8e47e6ca3f9c3ac57b
 SHA1: c4b74c47095eb3f4b00119dcf53ce2855b452f8a
 SHA256: 48653d24864a0ddd9a72aba867e38f8dcd26c64b9f25827948236ffb01b245fe
 
+Package: impala
+Version: 0.7.4
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4180
+Depends: iwd
+Section: utils
+Priority: optional
+Homepage: https://github.com/pythops/impala
+Description: TUI for managing WiFi on Linux. Discover, connect and manage WiFi networks directly from the terminal. Requires iwd as the WiFi backend (not NetworkManager/wpa_supplicant). Supports WPA2-Enterprise, hidden networks, QR code sharing and access point mode.
+ .
+Filename: pool/impala-0.7.4/impala_0.7.4_debian13_arm64.deb
+Size: 1621480
+MD5sum: a1f97cad066db1743244298653c76264
+SHA1: 4a948b41fe68b733bf0fdec3899d80b934ae7280
+SHA256: f4cc475ff6d288f59562394ca88d411c98f467f41dda9daded14fa8a635fd2ca
+
