@@ -1340,3 +1340,20 @@ MD5sum: 76e5ac8c65689811b40fb3337010f8c1
 SHA1: 2a0aa24e9dbb145793a65b555075bd411862e7c6
 SHA256: d953f88b9c7c27f1e267df746d7c762ea785ea36140200901ecd00b098848377
 
+Package: bluetui
+Version: 0.8.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 3576
+Depends: bluez, dbus
+Section: utils
+Priority: optional
+Homepage: https://github.com/pythops/bluetui
+Description: TUI for managing bluetooth devices on Linux. Discover, pair, connect and manage bluetooth devices directly from the terminal using the BlueZ stack.
+ .
+Filename: pool/bluetui-0.8.1/bluetui_0.8.1_debian13_amd64.deb
+Size: 1255502
+MD5sum: 60df862f3b799adf780b1210230ee969
+SHA1: 4ef41c15b82f682101f41842c92131b7fea0abaf
+SHA256: 6b0aa6ac731d6ad906c712430f3ec73c71f072f90b63d5591a42fc6fc40b0288
+
