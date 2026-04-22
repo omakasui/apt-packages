@@ -37,6 +37,7 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 | `elephant-todo` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `elephant-unicode` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
 | `elephant-websearch` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
+| `eza` | [eza](https://github.com/eza-community/eza) | noble, trixie | amd64, arm64 |
 | `fastfetch` | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | noble, trixie | amd64, arm64 |
 | `fzf` | [fzf](https://github.com/junegunn/fzf) | noble, trixie | amd64, arm64 |
 | `font-cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | amd64, arm64 |
