@@ -105,6 +105,21 @@ This repository does not claim any ownership over the upstream software. Its sol
 
 If you are an upstream maintainer and have concerns about the distribution of your software here, please open an issue or contact the omakasui project directly.
 
+## Scripts and local workflow
+
+Run `make help` from the repo root for a full list of available targets. Common ones:
+
+```bash
+make list                                          # show all packages in the index
+make list-dev                                      # show packages not yet promoted to stable
+make info PKG=fzf                                  # inspect all entries for a package
+make check                                         # count entries per suite/arch
+make index                                         # regenerate Packages files
+make rebuild GPG_KEY_ID=<fp>                       # regenerate + re-sign
+make promote-pkg PKG=fzf                           # promote fzf dev → stable
+make prune-dry                                     # preview stale releases in build-apt-packages
+```
+
 ## packages.tsv format
 
 ```
