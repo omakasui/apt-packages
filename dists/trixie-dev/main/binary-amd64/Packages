@@ -496,26 +496,6 @@ MD5sum: eba99ba2ee5b00a5799b42453c47ce86
 SHA1: 0a6ec91efa69ac232bf7dfddbc058cf923e900b0
 SHA256: 2875020b79b2ed971eead4d514e7035c977bcfb66894ee47aec7d6379a7ff168
 
-Package: glab
-Version: 1.92.1
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 48479
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.92.1/glab_1.92.1_debian13_amd64.deb
-Size: 12484672
-MD5sum: 174ca08f6182f56dfb83d846c588e588
-SHA1: 8e4354cc4df4fec1f5a055b00bc76d66016de355
-SHA256: 90827c9aff20f5bfa3379285d35d3264bc0320dd3bd7c3516efa803d439d1f65
-
 Package: asdcontrol
 Version: 0.5
 Architecture: amd64
@@ -1543,4 +1523,24 @@ Size: 9189800
 MD5sum: a5ff9e6aa2e44a76a19ee985c4fedbd0
 SHA1: f739dd398fb4765fe5fde980bc6e4302f6d7a4e0
 SHA256: 9f0aa6b43d03f5b6044f65a89fc8229956b45cc4e9651cfe05b1e52810c57e63
+
+Package: glab
+Version: 1.93.0
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 48518
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.93.0/glab_1.93.0_debian13_amd64.deb
+Size: 12495360
+MD5sum: 3cfc028c95b10b9c51a8bea3a599c293
+SHA1: 88f301694d9a76bd40805f195d85830a69499570
+SHA256: 080587d2817a6299759d63a6177f77a77c71812e2dd8168dbb8b32e7f0012e7c
 
