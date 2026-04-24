@@ -1,6 +1,3 @@
-# Triggered by repository_dispatch from build-apt-packages, or manually via workflow_dispatch.
-# Automated dispatch actions: packages-updated | package-updated | remove-package | rebuild-index | clean-pool
-# Manual (workflow_dispatch): package-updated only — use maintain.yml for remove/clean/rebuild.
 name: Update APT repo
 
 on:
@@ -34,7 +31,6 @@ on:
           - stable
           - dev
 
-# All known suite codenames. Update here when adding a new distro.
 # Must stay in sync with build-matrix.yml in omakasui/build-apt-packages.
 env:
   ALL_SUITES: "trixie noble"
@@ -69,10 +65,8 @@ jobs:
             echo "pattern=${{ github.event.client_payload.pattern }}" >> "$GITHUB_OUTPUT"
             PRODUCES=$(echo '${{ toJson(github.event.client_payload.produces) }}' | jq -c '.')
             echo "produces=${PRODUCES}"                               >> "$GITHUB_OUTPUT"
-            # packages-updated batch payload: JSON array of {package,version,suites,produces,channel}
             PKGS_JSON=$(echo '${{ toJson(github.event.client_payload.packages) }}' | jq -c '. // []')
             echo "packages_json=${PKGS_JSON}"                         >> "$GITHUB_OUTPUT"
-            # Single-package channel (default: stable).
             CD_CHANNEL='${{ github.event.client_payload.channel }}'
             echo "channel=${CD_CHANNEL:-stable}"                      >> "$GITHUB_OUTPUT"
           else
@@ -81,7 +75,6 @@ jobs:
             echo "version=${{ inputs.version }}"   >> "$GITHUB_OUTPUT"
             echo "suites=${{ inputs.suites }}"     >> "$GITHUB_OUTPUT"
             echo "packages_json=[]"                >> "$GITHUB_OUTPUT"
-            # Convert space-separated produces input to JSON array.
             if [[ -n "${{ inputs.produces }}" ]]; then
               PRODUCES_JSON=$(echo "${{ inputs.produces }}" | tr ' ' '\n' | jq -Rc '[.,inputs]' 2>/dev/null || echo "[]")
               echo "produces=${PRODUCES_JSON}"     >> "$GITHUB_OUTPUT"
@@ -91,26 +84,17 @@ jobs:
             echo "channel=${{ inputs.channel }}"   >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Install APT tools
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends \
-            dpkg-dev apt-utils gnupg2
-
-      - name: Import GPG key
-        run: |
-          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
-          FINGERPRINT=$(gpg --fingerprint --with-colons "${{ secrets.GPG_KEY_ID }}" \
-            | awk -F: '/^fpr/{print $10; exit}')
-          echo "${FINGERPRINT}:6:" | gpg --import-ownertrust
+      - name: Setup APT tools and GPG key
+        uses: ./.github/actions/setup-apt
+        with:
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          gpg-key-id: ${{ secrets.GPG_KEY_ID }}
 
       - name: '[packages-updated] Register all packages in index manifest'
         if: steps.params.outputs.action == 'packages-updated'
         env:
           GH_TOKEN: ${{ secrets.APT_PKG_DISPATCH_TOKEN }}
         run: |
-          # Iterate the packages JSON array and register each entry in sequence.
-          # Running them sequentially in a single job avoids concurrent push conflicts.
           PKGS_JSON='${{ steps.params.outputs.packages_json }}'
           while IFS= read -r entry; do
             PKG=$(echo      "$entry" | jq -r '.package')
@@ -173,11 +157,9 @@ jobs:
           bash scripts/update-index.sh --suites "$ALL_SUITES"
           bash scripts/sign-release.sh --suites "$ALL_SUITES $ALL_DEV_SUITES" --key-id "$GPG_KEY_ID"
 
-      - name: Commit and push
+      - name: Build commit message
+        id: msg
         run: |
-          git config user.name  "omakasui-bot"
-          git config user.email "bot@omakasui.org"
-
           ACTION="${{ steps.params.outputs.action }}"
           PKG="${{ steps.params.outputs.package }}"
           VERSION="${{ steps.params.outputs.version }}"
@@ -192,36 +174,9 @@ jobs:
             clean-pool)       MSG="apt: clean ${PATTERN} [$(date '+%Y-%m-%d')]" ;;
             *)                MSG="apt: rebuild index [$(date '+%Y-%m-%d')]" ;;
           esac
+          echo "value=${MSG}" >> "$GITHUB_OUTPUT"
 
-          # Snapshot artifacts produced in this run before any git reset.
-          DISTS_SNAPSHOT=$(mktemp -d)
-          INDEX_SNAPSHOT=$(mktemp -d)
-          GPG_KEY_SNAPSHOT=$(mktemp -d)
-          cp -r dists/. "$DISTS_SNAPSHOT/"
-          cp omakasui.gpg.key "$GPG_KEY_SNAPSHOT/"
-          cp index/packages.tsv "$INDEX_SNAPSHOT/" 2>/dev/null || true
-
-          for i in 1 2 3 4 5; do
-            # Always start from the current remote state to avoid merge conflicts.
-            git fetch origin main
-            git reset --hard origin/main
-
-            # Re-apply this run's artifacts on top of the latest remote state.
-            cp -r "$DISTS_SNAPSHOT/." dists/
-            cp "$GPG_KEY_SNAPSHOT/omakasui.gpg.key" omakasui.gpg.key
-            mkdir -p index
-            cp "$INDEX_SNAPSHOT/packages.tsv" index/packages.tsv 2>/dev/null || true
-
-            git add -f dists/ omakasui.gpg.key index/
-            git add -u index/ 2>/dev/null || true
-
-            if git diff --cached --quiet; then
-              echo "Nothing to commit."
-              break
-            fi
-
-            git commit -m "$MSG"
-            git push && break
-            echo "Push failed (attempt ${i}/5), retrying..."
-            sleep $((i * 2))
-          done
+      - name: Commit and push
+        uses: ./.github/actions/commit-and-push
+        with:
+          message: ${{ steps.msg.outputs.value }}

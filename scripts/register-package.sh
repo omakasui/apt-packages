@@ -52,12 +52,9 @@ _register_entry() {
   sha1=$(sha1sum     "$deb" | cut -d' ' -f1)
   sha256=$(sha256sum "$deb" | cut -d' ' -f1)
 
-  # Capture the full control stanza from the .deb (Maintainer, Depends,
-  # Installed-Size, Description, etc.) and base64-encode it for TSV storage.
   control_b64=$(dpkg-deb --field "$deb" | base64 -w0)
 
   # Remove any existing entry for this suite/arch/name/channel, then append the new one.
-  # Treats absent channel field (legacy entries) as 'stable'.
   awk -v s="$suite" -v a="$arch" -v n="$name" -v c="$CHANNEL" \
     '{ chan=(NF>=11)?$11:"stable"; if ($1==s && $2==a && $3==n && chan==c) next; print }' \
     index/packages.tsv > /tmp/packages.tmp || true

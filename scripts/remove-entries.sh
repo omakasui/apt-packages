@@ -5,10 +5,6 @@
 # Usage:
 #   remove-entries.sh --package <name> [--suites "<suite1> <suite2>"]
 #   remove-entries.sh --pattern <glob> [--suites "<suite1> <suite2>"]
-#
-# Examples:
-#   remove-entries.sh --package omakasui-lazygit
-#   remove-entries.sh --pattern "omakasui-*" --suites "noble"
 
 set -euo pipefail
 
@@ -34,15 +30,13 @@ done
 
 [[ ! -f index/packages.tsv ]] && { echo "Nothing to remove."; exit 0; }
 
-cp index/packages.tsv /tmp/packages.bak
+BEFORE=$(wc -l < index/packages.tsv)
 
 if [[ -n "$PACKAGE" ]]; then
   # Match the name field exactly (field 3, surrounded by spaces).
   if [[ -n "$SUITES" ]]; then
     cp index/packages.tsv /tmp/packages.tmp
     for suite in $SUITES; do
-      grep -vF "^${suite} " /tmp/packages.tmp | grep -vF " ${PACKAGE} " \
-        > /tmp/packages.next || true
       # Keep lines from other suites untouched, remove only matching suite+name.
       grep -vF "^${suite} " /tmp/packages.tmp > /tmp/packages.other || true
       grep -F "^${suite} " /tmp/packages.tmp | grep -vF " ${PACKAGE} " \
@@ -73,5 +67,6 @@ else
   fi
 fi
 
-REMOVED=$(( $(wc -l < /tmp/packages.bak) - $(wc -l < index/packages.tsv) ))
+AFTER=$(wc -l < index/packages.tsv)
+REMOVED=$(( BEFORE - AFTER ))
 echo "Removed ${REMOVED} entries (${PACKAGE:-$PATTERN}${SUITES:+ in $SUITES})."

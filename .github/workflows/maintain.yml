@@ -1,5 +1,3 @@
-# No repository_dispatch, no package-updated — manual triggers only.
-# Available actions: remove-package | clean-pool | rebuild-index
 name: Maintain APT repo
 
 on:
@@ -26,7 +24,7 @@ on:
         required: false
         type: string
 
-# All known suite codenames. Keep in sync with build-matrix.yml in omakasui/build-apt-packages.
+# Must stay in sync with build-matrix.yml in omakasui/build-apt-packages.
 env:
   ALL_SUITES: "trixie noble"
   ALL_DEV_SUITES: "trixie-dev noble-dev"
@@ -63,18 +61,11 @@ jobs:
               ;;
           esac
 
-      - name: Install APT tools
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends \
-            dpkg-dev apt-utils gnupg2
-
-      - name: Import GPG key
-        run: |
-          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
-          FINGERPRINT=$(gpg --fingerprint --with-colons "${{ secrets.GPG_KEY_ID }}" \
-            | awk -F: '/^fpr/{print $10; exit}')
-          echo "${FINGERPRINT}:6:" | gpg --import-ownertrust
+      - name: Setup APT tools and GPG key
+        uses: ./.github/actions/setup-apt
+        with:
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          gpg-key-id: ${{ secrets.GPG_KEY_ID }}
 
       - name: '[remove-package] Remove entries from index manifest'
         if: inputs.action == 'remove-package'
@@ -102,11 +93,9 @@ jobs:
           bash scripts/update-index.sh --suites "$ALL_SUITES"
           bash scripts/sign-release.sh --suites "$ALL_SUITES $ALL_DEV_SUITES" --key-id "$GPG_KEY_ID"
 
-      - name: Commit and push
+      - name: Build commit message
+        id: msg
         run: |
-          git config user.name  "omakasui-bot"
-          git config user.email "bot@omakasui.org"
-
           ACTION="${{ inputs.action }}"
           PKG="${{ inputs.package }}"
           PATTERN="${{ inputs.pattern }}"
@@ -115,34 +104,9 @@ jobs:
             clean-pool)     MSG="maint: clean ${PATTERN} [$(date '+%Y-%m-%d')]" ;;
             *)              MSG="maint: rebuild index [$(date '+%Y-%m-%d')]" ;;
           esac
+          echo "value=${MSG}" >> "$GITHUB_OUTPUT"
 
-          DISTS_SNAPSHOT=$(mktemp -d)
-          INDEX_SNAPSHOT=$(mktemp -d)
-          GPG_KEY_SNAPSHOT=$(mktemp -d)
-          cp -r dists/. "$DISTS_SNAPSHOT/"
-          cp omakasui.gpg.key "$GPG_KEY_SNAPSHOT/"
-          cp index/packages.tsv "$INDEX_SNAPSHOT/" 2>/dev/null || true
-
-          for i in 1 2 3 4 5; do
-            # Always start from the current remote state to avoid merge conflicts.
-            git fetch origin main
-            git reset --hard origin/main
-
-            cp -r "$DISTS_SNAPSHOT/." dists/
-            cp "$GPG_KEY_SNAPSHOT/omakasui.gpg.key" omakasui.gpg.key
-            mkdir -p index
-            cp "$INDEX_SNAPSHOT/packages.tsv" index/packages.tsv 2>/dev/null || true
-
-            git add -f dists/ omakasui.gpg.key index/
-            git add -u index/ 2>/dev/null || true
-
-            if git diff --cached --quiet; then
-              echo "Nothing to commit."
-              break
-            fi
-
-            git commit -m "$MSG"
-            git push && break
-            echo "Push failed (attempt ${i}/5), retrying..."
-            sleep $((i * 2))
-          done
+      - name: Commit and push
+        uses: ./.github/actions/commit-and-push
+        with:
+          message: ${{ steps.msg.outputs.value }}
