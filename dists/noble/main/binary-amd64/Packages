@@ -136,22 +136,6 @@ MD5sum: ec897213fb78ae927b50a27ece9376ea
 SHA1: 13719354102f34583437d771679b1ce08c706f75
 SHA256: 99e1ff12522820cabe155a64a36a486d53cca89463d5b3c7576c0a761c728eed
 
-Package: starship
-Version: 1.24.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 11836
-Section: shells
-Priority: optional
-Homepage: https://starship.rs
-Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell. Statically linked binary, works on any Linux distribution. Installs to /usr/bin/starship.
- .
-Filename: pool/starship-1.24.2/starship_1.24.2_ubuntu2404_amd64.deb
-Size: 3792254
-MD5sum: 2780943f1b7679892b7e7bf52312a512
-SHA1: 1ee8628d955f08c51e1f6c644c1f89233c11453d
-SHA256: f7a14fe93bbb860aa8172a97c2cbaaad576f41c098a98ec3c383be291d74690d
-
 Package: tmux
 Version: 3.6a
 Architecture: amd64
@@ -255,23 +239,6 @@ MD5sum: 19f3d718b858ca4f0bf9a673a48f5951
 SHA1: a2b0bd5393939e9b599e0dbd746b226a7946b869
 SHA256: d6bab0513e61153881063972070f808c74eea601f2211686dd34244eab858d3c
 
-Package: fastfetch
-Version: 2.61.0
-Architecture: amd64
-Depends: libc6 (>= 2.35)
-Description: Fast neofetch-like system information tool
- fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Maintainer: Carter Li <zhangsongcui@live.cn>
-Priority: optional
-Section: devel
-Installed-Size: 14607
-Filename: pool/fastfetch-2.61.0/fastfetch_2.61.0_ubuntu2404_amd64.deb
-Size: 4013736
-MD5sum: 65b916d0254938e38c1ff58d00d3f914
-SHA1: 3111de91752d4bc5f0cee75edd29db4564115fdc
-SHA256: 8cad089e50deeb5bf78678752cbe35a244fb78ae30b248e3e1110005ad7912a0
-
 Package: alacritty
 Version: 0.17.0
 Architecture: amd64
@@ -308,22 +275,6 @@ Size: 5246668
 MD5sum: 87f128935c7daf96bff7f4e3d084ce4c
 SHA1: 6e69ed08199a109a455c7ba3b32c108b743333c5
 SHA256: d7ce444d2e3cfac158f82d8e69a2a3394b8e767a0c8fe390867848005add99fe
-
-Package: lazydocker
-Version: 0.25.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 12560
-Section: utils
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazydocker
-Description: Lazydocker - a simple terminal UI for Docker and Docker Compose. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven interface to manage containers, images, and volumes. Requires Docker (docker-ce or docker.io) to be installed separately.
- .
-Filename: pool/lazydocker-0.25.0/lazydocker_0.25.0_ubuntu2404_amd64.deb
-Size: 4027684
-MD5sum: a6d0aa064e77d5c02e5e5a0f4f6ccd36
-SHA1: 3b9b19b4728acf0af5ff7947028af191946e0b83
-SHA256: e36048f13f1a77b22ccd8a609c28ec6a58cd0f14886995583e87859db9474735
 
 Package: nvim
 Version: 0.12.1
@@ -363,227 +314,6 @@ MD5sum: 41652f1f4f16acaa02184d91b4c78cd8
 SHA1: 3523503cd1929d573e5e7e872fbaef7904eb348c
 SHA256: a4eba470fa12eea464d8e5bac8dc437bd2b6872f1d51371a1a840043433781df
 
-Package: elephant
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20940
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant - powerful data provider daemon for application launchers.
- Communicates via Unix sockets and Protocol Buffers.
- Install provider packages to add functionality.
-Filename: pool/elephant-2.21.0/elephant_2.21.0_ubuntu2404_amd64.deb
-Size: 6993046
-MD5sum: bdc41c9f890c1a4a61e2dc02b12ac15a
-SHA1: f15a04c7260ee7c76b0f171cc41dbaef37c9aec4
-SHA256: cfc2f0b856d0601c83fd5a7baed627855b08e04fda1ce995945e6373c1fa64a7
-
-Package: elephant-calc
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21824
-Depends: elephant (= 2.21.0), qalc
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant calc provider plugin for the walker application launcher.
- Installs calc.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-calc_2.21.0_ubuntu2404_amd64.deb
-Size: 6684772
-MD5sum: d206d4d8cb6bf0a01ce98e567cc484b3
-SHA1: b3884dc6581f86eb81b005622f8487ea6b32a699
-SHA256: b439eeea8fb1c63ade81e219472e88008b0001add67642e2ac452547c4289daf
-
-Package: elephant-clipboard
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 24516
-Depends: elephant (= 2.21.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant clipboard provider plugin for the walker application launcher.
- Installs clipboard.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-clipboard_2.21.0_ubuntu2404_amd64.deb
-Size: 7048418
-MD5sum: 444ca97d4cd9473b54984a17ec925dc2
-SHA1: 3894d76d06b1bbaffcb948783a389818a6fdba86
-SHA256: ac552259a21e19c9a0f3ce86438c3cd75123529ecfa184756fa9d4bff205683c
-
-Package: elephant-desktopapplications
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22428
-Depends: elephant (= 2.21.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant desktopapplications provider plugin for the walker application launcher.
- Installs desktopapplications.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-desktopapplications_2.21.0_ubuntu2404_amd64.deb
-Size: 6819394
-MD5sum: bb95858abc418c807469356eb9a4a9d1
-SHA1: d4d71a53118b5099d55f151778943840282d9c41
-SHA256: 162cabf9b88c66cae99dea6aa9df70861c4a3baa381832e7b3012140b9745ab3
-
-Package: elephant-files
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 23716
-Depends: elephant (= 2.21.0), fd-find
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant files provider plugin for the walker application launcher.
- Installs files.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-files_2.21.0_ubuntu2404_amd64.deb
-Size: 7450918
-MD5sum: 1cf18d0b8eccee310432570b996e5efd
-SHA1: f1e74bc6edfaaf96e63730c4d8c9ae442d8dfb8c
-SHA256: a2172db7cffaff7564daab126cece6a50487b863315565028a1f0885b29d1c76
-
-Package: elephant-menus
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21688
-Depends: elephant (= 2.21.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant menus provider plugin for the walker application launcher.
- Installs menus.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-menus_2.21.0_ubuntu2404_amd64.deb
-Size: 6629952
-MD5sum: 575876b521f82dc2c38de413dea36a36
-SHA1: f6f07799344a5ea5d391e51a7c05de892a48d070
-SHA256: e100c451efe477f496922c5ea4e007d05aadc0a5355717d7adfd2cf91e71c4f0
-
-Package: elephant-providerlist
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21880
-Depends: elephant (= 2.21.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant providerlist provider plugin for the walker application launcher.
- Installs providerlist.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-providerlist_2.21.0_ubuntu2404_amd64.deb
-Size: 6686204
-MD5sum: 5bc59529fff63e7b2110a1c201d85695
-SHA1: 84da621f55e0f61716adee8798e7c4e54499aea5
-SHA256: 7c5c80da7f3c0ee215867bbfb967efedbd8b9ea39a5099156683b1f98a0be59f
-
-Package: elephant-runner
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21860
-Depends: elephant (= 2.21.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant runner provider plugin for the walker application launcher.
- Installs runner.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-runner_2.21.0_ubuntu2404_amd64.deb
-Size: 6681386
-MD5sum: 63b04824168d137f3e36494ebdb83aaf
-SHA1: 8c745a9342014541ee4a9877b90a25aa7e5cb1c3
-SHA256: f0932907ed29a5800dfa9ab8ec7d9bfcbdb20b7f64923b2b0af8eefc0c57d417
-
-Package: elephant-symbols
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 63584
-Depends: elephant (= 2.21.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant symbols provider plugin for the walker application launcher.
- Installs symbols.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-symbols_2.21.0_ubuntu2404_amd64.deb
-Size: 11981162
-MD5sum: aa310f94fc167ec97523bc9abe8ca7ff
-SHA1: 1e4206a8e194a94ead6452001ae15b9e1c3ea275
-SHA256: 5b2f3e1d3b377b148ab038d3443f5620a13c19c161107cd6f545f34d20936dbc
-
-Package: elephant-todo
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 30972
-Depends: elephant (= 2.21.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant todo provider plugin for the walker application launcher.
- Installs todo.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-todo_2.21.0_ubuntu2404_amd64.deb
-Size: 8952322
-MD5sum: 5f60609811eb2335a866877f769c5570
-SHA1: ecc32a3e69722321e062bf7346f511034d328c2f
-SHA256: 0bd42cb2197048574155e6f34a3f410a28d9ee3f8f469842cf7cfd44c548c545
-
-Package: elephant-unicode
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 23976
-Depends: elephant (= 2.21.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant unicode provider plugin for the walker application launcher.
- Installs unicode.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-unicode_2.21.0_ubuntu2404_amd64.deb
-Size: 6923464
-MD5sum: 3af97296ae477b231ed694b34557ed70
-SHA1: 23024435f3bacd5bac10586a20baf7142d072236
-SHA256: 5a1c3b4e51e7ba05a8426c6927f637d1aeea7bbe8c64890db7298a3b3bc1e205
-
-Package: elephant-websearch
-Version: 2.21.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21916
-Depends: elephant (= 2.21.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant websearch provider plugin for the walker application launcher.
- Installs websearch.so into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-websearch_2.21.0_ubuntu2404_amd64.deb
-Size: 6696668
-MD5sum: b7177ae94bbb4fd5df2db3da91521226
-SHA1: ae869c00871910a5621f36543790d721fb3cb11e
-SHA256: f3773e38754a0d25f1e9034fbca2ef7bb604025c320847d65f292ab6b54c4b1c
-
-Package: zen-browser
-Version: 1.19.8b
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 362244
-Section: web
-Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.19.8b/zen-browser_1.19.8b_ubuntu2404_amd64.deb
-Size: 97207064
-MD5sum: eb5b546cdf9ee02a31120b4be82d153d
-SHA1: 6525b5e370f6b3fc3a2322e419532baf4d1493b3
-SHA256: 605d32d51c3657904a115804f9839218bead1d1ba2714d636166e485f0e1d42d
-
 Package: localsend
 Version: 1.17.0
 Architecture: amd64
@@ -619,41 +349,6 @@ Size: 31117796
 MD5sum: b839aeca68f47c9a16745796ed9f0d06
 SHA1: 4c85ea587ddf37c2dca7fb5f590d555b00a373cc
 SHA256: e9176e3650051e15183aac2b4ca09f3edafa88b6aa0b2d5485fa5e2c21be06a1
-
-Package: aether
-Version: 4.8.2
-Architecture: amd64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.8.2/aether_4.8.2_ubuntu2404_amd64.deb
-Size: 5207608
-MD5sum: bf3c6408ffbe74e7ecec20dccefc785d
-SHA1: e57c6e4dcba1cb2d736ad93b2ceca90735ecd4bb
-SHA256: 82832530993668715c232ea7477a3d6dbe1608603fe658a47f92529bc33d9469
-
-Package: glab
-Version: 1.92.1
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 48479
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.92.1/glab_1.92.1_ubuntu2404_amd64.deb
-Size: 13662108
-MD5sum: bd534e8ae3db77b8cfde81256b6d8232
-SHA1: 9f2f9bccb809509baeae3448be0748bc14fe7ff3
-SHA256: 687b814948745ff82ec6460a3ef7b9943986098f71208e2226f38b5b98567586
 
 Package: asdcontrol
 Version: 0.5
@@ -709,23 +404,6 @@ Size: 790542
 MD5sum: 22f1a3ba11a85eec64a4e5abb732c350
 SHA1: c3b00176e8a2f24765d07db09aaca3e3ee362bb5
 SHA256: 158b15f87db9834d0f72a72d40cbc639f41ce296f8c4b2f6604315a81f8fee8c
-
-Package: niri
-Version: 25.11
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 137280
-Depends: libseat1, libpipewire-0.3-0, libpango-1.0-0, libegl1, libgbm1, libxkbcommon0, libinput10, libdbus-1-3, libsystemd0, libdisplay-info1 | libdisplay-info2, libpangocairo-1.0-0, libwayland-server0
-Section: x11
-Priority: optional
-Homepage: https://github.com/niri-wm/niri
-Description: Niri is a scrollable-tiling Wayland compositor. Windows are arranged in columns on an infinite strip. Opening a new window never causes existing windows to resize. Supports multi-monitor, fractional scaling, floating windows, NVIDIA, touchpads, tablets and Xwayland via xwayland-satellite.
- .
-Filename: pool/niri-25.11/niri_25.11_ubuntu2404_amd64.deb
-Size: 21727454
-MD5sum: 793df11ace6ef119ed47d5bd7d0e9136
-SHA1: c9df3aaedd5ab09331a3c4c4e1291ec9c16c61a8
-SHA256: 848261f3fd1d8b114de6a90cb012d507d21288e4cf62779cd1204f735a1d50a4
 
 Package: fonts-cascadia-mono-nf
 Version: 3.4.0
@@ -797,25 +475,6 @@ Size: 112914958
 MD5sum: 459b47041079da1558c5523b037d6f74
 SHA1: b926759e7069699296b9d7b23907c5649d0a604e
 SHA256: 2ca1478a75da71d69075cb643cd931e6e18f5a57384b995f943ee7e4cf9b5810
-
-Package: dbeaver-ce
-Version: 26.0.2
-Architecture: amd64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 205663
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.0.2/dbeaver-ce_26.0.2_ubuntu2404_amd64.deb
-Size: 112914404
-MD5sum: b521f72c0c09150dad7a83fba4febeb2
-SHA1: 2f5b1608777f2c02c6523e3aefdea3f417bd8639
-SHA256: ab5e2241c47df91febc652ef39f7a30c9634c551c885ea3a20edd8d6481d124a
 
 Package: libgtk4-layer-shell-0
 Version: 1.1.0
@@ -1122,23 +781,6 @@ MD5sum: 971696ab9b0ac36ca7a119d4e6459b08
 SHA1: 62707de753349c284f7c6df8e234a3a6f6fe2c37
 SHA256: 4bdb002b3dac1090c3c6d53d030cbed8925ae627fe53eb0dfa437aa4351fb5f3
 
-Package: cliamp
-Version: 1.35.1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 31688
-Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
-Section: sound
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
- .
-Filename: pool/cliamp-1.35.1/cliamp_1.35.1_ubuntu2404_amd64.deb
-Size: 9173018
-MD5sum: 762a89e381b505d8d2d53d3d9f9eee52
-SHA1: b1f74bcb0de370d9d742babffba12e1bbc786ee7
-SHA256: 1641f757736e5d80823248b231132187b32ec612787a7f960b7441de440b8d08
-
 Package: wiremix
 Version: 0.10.0
 Architecture: amd64
@@ -1155,4 +797,641 @@ Size: 1403360
 MD5sum: 65a47a00e067c18706f4f1685b1c9661
 SHA1: 522d6377bd520025a5680098d02db23bb328cf86
 SHA256: 80bfcf98b9db88fcc2d00a881463d96ea9065090f23c7bbf6f5a6dd9ef28e350
+
+Package: swaybg
+Version: 1.2.2-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 120
+Depends: libwayland-client0, libpng16-16t64 | libpng16-16, libjpeg62-turbo | libjpeg-turbo8
+Conflicts: swaybg
+Replaces: swaybg
+Provides: swaybg
+Section: x11
+Priority: optional
+Homepage: https://github.com/swaywm/swaybg
+Description: Wallpaper tool for Wayland compositors. Compatible with any compositor implementing wlr-layer-shell and wl_output version 4, including sway, niri, hyprland and others.
+ .
+Filename: pool/swaybg-1.2.2-omakasui1/swaybg_1.2.2-omakasui1_ubuntu2404_amd64.deb
+Size: 33160
+MD5sum: 48e86dcdb1845a8c5b39900be734fb75
+SHA1: 7f544597800c62e58b8cb309f1e08e0444c55d60
+SHA256: d0ea27ce874ec8bfeae7253e70c776b13297c093c5ef1a554d3e51de7cf0b496
+
+Package: dbeaver-ce
+Version: 26.0.3
+Architecture: amd64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 205434
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.0.3/dbeaver-ce_26.0.3_ubuntu2404_amd64.deb
+Size: 112681940
+MD5sum: 30369ce781182aaf5430a024804bbbd3
+SHA1: ee3ad9dfb5cfc8e2902726e5f9a2a91b87f14739
+SHA256: 2dd4a825abc453267a5f9871bfc1920db4ef9391f4badc7aa1a4cf0bc09d75bb
+
+Package: lazydocker
+Version: 0.25.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 12568
+Section: utils
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazydocker
+Description: Lazydocker - a simple terminal UI for Docker and Docker Compose. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven interface to manage containers, images, and volumes. Requires Docker (docker-ce or docker.io) to be installed separately.
+ .
+Filename: pool/lazydocker-0.25.2/lazydocker_0.25.2_ubuntu2404_amd64.deb
+Size: 4028376
+MD5sum: 38c723112ceda116131edc34336bc123
+SHA1: 6a7dffa0af1405d5b9bae4366f830cafdda7a28d
+SHA256: d758a85cdd78b6afbace63dcca32bacff57add70ef32814b30d25bb043fc1b95
+
+Package: starship
+Version: 1.25.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 11864
+Section: shells
+Priority: optional
+Homepage: https://starship.rs
+Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell. Statically linked binary, works on any Linux distribution. Installs to /usr/bin/starship.
+ .
+Filename: pool/starship-1.25.0/starship_1.25.0_ubuntu2404_amd64.deb
+Size: 3838476
+MD5sum: 28b16c4f567f5e97cb5424bfcda48b2a
+SHA1: 0539a1a37acbe8d0cde266a68ee7483a4ccd7488
+SHA256: 550661c76106944b4fdbde301330f48520d08e807e7665198f60d5b18050d8ae
+
+Package: eza
+Version: 0.23.4
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2256
+Conflicts: eza
+Replaces: eza
+Provides: eza
+Section: utils
+Priority: optional
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls. Colours, Git integration, tree view, and more. Statically linked binary, replaces the outdated distro package.
+ .
+Filename: pool/eza-0.23.4/eza_0.23.4_ubuntu2404_amd64.deb
+Size: 912398
+MD5sum: c7158c34b0c68b4b6dba585283d1fe53
+SHA1: 9c4fb4fb5e72f9395fd847f8036af1fc88ec8ef5
+SHA256: 5f7f0ea7206a0162d53754a70105500012b118d34113592fec086630b11128a9
+
+Package: yazi
+Version: 26.1.22
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 24056
+Section: utils
+Priority: optional
+Homepage: https://github.com/sxyazi/yazi
+Description: Blazing fast terminal file manager written in Rust. Provides async I/O, built-in code highlighting, image previews, and a plugin system. Includes the ya command-line helper.
+ .
+Filename: pool/yazi-26.1.22/yazi_26.1.22_ubuntu2404_amd64.deb
+Size: 7443882
+MD5sum: e75ab9a58164fcd3a335d54dddc6240e
+SHA1: 4cef720aa0908ac6e579a120e63b6610edb40b61
+SHA256: ba29723a770b8184fb5c93dd82ce0b07918886e7a86587312b821944eb2a5401
+
+Package: bluetui
+Version: 0.8.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 3584
+Depends: bluez, dbus
+Section: utils
+Priority: optional
+Homepage: https://github.com/pythops/bluetui
+Description: TUI for managing bluetooth devices on Linux. Discover, pair, connect and manage bluetooth devices directly from the terminal using the BlueZ stack.
+ .
+Filename: pool/bluetui-0.8.1/bluetui_0.8.1_ubuntu2404_amd64.deb
+Size: 1256028
+MD5sum: 36b5b63ea4c6b7488d351949622f476d
+SHA1: d1e999f03711e982ab2455a7e82cea0dc24a3ed7
+SHA256: a48c4c8badd956674a84313e0d9904a7bfff3061b212959ab03fb368acf6324a
+
+Package: impala
+Version: 0.7.4
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4704
+Depends: iwd
+Section: utils
+Priority: optional
+Homepage: https://github.com/pythops/impala
+Description: TUI for managing WiFi on Linux. Discover, connect and manage WiFi networks directly from the terminal. Requires iwd as the WiFi backend (not NetworkManager/wpa_supplicant). Supports WPA2-Enterprise, hidden networks, QR code sharing and access point mode.
+ .
+Filename: pool/impala-0.7.4/impala_0.7.4_ubuntu2404_amd64.deb
+Size: 1707620
+MD5sum: afbb5b0be369f9161d1dd174c6c1d41e
+SHA1: e837863ed5a2b618a7031fdb70e2430c1445e357
+SHA256: a3ea82bc7ef999ab048c57b90f1bbb93de3f537932d3d14ce81d99bbab373582
+
+Package: elephant
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 20940
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant - powerful data provider daemon for application launchers.
+ Communicates via Unix sockets and Protocol Buffers.
+ Install provider packages to add functionality.
+Filename: pool/elephant-2.21.0/elephant_2.21.0_ubuntu2404_amd64.deb
+Size: 6990176
+MD5sum: 23fe07ced8ad56e4f26f332577f72730
+SHA1: ef069763187b2f83eabb43fa69496abe2290de18
+SHA256: eed1ecc9630a0e67b44d5b94e2c5f9eb65cb576c80c07809fee2c6f25297b0f9
+
+Package: elephant-1password
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21832
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant 1password provider plugin for the walker application launcher.
+ Installs 1password.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-1password_2.21.0_ubuntu2404_amd64.deb
+Size: 6674506
+MD5sum: c578c3f2b80168dcf7d4f80b6d76903e
+SHA1: a1b690d30b6f868520da97be2102fef4b4eea35e
+SHA256: 46a9192c7e14a6bbeb529c3ef999c385de40c7fe1322a396df7d019abd916b02
+
+Package: elephant-bitwarden
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21844
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant bitwarden provider plugin for the walker application launcher.
+ Installs bitwarden.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-bitwarden_2.21.0_ubuntu2404_amd64.deb
+Size: 6683986
+MD5sum: 317b23161fcbcb5214305fe3be4f9166
+SHA1: e13e68e88dcac02f390b90ed44c39113179d8399
+SHA256: 69037cf5e10c5859cdee4d25d01f650c48b55076da771de674af6f93fa2d25cb
+
+Package: elephant-bluetooth
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21856
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant bluetooth provider plugin for the walker application launcher.
+ Installs bluetooth.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-bluetooth_2.21.0_ubuntu2404_amd64.deb
+Size: 6697946
+MD5sum: 6274f4da59c0e63919bde5c31e91d66c
+SHA1: 92cf3f8b9e7c04398bfa3aa280049d38eca36da7
+SHA256: 21628432a27b5eb1b7c517c552dddec556f43befd6e3c33b6470ecaba91abe09
+
+Package: elephant-bookmarks
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21932
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant bookmarks provider plugin for the walker application launcher.
+ Installs bookmarks.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-bookmarks_2.21.0_ubuntu2404_amd64.deb
+Size: 6722780
+MD5sum: c4d55e08a14b7a6352ea0e7909de2e3e
+SHA1: 93e5a5f9ecf33c0dc5c99779e54da1a8485db4b7
+SHA256: 252c5064680aeba49b12ec7d8b519d389777bde1d2ca647f1d78f69cac3db64e
+
+Package: elephant-calc
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21824
+Depends: elephant (= 2.21.0), qalc
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant calc provider plugin for the walker application launcher.
+ Installs calc.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-calc_2.21.0_ubuntu2404_amd64.deb
+Size: 6684754
+MD5sum: 378628d3f50ca361886150f3fff2a797
+SHA1: 59e57a1a1f4a2fa65bb500c2bcb09f4c6de8b1aa
+SHA256: d2e48c46e3fa224dc8b398a256e81881479abe44c0c496e6ebf5a951f53e25a4
+
+Package: elephant-clipboard
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 24516
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant clipboard provider plugin for the walker application launcher.
+ Installs clipboard.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-clipboard_2.21.0_ubuntu2404_amd64.deb
+Size: 7048736
+MD5sum: fe3555980c9307842e69825db78bfc5e
+SHA1: 21bc2a7b92f5dcfef84704a58b15e9a9810d41ef
+SHA256: 629435159198ecce880d2273c3f1b4c062a9631a4f775caa1f947bfe7422dc89
+
+Package: elephant-desktopapplications
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22428
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant desktopapplications provider plugin for the walker application launcher.
+ Installs desktopapplications.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-desktopapplications_2.21.0_ubuntu2404_amd64.deb
+Size: 6818866
+MD5sum: f7b6a0513827dfdf3965039b6ed052e4
+SHA1: 0e13b0a12f77cd36049d3263631c9692a5b1690a
+SHA256: 54e6d65f1838531c5fe7258f3bd564ca8082fa96597b828588ebb4b67b5ce817
+
+Package: elephant-files
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 23716
+Depends: elephant (= 2.21.0), fd-find
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant files provider plugin for the walker application launcher.
+ Installs files.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-files_2.21.0_ubuntu2404_amd64.deb
+Size: 7450906
+MD5sum: ea7a57c717ba79ce2f45f43dc93625c0
+SHA1: 7a0e53ed0aceeb9d6f5245dd04c12e2bb201598b
+SHA256: d9b67ef62e02550970e400ebcec81b61c5454272658e34623263bf9b8e7df78f
+
+Package: elephant-menus
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21688
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant menus provider plugin for the walker application launcher.
+ Installs menus.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-menus_2.21.0_ubuntu2404_amd64.deb
+Size: 6629952
+MD5sum: 2a893e409189c3bf2b3e4d711abe0b2d
+SHA1: 61f68dffc29b238cadb04e21b3a6ca7af60eb110
+SHA256: 9c64268aae8f366e14117450e9c5d8fb78f365d50148a79ebb3f6f627163d3c5
+
+Package: elephant-niriactions
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21856
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant niriactions provider plugin for the walker application launcher.
+ Installs niriactions.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-niriactions_2.21.0_ubuntu2404_amd64.deb
+Size: 6701032
+MD5sum: 79c0dac4dc6a995cf8ce51e8fec5aaa5
+SHA1: 22b2367d916590ff2d55d10877a1181dcc847040
+SHA256: 5f14504e8e83e58697eb7f39aa0fb82cc76bdf46e187fa86ab9507f3fc70861c
+
+Package: elephant-nirisessions
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21844
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant nirisessions provider plugin for the walker application launcher.
+ Installs nirisessions.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-nirisessions_2.21.0_ubuntu2404_amd64.deb
+Size: 6674580
+MD5sum: 90644af0f0395d08b69040842e522c1b
+SHA1: cb35d4aeb4a54947a57d2b165de75be87503a9de
+SHA256: c230059e61b5166dc062789bd4ef0afd4079bead5b1dccd854950ca0ba39cba3
+
+Package: elephant-playerctl
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21848
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant playerctl provider plugin for the walker application launcher.
+ Installs playerctl.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-playerctl_2.21.0_ubuntu2404_amd64.deb
+Size: 6699092
+MD5sum: 14e30ff8cca2631f460c86d6c0c8a3c9
+SHA1: 8adc1bed24fb1bf7a9f61dd69e827ab4d567e20c
+SHA256: 49d4a25c6ee90dd435acaa345f84c3167e7ca9425536bf660341c96dc4fdb36d
+
+Package: elephant-providerlist
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21880
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant providerlist provider plugin for the walker application launcher.
+ Installs providerlist.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-providerlist_2.21.0_ubuntu2404_amd64.deb
+Size: 6686188
+MD5sum: 699209f3bcd36a9237f938e33bf16ecd
+SHA1: f76157082b7d247cbe20e4b6c804c587a1d6d906
+SHA256: 47eaf38500d98efc206bbbcdcf7007c5840bef267ea787649a56b94b0fe235e1
+
+Package: elephant-runner
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21860
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant runner provider plugin for the walker application launcher.
+ Installs runner.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-runner_2.21.0_ubuntu2404_amd64.deb
+Size: 6681388
+MD5sum: e1401d7f871fa0aaa52290289509c000
+SHA1: 8bd8195196b1e52333613c3de4738a24f13e1a49
+SHA256: 0998160327762c1bcfe1b6baf80173637cce73abd81c508cd348bf8e69eae462
+
+Package: elephant-snippets
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21832
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant snippets provider plugin for the walker application launcher.
+ Installs snippets.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-snippets_2.21.0_ubuntu2404_amd64.deb
+Size: 6693808
+MD5sum: 7ae127429c993925c1887310cdbc48be
+SHA1: ee075933782c74ad9b926ea6a2f4da60b4f375fb
+SHA256: ce0f61781b4b2261abfdd29c65b88cf6eb66a3262ba58a8e78ee7b9aaf618263
+
+Package: elephant-symbols
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 63584
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant symbols provider plugin for the walker application launcher.
+ Installs symbols.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-symbols_2.21.0_ubuntu2404_amd64.deb
+Size: 11981096
+MD5sum: 9a35045faabb888df313be19d5facd4c
+SHA1: 7da21566e5cc8ee9df3da9c5540b80c85c7b20a0
+SHA256: 34f95461e9916bfcdaf70e57aac06ac913821557768852e05f4b34570d232f38
+
+Package: elephant-todo
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 30972
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant todo provider plugin for the walker application launcher.
+ Installs todo.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-todo_2.21.0_ubuntu2404_amd64.deb
+Size: 8952322
+MD5sum: e361320ec3f6cab4d3816736f417f678
+SHA1: e8c12a9c780f2f5be078eaa62347d44df51ace68
+SHA256: 0f3c50e0b7381b5969bb0098b4a2d479150f6dd6eeebbba8ea11b571325660fa
+
+Package: elephant-unicode
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 23976
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant unicode provider plugin for the walker application launcher.
+ Installs unicode.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-unicode_2.21.0_ubuntu2404_amd64.deb
+Size: 6927860
+MD5sum: 7c033ad9d049bcc69d2086189527d93c
+SHA1: 9177e24a3f76f64c305783d93d03178baed8b842
+SHA256: 0000a6ea435d90578e106b29b1f53a00a41618fb208d4117871ba7e0b7fcffb3
+
+Package: elephant-websearch
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21916
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant websearch provider plugin for the walker application launcher.
+ Installs websearch.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-websearch_2.21.0_ubuntu2404_amd64.deb
+Size: 6696646
+MD5sum: 3c41f84a1c4583da743cfd228b612104
+SHA1: 3eaa351dfbd1b27fc69e7b96f8f313e43e8c6408
+SHA256: a791a7874ee4eda10830835c234f592c177c377da890072cd66c18dc5bb02935
+
+Package: elephant-windows
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22320
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant windows provider plugin for the walker application launcher.
+ Installs windows.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-windows_2.21.0_ubuntu2404_amd64.deb
+Size: 6785852
+MD5sum: b2f6bbbba5fe8cb984fa0cd100ec5f2e
+SHA1: 57aa263fee4756f1c1abdd7d360d25059a11b718
+SHA256: 29198b6d82ee5eeaec78509c107c498d47551d3d75b51bb22c94ce7a5475562f
+
+Package: elephant-wireplumber
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21868
+Depends: elephant (= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant wireplumber provider plugin for the walker application launcher.
+ Installs wireplumber.so into /usr/lib/elephant/.
+Filename: pool/elephant-2.21.0/elephant-wireplumber_2.21.0_ubuntu2404_amd64.deb
+Size: 6703614
+MD5sum: 7a409d48a4b7de4f4829b94c7fbd1c52
+SHA1: 55b1d7ede481679de20920b938d27a9186828d73
+SHA256: ee1d5f5670bcfd787d6fc4e50ffe539724381b7087f27fd205f497031c5cb3bb
+
+Package: fastfetch
+Version: 2.62.1
+Architecture: amd64
+Depends: libc6 (>= 2.35)
+Description: Fast neofetch-like system information tool
+ fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Maintainer: Carter Li <zhangsongcui@live.cn>
+Priority: optional
+Section: devel
+Installed-Size: 14794
+Filename: pool/fastfetch-2.62.1/fastfetch_2.62.1_ubuntu2404_amd64.deb
+Size: 4077506
+MD5sum: 3977768d833a87f09fc69ca2af79f4d1
+SHA1: 06bbf03dc074db8f2b73b2bda2481dfeef72f0a6
+SHA256: 3961212bb5e6f0ca088a00f622ec576e61a25670bb81a1531f53982bdc042d25
+
+Package: aether
+Version: 4.14.0
+Architecture: amd64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.14.0/aether_4.14.0_ubuntu2404_amd64.deb
+Size: 5231246
+MD5sum: b1ed63f9bcfaa5ae6e578d8f1b3a51b6
+SHA1: 747c014fcdcc298aa2a71dd73c02743dbaec66f6
+SHA256: 5910f38b1a59a01ab0720478fa95c780cf964f18c40e37918e5b2089148a3970
+
+Package: glab
+Version: 1.93.0
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 48518
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.93.0/glab_1.93.0_ubuntu2404_amd64.deb
+Size: 13675588
+MD5sum: 623f9f2a3345be0d0034716a8bb4163d
+SHA1: f05138d23671091c182501744ac0f8ebf9a954d9
+SHA256: 7edd30bf3e85001231542f03f6fef32341c02397b2c8ae589906dc937ff6c85f
+
+Package: zen-browser
+Version: 1.19.9b
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 364228
+Section: web
+Priority: optional
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.19.9b/zen-browser_1.19.9b_ubuntu2404_amd64.deb
+Size: 98932752
+MD5sum: 101b717237a0f3eef85a77e3c8a9ce66
+SHA1: 06316e75e46bc1bb55978df5750f80ed571d41a0
+SHA256: 3c2982e2e4e8ec4369e0abd848a66bec51f1c0a1ac86665e6e9227ff55e76ab1
+
+Package: waybar
+Version: 0.15.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8020
+Depends: libgtk-3-0t64 | libgtk-3-0, libgtkmm-3.0-1t64 | libgtkmm-3.0-1, libjsoncpp26 | libjsoncpp25 | libjsoncpp24, libpulse0, libnl-3-200, libnl-genl-3-200, libevdev2, libdbusmenu-gtk3-4, libgtk-layer-shell0, libfmt10 | libfmt9, libmpdclient2t64 | libmpdclient2, libspdlog1.15 | libspdlog1.12, libxkbregistry0, libinput10, libwayland-client0, libgtk4-layer-shell0 (>= 1.1.0)
+Conflicts: waybar
+Replaces: waybar
+Provides: waybar
+Section: x11
+Priority: optional
+Homepage: https://github.com/Alexays/Waybar
+Description: Highly customizable Wayland bar for Sway, niri, Hyprland and other wlroots-based compositors. Supports workspaces, battery, network, audio, clock, MPD, custom modules and more.
+ .
+Filename: pool/waybar-0.15.0/waybar_0.15.0_ubuntu2404_amd64.deb
+Size: 1614972
+MD5sum: b445bd52fa0f2b10c7aaaf2a78a95188
+SHA1: e875188a8e4ae61493bca9dd2090869c924c1353
+SHA256: 152395a4d3ddbe15f42211dcdf0238d3e7cabecc9deeefb24129b37440ee0777
+
+Package: niri
+Version: 26.04
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 133272
+Depends: libseat1, libpipewire-0.3-0, libpango-1.0-0, libegl1, libgbm1, libxkbcommon0, libinput10, libdbus-1-3, libsystemd0, libdisplay-info1 | libdisplay-info2, libpangocairo-1.0-0, libwayland-server0
+Section: x11
+Priority: optional
+Homepage: https://github.com/niri-wm/niri
+Description: Niri is a scrollable-tiling Wayland compositor. Windows are arranged in columns on an infinite strip. Opening a new window never causes existing windows to resize. Supports multi-monitor, fractional scaling, floating windows, NVIDIA, touchpads, tablets and Xwayland via xwayland-satellite.
+ .
+Filename: pool/niri-26.04/niri_26.04_ubuntu2404_amd64.deb
+Size: 21629498
+MD5sum: c51bb8a2313b6999679c0887cd9fbad2
+SHA1: c1fe0dae1ca7bc8f26813f0f74a4e634962ff4c6
+SHA256: 3455b641ed09a1951a16540256e0e4ad4777e81ee12ac7da455ca3ca03f680c8
+
+Package: cliamp
+Version: 1.39.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 31776
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.39.0/cliamp_1.39.0_ubuntu2404_amd64.deb
+Size: 9194120
+MD5sum: 9ccd1987ba2a1b7fb6ec29c8090fce1b
+SHA1: 19439a36edf656c10321141679871f65d5d9bd65
+SHA256: 33107845b0e730bd3f10cf44ace68f84f1350350467630d015e27ff8e9c7e060
 
