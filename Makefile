@@ -88,6 +88,25 @@ list-dev: ## List packages not yet promoted to stable
 		| sort -u \
 		| column -t
 
+.PHONY: preview-promote
+preview-promote: ## Preview what next promote-all will add vs update in stable
+	@added=$$(awk -v suites="$(SUITES)" \
+	  'BEGIN{n=split(suites,sa," ");for(i=1;i<=n;i++)ss[sa[i]]=1} \
+	   {ch=(NF>=11)?$$11:"stable";if(!ss[$$1])next; \
+	    if(ch=="dev")d[$$3]=$$4;if(ch=="stable")s[$$3]=$$4} \
+	   END{for(p in d)if(!(p in s))print p,d[p]}' \
+	  index/packages.tsv | sort); \
+	updated=$$(awk -v suites="$(SUITES)" \
+	  'BEGIN{n=split(suites,sa," ");for(i=1;i<=n;i++)ss[sa[i]]=1} \
+	   {ch=(NF>=11)?$$11:"stable";if(!ss[$$1])next; \
+	    if(ch=="dev")d[$$3]=$$4;if(ch=="stable")s[$$3]=$$4} \
+	   END{for(p in d)if(p in s&&s[p]!=d[p])print p,s[p],d[p]}' \
+	  index/packages.tsv | sort); \
+	printf '\033[1;33mTo be added:\033[0m\n'; \
+	if [[ -n "$$added" ]]; then printf '%s\n' "$$added" | awk '{printf "  %-26s %s\n",$$1,$$2}'; else echo '  (none)'; fi; \
+	printf '\n\033[1;36mTo be updated:\033[0m\n'; \
+	if [[ -n "$$updated" ]]; then printf '%s\n' "$$updated" | awk '{printf "  %-26s %s -> %s\n",$$1,$$2,$$3}'; else echo '  (none)'; fi
+
 .PHONY: info
 info: ## Show index entries for a package (PKG= required)
 	$(call _require_pkg)
