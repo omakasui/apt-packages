@@ -1527,26 +1527,6 @@ MD5sum: 3cfc028c95b10b9c51a8bea3a599c293
 SHA1: 88f301694d9a76bd40805f195d85830a69499570
 SHA256: 080587d2817a6299759d63a6177f77a77c71812e2dd8168dbb8b32e7f0012e7c
 
-Package: waybar
-Version: 0.15.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4020
-Depends: libgtk-3-0t64 | libgtk-3-0, libgtkmm-3.0-1t64 | libgtkmm-3.0-1, libjsoncpp25 | libjsoncpp24, libpulse0, libnl-3-200, libnl-genl-3-200, libevdev2, libdbusmenu-gtk3-4, libgtk-layer-shell0, libgtk4-layer-shell0 (>= 1.1.0)
-Conflicts: waybar
-Replaces: waybar
-Provides: waybar
-Section: x11
-Priority: optional
-Homepage: https://github.com/Alexays/Waybar
-Description: Highly customizable Wayland bar for Sway, niri, Hyprland and other wlroots-based compositors. Supports workspaces, battery, network, audio, clock, MPD, custom modules and more.
- .
-Filename: pool/waybar-0.15.0/waybar_0.15.0_debian13_amd64.deb
-Size: 1168496
-MD5sum: 681f7b20efa2a1baa1b710ba8a039b90
-SHA1: 0bfa51c6848926d9a7b67074c4dd68e5457d2948
-SHA256: ea9c49e07ffde53406e3d06fb9fb043b6ea35be5d7c0e207df834c2af2ce10e6
-
 Package: zen-browser
 Version: 1.19.9b
 Architecture: amd64
@@ -1563,4 +1543,24 @@ Size: 92680860
 MD5sum: 12cdc6763044150011daebbee5274966
 SHA1: 48afcb70818c5c7b7c910ec96eaa56056e6345e0
 SHA256: 51586cbde88891e0222e33d3d9694e85de12dbc3889ce8a3d72c5e5230c315ad
+
+Package: waybar
+Version: 0.15.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4020
+Depends: libgtk-3-0t64 | libgtk-3-0, libgtkmm-3.0-1t64 | libgtkmm-3.0-1, libjsoncpp26 | libjsoncpp25 | libjsoncpp24, libpulse0, libnl-3-200, libnl-genl-3-200, libevdev2, libdbusmenu-gtk3-4, libgtk-layer-shell0, libgtk4-layer-shell0 (>= 1.1.0)
+Conflicts: waybar
+Replaces: waybar
+Provides: waybar
+Section: x11
+Priority: optional
+Homepage: https://github.com/Alexays/Waybar
+Description: Highly customizable Wayland bar for Sway, niri, Hyprland and other wlroots-based compositors. Supports workspaces, battery, network, audio, clock, MPD, custom modules and more.
+ .
+Filename: pool/waybar-0.15.0/waybar_0.15.0_debian13_amd64.deb
+Size: 1168334
+MD5sum: a8815ccb2bed8c2ffb6c866cb182cf8b
+SHA1: d796a54c86765e4b2cc5f21c65526e163c0670ee
+SHA256: 6ce5d12831d6ccb2b1350b3b65a0c352773e41c02edf811bb89e1c4a8dbac667
 
