@@ -534,23 +534,6 @@ MD5sum: 925e294849c09e93ed84cbcffd43ea5b
 SHA1: ae4b9b7c3b575b717bacaaa7cfa6ce9f4bece1b0
 SHA256: 5a5cfc4d488c03b3087656735e9b3fe7b92119ad5de43d450b66d65a46c7520d
 
-Package: niri
-Version: 25.11
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 142848
-Depends: libseat1, libpipewire-0.3-0, libpango-1.0-0, libegl1, libgbm1, libxkbcommon0, libinput10, libdbus-1-3, libsystemd0, libdisplay-info1 | libdisplay-info2, libpangocairo-1.0-0, libwayland-server0
-Section: x11
-Priority: optional
-Homepage: https://github.com/niri-wm/niri
-Description: Niri is a scrollable-tiling Wayland compositor. Windows are arranged in columns on an infinite strip. Opening a new window never causes existing windows to resize. Supports multi-monitor, fractional scaling, floating windows, NVIDIA, touchpads, tablets and Xwayland via xwayland-satellite.
- .
-Filename: pool/niri-25.11/niri_25.11_debian13_arm64.deb
-Size: 21773422
-MD5sum: afa25c3a613b9351dea5e6b159e8248e
-SHA1: bcf4387dce908aa60e088e2da2a6bd45a239df88
-SHA256: 05b8d9b58ac8bb8a54b5c572931268a28afb9a2f4f5d108b63c9ede6817fc628
-
 Package: fonts-cascadia-mono-nf
 Version: 3.4.0
 Architecture: all
@@ -1562,4 +1545,21 @@ Size: 1033270
 MD5sum: db9a6c997feebd952c6b1b4ebbfca347
 SHA1: d0b1cde2737675d8c5ca1656dc3ae5743475c792
 SHA256: 7cd8f966e2dfbc1295300028fd4c8f6096d7225caa9795aedd06db3b8873b854
+
+Package: niri
+Version: 26.04
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 140144
+Depends: libseat1, libpipewire-0.3-0, libpango-1.0-0, libegl1, libgbm1, libxkbcommon0, libinput10, libdbus-1-3, libsystemd0, libdisplay-info1 | libdisplay-info2, libpangocairo-1.0-0, libwayland-server0
+Section: x11
+Priority: optional
+Homepage: https://github.com/niri-wm/niri
+Description: Niri is a scrollable-tiling Wayland compositor. Windows are arranged in columns on an infinite strip. Opening a new window never causes existing windows to resize. Supports multi-monitor, fractional scaling, floating windows, NVIDIA, touchpads, tablets and Xwayland via xwayland-satellite.
+ .
+Filename: pool/niri-26.04/niri_26.04_debian13_arm64.deb
+Size: 21854542
+MD5sum: ed2b8bb8863f44355df5ae0915aa9381
+SHA1: bd84fb421bd9bb7e7adfe8a7cd48d4041646c445
+SHA256: 07404a85bb26ba329e1808e9b46b23b98b8a392d4e9f836de30c6fe26b412789
 
