@@ -927,26 +927,6 @@ MD5sum: 152d06859360c40526b377c1cd99d49d
 SHA1: 1034542d83051fe7838912e7e70721f4c6afb760
 SHA256: 96d37b9dc7529958ffebf1291808406f217b22fb0987d837581514e5db0b7c9e
 
-Package: swaybg
-Version: 1.2.2-omakasui1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 116
-Depends: libwayland-client0, libpng16-16t64 | libpng16-16, libjpeg62-turbo | libjpeg-turbo8
-Conflicts: swaybg
-Replaces: swaybg
-Provides: swaybg
-Section: x11
-Priority: optional
-Homepage: https://github.com/swaywm/swaybg
-Description: Wallpaper tool for Wayland compositors. Compatible with any compositor implementing wlr-layer-shell and wl_output version 4, including sway, niri, hyprland and others.
- .
-Filename: pool/swaybg-1.2.2-omakasui1/swaybg_1.2.2-omakasui1_debian13_amd64.deb
-Size: 32890
-MD5sum: b4144fbae5ff8f882ef143049fb59c6d
-SHA1: 13f04cad6118a7f2938467e638f7c0c7499f28d5
-SHA256: 6476d39b50a8d03634d8364241bfe78a572f361976cc11139330b0ab245c5c88
-
 Package: dbeaver-ce
 Version: 26.0.3
 Architecture: amd64
@@ -1563,4 +1543,24 @@ Size: 9194060
 MD5sum: 66f834309a33c533694dc859362a38b4
 SHA1: 05d95da1de33f5b228f17452d4304e9a55223d1e
 SHA256: 8332a473a7fae50d2a844754452444ac3a983f30f16220dd95079efc388c4ea3
+
+Package: swaybg
+Version: 1.2.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 116
+Depends: libwayland-client0, libpng16-16t64 | libpng16-16, libjpeg62-turbo | libjpeg-turbo8
+Conflicts: swaybg
+Replaces: swaybg
+Provides: swaybg
+Section: x11
+Priority: optional
+Homepage: https://github.com/swaywm/swaybg
+Description: Wallpaper tool for Wayland compositors. Compatible with any compositor implementing wlr-layer-shell and wl_output version 4, including sway, niri, hyprland and others.
+ .
+Filename: pool/swaybg-1.2.2/swaybg_1.2.2_debian13_amd64.deb
+Size: 32808
+MD5sum: b39db382b7c71fe7e9b7d9e02aeb534f
+SHA1: 2c08cc64938cc5901d279cf6b7a552748a3a9992
+SHA256: dcaa1b417e80302c08a0d669b61e01eeeec5bceb1f7f9ec6c56295c333636608
 
