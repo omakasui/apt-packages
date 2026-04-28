@@ -496,25 +496,6 @@ MD5sum: e2ee8c730f9e6d1ac5272b910e1a4bf5
 SHA1: f16e28f7e407bc941ab6de0b12c9f2cb6f4a663e
 SHA256: 6e01d067b93171c6b83a2c75d3b19c28cb7ac164e775e04a46160144ede288d3
 
-Package: fzf
-Version: 0.71.0
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4368
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more. Statically linked binary, replaces the outdated distro package.
- .
-Filename: pool/fzf-0.71.0/fzf_0.71.0_debian13_arm64.deb
-Size: 1408264
-MD5sum: bef1b0f6010633f1c21a6c233d07020f
-SHA1: 0b40242b982e7f0b3859900248094070c23a705e
-SHA256: 57831e70f5d0b78e8cd558aea2e6d45d584bc57cc4c5a47682e4ec1d44d4d0fe
-
 Package: btop
 Version: 1.4.6
 Architecture: arm64
@@ -1562,4 +1543,23 @@ Size: 8253858
 MD5sum: fc324039f0fee09aad97167f98d175ff
 SHA1: 2256df5518c13d8773aa5638e71068edffef64a6
 SHA256: 4b37a6e569d4b9197638752af5e6069b8168dbdc06c497235c05525aa0a7c0df
+
+Package: fzf
+Version: 0.72.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4368
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more. Statically linked binary, replaces the outdated distro package.
+ .
+Filename: pool/fzf-0.72.0/fzf_0.72.0_debian13_arm64.deb
+Size: 1414338
+MD5sum: 029abef52c4879b6b72088ca320ddfa7
+SHA1: fe2d473472f75189fdff8f600119e9d2993e0a2b
+SHA256: 8bbdc5b61fbe661e08724088975f225e37c564b45582436ea4d3300408c4cc9b
 

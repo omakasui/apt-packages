@@ -367,25 +367,6 @@ MD5sum: fe784e1641b8933dde9f7c04be30e10c
 SHA1: 8b6fad02f51f970c04b268e5d89d5ad721b5a113
 SHA256: 2355e67d92ab6f860c57f05a5687b20f50f1a4b20c99028c858d66a77b47cd80
 
-Package: fzf
-Version: 0.71.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4404
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more. Statically linked binary, replaces the outdated distro package.
- .
-Filename: pool/fzf-0.71.0/fzf_0.71.0_ubuntu2404_amd64.deb
-Size: 1549194
-MD5sum: aa4ccb558534540edf560b995bd5147a
-SHA1: 17e46c9d8632373d98b4db85da20aa5933ffbc95
-SHA256: 9da25e1ba3364c76742ce063704f0a823505c83f8f6393e91d154894f74748ab
-
 Package: btop
 Version: 1.4.6
 Architecture: amd64
@@ -1434,4 +1415,23 @@ Size: 9192676
 MD5sum: 807793d056a3214f959d6abb27f6e95a
 SHA1: 9498a0c6300bfe21bb350ce80261716097cde303
 SHA256: 1a117ee7fbe5a4c338d07f9c86eadf872d01c6c6bca10f0e254c135ba928a91e
+
+Package: fzf
+Version: 0.72.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4424
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more. Statically linked binary, replaces the outdated distro package.
+ .
+Filename: pool/fzf-0.72.0/fzf_0.72.0_ubuntu2404_amd64.deb
+Size: 1555970
+MD5sum: 21615eba81e265fba6c6ca633d30923d
+SHA1: 3e16e8f8f29ef726bea27480f9f537b8afab586d
+SHA256: 3dbd41fcb592509d2467a0efdac182a02cb8848870ed76b02ba6c3a215bfec18
 
