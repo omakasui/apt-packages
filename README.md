@@ -66,10 +66,6 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 | `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
 | `niri` | [Niri](https://github.com/niri-wm/niri) | noble, trixie | amd64, arm64 |
 | `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | amd64, arm64 |
-| `omakasui-aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | all |
-| `omakasui-nvim` | [LazyVim](https://github.com/LazyVim/LazyVim) | noble, trixie | all |
-| `omakasui-walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | all |
-| `omakasui-zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | all |
 | `pinta` | [Pinta](https://github.com/PintaProject/Pinta) | noble, trixie | amd64, arm64 |
 | `starship` | [starship](https://starship.rs) | noble, trixie | amd64, arm64 |
 | `swaybg` | [swaybg](https://github.com/swaywm/swaybg) | noble, trixie | amd64, arm64 |
@@ -88,14 +84,6 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 | `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
 | `zen-browser` | [zen-browser](https://zen-browser.app/) | noble, trixie | amd64, arm64 |
 | `zoxide` | [zoxide](https://github.com/ajeetdsouza/zoxide) | noble, trixie | amd64, arm64 |
-
-`omakasui-aether` is used to make it easier to setup aether on Omakasui setups. You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-aether` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-aether` ([Omadeb](https://omadeb.omakasui.org)).
-
-`omakasui-walker` is a metapackage that installs `walker`, `elephant`, and all elephant provider packages in one shot. You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-walker` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-walker` ([Omadeb](https://omadeb.omakasui.org)).
-
-`omakasui-zellij` is a custom configuration of Zellij, based on the one made by [Omakub](https://omakub.org). You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-zellij` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-zellij` ([Omadeb](https://omadeb.omakasui.org)).
-
-`omakasui-nvim` is a custom configuration of LazyVim, based on the one made by [Omarchy](https://omarchy.org). You can download both the "basic" version and the ones intended for the Omakasui distros: `omakub-nvim` ([Omabuntu](https://omabuntu.omakasui.org)/[Omakub](https://omakub.org)) and `omadeb-nvim` ([Omadeb](https://omadeb.omakasui.org)).
 
 ## Copyright and licensing
 
