@@ -1,9 +1,11 @@
 SHELL   := /bin/bash
 .DEFAULT_GOAL := help
 
-PKG      ?=
-VERSION  ?=
-SUITES   ?= noble trixie
+PKG          ?=
+VERSION      ?=
+SUITES       ?= noble trixie
+GPG_KEY_URL  ?= https://github.com/omakasui/keyrings/raw/refs/heads/main/omakasui-packages.gpg.key
+GPG_KEY_ID   ?=
 ALL_SUITES     := noble trixie
 ALL_DEV_SUITES := noble-dev trixie-dev
 SCRIPTS  := scripts
@@ -21,14 +23,13 @@ index: ## Regenerate Packages files from packages.tsv
 	@bash $(SCRIPTS)/update-index.sh --suites "$(ALL_SUITES)"
 
 .PHONY: sign
-sign: ## Re-sign Release files for all suites (GPG_KEY_ID= required)
-	$(if $(GPG_KEY_ID),,$(error GPG_KEY_ID is required. Example: make $@ GPG_KEY_ID=<fingerprint>))
+sign: ## Re-sign Release files for all suites (GPG_KEY_ID= or GPG_KEY_URL= optional)
 	@bash $(SCRIPTS)/sign-release.sh \
 		--suites "$(ALL_SUITES) $(ALL_DEV_SUITES)" \
-		--key-id "$(GPG_KEY_ID)"
+		$(if $(GPG_KEY_ID),--key-id "$(GPG_KEY_ID)",--key-url "$(GPG_KEY_URL)")
 
 .PHONY: rebuild
-rebuild: index sign ## Regenerate and sign all metadata (GPG_KEY_ID= required)
+rebuild: index sign ## Regenerate and sign all metadata
 
 .PHONY: register
 register: ## Register a package in stable (PKG= VERSION= SUITES= required)
