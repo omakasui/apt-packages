@@ -265,23 +265,6 @@ MD5sum: a0fc97ce56afc077ae132105c533583d
 SHA1: 00cd0c2e160751820cec4a230c56dfa54d3f3a2a
 SHA256: 92cb0956167435e43d5838a68dae68a7e0798ac53cdf8e4bc3d0a5b9bcebfc07
 
-Package: asdcontrol
-Version: 0.5
-Architecture: arm64
-Maintainer: Nicholas K. Dionysopoulos
-Section: utils
-Priority: optional
-Homepage: https://github.com/omakasui/asdcontrol
-Depends: udev
-Description: Apple Display Brightness Control
- Brightness control for Apple Pro Display XDR and Studio Display on Linux.
- Includes udev rules for sudo-less HID device access.
-Filename: pool/asdcontrol-0.5/asdcontrol_0.5_ubuntu2404_arm64.deb
-Size: 11216
-MD5sum: e2ee8c730f9e6d1ac5272b910e1a4bf5
-SHA1: f16e28f7e407bc941ab6de0b12c9f2cb6f4a663e
-SHA256: 6e01d067b93171c6b83a2c75d3b19c28cb7ac164e775e04a46160144ede288d3
-
 Package: btop
 Version: 1.4.6
 Architecture: arm64
@@ -1169,4 +1152,21 @@ Size: 4787750
 MD5sum: 784040afa53aca833b90cefbc1f373bc
 SHA1: 59313ef93a3202fadb9934c2dc507ae546878eba
 SHA256: 67c289a1aaeff34848701d8e5fb984f99d9b053a415f46eb43e1f23d5739a406
+
+Package: asdcontrol
+Version: 0.6.0
+Architecture: arm64
+Maintainer: Nicholas K. Dionysopoulos
+Section: utils
+Priority: optional
+Homepage: https://github.com/omakasui/asdcontrol
+Depends: udev
+Description: Apple Display Brightness Control
+ Brightness control for Apple Pro Display XDR and Studio Display on Linux.
+ Includes udev rules for sudo-less HID device access.
+Filename: pool/asdcontrol-0.6.0/asdcontrol_0.6.0_ubuntu2404_arm64.deb
+Size: 11266
+MD5sum: 46dc9570ecf8e46d13f52fbdf61346dc
+SHA1: 733d542bf94dbe5e8bccd2a01619854f517147ae
+SHA256: 786371c4fca406f7d40ec702ad9123ebf167f5c200469a8a915b55c2fe9012fe
 
