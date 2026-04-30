@@ -320,23 +320,6 @@ MD5sum: 0f213ffb133ebfe7902e1477748272c6
 SHA1: a4aa75f0fe6c641311cc338583e23f484844daa0
 SHA256: 8fbcb5c3b9c3c76b1e3ee6d06e621d36b04932d0a97b0fe9cc29fd3c14c6d58d
 
-Package: lazygit
-Version: 0.61.0
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 16784
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Lazygit - a simple terminal UI for git commands. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven git interface inside any terminal.
- .
-Filename: pool/lazygit-0.61.0/lazygit_0.61.0_debian13_arm64.deb
-Size: 4672186
-MD5sum: e4371e5527acb74f94cfaf64ba7fb061
-SHA1: f98fbb740767d4c274ddffab3b92f2ac9ec58438
-SHA256: e2ac8c553a57497f45e230923981dcb0c5fffc82044bb4f55a72ed01b4f9a9fa
-
 Package: nvim
 Version: 0.12.1
 Architecture: arm64
@@ -1298,4 +1281,21 @@ Size: 30417054
 MD5sum: d26f1396f7cb07c455ce43bc4b2693c7
 SHA1: 59f3e2a5c5f18e8a456487cc6fb488edacd85b9e
 SHA256: 399590db4fafdbce464109bba8087f6f82fa7186216cf4e3ed63a0be04e7662a
+
+Package: lazygit
+Version: 0.61.1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 16784
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Lazygit - a simple terminal UI for git commands. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven git interface inside any terminal.
+ .
+Filename: pool/lazygit-0.61.1/lazygit_0.61.1_debian13_arm64.deb
+Size: 4672810
+MD5sum: 6c89eb8eec5509f4077b49682ed35b65
+SHA1: 4a740c2ad5cb3763f9b85ce4d4e6025be449dd30
+SHA256: e852e55411c1c39f4103255f20df6b7194b79f4fdcf3c0e23321566abf79bfa8
 
