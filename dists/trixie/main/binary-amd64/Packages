@@ -320,23 +320,6 @@ MD5sum: db0f9cf617eb846951ae5b50a7320af1
 SHA1: 7b6f90a2e69b5cf33bf890e0b41bd6aac580b365
 SHA256: ea5c841f986d04c1fbaee41cf0eb5ff07a9852a9a10f72f76fbcc6cb9bfbbbd7
 
-Package: lazygit
-Version: 0.61.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 17864
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Lazygit - a simple terminal UI for git commands. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven git interface inside any terminal.
- .
-Filename: pool/lazygit-0.61.0/lazygit_0.61.0_debian13_amd64.deb
-Size: 5246576
-MD5sum: 51ff0cabc7bd7c5eae569baef8633930
-SHA1: f7a475f8fdd8e3e11bb3bf88ec73413521eb2015
-SHA256: c2be0cd2edc726c41b910aaa4592e76652d705dd4e0c82df70fc1366b1a6465e
-
 Package: nvim
 Version: 0.12.1
 Architecture: amd64
@@ -410,42 +393,6 @@ Size: 31119064
 MD5sum: eba99ba2ee5b00a5799b42453c47ce86
 SHA1: 0a6ec91efa69ac232bf7dfddbc058cf923e900b0
 SHA256: 2875020b79b2ed971eead4d514e7035c977bcfb66894ee47aec7d6379a7ff168
-
-Package: asdcontrol
-Version: 0.5
-Architecture: amd64
-Maintainer: Nicholas K. Dionysopoulos
-Section: utils
-Priority: optional
-Homepage: https://github.com/omakasui/asdcontrol
-Depends: udev
-Description: Apple Display Brightness Control
- Brightness control for Apple Pro Display XDR and Studio Display on Linux.
- Includes udev rules for sudo-less HID device access.
-Filename: pool/asdcontrol-0.5/asdcontrol_0.5_debian13_amd64.deb
-Size: 11698
-MD5sum: fe784e1641b8933dde9f7c04be30e10c
-SHA1: 8b6fad02f51f970c04b268e5d89d5ad721b5a113
-SHA256: 2355e67d92ab6f860c57f05a5687b20f50f1a4b20c99028c858d66a77b47cd80
-
-Package: fzf
-Version: 0.71.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4404
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more. Statically linked binary, replaces the outdated distro package.
- .
-Filename: pool/fzf-0.71.0/fzf_0.71.0_debian13_amd64.deb
-Size: 1549192
-MD5sum: 44d6b299ae4ae601d6614a786c74ff1b
-SHA1: 215184b671f3f9674d39d5ac8d6fb8f4e3f54564
-SHA256: 961cd9fdfeeb98923b0685b7db3ea7258a59e15edc0547bbc951b97e76a124fa
 
 Package: btop
 Version: 1.4.6
@@ -577,23 +524,6 @@ MD5sum: 508ba28e811ee794e6d8e6ff4f3b1588
 SHA1: b05cf1c22e106d5f0027443a14e317e0036612ab
 SHA256: eb7255f99c798e26eae20f88ab96a3483ae840451dc5268ddf815b4e46bc0df2
 
-Package: walker
-Version: 2.16.0-omakasui1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8224
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell0, elephant, libgtk4-layer-shell0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.16.0-omakasui1/walker_2.16.0-omakasui1_debian13_amd64.deb
-Size: 2173334
-MD5sum: 1d23f61da9edd11fe70c2577dcacc6b5
-SHA1: a8790a06e9deb1821c23ca38d4785343b9136cb4
-SHA256: 087909cd4ddcfa4f72686bd537cf7f7ed600a0513b9d60558dbad33ffbf5ec7a
-
 Package: ghostty
 Version: 1.3.1
 Architecture: amd64
@@ -647,26 +577,6 @@ MD5sum: 152d06859360c40526b377c1cd99d49d
 SHA1: 1034542d83051fe7838912e7e70721f4c6afb760
 SHA256: 96d37b9dc7529958ffebf1291808406f217b22fb0987d837581514e5db0b7c9e
 
-Package: swaybg
-Version: 1.2.2-omakasui1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 116
-Depends: libwayland-client0, libpng16-16t64 | libpng16-16, libjpeg62-turbo | libjpeg-turbo8
-Conflicts: swaybg
-Replaces: swaybg
-Provides: swaybg
-Section: x11
-Priority: optional
-Homepage: https://github.com/swaywm/swaybg
-Description: Wallpaper tool for Wayland compositors. Compatible with any compositor implementing wlr-layer-shell and wl_output version 4, including sway, niri, hyprland and others.
- .
-Filename: pool/swaybg-1.2.2-omakasui1/swaybg_1.2.2-omakasui1_debian13_amd64.deb
-Size: 32890
-MD5sum: b4144fbae5ff8f882ef143049fb59c6d
-SHA1: 13f04cad6118a7f2938467e638f7c0c7499f28d5
-SHA256: 6476d39b50a8d03634d8364241bfe78a572f361976cc11139330b0ab245c5c88
-
 Package: dbeaver-ce
 Version: 26.0.3
 Architecture: amd64
@@ -701,22 +611,6 @@ Size: 4028664
 MD5sum: a98d3c983c35bf5be11407423ea7af7b
 SHA1: adec72a96c52d645b1b1ecc80e5bb91b11f85c1f
 SHA256: 1e46eee7de5c251c3dc71a9ddaa6a3fec88adb1828f0b6b843b045396da5ba38
-
-Package: starship
-Version: 1.25.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 11864
-Section: shells
-Priority: optional
-Homepage: https://starship.rs
-Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell. Statically linked binary, works on any Linux distribution. Installs to /usr/bin/starship.
- .
-Filename: pool/starship-1.25.0/starship_1.25.0_debian13_amd64.deb
-Size: 3838472
-MD5sum: c3b363b027ee0dd809c0f7eed4b70e50
-SHA1: 3ca353c1545ebb24b9d3c377e4df54cf3ecb5050
-SHA256: d2447783ddf13545bc7fb10d1fdbd91b313be8a1ca07291d43cb8a3620e81288
 
 Package: eza
 Version: 0.23.4
@@ -1178,21 +1072,6 @@ MD5sum: 3c1ff274d845a3cc5fe034dce7dc1319
 SHA1: 5a6c923444ebb02af5d5e30ddb59b3f13c503d1c
 SHA256: 1084336ca2642846b8fcd9083177f1387d389696b72d9bcc08c904e9911023af
 
-Package: aether
-Version: 4.14.0
-Architecture: amd64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.14.0/aether_4.14.0_debian13_amd64.deb
-Size: 4879524
-MD5sum: ccbebb1efa6e15882cbe5f1a79be3ee5
-SHA1: 853c4fddbe65475c0975f1495ef093aa071d0641
-SHA256: fb140280a3c643d1315c06539218ed8fd8b48881943957244898e04de94ae6de
-
 Package: glab
 Version: 1.93.0
 Architecture: amd64
@@ -1212,23 +1091,6 @@ Size: 12495360
 MD5sum: 3cfc028c95b10b9c51a8bea3a599c293
 SHA1: 88f301694d9a76bd40805f195d85830a69499570
 SHA256: 080587d2817a6299759d63a6177f77a77c71812e2dd8168dbb8b32e7f0012e7c
-
-Package: zen-browser
-Version: 1.19.9b
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 364232
-Section: web
-Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.19.9b/zen-browser_1.19.9b_debian13_amd64.deb
-Size: 92680860
-MD5sum: 12cdc6763044150011daebbee5274966
-SHA1: 48afcb70818c5c7b7c910ec96eaa56056e6345e0
-SHA256: 51586cbde88891e0222e33d3d9694e85de12dbc3889ce8a3d72c5e5230c315ad
 
 Package: waybar
 Version: 0.15.0
@@ -1267,20 +1129,211 @@ MD5sum: 5741e550d98233bb7f3f54f2a52dc084
 SHA1: 4d13f8ca73172b86aca5bed990ccd506244f96fc
 SHA256: edd1832864e07bc309481efd5cab457d52622a77ae0d7b0188068a9fa5cce511
 
-Package: cliamp
-Version: 1.39.0
+Package: swaybg
+Version: 1.2.2-omakasui1
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 31776
+Installed-Size: 116
+Depends: libwayland-client0, libpng16-16t64 | libpng16-16, libjpeg62-turbo | libjpeg-turbo8
+Conflicts: swaybg
+Replaces: swaybg
+Provides: swaybg
+Section: x11
+Priority: optional
+Homepage: https://github.com/swaywm/swaybg
+Description: Wallpaper tool for Wayland compositors. Compatible with any compositor implementing wlr-layer-shell and wl_output version 4, including sway, niri, hyprland and others.
+ .
+Filename: pool/swaybg-1.2.2-omakasui1/swaybg_1.2.2-omakasui1_debian13_amd64.deb
+Size: 32892
+MD5sum: fd5ed9c0805b92542268d15a008dcf60
+SHA1: 1eb251a5a48c1f71f3712c4500155b456de528b1
+SHA256: c5012693be0bc77e1985b5dad41ff08580ea4a8fa7a959eda19550ee14066d78
+
+Package: cliamp
+Version: 1.39.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 31780
 Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
 Section: sound
 Priority: optional
 Homepage: https://github.com/bjarneo/cliamp
 Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
  .
-Filename: pool/cliamp-1.39.0/cliamp_1.39.0_debian13_amd64.deb
-Size: 9194060
-MD5sum: 66f834309a33c533694dc859362a38b4
-SHA1: 05d95da1de33f5b228f17452d4304e9a55223d1e
-SHA256: 8332a473a7fae50d2a844754452444ac3a983f30f16220dd95079efc388c4ea3
+Filename: pool/cliamp-1.39.1/cliamp_1.39.1_debian13_amd64.deb
+Size: 9192676
+MD5sum: 807793d056a3214f959d6abb27f6e95a
+SHA1: 9498a0c6300bfe21bb350ce80261716097cde303
+SHA256: 1a117ee7fbe5a4c338d07f9c86eadf872d01c6c6bca10f0e254c135ba928a91e
+
+Package: fzf
+Version: 0.72.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4424
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more. Statically linked binary, replaces the outdated distro package.
+ .
+Filename: pool/fzf-0.72.0/fzf_0.72.0_debian13_amd64.deb
+Size: 1555978
+MD5sum: 44c12151127b7da5ef27c971f7098e14
+SHA1: 27256a5afd8798caeb0924d9695bf79106ab6211
+SHA256: b58eecb40d383a4a81d55ce5112d6d2883b284ac27590d36b061c02b9c4ecd97
+
+Package: walker
+Version: 2.16.1-omakasui1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8888
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell0, elephant, libgtk4-layer-shell0 (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.16.1-omakasui1/walker_2.16.1-omakasui1_debian13_amd64.deb
+Size: 2292970
+MD5sum: 630a9c8e9f0dd7bc5789fc9c16050cce
+SHA1: 6acfe8712ac1bd14a49e69de7619cdbbf0d2452f
+SHA256: 3ed991761c123f70358518d7dd63e389301d8bf4a09cd56df48666c868db62df
+
+Package: bitwarden-cli
+Version: 2026.4.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 134880
+Section: utils
+Priority: optional
+Homepage: https://bitwarden.com/help/cli/
+Description: Bitwarden CLI — command-line interface for Bitwarden password manager. Installs the official upstream pre-built binary for amd64 and arm64. Self-contained Node.js executable, no runtime dependencies required.
+ .
+Filename: pool/bitwarden-cli-2026.4.1/bitwarden-cli_2026.4.1_debian13_amd64.deb
+Size: 31180560
+MD5sum: 19f23e942a8fe685de4d13b6495db9af
+SHA1: cb5e0746138ab50a978d506f480684edbc6d502a
+SHA256: ebcfed52fa5e76fc16ddf58fc543460ff6d59e025d6b1bcbf51496d7ff30b6df
+
+Package: bitwarden
+Version: 2026.3.1
+Architecture: amd64
+License: GPL-3.0
+Vendor: Bitwarden Inc. <hello@bitwarden.com>
+Maintainer: Bitwarden Inc. <hello@bitwarden.com>
+Installed-Size: 363806
+Depends: libnotify4, libxtst6, libnss3, libxss1
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://bitwarden.com
+Description: A secure and free password manager for all of your devices.
+  A secure and free password manager for all of your devices.
+Filename: pool/bitwarden-2026.3.1/bitwarden_2026.3.1_debian13_amd64.deb
+Size: 98384448
+MD5sum: 2c6f726b2c0fa8f8087df4e8deb027a0
+SHA1: 4c25ddf77e08a621fb6ca50eb147efed772552fa
+SHA256: 441379ed8b484311111de813ef09a818abeca0781af5bd13f87e76c03369f42a
+
+Package: lazygit
+Version: 0.61.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 17864
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Lazygit - a simple terminal UI for git commands. Installs the official upstream release binary for amd64 and arm64. Provides a keyboard-driven git interface inside any terminal.
+ .
+Filename: pool/lazygit-0.61.1/lazygit_0.61.1_debian13_amd64.deb
+Size: 5247352
+MD5sum: d38084892d62af72a25093222614b7d0
+SHA1: c794511220fc23866fd2d144409c6dbbff164383
+SHA256: 1504f401f9ceca297c4ef09923f9d9a8442ecdf1121254a36241b79a3f1196ce
+
+Package: asdcontrol
+Version: 0.6.0
+Architecture: amd64
+Maintainer: Nicholas K. Dionysopoulos
+Section: utils
+Priority: optional
+Homepage: https://github.com/omakasui/asdcontrol
+Depends: udev
+Description: Apple Display Brightness Control
+ Brightness control for Apple Pro Display XDR and Studio Display on Linux.
+ Includes udev rules for sudo-less HID device access.
+Filename: pool/asdcontrol-0.6.0/asdcontrol_0.6.0_debian13_amd64.deb
+Size: 11786
+MD5sum: 3be8c2b07d022148d6fa4aeb7ae45455
+SHA1: 66621bdf904900b9a5bb00aaab9204645f6bfd3f
+SHA256: 27576efd7531be378c0ca9b02f6fd3f7285f17df65a598eddc050083262bbd1a
+
+Package: elephant-all
+Version: 2.21.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4
+Depends: elephant, elephant-1password, elephant-bitwarden, elephant-bluetooth, elephant-bookmarks, elephant-calc, elephant-clipboard, elephant-desktopapplications, elephant-files, elephant-menus, elephant-niriactions, elephant-nirisessions, elephant-playerctl, elephant-providerlist, elephant-runner, elephant-snippets, elephant-symbols, elephant-todo, elephant-unicode, elephant-websearch, elephant-windows, elephant-wireplumber, elephant (>= 2.21.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Meta-package for all Elephant providers. Installs the main elephant package and all providers.
+ .
+Filename: pool/elephant-all-2.21.0/elephant-all_2.21.0_debian13_amd64.deb
+Size: 748
+MD5sum: d02ef781b479175c8410186ec55c2029
+SHA1: 15d858d7775969251f395aea8c8f5332c4cd8ac6
+SHA256: 601f8520510fd3d9231a13c3926d8864193bc83b61b3d9d3c8682510362bb5fb
+
+Package: aether
+Version: 4.15.4
+Architecture: amd64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.15.4/aether_4.15.4_debian13_amd64.deb
+Size: 4880300
+MD5sum: 21e3d746f82d659223812a997db7d59a
+SHA1: f6b4b68444b1ce105e7d6d11df11cbbb748a14c1
+SHA256: fb0bf278a840f4b51be8846b74243fef8276f747a4ec5c8cdfa3e98b45326f19
+
+Package: zen-browser
+Version: 1.19.11b
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 363832
+Section: web
+Priority: optional
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.19.11b/zen-browser_1.19.11b_debian13_amd64.deb
+Size: 92625844
+MD5sum: 53e1871cbbd3989b27e8fe7488c52098
+SHA1: 576efa90343cf99593c11be2771b84edeac200c1
+SHA256: 3635b974ece98012370257e927235ef7cf1145eecbf6b7d1af09335a212f101e
+
+Package: starship
+Version: 1.25.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 11876
+Section: shells
+Priority: optional
+Homepage: https://starship.rs
+Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell. Statically linked binary, works on any Linux distribution. Installs to /usr/bin/starship.
+ .
+Filename: pool/starship-1.25.1/starship_1.25.1_debian13_amd64.deb
+Size: 3841740
+MD5sum: d849b5f8d44d3fafcf51bb8fe339aa4d
+SHA1: 6ce976455cb4910772304fb82e50de84edcf0f0b
+SHA256: b88c481fa9b0b3936746c499a68f67fca283c898bc156ec81253d4560a1534dc
 
