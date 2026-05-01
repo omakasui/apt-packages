@@ -1138,21 +1138,6 @@ MD5sum: f61424f149953b9d55cbe50c542eeb12
 SHA1: f78c66a5d1a23a23f129d68fc5cdb251b660647a
 SHA256: 99a635ec690b2f8023e4cdb81b3e03b74b93892bad804d295f06b74c3b4672ea
 
-Package: aether
-Version: 4.15.3
-Architecture: arm64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.15.3/aether_4.15.3_ubuntu2404_arm64.deb
-Size: 4787750
-MD5sum: 784040afa53aca833b90cefbc1f373bc
-SHA1: 59313ef93a3202fadb9934c2dc507ae546878eba
-SHA256: 67c289a1aaeff34848701d8e5fb984f99d9b053a415f46eb43e1f23d5739a406
-
 Package: asdcontrol
 Version: 0.6.0
 Architecture: arm64
@@ -1186,4 +1171,19 @@ Size: 748
 MD5sum: dce3dcdd40415950ed3042f0ccf2fd82
 SHA1: 2bb158f9279ed432d90bd642b201935aef3f0fdd
 SHA256: f5219d7772cd05b78f93131223ca62357f1b3f05bf6455d930db0a1f920788a4
+
+Package: aether
+Version: 4.15.4
+Architecture: arm64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.15.4/aether_4.15.4_ubuntu2404_arm64.deb
+Size: 4788022
+MD5sum: 815055eedf657ae4c4a7d0bf14bc0f73
+SHA1: 03f92f5d1c7138bda616d1028fd2184a6fc3aa52
+SHA256: 7f6bc4c730ac3491e0992ca0821ef764954222050f2ef1e831588a13e915d40f
 
