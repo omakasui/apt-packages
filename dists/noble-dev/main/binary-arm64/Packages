@@ -483,22 +483,6 @@ MD5sum: 4b30d896ec1b0ce779979ead70d6c967
 SHA1: a0cffebce95605451c70d99eb24917024f4f223a
 SHA256: 0a82b11cc76c311cb393f849c9303f87b25e7be6717afa281bc87ed3c2a3864e
 
-Package: starship
-Version: 1.25.0
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 10000
-Section: shells
-Priority: optional
-Homepage: https://starship.rs
-Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell. Statically linked binary, works on any Linux distribution. Installs to /usr/bin/starship.
- .
-Filename: pool/starship-1.25.0/starship_1.25.0_ubuntu2404_arm64.deb
-Size: 3557048
-MD5sum: 40be93ebfdab234c1e56b45ea126cee3
-SHA1: dedeafd062906ad2df6f8a7d15419d1bbfe0b266
-SHA256: b356f296d5b84f34b1d261dfa0e5703be84d832f5c12a4ecd978e0c6858f4ff3
-
 Package: eza
 Version: 0.23.4
 Architecture: arm64
@@ -1186,4 +1170,20 @@ Size: 85726620
 MD5sum: 73ad1e0977ee7c349f51122efdba6b9a
 SHA1: f289a854abf03cb0da8c1feb9437bb9d04d4ab1f
 SHA256: e8dbee9a5377edc8d3cf8c17b8e291d2c7bc9ea1fba3c1ec73e5d753f22e0dfd
+
+Package: starship
+Version: 1.25.1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 10016
+Section: shells
+Priority: optional
+Homepage: https://starship.rs
+Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell. Statically linked binary, works on any Linux distribution. Installs to /usr/bin/starship.
+ .
+Filename: pool/starship-1.25.1/starship_1.25.1_ubuntu2404_arm64.deb
+Size: 3563450
+MD5sum: 65609d0894833bda196f33c77fa7d108
+SHA1: 6dfd0ef5752d0d990b57fc74645c9e6b0b53cec4
+SHA256: 8c0e278f61e49a103bc3158eb22e1b55f2af4ae92f28cda95e68e0cdc9b3bdd3
 
