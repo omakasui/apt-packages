@@ -1020,23 +1020,6 @@ MD5sum: 21615eba81e265fba6c6ca633d30923d
 SHA1: 3e16e8f8f29ef726bea27480f9f537b8afab586d
 SHA256: 3dbd41fcb592509d2467a0efdac182a02cb8848870ed76b02ba6c3a215bfec18
 
-Package: walker
-Version: 2.16.1-omakasui1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8888
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell0, elephant, libgtk4-layer-shell0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
- .
-Filename: pool/walker-2.16.1-omakasui1/walker_2.16.1-omakasui1_ubuntu2404_amd64.deb
-Size: 2293270
-MD5sum: f4d690d518715eed324cf9124bacdb56
-SHA1: d0620dd0f6c1a472150052f85e8feac6717c0b96
-SHA256: 06099a5fab87c7f35f6246d919c190456082be947ea0857ff12f8bded78316ee
-
 Package: bitwarden-cli
 Version: 2026.4.1
 Architecture: amd64
@@ -1207,4 +1190,21 @@ Size: 113211792
 MD5sum: d8efb992fc1e08b652c18fecb12ea1a0
 SHA1: 5b14ca1aa6e3b111d0aabed956bb92bffca11d74
 SHA256: eee4a168dae11c7686d8f6dd4cade828708fd011922b841e0723c1b4668fc0d3
+
+Package: walker
+Version: 2.16.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8888
+Depends: libgtk-4-1, libcairo2, libpoppler-glib8, libgtk4-layer-shell0, elephant, libgtk4-layer-shell0 (>= 1.1.0)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Walker - multi-purpose application launcher for Wayland. Fast, highly customizable, GTK4-based. Requires omakasui-elephant to be running as a user service. Start with "walker --gapplication-service" for faster subsequent launches.
+ .
+Filename: pool/walker-2.16.2/walker_2.16.2_ubuntu2404_amd64.deb
+Size: 2293734
+MD5sum: 8b2eb8d5038b12bdee1915427ce36b1e
+SHA1: 803984b22a5d9e4c0657110b0333e48f1e0cd28c
+SHA256: 2ce8244c7c36678eb8f771c9bd2c0da99701576f00f3f18ed56354c262f07b8f
 
