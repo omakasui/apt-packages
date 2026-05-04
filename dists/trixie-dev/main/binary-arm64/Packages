@@ -394,25 +394,6 @@ MD5sum: dd7241d589d94c7e9512178f24f4a536
 SHA1: d0eed31d0ceb26b556d51f374e662652977ca4f7
 SHA256: 87953fb92e920a8f105dd6af160228959524b5d62d6edb78b075008b21957ce8
 
-Package: btop
-Version: 1.4.6
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2084
-Conflicts: btop
-Replaces: btop
-Provides: btop
-Section: utils
-Priority: optional
-Homepage: https://github.com/aristocratos/btop
-Description: Resource monitor showing usage and stats for processor, memory, disks, network and processes. Statically linked musl binary with GPU support. Replaces the outdated distro package.
- .
-Filename: pool/btop-1.4.6/btop_1.4.6_debian13_arm64.deb
-Size: 738202
-MD5sum: 925e294849c09e93ed84cbcffd43ea5b
-SHA1: ae4b9b7c3b575b717bacaaa7cfa6ce9f4bece1b0
-SHA256: 5a5cfc4d488c03b3087656735e9b3fe7b92119ad5de43d450b66d65a46c7520d
-
 Package: fonts-cascadia-mono-nf
 Version: 3.4.0
 Architecture: all
@@ -1315,4 +1296,23 @@ Size: 2156782
 MD5sum: ad845418b8023f997acc3252f6ba43be
 SHA1: 9e008a6218a01c99e1088d81120bd45910661505
 SHA256: 0a518d5325f5ba9c38a38199d1041bf65534667ec27cc3632038d1b638327d85
+
+Package: btop
+Version: 1.4.7
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2148
+Conflicts: btop
+Replaces: btop
+Provides: btop
+Section: utils
+Priority: optional
+Homepage: https://github.com/aristocratos/btop
+Description: Resource monitor showing usage and stats for processor, memory, disks, network and processes. Statically linked musl binary with GPU support. Replaces the outdated distro package.
+ .
+Filename: pool/btop-1.4.7/btop_1.4.7_debian13_arm64.deb
+Size: 764982
+MD5sum: a10c5965cd73e7bebc9366f4b9b530d1
+SHA1: 859a80616c31cee78252358c2b9612f7b9dbfda3
+SHA256: b45b9e295cb6f260f5e617f6bee6835000b149bb7af9876f206e4646fc36ad7c
 
