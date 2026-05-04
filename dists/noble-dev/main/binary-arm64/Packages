@@ -1219,3 +1219,23 @@ MD5sum: 49bf93b1db87dbd3191f9565eeca1f4f
 SHA1: 4cd5fa29f8be7dccaf2751fa63e76cb3c32284bd
 SHA256: a83a2655edf3ead2e6c843f5b2af46c4bcb1ba43840d969163e55991ccf2f099
 
+Package: gh
+Version: 2.92.0
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 36533
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.92.0/gh_2.92.0_ubuntu2404_arm64.deb
+Size: 10042604
+MD5sum: 0b7a85cab83494536f3aa2901f46ec82
+SHA1: c846d8876a180062912df1d17a46441f501b3850
+SHA256: 08def423b9dc954c3398b682b64d68d6b0cf19eb49060552c985540469b38bf1
+
