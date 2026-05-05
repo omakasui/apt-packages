@@ -448,22 +448,6 @@ MD5sum: c7158c34b0c68b4b6dba585283d1fe53
 SHA1: 9c4fb4fb5e72f9395fd847f8036af1fc88ec8ef5
 SHA256: 5f7f0ea7206a0162d53754a70105500012b118d34113592fec086630b11128a9
 
-Package: yazi
-Version: 26.1.22
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 24056
-Section: utils
-Priority: optional
-Homepage: https://github.com/sxyazi/yazi
-Description: Blazing fast terminal file manager written in Rust. Provides async I/O, built-in code highlighting, image previews, and a plugin system. Includes the ya command-line helper.
- .
-Filename: pool/yazi-26.1.22/yazi_26.1.22_ubuntu2404_amd64.deb
-Size: 7443882
-MD5sum: e75ab9a58164fcd3a335d54dddc6240e
-SHA1: 4cef720aa0908ac6e579a120e63b6610edb40b61
-SHA256: ba29723a770b8184fb5c93dd82ce0b07918886e7a86587312b821944eb2a5401
-
 Package: bluetui
 Version: 0.8.1
 Architecture: amd64
@@ -1259,4 +1243,20 @@ Size: 9335590
 MD5sum: c2610bf8eb99ae3211c56106e924ad8c
 SHA1: 237d844ea6123c615bbabbdaa84f38dc6be1abd9
 SHA256: 54e79d5cd558e573d27b769fa0e663577d6b6ee7e2ad46b26b22f9e010711672
+
+Package: yazi
+Version: 26.5.6
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 25764
+Section: utils
+Priority: optional
+Homepage: https://github.com/sxyazi/yazi
+Description: Blazing fast terminal file manager written in Rust. Provides async I/O, built-in code highlighting, image previews, and a plugin system. Includes the ya command-line helper.
+ .
+Filename: pool/yazi-26.5.6/yazi_26.5.6_ubuntu2404_amd64.deb
+Size: 7791964
+MD5sum: f43e6b8fe78f61c070da752c85541317
+SHA1: 934e8af96249079cd1b1f41796a47cee81a0dffa
+SHA256: d1dcb6a55d1efe7bd7366a651004a9fc9d96c533a718cf7ba30a094da14e37bf
 
