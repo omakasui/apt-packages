@@ -873,25 +873,6 @@ MD5sum: afef47c99a4fce2727f943f2c09843ad
 SHA1: 43d769cbea41f00e97ed9fc37612679d83c5fa50
 SHA256: bd861d5d3edcb6197ab561160eda23bad67cf01e6b1fe5513306e0e75ad829f9
 
-Package: glab
-Version: 1.93.0
-Architecture: arm64
-Section: 
-Priority: optional
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 45650
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.93.0/glab_1.93.0_ubuntu2404_arm64.deb
-Size: 12427364
-MD5sum: 657d2cb936f4fb87ca9b0f7bf691ad9b
-SHA1: 49ddd5355e8008d1b45a9f39b315037ec24c8561
-SHA256: cd3cab2cf7185e2c8d2132e29e8f7dcf730195431f1062685b1bb4ae54a7d770
-
 Package: waybar
 Version: 0.15.0
 Architecture: arm64
@@ -1238,4 +1219,23 @@ Size: 8408302
 MD5sum: 2b3b0fd103c91c55cfe3deff88073dc2
 SHA1: a8732f550cd841ca789722b087daee2330675ae8
 SHA256: 9330a8c99c7fca098acfd21c68fcb81a34998e9407d74fb34ea4bf32fde40e40
+
+Package: glab
+Version: 1.94.0
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 45793
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.94.0/glab_1.94.0_ubuntu2404_arm64.deb
+Size: 12467178
+MD5sum: ecc98e881fcfa55dfe07ca7b17704392
+SHA1: 781a130cb5d2283cc87b78dde58e5a3522c3ab19
+SHA256: 9c9c9f9a974adbcbbc6b7c8655724f18a7431733eb33921e769022fb4e959349
 
