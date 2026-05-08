@@ -1336,26 +1336,6 @@ MD5sum: ce8a5a52a24bfd3d7b1de73fa91d1cdb
 SHA1: e736f97a0d3fc2171b6b1b727ecf360c57d664e8
 SHA256: 7d19699e6088344f653173216adaa64b1cf50f07efeb5e01896773ce063d6e84
 
-Package: glab
-Version: 1.94.0
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 48681
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.94.0/glab_1.94.0_debian13_amd64.deb
-Size: 12526304
-MD5sum: ff850932a95edb61af11e127df69c4ef
-SHA1: fed6667f0bc8fa085e0dffd7b6a4e3700e3ec868
-SHA256: b3b12471e823369171df555674063e41028d701b4ad07cc742acf0975d271f2b
-
 Package: zed
 Version: 1.1.6
 Architecture: amd64
@@ -1388,4 +1368,24 @@ Size: 9375558
 MD5sum: ddd841827b8acde51adc3b1ee0334a44
 SHA1: 7e8f4e82fcfa15804617cd92f473b1ec5395d8be
 SHA256: 449c0a24b7a4c244704ccc12c59248d24b5477be8901f439932b0cd80850f4f0
+
+Package: glab
+Version: 1.95.0
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 48718
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.95.0/glab_1.95.0_debian13_amd64.deb
+Size: 12536044
+MD5sum: 4e9b31f1a2b8cfb7e031c0834c2fc597
+SHA1: 4d85bb1b88722ff54f44373001bfc01c116e5beb
+SHA256: b173c7c0107ead19d1fcf14040591b13df131babf232cb0a61d029b5a2519d2c
 
