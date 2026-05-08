@@ -2,7 +2,7 @@ name: Prune stale releases
 
 on:
   schedule:
-    - cron: '0 4 1 * *'  # 1st of every month at 04:00 UTC
+    - cron: '0 */12 * * *'
   workflow_dispatch:
 
 jobs:
