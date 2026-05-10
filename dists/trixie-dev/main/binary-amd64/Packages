@@ -1181,6 +1181,21 @@ MD5sum: d849b5f8d44d3fafcf51bb8fe339aa4d
 SHA1: 6ce976455cb4910772304fb82e50de84edcf0f0b
 SHA256: b88c481fa9b0b3936746c499a68f67fca283c898bc156ec81253d4560a1534dc
 
+Package: aether
+Version: 4.16.0
+Architecture: amd64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.16.0/aether_4.16.0_debian13_amd64.deb
+Size: 4881864
+MD5sum: cd7d504c92a00baa0419036240017ee2
+SHA1: ac2ac5c02af6851eb50cfc071e35b130853f88bc
+SHA256: d60605c732885ef3be552d7cf913c7fe51c3e0ef6f298a84beab426c5d52a5bc
+
 Package: dbeaver-ce
 Version: 26.0.4
 Architecture: amd64
@@ -1304,23 +1319,6 @@ MD5sum: ce8a5a52a24bfd3d7b1de73fa91d1cdb
 SHA1: e736f97a0d3fc2171b6b1b727ecf360c57d664e8
 SHA256: 7d19699e6088344f653173216adaa64b1cf50f07efeb5e01896773ce063d6e84
 
-Package: cliamp
-Version: 1.47.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 32220
-Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
-Section: sound
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
- .
-Filename: pool/cliamp-1.47.2/cliamp_1.47.2_debian13_amd64.deb
-Size: 9375558
-MD5sum: ddd841827b8acde51adc3b1ee0334a44
-SHA1: 7e8f4e82fcfa15804617cd92f473b1ec5395d8be
-SHA256: 449c0a24b7a4c244704ccc12c59248d24b5477be8901f439932b0cd80850f4f0
-
 Package: glab
 Version: 1.95.0
 Architecture: amd64
@@ -1374,18 +1372,20 @@ MD5sum: e26d55973bda6234180d6a32a9091bf7
 SHA1: f06b9613edd908151e94835b2c2c5a951131c1dc
 SHA256: 03b8be879d5db270328a121d87194cbef3e9cc0bcb61b9bea9d6f5b438518c5f
 
-Package: aether
-Version: 4.16.1
+Package: cliamp
+Version: 1.48.0
 Architecture: amd64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.16.1/aether_4.16.1_debian13_amd64.deb
-Size: 4881324
-MD5sum: 1877e3bf99a412fd4833c77ce8838231
-SHA1: f2d770f1a981ee3f5b07d9ff190b620c9de78846
-SHA256: 8d36fb7613bb2400dd723c180b9c4dcf9b4f7f050e063cb864f40a2c935cc136
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 32268
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.48.0/cliamp_1.48.0_debian13_amd64.deb
+Size: 9387332
+MD5sum: 6af53537828b79837bb58dc8ced13f60
+SHA1: ddbada27645eb6fde7f1a4a8d851bf8addb842be
+SHA256: 74beb1afb5a76c5b860ecc15a37d463a3b7e27f04247678ae311cc93c36b78df
 
