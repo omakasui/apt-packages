@@ -3,11 +3,11 @@ SHELL   := /bin/bash
 
 PKG          ?=
 VERSION      ?=
-SUITES       ?= noble trixie
+SUITES       ?= noble trixie resolute
 GPG_KEY_URL  ?= https://github.com/omakasui/keyrings/raw/refs/heads/main/omakasui-packages.gpg.key
 GPG_KEY_ID   ?=
-ALL_SUITES     := noble trixie
-ALL_DEV_SUITES := noble-dev trixie-dev
+ALL_SUITES     := noble trixie resolute
+ALL_DEV_SUITES := noble-dev trixie-dev resolute-dev
 SCRIPTS  := scripts
 
 _require_pkg     = $(if $(PKG),,$(error PKG is required. Example: make $@ PKG=fzf))
