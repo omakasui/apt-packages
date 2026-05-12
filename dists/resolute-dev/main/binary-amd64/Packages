@@ -1,18 +1,3 @@
-Package: aether
-Version: 4.16.1
-Architecture: amd64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.16.1/aether_4.16.1_ubuntu2604_amd64.deb
-Size: 5226802
-MD5sum: 432e7379eeb2343244bfe9ee1b0ff965
-SHA1: 851ee9c4b4c45f21a5158d53ef7c97e05781a936
-SHA256: 215d1ed91f93a52bad0ea9389d3ed10866e3e36a14b6071ae5d265731ff62fe4
-
 Package: alacritty
 Version: 0.17.0
 Architecture: amd64
@@ -1157,4 +1142,19 @@ Size: 478176
 MD5sum: a042776242cd1964befc2e550da8125f
 SHA1: c92791fc0d2879101b3585800c27a53120213a88
 SHA256: 700c991be0fbd16173826bd6f31f562b64149faa9daf16ddc45a3d27cbf156a0
+
+Package: aether
+Version: 4.17.1
+Architecture: amd64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.17.1/aether_4.17.1_ubuntu2604_amd64.deb
+Size: 5234744
+MD5sum: bedb423e91c4099157578ede15d5583c
+SHA1: ccec100de60654ed2fe990463e1c74ba73bc7e03
+SHA256: 4440fb125011c846d19b495eaee83d21888910d8ec5f22a92d8da9ad1ac96341
 
