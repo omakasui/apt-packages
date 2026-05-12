@@ -644,26 +644,6 @@ MD5sum: 5faaffdcf4deb693a2b1206a7fb110f1
 SHA1: 542e17a85c9b34b13c017435a96380354be9a6d9
 SHA256: f9bbe216cb18f391fc400792ec4cb9e1174c8c80515553db6299a56f9b31a2b4
 
-Package: glab
-Version: 1.95.0
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 48718
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.95.0/glab_1.95.0_ubuntu2604_amd64.deb
-Size: 13685466
-MD5sum: c09d0dbefb9e9c5ffb200ff1edaa6f2e
-SHA1: 0c43570bc4145ac5bfafe14596bc92c8cc64ba30
-SHA256: 74612bd85736160ed6c1033a771eccf628f107bc6d63e482a579be2dbe3ea742
-
 Package: libgtk4-layer-shell0
 Version: 1.1.0
 Architecture: amd64
@@ -1157,4 +1137,24 @@ Size: 5234744
 MD5sum: bedb423e91c4099157578ede15d5583c
 SHA1: ccec100de60654ed2fe990463e1c74ba73bc7e03
 SHA256: 4440fb125011c846d19b495eaee83d21888910d8ec5f22a92d8da9ad1ac96341
+
+Package: glab
+Version: 1.96.0
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 48750
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.96.0/glab_1.96.0_ubuntu2604_amd64.deb
+Size: 13699666
+MD5sum: 15ce4d72915168880bea8c31359bc0b1
+SHA1: deecfe882409df2f89a9cdc54744f98352f609ba
+SHA256: 7475075b002450cd144c1649cf4e3cf1ecf766b3be4dc70534c5eae2e398c692
 
