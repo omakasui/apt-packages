@@ -729,22 +729,6 @@ MD5sum: 0b7a85cab83494536f3aa2901f46ec82
 SHA1: c846d8876a180062912df1d17a46441f501b3850
 SHA256: 08def423b9dc954c3398b682b64d68d6b0cf19eb49060552c985540469b38bf1
 
-Package: zellij
-Version: 0.44.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 44212
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: Zellij - a terminal workspace with batteries included. Provides floating panes, layouts, multiplayer collaboration, and a plugin system.
- .
-Filename: pool/zellij-0.44.2/zellij_0.44.2_ubuntu2404_arm64.deb
-Size: 10993064
-MD5sum: 30cb5841294da9cf8e624eaad82131f1
-SHA1: acbc1423356ebe31c337150633ff2ed44eadb475
-SHA256: b0dec61c468a7a301a0c3414a7d1873dad2c46be212d8eaac8f424620f49c515
-
 Package: yazi
 Version: 26.5.6
 Architecture: arm64
@@ -1238,4 +1222,20 @@ Size: 12499274
 MD5sum: a83f56a1f427f80436473b2431a78d3d
 SHA1: 2eb264e533c593b6a0f98fab4dc9061d4834acf6
 SHA256: 87421626f2a7ada73ef266d8b5356cef4a81ba7ab1251124d88faf5931856a50
+
+Package: zellij
+Version: 0.44.3
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 44288
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij - a terminal workspace with batteries included. Provides floating panes, layouts, multiplayer collaboration, and a plugin system.
+ .
+Filename: pool/zellij-0.44.3/zellij_0.44.3_ubuntu2404_arm64.deb
+Size: 11017642
+MD5sum: f8c6f57755872622e0b58b46f5de0fa0
+SHA1: 02a4812de3d7691d6f774fbccc3f80689233635d
+SHA256: bbdc52850b9a704344302da39c0b876e2d96be64e9db7f5eb646515ab37f9383
 
