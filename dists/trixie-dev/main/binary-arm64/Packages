@@ -591,23 +591,6 @@ MD5sum: a1f97cad066db1743244298653c76264
 SHA1: 4a948b41fe68b733bf0fdec3899d80b934ae7280
 SHA256: f4cc475ff6d288f59562394ca88d411c98f467f41dda9daded14fa8a635fd2ca
 
-Package: fastfetch
-Version: 2.62.1
-Architecture: arm64
-Depends: libc6 (>= 2.35)
-Description: Fast neofetch-like system information tool
- fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Maintainer: Carter Li <zhangsongcui@live.cn>
-Priority: optional
-Section: devel
-Installed-Size: 15189
-Filename: pool/fastfetch-2.62.1/fastfetch_2.62.1_debian13_arm64.deb
-Size: 3531712
-MD5sum: 0cdef57a149d5dd24085bb07dfc569f1
-SHA1: 62f6b36c1cfe6e00c47ab59c9d45b152b3db556b
-SHA256: c5b0c00d0f085359cb11feaea57485431d72fe755dc1d0e3cca9c220905f9309
-
 Package: waybar
 Version: 0.15.0
 Architecture: arm64
@@ -857,6 +840,22 @@ Size: 8843600
 MD5sum: 07d21f468bc6b13cc829805a50d49c70
 SHA1: 12baf0ed8e8874e832bdf0e23114f7e590cb4b7f
 SHA256: 03d2c577677f38dbd8ab8ab7ede805ff02b4d821e1e6c4ee705e34836bb12f2c
+
+Package: zellij
+Version: 0.44.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 44212
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: Zellij - a terminal workspace with batteries included. Provides floating panes, layouts, multiplayer collaboration, and a plugin system.
+ .
+Filename: pool/zellij-0.44.2/zellij_0.44.2_debian13_arm64.deb
+Size: 10993068
+MD5sum: 021326cf0fe91f45f0470e3f20d325b1
+SHA1: 05fd49c0fed05a80337493741e5645e6f736fd47
+SHA256: 2aaf0a378dc48d379ba05e03068bd9c2e7425fca11851de31193d2e8bb9a15b5
 
 Package: yazi
 Version: 26.5.6
@@ -1352,19 +1351,20 @@ MD5sum: ca2d5d1965588e2876973ec21d56e72f
 SHA1: c72ed68184317b44c12fee6b221c89dd9e586531
 SHA256: 61e60dccf48068b9fac912154fcdc411bed226426e5c123f0ca3b6599ddd3b2f
 
-Package: zellij
-Version: 0.44.3
+Package: fastfetch
+Version: 2.63.0
 Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 44288
-Section: utils
+Depends: libc6 (>= 2.35)
+Description: Fast neofetch-like system information tool
+ fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Maintainer: Carter Li <zhangsongcui@live.cn>
 Priority: optional
-Homepage: https://zellij.dev
-Description: Zellij - a terminal workspace with batteries included. Provides floating panes, layouts, multiplayer collaboration, and a plugin system.
- .
-Filename: pool/zellij-0.44.3/zellij_0.44.3_debian13_arm64.deb
-Size: 11017698
-MD5sum: f4917b74b3747dfd805c035cb6149eaf
-SHA1: 9910e7ce2b0d56747e04d7e82bfbbe08d068b3e8
-SHA256: ec7c66bf5448179f6fdfb5034f0db3e4fe5798c3f838566ed22dae5b345ec4fd
+Section: devel
+Installed-Size: 15361
+Filename: pool/fastfetch-2.63.0/fastfetch_2.63.0_debian13_arm64.deb
+Size: 3575488
+MD5sum: b8999e6c491df9f827c350f8eadf29c1
+SHA1: e8589c06f0aafdd372960558a07fa34df9dc8bf3
+SHA256: 615dd533c07058ff15810cddd358fd1f01ee8b53aad25ce14e54b8dfde2ac859
 
