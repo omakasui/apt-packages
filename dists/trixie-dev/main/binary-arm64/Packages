@@ -1368,3 +1368,20 @@ MD5sum: 281413befa06543846b260d0396d8df9
 SHA1: 32837ee91f308a9ab7ccda278529b010ef7dadc6
 SHA256: 75354fc0677ce8ca5b22a2c48596e32556fabaf9077d1e4108610c52d139da8a
 
+Package: xwayland-satellite
+Version: 0.8.1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7444
+Depends: xwayland, libxcb1, libxcb-cursor0, libsystemd0
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: xwayland-satellite grants rootless Xwayland integration to any Wayland compositor implementing xdg_wm_base and viewporter. Particularly useful for compositors that do not want to implement support for rootless Xwayland themselves.
+ .
+Filename: pool/xwayland-satellite-0.8.1/xwayland-satellite_0.8.1_debian13_arm64.deb
+Size: 1874102
+MD5sum: 52929632c110d5a3f0fe31249fefe0e9
+SHA1: 60825681236fb6d8e976dea593725c1b6c950b40
+SHA256: 6253e609e67475a9c4e455e9f8a5baea031283e1a1d267335381f24573577bb6
+
