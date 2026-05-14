@@ -926,23 +926,6 @@ MD5sum: e26d55973bda6234180d6a32a9091bf7
 SHA1: f06b9613edd908151e94835b2c2c5a951131c1dc
 SHA256: 03b8be879d5db270328a121d87194cbef3e9cc0bcb61b9bea9d6f5b438518c5f
 
-Package: cliamp
-Version: 1.49.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 32272
-Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
-Section: sound
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
- .
-Filename: pool/cliamp-1.49.0/cliamp_1.49.0_debian13_amd64.deb
-Size: 9388522
-MD5sum: e9ef95a975cfed0961e0faec1a6d9e42
-SHA1: 1c485e04976e4658ae81d2e99052f9c326c05d73
-SHA256: e518d0182a90770fa1ddedaec6c4b9606ce4eb656df1efe406b3698bf8894878
-
 Package: libgtk4-layer-shell0
 Version: 1.1.0
 Architecture: amd64
@@ -1405,4 +1388,21 @@ Size: 1885260
 MD5sum: 819bd637b9351aed3396eb3412a3c20b
 SHA1: 3d712f59edb761f7cdffd37f59925483f3bb36af
 SHA256: 5dd4aa2a397d4b5c6efe665a6fd3944ce29a2309c5d6f01308e3e259b841e559
+
+Package: cliamp
+Version: 1.50.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 32296
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.50.0/cliamp_1.50.0_debian13_amd64.deb
+Size: 9397360
+MD5sum: dddb352fa28f2bfe9483afc9df7c84f6
+SHA1: bd0d389dd75f5834102fcd601e0fc5ea30f49aad
+SHA256: 7f8a05a0ed4e6161292e96d2e6aca3a54c1bfc956d1e570c48ae0c6fc5328b48
 
