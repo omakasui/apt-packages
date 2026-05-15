@@ -1385,3 +1385,23 @@ MD5sum: 0404426090a38f9a07c2ca9bfed50922
 SHA1: d131bca77daf71c4ec19fb24e79fa93fde9d97a4
 SHA256: 342e7f3e5ea657480098aceb281fbe6b0db707280fb1c176b085272f193d5f0f
 
+Package: foot
+Version: 1.27.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1700
+Depends: libfontconfig1, libfreetype6, libpixman-1-0, libwayland-client0, libwayland-cursor0, libxkbcommon0, libutf8proc2, libutempter0
+Conflicts: foot
+Replaces: foot
+Provides: foot
+Section: x11
+Priority: optional
+Homepage: https://codeberg.org/dnkl/foot
+Description: Fast, lightweight, and minimalistic Wayland terminal emulator. Supports sixel graphics, scrollback search, URL detection, and more.
+ .
+Filename: pool/foot-1.27.0/foot_1.27.0_debian13_arm64.deb
+Size: 405572
+MD5sum: 42cd009b4b50700d4821e7e4940e3894
+SHA1: 645aec966cd16ba915d28efd124a9ba42cda14f8
+SHA256: a0189bae2e7081eb200ad7812d795adf709e03aa866b5f207fb5eed50a4e01c9
+
