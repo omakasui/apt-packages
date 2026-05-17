@@ -1405,3 +1405,23 @@ MD5sum: 387c4b959e061e83de1066198422d8f5
 SHA1: cdb86b01063b462aa230a2eb54724a2fea1e787e
 SHA256: a0e2084bc6f0033aaced8074d1ae5739b87981a4593af987fff5becdba89c351
 
+Package: swayosd
+Version: 0.3.1
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 11036
+Depends: libgtk-4-1, libgtk4-layer-shell0, libpulse0, libinput10, libevdev2, libgtk4-layer-shell0 (>= 1.1.0)
+Conflicts: swayosd
+Replaces: swayosd
+Provides: swayosd
+Section: utils
+Priority: optional
+Homepage: https://github.com/ErikReider/SwayOSD
+Description: SwayOSD is a GTK4-based on-screen display for Wayland compositors. Shows OSD indicators for volume, mute, brightness, caps lock, scroll lock and num lock. Includes a libinput backend for automatic key detection and supports Sway, Hyprland and other wlroots-based compositors.
+ .
+Filename: pool/swayosd-0.3.1/swayosd_0.3.1_debian13_arm64.deb
+Size: 2128026
+MD5sum: d701da7c82009ee2b509887eb2633a5c
+SHA1: 61a4a9cb6b09c0980b8b31ff3a738c2a0e8302fe
+SHA256: ba6c69dff0ad9545340e73f8a138ef4eb2afcdcb1e98a7664ba51ed67df0648a
+
