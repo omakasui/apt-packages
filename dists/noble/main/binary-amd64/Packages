@@ -448,25 +448,6 @@ MD5sum: 65a47a00e067c18706f4f1685b1c9661
 SHA1: 522d6377bd520025a5680098d02db23bb328cf86
 SHA256: 80bfcf98b9db88fcc2d00a881463d96ea9065090f23c7bbf6f5a6dd9ef28e350
 
-Package: dbeaver-ce
-Version: 26.0.3
-Architecture: amd64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 205434
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.0.3/dbeaver-ce_26.0.3_ubuntu2404_amd64.deb
-Size: 112681940
-MD5sum: 30369ce781182aaf5430a024804bbbd3
-SHA1: ee3ad9dfb5cfc8e2902726e5f9a2a91b87f14739
-SHA256: 2dd4a825abc453267a5f9871bfc1920db4ef9391f4badc7aa1a4cf0bc09d75bb
-
 Package: lazydocker
 Version: 0.25.2
 Architecture: amd64
@@ -1223,4 +1204,23 @@ Size: 98218020
 MD5sum: b17178144dbda352f578b1b0e58821cb
 SHA1: 1c35fb54f006761409736e48ed980d31054dedfa
 SHA256: 9a8df5b6d82ebace9a9c58f805af314e49b35bc59a194214dd0e74892bcc0c15
+
+Package: dbeaver-ce
+Version: 26.0.5
+Architecture: amd64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 206100
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.0.5/dbeaver-ce_26.0.5_ubuntu2404_amd64.deb
+Size: 113216264
+MD5sum: bb2903fac8d03bef0355a3260ea78e7d
+SHA1: 6b3560f85ba97fff9583c559ac6e62ff84b44033
+SHA256: 53f4569530dce67b606aeed81074ddb59205cc68bad5445ac83c4715a3e36b27
 

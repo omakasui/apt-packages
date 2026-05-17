@@ -577,25 +577,6 @@ MD5sum: c94f171266797bc8beb3b4a7a60454a5
 SHA1: 4cca0609bf2156f6a7469748be4ed0ffd12fbcdd
 SHA256: ec9cf06309d308aa43aece183b93d0fba4da554bf91f1e669c9cc950ec17ed0e
 
-Package: dbeaver-ce
-Version: 26.0.3
-Architecture: arm64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 205876
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.0.3/dbeaver-ce_26.0.3_debian13_arm64.deb
-Size: 109622764
-MD5sum: 9565614287074e839a075da68a033435
-SHA1: 39d2aeaddd2d3ec762b6e67bec698edecdbb6dba
-SHA256: 12cbfaad1b27129d105e49193563fdd678fa3ff41781698c3909b1d87d1cb289
-
 Package: lazydocker
 Version: 0.25.2
 Architecture: arm64
@@ -1331,4 +1312,23 @@ Size: 83146116
 MD5sum: d01dafd56d1ca4387a1ffa8168b02f67
 SHA1: d551d8526913efb26691c3e2a9df635d850df041
 SHA256: 57de7ce3b643ebe596a34554529086374dc729e384d31ac9b5ed361d00216c93
+
+Package: dbeaver-ce
+Version: 26.0.5
+Architecture: arm64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 206587
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.0.5/dbeaver-ce_26.0.5_debian13_arm64.deb
+Size: 110211328
+MD5sum: 7ba8e32798e5d6c150314fc84b681f37
+SHA1: 08026a3506de84e76be51df26c158a837dd8332b
+SHA256: 8d966ea3eb79062ca362de511c6866c9a6e6d57fcb0e7fbc05edf4b40b4c3462
 
