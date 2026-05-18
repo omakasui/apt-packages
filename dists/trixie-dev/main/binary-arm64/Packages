@@ -1425,3 +1425,19 @@ MD5sum: d701da7c82009ee2b509887eb2633a5c
 SHA1: 61a4a9cb6b09c0980b8b31ff3a738c2a0e8302fe
 SHA256: ba6c69dff0ad9545340e73f8a138ef4eb2afcdcb1e98a7664ba51ed67df0648a
 
+Package: wl-clip-persist
+Version: 0.5.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2772
+Section: utils
+Priority: optional
+Homepage: https://github.com/Linus789/wl-clip-persist
+Description: Keep Wayland clipboard even after programs close. Reads clipboard data into memory whenever you copy something and overwrites the clipboard with that data, so it persists even after the source application exits.
+ .
+Filename: pool/wl-clip-persist-0.5.0/wl-clip-persist_0.5.0_debian13_arm64.deb
+Size: 980816
+MD5sum: d73fb4b8ae4abfee8d5cece3def1b679
+SHA1: 003fbceec71c07e2ec66981285e03c85540be6d2
+SHA256: f68f47d9838e73c91ec7c515f84aadf2f3aaaa360eda5dc2230cdedff98e7cb8
+
