@@ -871,22 +871,6 @@ MD5sum: 7762efb4c24ff1c0dd21c29a1bc8906b
 SHA1: 2b5c9b6e7dd66582b7b937f4289bd47c09543e76
 SHA256: 024a7810a3e440ca3fc9d14e68e16f7dc1de7cde84d7b4dbe95d52c8b4b60827
 
-Package: zed
-Version: 1.1.7
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 361616
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.1.7/zed_1.1.7_debian13_arm64.deb
-Size: 82883356
-MD5sum: a45f6579b3f5600710f84556a4f96792
-SHA1: 7d2a692d05e7ebbdb8cab2e36395f30ff1a06625
-SHA256: 9b2312555da9547d477e2030653d4f1c02fe91258b6bd055035415594b44a406
-
 Package: libgtk4-layer-shell0
 Version: 1.1.0
 Architecture: arm64
@@ -1440,4 +1424,20 @@ Size: 110222820
 MD5sum: beaef4bae5afd49a361a6b5858d24538
 SHA1: 7c356c07d430542d83150c86d7b7586797cdcab9
 SHA256: 4a6220aa7f635aff18bd60d2f68f642965b72047e967089abce7c3b2a143613a
+
+Package: zed
+Version: 1.2.6
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 362512
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.2.6/zed_1.2.6_debian13_arm64.deb
+Size: 83151964
+MD5sum: 4414ef0b02eaba349165db0df1885e8a
+SHA1: 47995cc19dd4bd8ed00150a9e27e59043b0bddd3
+SHA256: 4384156c4b2de34245f69db7a87cedb35c829bf7738d39b899bfe4f058b11106
 
