@@ -1151,6 +1151,25 @@ MD5sum: 65609d0894833bda196f33c77fa7d108
 SHA1: 6dfd0ef5752d0d990b57fc74645c9e6b0b53cec4
 SHA256: 8c0e278f61e49a103bc3158eb22e1b55f2af4ae92f28cda95e68e0cdc9b3bdd3
 
+Package: dbeaver-ce
+Version: 26.0.4
+Architecture: arm64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 206485
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.0.4/dbeaver-ce_26.0.4_ubuntu2404_arm64.deb
+Size: 112554290
+MD5sum: 399de59f75021de01eb02891d1ffefcc
+SHA1: 4c1988849f24145e3cf62d79b4da0436eea3dfa7
+SHA256: 2d350de18d94f1bb9804713517e8e1c9c59aabd2eb806b15f1730eac785ef452
+
 Package: zen-browser
 Version: 1.19.13b
 Architecture: arm64
@@ -1183,23 +1202,4 @@ Size: 94732384
 MD5sum: c1aabb0d83f6e10196eaca6514d7350b
 SHA1: c5028311dad0a4c00c32ca65a729e6388d91d54a
 SHA256: 54aa0f26b348b56ff6db2fc65ec0a7677fdef0d98bd6c2189bfeb7b12a59539d
-
-Package: dbeaver-ce
-Version: 26.0.5
-Architecture: arm64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 206587
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.0.5/dbeaver-ce_26.0.5_ubuntu2404_arm64.deb
-Size: 112601192
-MD5sum: 66d9da34ff4e88aa5d16a857e6d29051
-SHA1: 8113af2f619affe4d2dca398d129d4ad0f756146
-SHA256: 70f7f935588a95f5cb86ec02dcbd568a6b3ccee1b0933b16d9d0e3e3c0fea113
 

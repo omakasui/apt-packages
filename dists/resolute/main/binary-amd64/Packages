@@ -1,3 +1,22 @@
+Package: dbeaver-ce
+Version: 26.0.4
+Architecture: amd64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 206000
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.0.4/dbeaver-ce_26.0.4_ubuntu2604_amd64.deb
+Size: 113078656
+MD5sum: d5b246a9455fff3a0b0059aee5b1c4b8
+SHA1: 273aae48b6ef450a5fb69eb188424cd5b4e6ac0d
+SHA256: 3f37e6df620e31d74e941ba392a95ba6bd38e5c66ef4ab60104d502368af7075
+
 Package: zen-browser
 Version: 1.19.13b
 Architecture: amd64
@@ -30,23 +49,4 @@ Size: 98079894
 MD5sum: b862a210d2280f2e5d38ca7cae943cc0
 SHA1: 2c4ba930cc38b510aaf93d34724cbdc7ad301fb1
 SHA256: 400c03f4db9d176543d830c60d61b1c68abbd9b9c678b80c42150782637af7ef
-
-Package: dbeaver-ce
-Version: 26.0.5
-Architecture: amd64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 206100
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.0.5/dbeaver-ce_26.0.5_ubuntu2604_amd64.deb
-Size: 113117722
-MD5sum: 5cf10020fb1bfab0825ad4006993a55e
-SHA1: a6fc5a8087ba5f8c5119fe11f87897ca272946b9
-SHA256: 2b1dff64a911d322eb382467a93d689e6e6326ee2f326f40e43a43f725a6de3c
 
