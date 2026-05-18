@@ -770,25 +770,6 @@ MD5sum: d849b5f8d44d3fafcf51bb8fe339aa4d
 SHA1: 6ce976455cb4910772304fb82e50de84edcf0f0b
 SHA256: b88c481fa9b0b3936746c499a68f67fca283c898bc156ec81253d4560a1534dc
 
-Package: dbeaver-ce
-Version: 26.0.4
-Architecture: amd64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 206000
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.0.4/dbeaver-ce_26.0.4_debian13_amd64.deb
-Size: 111273560
-MD5sum: 73a12de54d80fc83f0d472bb76931f2f
-SHA1: ab0ec95a1a2e3433a83026d4e9dc388738c8644e
-SHA256: 589eefad4440bf2051267840f6b8a14a10eca55e294fcb0084848e220f20a6b3
-
 Package: walker
 Version: 2.16.2
 Architecture: amd64
@@ -1461,4 +1442,23 @@ Size: 1061588
 MD5sum: 0bb7538743e0f522a378edf474a42ab0
 SHA1: 64924ef5cd8d770b7e3d81ec37668950d17510aa
 SHA256: 3bc8dbd4943b80aea5c9888676ea68a9604995e5284e47b04dc76bce262b883e
+
+Package: dbeaver-ce
+Version: 26.0.5
+Architecture: amd64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 206100
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.0.5/dbeaver-ce_26.0.5_debian13_amd64.deb
+Size: 111335380
+MD5sum: e9c13a5575b947828efd3ecdd1c8c4f6
+SHA1: a7ef5cb67fd506fce469cd7880a0b2196a6d5488
+SHA256: dfb92048d8afa2a7a314f03641f68998739307be3894be4a933e939eb8f1e334
 
