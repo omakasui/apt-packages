@@ -680,25 +680,6 @@ MD5sum: a294dd8645bc053dc9595e01f8dea52d
 SHA1: d1159800d0652e48950939b598d1d98742970236
 SHA256: 03f2cd455fee01054793de819cfac0bd31acf95c9cefde093ea813fe0b35729f
 
-Package: kitty
-Version: 0.46.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 106452
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator
- Self-contained bundle installed to /opt/kitty.
-Filename: pool/kitty-0.46.2/kitty_0.46.2_ubuntu2604_amd64.deb
-Size: 33238096
-MD5sum: ad06907f97dab59771e83674cc0109bd
-SHA1: 0fd878c4a74979feeea39d7f9a8dda5bc7db2230
-SHA256: e4797cbf6a6907237d6845ce4ae68d10d2d10796aa65ff03f66fb22d3e48dac5
-
 Package: lazygit
 Version: 0.61.1
 Architecture: amd64
@@ -1230,4 +1211,23 @@ Size: 98655608
 MD5sum: daa24e34771a8534c839740740f87438
 SHA1: ef7cb01218cb1791beaaf94254ae357d971e9f7a
 SHA256: 7e922412ea11fc744e4479b86eafb0015531ac4aa53f44eaf5a7362928f64796
+
+Package: kitty
+Version: 0.47.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 111612
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator
+ Self-contained bundle installed to /opt/kitty.
+Filename: pool/kitty-0.47.0/kitty_0.47.0_ubuntu2604_amd64.deb
+Size: 34607494
+MD5sum: 8a1a42078813265452944a281b0decac
+SHA1: 83b5932ca76b8b226fcd8d723a33f515e90c8712
+SHA256: 16797ef6bc0eef3c5fd3a1b35899e6487ef038793a3a71e4ae9885ef5d0da19f
 
