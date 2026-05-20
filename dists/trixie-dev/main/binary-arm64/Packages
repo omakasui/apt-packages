@@ -1389,22 +1389,6 @@ MD5sum: beaef4bae5afd49a361a6b5858d24538
 SHA1: 7c356c07d430542d83150c86d7b7586797cdcab9
 SHA256: 4a6220aa7f635aff18bd60d2f68f642965b72047e967089abce7c3b2a143613a
 
-Package: zed
-Version: 1.2.6
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 362512
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.2.6/zed_1.2.6_debian13_arm64.deb
-Size: 83151964
-MD5sum: 4414ef0b02eaba349165db0df1885e8a
-SHA1: 47995cc19dd4bd8ed00150a9e27e59043b0bddd3
-SHA256: 4384156c4b2de34245f69db7a87cedb35c829bf7738d39b899bfe4f058b11106
-
 Package: zen-browser
 Version: 1.19.13b
 Architecture: arm64
@@ -1457,4 +1441,20 @@ Size: 35278
 MD5sum: d55d11ac5156286cad32b70fcdeb8b21
 SHA1: b9a56419960e5185657fa004a24985fb7f1f3e23
 SHA256: b55f3455c44fe60f88e0ea268b7ce4c5692fefd6dc0e24eb47a3ce5c06068c02
+
+Package: zed
+Version: 1.2.7
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 362524
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.2.7/zed_1.2.7_debian13_arm64.deb
+Size: 83079032
+MD5sum: f30b8e15864b18b069038ecc657166f4
+SHA1: c6b1f890282a0fb705a7dd2c79ff488be6496682
+SHA256: cc26fd792b4122a1ead7000711f1d1c3a3ffbaad41c74b8759708a4f3ebaca0a
 
