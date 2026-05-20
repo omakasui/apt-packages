@@ -1053,22 +1053,6 @@ MD5sum: 01e9ded3d82fb0fe31ec43e5effa6eab
 SHA1: 3a3db65caa23f1ab7fbafc5140881cbc78940797
 SHA256: 98e1b759477f7fac60ecd93642b0cc5ee76fac5fc160d3603ac31107e28533af
 
-Package: bitwarden-cli
-Version: 2026.4.1
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 130680
-Section: utils
-Priority: optional
-Homepage: https://bitwarden.com/help/cli/
-Description: Bitwarden CLI — command-line interface for Bitwarden password manager. Installs the official upstream pre-built binary for amd64 and arm64. Self-contained Node.js executable, no runtime dependencies required.
- .
-Filename: pool/bitwarden-cli-2026.4.1/bitwarden-cli_2026.4.1_ubuntu2404_arm64.deb
-Size: 30422130
-MD5sum: d30ab13f9d7c5742449b46f130ed4457
-SHA1: e2bd78259f1be218b53bfd12142825b04e23a27d
-SHA256: 4f7c9df1a512df6d24d81ec4140e131debb6a03a49f1a992a6f4e222ae189918
-
 Package: lazygit
 Version: 0.61.1
 Architecture: arm64
@@ -1202,4 +1186,20 @@ Size: 94785590
 MD5sum: 244ae39b6f01ac473ec11d14e4588c57
 SHA1: 31f719bf6a48ef88bd2fe40e77f538bee1efe314
 SHA256: 8428fe397c89f6157dd703c73f4a09b5bc90c8cf0bb17e8b0c7a0f615a6cfc3c
+
+Package: bitwarden-cli
+Version: 2026.4.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 131152
+Section: utils
+Priority: optional
+Homepage: https://bitwarden.com/help/cli/
+Description: Bitwarden CLI — command-line interface for Bitwarden password manager.
+ .
+Filename: pool/bitwarden-cli-2026.4.2/bitwarden-cli_2026.4.2_ubuntu2404_arm64.deb
+Size: 30505990
+MD5sum: ca6b9a60c3181dfbbfff9eb965e26054
+SHA1: 84ed1e4be867ed610e0afc66bc290176be472595
+SHA256: f6ecc3ae206463d1f739f53be14212d1134f5763cc4df24dd0d42eae6aa43223
 
