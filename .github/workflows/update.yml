@@ -157,6 +157,9 @@ jobs:
           bash scripts/update-index.sh --suites "$ALL_SUITES"
           bash scripts/sign-release.sh --suites "$ALL_SUITES $ALL_DEV_SUITES" --key-id "$GPG_KEY_ID"
 
+      - name: Update README packages table
+        run: bash scripts/update-readme.sh
+
       - name: Build commit message
         id: msg
         run: |
