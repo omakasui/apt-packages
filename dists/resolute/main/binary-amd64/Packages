@@ -34,22 +34,6 @@ MD5sum: f3087d43bcaef144cad4421e049121ba
 SHA1: c53f8f6640f3e5688986db0b9543e30463de4a8c
 SHA256: afced64cf5288ff9c653dc1b0a16548e964a085e3c98621d9290909cb83cd1cd
 
-Package: zed
-Version: 1.2.7
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 377836
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.2.7/zed_1.2.7_ubuntu2604_amd64.deb
-Size: 98074586
-MD5sum: 0b5c28f31cdd347b844e24d862ccbf92
-SHA1: 34e823ad15af06b01aedcf132a08b38d6502beb0
-SHA256: 922ab0da922170a5fccbe4f22e173f98f73c025965fce50ac4d8485fea6209e1
-
 Package: bitwarden
 Version: 2026.4.0
 Architecture: amd64
@@ -85,4 +69,20 @@ Size: 31289394
 MD5sum: 3376ce93bfd0b6e9d184a9350192fe00
 SHA1: c8a2e8ad35caa7af30bb2e11943269b172164426
 SHA256: c39e96313248564a62383cf40f02778be5d83d6fb5e2aec0d88bdd8364b51158
+
+Package: zed
+Version: 1.3.5
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 380256
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.3.5/zed_1.3.5_ubuntu2604_amd64.deb
+Size: 98871570
+MD5sum: 8854e1a8406d724186fd44960b493570
+SHA1: 028a3fb01f520d49e725ccf779a7e91d019a0a72
+SHA256: 1d4aa91c9c0c3e8f00b29ebbb0ef4d32e6d975fc14d72df6bdbf24f08ed26fcd
 
