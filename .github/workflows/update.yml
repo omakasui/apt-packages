@@ -166,7 +166,7 @@ jobs:
           PATTERN="${{ steps.params.outputs.pattern }}"
           case "$ACTION" in
             packages-updated)
-              PKGS_LIST=$(echo '${{ steps.params.outputs.packages_json }}' | jq -r '[.[] | "\(.package) \(.version)"] | join(", ")')
+              PKGS_LIST=$(echo '${{ steps.params.outputs.packages_json }}' | jq -r '[.[] | "\(.package) \(.version)"] | unique | join(", ")')
               MSG="apt: ${PKGS_LIST} [$(date '+%Y-%m-%d')]"
               ;;
             package-updated)  MSG="apt: ${PKG} ${VERSION} [$(date '+%Y-%m-%d')]" ;;
