@@ -10,6 +10,8 @@ Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this re
 |---|---|---|
 | `noble` | Ubuntu 24.04 | `amd64`, `arm64` |
 | `noble-dev` | Ubuntu 24.04 (dev channel) | `amd64`, `arm64` |
+| `resolute` | Ubuntu 26.04 | `amd64`, `arm64` |
+| `resolute-dev` | Ubuntu 26.04 (dev channel) | `amd64`, `arm64` |
 | `trixie` | Debian 13 | `amd64`, `arm64` |
 | `trixie-dev` | Debian 13 (dev channel) | `amd64`, `arm64` |
 
@@ -19,71 +21,80 @@ Dev suites include all stable packages as a base; dev-channel entries take prece
 
 | Package | Upstream | Suites | Architectures |
 |---|---|---|---|
-| `aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | amd64, arm64 |
-| `alacritty` | [alacritty](https://github.com/alacritty/alacritty) | noble, trixie | amd64, arm64 |
-| `asdcontrol` | [asdcontrol](https://github.com/omakasui/asdcontrol) | noble, trixie | amd64, arm64 |
-| `bluetui` | [bluetui](https://github.com/pythops/bluetui) | noble, trixie | amd64, arm64 |
-| `btop` | [btop](https://github.com/aristocratos/btop) | noble, trixie | amd64, arm64 |
-| `cliamp` | [cliamp](https://github.com/bjarneo/cliamp) | noble, trixie | amd64, arm64 |
-| `dbeaver-ce` | [dbeaver](https://github.com/dbeaver/dbeaver) | noble, trixie | amd64, arm64 |
-| `elephant` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-1password` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-bitwarden` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-bluetooth` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-bookmarks` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-calc` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-clipboard` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-desktopapplications` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-files` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-menus` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-niriactions` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-nirisessions` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-playerctl` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-providerlist` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-runner` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-snippets` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-symbols` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-todo` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-unicode` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-websearch` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-windows` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `elephant-wireplumber` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | amd64, arm64 |
-| `eza` | [eza](https://github.com/eza-community/eza) | noble, trixie | amd64, arm64 |
-| `fastfetch` | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | noble, trixie | amd64, arm64 |
+| `aether` | [aether](https://github.com/bjarneo/aether) | noble, trixie | all |
+| `alacritty` | [alacritty](https://github.com/alacritty/alacritty) | noble, trixie | all |
+| `asdcontrol` | [asdcontrol](https://github.com/omakasui/asdcontrol) | noble, trixie | all |
+| `bitwarden` | [bitwarden](https://bitwarden.com) | all | amd64 |
+| `bitwarden-cli` | [bitwarden-cli](https://bitwarden.com/help/cli/) | noble, trixie | all |
+| `bluetui` | [bluetui](https://github.com/pythops/bluetui) | noble, trixie | all |
+| `btop` | [btop](https://github.com/aristocratos/btop) | noble, trixie | all |
+| `cliamp` | [cliamp](https://github.com/bjarneo/cliamp) | noble, trixie | all |
+| `dbeaver` | [dbeaver](https://dbeaver.io/) | noble, trixie | all |
+| `dbeaver-ce` | [dbeaver](https://github.com/dbeaver/dbeaver) | all | all |
+| `elephant` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-1password` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-all` | [elephant-all](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-bitwarden` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-bluetooth` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-bookmarks` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-calc` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-clipboard` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-desktopapplications` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-files` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-menus` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-niriactions` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-nirisessions` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-playerctl` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-providerlist` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-runner` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-snippets` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-symbols` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-todo` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-unicode` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-websearch` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-windows` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `elephant-wireplumber` | [elephant](https://github.com/abenz1267/elephant) | noble, trixie | all |
+| `eza` | [eza](https://github.com/eza-community/eza) | noble, trixie | all |
+| `fastfetch` | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | noble, trixie | all |
+| `font-cascadia-mono-nf` | [font-cascadia-mono-nf](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | all |
+| `font-ia-writer-mono` | [font-ia-writer-mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | all |
+| `font-jetbrains-mono` | [font-jetbrains-mono](https://www.jetbrains.com/lp/mono/) | noble, trixie | all |
 | `fonts-cascadia-mono-nf` | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts) | noble, trixie | all |
 | `fonts-ia-writer-mono` | [iA Writer Mono](https://github.com/iaolo/iA-Fonts) | noble, trixie | all |
 | `fonts-jetbrains-mono` | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | noble, trixie | all |
-| `fzf` | [fzf](https://github.com/junegunn/fzf) | noble, trixie | amd64, arm64 |
-| `ghostty` | [ghostty](https://github.com/ghostty-org/ghostty) | noble, trixie | amd64, arm64 |
-| `glab` | [glab](https://gitlab.com/gitlab-org/cli) | noble, trixie | amd64, arm64 |
-| `gum` | [gum](https://github.com/charmbracelet/gum) | noble, trixie | amd64, arm64 |
-| `impala` | [impala](https://github.com/pythops/impala) | noble, trixie | amd64, arm64 |
-| `kitty` | [kitty](https://sw.kovidgoyal.net/kitty/) | noble, trixie | amd64, arm64 |
-| `lazydocker` | [lazydocker](https://github.com/jesseduffield/lazydocker) | noble, trixie | amd64, arm64 |
-| `lazygit` | [lazygit](https://github.com/jesseduffield/lazygit) | noble, trixie | amd64, arm64 |
-| `libgtk4-layer-shell0` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | amd64, arm64 |
-| `localsend` | [localsend](https://github.com/localsend/localsend) | noble, trixie | amd64, arm64 |
+| `fzf` | [fzf](https://github.com/junegunn/fzf) | noble, trixie | all |
+| `ghostty` | [ghostty](https://github.com/ghostty-org/ghostty) | noble, trixie | all |
+| `glab` | [glab](https://gitlab.com/gitlab-org/cli) | noble, trixie | all |
+| `gum` | [gum](https://github.com/charmbracelet/gum) | noble, trixie | all |
+| `impala` | [impala](https://github.com/pythops/impala) | noble, trixie | all |
+| `kitty` | [kitty](https://sw.kovidgoyal.net/kitty/) | noble, trixie | all |
+| `lazydocker` | [lazydocker](https://github.com/jesseduffield/lazydocker) | noble, trixie | all |
+| `lazygit` | [lazygit](https://github.com/jesseduffield/lazygit) | noble, trixie | all |
+| `libgtk4-layer-shell-0` | [libgtk4-layer-shell-0](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | all |
+| `libgtk4-layer-shell0` | [gtk4-layer-shell](https://github.com/wmww/gtk4-layer-shell) | noble, trixie | all |
+| `localsend` | [localsend](https://github.com/localsend/localsend) | noble, trixie | all |
 | `nautilus-open-any-terminal` | [nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal) | noble, trixie | all |
-| `niri` | [Niri](https://github.com/niri-wm/niri) | noble, trixie | amd64, arm64 |
-| `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | amd64, arm64 |
-| `pinta` | [Pinta](https://github.com/PintaProject/Pinta) | noble, trixie | amd64, arm64 |
-| `starship` | [starship](https://starship.rs) | noble, trixie | amd64, arm64 |
-| `swaybg` | [swaybg](https://github.com/swaywm/swaybg) | noble, trixie | amd64, arm64 |
-| `tmux` | [tmux](https://github.com/tmux/tmux) | noble, trixie | amd64, arm64 |
-| `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | amd64, arm64 |
+| `niri` | [Niri](https://github.com/niri-wm/niri) | noble, trixie | all |
+| `nvim` | [Neovim](https://github.com/neovim/neovim) | noble, trixie | all |
+| `pinta` | [Pinta](https://github.com/PintaProject/Pinta) | noble, trixie | all |
+| `starship` | [starship](https://starship.rs) | noble, trixie | all |
+| `swaybg` | [swaybg](https://github.com/swaywm/swaybg) | noble, trixie | all |
+| `tmux` | [tmux](https://github.com/tmux/tmux) | noble, trixie | all |
+| `ufw-docker` | [ufw-docker](https://github.com/chaifeng/ufw-docker) | noble, trixie | all |
 | `uwsm` | [uwsm](https://github.com/Vladimir-csp/uwsm) | trixie | all |
-| `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | amd64, arm64 |
-| `waybar` | [Waybar](https://github.com/Alexays/Waybar) | noble, trixie | amd64, arm64 |
-| `wiremix` | [wiremix](https://github.com/tsowell/wiremix) | noble, trixie | amd64, arm64 |
-| `xdg-terminal-exec` | [xdg-terminal-exec](https://github.com/Vladimir-csp/xdg-terminal-exec) | noble, trixie | amd64, arm64 |
+| `walker` | [walker](https://github.com/abenz1267/walker) | noble, trixie | all |
+| `waybar` | [Waybar](https://github.com/Alexays/Waybar) | noble, trixie | all |
+| `wiremix` | [wiremix](https://github.com/tsowell/wiremix) | noble, trixie | all |
+| `xdg-terminal-exec` | [xdg-terminal-exec](https://github.com/Vladimir-csp/xdg-terminal-exec) | noble, trixie | all |
 | `yaru-theme-gnome-shell` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `yaru-theme-gtk` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `yaru-theme-icon` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
 | `yaru-theme-sound` | [Yaru](https://github.com/ubuntu/yaru) | trixie | all |
-| `yazi` | [yazi](https://github.com/sxyazi/yazi) | noble, trixie | amd64, arm64 |
-| `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | amd64, arm64 |
-| `zen-browser` | [zen-browser](https://zen-browser.app/) | noble, trixie | amd64, arm64 |
-| `zoxide` | [zoxide](https://github.com/ajeetdsouza/zoxide) | noble, trixie | amd64, arm64 |
+| `yazi` | [yazi](https://github.com/sxyazi/yazi) | noble, trixie | all |
+| `zed` | [zed](https://zed.dev) | all | all |
+| `zellij` | [zellij](https://github.com/zellij-org/zellij) | noble, trixie | all |
+| `zen-browser` | [zen-browser](https://zen-browser.app/) | all | all |
+| `zoxide` | [zoxide](https://github.com/ajeetdsouza/zoxide) | noble, trixie | all |
 
 ## Copyright and licensing
 
