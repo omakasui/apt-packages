@@ -1,12 +1,6 @@
 #!/usr/bin/env bash
-# register-package.sh — Download .deb files from a build-apt-packages release,
-# compute hashes, and update index/packages.tsv.
-#
-# Usage:
-#   register-package.sh --pkg <key> --version <ver> --suites "<suite1> <suite2>" \
-#                       [--produces "<pkg1> <pkg2>"] [--repo <owner/repo>]
-#
-# Requires: gh (GitHub CLI), md5sum, sha1sum, sha256sum, GH_TOKEN in environment.
+# register-package.sh — Download .deb assets from a GitHub Release and register them in index/packages.tsv.
+# Usage: register-package.sh --pkg <key> --version <ver> --suites "<s1> <s2>" [--produces "<p1> <p2>"] [--channel stable|dev]
 
 set -euo pipefail
 
@@ -54,7 +48,7 @@ _register_entry() {
 
   control_b64=$(dpkg-deb --field "$deb" | base64 -w0)
 
-  # Remove any existing entry for this suite/arch/name/channel, then append the new one.
+  # Replace any existing entry for this suite/arch/name/channel, then append the new one.
   awk -v s="$suite" -v a="$arch" -v n="$name" -v c="$CHANNEL" \
     '{ chan=(NF>=11)?$11:"stable"; if ($1==s && $2==a && $3==n && chan==c) next; print }' \
     index/packages.tsv > /tmp/packages.tmp || true
@@ -70,7 +64,7 @@ for suite in $SUITES; do
   [[ -z "$distro" ]] && { echo "ERROR: no DISTRO_MAP entry for '${suite}'"; exit 1; }
 
   for produced in $PRODUCED_PKGS; do
-    # Guard: skip if this suite+package is listed in index/freeze.list.
+    # Skip frozen suite+package combinations.
     if grep -qxF "${suite} ${produced}" index/freeze.list 2>/dev/null; then
       echo "SKIP: ${suite}/${produced} is frozen — edit index/freeze.list to release"
       continue
@@ -78,8 +72,7 @@ for suite in $SUITES; do
 
     _is_all=false
 
-    # Try arch:all first (distro-tagged filename, then plain).
-    # Each pattern gets its own tmpdir so the downloaded filename is always known.
+    # Try arch:all first; separate tmpdir per pattern so the downloaded filename is predictable.
     for _pat in \
         "${produced}_${VERSION}_${distro}_all.deb" \
         "${produced}_${VERSION}_all.deb"; do
@@ -96,7 +89,7 @@ for suite in $SUITES; do
     done
     [[ "$_is_all" == "true" ]] && continue
 
-    # Fall back to arch-specific builds.
+    # Fall back to arch-specific assets.
     _arch_found=false
     for arch in amd64 arm64; do
       _tmpdir=$(mktemp -d)

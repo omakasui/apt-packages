@@ -1,14 +1,7 @@
 #!/usr/bin/env bash
 # promote-packages.sh — Promote dev entries to stable in index/packages.tsv.
-#
-# Usage (single package):
-#   promote-packages.sh --pkg <name> [--version <ver>] --suites "<s1> <s2>"
-#
-# Usage (all packages):
-#   promote-packages.sh --all --suites "<s1> <s2>" [--exclude "<p1> <p2>"]
-#
-# Two-pass awk: pass 1 identifies (suite, arch, name) tuples being promoted;
-# pass 2 drops superseded stable entries and rewrites dev entries as stable.
+# Usage: promote-packages.sh --pkg <name> [--version <ver>] --suites "<s1> <s2>"
+#        promote-packages.sh --all --suites "<s1> <s2>" [--exclude "<p1> <p2>"]
 
 set -euo pipefail
 

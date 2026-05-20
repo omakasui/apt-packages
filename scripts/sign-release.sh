@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
-# sign-release.sh — Generate Release, Release.gpg and InRelease for every suite,
-# and export the public GPG key to omakasui.gpg.key.
-#
-# Usage:
-#   sign-release.sh --suites "<suite1> <suite2>" --key-id <fingerprint>
-#   sign-release.sh --suites "<suite1> <suite2>" --key-url <url>
-#
-# Requires: apt-ftparchive, gpg, curl (when --key-url is used)
+# sign-release.sh — Sign Release files for every suite with GPG.
+# Usage: sign-release.sh --suites "<s1> <s2>" --key-id <fingerprint>
+#        sign-release.sh --suites "<s1> <s2>" --key-url <url>
 
 set -euo pipefail
 
@@ -25,7 +20,7 @@ done
 
 [[ -z "$SUITES" ]] && { echo "ERROR: --suites is required"; exit 1; }
 
-# If --key-id not given, derive the fingerprint from the published key URL
+# If --key-id is not given, derive the fingerprint from the published key URL.
 if [[ -z "$KEY_ID" ]]; then
   [[ -z "$KEY_URL" ]] && { echo "ERROR: --key-id or --key-url is required"; exit 1; }
   KEY_ID=$(curl -fsSL "$KEY_URL" \
@@ -57,4 +52,3 @@ for suite in $SUITES; do
   echo "Signed: dists/${suite}/Release"
 done
 
-# Public key is served via keyrings.omakasui.org/omakasui-packages.gpg.key
