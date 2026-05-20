@@ -35,6 +35,7 @@ on:
 env:
   ALL_SUITES: "trixie noble resolute"
   ALL_DEV_SUITES: "trixie-dev noble-dev resolute-dev"
+  ALL_ARCHES: "amd64 arm64"
 
 # Serialize runs so concurrent package-updated events don't overwrite each other.
 concurrency:
@@ -158,7 +159,7 @@ jobs:
           bash scripts/sign-release.sh --suites "$ALL_SUITES $ALL_DEV_SUITES" --key-id "$GPG_KEY_ID"
 
       - name: Update README packages table
-        run: bash scripts/update-readme.sh
+        run: bash scripts/update-readme.sh --suites "$ALL_SUITES" --arches "$ALL_ARCHES"
 
       - name: Build commit message
         id: msg

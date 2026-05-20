@@ -31,6 +31,12 @@ sign: ## Re-sign Release files for all suites (GPG_KEY_ID= or GPG_KEY_URL= optio
 .PHONY: rebuild
 rebuild: index sign ## Regenerate and sign all metadata
 
+.PHONY: readme
+readme: ## Sync README packages table with index/packages.tsv
+	@bash $(SCRIPTS)/update-readme.sh \
+		--suites "$(ALL_SUITES)" \
+		--arches "amd64 arm64"
+
 .PHONY: register
 register: ## Register a package in stable (PKG= VERSION= SUITES= required)
 	$(call _require_pkg)
