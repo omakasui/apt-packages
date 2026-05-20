@@ -119,26 +119,6 @@ MD5sum: ec897213fb78ae927b50a27ece9376ea
 SHA1: 13719354102f34583437d771679b1ce08c706f75
 SHA256: 99e1ff12522820cabe155a64a36a486d53cca89463d5b3c7576c0a761c728eed
 
-Package: tmux
-Version: 3.6a
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1452
-Depends: libc6, libtinfo6 | libncurses6
-Conflicts: tmux
-Replaces: tmux
-Provides: tmux
-Section: admin
-Priority: optional
-Homepage: https://github.com/tmux/tmux
-Description: Terminal multiplexer. Built from source, newer than the distro package. Allows creating multiple terminal sessions within a single window, with persistent sessions that survive disconnections.
- .
-Filename: pool/tmux-3.6a/tmux_3.6a_ubuntu2404_amd64.deb
-Size: 531766
-MD5sum: 4323cf6231622c240982ebde99ccfc61
-SHA1: 885c260ad4f407b184d6607007718bb444568ccd
-SHA256: b9e633408a10aa95b59df7ba4d224228ae8aba96a4547788aaa1c1db66a17d57
-
 Package: zoxide
 Version: 0.9.9
 Architecture: amd64
@@ -1349,4 +1329,24 @@ Size: 98230346
 MD5sum: 35068257846a1b4ed28497264dab50d9
 SHA1: 3cdb4e6101367696bc3b2d047952df33f03e5306
 SHA256: 31e47d1901db0ca04b7eba6839c877cb463b8dee55b7f013082fc6eff7f1ac16
+
+Package: tmux
+Version: 3.6b
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1452
+Depends: libc6, libtinfo6 | libncurses6
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer. Allows creating multiple terminal sessions within a single window, with persistent sessions that survive disconnections.
+ .
+Filename: pool/tmux-3.6b/tmux_3.6b_ubuntu2404_amd64.deb
+Size: 531832
+MD5sum: d6b5937c72e0f36d45504b5731381508
+SHA1: ab5e1dde7024c76aafed95c6e660947987b145c8
+SHA256: 1c6d8ebb12409a944a36a7ded5884621b1ee484cb43b3fdf7b37f52a8b15cc5c
 
