@@ -17,6 +17,26 @@ MD5sum: d5b246a9455fff3a0b0059aee5b1c4b8
 SHA1: 273aae48b6ef450a5fb69eb188424cd5b4e6ac0d
 SHA256: 3f37e6df620e31d74e941ba392a95ba6bd38e5c66ef4ab60104d502368af7075
 
+Package: gh
+Version: 2.92.0
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 39245
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.92.0/gh_2.92.0_ubuntu2604_amd64.deb
+Size: 11248034
+MD5sum: ec5a99c7fd84cca0de4cb19f0c9862e3
+SHA1: 1d1d90bcee4a2ec85ef867dbbfe55b1d8d520a15
+SHA256: c07111048067e3ce23d0c538bae43ba4b56697c2d10d242f2dcfe9b4549c05d2
+
 Package: zen-browser
 Version: 1.19.13b
 Architecture: amd64
