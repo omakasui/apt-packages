@@ -1496,3 +1496,20 @@ MD5sum: b3e4610a7f820399cc1fa17e4b4f4538
 SHA1: 0a86f74bba36e31677a903ef7c7f4aba35ce6373
 SHA256: 7c53a3d8aa2071599580b65787476b51654bea2de7dbf69ee4ada382ffb1ef79
 
+Package: netpala
+Version: 1.3.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7476
+Depends: network-manager
+Section: utils
+Priority: optional
+Homepage: https://github.com/joel-sgc/netpala
+Description: Lightweight terminal NetworkManager wrapper (Impala Go Edition). A TUI for managing WiFi connections via NetworkManager over DBus. Compatible with both wpa_supplicant and iwd backends. Supports WPA-PSK, WPA-SAE, WPA-Enterprise, open networks, VPN connections, and device enable/disable.
+ .
+Filename: pool/netpala-1.3.0/netpala_1.3.0_debian13_amd64.deb
+Size: 3506104
+MD5sum: ed87407239c5e872dbbd84ee8384edee
+SHA1: cfaaa400a64bda4a517361d351b811f70093c660
+SHA256: c7e85cb1a959749cbe3f2e114279de0502a770c430f7b2617fe18300c6f7f477
+

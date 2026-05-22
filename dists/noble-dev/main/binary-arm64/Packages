@@ -1346,3 +1346,20 @@ MD5sum: c058454a84890e5ca39ef3ae6e82f73b
 SHA1: 638ce159234ac47dc8e856cb33b867c9b978f3e3
 SHA256: 59528212d3a09c6d56f8308b833cb4cc8c452b85ae2604afea0a05e5339fcd9d
 
+Package: netpala
+Version: 1.3.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7204
+Depends: network-manager
+Section: utils
+Priority: optional
+Homepage: https://github.com/joel-sgc/netpala
+Description: Lightweight terminal NetworkManager wrapper (Impala Go Edition). A TUI for managing WiFi connections via NetworkManager over DBus. Compatible with both wpa_supplicant and iwd backends. Supports WPA-PSK, WPA-SAE, WPA-Enterprise, open networks, VPN connections, and device enable/disable.
+ .
+Filename: pool/netpala-1.3.0/netpala_1.3.0_ubuntu2404_arm64.deb
+Size: 3228548
+MD5sum: 1f5a359cd71d08282582b863d0c1f8c1
+SHA1: 6c1d59d932b11e817634ecdb09f1a22e77ea340b
+SHA256: c11425a8d0a0e07359e5d1c4f8d809afeca4c7fa787d7280af3eaa61d698a8ca
+
