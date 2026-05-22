@@ -90,22 +90,6 @@ MD5sum: 3376ce93bfd0b6e9d184a9350192fe00
 SHA1: c8a2e8ad35caa7af30bb2e11943269b172164426
 SHA256: c39e96313248564a62383cf40f02778be5d83d6fb5e2aec0d88bdd8364b51158
 
-Package: zed
-Version: 1.3.5
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 380256
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.3.5/zed_1.3.5_ubuntu2604_amd64.deb
-Size: 98871570
-MD5sum: 8854e1a8406d724186fd44960b493570
-SHA1: 028a3fb01f520d49e725ccf779a7e91d019a0a72
-SHA256: 1d4aa91c9c0c3e8f00b29ebbb0ef4d32e6d975fc14d72df6bdbf24f08ed26fcd
-
 Package: glab
 Version: 1.99.0
 Architecture: amd64
@@ -125,4 +109,20 @@ Size: 13784304
 MD5sum: d1f29fcee3d2dc5676fbc6247076d102
 SHA1: c84ee846322d3e4e1b5bc5b1083c8f727e409638
 SHA256: cb7ff0d2e70be7a2a276002846aa1a8decb189b915df95251216e36fb6ca8454
+
+Package: zed
+Version: 1.3.6
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 380384
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.3.6/zed_1.3.6_ubuntu2604_amd64.deb
+Size: 98910098
+MD5sum: 9e8bdcbc71cdf186f442a6473c3206e1
+SHA1: 4f0cd3ef266ab5184fcace9f91e20133592b2978
+SHA256: 490b791d35f405c387a6f4139de7bcd1cf4b8ff1d6be6178eeac58b4e1b4534f
 
