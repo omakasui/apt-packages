@@ -609,25 +609,6 @@ MD5sum: fd5ed9c0805b92542268d15a008dcf60
 SHA1: 1eb251a5a48c1f71f3712c4500155b456de528b1
 SHA256: c5012693be0bc77e1985b5dad41ff08580ea4a8fa7a959eda19550ee14066d78
 
-Package: fzf
-Version: 0.72.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4424
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more. Statically linked binary, replaces the outdated distro package.
- .
-Filename: pool/fzf-0.72.0/fzf_0.72.0_debian13_amd64.deb
-Size: 1555978
-MD5sum: 44c12151127b7da5ef27c971f7098e14
-SHA1: 27256a5afd8798caeb0924d9695bf79106ab6211
-SHA256: b58eecb40d383a4a81d55ce5112d6d2883b284ac27590d36b061c02b9c4ecd97
-
 Package: lazygit
 Version: 0.61.1
 Architecture: amd64
@@ -1512,4 +1493,23 @@ Size: 4896456
 MD5sum: 1b63de84457ba6391901fa0d64e96dc4
 SHA1: 4ba9010222af6acf3f73790a19f3b7053313e2e7
 SHA256: 4a5ced797ce10e74b989ed654212893a0667ac9117ece7ef7700c847413a062b
+
+Package: fzf
+Version: 0.73.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4464
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more.
+ .
+Filename: pool/fzf-0.73.0/fzf_0.73.0_debian13_amd64.deb
+Size: 1567724
+MD5sum: 2ab7b6d2f26bcc340c94e5ae91108c88
+SHA1: 603465c2d6d0d2712cb45f7349e2140691cbf774
+SHA256: 4b567100025f4d3b05a56b6a126d617d049276d470d1db0fcff6f2aaa17a47f1
 
