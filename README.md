@@ -2,7 +2,7 @@
 
 APT repository for [omakasui](https://omakasui.org), served via GitHub Pages at `packages.omakasui.org`.
 
-Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this repo. Binary packages are stored as GitHub Release assets in [build-apt-packages](https://github.com/omakasui/build-apt-packages) and referenced via pool-relative paths in the `Filename` field of the `Packages` index. A Cloudflare Worker on `packages.omakasui.org` redirects `/pool/` requests to those release assets.
+Metadata (`dists/`) and the package index (`index/packages.tsv`) live in this repo. Binary packages are stored as GitHub Release assets in [build-apt-packages](https://github.com/omakasui/build-apt-packages) and referenced via pool-relative paths in the `Filename` field of the `Packages` index. A Cloudflare Worker on `packages.omakasui.org` redirects `/pool/` requests to those release assets. No binaries are stored in this repo.
 
 ## Suites and architectures
 
