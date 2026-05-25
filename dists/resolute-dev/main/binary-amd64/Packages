@@ -1229,25 +1229,6 @@ MD5sum: b5f6d366ea9c42946345c53f7a09a9a3
 SHA1: e5bbca93b779661f35581bd6bdcadcc71ebad0f2
 SHA256: d1b03f85ea54ddd79ffcf8167449af3e88072cc0448bcecc4ce7f4ae12abd6fd
 
-Package: fzf
-Version: 0.73.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4464
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more.
- .
-Filename: pool/fzf-0.73.0/fzf_0.73.0_ubuntu2604_amd64.deb
-Size: 1567666
-MD5sum: ba8e205e56597fb8d1dcafa418176fe6
-SHA1: 54259fbf8805ab6d7d69fba6728f52c0bb26d757
-SHA256: 625bc77756f8591a83fa7d478473d9e5660b46fa349379edf64319cc35ca7edd
-
 Package: cliamp
 Version: 1.54.0
 Architecture: amd64
@@ -1281,4 +1262,23 @@ Size: 99012300
 MD5sum: 681c9174bbdea899bdd367d071077fe0
 SHA1: 72847c76435cccc69208f0a78497863b5265a321
 SHA256: 8084e2a2620325855ca8a5ec7a979c2b41551bba504af0608229fad20b4d5c0b
+
+Package: fzf
+Version: 0.73.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4720
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder. Interactive filter for files, command history, processes, git commits and more.
+ .
+Filename: pool/fzf-0.73.1/fzf_0.73.1_ubuntu2604_amd64.deb
+Size: 1652588
+MD5sum: 985acb3132d5fa883129ead9cf8abf72
+SHA1: 779d9e2dee8c12714c0ad8b7b9909dcd12c2faf5
+SHA256: a79d4eca3fe9580888781be4e3bdbbb09be40a32b8cfd952532e3d89192c88b5
 
