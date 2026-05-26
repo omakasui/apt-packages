@@ -651,26 +651,6 @@ MD5sum: f43e6b8fe78f61c070da752c85541317
 SHA1: 934e8af96249079cd1b1f41796a47cee81a0dffa
 SHA256: d1dcb6a55d1efe7bd7366a651004a9fc9d96c533a718cf7ba30a094da14e37bf
 
-Package: libgtk4-layer-shell0
-Version: 1.1.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 260
-Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
-Conflicts: gtk4-layer-shell, libgtk4-layer-shell-dev
-Replaces: gtk4-layer-shell, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
-Provides: gtk4-layer-shell, gir1.2-gtk4layershell-1.0
-Section: libs
-Priority: optional
-Homepage: https://github.com/wmww/gtk4-layer-shell
-Description: GTK4 Layer Shell - library for the Wayland Layer Shell protocol with GTK4. Provides libgtk4-layer-shell.so and GObject Introspection typelib. Required by GJS/GTK4 apps that use the Layer Shell protocol (e.g. omakasui-aether).
- .
-Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0_ubuntu2404_amd64.deb
-Size: 39560
-MD5sum: 8802b59ebeabc0a8a34761a94d136dd0
-SHA1: 2ffcf0513eb093a29853bea0b5cd4d1bd83d63a8
-SHA256: 0d4192dedbe4da0629429795451ef829551374550922ecda4f0c700d56a26e7e
-
 Package: elephant
 Version: 2.21.0
 Architecture: amd64
@@ -1383,4 +1363,24 @@ Size: 99149332
 MD5sum: 0efb16e73cfdf67679fa538ae3d7443d
 SHA1: b31beb875de4cc99795a952d2ec73fd02c93b844
 SHA256: 99e8ccc92535b3a1b61304def9239edd947c5aa595536ceb11610b150b2e3b0e
+
+Package: libgtk4-layer-shell0
+Version: 1.1.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 260
+Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
+Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
+Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: GTK4 Layer Shell - library for the Wayland Layer Shell protocol with GTK4. Provides libgtk4-layer-shell.so and GObject Introspection typelib. Required by GJS/GTK4 apps that use the Layer Shell protocol (e.g. omakasui-aether).
+ .
+Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0_ubuntu2404_amd64.deb
+Size: 39556
+MD5sum: 07938d6abfa5a8f7b5a729eb5c624b5f
+SHA1: 920fcdc7255becaa60fe73b6d9fdd7b8727012ef
+SHA256: d4ef90927bca02b9dc2904c54c290ed3fdf7d6b45633aa6b527f907ff7ce1181
 
