@@ -1445,21 +1445,6 @@ MD5sum: ed87407239c5e872dbbd84ee8384edee
 SHA1: cfaaa400a64bda4a517361d351b811f70093c660
 SHA256: c7e85cb1a959749cbe3f2e114279de0502a770c430f7b2617fe18300c6f7f477
 
-Package: aether
-Version: 4.19.1
-Architecture: amd64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.19.1/aether_4.19.1_debian13_amd64.deb
-Size: 4896456
-MD5sum: 1b63de84457ba6391901fa0d64e96dc4
-SHA1: 4ba9010222af6acf3f73790a19f3b7053313e2e7
-SHA256: 4a5ced797ce10e74b989ed654212893a0667ac9117ece7ef7700c847413a062b
-
 Package: cliamp
 Version: 1.54.0
 Architecture: amd64
@@ -1512,4 +1497,19 @@ Size: 1652624
 MD5sum: d55f38bee3a97e9dc8232fe8bf518ff0
 SHA1: 4f1ae6bf6dbf1ca46cf0abd8b737e6dbb3736043
 SHA256: 7b19931ea837cb21dd8373a9b3a45292c61512dc0f2e0219700179163b75f084
+
+Package: aether
+Version: 4.21.0
+Architecture: amd64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.21.0/aether_4.21.0_debian13_amd64.deb
+Size: 4908444
+MD5sum: fd2fb59acb372f21cfe5004a8cb155cd
+SHA1: d2fa6dadc5e6ed41f5a228a06544a17aa601f879
+SHA256: b26e3b1eff908a787a2d0d71aa60edb5721356218efbd496878f5c95b371fdfb
 
