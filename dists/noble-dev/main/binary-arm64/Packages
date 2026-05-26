@@ -1262,22 +1262,6 @@ MD5sum: 169916e6f0f48efccc14881906d87085
 SHA1: f56a03c68799ba1b12de900c2c49b506cf75decf
 SHA256: 07b39a67e2043703601520d0d239e5fef795a745a826464dbaa8312a9ed25216
 
-Package: zed
-Version: 1.3.6
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 365044
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.3.6/zed_1.3.6_ubuntu2404_arm64.deb
-Size: 95510548
-MD5sum: c058454a84890e5ca39ef3ae6e82f73b
-SHA1: 638ce159234ac47dc8e856cb33b867c9b978f3e3
-SHA256: 59528212d3a09c6d56f8308b833cb4cc8c452b85ae2604afea0a05e5339fcd9d
-
 Package: netpala
 Version: 1.3.0
 Architecture: arm64
@@ -1362,4 +1346,20 @@ Size: 4816874
 MD5sum: 02d844a93619ff3815dfb01cf82448fc
 SHA1: c684c79e1f67ceedf256513e53e1947a292822b9
 SHA256: a1f5427cfd9ca51741bb29b02d945ade36d11248aec6b8f47bf3a706428d1528
+
+Package: zed
+Version: 1.3.7
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 365044
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.3.7/zed_1.3.7_ubuntu2404_arm64.deb
+Size: 95584866
+MD5sum: b43d77f31d9db1aab37bb6897ec9fdee
+SHA1: 8622f58f308360dd989a4554745366d8bc3a21b2
+SHA256: 3c3ee95108899e751a91806c9d16be725895c440bb6d5db915221d5ae05bd88c
 
