@@ -1087,25 +1087,6 @@ MD5sum: 4406fabcfd8317a15ecdad5cd2431194
 SHA1: 85f35237f3faff5011f4c60ec0d83ddfa750df1a
 SHA256: cf7fa723025ed39b85a58857aa54f86e3245c9705a8edf917bac1cc1ca7223bb
 
-Package: glab
-Version: 1.99.0
-Architecture: arm64
-Section: 
-Priority: optional
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 46202
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.99.0/glab_1.99.0_ubuntu2604_arm64.deb
-Size: 12520296
-MD5sum: 544b2a3828ea9c998edac8c7b65364d0
-SHA1: 95e55dc30c6873a4ef07455f40acf9d8b80d25da
-SHA256: de16c8026ac7af2c3d6cfabe68fc9e59bb2c1d250cc483500bef9403d644eae4
-
 Package: python3-terminaltexteffects
 Version: 0.15.0
 Architecture: all
@@ -1260,4 +1241,23 @@ Size: 4814560
 MD5sum: a1fe08b0aed06b4f0c7b97e17cc6288d
 SHA1: 2243503de453d8006ba22cc372f26e726b7ca632
 SHA256: a44a140a8d36cedd8730de063671d842a818234f5dd020d4f3b9c0f24bf977c6
+
+Package: glab
+Version: 1.100.0
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 47107
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.100.0/glab_1.100.0_ubuntu2604_arm64.deb
+Size: 12761434
+MD5sum: 5ca82bc250a714ad1ee2ac1296901cd4
+SHA1: 954bbf1e29a2b82787219c4e68ecfb9085b3d100
+SHA256: 864c69f3759b95ac3bbd62b64bd93f622b9a8fe075bf2c104332de4e45e94b96
 

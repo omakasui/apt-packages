@@ -53,25 +53,6 @@ MD5sum: 4406fabcfd8317a15ecdad5cd2431194
 SHA1: 85f35237f3faff5011f4c60ec0d83ddfa750df1a
 SHA256: cf7fa723025ed39b85a58857aa54f86e3245c9705a8edf917bac1cc1ca7223bb
 
-Package: glab
-Version: 1.99.0
-Architecture: arm64
-Section: 
-Priority: optional
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 46202
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.99.0/glab_1.99.0_ubuntu2604_arm64.deb
-Size: 12520296
-MD5sum: 544b2a3828ea9c998edac8c7b65364d0
-SHA1: 95e55dc30c6873a4ef07455f40acf9d8b80d25da
-SHA256: de16c8026ac7af2c3d6cfabe68fc9e59bb2c1d250cc483500bef9403d644eae4
-
 Package: zen-browser
 Version: 1.20b
 Architecture: arm64
@@ -104,4 +85,23 @@ Size: 95196110
 MD5sum: 24c9eb9ca08faa5db3d3478dd4c3161a
 SHA1: 428640572ca5dabb0c9fcb8d1aad18f2395a0cf9
 SHA256: 25f00fc12a723abfecd3c81d78f8ba77cd08b1df1b282fd2d3bdeecf063645f8
+
+Package: glab
+Version: 1.100.0
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 47107
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.100.0/glab_1.100.0_ubuntu2604_arm64.deb
+Size: 12761434
+MD5sum: 5ca82bc250a714ad1ee2ac1296901cd4
+SHA1: 954bbf1e29a2b82787219c4e68ecfb9085b3d100
+SHA256: 864c69f3759b95ac3bbd62b64bd93f622b9a8fe075bf2c104332de4e45e94b96
 
