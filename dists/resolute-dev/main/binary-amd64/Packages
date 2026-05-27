@@ -1107,6 +1107,26 @@ MD5sum: 3376ce93bfd0b6e9d184a9350192fe00
 SHA1: c8a2e8ad35caa7af30bb2e11943269b172164426
 SHA256: c39e96313248564a62383cf40f02778be5d83d6fb5e2aec0d88bdd8364b51158
 
+Package: glab
+Version: 1.99.0
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 49058
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.99.0/glab_1.99.0_ubuntu2604_amd64.deb
+Size: 13784304
+MD5sum: d1f29fcee3d2dc5676fbc6247076d102
+SHA1: c84ee846322d3e4e1b5bc5b1083c8f727e409638
+SHA256: cb7ff0d2e70be7a2a276002846aa1a8decb189b915df95251216e36fb6ca8454
+
 Package: python3-terminaltexteffects
 Version: 0.15.0
 Architecture: all
@@ -1140,23 +1160,6 @@ Size: 3506078
 MD5sum: f966021568068f05e3971032e5f1668d
 SHA1: 1742a1374d6fbf99f0a2791488a6c7b1911d56f1
 SHA256: c841149f81f752fc442c34c256b502a605ce28398f8d4814cc86f85bd766c749
-
-Package: cliamp
-Version: 1.54.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 32340
-Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
-Section: sound
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
- .
-Filename: pool/cliamp-1.54.0/cliamp_1.54.0_ubuntu2604_amd64.deb
-Size: 9410192
-MD5sum: 4a17f4c9c2541432ecc57de9d5badee2
-SHA1: 0503ea946db43f743e6ca23197277db3c37da4fd
-SHA256: c912fa3292efe461afd2e0bd0ad59f50e616f4484974a006cfca03938e16cc7a
 
 Package: zen-browser
 Version: 1.20b
@@ -1262,23 +1265,20 @@ MD5sum: f9f9b871acd9a6630f69a937379dd778
 SHA1: 2abbf09a8eb75c3c9723b1a01f70f7a6ac577875
 SHA256: ea3ae5c449dd864881846864b561be4599f121a7766869d0ef334137ca9e4869
 
-Package: glab
-Version: 1.100.0
+Package: cliamp
+Version: 1.55.0
 Architecture: amd64
-Section: 
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 32348
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
 Priority: optional
-Architecture-Variant: amd64v1
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 50043
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.100.0/glab_1.100.0_ubuntu2604_amd64.deb
-Size: 14074940
-MD5sum: e34b8a881247a2d017cf742d13919a08
-SHA1: aaa4cf92efbb31f61ff32fe81bd1fef81b4aa5d9
-SHA256: 3720235e9571fccc5e0ef2f9a91db29ff7480403f3155311d27ff8a67010247e
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.55.0/cliamp_1.55.0_ubuntu2604_amd64.deb
+Size: 9416486
+MD5sum: 273a3117c1b5cc636a892d20add491a5
+SHA1: 5dbd4f9608707d2bd21d16a9f779912f9323ca57
+SHA256: efa150ecb4cc84e568fa46a2c4096228333e4fcf73cecd38d0df7aba741b2c7a
 
