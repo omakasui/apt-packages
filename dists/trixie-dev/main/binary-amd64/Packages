@@ -711,26 +711,6 @@ MD5sum: 42fb0f71497c2ea5617973a9cfb2a81b
 SHA1: 8e7f0ec3b0ae47e715a2d453692a594cb4be6eda
 SHA256: 12906072b7d59f1abe47a268cbbd80e47ed75a0d8b51b269cb1eb20b1505b105
 
-Package: gh
-Version: 2.92.0
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: GitHub
-Installed-Size: 39245
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.92.0/gh_2.92.0_debian13_amd64.deb
-Size: 10359316
-MD5sum: 5c0e2975c356f526a6c71d4fcc85afbc
-SHA1: 130747424287ff8863eb431c9f44e34d6fdc23ff
-SHA256: ca90476783f7193730012734ba93ecd123e81730f050a08e1828608c613a5fb3
-
 Package: zellij
 Version: 0.44.2
 Architecture: amd64
@@ -1338,26 +1318,6 @@ MD5sum: 7a5ae7fc5d5668c10344b5e8bd22f580
 SHA1: d1d670360f0519540a945e86bbf1341608becc2c
 SHA256: 59e8601f2bad50fe38fd5ef109bd739ca8cabb5235f7aa8b7dd63b1cbfbcfb61
 
-Package: glab
-Version: 1.99.0
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 49058
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.99.0/glab_1.99.0_debian13_amd64.deb
-Size: 12638268
-MD5sum: 57f5c335bb76411ce4c7ba210e6f9de1
-SHA1: 2e7dd9a4ece567994e53b7d9cc8bc9799dab77eb
-SHA256: 58cdcf7b45968437aa4c6a6c6d3a676f8d905511e1135007d6048a002434830a
-
 Package: python3-terminaltexteffects
 Version: 0.15.0
 Architecture: all
@@ -1391,6 +1351,23 @@ Size: 3506104
 MD5sum: ed87407239c5e872dbbd84ee8384edee
 SHA1: cfaaa400a64bda4a517361d351b811f70093c660
 SHA256: c7e85cb1a959749cbe3f2e114279de0502a770c430f7b2617fe18300c6f7f477
+
+Package: cliamp
+Version: 1.54.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 32340
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.54.0/cliamp_1.54.0_debian13_amd64.deb
+Size: 9410036
+MD5sum: fa50b685ac12f32d7f59a8594c031b23
+SHA1: 0340554715116566bb699fcb8c3d6d1691ba7809
+SHA256: 133c46931ad41a43b529c98889d3b48112be6409a2dfac1fdb1314898bf589a6
 
 Package: zen-browser
 Version: 1.20b
@@ -1496,20 +1473,43 @@ MD5sum: b72ac447459d8bfdf50c788733265b3a
 SHA1: cbff94bf566441bd4d02c3adf85998f687edbd73
 SHA256: 99e8c6d739f103ca78237f11b2256e61040dfafcb934b5449a1d0ae8a8a5ae77
 
-Package: cliamp
-Version: 1.55.0
+Package: glab
+Version: 1.100.0
 Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 32348
-Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
-Section: sound
+Section: 
 Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
- .
-Filename: pool/cliamp-1.55.0/cliamp_1.55.0_debian13_amd64.deb
-Size: 9416362
-MD5sum: 36520a8f7d707354862013b7a06724fa
-SHA1: 54f7a03365b48c7c9e7b86d577fff239c4cedd18
-SHA256: 2da8217727fa664d50087309b40b6338c3ccebff9041d4c2cc91337e02b67f27
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 50043
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.100.0/glab_1.100.0_debian13_amd64.deb
+Size: 12896936
+MD5sum: 0234d332559dedf4567f5e1dbf63a7e2
+SHA1: f96cb0d1ca8dccb0d1b439e9ea06c24a2fffd74f
+SHA256: f7ba66fc51a18e0f393acc46fb5dab255906283dde00a208450cc8be25a7ae79
+
+Package: gh
+Version: 2.93.0
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 39337
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.93.0/gh_2.93.0_debian13_amd64.deb
+Size: 10431880
+MD5sum: de1d32df78accff06297782a5337bf21
+SHA1: 35b393fee7a42be04301060299e57ebd5ffee875
+SHA256: 8c392758b79b589e3a1868072f78609715243c33f530cbccae6e592c8087fce4
 
