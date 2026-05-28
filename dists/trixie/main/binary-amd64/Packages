@@ -1300,23 +1300,6 @@ MD5sum: 7a5ae7fc5d5668c10344b5e8bd22f580
 SHA1: d1d670360f0519540a945e86bbf1341608becc2c
 SHA256: 59e8601f2bad50fe38fd5ef109bd739ca8cabb5235f7aa8b7dd63b1cbfbcfb61
 
-Package: zen-browser
-Version: 1.20b
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 366532
-Section: web
-Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.20b/zen-browser_1.20b_debian13_amd64.deb
-Size: 93195200
-MD5sum: 6d2ad9ba2c93a6512421aabf8c24793f
-SHA1: 40a9abc2cc2238aeabc8e45232d472696f24b414
-SHA256: 465e2e14f3d3869cb4d8fc7c2da62c1ff6dbd4e3fe7225cd74d844686968abeb
-
 Package: glab
 Version: 1.100.0
 Architecture: amd64
@@ -1372,4 +1355,21 @@ Size: 93824256
 MD5sum: 7457ec7f9bf90d00526db62370e8f3ae
 SHA1: 83f9a330f3500d1330476b56876981f3fcff243d
 SHA256: ed1b3c12671a7afe89117b6c7866ff04cfb0a6cf3aa72848d3bde927c005c644
+
+Package: zen-browser
+Version: 1.20.1b
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 366948
+Section: web
+Priority: optional
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.20.1b/zen-browser_1.20.1b_debian13_amd64.deb
+Size: 93302604
+MD5sum: fc4c6724d699067e06ed06a9e5671dcf
+SHA1: 8740feada78ddc0c67f2d71eebde962a2fe823bc
+SHA256: fcc64f0d3a04cc6ec4ba6b69e75a8a3299bf1ad9db1c2328275ceb319ed8a428
 

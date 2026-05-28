@@ -1220,23 +1220,6 @@ MD5sum: 098a92ccc8520e0ddfe4ef9443a44031
 SHA1: f3248b1ae88add054b515ab1df2871ff02120c90
 SHA256: 2a29df01f13323be541a55fca29718168b630c05e6ac8fa92fc3829864cca2b0
 
-Package: zen-browser
-Version: 1.20b
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 329824
-Section: web
-Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.20b/zen-browser_1.20b_ubuntu2404_arm64.deb
-Size: 86298218
-MD5sum: aad7c7a7d9381c2ee928e55ebe1828cb
-SHA1: 34cd7f0c11d6da8f497c63dbb77bacc6ee3f70a2
-SHA256: c7ce9b0167034bf80a6fdae6ed193d25326f60eb47032a7c5676d669c5ad76b3
-
 Package: fzf
 Version: 0.73.1
 Architecture: arm64
@@ -1362,4 +1345,21 @@ Size: 96642456
 MD5sum: 88229dd26120bd4f465939899eecb83e
 SHA1: ab316d8962a92caf5340464a11188ec4e10cc34f
 SHA256: 258cbaa1b76d617c3325b6798e56de21b2b78cc1f7e42f6ae6e2df152b4298c9
+
+Package: zen-browser
+Version: 1.20.1b
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 330208
+Section: web
+Priority: optional
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.20.1b/zen-browser_1.20.1b_ubuntu2404_arm64.deb
+Size: 86455382
+MD5sum: f0d2802e2aa9339c9e5f52535169e404
+SHA1: 2166b8f9aef8f54a01607e9987d516f8c835614c
+SHA256: a17770a24a7a55c563d78543f59e6a62f65d6e0916a40795edb4cc5f8c8b3ab7
 
