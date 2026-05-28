@@ -1226,25 +1226,6 @@ MD5sum: e9c13a5575b947828efd3ecdd1c8c4f6
 SHA1: a7ef5cb67fd506fce469cd7880a0b2196a6d5488
 SHA256: dfb92048d8afa2a7a314f03641f68998739307be3894be4a933e939eb8f1e334
 
-Package: kitty
-Version: 0.47.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 111612
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator
- Self-contained bundle installed to /opt/kitty.
-Filename: pool/kitty-0.47.0/kitty_0.47.0_debian13_amd64.deb
-Size: 32571840
-MD5sum: 389fb498fb28ef8b6413e6468a9b408b
-SHA1: fdc6f98418d6c1f5605fb47874fb2085c8d8fc1d
-SHA256: 01e9f1868e62765b8b2e6c1fc65c3f742be22fb5eee85ec5e39501f88fbac25c
-
 Package: wooz
 Version: 0.1.0
 Architecture: amd64
@@ -1512,4 +1493,23 @@ Size: 5446438
 MD5sum: 07b25e44bc8523959fd3c586ddf469a9
 SHA1: bb73b14f2297862a1a67eece22f54e1a7258323a
 SHA256: 2114085a8ad9644de97e7f6caf8e654576f8c4d75b8f92beb99f0659a2eedf5c
+
+Package: kitty
+Version: 0.47.1
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 111664
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator
+ Self-contained bundle installed to /opt/kitty.
+Filename: pool/kitty-0.47.1/kitty_0.47.1_debian13_amd64.deb
+Size: 32584304
+MD5sum: 02484d65f03c0cffca72e13384d2d19e
+SHA1: aedc2916563db47d33dd6dee01b047f8fb35405a
+SHA256: 7336e31b544fcd005482df564d02341c298397acc50f426d94d31ce36350e558
 
