@@ -1135,22 +1135,6 @@ MD5sum: 399de59f75021de01eb02891d1ffefcc
 SHA1: 4c1988849f24145e3cf62d79b4da0436eea3dfa7
 SHA256: 2d350de18d94f1bb9804713517e8e1c9c59aabd2eb806b15f1730eac785ef452
 
-Package: bitwarden-cli
-Version: 2026.4.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 131152
-Section: utils
-Priority: optional
-Homepage: https://bitwarden.com/help/cli/
-Description: Bitwarden CLI — command-line interface for Bitwarden password manager.
- .
-Filename: pool/bitwarden-cli-2026.4.2/bitwarden-cli_2026.4.2_ubuntu2404_arm64.deb
-Size: 30505990
-MD5sum: ca6b9a60c3181dfbbfff9eb965e26054
-SHA1: 84ed1e4be867ed610e0afc66bc290176be472595
-SHA256: f6ecc3ae206463d1f739f53be14212d1134f5763cc4df24dd0d42eae6aa43223
-
 Package: glab
 Version: 1.100.0
 Architecture: arm64
@@ -1222,4 +1206,20 @@ Size: 96594028
 MD5sum: 0fd795bd736efe653e36791aec843575
 SHA1: 8575f5a7a3ac059bb2e5b3c726392ce2eedba82d
 SHA256: 9c9a289d08d837203b48fe8109698fcfc31a9f55294fbb3a110c78f3efa56fba
+
+Package: bitwarden-cli
+Version: 2026.5.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 132316
+Section: utils
+Priority: optional
+Homepage: https://bitwarden.com/help/cli/
+Description: Bitwarden CLI — command-line interface for Bitwarden password manager.
+ .
+Filename: pool/bitwarden-cli-2026.5.0/bitwarden-cli_2026.5.0_ubuntu2404_arm64.deb
+Size: 30752304
+MD5sum: 06c120df8f1b4d25a452285a4b7a63d1
+SHA1: 7e008b8ecd224e24614f7fd8a18f8516d1e30700
+SHA256: d0498175142d233621ef6bfce1ab1901b45dfd415432e7217ecd10d99824eea3
 

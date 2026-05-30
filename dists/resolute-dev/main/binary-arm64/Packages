@@ -1032,22 +1032,6 @@ MD5sum: cbc499901ea99b24a1079144be7e9200
 SHA1: f025237eb5e15a6c26d77c624a5295eab883a9df
 SHA256: 041adc6376e557824472c964d2f9c499a1b60257b904a71cb7e4dea47f9d3955
 
-Package: bitwarden-cli
-Version: 2026.4.2
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 131152
-Section: utils
-Priority: optional
-Homepage: https://bitwarden.com/help/cli/
-Description: Bitwarden CLI — command-line interface for Bitwarden password manager.
- .
-Filename: pool/bitwarden-cli-2026.4.2/bitwarden-cli_2026.4.2_ubuntu2604_arm64.deb
-Size: 30505990
-MD5sum: 4406fabcfd8317a15ecdad5cd2431194
-SHA1: 85f35237f3faff5011f4c60ec0d83ddfa750df1a
-SHA256: cf7fa723025ed39b85a58857aa54f86e3245c9705a8edf917bac1cc1ca7223bb
-
 Package: python3-terminaltexteffects
 Version: 0.15.0
 Architecture: all
@@ -1137,6 +1121,21 @@ Size: 39382
 MD5sum: 15ff99ead4dcbed796224f6dd430f70c
 SHA1: e5d9eb656c26a82a437ffd970dde476fdd1e6564
 SHA256: 4fbed5bcca9f30f5548db33183d2a7fef74751e4f846de046be5689a26757b2d
+
+Package: aether
+Version: 4.22.0
+Architecture: arm64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.22.0/aether_4.22.0_ubuntu2604_arm64.deb
+Size: 4814560
+MD5sum: a1fe08b0aed06b4f0c7b97e17cc6288d
+SHA1: 2243503de453d8006ba22cc372f26e726b7ca632
+SHA256: a44a140a8d36cedd8730de063671d842a818234f5dd020d4f3b9c0f24bf977c6
 
 Package: glab
 Version: 1.100.0
@@ -1246,18 +1245,19 @@ MD5sum: a14b0b68a7a7b70270254082bd9245a9
 SHA1: 44032ad3911a9ca583e8eda3cf82bb03c24bcbc3
 SHA256: 90c364583ecabb5bd2e7e7f73e734ed9d9b544a81cc12e71fe927c852d732726
 
-Package: aether
-Version: 4.25.0
+Package: bitwarden-cli
+Version: 2026.5.0
 Architecture: arm64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.25.0/aether_4.25.0_ubuntu2604_arm64.deb
-Size: 4841420
-MD5sum: c55e1d5dfc18eeb5f63aa8b56feb72e4
-SHA1: d5175d1e4b7eeb3620684f62d51b2fd6b4a47c10
-SHA256: 5c5e3de7c929887ae740376d5f1a94741c82e8dbf6e4dd12a019361851137573
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 132316
+Section: utils
+Priority: optional
+Homepage: https://bitwarden.com/help/cli/
+Description: Bitwarden CLI — command-line interface for Bitwarden password manager.
+ .
+Filename: pool/bitwarden-cli-2026.5.0/bitwarden-cli_2026.5.0_ubuntu2604_arm64.deb
+Size: 30752304
+MD5sum: 06c120df8f1b4d25a452285a4b7a63d1
+SHA1: 7e008b8ecd224e24614f7fd8a18f8516d1e30700
+SHA256: d0498175142d233621ef6bfce1ab1901b45dfd415432e7217ecd10d99824eea3
 
