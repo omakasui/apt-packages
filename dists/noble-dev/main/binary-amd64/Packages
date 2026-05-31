@@ -1078,25 +1078,6 @@ MD5sum: 7f67945371251227b94ca0da71f3a635
 SHA1: b053c5bf229b26e1be6bb3baabb76749d5480bb8
 SHA256: 9608030c2663ce78427f20daac4226047165acd11f42756795a44e3466a69125
 
-Package: dbeaver-ce
-Version: 26.0.5
-Architecture: amd64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 206100
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.0.5/dbeaver-ce_26.0.5_ubuntu2404_amd64.deb
-Size: 113215234
-MD5sum: 646567c23476c52a582c722af23a9862
-SHA1: b93f3ec36aa5e837a19b527b885ee5dac2c8048b
-SHA256: 3197b077df82f2e0184a5bb3ba28851588aca8fec34639631a7f4296d02c4fc0
-
 Package: wooz
 Version: 0.1.0
 Architecture: amd64
@@ -1383,4 +1364,23 @@ Size: 9422316
 MD5sum: 154c1ea9a1985b3641507af7157cd94d
 SHA1: 15e5eb10859d68ce86f8ab3a51eb1810df5a409b
 SHA256: ffb16602582eab61aaa397f5f48bdaa8734ef5e5dad23cbaba1142eb8c3bd204
+
+Package: dbeaver-ce
+Version: 26.1.0
+Architecture: amd64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 206103
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.1.0/dbeaver-ce_26.1.0_ubuntu2404_amd64.deb
+Size: 113257296
+MD5sum: 4bed3253768e3c2e96289bab525648d5
+SHA1: bf514d1a772569589cbcc3e6a0754a5743ffc78b
+SHA256: d8dd02d36eacbb2229340df495c045787e016359f7b1bd0a2867089d85371f7d
 

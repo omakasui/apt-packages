@@ -1245,25 +1245,6 @@ MD5sum: 6107e7e1f58ddd8d6e3c0fbc0702fac3
 SHA1: ea416d2e0b3282f9150ece2809626579db10f0f6
 SHA256: f2dacd81c77a85702ceffd5b72d8b7c66bd658efaaf5581bb5ad4be81e750da8
 
-Package: dbeaver-ce
-Version: 26.0.4
-Architecture: arm64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 206485
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.0.4/dbeaver-ce_26.0.4_debian13_arm64.deb
-Size: 110122072
-MD5sum: 83c75edacb33af10265d7703d5ca98f4
-SHA1: 0d5efca05093c83d9091203e00bd033d875cf881
-SHA256: d1b88c3c15df6b7867d8d6200aa7b037d7611c0714b44c0acca77308ec43b4ad
-
 Package: glab
 Version: 1.100.0
 Architecture: arm64
@@ -1351,4 +1332,23 @@ Size: 30752292
 MD5sum: 09eff820bf5ada0124715171a0df7a93
 SHA1: ba57e7331bccb9515bbf65b2a728386530e27efa
 SHA256: 069ac0563fbc917d2ae6827b99dcb27b1ac6ab8316592b24e03e124b429fc1ea
+
+Package: dbeaver-ce
+Version: 26.1.0
+Architecture: arm64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 206586
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.1.0/dbeaver-ce_26.1.0_debian13_arm64.deb
+Size: 110240340
+MD5sum: c7205fcf4114a1274184b93fb56292b8
+SHA1: 37d55665a7389c42ec6783a04998ffb72c5f43ab
+SHA256: 052077406b1cdc657d29c65202e69e968396757aa28a71b8d5f6c9d590f3cf73
 
