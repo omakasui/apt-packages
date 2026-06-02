@@ -1265,26 +1265,6 @@ MD5sum: deca63b56bb73bc7a518a2993e802d3f
 SHA1: a16b1481c9facd4a91e4789bf2dd4ab6d07c9ffb
 SHA256: 747908e7a011bd7e935b0c21ee0796109774d66417b5d84c6ef9590ba10e08d4
 
-Package: glab
-Version: 1.100.0
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 50043
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.100.0/glab_1.100.0_debian13_amd64.deb
-Size: 12896936
-MD5sum: 0234d332559dedf4567f5e1dbf63a7e2
-SHA1: f96cb0d1ca8dccb0d1b439e9ea06c24a2fffd74f
-SHA256: f7ba66fc51a18e0f393acc46fb5dab255906283dde00a208450cc8be25a7ae79
-
 Package: gh
 Version: 2.93.0
 Architecture: amd64
@@ -1372,4 +1352,24 @@ Size: 111379988
 MD5sum: ecb140434525dd35016ead1df5bc3b69
 SHA1: b6cb83ed2d69c713f244aef59475dce14fe67b8b
 SHA256: 53690b49e34289cf81f7ee62962cbda27b8d1f9074a5adf4d7c2c6135e58c3d4
+
+Package: glab
+Version: 1.101.0
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 50117
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.101.0/glab_1.101.0_debian13_amd64.deb
+Size: 12911772
+MD5sum: 2c99ee369974144acad3a1bb1ec76a8f
+SHA1: 1df4feba8f3af3a098e03735f2ac15a8edba995a
+SHA256: ccf22d34f194de80e584bd414783e49266cb9bd9f62bc888d08b2abd726129fd
 
