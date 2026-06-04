@@ -1357,23 +1357,6 @@ MD5sum: fc4c6724d699067e06ed06a9e5671dcf
 SHA1: 8740feada78ddc0c67f2d71eebde962a2fe823bc
 SHA256: fcc64f0d3a04cc6ec4ba6b69e75a8a3299bf1ad9db1c2328275ceb319ed8a428
 
-Package: lazygit
-Version: 0.62.1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 18632
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Lazygit - a simple terminal UI for git commands. Provides a keyboard-driven git interface inside any terminal.
- .
-Filename: pool/lazygit-0.62.1/lazygit_0.62.1_debian13_amd64.deb
-Size: 5446438
-MD5sum: 07b25e44bc8523959fd3c586ddf469a9
-SHA1: bb73b14f2297862a1a67eece22f54e1a7258323a
-SHA256: 2114085a8ad9644de97e7f6caf8e654576f8c4d75b8f92beb99f0659a2eedf5c
-
 Package: kitty
 Version: 0.47.1
 Architecture: amd64
@@ -1512,4 +1495,21 @@ Size: 4955636
 MD5sum: 846257c46cd3e1637376c76eed69b5ca
 SHA1: 76eb67420f183bb518fcb4c0350e09b7d97824ad
 SHA256: edee97f648d8d6ae6ece22c459cb69d565028ccc31a18fe2c429096d9baa72cb
+
+Package: lazygit
+Version: 0.62.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 18632
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Lazygit - a simple terminal UI for git commands. Provides a keyboard-driven git interface inside any terminal.
+ .
+Filename: pool/lazygit-0.62.2/lazygit_0.62.2_debian13_amd64.deb
+Size: 5446254
+MD5sum: 2b38aeb7b52adf7a4144a1512844824a
+SHA1: 3e49f1e32f2170dcafc3fb068cfcbc9302fe5e44
+SHA256: 57a67e3e959230c6da539637afd874bf29c5a837f4c7ee9e6a523d6041f61bbf
 
