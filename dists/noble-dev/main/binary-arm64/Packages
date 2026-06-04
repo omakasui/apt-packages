@@ -1226,23 +1226,6 @@ MD5sum: 06c120df8f1b4d25a452285a4b7a63d1
 SHA1: 7e008b8ecd224e24614f7fd8a18f8516d1e30700
 SHA256: d0498175142d233621ef6bfce1ab1901b45dfd415432e7217ecd10d99824eea3
 
-Package: cliamp
-Version: 1.56.0
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 30452
-Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
-Section: sound
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
- .
-Filename: pool/cliamp-1.56.0/cliamp_1.56.0_ubuntu2404_arm64.deb
-Size: 8460914
-MD5sum: a11309478bd1888ccc2926ff24a78f44
-SHA1: d0c863c1d2b5b2272995a8a057a13e0903bfc789
-SHA256: a593db46e90efb2dc6b81a4bd11ccc39bf9af28c8f14d56d014040bee0ead64d
-
 Package: dbeaver-ce
 Version: 26.1.0
 Architecture: arm64
@@ -1362,4 +1345,21 @@ Size: 86497192
 MD5sum: 9643459a671314d2b00207297919df50
 SHA1: 627600623de901923c87eb61381df10a26c1e6a0
 SHA256: c41c760abced66caa6b6dbd8d1a84bf95d704bf52fe14569cacfb818121d7cf9
+
+Package: cliamp
+Version: 1.57.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 30452
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.57.0/cliamp_1.57.0_ubuntu2404_arm64.deb
+Size: 8461674
+MD5sum: 3a9c2146b3fac2548807daefaa903064
+SHA1: e10083dd62051a175f3b0f57b4668e269a77df00
+SHA256: af8ba1d0b6141fe0fbb80c75789e75087b718b76ac91c2d7eff3a0b47709c4d6
 
