@@ -1199,21 +1199,6 @@ MD5sum: 38f6189a4507d2bedc3750d38451bbed
 SHA1: f765b7b109292f5abab6345a38da75bac7b9e48f
 SHA256: 9b1548dd7789115574d91dedaba67421c2b7e9eabbb4b5c0be12983d00a170e4
 
-Package: aether
-Version: 4.27.0
-Architecture: amd64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.27.0/aether_4.27.0_ubuntu2604_amd64.deb
-Size: 5305764
-MD5sum: f96828d35b4bb745308cdc12913d7490
-SHA1: baf13e38f4f5b54b54e1da8651bfca0020230791
-SHA256: 301647a4206435d19e4eb85ddf574dbc854209a66b690e9c21796f27246a4d0c
-
 Package: lazygit
 Version: 0.62.2
 Architecture: amd64
@@ -1281,4 +1266,19 @@ Size: 4240040
 MD5sum: 55c1d6f2e0d22b6aa7731dec9b6f9994
 SHA1: 1c307c204f0d4244ecba2ad03aee4bba3c0d0d79
 SHA256: a4a284d0b9888794e2f972ae32456cd4cee2b12425b2d31c6e1f8a349b5b8f83
+
+Package: aether
+Version: 4.27.1
+Architecture: amd64
+Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
+Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
+Description: Desktop theming application
+ Extract colors from wallpapers and apply cohesive themes across your
+ desktop. Supports animated wallpapers (GIF, MP4, WebM).
+Homepage: https://github.com/bjarneo/aether
+Filename: pool/aether-4.27.1/aether_4.27.1_ubuntu2604_amd64.deb
+Size: 5305850
+MD5sum: f4024a735e24c9586dd6d821cea83746
+SHA1: 778a841888f01ff68e1a340815203e00a7cb44bf
+SHA256: 0536686d8d33359cb72baeca54f4d735450830509084e2f37ecc36354b286fa0
 
