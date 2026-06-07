@@ -1225,22 +1225,6 @@ MD5sum: d27d0040dc7ba700be38fad17fd8e655
 SHA1: 84c3a0eb318918a240c437b1a91c3ace0274fe0e
 SHA256: f8335f02c8dc26cec950b555ef73b5c2c38da02282374b1eaeb65805ff3a9831
 
-Package: zed
-Version: 1.5.3
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 377108
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.5.3/zed_1.5.3_ubuntu2404_arm64.deb
-Size: 99299998
-MD5sum: b050c654512fc8edbc650dece0fc3eff
-SHA1: 3b6726a44cd9641061f6bf174581d3bee9c76298
-SHA256: 88f1cec3209bec0c9b2001c0dbf18d5e59cae3bb3457065681ac733e522ec816
-
 Package: lazygit
 Version: 0.62.2
 Architecture: arm64
@@ -1342,4 +1326,20 @@ Size: 12842080
 MD5sum: 195df84f54bb4e2310c5f2b65023aba8
 SHA1: cd3b605ddd0e5b394b23b22ce653759a281cdd6b
 SHA256: ccdd59f55583ddcf42fa77175d402ce8ba2830cfc6cfeab962ee47cbba7ee32f
+
+Package: zed
+Version: 1.5.4
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 377140
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.5.4/zed_1.5.4_ubuntu2404_arm64.deb
+Size: 99257056
+MD5sum: c2726ea53650e72389eb3352f4f8c3f2
+SHA1: 1c4f7c0015523f9ce8f0a4891c1bd00489777e68
+SHA256: 6938ddc9d2efa90de5be1ca1ecab68d55a293acf288536a6bdf2094609a778c9
 
