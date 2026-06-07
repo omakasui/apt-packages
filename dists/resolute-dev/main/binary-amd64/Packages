@@ -1262,3 +1262,23 @@ MD5sum: 4f8d7f2d1abb8d958e653b4e762c47d4
 SHA1: 48a04e518066a5e8648f61d93ba6e2ec4a6d71e6
 SHA256: 06abd4e1bc3a115df48710bc870220cb17fda6ec5e6bbe6d7789692ef98ef4b0
 
+Package: waybar
+Version: 0.15.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4160
+Depends: libgtk-3-0t64 | libgtk-3-0, libgtkmm-3.0-1t64 | libgtkmm-3.0-1, libjsoncpp26 | libjsoncpp25 | libjsoncpp24, libpulse0, libnl-3-200, libnl-genl-3-200, libevdev2, libdbusmenu-gtk3-4, libgtk-layer-shell0, libfmt10 | libfmt9, libmpdclient2t64 | libmpdclient2, libspdlog1.15 | libspdlog1.12, libxkbregistry0, libinput10, libwayland-client0, libgtk4-layer-shell0 (>= 1.1.0)
+Conflicts: waybar
+Replaces: waybar
+Provides: waybar
+Section: x11
+Priority: optional
+Homepage: https://github.com/Alexays/Waybar
+Description: Highly customizable Wayland bar for Sway, niri, Hyprland and other wlroots-based compositors. Supports workspaces, battery, network, audio, clock, MPD, custom modules and more.
+ .
+Filename: pool/waybar-0.15.0/waybar_0.15.0_ubuntu2604_amd64.deb
+Size: 1173144
+MD5sum: 78e1ca5a469b41ff34c1033661a4b4b3
+SHA1: 4f0555c950413082d21803e28f068a4829cb3b03
+SHA256: e2ac800ec9778f8787e9691ea0d9ef3c69dbacea6b891f0b6d0f90c6c1708a22
+
