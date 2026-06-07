@@ -782,23 +782,6 @@ MD5sum: 7b52ed1683b7fe50e41980add0f30de4
 SHA1: cb9f4469f46828fff7edc57acca584ea9cea1894
 SHA256: 18545b93f8402b6533a806108aa4578b2a603f0ed46812822d2e9ac51e06e5ff
 
-Package: wiremix
-Version: 0.10.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4352
-Depends: libpipewire-0.3-0
-Section: sound
-Priority: optional
-Homepage: https://github.com/tsowell/wiremix
-Description: Simple TUI audio mixer for PipeWire. Adjust volumes, route audio between devices and applications, and configure audio device settings like ports and profiles. Interface inspired by ncpamixer and pavucontrol.
- .
-Filename: pool/wiremix-0.10.0/wiremix_0.10.0_ubuntu2604_amd64.deb
-Size: 1394732
-MD5sum: 732bcd5c6d8edef44cf6806c7ff548fe
-SHA1: 7760d61e31c1f1550e62ed442f4dad3ab953b6b3
-SHA256: be4dd89fbf26d51ead4bb2ea292f4dae1a62a10ff36f856b74db3e41f3751d2b
-
 Package: xdg-terminal-exec
 Version: 0.14.2
 Architecture: all
@@ -1261,4 +1244,21 @@ Size: 102858942
 MD5sum: 18ecacee5a57134a88f1d4100bd5a56c
 SHA1: ffed2f55601b5b2cd078f98ab6924caa9041707b
 SHA256: 952fef46f75c706944ff96ce6a42ae03ccd706b288f7d87a1b822681c7ea9b28
+
+Package: wiremix
+Version: 0.11.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4364
+Depends: libpipewire-0.3-0
+Section: sound
+Priority: optional
+Homepage: https://github.com/tsowell/wiremix
+Description: Simple TUI audio mixer for PipeWire. Adjust volumes, route audio between devices and applications, and configure audio device settings like ports and profiles. Interface inspired by ncpamixer and pavucontrol.
+ .
+Filename: pool/wiremix-0.11.0/wiremix_0.11.0_ubuntu2604_amd64.deb
+Size: 1396264
+MD5sum: 4f8d7f2d1abb8d958e653b4e762c47d4
+SHA1: 48a04e518066a5e8648f61d93ba6e2ec4a6d71e6
+SHA256: 06abd4e1bc3a115df48710bc870220cb17fda6ec5e6bbe6d7789692ef98ef4b0
 
