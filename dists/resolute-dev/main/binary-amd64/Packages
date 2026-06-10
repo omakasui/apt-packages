@@ -1072,25 +1072,6 @@ MD5sum: 57ab5ddeb1c56345db7d804100e2a72a
 SHA1: 2f98c6e4455f067e4b73499fa57c9a94232ec3d4
 SHA256: a2819f8288f2ecd1ba43320a5df2204e36f670dd6420a6f7946a21a2e334c923
 
-Package: kitty
-Version: 0.47.1
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 111664
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator
- Self-contained bundle installed to /opt/kitty.
-Filename: pool/kitty-0.47.1/kitty_0.47.1_ubuntu2604_amd64.deb
-Size: 34626632
-MD5sum: afece5184dfcd2bafc6e49f50d520621
-SHA1: c1bb12a476f7f96222b396c2ad41ad085be58667
-SHA256: bac71320f48ce555be947c384e7453188d5e21f49ba42c9b8929eb1f270b7bf3
-
 Package: bitwarden-cli
 Version: 2026.5.0
 Architecture: amd64
@@ -1301,4 +1282,23 @@ Size: 111993124
 MD5sum: 511085832463ddf7e1613ecc7a96e8d7
 SHA1: c0f283c5465360378d7d20dd1ab57259538c0501
 SHA256: f794e4d9e4999ab9b75df1608eda761423417e8182fdf88b1ee714e94644453c
+
+Package: kitty
+Version: 0.47.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 111840
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator
+ Self-contained bundle installed to /opt/kitty.
+Filename: pool/kitty-0.47.2/kitty_0.47.2_ubuntu2604_amd64.deb
+Size: 34686196
+MD5sum: f2de5608eb04a6aaabb2e6305b077860
+SHA1: 1e36b0e2fee1371fa8de8d4db4fdf63988638519
+SHA256: 1d203c631f8cf16ea2cd265f0640600a909ed725e0bbc5d77d44e5d342e3b32b
 
