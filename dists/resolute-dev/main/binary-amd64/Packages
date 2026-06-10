@@ -1195,22 +1195,6 @@ MD5sum: 0d121f36df25d70486c830fd446daca3
 SHA1: 661d40f84acdc56532b1a81be837079780c113d3
 SHA256: f0e3d988fb0aef9b049bd6507b44dadf3cddd370b3fcd646fa7664a870c5e278
 
-Package: zed
-Version: 1.5.4
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 393456
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.5.4/zed_1.5.4_ubuntu2604_amd64.deb
-Size: 102858942
-MD5sum: 18ecacee5a57134a88f1d4100bd5a56c
-SHA1: ffed2f55601b5b2cd078f98ab6924caa9041707b
-SHA256: 952fef46f75c706944ff96ce6a42ae03ccd706b288f7d87a1b822681c7ea9b28
-
 Package: wiremix
 Version: 0.11.0
 Architecture: amd64
@@ -1301,4 +1285,20 @@ Size: 34686196
 MD5sum: f2de5608eb04a6aaabb2e6305b077860
 SHA1: 1e36b0e2fee1371fa8de8d4db4fdf63988638519
 SHA256: 1d203c631f8cf16ea2cd265f0640600a909ed725e0bbc5d77d44e5d342e3b32b
+
+Package: zed
+Version: 1.5.5
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 393512
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.5.5/zed_1.5.5_ubuntu2604_amd64.deb
+Size: 102812558
+MD5sum: 48669068f9e264b55e99723ad00d3474
+SHA1: 95b933743a2ee3de6b2f7687ace1548e63fffcb5
+SHA256: 083a6bfd6efc92da7166f4ef848bdedaa9c3701845429a72a51758240b1173fc
 
