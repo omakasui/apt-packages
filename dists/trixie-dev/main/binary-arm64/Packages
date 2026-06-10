@@ -1457,26 +1457,6 @@ MD5sum: a16643dfa8ea3b45e2cb66fee85bc13b
 SHA1: fd6c9b7c07dc4a9118966222ccba0500273a9b02
 SHA256: 2b56171b38b4b53404330aa4ffbd569d26badbc8026b5171a307075c4c2d8be3
 
-Package: opencode
-Version: 1.17.0
-Architecture: arm64
-License: MIT
-Vendor: OpenCode <hello@opencode.ai>
-Maintainer: OpenCode <hello@opencode.ai>
-Installed-Size: 410854
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Section: default
-Priority: optional
-Homepage: https://opencode.ai
-Description: 
- .
-Filename: pool/opencode-1.17.0/opencode_1.17.0_debian13_arm64.deb
-Size: 100072960
-MD5sum: 83a7efe0d6d817550f3a8f9c6086cce5
-SHA1: bc0c8880725172174bd52c57736c6a21206275a5
-SHA256: a0a292c47ad97d76d9e85f72b949f2331f1a24eb68c00efb24a4885b09a127ed
-
 Package: kitty
 Version: 0.47.2
 Architecture: arm64
@@ -1531,4 +1511,20 @@ Size: 100073180
 MD5sum: 16209c79df9e67310b129aa3694e11a7
 SHA1: d422c73bd592f31da60ca6defe832a447f1483e5
 SHA256: e384e4aaf5a7c4b50fa05d2b52b859d5bf903de55dc0a5c8cdadc637bfe0fafa
+
+Package: opencode
+Version: 1.17.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 152636
+Section: utils
+Priority: optional
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI
+ OpenCode terminal interface installed to /usr/bin/opencode.
+Filename: pool/opencode-1.17.0/opencode_1.17.0_debian13_arm64.deb
+Size: 36589200
+MD5sum: 8c57dc49da61a90a8e6be880f9db0e05
+SHA1: 068659328cfcbc5fbf31ce82ccf2f7be2c085831
+SHA256: fd427b31b00d6d689ff8f32fd9cead07f380028b8a8acbc84bb1034c12aac84b
 
