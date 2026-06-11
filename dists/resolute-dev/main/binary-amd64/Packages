@@ -1282,22 +1282,6 @@ MD5sum: 76507dc7ce451545cdfc79ec984f994e
 SHA1: 3e39ad987100ef9d707366214c617dfd5d1256d5
 SHA256: 5c45c1806db24d040b356bc0688220ee49bf0bf58c7b2c6dc783b66cfd963fec
 
-Package: opencode
-Version: 1.17.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 153264
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI
- OpenCode terminal interface installed to /usr/bin/opencode.
-Filename: pool/opencode-1.17.0/opencode_1.17.0_ubuntu2604_amd64.deb
-Size: 41318454
-MD5sum: d631628cfbe28fb9f286c38e82061902
-SHA1: eb1372d7593000f55323ea2aac347036e561fd70
-SHA256: 5ad6961218d4a76332ba2bc751cac8bee2d75a945973c239c8ebea7e952d132a
-
 Package: gh
 Version: 2.94.0
 Architecture: amd64
@@ -1317,4 +1301,20 @@ Size: 11417104
 MD5sum: d993cec1f262ca0166a53bb3cbde275b
 SHA1: 804d869d4d3a358a12dd31defabc9502bf6b6354
 SHA256: ab7fb88820c57646ee18d36a7f5a77b29f7230a871683e30f9d2499763b59a53
+
+Package: opencode
+Version: 1.17.3
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 153280
+Section: utils
+Priority: optional
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI
+ OpenCode terminal interface installed to /usr/bin/opencode.
+Filename: pool/opencode-1.17.3/opencode_1.17.3_ubuntu2604_amd64.deb
+Size: 41266264
+MD5sum: c1c34395b4f6e07709f020a235b5e6ba
+SHA1: 074f8b8a0af321a30be204e29cfcd2bfa06794dc
+SHA256: 54cbf0ef599ca6a218de8ae76bab8752ef6c5decd4b83962af137ce1742ae8ad
 
