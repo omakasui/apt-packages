@@ -69,25 +69,21 @@ MD5sum: 49728cb48acb15a6d0c641c2be943dd4
 SHA1: 11bb1124639348b8500f3959d13fd3169aacd6dc
 SHA256: a7ff6301fb7b8bc6b40cd334a00b9a0ae779ecd4c9dfd2ebe757f82f3b21d70b
 
-Package: opencode-desktop
-Version: 1.17.0
+Package: zed
+Version: 1.5.5
 Architecture: arm64
-License: MIT
-Vendor: OpenCode <hello@opencode.ai>
-Maintainer: OpenCode <hello@opencode.ai>
-Installed-Size: 410854
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Section: default
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 377188
+Section: editors
 Priority: optional
-Homepage: https://opencode.ai
-Description: 
- .
-Filename: pool/opencode-desktop-1.17.0/opencode-desktop_1.17.0_ubuntu2604_arm64.deb
-Size: 110216040
-MD5sum: 164b152974c74370694a9e268d2b0466
-SHA1: 47db4c06c812e4393c325848d8927ec435160903
-SHA256: 4bb25ea580aefa9800d03d8d12675cf5467a5652a65cef68183e18c6dc4902b8
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.5.5/zed_1.5.5_ubuntu2604_arm64.deb
+Size: 98993266
+MD5sum: e09bfdc419f6cf8e7b5e27165f028dd3
+SHA1: c1bc0e6b5c33b781e0af0dd07d4855316542bd70
+SHA256: ad1d65ff69f1a98b44b63d1f852ec20870099110f4106474fce9b8f0f7f4e965
 
 Package: gh
 Version: 2.94.0
@@ -125,19 +121,23 @@ MD5sum: 78f818635cbefab258ed9d0969de1185
 SHA1: 48f2c8ba788f6b717dd551eca3bb504abfd6bba8
 SHA256: ea634b9d13e842846e986ae0a76e0c55d5344c39f7feef6f20a4467adc9bc519
 
-Package: zed
-Version: 1.6.3
+Package: opencode-desktop
+Version: 1.17.3
 Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 379700
-Section: editors
+License: MIT
+Vendor: OpenCode <hello@opencode.ai>
+Maintainer: OpenCode <hello@opencode.ai>
+Installed-Size: 410892
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Section: default
 Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.6.3/zed_1.6.3_ubuntu2604_arm64.deb
-Size: 99627786
-MD5sum: 6675c80ba481a8f8c905ab2bd6a07b4d
-SHA1: ed0a18ada7f48827c182e09fd358cad49ff996b1
-SHA256: 799feae937362def084a7f83c0754920914944277c2db559d3426432d78c250c
+Homepage: https://opencode.ai
+Description: 
+ .
+Filename: pool/opencode-desktop-1.17.3/opencode-desktop_1.17.3_ubuntu2604_arm64.deb
+Size: 110259042
+MD5sum: a3a5cff045fd3689ebb7ef58e3d69602
+SHA1: a0a6c2addf8e8f7f81b72efbb42809ee50498d67
+SHA256: fa98a882689ff0b6140046cea963f66395cefa72c464ccbfc41af4fd7ecbf8ee
 
