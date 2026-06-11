@@ -1245,26 +1245,6 @@ MD5sum: deca63b56bb73bc7a518a2993e802d3f
 SHA1: a16b1481c9facd4a91e4789bf2dd4ab6d07c9ffb
 SHA256: 747908e7a011bd7e935b0c21ee0796109774d66417b5d84c6ef9590ba10e08d4
 
-Package: gh
-Version: 2.93.0
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: GitHub
-Installed-Size: 39337
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.93.0/gh_2.93.0_debian13_amd64.deb
-Size: 10431880
-MD5sum: de1d32df78accff06297782a5337bf21
-SHA1: 35b393fee7a42be04301060299e57ebd5ffee875
-SHA256: 8c392758b79b589e3a1868072f78609715243c33f530cbccae6e592c8087fce4
-
 Package: bitwarden-cli
 Version: 2026.5.0
 Architecture: amd64
@@ -1372,4 +1352,24 @@ Size: 106513324
 MD5sum: b878c05559775614a46f5b8f714fac09
 SHA1: f0da20cea1f517898b5ca2b47dba21f73f820cf5
 SHA256: 979eb8032d99bc41e02e2038cb2c335548b9a09521513122b5af911d287025aa
+
+Package: gh
+Version: 2.94.0
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 39679
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.94.0/gh_2.94.0_debian13_amd64.deb
+Size: 10523636
+MD5sum: b7f2044f1f659a0ef10d9672536920c5
+SHA1: 794ddb7cea2deca43ef8aa59163b508a85dfb689
+SHA256: f670ddc915ac2adf42d114250902ff57d56188d7b2ba89ccdccce8b3edbf7508
 
