@@ -85,39 +85,6 @@ MD5sum: 9cd0eeba66fee82ca926b379100130e9
 SHA1: aa4fc0e4f0c06b551ee654afd040f4e2c3cd8c50
 SHA256: e67c980bcd63b9877f4aa1c0d45a0ce17ce51067e5e42ea56f944b62f794ce97
 
-Package: uwsm
-Version: 0.26.4
-Architecture: all
-Maintainer: Vladimir-csp <4061903+Vladimir-csp@users.noreply.github.com>
-Installed-Size: 364
-Depends: python3:any, init-system-helpers (>= 1.52), systemd, util-linux, python3-xdg, python3-dbus
-Recommends: whiptail, walker | fuzzel | wofi | rofi | hyprlauncher | tofi | bemenu | wmenu | dmenu, libnotify-bin, inotify-tools
-Suggests: dbus-broker
-Section: x11
-Priority: optional
-Homepage: https://github.com/Vladimir-csp/uwsm
-Description: Wayland session manager for standalone compositors
- uwsm (Universal Wayland Session Manager) provides a lightweight, modular
- session management framework for Wayland environments based on systemd user
- units and various helpers.
- .
- It handles various session-related tasks for standalone Wayland compositors,
- such as:
- - startup from login shell or DM
- - dynamic loading and cleanup of environment variables for graphical session
- - binding lifetime of graphical session and login session together
- .
- It sets the stage for systemd to do launch and lifecycle management,
- XDG autostart, clean shutdown.
- .
- dbus-broker is recommended for better systemd integration and environment
- cleanup.
-Filename: pool/uwsm-0.26.4/uwsm_0.26.4_debian13_all.deb
-Size: 88956
-MD5sum: a38e3248469103e1990001d2441dc096
-SHA1: 5e4fd9a640ca6c23f2e7b8bd967fe7ae16675e21
-SHA256: 07913d40cb0b77289ba3bf6302d8efc6d457bbd1230a2f5a7b0a821598ed474c
-
 Package: ufw-docker
 Version: 251123
 Architecture: all
@@ -1548,4 +1515,37 @@ Size: 93226396
 MD5sum: 61de65f715b5db63bbe8fc628202f6fa
 SHA1: 502e020292238db63bf1191ce73af5ad36f0f21d
 SHA256: de59a5d39d3887d7f549c2653ba5c0ead03695a4e8152b667c51c3389aa596ff
+
+Package: uwsm
+Version: 0.26.5
+Architecture: all
+Maintainer: Vladimir-csp <4061903+Vladimir-csp@users.noreply.github.com>
+Installed-Size: 364
+Depends: python3:any, init-system-helpers (>= 1.52), systemd, util-linux, python3-xdg, python3-dbus
+Recommends: whiptail, walker | fuzzel | wofi | rofi | hyprlauncher | tofi | bemenu | wmenu | dmenu, libnotify-bin, inotify-tools
+Suggests: dbus-broker
+Section: x11
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/uwsm
+Description: Wayland session manager for standalone compositors
+ uwsm (Universal Wayland Session Manager) provides a lightweight, modular
+ session management framework for Wayland environments based on systemd user
+ units and various helpers.
+ .
+ It handles various session-related tasks for standalone Wayland compositors,
+ such as:
+ - startup from login shell or DM
+ - dynamic loading and cleanup of environment variables for graphical session
+ - binding lifetime of graphical session and login session together
+ .
+ It sets the stage for systemd to do launch and lifecycle management,
+ XDG autostart, clean shutdown.
+ .
+ dbus-broker is recommended for better systemd integration and environment
+ cleanup.
+Filename: pool/uwsm-0.26.5/uwsm_0.26.5_debian13_all.deb
+Size: 88996
+MD5sum: 88f7758ea4de877c2501a39ef7efff4d
+SHA1: b6f97999fee2dc58a9e94ca4623abd0b5a55fdd4
+SHA256: 9a3ab470a5f3a3caec050b6c6bd349306224cbdd49feb23fb1f76a4bbb2a03d6
 
