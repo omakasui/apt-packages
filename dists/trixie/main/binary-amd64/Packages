@@ -1336,26 +1336,6 @@ MD5sum: b7f2044f1f659a0ef10d9672536920c5
 SHA1: 794ddb7cea2deca43ef8aa59163b508a85dfb689
 SHA256: f670ddc915ac2adf42d114250902ff57d56188d7b2ba89ccdccce8b3edbf7508
 
-Package: opencode-desktop
-Version: 1.17.3
-Architecture: amd64
-License: MIT
-Vendor: OpenCode <hello@opencode.ai>
-Maintainer: OpenCode <hello@opencode.ai>
-Installed-Size: 412083
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Section: default
-Priority: optional
-Homepage: https://opencode.ai
-Description: 
- .
-Filename: pool/opencode-desktop-1.17.3/opencode-desktop_1.17.3_debian13_amd64.deb
-Size: 106631548
-MD5sum: 00ad3dfeda1a10273be06609d648dadb
-SHA1: 55e475f34436e4cad77dba10c4e55fa6527b6c28
-SHA256: d326670da44a258a390033a1ea2791bacb0c936ac59d81305d453a098b8d7509
-
 Package: zen-browser
 Version: 1.21b
 Architecture: amd64
@@ -1388,4 +1368,24 @@ Size: 38697088
 MD5sum: ae38bec7aac4d74f8dd10da52a0030cc
 SHA1: b733df0af50fd5ff445d5d6613f8463366a84997
 SHA256: e6b55ec3f2e6110f7043fe0974a5daeca8957d6a5aec3863dde98b204c05731d
+
+Package: opencode-desktop
+Version: 1.17.6
+Architecture: amd64
+License: MIT
+Vendor: OpenCode <hello@opencode.ai>
+Maintainer: OpenCode <hello@opencode.ai>
+Installed-Size: 412297
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://opencode.ai
+Description: 
+ .
+Filename: pool/opencode-desktop-1.17.6/opencode-desktop_1.17.6_debian13_amd64.deb
+Size: 106625888
+MD5sum: 9e7b3096b7b2c13a15813ed18bcf09a6
+SHA1: c1ac19e37e6da124f285e85e6daf1211126c642c
+SHA256: 30ec0b36ebe0ae59c20da983193a3ac509db9b22f5b625a5c81ad6beb006c473
 
