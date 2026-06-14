@@ -1312,25 +1312,6 @@ MD5sum: 52d90c62fda3f643a2b70e8a7f87f63f
 SHA1: aba4fd4f359f0b4edd6d3378a514f3641f989d91
 SHA256: 1d620068f0a6e46c3042845ab3c2244a258b061be3775449e3f62a4187e66025
 
-Package: kitty
-Version: 0.47.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 111840
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator
- Self-contained bundle installed to /opt/kitty.
-Filename: pool/kitty-0.47.2/kitty_0.47.2_ubuntu2404_amd64.deb
-Size: 34736962
-MD5sum: d8fbc9964236dce4386a4364563fc013
-SHA1: 441edd16731ce7a8bfb4b740f551e7416a2eebe1
-SHA256: e29df4e019263368a2ae4d0d82adfbed168d790afed3c5a03af21b7221eff28d
-
 Package: zed
 Version: 1.5.5
 Architecture: amd64
@@ -1419,4 +1400,23 @@ Size: 99403382
 MD5sum: 2bda7bde26a40704d3bbb3cea72c5642
 SHA1: dd49b4aef12a3508e0ec6cc7b5aa6efc0675984b
 SHA256: 85b61f0878d18a1841e84c014b670846af8a1e60f02621c0910fdb6d261b45ca
+
+Package: kitty
+Version: 0.47.3
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 112388
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator
+ Self-contained bundle installed to /opt/kitty.
+Filename: pool/kitty-0.47.3/kitty_0.47.3_ubuntu2404_amd64.deb
+Size: 34907306
+MD5sum: 667c7529457f7436b625f67112973c8c
+SHA1: c61351c75f9df30c9bc632167d8892435e7ee081
+SHA256: 5bafc871c5eb0861ff5f016eb1ec6c3ab907da84710591883733e3052e85339d
 
