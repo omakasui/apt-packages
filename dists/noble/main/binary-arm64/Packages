@@ -1186,22 +1186,25 @@ MD5sum: 060345ed707d229efd4cfa6954b290e1
 SHA1: 5e3c0ab0f7d1ff73c9d5e7b988b0835fa3259e40
 SHA256: 93d5864ca6b5e38e0017755edc83564327ef392c1bd0f780bca154bfe3b8c1af
 
-Package: zen-browser
-Version: 1.21b
+Package: opencode-desktop
+Version: 1.17.3
 Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 330128
-Section: web
+License: MIT
+Vendor: OpenCode <hello@opencode.ai>
+Maintainer: OpenCode <hello@opencode.ai>
+Installed-Size: 410892
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Section: default
 Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.21b/zen-browser_1.21b_ubuntu2404_arm64.deb
-Size: 86383516
-MD5sum: 6b656463a8df2b70d66505fc3f24d989
-SHA1: ef6f4a1efc13151674b161f6fff5c494f995475c
-SHA256: bf83374136800f6a2720b052d97cb6fdd5d5c73160c65cd63af2a583203a0b98
+Homepage: https://opencode.ai
+Description: 
+ .
+Filename: pool/opencode-desktop-1.17.3/opencode-desktop_1.17.3_ubuntu2404_arm64.deb
+Size: 110412012
+MD5sum: 6dbb3d75826b3764f23d6b263b194652
+SHA1: a579297bfaf0e20e46f2bd0f1745c780027bae3a
+SHA256: 5d9da52337c840db136e862e593b643403afae68beca5ec0768cacf4243928bc
 
 Package: opencode
 Version: 1.17.6
@@ -1219,23 +1222,20 @@ MD5sum: f535b6eb244ad0d6f3b76070b42252cc
 SHA1: 180563a370de1e26e647b7f7d68c64f4da1989bb
 SHA256: 285eaf07ff98a72ad429ed5468535f8c21b8694276f1e881aaef84b62dff7c6a
 
-Package: opencode-desktop
-Version: 1.17.6
+Package: zen-browser
+Version: 1.21.1b
 Architecture: arm64
-License: MIT
-Vendor: OpenCode <hello@opencode.ai>
-Maintainer: OpenCode <hello@opencode.ai>
-Installed-Size: 411105
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Section: default
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 330128
+Section: web
 Priority: optional
-Homepage: https://opencode.ai
-Description: 
- .
-Filename: pool/opencode-desktop-1.17.6/opencode-desktop_1.17.6_ubuntu2404_arm64.deb
-Size: 110420108
-MD5sum: 3f76ec2d6deb35f9bf19e80ce3e6eb93
-SHA1: e03a5171a0813f4e73659dd5e78d398b75fe1d57
-SHA256: b9ac0b1ed7ad54b2c22f6f8c4a3bf7aa929ec9992c5c03d198bcbcb859e765f5
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.21.1b/zen-browser_1.21.1b_ubuntu2404_arm64.deb
+Size: 86373808
+MD5sum: 2f4159e78b6892c6567f5eaffa3c4acd
+SHA1: 9af83b7ae2ab38720c00d87534341963ac1f5ea3
+SHA256: c73396b3568e17e9a9e808d3d472829708f86969fc679bda0b675d07e1d5d929
 
