@@ -1186,6 +1186,23 @@ MD5sum: 983408ed9fdae8d653f917b714f6e533
 SHA1: 093d166ad60b55851e8a86e492b01c8171794d9b
 SHA256: 2c56201931465fa1c6ad6ce6550b7fcc30d7fe7cce686ec644b197dd37ca47b7
 
+Package: cliamp
+Version: 1.57.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 30452
+Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
+Section: sound
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
+ .
+Filename: pool/cliamp-1.57.0/cliamp_1.57.0_ubuntu2404_arm64.deb
+Size: 8461674
+MD5sum: 3a9c2146b3fac2548807daefaa903064
+SHA1: e10083dd62051a175f3b0f57b4668e269a77df00
+SHA256: af8ba1d0b6141fe0fbb80c75789e75087b718b76ac91c2d7eff3a0b47709c4d6
+
 Package: fastfetch
 Version: 2.64.2
 Architecture: arm64
@@ -1330,25 +1347,6 @@ MD5sum: 6dbb3d75826b3764f23d6b263b194652
 SHA1: a579297bfaf0e20e46f2bd0f1745c780027bae3a
 SHA256: 5d9da52337c840db136e862e593b643403afae68beca5ec0768cacf4243928bc
 
-Package: kitty
-Version: 0.47.3
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 107244
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator
- Self-contained bundle installed to /opt/kitty.
-Filename: pool/kitty-0.47.3/kitty_0.47.3_ubuntu2404_arm64.deb
-Size: 33282656
-MD5sum: 3de328236fcb45fe304770cfd86327db
-SHA1: bef9b25cf23912a4916ec7a3ced4034abf2bdc18
-SHA256: cab90ad706b72d1454896b363795f812cca15f5a2e9d2847d04d244b5b94081a
-
 Package: opencode
 Version: 1.17.6
 Architecture: arm64
@@ -1382,20 +1380,22 @@ MD5sum: 2f4159e78b6892c6567f5eaffa3c4acd
 SHA1: 9af83b7ae2ab38720c00d87534341963ac1f5ea3
 SHA256: c73396b3568e17e9a9e808d3d472829708f86969fc679bda0b675d07e1d5d929
 
-Package: cliamp
-Version: 1.57.1
+Package: kitty
+Version: 0.47.4
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 30452
-Depends: libasound2t64 | libasound2, pipewire-alsa | pulseaudio
-Section: sound
+Installed-Size: 107272
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
 Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Retro terminal music player inspired by Winamp. Plays local files, streams, podcasts, YouTube, Spotify and more, with a spectrum visualizer, parametric EQ and playlist management. Optionally requires ffmpeg for AAC/Opus/WMA and yt-dlp for YouTube.
- .
-Filename: pool/cliamp-1.57.1/cliamp_1.57.1_ubuntu2404_arm64.deb
-Size: 8464376
-MD5sum: 867e22dd11f6eba1e1a08116d0fdc532
-SHA1: e089da561f36543f496fd0f7ef016e00ff578423
-SHA256: d68b32423a4d469b15fafceb1624489ff36d9ca77d500a3adbaf6148b458e796
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator
+ Self-contained bundle installed to /opt/kitty.
+Filename: pool/kitty-0.47.4/kitty_0.47.4_ubuntu2404_arm64.deb
+Size: 33288550
+MD5sum: b7064777e263c422e6a634d162116f44
+SHA1: d5d63aea5d9708042387330f0e5e6a6bcca4cd7e
+SHA256: 5722bcfd6d0605eb8a4fca5566331205f6f082d7e360ee9f07ad0517fddd863e
 
