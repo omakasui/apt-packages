@@ -1138,26 +1138,6 @@ MD5sum: 55c1d6f2e0d22b6aa7731dec9b6f9994
 SHA1: 1c307c204f0d4244ecba2ad03aee4bba3c0d0d79
 SHA256: a4a284d0b9888794e2f972ae32456cd4cee2b12425b2d31c6e1f8a349b5b8f83
 
-Package: glab
-Version: 1.102.0
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 50237
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.102.0/glab_1.102.0_ubuntu2604_amd64.deb
-Size: 14123014
-MD5sum: 0d121f36df25d70486c830fd446daca3
-SHA1: 661d40f84acdc56532b1a81be837079780c113d3
-SHA256: f0e3d988fb0aef9b049bd6507b44dadf3cddd370b3fcd646fa7664a870c5e278
-
 Package: wiremix
 Version: 0.11.0
 Architecture: amd64
@@ -1317,4 +1297,24 @@ Size: 111989542
 MD5sum: e23312f42c959cdffa7691d415c6886d
 SHA1: 77526b3395c1f16017e38869262f98ba395bd9bf
 SHA256: 7d809e1ad9912aa1f2fe3691f7aee8f96d3151c4b8a00ecf059f80af83ac0f88
+
+Package: glab
+Version: 1.103.0
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 50391
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.103.0/glab_1.103.0_ubuntu2604_amd64.deb
+Size: 14163146
+MD5sum: 0b59d8b229f952c3da79b900a557949e
+SHA1: 999d9f9358de46265ea004c0a391d73c394b2926
+SHA256: 6d394825c68dd83a46f89de40b9dca5b576f162869b66717038ce22a376e3853
 
