@@ -1260,22 +1260,6 @@ MD5sum: c7205fcf4114a1274184b93fb56292b8
 SHA1: 37d55665a7389c42ec6783a04998ffb72c5f43ab
 SHA256: 052077406b1cdc657d29c65202e69e968396757aa28a71b8d5f6c9d590f3cf73
 
-Package: zed
-Version: 1.5.5
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 377192
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.5.5/zed_1.5.5_debian13_arm64.deb
-Size: 87331720
-MD5sum: 6ad6ff40e2ecaaffe490918723ade495
-SHA1: aa3c8e10e34a04489090ed0c116740cdfafe47a6
-SHA256: 6e8127558b3eace6b984ce5df8341a458c3f7fd5c505ff363b7de1c6e229652d
-
 Package: opencode-desktop
 Version: 1.17.7
 Architecture: arm64
@@ -1367,4 +1351,20 @@ Size: 78263772
 MD5sum: 1962fa249b69e7b1fbde0bc224a16a8e
 SHA1: 5a676910f03fe9ed143bc5bc06cf0881450802db
 SHA256: 402aeebfb46c159632e3e249e0516b098efc9e5d9d82f512173e49658077c57c
+
+Package: zed
+Version: 1.7.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 375244
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.7.2/zed_1.7.2_debian13_arm64.deb
+Size: 87028152
+MD5sum: cfd16fcee659e275d3ed589a4b440d27
+SHA1: 4f47307479614f9923780670627811394c226312
+SHA256: 2d1571895257f64cfe34c90820e5e4644d9fc11e270bd547afe7d24644d23880
 
