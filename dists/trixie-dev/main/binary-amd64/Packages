@@ -1404,26 +1404,6 @@ MD5sum: 43bb63665c66beea88e12c603278ace9
 SHA1: 1843dc0ead0ccfa64e3c5e9ee3fcccfb7797920a
 SHA256: 84f655c309f6f7300a3d403196fabad944ea10de00a6969682cee0548a52a6ff
 
-Package: gh
-Version: 2.94.0
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: GitHub
-Installed-Size: 39679
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.94.0/gh_2.94.0_debian13_amd64.deb
-Size: 10523636
-MD5sum: b7f2044f1f659a0ef10d9672536920c5
-SHA1: 794ddb7cea2deca43ef8aa59163b508a85dfb689
-SHA256: f670ddc915ac2adf42d114250902ff57d56188d7b2ba89ccdccce8b3edbf7508
-
 Package: uwsm
 Version: 0.26.5
 Architecture: all
@@ -1548,4 +1528,24 @@ Size: 12979268
 MD5sum: 8a17460686a95faf954581ab8dbf8d3b
 SHA1: 60c5ed120e0e6fd680e5eb4ed46b990e18ec95c3
 SHA256: a441369bad99057f95fa3f0b2a8c32c8505680b2f11d169398e7b0233b6944ab
+
+Package: gh
+Version: 2.95.0
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 40144
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.95.0/gh_2.95.0_debian13_amd64.deb
+Size: 10649740
+MD5sum: 1aa28593f56fb8f876b6719cc08c6585
+SHA1: 0c414205b7952cf7ba6012146b1e5a8ec24b7e96
+SHA256: 7ec7be964747c7e56636f0605be0209d14cbbbafabcd52ef3efce1bc85bd7354
 

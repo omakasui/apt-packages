@@ -1147,26 +1147,6 @@ MD5sum: d3eefb01bc26a3f2078507aff7762cdf
 SHA1: 0c237bf25a763a2010b9015ef6e427664c244155
 SHA256: bc3c376c21fecb8cfcafc53a84fae74123055f9cd8aaa5b29cf78a34d58af1c3
 
-Package: gh
-Version: 2.94.0
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: GitHub
-Installed-Size: 36935
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.94.0/gh_2.94.0_ubuntu2404_arm64.deb
-Size: 10153746
-MD5sum: 060345ed707d229efd4cfa6954b290e1
-SHA1: 5e3c0ab0f7d1ff73c9d5e7b988b0835fa3259e40
-SHA256: 93d5864ca6b5e38e0017755edc83564327ef392c1bd0f780bca154bfe3b8c1af
-
 Package: zen-browser
 Version: 1.21.1b
 Architecture: arm64
@@ -1238,4 +1218,24 @@ Size: 12875726
 MD5sum: ffe8d7e64b1575a36c2b0a4d82b1c3ab
 SHA1: 582bbec46cdc5cb1e982ccf994fc47efb9a273d1
 SHA256: 1817e96d230dfe4b2667425dae9f59ed8f46804dfcec1f8e219a1d85a6b227bc
+
+Package: gh
+Version: 2.95.0
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 37324
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.95.0/gh_2.95.0_ubuntu2404_arm64.deb
+Size: 10278196
+MD5sum: 1cb08ec93d7f715f776c883ac8210392
+SHA1: aa9c45929f463b5a46cc996bb57f1358ce2c6e2e
+SHA256: a1dab9d861e974a4337617e5918b3df362dc78920552754518c115894e0829a4
 
