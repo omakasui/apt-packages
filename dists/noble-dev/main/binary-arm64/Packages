@@ -1150,25 +1150,6 @@ MD5sum: 06c120df8f1b4d25a452285a4b7a63d1
 SHA1: 7e008b8ecd224e24614f7fd8a18f8516d1e30700
 SHA256: d0498175142d233621ef6bfce1ab1901b45dfd415432e7217ecd10d99824eea3
 
-Package: dbeaver-ce
-Version: 26.1.0
-Architecture: arm64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce
-Installed-Size: 206586
-Maintainer: DBeaver Corp <support@dbeaver.com>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.1.0/dbeaver-ce_26.1.0_ubuntu2404_arm64.deb
-Size: 112607750
-MD5sum: d27d0040dc7ba700be38fad17fd8e655
-SHA1: 84c3a0eb318918a240c437b1a91c3ace0274fe0e
-SHA256: f8335f02c8dc26cec950b555ef73b5c2c38da02282374b1eaeb65805ff3a9831
-
 Package: lazygit
 Version: 0.62.2
 Architecture: arm64
@@ -1346,6 +1327,22 @@ MD5sum: 1cb08ec93d7f715f776c883ac8210392
 SHA1: aa9c45929f463b5a46cc996bb57f1358ce2c6e2e
 SHA256: a1dab9d861e974a4337617e5918b3df362dc78920552754518c115894e0829a4
 
+Package: opencode
+Version: 1.17.8
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 162364
+Section: utils
+Priority: optional
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI
+ OpenCode terminal interface installed to /usr/bin/opencode.
+Filename: pool/opencode-1.17.8/opencode_1.17.8_ubuntu2404_arm64.deb
+Size: 41045598
+MD5sum: 16ae56c8c6e425fd2d09dde5661b3cf1
+SHA1: 7e9288a5ba07026d326f5fa7b3b87537afbb857c
+SHA256: 7c34f45e8bf6c9fb095bd9d337aaa8e153a208c4d8f5eaa2189bfa8ef5050309
+
 Package: opencode-desktop
 Version: 1.17.8
 Architecture: arm64
@@ -1383,19 +1380,22 @@ MD5sum: 1e6735bfd78b502f1db8bbc7580028ca
 SHA1: 09468533ebc198e69a86f06238b7d79eca243f23
 SHA256: 2186482fbc361918fd5f00c1ace9df8ea613d97070f9b23991a3dc0e0d9ebb63
 
-Package: opencode
-Version: 1.17.9
+Package: dbeaver-ce
+Version: 26.1.1
 Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 162364
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI
- OpenCode terminal interface installed to /usr/bin/opencode.
-Filename: pool/opencode-1.17.9/opencode_1.17.9_ubuntu2404_arm64.deb
-Size: 41045488
-MD5sum: 996e5117766468f41baebd57fd8fe5dd
-SHA1: 9f7e9d667ca7472a439c3958c35f6286f8775791
-SHA256: b61a616e99f1bf516b3bb30041d69d69532215f74ce05b13854a314e5f1fec1e
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce
+Installed-Size: 206389
+Maintainer: DBeaver Corp <support@dbeaver.com>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.1.1/dbeaver-ce_26.1.1_ubuntu2404_arm64.deb
+Size: 112267732
+MD5sum: af0d7c6065d62dfca0b1b7dbff6646a8
+SHA1: fd791bf5019c697ae4f2f24b1890ae2863f31c00
+SHA256: a799d8b2f67cbd05511168263af47acf2e5d0bec739938c1c608412cf617bba8
 
