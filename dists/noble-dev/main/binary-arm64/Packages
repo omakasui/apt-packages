@@ -988,26 +988,6 @@ MD5sum: 3f40d2e4acb46537a52d152de7920e17
 SHA1: bef03cfc2e8f9161680fc22574a9f37c9c1365dd
 SHA256: a8876ec65cb37cb1dbc79e29a365268cf91a39adf99f72679b223434e8781a90
 
-Package: swayosd
-Version: 0.3.1
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 11036
-Depends: libgtk-4-1, libgtk4-layer-shell0, libpulse0, libinput10, libevdev2, libgtk4-layer-shell0 (>= 1.1.0)
-Conflicts: swayosd
-Replaces: swayosd
-Provides: swayosd
-Section: utils
-Priority: optional
-Homepage: https://github.com/ErikReider/SwayOSD
-Description: SwayOSD is a GTK4-based on-screen display for Wayland compositors. Shows OSD indicators for volume, mute, brightness, caps lock, scroll lock and num lock. Includes a libinput backend for automatic key detection and supports Sway, Hyprland and other wlroots-based compositors.
- .
-Filename: pool/swayosd-0.3.1/swayosd_0.3.1_ubuntu2404_arm64.deb
-Size: 2126622
-MD5sum: 02afe795df79d508dc8d6f93237547d4
-SHA1: ded25df9c89484df621822eea31eee75f835f2d0
-SHA256: ccceb5d253a5adcb79159b42f37febb5304876bc46f03debb708d98ecd8b0574
-
 Package: wl-clip-persist
 Version: 0.5.0
 Architecture: arm64
@@ -1398,4 +1378,24 @@ Size: 12883220
 MD5sum: f110c47cf69a5b48dda41c9b0f8215ac
 SHA1: 68ab41fa9a0e6a5dcddd40ac97a55c9b41cb6c2e
 SHA256: c21169ed259418b16ce5b731e9933a6bccb646423cc22f26f6d5e9e90e4878e1
+
+Package: swayosd
+Version: 0.3.2
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 11176
+Depends: libgtk-4-1, libgtk4-layer-shell0, libpulse0, libinput10, libevdev2, libgtk4-layer-shell0 (>= 1.1.0)
+Conflicts: swayosd
+Replaces: swayosd
+Provides: swayosd
+Section: utils
+Priority: optional
+Homepage: https://github.com/ErikReider/SwayOSD
+Description: SwayOSD is a GTK4-based on-screen display for Wayland compositors. Shows OSD indicators for volume, mute, brightness, caps lock, scroll lock and num lock. Includes a libinput backend for automatic key detection and supports Sway, Hyprland and other wlroots-based compositors.
+ .
+Filename: pool/swayosd-0.3.2/swayosd_0.3.2_ubuntu2404_arm64.deb
+Size: 2139302
+MD5sum: bd2f39780b040eb1f42b39b3a3c80455
+SHA1: a4c975cc01f059b173a3292e3025b754a8037314
+SHA256: 0365827ac1a2f0d6a7f03681f6adef33e7752748f81df49bcdf8ca049121e812
 
