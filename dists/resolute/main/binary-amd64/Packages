@@ -34,22 +34,6 @@ MD5sum: 4bc06e64a6f36e02be7fd6b23895eeae
 SHA1: e07859ad1a7a553db85b2edd9997744ea31d3806
 SHA256: 0248008c8d6f2d0803af959481f4160e266dc177f391c51785a32f9391274bcd
 
-Package: zed
-Version: 1.5.5
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 393512
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.5.5/zed_1.5.5_ubuntu2604_amd64.deb
-Size: 102812558
-MD5sum: 48669068f9e264b55e99723ad00d3474
-SHA1: 95b933743a2ee3de6b2f7687ace1548e63fffcb5
-SHA256: 083a6bfd6efc92da7166f4ef848bdedaa9c3701845429a72a51758240b1173fc
-
 Package: gh
 Version: 2.95.0
 Architecture: amd64
@@ -106,6 +90,26 @@ MD5sum: 8f76ef75346183128320ab40646ba7c4
 SHA1: d081cbd01c57e74fd580b1a4f14fba813a1f445f
 SHA256: c6471f80b170476d0ceb98f41c8889edc7d6473dc9ebce5eb8f3203dbf6c41f1
 
+Package: opencode-desktop
+Version: 1.17.9
+Architecture: amd64
+License: MIT
+Vendor: OpenCode <hello@opencode.ai>
+Maintainer: OpenCode <hello@opencode.ai>
+Installed-Size: 422450
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://opencode.ai
+Description: 
+ .
+Filename: pool/opencode-desktop-1.17.9/opencode-desktop_1.17.9_ubuntu2604_amd64.deb
+Size: 112208446
+MD5sum: 16a28be2adc6b218fa300db78a5240fd
+SHA1: c3688ad6fd01264873b149f109abf188c124b79a
+SHA256: b87c1633bdb51b77b88e71eb5915947a9b9e6ffb5abfd592d8b5e40a8f194c29
+
 Package: glab
 Version: 1.105.0
 Architecture: amd64
@@ -142,23 +146,19 @@ MD5sum: 76c7ac40bf1bf53c08973e07c7e6f276
 SHA1: f7f9c7ee91cc46f0b9c1f435926668e2a4199ea4
 SHA256: eaeba4972607a4318bfd1149374ae6addd6a1b8ee39d731f239ce3bc53d5d176
 
-Package: opencode-desktop
-Version: 1.17.10
+Package: zed
+Version: 1.8.2
 Architecture: amd64
-License: MIT
-Vendor: OpenCode <hello@opencode.ai>
-Maintainer: OpenCode <hello@opencode.ai>
-Installed-Size: 422091
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Section: default
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 393960
+Section: editors
 Priority: optional
-Homepage: https://opencode.ai
-Description: 
- .
-Filename: pool/opencode-desktop-1.17.10/opencode-desktop_1.17.10_ubuntu2604_amd64.deb
-Size: 112079608
-MD5sum: 145f254ba29ba6d01080543598b6cb15
-SHA1: 81f4830fdcec8e359873b47c0163a7a772499785
-SHA256: e83b52cd23fe472fb91d3f709301914855b83e780c8a026437b590d8f1e1958c
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.8.2/zed_1.8.2_ubuntu2604_amd64.deb
+Size: 103399500
+MD5sum: 6b3f16c44eb4b442b88e9444eb35e1ae
+SHA1: d697c06273b7c041224892d50c543333b04bec76
+SHA256: c21222a9c45be94e4b7d4b71e7eacfdcde936111c25a40f9c40763d6a7afeb54
 
