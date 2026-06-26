@@ -1404,26 +1404,6 @@ MD5sum: 9fa3883b4b8f5fe9d4859c7ba06c2c99
 SHA1: a3f424ab28908e7f603005f89d9a67612acc4122
 SHA256: ac6965b863f9e2b3e173ae4217fc4a0db5f1dc1274b228e07d886e4872b7e1b9
 
-Package: opencode-desktop
-Version: 1.17.9
-Architecture: amd64
-License: MIT
-Vendor: OpenCode <hello@opencode.ai>
-Maintainer: OpenCode <hello@opencode.ai>
-Installed-Size: 422450
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Section: default
-Priority: optional
-Homepage: https://opencode.ai
-Description: 
- .
-Filename: pool/opencode-desktop-1.17.9/opencode-desktop_1.17.9_debian13_amd64.deb
-Size: 106820704
-MD5sum: b77330a16da6446e3f657e6e673e9c77
-SHA1: 2ac83b17ec8619417791d7b443ca05d0e5159fcd
-SHA256: d849c4e4e8e4f97acba327781e98b1d0eccf172cf011e671ca9567cfe2853890
-
 Package: fastfetch
 Version: 2.65.1
 Architecture: amd64
@@ -1548,4 +1528,24 @@ Size: 38926424
 MD5sum: 651a8a7ce2b17529caeb3555f95fab54
 SHA1: 99f56968db863a9144925c9b3846809f41924edd
 SHA256: f78be74831de30cab0a4941a806de8b5def5b5ae9186812fee72eb71a360dd6e
+
+Package: opencode-desktop
+Version: 1.17.11
+Architecture: amd64
+License: MIT
+Vendor: OpenCode <hello@opencode.ai>
+Maintainer: OpenCode <hello@opencode.ai>
+Installed-Size: 422186
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://opencode.ai
+Description: 
+ .
+Filename: pool/opencode-desktop-1.17.11/opencode-desktop_1.17.11_debian13_amd64.deb
+Size: 106660420
+MD5sum: 55683a0116fc89abe1c666b13921a4ec
+SHA1: 63430a126aabde9df7ee960da41f7ce85ad90ee0
+SHA256: 71075f685b8cd2d7a642fb9dae6b2771592f66fc8795a1a78906a703e88ea2d5
 

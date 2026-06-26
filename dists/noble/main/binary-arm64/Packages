@@ -1152,26 +1152,6 @@ MD5sum: af0d7c6065d62dfca0b1b7dbff6646a8
 SHA1: fd791bf5019c697ae4f2f24b1890ae2863f31c00
 SHA256: a799d8b2f67cbd05511168263af47acf2e5d0bec739938c1c608412cf617bba8
 
-Package: opencode-desktop
-Version: 1.17.9
-Architecture: arm64
-License: MIT
-Vendor: OpenCode <hello@opencode.ai>
-Maintainer: OpenCode <hello@opencode.ai>
-Installed-Size: 421259
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Section: default
-Priority: optional
-Homepage: https://opencode.ai
-Description: 
- .
-Filename: pool/opencode-desktop-1.17.9/opencode-desktop_1.17.9_ubuntu2404_arm64.deb
-Size: 110649692
-MD5sum: 726e729774eade1c0cec7ec0f9d8218f
-SHA1: b181ee132fbcac1fa57809049dfd58490e7e2bbe
-SHA256: 72c8145687c0de1e28ce766ceb889702d97c4d366ed53c948536244f058bf85b
-
 Package: glab
 Version: 1.105.0
 Architecture: arm64
@@ -1238,4 +1218,24 @@ Size: 41051672
 MD5sum: 635cf792c7e40f2e4b4920271bec5ba1
 SHA1: af9112b42161599fd4fa77e011deceb56d3f0471
 SHA256: 0be79e5853d9dfc611c83f225f8350df0ff096bd4d43d4d530639b8d957adec8
+
+Package: opencode-desktop
+Version: 1.17.11
+Architecture: arm64
+License: MIT
+Vendor: OpenCode <hello@opencode.ai>
+Maintainer: OpenCode <hello@opencode.ai>
+Installed-Size: 420995
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://opencode.ai
+Description: 
+ .
+Filename: pool/opencode-desktop-1.17.11/opencode-desktop_1.17.11_ubuntu2404_arm64.deb
+Size: 110533614
+MD5sum: 3a7e53d4f61a675872e8c7506bf7d3b2
+SHA1: 4f1b8cbbda522082839bb7032ff2ba86e88d0c94
+SHA256: aa980e2fa28d7a07ca8e75a4f1e1bfb2d65d90fb143ad1b2f7da49807a1bfe34
 
