@@ -1210,22 +1210,6 @@ MD5sum: 149f96790ab9ad650f80148d569b5b3b
 SHA1: 12ef187d9715b4084e5d3c936a6006b5dbcfd9ef
 SHA256: 1295baea395fee6e9f208101a706454fb0b71009748cd291fb4b82aa7433af2f
 
-Package: bitwarden-cli
-Version: 2026.5.0
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 136520
-Section: utils
-Priority: optional
-Homepage: https://bitwarden.com/help/cli/
-Description: Bitwarden CLI — command-line interface for Bitwarden password manager.
- .
-Filename: pool/bitwarden-cli-2026.5.0/bitwarden-cli_2026.5.0_debian13_amd64.deb
-Size: 31526458
-MD5sum: 1ee68afa8822c789312b35fbf759d86b
-SHA1: 651e84df1d2198d7a132aa77302d8b5eb5509f2f
-SHA256: e125987700e69bfce20e49e33dd14b38ef5aec257675d7f06df41b1c3f6aaab0
-
 Package: lazygit
 Version: 0.62.2
 Architecture: amd64
@@ -1548,4 +1532,20 @@ Size: 99095272
 MD5sum: ce659be0a3a732a27081650fd482f43c
 SHA1: e4d25f7619addaf722ebaf11331e991f8ce71242
 SHA256: 4eda63d05678c9658257a0751698634d6603f8445c3094b82029daa439a1203b
+
+Package: bitwarden-cli
+Version: 2026.6.0
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 137684
+Section: utils
+Priority: optional
+Homepage: https://bitwarden.com/help/cli/
+Description: Bitwarden CLI — command-line interface for Bitwarden password manager.
+ .
+Filename: pool/bitwarden-cli-2026.6.0/bitwarden-cli_2026.6.0_debian13_amd64.deb
+Size: 31567788
+MD5sum: b4fd38ed343c2d4c100cf9637099d62f
+SHA1: be01a39e16489d81b74f379ce2846cd4f08d22c4
+SHA256: 7b90813fe48c563b8115ddafe58f02e969abb55efe9a2e4992b901325afa6359
 
