@@ -919,26 +919,6 @@ MD5sum: c4eb570f8fddcaabf111788dd710a6d9
 SHA1: f7237ef95b43ff0111a0ec7c494bca6f253d177c
 SHA256: 4fc57dfc8d0fa80967d0eb258a23caa7f2fb7e445b06a536ea70a92b22855b9f
 
-Package: tmux
-Version: 3.6b
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1468
-Depends: libc6, libtinfo6 | libncurses6
-Conflicts: tmux
-Replaces: tmux
-Provides: tmux
-Section: admin
-Priority: optional
-Homepage: https://github.com/tmux/tmux
-Description: Terminal multiplexer. Allows creating multiple terminal sessions within a single window, with persistent sessions that survive disconnections.
- .
-Filename: pool/tmux-3.6b/tmux_3.6b_ubuntu2604_amd64.deb
-Size: 536234
-MD5sum: 95db14ddb34e2b309a391d0c501370a5
-SHA1: 17618aef8bc5d7ee86f8122b8babc7fee6208ce2
-SHA256: f854de71b082caea70ad584d781b20169b269a879251018077e9506e1fe92dd2
-
 Package: python3-terminaltexteffects
 Version: 0.15.0
 Architecture: all
@@ -1317,4 +1297,24 @@ Size: 99642258
 MD5sum: c8de44db59a707829b8c7522b522d308
 SHA1: dc55764e25a9071c28447752d14eb64a9a5e98be
 SHA256: d6aa2b81cbe29b27f3ea66e8da3cd204dd0102821443424278fe87dc200c43c1
+
+Package: tmux
+Version: 3.7
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1556
+Depends: libc6, libtinfo6 | libncurses6
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer. Allows creating multiple terminal sessions within a single window, with persistent sessions that survive disconnections.
+ .
+Filename: pool/tmux-3.7/tmux_3.7_ubuntu2604_amd64.deb
+Size: 562644
+MD5sum: 76c9c88b5630ab6b8d16117328b44314
+SHA1: c433e91589e6e6a5b0f4dbb0067470c4c2931b6d
+SHA256: aac5b39204021ef489bc97713561fa75d682a528588846abb07460216ea3a585
 
