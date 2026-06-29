@@ -573,22 +573,6 @@ MD5sum: dce3dcdd40415950ed3042f0ccf2fd82
 SHA1: 2bb158f9279ed432d90bd642b201935aef3f0fdd
 SHA256: f5219d7772cd05b78f93131223ca62357f1b3f05bf6455d930db0a1f920788a4
 
-Package: starship
-Version: 1.25.1
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 10016
-Section: shells
-Priority: optional
-Homepage: https://starship.rs
-Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell. Statically linked binary, works on any Linux distribution. Installs to /usr/bin/starship.
- .
-Filename: pool/starship-1.25.1/starship_1.25.1_debian13_arm64.deb
-Size: 3563460
-MD5sum: 6107e7e1f58ddd8d6e3c0fbc0702fac3
-SHA1: ea416d2e0b3282f9150ece2809626579db10f0f6
-SHA256: f2dacd81c77a85702ceffd5b72d8b7c66bd658efaaf5581bb5ad4be81e750da8
-
 Package: walker
 Version: 2.16.2
 Architecture: arm64
@@ -1527,4 +1511,20 @@ Size: 89256
 MD5sum: 8a8e41a7e9d77a8a50186b2fde59f012
 SHA1: 34153a5d3a93a489f908400595ec58eba6489d4e
 SHA256: 030c0befd69d84099ca063a29f1fc80bee78c484c4a87a853879706f920b837a
+
+Package: starship
+Version: 1.26.0
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 10284
+Section: shells
+Priority: optional
+Homepage: https://starship.rs
+Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell.
+ .
+Filename: pool/starship-1.26.0/starship_1.26.0_debian13_arm64.deb
+Size: 3677898
+MD5sum: 4ab999ca3342e83c9fad4f267581021b
+SHA1: 5f7b5df7087b22ec64b0ee679ba3648135430df6
+SHA256: ec02751e40d2915082fd9d5b68c2cc177fa12f32ca80ab3ebe3736d7e18a72a3
 
