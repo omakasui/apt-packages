@@ -116,6 +116,14 @@ list-dev: ## List packages not yet promoted to stable
 		| sort -u \
 		| column -t
 
+.PHONY: validate
+validate: ## Validate index/packages.tsv integrity (field count, duplicates)
+	@awk 'NF != 11 { printf "Line %d: wrong field count (%d)\n", NR, NF; err=1 } \
+	     END { if (!err) print "packages.tsv OK: " NR " entr" (NR==1?"y":"ies") }' \
+	  index/packages.tsv
+	@awk 'seen[$$1" "$$2" "$$3" "$$11]++ { printf "Duplicate: %s %s %s (%s)\n", $$1, $$2, $$3, $$11 }' \
+	  index/packages.tsv | sort -u || true
+
 .PHONY: preview-promote
 preview-promote: ## Preview what next promote-all will add vs update in stable
 	@added=$$(awk -v suites="$(SUITES)" \
