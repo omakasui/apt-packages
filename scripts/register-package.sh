@@ -30,17 +30,15 @@ done
 
 PRODUCED_PKGS="${PRODUCES:-$PKG}"
 
-# Suite-to-distro label mapping — keep in sync with build-matrix.yml.
-declare -A DISTRO_MAP=([noble]="ubuntu2404" [trixie]="debian13" [resolute]="ubuntu2604")
-
 TAG="${PKG}-${VERSION}"
 mkdir -p index
 touch index/packages.tsv
 
 _register_entry() {
-  local suite="$1" arch="$2" name="$3" version="$4" url="$5" deb="$6"
+  local suite="$1" arch="$2" name="$3" url="$4" deb="$5"
 
-  local size md5 sha1 sha256 control_b64
+  local version size md5 sha1 sha256 control_b64
+  version=$(dpkg-deb --field "$deb" Version)
   size=$(wc -c < "$deb")
   md5=$(md5sum       "$deb" | cut -d' ' -f1)
   sha1=$(sha1sum     "$deb" | cut -d' ' -f1)
@@ -60,8 +58,6 @@ _register_entry() {
 }
 
 for suite in $SUITES; do
-  distro="${DISTRO_MAP[$suite]:-}"
-  [[ -z "$distro" ]] && { echo "ERROR: no DISTRO_MAP entry for '${suite}'"; exit 1; }
 
   for produced in $PRODUCED_PKGS; do
     # Skip frozen suite+package combinations.
@@ -72,16 +68,14 @@ for suite in $SUITES; do
 
     _is_all=false
 
-    # Try arch:all first; separate tmpdir per pattern so the downloaded filename is predictable.
-    for _pat in \
-        "${produced}_${VERSION}_${distro}_all.deb" \
-        "${produced}_${VERSION}_all.deb"; do
+    # Try arch:all first.
+    for _pat in "${produced}_${VERSION}-1+${suite}_all.deb"; do
       _tmpdir=$(mktemp -d)
       if gh release download "$TAG" \
            --repo "$REPO" --pattern "$_pat" --dir "$_tmpdir" 2>/dev/null; then
         _is_all=true
         _url="https://github.com/${REPO}/releases/download/${TAG}/${_pat}"
-        _register_entry "$suite" "all" "$produced" "$VERSION" "$_url" "$_tmpdir/$_pat"
+        _register_entry "$suite" "all" "$produced" "$_url" "$_tmpdir/$_pat"
         rm -rf "$_tmpdir"
         break
       fi
@@ -93,7 +87,7 @@ for suite in $SUITES; do
     _arch_found=false
     for arch in amd64 arm64; do
       _tmpdir=$(mktemp -d)
-      src="${produced}_${VERSION}_${distro}_${arch}.deb"
+      src="${produced}_${VERSION}-1+${suite}_${arch}.deb"
       _url="https://github.com/${REPO}/releases/download/${TAG}/${src}"
 
       if ! gh release download "$TAG" \
@@ -104,7 +98,7 @@ for suite in $SUITES; do
       fi
 
       _deb="$_tmpdir/$src"
-      _register_entry "$suite" "$arch" "$produced" "$VERSION" "$_url" "$_deb"
+      _register_entry "$suite" "$arch" "$produced" "$_url" "$_deb"
       rm -rf "$_tmpdir"
       _arch_found=true
     done
