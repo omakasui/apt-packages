@@ -69,18 +69,15 @@ for suite in $SUITES; do
     _is_all=false
 
     # Try arch:all first.
-    for _pat in "${produced}_${VERSION}-1+${suite}_all.deb"; do
-      _tmpdir=$(mktemp -d)
-      if gh release download "$TAG" \
-           --repo "$REPO" --pattern "$_pat" --dir "$_tmpdir" 2>/dev/null; then
-        _is_all=true
-        _url="https://github.com/${REPO}/releases/download/${TAG}/${_pat}"
-        _register_entry "$suite" "all" "$produced" "$_url" "$_tmpdir/$_pat"
-        rm -rf "$_tmpdir"
-        break
-      fi
-      rm -rf "$_tmpdir"
-    done
+    _pat="${produced}_${VERSION}-1+${suite}_all.deb"
+    _tmpdir=$(mktemp -d)
+    if gh release download "$TAG" \
+         --repo "$REPO" --pattern "$_pat" --dir "$_tmpdir" 2>/dev/null; then
+      _is_all=true
+      _url="https://github.com/${REPO}/releases/download/${TAG}/${_pat}"
+      _register_entry "$suite" "all" "$produced" "$_url" "$_tmpdir/$_pat"
+    fi
+    rm -rf "$_tmpdir"
     [[ "$_is_all" == "true" ]] && continue
 
     # Fall back to arch-specific assets.
