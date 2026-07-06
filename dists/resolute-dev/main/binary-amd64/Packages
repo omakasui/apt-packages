@@ -960,6 +960,23 @@ MD5sum: 0cb0ba6bc8d74723aafb33b9107f4b51
 SHA1: 68c17c97c2f7aacc19195515f9ade070fa8cd45f
 SHA256: 04e0210532dfdc119960d9dd255f22c0ccc5a9bcbc8aaf0d7025572aa1cf8875
 
+Package: lazygit
+Version: 0.62.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 18632
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Lazygit - a simple terminal UI for git commands. Provides a keyboard-driven git interface inside any terminal.
+ .
+Filename: pool/lazygit-0.62.2/lazygit_0.62.2_ubuntu2604_amd64.deb
+Size: 5446334
+MD5sum: effba258385c51a00b1799a7081e21c5
+SHA1: ac8cfe43486d01e716e3a1095d631d7d5d8ec5f1
+SHA256: d8f76048acdf8f4352e0e8fff5f8a194d201c9021ed00ef185d49d06beef2b46
+
 Package: cliamp
 Version: 1.57.0
 Architecture: amd64
@@ -1193,23 +1210,6 @@ MD5sum: bf16bc1eb49378fc2db7c3cec0d979d9
 SHA1: de8c98a3cf84c9638c48055f483f0b8147effefa
 SHA256: e3a29b6f3de6651860c63ec00f4156e7e8a09a99577369bea422e078240a4b2f
 
-Package: zen-browser
-Version: 1.21.4b
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 370876
-Section: web
-Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.21.4b/zen-browser_1.21.4b_ubuntu2604_amd64.deb
-Size: 99642258
-MD5sum: c8de44db59a707829b8c7522b522d308
-SHA1: dc55764e25a9071c28447752d14eb64a9a5e98be
-SHA256: d6aa2b81cbe29b27f3ea66e8da3cd204dd0102821443424278fe87dc200c43c1
-
 Package: tmux
 Version: 3.7
 Architecture: amd64
@@ -1301,20 +1301,20 @@ MD5sum: 6497a0eb0bc40c9797df1b4c260b2ea5
 SHA1: c7cac88d82ba02aa91a3bd05736f28bc2586d271
 SHA256: 7d70f4cb50fb3efeb44a8ab4b4ff1c187d06ff46c84b67ead4b551cfb59f2f75
 
-Package: lazygit
-Version: 0.63.0-1+resolute
+Package: zen-browser
+Version: 1.21.5b-1+resolute
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 18812
-Depends: git
-Section: vcs
+Installed-Size: 371116
+Section: web
 Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Simple terminal UI for git commands.
- Provides a keyboard-driven git interface inside any terminal.
-Filename: pool/lazygit-0.63.0/lazygit_0.63.0-1+resolute_amd64.deb
-Size: 5499244
-MD5sum: 62d664b718ca2adf73589e5a364c82ab
-SHA1: dd153a78efc89da56977ea8ee999ad01174184ca
-SHA256: b88c59282e24b409d5444f6c5d186d26ddbf59805906f9efe51a6f3bc3947dea
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser.
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.21.5b/zen-browser_1.21.5b-1+resolute_amd64.deb
+Size: 99977022
+MD5sum: 7c319b6db9cdb81097495cfe0ce5b248
+SHA1: 9a69b129a2068e3ee7a0cf677348d53de343515b
+SHA256: 3cd81a245fb02e05d60fabc5b4bb44a7b88d919bbb400c596b106fcd389029a3
 
