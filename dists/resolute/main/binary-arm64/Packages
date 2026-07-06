@@ -1,22 +1,21 @@
-Package: gh
-Version: 2.95.0
+Package: glab
+Version: 1.105.0
 Architecture: arm64
 Section: 
 Priority: optional
-License: MIT
-Maintainer: GitHub
-Installed-Size: 37324
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 47469
 Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.95.0/gh_2.95.0_ubuntu2604_arm64.deb
-Size: 10257826
-MD5sum: bab44c6cff91fcb44f2bfd649e05eb34
-SHA1: 68842c57de3dd5413df22c4eaf2d9f8262f2ff5d
-SHA256: f148d8f1ebe7774d6e392577b37fca040560f1e69fcd575626b395b95537f36d
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.105.0/glab_1.105.0_ubuntu2604_arm64.deb
+Size: 12855968
+MD5sum: 9e12d3c2a9f40a7d07ca57cf2c3a8b6e
+SHA1: ccca940c6979a83a9e279e71817a0e7917a7daa3
+SHA256: addab353c499d292ce1ea9f09d8f834865447ead1c752eda3233fb76a427e982
 
 Package: zed
 Version: 1.8.2
@@ -122,22 +121,23 @@ MD5sum: 9484da911d03ba62bcc0bb68ca9be37d
 SHA1: d874505bc4fe3b88f86ef8f1e43bd95974f43767
 SHA256: a830ae3c512681e0118f08cf51d48f8ec61dc5a4d4d8c9f2c18aa4b37a704027
 
-Package: glab
-Version: 1.106.0-1+resolute-1+resolute
+Package: gh
+Version: 2.96.0-1+resolute-1+resolute
 Architecture: arm64
 Section: 
 Priority: optional
+License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 48276
+Installed-Size: 38052
 Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.106.0/glab_1.106.0-1+resolute_arm64.deb
-Size: 12900502
-MD5sum: 9698bb171c412130ec71b708f3edc3f4
-SHA1: b369485c3410d4caa8da643eddb89411763f1354
-SHA256: 9ab78be5d2904978e581168a3edd1bb1b904545e33bd115f1ccb3ea3a02c3f0a
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.96.0/gh_2.96.0-1+resolute_arm64.deb
+Size: 10278750
+MD5sum: d71c4b3c052a38b30e5df62d7c3e3589
+SHA1: 973b6254b61c89ce454b57dc68fd2f1fc5a4e13b
+SHA256: 4d5784a4a8dbcbda2262865e6c731001b2993ad15d6a1dda2c0758835addf761
 

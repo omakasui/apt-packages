@@ -1150,25 +1150,24 @@ MD5sum: b7064777e263c422e6a634d162116f44
 SHA1: d5d63aea5d9708042387330f0e5e6a6bcca4cd7e
 SHA256: 5722bcfd6d0605eb8a4fca5566331205f6f082d7e360ee9f07ad0517fddd863e
 
-Package: gh
-Version: 2.95.0
+Package: glab
+Version: 1.105.0
 Architecture: arm64
 Section: 
 Priority: optional
-License: MIT
-Maintainer: GitHub
-Installed-Size: 37324
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 47469
 Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.95.0/gh_2.95.0_ubuntu2404_arm64.deb
-Size: 10278196
-MD5sum: 1cb08ec93d7f715f776c883ac8210392
-SHA1: aa9c45929f463b5a46cc996bb57f1358ce2c6e2e
-SHA256: a1dab9d861e974a4337617e5918b3df362dc78920552754518c115894e0829a4
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.105.0/glab_1.105.0_ubuntu2404_arm64.deb
+Size: 12883220
+MD5sum: f110c47cf69a5b48dda41c9b0f8215ac
+SHA1: 68ab41fa9a0e6a5dcddd40ac97a55c9b41cb6c2e
+SHA256: c21169ed259418b16ce5b731e9933a6bccb646423cc22f26f6d5e9e90e4878e1
 
 Package: swayosd
 Version: 0.3.2
@@ -1380,22 +1379,23 @@ MD5sum: 6be3f33b8c679d4f8b6ea391117916d2
 SHA1: 6ab9c50fbceedcd6e14db6a448dce8b5ca563609
 SHA256: 764b1300a7318352b65293065828ddf54113775ea2855c933b0813c5007769de
 
-Package: glab
-Version: 1.106.0-1+noble-1+noble
+Package: gh
+Version: 2.96.0-1+noble-1+noble
 Architecture: arm64
 Section: 
 Priority: optional
+License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 48276
+Installed-Size: 38052
 Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.106.0/glab_1.106.0-1+noble_arm64.deb
-Size: 12900376
-MD5sum: cf2f6813ec13281c8f1bc268613434c6
-SHA1: 8795013da5fd6f3d4983b5c2472568319674a8c5
-SHA256: 0e977193607a4addb3bf09e76721c48877fa0e3258ab9802fd0f4c21f71bdbeb
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.96.0/gh_2.96.0-1+noble_arm64.deb
+Size: 10278728
+MD5sum: cb21a56b5037dfb1fd53a1eb2bea7d87
+SHA1: d1e41ff9057d9ead11697d06f94bb6dae99cb548
+SHA256: bfdf1d30bb9a9082cc6b316b2594393a9f95ad2ce5c41e1b5b0e0332ff8603a5
 

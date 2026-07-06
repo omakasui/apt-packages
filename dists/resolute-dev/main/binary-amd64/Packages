@@ -1048,25 +1048,25 @@ MD5sum: 8b0351a3dce5ceeb2db2a9695b9f28a6
 SHA1: 3fe2a04348afeb713984a0340f02176b6043937c
 SHA256: 04a3f79e6fb345f83dc24c1e1b3a027e07868ddb2991854196cb353ee15f03cd
 
-Package: gh
-Version: 2.95.0
+Package: glab
+Version: 1.105.0
 Architecture: amd64
 Section: 
 Priority: optional
-License: MIT
-Maintainer: GitHub
-Installed-Size: 40144
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 50457
 Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.95.0/gh_2.95.0_ubuntu2604_amd64.deb
-Size: 11552630
-MD5sum: 1acb2390c9897394e72d9d5e6b4469ba
-SHA1: e99fa5d2288cdf87e97074152291b2461cefea58
-SHA256: aabbdc29e8a56b1f464293251d79032be0cc0776290ed38de52d63dfeb2e6131
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.105.0/glab_1.105.0_ubuntu2604_amd64.deb
+Size: 14180768
+MD5sum: 8280e9e9f2f7627462138e6ce1944e80
+SHA1: 8d2c4a96664264b8d31876bf3ddc4abd00520bc9
+SHA256: bbe900f4754a01f6e22be2eae6e63c66d684469422efce644a2a53557c2f5467
 
 Package: swayosd
 Version: 0.3.2
@@ -1298,23 +1298,23 @@ MD5sum: 62d664b718ca2adf73589e5a364c82ab
 SHA1: dd153a78efc89da56977ea8ee999ad01174184ca
 SHA256: b88c59282e24b409d5444f6c5d186d26ddbf59805906f9efe51a6f3bc3947dea
 
-Package: glab
-Version: 1.106.0-1+resolute-1+resolute
+Package: gh
+Version: 2.96.0-1+resolute-1+resolute
 Architecture: amd64
 Section: 
 Priority: optional
-Architecture-Variant: amd64v1
+License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 51328
+Installed-Size: 40828
 Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.106.0/glab_1.106.0-1+resolute_amd64.deb
-Size: 14232500
-MD5sum: 378b103929608876ed992c708c0cd76a
-SHA1: 61867d69ae466b42d19f6607b1fd6af3b21636e5
-SHA256: 51f49f6ee14ff06b0d3aa5ac96d7328b617d055fb200aa2573071b1460a2c67a
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.96.0/gh_2.96.0-1+resolute_amd64.deb
+Size: 11595768
+MD5sum: fcefbc7cd0f022ec4807031f399c9c65
+SHA1: 2e9be3fb0d4f53bd085515f7fa4a3bb8ef3fee8c
+SHA256: 35cf62d6613c5305724cf3f65b78d5135f8efc16230f10ae5a823786711eeca4
 

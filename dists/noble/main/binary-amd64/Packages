@@ -1096,25 +1096,25 @@ MD5sum: c81e78b5db7d7161d9493abd37f9bde7
 SHA1: 7adc5d57256a80ff3c876aac42b9b56a7938898a
 SHA256: 464ae4d2d77e3097168cba6354dc31f64037c1843dbf3427235076d00662ad6e
 
-Package: gh
-Version: 2.95.0
+Package: glab
+Version: 1.105.0
 Architecture: amd64
 Section: 
 Priority: optional
-License: MIT
-Maintainer: GitHub
-Installed-Size: 40144
+Architecture-Variant: amd64v1
+Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
+Installed-Size: 50457
 Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.95.0/gh_2.95.0_ubuntu2404_amd64.deb
-Size: 11587136
-MD5sum: 3a17b8962a026d29583f6c61380350a8
-SHA1: cc9ad89a1a69d48731ef2e9fbc1665a6af70e4db
-SHA256: cbfbd28202b72ad8a894f79716603ea931c5008a919aaea2da06683aaac2cbb3
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.105.0/glab_1.105.0_ubuntu2404_amd64.deb
+Size: 14216106
+MD5sum: aee27df28a9ac664230386fd15fd9518
+SHA1: 60132d41ab05db810f07e35db7f9744143adc65f
+SHA256: 56e5eae52d6e28872f37d9dd7567c7425c8c3dd2fea3d08d6da841d289cb7f15
 
 Package: zed
 Version: 1.8.2
@@ -1240,23 +1240,23 @@ MD5sum: 3f081f52e259fbc072e13501e37ad90b
 SHA1: 4b2521b9d4648bfdcb9fce835e5f38744ea310bb
 SHA256: a378fcb6396721ce4085b865c35c0e9267193aefd9507265815c6672e3efa9fe
 
-Package: glab
-Version: 1.106.0-1+noble-1+noble
+Package: gh
+Version: 2.96.0-1+noble-1+noble
 Architecture: amd64
 Section: 
 Priority: optional
-Architecture-Variant: amd64v1
+License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 51328
+Installed-Size: 40828
 Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.106.0/glab_1.106.0-1+noble_amd64.deb
-Size: 14232518
-MD5sum: d6b11505d6cc95340ec42d39b569f88c
-SHA1: 2db2e0a9a1ed0dc4f90751c6d227a9b9a0adeb00
-SHA256: c84105e9f5be02e5e3b70f3f5e55bb49fe4fe253bc47062db3940b65dccf321e
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.96.0/gh_2.96.0-1+noble_amd64.deb
+Size: 11595768
+MD5sum: ef80dbe920e0d676560747602162edec
+SHA1: 04936dab26319863b518d94176a4020c4616aa21
+SHA256: d06f2b6de4c61790333da14e16ec698539edadd4b44a8af957b892e2f5e0d2e2
 
