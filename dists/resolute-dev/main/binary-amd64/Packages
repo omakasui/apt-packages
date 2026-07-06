@@ -660,6 +660,25 @@ MD5sum: ac87f8f2f1d455818f8bcc231d1c2eb6
 SHA1: e0312e6a12a83da152dd6dc4b261f5a524a990bc
 SHA256: 0fa413d3a2a145f6b87ee432ac75ce5976c67bf56fca298aa4705ed8deee18f5
 
+Package: nvim
+Version: 0.12.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40872
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor. Conflicts with and replaces the distro neovim package.
+ .
+Filename: pool/nvim-0.12.2/nvim_0.12.2_ubuntu2604_amd64.deb
+Size: 9042670
+MD5sum: 3315420e2e71969b2f8284b0bf852827
+SHA1: bd87032e069631185b94e1dfde70cc90977a441a
+SHA256: 1398570506d2ed19c77e8ddf97cea92412d3fd1736c2cb3df758f7d7d2d3a8b9
+
 Package: obsidian
 Version: 1.12.7
 Architecture: amd64
@@ -797,22 +816,6 @@ Size: 11088684
 MD5sum: a6d2c3c0beeb8df3a68aac23b0f5bfd4
 SHA1: 632ba8a2de93d60c2d72c5cd78e9b5be753483cd
 SHA256: 78d8d686ada4890ed8671867f6acfdd72f111bc5c44d134a83a90fc9cdd2995d
-
-Package: zoxide
-Version: 0.9.9
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1164
-Section: utils
-Priority: optional
-Homepage: https://github.com/ajeetdsouza/zoxide
-Description: A smarter cd command inspired by z and autojump. Remembers the directories you use most frequently and lets you jump to them in just a few keystrokes. Works with bash, zsh, fish and most other shells.
- .
-Filename: pool/zoxide-0.9.9/zoxide_0.9.9_ubuntu2604_amd64.deb
-Size: 478176
-MD5sum: a042776242cd1964befc2e550da8125f
-SHA1: c92791fc0d2879101b3585800c27a53120213a88
-SHA256: 700c991be0fbd16173826bd6f31f562b64149faa9daf16ddc45a3d27cbf156a0
 
 Package: xwayland-satellite
 Version: 0.8.1
@@ -1299,22 +1302,19 @@ MD5sum: 38df6a54a9d7b5dabfe0b1dfd8e35f5c
 SHA1: 17c7d5269dda45e8501cf62a7d0f9b5fdb799a90
 SHA256: b7e9a2f35f597ffa82c1baa6f8cb505a23e336561b97457544121f5acb1ebb1c
 
-Package: nvim
-Version: 0.12.4-1+resolute
+Package: zoxide
+Version: 0.10.0-1+resolute
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40956
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
+Installed-Size: 1220
+Section: utils
 Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor.
- Conflicts with and replaces the distro neovim package.
-Filename: pool/nvim-0.12.4/nvim_0.12.4-1+resolute_amd64.deb
-Size: 9067114
-MD5sum: 9940441f8af2b92b9125c967657a4e4c
-SHA1: 09572b57cfbc7f978cd4d04357884943319c55a3
-SHA256: 3e4d0113ae0c15d17f65572895b8271aa68d12d65bcb5a766d7e05d2b4734a4d
+Homepage: https://github.com/ajeetdsouza/zoxide
+Description: A smarter cd command, inspired by z and autojump.
+ Learns your most-used directories and lets you jump to them quickly.
+Filename: pool/zoxide-0.10.0/zoxide_0.10.0-1+resolute_amd64.deb
+Size: 498116
+MD5sum: 6497a0eb0bc40c9797df1b4c260b2ea5
+SHA1: c7cac88d82ba02aa91a3bd05736f28bc2586d271
+SHA256: 7d70f4cb50fb3efeb44a8ab4b4ff1c187d06ff46c84b67ead4b551cfb59f2f75
 
