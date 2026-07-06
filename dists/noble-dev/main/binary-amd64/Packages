@@ -1062,23 +1062,6 @@ MD5sum: 07938d6abfa5a8f7b5a729eb5c624b5f
 SHA1: 920fcdc7255becaa60fe73b6d9fdd7b8727012ef
 SHA256: d4ef90927bca02b9dc2904c54c290ed3fdf7d6b45633aa6b527f907ff7ce1181
 
-Package: lazygit
-Version: 0.62.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 18632
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Lazygit - a simple terminal UI for git commands. Provides a keyboard-driven git interface inside any terminal.
- .
-Filename: pool/lazygit-0.62.2/lazygit_0.62.2_ubuntu2404_amd64.deb
-Size: 5446228
-MD5sum: 32a7f8f444535e41893bf8ba24880c1d
-SHA1: da8f8d1b92d7839ebb24f96984863d00f3ee2fac
-SHA256: 6606f93050b1dd29fc8956f8fed9853e9726418e337094809a328b9331739ae2
-
 Package: cliamp
 Version: 1.57.0
 Architecture: amd64
@@ -1227,22 +1210,6 @@ MD5sum: 45049bca3ed6b7afe643f7962b2a2914
 SHA1: 4a89b710cf04d5c45c96443a628ddc10b3c43a9a
 SHA256: 9286f6338dac6f418d2582cc6a5a777dda482c8a4a736d6d138613ec8fb71091
 
-Package: zed
-Version: 1.8.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 393964
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.8.2/zed_1.8.2_ubuntu2404_amd64.deb
-Size: 103523190
-MD5sum: db60577880aaa89ddb4b8e104c662917
-SHA1: 6cd5dcef1d555b40c3119a562089dae3eba1f016
-SHA256: 54df000a1252b321866e8599908d9db583c8874c4a3789f1a180cd080e57aa1c
-
 Package: bitwarden-cli
 Version: 2026.6.0
 Architecture: amd64
@@ -1311,6 +1278,23 @@ Size: 4342400
 MD5sum: 6ebe80058d28fbb0d9d43f565e31eb9a
 SHA1: d2d2838869f26b3e4d87d6f8141b4a384bbe43a1
 SHA256: eee03e176e16f687b68a3f96584dc86754694a485e273d418ea847182932de6c
+
+Package: zen-browser
+Version: 1.21.4b
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 370876
+Section: web
+Priority: optional
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.21.4b/zen-browser_1.21.4b_ubuntu2404_amd64.deb
+Size: 99946292
+MD5sum: e838335cbf1d4fb7c3265b77be14e604
+SHA1: 1e97c5aedfc28913ace00233c03b038889da4c94
+SHA256: a42e3a5b85990adf0b8203f62ed721e14f671d44051f48e3d8c810dcf65904e3
 
 Package: tmux
 Version: 3.7
@@ -1403,20 +1387,37 @@ MD5sum: 2c011d4876d1bd786fe51cf2c8e7743d
 SHA1: 39c9e1c533e52f1241aff5e947d9d0cd8e34d5b8
 SHA256: aa00999cec6145875892764cc0a283ccf8502d5a8588d467ca3206e65e28f5f7
 
-Package: zen-browser
-Version: 1.21.5b-1+noble
+Package: lazygit
+Version: 0.63.0-1+noble
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 371120
-Section: web
+Installed-Size: 18812
+Depends: git
+Section: vcs
 Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser.
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.21.5b/zen-browser_1.21.5b-1+noble_amd64.deb
-Size: 99976954
-MD5sum: 8e25bcdc73b3deafec6e840e25eb01e1
-SHA1: 33ca13393aebf45fadea2906dda6d4d88bdb6978
-SHA256: 1be5a970461d6eee79aaf5225d5a327b40c18822d8ca8bbd002becd96ead6b75
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Simple terminal UI for git commands.
+ Provides a keyboard-driven git interface inside any terminal.
+Filename: pool/lazygit-0.63.0/lazygit_0.63.0-1+noble_amd64.deb
+Size: 5499296
+MD5sum: 98b3d11e5657ecfa3b1bdb1079e676df
+SHA1: ae5c3957b0a90b91ac9bbd3d1c307b7eca057a2f
+SHA256: 672bda353b32961752049252ca8926c68b1832cb2549eabc9b0ba12f928f94c5
+
+Package: zed
+Version: 1.9.0-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 403540
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.9.0/zed_1.9.0-1+noble_amd64.deb
+Size: 105446048
+MD5sum: b6392bb3e4cdbd0a7ae4270e159ce906
+SHA1: 8307f09719451fc781b394f9c78a2aa23734edcd
+SHA256: f5c9aee5fa7a3088f491c7f6adba24388fc53d23012ed70ff5449bea91f718d3
 
