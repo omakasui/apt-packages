@@ -1096,6 +1096,26 @@ MD5sum: 65609d0894833bda196f33c77fa7d108
 SHA1: 6dfd0ef5752d0d990b57fc74645c9e6b0b53cec4
 SHA256: 8c0e278f61e49a103bc3158eb22e1b55f2af4ae92f28cda95e68e0cdc9b3bdd3
 
+Package: gh
+Version: 2.95.0
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 37324
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.95.0/gh_2.95.0_ubuntu2404_arm64.deb
+Size: 10278196
+MD5sum: 1cb08ec93d7f715f776c883ac8210392
+SHA1: aa9c45929f463b5a46cc996bb57f1358ce2c6e2e
+SHA256: a1dab9d861e974a4337617e5918b3df362dc78920552754518c115894e0829a4
+
 Package: glab
 Version: 1.105.0
 Architecture: arm64
@@ -1218,24 +1238,4 @@ Size: 112716446
 MD5sum: 57cf431d0601f3c7c6826b384684088b
 SHA1: 21a182a61400cd554ee1247c9ccd03c61a5a39f6
 SHA256: 59f8faa24b05ccb55de8fdbd8610a694948d7a9609d708fee97defeb8e9cb765
-
-Package: gh
-Version: 2.96.0-1+noble-1+noble
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38052
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.96.0/gh_2.96.0-1+noble_arm64.deb
-Size: 10278728
-MD5sum: cb21a56b5037dfb1fd53a1eb2bea7d87
-SHA1: d1e41ff9057d9ead11697d06f94bb6dae99cb548
-SHA256: bfdf1d30bb9a9082cc6b316b2594393a9f95ad2ce5c41e1b5b0e0332ff8603a5
 

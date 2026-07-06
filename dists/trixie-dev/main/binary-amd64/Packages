@@ -1246,6 +1246,26 @@ MD5sum: 5d45d2ef5ccaa6bdbc8474b691b0ed6d
 SHA1: 85ef1dfd9d6e4ce2080bd4deb10afe377de02a59
 SHA256: bf5aaa90437748e49e05f0787ce6ef1ab5482ea471defc7e3aaf89e563cb62bd
 
+Package: gh
+Version: 2.95.0
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 40144
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.95.0/gh_2.95.0_debian13_amd64.deb
+Size: 10649740
+MD5sum: 1aa28593f56fb8f876b6719cc08c6585
+SHA1: 0c414205b7952cf7ba6012146b1e5a8ec24b7e96
+SHA256: 7ec7be964747c7e56636f0605be0209d14cbbbafabcd52ef3efce1bc85bd7354
+
 Package: glab
 Version: 1.105.0
 Architecture: amd64
@@ -1388,26 +1408,6 @@ MD5sum: f414d90cb5ea41810aece8bdff6f865b
 SHA1: c419299eca85f888c1e4ac0dd2a4da82604c364a
 SHA256: 73f53d1a36b332c7a3489bc4db10d2ea0b5f9c8e4e0a5e4b104b32c5113eaead
 
-Package: tmux
-Version: 3.7
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1532
-Depends: libc6, libtinfo6 | libncurses6
-Conflicts: tmux
-Replaces: tmux
-Provides: tmux
-Section: admin
-Priority: optional
-Homepage: https://github.com/tmux/tmux
-Description: Terminal multiplexer. Allows creating multiple terminal sessions within a single window, with persistent sessions that survive disconnections.
- .
-Filename: pool/tmux-3.7/tmux_3.7_debian13_amd64.deb
-Size: 551432
-MD5sum: df3c4b6225279d5f862c44874433cd43
-SHA1: 3cb37bcc7fc82a5715c40105ec7b7abce2eb37cc
-SHA256: 6f3c87c14b9e912b50927ea4aae6569077f5d74fbd5c9401c898089d1a6c4efa
-
 Package: uwsm
 Version: 0.26.6
 Architecture: all
@@ -1529,23 +1529,24 @@ MD5sum: 0f28c87023b794cb3fb13993bbba67a4
 SHA1: 52b36db2500e22f506dc00ad3f81c8fbdc484601
 SHA256: b4ee6398a815c29303c1eb7d201a08859cfd4ccb29c5772d9d27260661da7d24
 
-Package: gh
-Version: 2.96.0-1+trixie-1+trixie
+Package: tmux
+Version: 3.7b-1+trixie
 Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40828
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.96.0/gh_2.96.0-1+trixie_amd64.deb
-Size: 11595740
-MD5sum: de3d03c43cce60bdb9e861c9d5e4c78e
-SHA1: ebeedfe02962a515bfcbf6c51f8665b0f33b90b9
-SHA256: e18d8f9bef3d3e227d5086334d93557ac4af1afb63510f7bb908a3d1d3a0a7eb
+Installed-Size: 1532
+Depends: libc6, libtinfo6 | libncurses6
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer.
+ Allows creating multiple terminal sessions within a single window,
+ with persistent sessions that survive disconnections.
+Filename: pool/tmux-3.7b/tmux_3.7b-1+trixie_amd64.deb
+Size: 551440
+MD5sum: cc369083f2c17806954a27839eaf2a17
+SHA1: 2b6ea0165ced165013772b04fec8f23d6e4f5162
+SHA256: 6c2be38323e181034a839d2aa517b44cd71ed1f85693fe9071e929444bd26347
 

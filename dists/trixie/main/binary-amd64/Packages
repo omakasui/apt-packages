@@ -1225,6 +1225,26 @@ MD5sum: d849b5f8d44d3fafcf51bb8fe339aa4d
 SHA1: 6ce976455cb4910772304fb82e50de84edcf0f0b
 SHA256: b88c481fa9b0b3936746c499a68f67fca283c898bc156ec81253d4560a1534dc
 
+Package: gh
+Version: 2.95.0
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 40144
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.95.0/gh_2.95.0_debian13_amd64.deb
+Size: 10649740
+MD5sum: 1aa28593f56fb8f876b6719cc08c6585
+SHA1: 0c414205b7952cf7ba6012146b1e5a8ec24b7e96
+SHA256: 7ec7be964747c7e56636f0605be0209d14cbbbafabcd52ef3efce1bc85bd7354
+
 Package: glab
 Version: 1.105.0
 Architecture: amd64
@@ -1368,24 +1388,4 @@ Size: 103190740
 MD5sum: a5698d0a1bce3ed5e94c7d3cc617dd85
 SHA1: 43fecbe6c9f5e35d37bcae0b1c6e57924b6a1ce3
 SHA256: d29f4ab3078f7da5114a91ac32115b1b46f04e84f53b5113f30f733d3ff1ad14
-
-Package: gh
-Version: 2.96.0-1+trixie-1+trixie
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40828
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.96.0/gh_2.96.0-1+trixie_amd64.deb
-Size: 11595740
-MD5sum: de3d03c43cce60bdb9e861c9d5e4c78e
-SHA1: ebeedfe02962a515bfcbf6c51f8665b0f33b90b9
-SHA256: e18d8f9bef3d3e227d5086334d93557ac4af1afb63510f7bb908a3d1d3a0a7eb
 

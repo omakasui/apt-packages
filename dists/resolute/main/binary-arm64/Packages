@@ -1,3 +1,23 @@
+Package: gh
+Version: 2.95.0
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: GitHub
+Installed-Size: 37324
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.95.0/gh_2.95.0_ubuntu2604_arm64.deb
+Size: 10257826
+MD5sum: bab44c6cff91fcb44f2bfd649e05eb34
+SHA1: 68842c57de3dd5413df22c4eaf2d9f8262f2ff5d
+SHA256: f148d8f1ebe7774d6e392577b37fca040560f1e69fcd575626b395b95537f36d
+
 Package: glab
 Version: 1.105.0
 Architecture: arm64
@@ -120,24 +140,4 @@ Size: 112716376
 MD5sum: 9484da911d03ba62bcc0bb68ca9be37d
 SHA1: d874505bc4fe3b88f86ef8f1e43bd95974f43767
 SHA256: a830ae3c512681e0118f08cf51d48f8ec61dc5a4d4d8c9f2c18aa4b37a704027
-
-Package: gh
-Version: 2.96.0-1+resolute-1+resolute
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38052
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.96.0/gh_2.96.0-1+resolute_arm64.deb
-Size: 10278750
-MD5sum: d71c4b3c052a38b30e5df62d7c3e3589
-SHA1: 973b6254b61c89ce454b57dc68fd2f1fc5a4e13b
-SHA256: 4d5784a4a8dbcbda2262865e6c731001b2993ad15d6a1dda2c0758835addf761
 
