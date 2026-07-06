@@ -1266,26 +1266,6 @@ MD5sum: 1aa28593f56fb8f876b6719cc08c6585
 SHA1: 0c414205b7952cf7ba6012146b1e5a8ec24b7e96
 SHA256: 7ec7be964747c7e56636f0605be0209d14cbbbafabcd52ef3efce1bc85bd7354
 
-Package: glab
-Version: 1.105.0
-Architecture: amd64
-Section: 
-Priority: optional
-Architecture-Variant: amd64v1
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 50457
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.105.0/glab_1.105.0_debian13_amd64.deb
-Size: 12995728
-MD5sum: 862ed9d1a85892996f7ae6511e58ac3b
-SHA1: b5b1911ebb6dff71445e446834d8036caf436034
-SHA256: 255c80249ffaa347e437605ca36c5b849d8284cc5e4576f87d0dc79a960215e4
-
 Package: swayosd
 Version: 0.3.2
 Architecture: amd64
@@ -1305,6 +1285,22 @@ Size: 2115700
 MD5sum: 09f00dcb2fcdb7865f631c4b98aeca49
 SHA1: fa374686efdb5aebf7aa2c28b202e75a84e891f3
 SHA256: a3407a45aad34a285ded6fa3e37725ab25614740ebd8ed931a24f970d293c8ec
+
+Package: zed
+Version: 1.8.2
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 393964
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.8.2/zed_1.8.2_debian13_amd64.deb
+Size: 96940204
+MD5sum: bb92e1e6293adf7132aaf9067079627a
+SHA1: 615e11f6d4eabe6260946a392a08c40fe83cfd4e
+SHA256: 8450ca5d03ef1c92d3c0b5a7d04463798d784f26873662c8fb76c3bc5b4b4564
 
 Package: bitwarden-cli
 Version: 2026.6.0
@@ -1533,20 +1529,23 @@ MD5sum: 0f28c87023b794cb3fb13993bbba67a4
 SHA1: 52b36db2500e22f506dc00ad3f81c8fbdc484601
 SHA256: b4ee6398a815c29303c1eb7d201a08859cfd4ccb29c5772d9d27260661da7d24
 
-Package: zed
-Version: 1.9.0-1+trixie
+Package: glab
+Version: 1.106.0-1+trixie-1+trixie
 Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 403536
-Section: editors
+Section: 
 Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.9.0/zed_1.9.0-1+trixie_amd64.deb
-Size: 105446092
-MD5sum: 5bba7a66a028f1ab4f260322812ccda0
-SHA1: 6877a43c30d7d906ae6d5902ab6cabaccf7e782c
-SHA256: aed572a683d8bd34d38b6fb5fcdb3e0a1dbc58bc731aeecba9273d38054d554f
+Architecture-Variant: amd64v1
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 51328
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.106.0/glab_1.106.0-1+trixie_amd64.deb
+Size: 14231940
+MD5sum: 073aef27fce307b57bb46735bf6e5ebf
+SHA1: 242643cceabb36bca48c3b7c2a094a5e8b185436
+SHA256: 990aa1a7aaa0add529f29eae83c34af3ab6158f726c00539ed6099b1457453d4
 

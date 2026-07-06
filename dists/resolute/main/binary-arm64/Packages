@@ -18,24 +18,21 @@ MD5sum: bab44c6cff91fcb44f2bfd649e05eb34
 SHA1: 68842c57de3dd5413df22c4eaf2d9f8262f2ff5d
 SHA256: f148d8f1ebe7774d6e392577b37fca040560f1e69fcd575626b395b95537f36d
 
-Package: glab
-Version: 1.105.0
+Package: zed
+Version: 1.8.2
 Architecture: arm64
-Section: 
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 377632
+Section: editors
 Priority: optional
-Maintainer: GitLab<contact-project+gitlab-org-cli-34675721-issue-@incoming.gitlab.com>
-Installed-Size: 47469
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.105.0/glab_1.105.0_ubuntu2604_arm64.deb
-Size: 12855968
-MD5sum: 9e12d3c2a9f40a7d07ca57cf2c3a8b6e
-SHA1: ccca940c6979a83a9e279e71817a0e7917a7daa3
-SHA256: addab353c499d292ce1ea9f09d8f834865447ead1c752eda3233fb76a427e982
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+Filename: pool/zed-1.8.2/zed_1.8.2_ubuntu2604_arm64.deb
+Size: 99586334
+MD5sum: 4f444c4331de73a79a17bc384989d2da
+SHA1: b6994dce505775db9414b9084585cb374c1597ff
+SHA256: a62afd3730b7b30eb9a4023fe0da78dc1aca6856c34d0572ac8367ab6eaef544
 
 Package: bitwarden-cli
 Version: 2026.6.0
@@ -125,20 +122,22 @@ MD5sum: 9484da911d03ba62bcc0bb68ca9be37d
 SHA1: d874505bc4fe3b88f86ef8f1e43bd95974f43767
 SHA256: a830ae3c512681e0118f08cf51d48f8ec61dc5a4d4d8c9f2c18aa4b37a704027
 
-Package: zed
-Version: 1.9.0-1+resolute
+Package: glab
+Version: 1.106.0-1+resolute-1+resolute
 Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 387328
-Section: editors
+Section: 
 Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.9.0/zed_1.9.0-1+resolute_arm64.deb
-Size: 101731642
-MD5sum: fe702fab47f1d9312f8d5b9bd90de25a
-SHA1: b56a07d354e87b733cb9ad9f20030e75f94bb9b6
-SHA256: 0a60f336883f37823c51d7588195ab6116286fdee3f1592bee3f248b84f283e6
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 48276
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.106.0/glab_1.106.0-1+resolute_arm64.deb
+Size: 12900502
+MD5sum: 9698bb171c412130ec71b708f3edc3f4
+SHA1: b369485c3410d4caa8da643eddb89411763f1354
+SHA256: 9ab78be5d2904978e581168a3edd1bb1b904545e33bd115f1ccb3ea3a02c3f0a
 
