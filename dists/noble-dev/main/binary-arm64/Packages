@@ -966,26 +966,6 @@ MD5sum: a9b0cf08adb51070f85f7d885a824dab
 SHA1: 0a052d96a8d23c01d33d99b8aba05cdb7ec7819a
 SHA256: 42769be2991515278d44a668b63a1a31741fc9069e145c159bb0cac6194fb359
 
-Package: fzf
-Version: 0.73.1-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4496
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder.
- Interactive filter for files, command history, processes, git commits
- and more.
-Filename: pool/fzf-0.73.1/fzf_0.73.1-1+noble_arm64.deb
-Size: 1485110
-MD5sum: 5be2579fe9ba244f6682032316ae95fe
-SHA1: e97a0caebec8f6f3abe4d3340d843c3cb95a251c
-SHA256: c45a932e26f8778737f426225cd0c9a8851437934caf568c81481bfa887ebc6f
-
 Package: gh
 Version: 2.96.0-1+noble
 Architecture: arm64
@@ -1426,4 +1406,24 @@ Size: 462144
 MD5sum: 6b164af5cfdb5a7af23502fddc950be6
 SHA1: 018a01a6c1abfddfc640f514f8c88413e9d7af94
 SHA256: 4e78ef2b6f06e5a33e22a9c85c2139e20ba73805fe9bee833d2907c38c612490
+
+Package: fzf
+Version: 0.74.0-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4560
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder.
+ Interactive filter for files, command history, processes, git commits
+ and more.
+Filename: pool/fzf-0.74.0/fzf_0.74.0-1+noble_arm64.deb
+Size: 1508630
+MD5sum: 5ea0c77a7641aaa41d2c2b0494715053
+SHA1: 07b1eed1812fc37c49ffaa7949b3d057fded0b5e
+SHA256: 56969cceb44b8d129469f53b7abfcf13b9cad0185fc9e1b7606874c0fccf7ce2
 
