@@ -38,22 +38,6 @@ MD5sum: 8280e9e9f2f7627462138e6ce1944e80
 SHA1: 8d2c4a96664264b8d31876bf3ddc4abd00520bc9
 SHA256: bbe900f4754a01f6e22be2eae6e63c66d684469422efce644a2a53557c2f5467
 
-Package: zed
-Version: 1.8.2
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 393960
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
-Filename: pool/zed-1.8.2/zed_1.8.2_ubuntu2604_amd64.deb
-Size: 103399500
-MD5sum: 6b3f16c44eb4b442b88e9444eb35e1ae
-SHA1: d697c06273b7c041224892d50c543333b04bec76
-SHA256: c21222a9c45be94e4b7d4b71e7eacfdcde936111c25a40f9c40763d6a7afeb54
-
 Package: bitwarden-cli
 Version: 2026.6.0
 Architecture: amd64
@@ -161,4 +145,21 @@ Size: 103191250
 MD5sum: 38df6a54a9d7b5dabfe0b1dfd8e35f5c
 SHA1: 17c7d5269dda45e8501cf62a7d0f9b5fdb799a90
 SHA256: b7e9a2f35f597ffa82c1baa6f8cb505a23e336561b97457544121f5acb1ebb1c
+
+Package: zed
+Version: 1.10.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 405840
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.10.0/zed_1.10.0-1+resolute_amd64.deb
+Size: 106033440
+MD5sum: 95db112c019cfdf06581eb9c676d1f02
+SHA1: 9221d22bb0c256edd0235a290242398abfc3ff0a
+SHA256: bd5f01f1995df74af7e7ec1692b0a262372df3b091ea29604cdc6910cfbff6c0
 
