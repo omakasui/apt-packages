@@ -966,25 +966,6 @@ MD5sum: ebabb541e989a592da22579145bf9e10
 SHA1: deb41344ff8ca14c22706af414cbf20e27ac9d47
 SHA256: 9ac703108a8f6feb65c324bdec8c7d1bfcd73920c7073f1813d81d570598c101
 
-Package: eza
-Version: 0.23.4-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2256
-Conflicts: eza
-Replaces: eza
-Provides: eza
-Section: utils
-Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.4/eza_0.23.4-1+trixie_amd64.deb
-Size: 912724
-MD5sum: 61d5968ebc80736bc067460de30da84d
-SHA1: 2017c646752a1b399b1ddb3c589923097205aa6c
-SHA256: 676f5fcbc9f4f7729a8deaf78a28eb4dfc675efd75c310effb598026dbf46919
-
 Package: fastfetch
 Version: 2.65.2-1+trixie
 Architecture: amd64
@@ -1578,4 +1559,23 @@ Size: 43394568
 MD5sum: f6fc4ae1e4a64c91e417e004a2451011
 SHA1: 9e9dc6cae3901eab4043c475263eef73a43f2cfb
 SHA256: 987c849e650ce97e883bdfa9354d3a825e61e1cd86c0eb2a1d452816b7316ad1
+
+Package: eza
+Version: 0.23.5-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2724
+Conflicts: eza
+Replaces: eza
+Provides: eza
+Section: utils
+Priority: optional
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+trixie_amd64.deb
+Size: 1068648
+MD5sum: 9163324509e7be65f434b28ad404a65c
+SHA1: 1d7abdc6795ddcb361d724c7d5283749f8305488
+SHA256: 52e06ff77890f3bf311a1c521957e4ca4883bad5562029c97306105fa936a6ce
 

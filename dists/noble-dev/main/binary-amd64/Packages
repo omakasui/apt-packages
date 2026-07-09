@@ -950,25 +950,6 @@ MD5sum: 24838866df58e1af76702a09e00af5e7
 SHA1: cdedf884224ac62452abc7830b28dd586d3c188c
 SHA256: 8d77285c42e000b1f0767dadc2000d85da336da759d630f9d02bc7c683632a0b
 
-Package: eza
-Version: 0.23.4-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2256
-Conflicts: eza
-Replaces: eza
-Provides: eza
-Section: utils
-Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.4/eza_0.23.4-1+noble_amd64.deb
-Size: 912812
-MD5sum: 429a216e8e6f4d03df14966eab758520
-SHA1: 55c2aa05b3c60622933303926db4c31c26c63a33
-SHA256: 81b374876181ca117064cf9059751cf0e28c2bf737ba07b8233188ecd3bef889
-
 Package: fastfetch
 Version: 2.65.2-1+noble
 Architecture: amd64
@@ -1447,4 +1428,23 @@ Size: 43394600
 MD5sum: c5d505970fd6e0295f43ae7c2e494516
 SHA1: e0c0b2d87c0c60755f8a1005a21cadd5e579ccf0
 SHA256: 821c5869dfdcdd48f6f07483a38908a52b6c3155ffa3f972d11eee2ee7b9ab31
+
+Package: eza
+Version: 0.23.5-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2724
+Conflicts: eza
+Replaces: eza
+Provides: eza
+Section: utils
+Priority: optional
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+noble_amd64.deb
+Size: 1068646
+MD5sum: f03d934e6d3da9f57e3f442b5f5525af
+SHA1: e8c32ff08cdd6ad0323b7acf17ec02dc073c2fc3
+SHA256: ad8190017c450e791ab9b8fcf4aed92b36c65557c426f554ef5fec163d5e8df3
 
