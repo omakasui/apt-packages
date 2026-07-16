@@ -425,380 +425,6 @@ MD5sum: 37c84c52c2959d519ed2455002487672
 SHA1: 077317da715e4b7aab04d297d6fdf173fbb185ef
 SHA256: 3bd6aa2d3100daad8819be735f01e5d795aa35c2a1de4b1c1bf1278d271bcbe0
 
-Package: elephant
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21316
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Data provider daemon for application launchers.
- Communicates via Unix sockets and Protocol Buffers.
- Install provider packages to add functionality.
-Filename: pool/elephant-2.21.0/elephant_2.21.0-1+resolute_amd64.deb
-Size: 7050284
-MD5sum: 79a116ae2dab0958d2d2508c46354ef9
-SHA1: f6c7a31cbb8eba21774038c05a13e4d959bf5974
-SHA256: 5f6005cb48341a86f6700049bb6462368f31e41d00c34213a7b431542b380812
-
-Package: elephant-1password
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22276
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-1password_2.21.0-1+resolute_amd64.deb
-Size: 6750544
-MD5sum: 9103ad76ff08688e476cd6b4bfaa2e9e
-SHA1: 296ee20d578c01268ff5e7bfaa4313e642a76cf9
-SHA256: 3fe30822c64ede022e0ca2d88f4807e99be670321b6251427bba53782b94ca51
-
-Package: elephant-bitwarden
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22288
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-bitwarden_2.21.0-1+resolute_amd64.deb
-Size: 6753078
-MD5sum: ddc365a51c7231a00215a6bd625e3e0e
-SHA1: 1047bea4d97ed4f3e743ae013e89015f9cb5f9a6
-SHA256: c22e719e330288848fcbf2f0ed5ada3f96f6c8ba59b7858a1ab40f0ba58b32fb
-
-Package: elephant-bluetooth
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22300
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-bluetooth_2.21.0-1+resolute_amd64.deb
-Size: 6757272
-MD5sum: 1425859b25a0e9831264d43fc7e27b05
-SHA1: b4c3c6325bbb6fdb564a74fa6b2b8400e3ffef35
-SHA256: c537073a66d17674986ec0b64c945a2c7ebc571ec8e0b33c011fa740a3609fb4
-
-Package: elephant-bookmarks
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22368
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-bookmarks_2.21.0-1+resolute_amd64.deb
-Size: 6780270
-MD5sum: c8f51b0d6e687a3d76ecd04764c46709
-SHA1: 9d4900bc4179f7bb7b190b6fac1a929d92ab7361
-SHA256: c1ef4c66fa045d13433b9b97aff7e2fa141d7a645311d85aadc842ae6bb1121f
-
-Package: elephant-calc
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22264
-Depends: elephant (= 2.21.0-1+resolute), qalc
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant calc provider plugin for the walker application launcher.
- Installs calc.so into /usr/lib/elephant/. Requires qalc.
-Filename: pool/elephant-2.21.0/elephant-calc_2.21.0-1+resolute_amd64.deb
-Size: 6743804
-MD5sum: b809353ef0d4bec2034b1ad41f1d7937
-SHA1: e8141f33099f10a2556dcd501ab140d36e3a2222
-SHA256: 16bedf15cd8a1bf075684473b00241af616cc1bae2dee5ffd056a38dac5f71aa
-
-Package: elephant-clipboard
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 24892
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-clipboard_2.21.0-1+resolute_amd64.deb
-Size: 7081068
-MD5sum: aee0d3b495cd581d190787b52fee880d
-SHA1: e544385bff76540b9c5d07e34ed860f590bc2fed
-SHA256: 11b114d1f614d85c7f21ee386d94293a9042e16ccfe18f0212f13c17aba0c618
-
-Package: elephant-desktopapplications
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22864
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-desktopapplications_2.21.0-1+resolute_amd64.deb
-Size: 6888868
-MD5sum: 84bd5f3eb37738119f43d18f368d1978
-SHA1: 70a852336b0013283ce18930414af4bb73b77857
-SHA256: 4d2ca393ad04f2dd5b0be44bef29dff271be22437c4c27eaabc43b54533b1f9d
-
-Package: elephant-files
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 24196
-Depends: elephant (= 2.21.0-1+resolute), fd-find
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant files provider plugin for the walker application launcher.
- Installs files.so into /usr/lib/elephant/. Requires fd-find.
-Filename: pool/elephant-2.21.0/elephant-files_2.21.0-1+resolute_amd64.deb
-Size: 7532904
-MD5sum: 24dc866b2128c649cbf99f00ad77a82b
-SHA1: 5bb689faa3e4f6d9ce843c93048fa69cbe0584d9
-SHA256: caef78fae621b649d5e1f61c73188972d07b76d2c44b4f09ba4f27a6b1a5b872
-
-Package: elephant-menus
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22128
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-menus_2.21.0-1+resolute_amd64.deb
-Size: 6703604
-MD5sum: c61c3af5f0b6dae39814351e4989f7f6
-SHA1: 805f3b3b90b2cbc1f808310bca9798fe99e93d7f
-SHA256: 352ec7f677162979b1bacc89008d21773f3096cd90a810f737094f4b30b8998e
-
-Package: elephant-niriactions
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22296
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-niriactions_2.21.0-1+resolute_amd64.deb
-Size: 6753924
-MD5sum: 9afcb90972623f0643ec08ec1285a1a5
-SHA1: 612ac9bfa823554be5396e91a4ada5c062ebbc4d
-SHA256: 592c4b244f4e1b16b05738163b615eca640dfe951525f118f69562cf732f7f54
-
-Package: elephant-nirisessions
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22284
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-nirisessions_2.21.0-1+resolute_amd64.deb
-Size: 6750230
-MD5sum: edbf4fa5469b69482a071f64b35b724c
-SHA1: 2aea9baad561c79ed505023fbfbb03dfe2cf1719
-SHA256: c46cfdd602f1a4da37a3b5b29dbc3dd1cee4f9e799d5980dd35ad69878a72e45
-
-Package: elephant-playerctl
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22292
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-playerctl_2.21.0-1+resolute_amd64.deb
-Size: 6751010
-MD5sum: d285f8740b15c54e9b16c7ed963bc202
-SHA1: a3dac9f87910b96c934319a791338b6f182fd35b
-SHA256: 4d839c507f75e0025f89f4c12fdfe46aa39cf3706afa3395be5a010de5f86fd8
-
-Package: elephant-providerlist
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22316
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-providerlist_2.21.0-1+resolute_amd64.deb
-Size: 6761272
-MD5sum: 505f3c6eeba9434410331500fb22ea53
-SHA1: 986f25dbee94ab5c3194281a74a8b70502fe278b
-SHA256: 04de756ebbd20ec4510a5584b2e7a2c76210ec04869fa8c9e7932fed06b8ea5d
-
-Package: elephant-runner
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22304
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-runner_2.21.0-1+resolute_amd64.deb
-Size: 6759596
-MD5sum: 7a916c830aba1f4ebb07a5605b296dd2
-SHA1: 8ec1154efb9df037dd7f7b7e85f58a35aac16659
-SHA256: a7b275ea33518570ce2b76ba4a4f282576f2e9e6fab3fa87b5162fad6c2f304b
-
-Package: elephant-snippets
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22276
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-snippets_2.21.0-1+resolute_amd64.deb
-Size: 6747628
-MD5sum: 3732ff28d35ed3b35a5344ce7dbfedfe
-SHA1: ee72cf794182907ff714a3a7359dbe48b21452f7
-SHA256: c2374ce9283e57dc9447b78caac0d0c5c4adbf27a3c1bd3ea962002391dc0e70
-
-Package: elephant-symbols
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 63964
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-symbols_2.21.0-1+resolute_amd64.deb
-Size: 12021614
-MD5sum: 20e31900f21a02c31a165ed7130b73df
-SHA1: 48b4b1a6886faba639b4f2fae853e3f95bf9a256
-SHA256: 6ff449417c4d19a452191a6142e3461e28eb793d2b496792b769cdf94b944f73
-
-Package: elephant-todo
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 31412
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-todo_2.21.0-1+resolute_amd64.deb
-Size: 8995780
-MD5sum: db7cd90f25ec9c0976ce8b2b3ce52d7c
-SHA1: f98fdbeedd68a366ddee139a79d96d7325b6897e
-SHA256: 229477683c630c165de58c8203153d353e84ca6d9f4c86fa1d74a27164383ee5
-
-Package: elephant-unicode
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 24416
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-unicode_2.21.0-1+resolute_amd64.deb
-Size: 6974132
-MD5sum: 4754cc1718dcd16b4576840f0403ae5e
-SHA1: 51553bcdbfeac0ec95a828eb5634fb75c761e093
-SHA256: 52cdc6a9b068cbe7a46a3fea0c64463340ad141e2e116b8a250753027f0dab0f
-
-Package: elephant-websearch
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22356
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-websearch_2.21.0-1+resolute_amd64.deb
-Size: 6768268
-MD5sum: 0aab2fd5661236cfa088b2d481e23381
-SHA1: 1712a964961eff48551f27fc327249c41af2b38a
-SHA256: 9ce1368ff70de44e6e50c49e2d642f60d75d4bfb56a6047813fe4d22836dd79c
-
-Package: elephant-windows
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22760
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-windows_2.21.0-1+resolute_amd64.deb
-Size: 6857618
-MD5sum: 6ac500a5360e8238d6dcf4aa5a8da71f
-SHA1: 6398743b5e7f638663b8d12a8f8630234d1f398d
-SHA256: d71605e935f1f268a01ff0f8b35468d352430c05ab2b83053dd9004794e496f6
-
-Package: elephant-wireplumber
-Version: 2.21.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22308
-Depends: elephant (= 2.21.0-1+resolute)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.21.0/elephant-wireplumber_2.21.0-1+resolute_amd64.deb
-Size: 6759470
-MD5sum: 91f50e07865fc0ed09e05f42f8dc6632
-SHA1: 63ad33d4d22776ca0e9c50c33928884890ed8ca8
-SHA256: c456ef9e8e54ade131f4316381773194fdab5030dfeda6b206a8df7e44725e3b
-
 Package: elephant-all
 Version: 2.21.0-1+resolute
 Architecture: all
@@ -1347,4 +973,378 @@ Size: 2200340
 MD5sum: 0982a494e866c499a2fde455c0109221
 SHA1: a7a139dd128fccea560c64cb5bf0050cb7ba0f90
 SHA256: dc14729e55f49ff5727d9a7a09908decd4593d9f7d5935c7fab455ef8c969e50
+
+Package: elephant
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21316
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Data provider daemon for application launchers.
+ Communicates via Unix sockets and Protocol Buffers.
+ Install provider packages to add functionality.
+Filename: pool/elephant-2.22.0/elephant_2.22.0-1+resolute_amd64.deb
+Size: 7050534
+MD5sum: 833c923bb1f8348b7ac016e6fa2c3086
+SHA1: 293c6783104d76ae5eb6c45503e4e54db42683ed
+SHA256: d6f7050b23df56948c3ce892cb65662e7b0b605e806660513e8fd358d987e838
+
+Package: elephant-1password
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22276
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-1password_2.22.0-1+resolute_amd64.deb
+Size: 6750548
+MD5sum: 128bf529709a65b4b38e77dac855aa78
+SHA1: d9d4335415a74c3e2e1c5a0ee99fb65a090d4608
+SHA256: 593a603e66f6b28ed8e62757f105eed5d7fc33df1b56a4164203c2641cb34ef8
+
+Package: elephant-bitwarden
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22288
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-bitwarden_2.22.0-1+resolute_amd64.deb
+Size: 6753386
+MD5sum: 584d5cafdfe753faf37107c69c45dab0
+SHA1: f810400641c2641e78a68d95f42fa3752ca4f047
+SHA256: e71ce18113f8384b69a78233800cb63c5ac6627b178d903f1cfffde573953913
+
+Package: elephant-bluetooth
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22300
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-bluetooth_2.22.0-1+resolute_amd64.deb
+Size: 6757258
+MD5sum: cd2ea4a31313d1331a3ff9fd061232f8
+SHA1: 54b8d29741dcfd3e97ecb2f314b07c91d3a42f46
+SHA256: dba5452efab373ff3112845b646f46268b4f726d7a4ffd946e8a758032c35950
+
+Package: elephant-bookmarks
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22368
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-bookmarks_2.22.0-1+resolute_amd64.deb
+Size: 6781684
+MD5sum: aed47fcb17aa1fa8f03dfae17bc10903
+SHA1: 43f28374c7f8b5a0ccc7f35f2703d67df502db33
+SHA256: 0e10ca4e224f7551650528b631254260100bd84d975cc371a72a10de52f02b7f
+
+Package: elephant-calc
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22264
+Depends: elephant (= 2.22.0-1+resolute), qalc
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant calc provider plugin for the walker application launcher.
+ Installs calc.so into /usr/lib/elephant/. Requires qalc.
+Filename: pool/elephant-2.22.0/elephant-calc_2.22.0-1+resolute_amd64.deb
+Size: 6744708
+MD5sum: 85b7f7ac309ed4f7814b741051a5da56
+SHA1: b5898d1801c540121b0e730cf7b21953b786557f
+SHA256: b68de6b86ffab0ea95e81e65afffa4b18514c5212c8d365bd337db002ed33018
+
+Package: elephant-clipboard
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 24460
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-clipboard_2.22.0-1+resolute_amd64.deb
+Size: 6989550
+MD5sum: 9d577bc7af6c5aec557ffba4a9a23f74
+SHA1: 482f419e7751dcbd3416884f6b2fdb5c7db44eba
+SHA256: 74ae3f491ee8708f01f4c518ee026899c26fded1a4a765498a4182152d62f8d3
+
+Package: elephant-desktopapplications
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22864
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-desktopapplications_2.22.0-1+resolute_amd64.deb
+Size: 6889182
+MD5sum: 39dc6a7a2b8be99873f5e4a720b92c45
+SHA1: eef51fc576aaff274d01ce4f68122c4f5ce1ac5a
+SHA256: 41552ed61f580dee517176403975956399961e6a933f9fee95079deab3b4f439
+
+Package: elephant-files
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 24196
+Depends: elephant (= 2.22.0-1+resolute), fd-find
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant files provider plugin for the walker application launcher.
+ Installs files.so into /usr/lib/elephant/. Requires fd-find.
+Filename: pool/elephant-2.22.0/elephant-files_2.22.0-1+resolute_amd64.deb
+Size: 7531196
+MD5sum: a2865ecdf78702e70d9cee25182b86e0
+SHA1: 41d2cb14620b2f1a6580a82176a1640b90efa554
+SHA256: 666f20222e220dc9aaa5f17265c2d9745ea0d1708b5bddd79dd75e9de5a90bcc
+
+Package: elephant-menus
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22128
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-menus_2.22.0-1+resolute_amd64.deb
+Size: 6702616
+MD5sum: 2eaa9066bd31805d35123813bfa1e04d
+SHA1: 07e07b7e5a5d6c06f0a631b7524c7d98650894df
+SHA256: 035135efd42ebdf563a625716f98c9588ea6b139756b29fef346db421a7f2c24
+
+Package: elephant-niriactions
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22296
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-niriactions_2.22.0-1+resolute_amd64.deb
+Size: 6755822
+MD5sum: 4723e67b7291f0de3481e4def694956a
+SHA1: 9664663e7b5c1a6ebad8ecec6ef30fa2a8030e2c
+SHA256: 476701d5237cdc0c995bca3253624440712b8a493624a5d3ddf17dd2eb426222
+
+Package: elephant-nirisessions
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22284
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-nirisessions_2.22.0-1+resolute_amd64.deb
+Size: 6750438
+MD5sum: 2d6983f50f45b5d79c615e780a2e5120
+SHA1: ef40417cfb9beeb545b7b2a81125fb50267d39cc
+SHA256: eca12e60df544ab216a714d5ff2f163284c438ebf49aa722fb42b3a5f933379d
+
+Package: elephant-playerctl
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22292
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-playerctl_2.22.0-1+resolute_amd64.deb
+Size: 6751226
+MD5sum: 47c1051bf8b6d618588d9feee029f89e
+SHA1: aa382dd4788698374331fd484a0ac61c6fca19bd
+SHA256: ddcc5792f64432c409091d1299106246e377480e40d0b6036e5a71d8967513a1
+
+Package: elephant-providerlist
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22316
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-providerlist_2.22.0-1+resolute_amd64.deb
+Size: 6761282
+MD5sum: 4852720b62db3f29e14609c12b74cd95
+SHA1: 5f88ce87cd642da435873737f09c0b5f04b493b4
+SHA256: 281cbbfd2b231877be9798d46b6d5296b1a1ab28921ecea27ed7a5c6d9549c16
+
+Package: elephant-runner
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22304
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-runner_2.22.0-1+resolute_amd64.deb
+Size: 6759154
+MD5sum: cc4b84c95dd93caad595ab247feab823
+SHA1: b053a7510eb27fe1fd11eda394d562165758375d
+SHA256: d7c05ba0d93bd20cb11f28001bce79cc24d5cfb1188f77eacbf335b13a2084f3
+
+Package: elephant-snippets
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22276
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-snippets_2.22.0-1+resolute_amd64.deb
+Size: 6736814
+MD5sum: 8b46e425cfc99aa66ce7f9b605aee52f
+SHA1: bbb593821f988360891b3c94d9b545b7d31b8761
+SHA256: aee64ad4a1f134b1b67bfee4a89f88f3433b87e6608ed5bbf9ec691576779a0f
+
+Package: elephant-symbols
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 142928
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-symbols_2.22.0-1+resolute_amd64.deb
+Size: 15934182
+MD5sum: 4e1745db36c465ae66c4e70f1ee001a1
+SHA1: 4a8287c12daef9aab338430da2a77ec8724e8a63
+SHA256: d7eed0086ef49ca9a5438daca38f139773ef8c76fe7d2a43f18fec50458c5965
+
+Package: elephant-todo
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 31412
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-todo_2.22.0-1+resolute_amd64.deb
+Size: 8992576
+MD5sum: 18dc0f12212494eb60e4b006b317b88c
+SHA1: 2dd3d9feba2ab32353a6b09f532929732322b90b
+SHA256: ea6cf858ade9a47306d02e6e8b667ba52f9a3e0635ae28cc40d4314e052c42d1
+
+Package: elephant-unicode
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 24416
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-unicode_2.22.0-1+resolute_amd64.deb
+Size: 6974380
+MD5sum: 562f73366bef3ab1865316d4549a3289
+SHA1: 35d83912146f86616d4bcb6b14bc16d43a3ec9dd
+SHA256: 46f08aa8c9e3983797b5de35b45199d97cd8f792864f189a78ab28d472614c3c
+
+Package: elephant-websearch
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22356
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-websearch_2.22.0-1+resolute_amd64.deb
+Size: 6768322
+MD5sum: 82f88f99c9953fc3213cb564d1bf6916
+SHA1: 600f1e366416e07d3f21f6a2eeeb5e7b347b246b
+SHA256: 955cc9ee88be40e9b13039f36d66d2c78cf628005ff77e49ad8e513f9b470854
+
+Package: elephant-windows
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22760
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-windows_2.22.0-1+resolute_amd64.deb
+Size: 6856324
+MD5sum: 873310d27d159fbe1de140d2e30dae05
+SHA1: 24ad48c9ee7c1461cd29c58cbcd11b47b2217d5d
+SHA256: c56efb3c4387c341124a083151f533e75480e439bced8a15a2b82e6a3d7dbb45
+
+Package: elephant-wireplumber
+Version: 2.22.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22308
+Depends: elephant (= 2.22.0-1+resolute)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.0/elephant-wireplumber_2.22.0-1+resolute_amd64.deb
+Size: 6760208
+MD5sum: ffe1f08a903471999d09e386e411afd2
+SHA1: dacc70516c1202540f9b84058512dc4c1dc4e16b
+SHA256: b223eec5e86836c778e79a7ac9239a2786f77fb206bfe70cb2f60defcf9af43f
 
