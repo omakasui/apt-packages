@@ -1191,22 +1191,22 @@ MD5sum: 3f081f52e259fbc072e13501e37ad90b
 SHA1: 4b2521b9d4648bfdcb9fce835e5f38744ea310bb
 SHA256: a378fcb6396721ce4085b865c35c0e9267193aefd9507265815c6672e3efa9fe
 
-Package: zed
-Version: 1.10.3-1+noble
+Package: zen-browser
+Version: 1.21.6b-1+noble
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 405812
-Section: editors
+Installed-Size: 371608
+Section: web
 Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.10.3/zed_1.10.3-1+noble_amd64.deb
-Size: 106023096
-MD5sum: 5ef42bb25a9bb9299f711c867a643559
-SHA1: a53b23c431496ce0c3843dff04c8ba845af561b3
-SHA256: 37cc6141a47b30b2fe151461c20ff08369e54824ec915c680ebe8af2c2b2bfff
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser.
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.21.6b/zen-browser_1.21.6b-1+noble_amd64.deb
+Size: 100043558
+MD5sum: 48f6ab04dcabe763ec472d17d418eb3e
+SHA1: 4936dad9c8c75f19975c0712aca015bc4dc925e4
+SHA256: 727ad12ebc8c1cd71bbde9feb8e00945e641237411d28707fb69718dcab807a5
 
 Package: glab
 Version: 1.108.0-1+noble
@@ -1244,20 +1244,20 @@ MD5sum: dc59eb596e8675ea9607e21ebb351afb
 SHA1: fbbca9cce60f542f9206f3bb9df287d394fac73c
 SHA256: eb289ff71cb6b0e5f293e89c846201f9f269abe54aec9a8783643cb07cc879ff
 
-Package: zen-browser
-Version: 1.21.7b-1+noble
+Package: zed
+Version: 1.11.3-1+noble
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 371736
-Section: web
+Installed-Size: 407432
+Section: editors
 Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser.
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.21.7b/zen-browser_1.21.7b-1+noble_amd64.deb
-Size: 100014640
-MD5sum: a6cb364e15d1bfb842bd21d35eb8765c
-SHA1: cacbc9f20cc9bb3e977098b38593b0161602aeb5
-SHA256: ed6670321a0c7cccff2881d0bebaa698b5862904baf64b23933919edd532ca0f
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.11.3/zed_1.11.3-1+noble_amd64.deb
+Size: 106407440
+MD5sum: a04b39544004e9fa4325c93c54f92c70
+SHA1: 28424be1c7aa44958e7de952b26d089157d82ea1
+SHA256: c2d27750c89960740b7ad7dd43b6ef5b76366a25037ae5e5d22011166f435a0a
 
