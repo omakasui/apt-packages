@@ -779,26 +779,6 @@ MD5sum: 7abad0e46e7c060be1011b313320ff98
 SHA1: 09146ade80abbc94c852eefa92a76b28c8920888
 SHA256: f5c6afd9c02a0890e3677c4859d95546fda0e4c3e703a43c3bfb79a3f5a1069f
 
-Package: fzf
-Version: 0.74.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4788
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder.
- Interactive filter for files, command history, processes, git commits
- and more.
-Filename: pool/fzf-0.74.0/fzf_0.74.0-1+resolute_amd64.deb
-Size: 1680750
-MD5sum: 6d78c7ecf54ec23d1dd92aeceb7d791d
-SHA1: a05339a21f087463ff05356989e1d905b5566ae5
-SHA256: 3f68dba66b99f5fa199d54d7de25ed1e7a3940a1604590fbdbb30d40b62b423f
-
 Package: eza
 Version: 0.23.5-1+resolute
 Architecture: amd64
@@ -1347,4 +1327,24 @@ Size: 34950870
 MD5sum: 2d4d9c6ac2f936f606ff0a39071fba2e
 SHA1: b31b9257d4b57e2a97c7ee7691898c052730824e
 SHA256: 1aba198c398acd57b282ce3b235c424c51316445682d0033ac155c772dad5d41
+
+Package: fzf
+Version: 0.74.1-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4796
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder.
+ Interactive filter for files, command history, processes, git commits
+ and more.
+Filename: pool/fzf-0.74.1/fzf_0.74.1-1+resolute_amd64.deb
+Size: 1683390
+MD5sum: 73cfd9a76821c4bec863639484f9e6b6
+SHA1: 776f4bb4bc60de46124fbf942346ab13ad6cb512
+SHA256: 3aa7a6925685f734165cde116c098adb9be9e23f44aa3265c693947cfdf00d1b
 
