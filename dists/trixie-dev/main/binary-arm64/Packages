@@ -1526,21 +1526,6 @@ MD5sum: b17a2fdeb8a2214b282d7920b408576d
 SHA1: ec1945fbdafb495b9c045173b23dd76549b70f4d
 SHA256: 17d7a37aefa0ee80695d97702166ea5c8dc4eeec03130af21846b1afe4a78946
 
-Package: cliamp
-Version: 1.60.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 30772
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.60.0/cliamp_1.60.0-1+trixie_arm64.deb
-Size: 8549416
-MD5sum: 1520e36c8b2a5588e4dbd04ee49997a6
-SHA1: 388964950a6bd4e3285be04eccd056f74411c908
-SHA256: 0894bea56dbec629eac90aeed4cf1a0cbff697dc58d908d27ff4295586baef33
-
 Package: zen-browser
 Version: 1.21.8b-1+trixie
 Architecture: arm64
@@ -1557,4 +1542,19 @@ Size: 87119436
 MD5sum: 6c3246f9391624cfee8f02cf94d7813f
 SHA1: b2dfd2c35adadb0e3d78c8032889ca0e43a03bda
 SHA256: f490fed0c8fdc696d9e1545d1affa36ab45f5f738c2e3d38e58e54fe87de0080
+
+Package: cliamp
+Version: 1.60.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 30772
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.60.1/cliamp_1.60.1-1+trixie_arm64.deb
+Size: 8549234
+MD5sum: 6b418996c0745454879256e451ddd17d
+SHA1: c807a5c0ef6848122e06416648128c7794f739fb
+SHA256: 995afcf07bfaea4190ebba7be938d26c12cf6c42a5d3c45cf504a8c3e18e5ad6
 

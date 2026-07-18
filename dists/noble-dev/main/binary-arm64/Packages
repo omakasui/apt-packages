@@ -1395,21 +1395,6 @@ MD5sum: 3f43db4bf500e7d5eb4915399b3c50d2
 SHA1: 3d02618b5a93d9e6e1b8d41d8e254aae2f8a3af6
 SHA256: 09726c6fe4630728773591450feedd85619fc1b1caf1e311f374577124dd5a18
 
-Package: cliamp
-Version: 1.60.0-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 30772
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.60.0/cliamp_1.60.0-1+noble_arm64.deb
-Size: 8549360
-MD5sum: 13c5a9b5c6dd1ae3e3e4a1d74d9840f6
-SHA1: a2c31a40c5c3978baa47c0bcc2efeda2b638b3fe
-SHA256: 2b195e9f668b3b8cbc53217251b4eb37f323d3857d288b3778b3daa27bbf0e77
-
 Package: zen-browser
 Version: 1.21.8b-1+noble
 Architecture: arm64
@@ -1426,4 +1411,19 @@ Size: 87119058
 MD5sum: 3dccccd54edd13b7e69913fe42bfa4f3
 SHA1: 9eb5036785f0eb41dfa45e72917f67ce932a252b
 SHA256: c99699108f57313a853f2dc08a4edf97ae7f91332436486ab6a96b7ba4414e2e
+
+Package: cliamp
+Version: 1.60.1-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 30772
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.60.1/cliamp_1.60.1-1+noble_arm64.deb
+Size: 8549226
+MD5sum: 44a7a1247144b4720d04a53b0e99c563
+SHA1: ea60f92c9e89394eff150462f48bef1d528cadcd
+SHA256: f366308f8014bd35b7922952167f7b3483329086b9e1b44a5db1ed9593fdd388
 
