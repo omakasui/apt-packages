@@ -660,26 +660,6 @@ MD5sum: 0eb5cbe2f0fcfc27577edfc10e39bf5a
 SHA1: 618d0836408029b956ee3c6ff3393d5e6200c605
 SHA256: e1f43c1faf79957069bb865f941a6da01df12e44e3523155db4959149cdcc07d
 
-Package: kitty
-Version: 0.47.4-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 107272
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.47.4/kitty_0.47.4-1+trixie_arm64.deb
-Size: 33287066
-MD5sum: bdd2914ed791df5dd9425b37a3883dbd
-SHA1: 6439ab8f16bba3dc490ef61ce6c9eb13119929e6
-SHA256: 4f1bbdb74172b1da5ca014c90a118a922392063cca80330fe48a390318380e43
-
 Package: lazydocker
 Version: 0.25.2-1+trixie
 Architecture: arm64
@@ -1557,4 +1537,24 @@ Size: 8549234
 MD5sum: 6b418996c0745454879256e451ddd17d
 SHA1: c807a5c0ef6848122e06416648128c7794f739fb
 SHA256: 995afcf07bfaea4190ebba7be938d26c12cf6c42a5d3c45cf504a8c3e18e5ad6
+
+Package: kitty
+Version: 0.48.0-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 110352
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.48.0/kitty_0.48.0-1+trixie_arm64.deb
+Size: 34177492
+MD5sum: d42b14901c92f00f306dba522db411dc
+SHA1: 358b245f88b4233f921f5f18fe73c312ac010f04
+SHA256: cf8b34d00dec298f4de52f97972c4a8b698430a4c764014c72118a1a4b7ac0f0
 

@@ -644,26 +644,6 @@ MD5sum: 2a4b26ade0d05fd278052ba3946e4b4a
 SHA1: 84ba45b9a5a4fd7d8b48d5a23d146e93436a51d1
 SHA256: 3b34e8e5c62f500cf3eae9b4a1bed5f16c231657e446759cc3794bb49a8ca38b
 
-Package: kitty
-Version: 0.47.4-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 107272
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.47.4/kitty_0.47.4-1+noble_arm64.deb
-Size: 33286732
-MD5sum: ba4bb02fa5619f6af5af3a4414e9d6a5
-SHA1: fbd0b9f65f5e24e76b02b08c096e561317da899d
-SHA256: e2fc0dbf56a3503c5dee94bf0c7c9e2c31263d3804ea15b252b6de2aea876b80
-
 Package: lazydocker
 Version: 0.25.2-1+noble
 Architecture: arm64
@@ -1426,4 +1406,24 @@ Size: 8549226
 MD5sum: 44a7a1247144b4720d04a53b0e99c563
 SHA1: ea60f92c9e89394eff150462f48bef1d528cadcd
 SHA256: f366308f8014bd35b7922952167f7b3483329086b9e1b44a5db1ed9593fdd388
+
+Package: kitty
+Version: 0.48.0-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 110352
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.48.0/kitty_0.48.0-1+noble_arm64.deb
+Size: 34177134
+MD5sum: d5285899a53f5b1ad280a30f847fbaee
+SHA1: 40d46e129f827340618fbaea931563c40c9c1117
+SHA256: 5dd84aff7582741c6da6b1bd5fed196d6452d918fc0018491aea395583905477
 
