@@ -525,25 +525,6 @@ MD5sum: be63cabef752820becbbdaa171b5ba5f
 SHA1: acaf975a7b8a9a54b2835853e412a14a664b964a
 SHA256: bf4d6d670512d9b1acc890776f2aee9b30640ad123d535b6b5ee84347dc559b9
 
-Package: dbeaver-ce
-Version: 26.1.2-1+noble
-Architecture: amd64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce, dbeaver
-Installed-Size: 208968
-Maintainer: omakasui <packages@omakasui.org>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.1.2/dbeaver-ce_26.1.2-1+noble_amd64.deb
-Size: 113361366
-MD5sum: 842996b7f5597e58a457309a221c5112
-SHA1: 32ff8099426b544b9fe89aa924b9eea14fd4ce41
-SHA256: f6e7947e89b226b585165e0c504dc6968b949c764a7d066747b59832522b3ed7
-
 Package: elephant-all
 Version: 2.21.0-1+noble
 Architecture: all
@@ -1447,4 +1428,23 @@ Size: 1683028
 MD5sum: bf298ba6cb8567bcc6ff9031ba06affc
 SHA1: fa542eaea57b84110264f524af79b86ad16de6d2
 SHA256: 311044cf5623f99facaf258e490b25142fc750d2c6b6a64c28131a0922d32fb4
+
+Package: dbeaver-ce
+Version: 26.1.3-1+noble
+Architecture: amd64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce, dbeaver
+Installed-Size: 211572
+Maintainer: omakasui <packages@omakasui.org>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.1.3/dbeaver-ce_26.1.3-1+noble_amd64.deb
+Size: 114645290
+MD5sum: 6b79e5707dda73ece6feef4a2e22fd01
+SHA1: 2021c498e530695ee87999436403a8a14fc6cf3a
+SHA256: 87e88f5e434bec1c5eaa5c9671c47f513b2c5103fb092efb7fd1bb17ff94bbb2
 
