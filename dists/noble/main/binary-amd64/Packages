@@ -953,23 +953,6 @@ MD5sum: a7264320910da4337dad22e3de54a83e
 SHA1: 61948654f537eb8592a2b141785eee1130c78ab2
 SHA256: 91abc0f164e14747462d62a19ac5c12b90ec244a7b1d1bee3598d33a896e6f48
 
-Package: zed
-Version: 1.11.3-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 407432
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.11.3/zed_1.11.3-1+noble_amd64.deb
-Size: 106407440
-MD5sum: a04b39544004e9fa4325c93c54f92c70
-SHA1: 28424be1c7aa44958e7de952b26d089157d82ea1
-SHA256: c2d27750c89960740b7ad7dd43b6ef5b76366a25037ae5e5d22011166f435a0a
-
 Package: cliamp
 Version: 1.59.0-1+noble
 Architecture: amd64
@@ -1447,4 +1430,21 @@ Size: 14275214
 MD5sum: 3a8d1fdba90378a6646e6e16afbac58e
 SHA1: edcfd0ee4916a305a8951d0f1e6cf6754fef2df7
 SHA256: a4fef35a461024926d339e7e3664f0f9e1acc5207f6cc5f4334404276fe8c897
+
+Package: zed
+Version: 1.12.0-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 425872
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.12.0/zed_1.12.0-1+noble_amd64.deb
+Size: 108946100
+MD5sum: 8ecc470251288361ac3fa9505cdf434c
+SHA1: 8b91eb91781913f537bc9de61749386a22630fc0
+SHA256: 13c41e324451cc992a8d9f2c7dd80ba2145f173acd1c3843a29bf03ad64de36a
 
