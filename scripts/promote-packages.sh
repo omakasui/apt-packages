@@ -45,8 +45,11 @@ BEGIN {
   chan = (n_fields >= 11) ? $11 : "stable"
   if (pkg == "")
     is_target = (chan == "dev" && !excl_set[$3] && suite_set[$1] && !frozen_set[$1 " " $3])
-  else
-    is_target = (chan == "dev" && $3 == pkg && (ver == "" || $4 == ver) && suite_set[$1] && !frozen_set[$1 " " $3])
+  else {
+    up_ver = $4
+    sub(/-1\+[^ ]*$/, "", up_ver)
+    is_target = (chan == "dev" && $3 == pkg && (ver == "" || up_ver == ver) && suite_set[$1] && !frozen_set[$1 " " $3])
+  }
   lines[NR] = $0; n_f[NR] = n_fields; is_promote[NR] = is_target
   if (is_target) promote_key[$1 " " $2 " " $3] = 1
 }
@@ -62,10 +65,12 @@ END {
     }
     print lines[i]
   }
-  if (promoted == 0)
+  if (promoted == 0) {
     print "WARNING: no dev entries found for promotion." > "/dev/stderr"
-  else
+    if (pkg != "") exit 1
+  } else {
     printf "Promoted %d entr%s to stable.\n", promoted, (promoted == 1 ? "y" : "ies") > "/dev/stderr"
+  }
 }
 ' index/packages.tsv > /tmp/packages_promoted.tmp
 
