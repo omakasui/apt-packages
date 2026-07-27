@@ -17,10 +17,6 @@ on:
         description: 'Package name — required for remove-package, freeze-package, unfreeze-package. Space-separated for multiple (remove-package only).'
         required: false
         type: string
-      version:
-        description: 'Version — unused, kept for compatibility'
-        required: false
-        type: string
       suites:
         description: 'Space-separated suites (e.g. "noble" or "trixie noble"). Leave empty for all.'
         required: false
