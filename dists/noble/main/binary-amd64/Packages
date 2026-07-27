@@ -46,23 +46,6 @@ MD5sum: 7cdaf92dd246174db38866fe6fcac53d
 SHA1: 0ccc9002c890d49d28f56dcb45f269e88f7c5dc6
 SHA256: 612dadb51fc37773a4234b817b611e303abd4c1d0e65acbca9049cdbf1006f79
 
-Package: aether
-Version: 3.0.3
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2260
-Depends: gjs, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-soup-3.0, gtk4-layer-shell, imagemagick, gtk4-layer-shell (>= 1.1.0)
-Section: gnome
-Priority: optional
-Homepage: https://github.com/bjarneo/aether
-Description: Aether - create Omarchy/Omakasui themes the easy way. GTK4/libadwaita app for wallpaper-based color extraction and theme generation. Supports wallhaven.cc browsing, image filters, color presets, and Base16 import.
- .
-Filename: pool/aether-3.0.3/aether_3.0.3_ubuntu2404_all.deb
-Size: 335474
-MD5sum: ec897213fb78ae927b50a27ece9376ea
-SHA1: 13719354102f34583437d771679b1ce08c706f75
-SHA256: 99e1ff12522820cabe155a64a36a486d53cca89463d5b3c7576c0a761c728eed
-
 Package: pinta
 Version: 3.0.5
 Architecture: amd64
@@ -327,21 +310,6 @@ Size: 1614908
 MD5sum: ac5b20093c4cccc8187a229ed2d7a51e
 SHA1: a966a6e1ff298da3c83d92a70910f47389ddd382
 SHA256: c2d5ffc6cbb82147644e422056afe9bc2a25b44b76c6f9bb7a716a27804e0b10
-
-Package: aether
-Version: 4.27.2
-Architecture: amd64
-Maintainer: Bjarne Øverli <bjarne.oeverli@gmail.com>
-Depends: libwebkit2gtk-4.1-0, libgtk-3-0, libgtk-layer-shell0, gstreamer1.0-plugins-good, gstreamer1.0-libav, ffmpeg
-Description: Desktop theming application
- Extract colors from wallpapers and apply cohesive themes across your
- desktop. Supports animated wallpapers (GIF, MP4, WebM).
-Homepage: https://github.com/bjarneo/aether
-Filename: pool/aether-4.27.2/aether_4.27.2_ubuntu2404_amd64.deb
-Size: 5312274
-MD5sum: 52d90c62fda3f643a2b70e8a7f87f63f
-SHA1: aba4fd4f359f0b4edd6d3378a514f3641f989d91
-SHA256: 1d620068f0a6e46c3042845ab3c2244a258b061be3775449e3f62a4187e66025
 
 Package: swayosd
 Version: 0.3.2
