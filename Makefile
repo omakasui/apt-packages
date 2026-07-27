@@ -69,7 +69,7 @@ promote-pkg: ## Promote a single package dev → stable (PKG= required, VERSION=
 		$(if $(VERSION),--version "$(VERSION)")
 
 .PHONY: remove
-remove: ## Remove a package from the index (PKG= required, SUITES= optional)
+remove: ## Remove package(s) from the index (PKG= required, space-separated for multiple, SUITES= optional)
 	$(call _require_pkg)
 	@bash $(SCRIPTS)/remove-entries.sh \
 		--package "$(PKG)" \
