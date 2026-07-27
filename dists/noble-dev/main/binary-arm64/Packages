@@ -977,22 +977,6 @@ MD5sum: f01e2b3fb614301e5c2764df37e58202
 SHA1: 531764e03f3fb8bba21bdd591fa456254140641a
 SHA256: 095a00711ca5833acce43ae339360d1410705912095ed3497b5e3681256d1ee4
 
-Package: opencode
-Version: 1.18.5-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 174456
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI and TUI.
- Supports multiple AI providers, MCP tools, and collaborative sessions.
-Filename: pool/opencode-1.18.5/opencode_1.18.5-1+noble_arm64.deb
-Size: 44839206
-MD5sum: 8c521acffdad380f4452d85ac743859d
-SHA1: 86f355554fede53e7f39e4b2943ab5cbbd98c875
-SHA256: 70319680b8f058af9b036d0d265e59517f811db43f66d905b5cb37fa4855f105
-
 Package: cliamp
 Version: 1.62.0-1+noble
 Architecture: arm64
@@ -1043,4 +1027,20 @@ Size: 338894
 MD5sum: 8987364fb814364c4272e43e6e8cca82
 SHA1: d7877a710a20a158800a2f55ad1bd108d05b8dc7
 SHA256: 5417b8042465e03844f97ca1d262564c9a2c473a0731213a22ecb2c54cbe774f
+
+Package: opencode
+Version: 1.18.7-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 174392
+Section: utils
+Priority: optional
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI and TUI.
+ Supports multiple AI providers, MCP tools, and collaborative sessions.
+Filename: pool/opencode-1.18.7/opencode_1.18.7-1+noble_arm64.deb
+Size: 44858166
+MD5sum: ce8b79ea3a9d873247f0b0a1033c4be4
+SHA1: 0820d2ca3c2a7c2e9c38f1da63eefe8141922364
+SHA256: 4d42878923cbb66c374f4d34266f6e5bd5400973d50dd33980eaad62099d488a
 
