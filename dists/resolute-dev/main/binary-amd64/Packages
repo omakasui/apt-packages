@@ -242,29 +242,6 @@ MD5sum: 418b7bb84bd5731fcb10f70a1576cb4a
 SHA1: bc981e2e765fa7e8726444f7936c8c8a27d8e0c1
 SHA256: 19e104ccdbb25aa0b8306eeab7e15de7c736b33a3c38794653e8c75f1da87596
 
-Package: nautilus-open-any-terminal
-Version: 0.8.1-1+resolute
-Architecture: all
-Source: nautilus-open-any-terminal
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 484
-Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
-Section: gnome
-Priority: optional
-Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
-Description: Nautilus extension to open any terminal emulator
- This is an extension for Nautilus which adds a context menu entry
- for opening various terminal emulators instead of being limited
- to gnome-terminal.
-Conflicts: nautilus-extension-any-terminal
-Replaces: nautilus-extension-any-terminal
-Provides: nautilus-extension-any-terminal
-Filename: pool/nautilus-open-any-terminal-0.8.1/nautilus-open-any-terminal_0.8.1-1+resolute_all.deb
-Size: 18234
-MD5sum: 299df2a1071e6416b2368995de6b1015
-SHA1: 38fd84012bc946781417ad7f71a162d095e84271
-SHA256: eefc564b4f6427a12f038772f79dc05add9e4f4ddc933a3aa1b178b53c867c8f
-
 Package: nvim
 Version: 0.12.4-1+resolute
 Architecture: amd64
@@ -1066,4 +1043,27 @@ Size: 108981560
 MD5sum: e91f320fc36ffbeac37ff2bc36f379c0
 SHA1: bc7cd0e47728de1a1ff68414169e265acf06eb86
 SHA256: 1eb961c61c365abc2dd8464efcb550a08c772a16d802bc5171f5d47dbebc8c89
+
+Package: nautilus-open-any-terminal
+Version: 0.8.3-1+resolute
+Architecture: all
+Source: nautilus-open-any-terminal
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 484
+Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
+Section: gnome
+Priority: optional
+Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
+Description: Nautilus extension to open any terminal emulator
+ This is an extension for Nautilus which adds a context menu entry
+ for opening various terminal emulators instead of being limited
+ to gnome-terminal.
+Conflicts: nautilus-extension-any-terminal
+Replaces: nautilus-extension-any-terminal
+Provides: nautilus-extension-any-terminal
+Filename: pool/nautilus-open-any-terminal-0.8.3/nautilus-open-any-terminal_0.8.3-1+resolute_all.deb
+Size: 18492
+MD5sum: db409eeafa4ec5da54e9a00e418ba702
+SHA1: 8ff72e561238642e867ebb0719df638480ee67d0
+SHA256: 2da053cedadaa6e479ef25e412e301e6ada5270fd0dd4d0f23b9294b6cdb2e30
 

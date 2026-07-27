@@ -242,29 +242,6 @@ MD5sum: eb5368be5f91d802838f1246d96d1690
 SHA1: ef71ee0db336adb70901377cd10c47b71310ffe0
 SHA256: 64b1c799644df4119edafd53d7b54d1f787bd9e038ec7cf65eeed6238794f478
 
-Package: nautilus-open-any-terminal
-Version: 0.8.1-1+trixie
-Architecture: all
-Source: nautilus-open-any-terminal
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 484
-Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
-Section: gnome
-Priority: optional
-Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
-Description: Nautilus extension to open any terminal emulator
- This is an extension for Nautilus which adds a context menu entry
- for opening various terminal emulators instead of being limited
- to gnome-terminal.
-Conflicts: nautilus-extension-any-terminal
-Replaces: nautilus-extension-any-terminal
-Provides: nautilus-extension-any-terminal
-Filename: pool/nautilus-open-any-terminal-0.8.1/nautilus-open-any-terminal_0.8.1-1+trixie_all.deb
-Size: 18226
-MD5sum: 6f7faec27555e14f66709c77d363ba92
-SHA1: c7467cfe0307cfbf6b5b85b58ada140994be3970
-SHA256: b5da3a4714bd485f384e75d3c4024d7552bb37b2e2daf697365cea67b88f524d
-
 Package: nvim
 Version: 0.12.4-1+trixie
 Architecture: amd64
@@ -1162,4 +1139,27 @@ Size: 108980688
 MD5sum: e5f74f18a0fa6653b5569b3cd5b8561c
 SHA1: dcf48fcb41168a8247cc5547ad0149ede5c5467e
 SHA256: b2855461733c04c5dc1b0cccd13a102ac52e4f44685dd8c6e6247de00db71481
+
+Package: nautilus-open-any-terminal
+Version: 0.8.3-1+trixie
+Architecture: all
+Source: nautilus-open-any-terminal
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 484
+Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
+Section: gnome
+Priority: optional
+Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
+Description: Nautilus extension to open any terminal emulator
+ This is an extension for Nautilus which adds a context menu entry
+ for opening various terminal emulators instead of being limited
+ to gnome-terminal.
+Conflicts: nautilus-extension-any-terminal
+Replaces: nautilus-extension-any-terminal
+Provides: nautilus-extension-any-terminal
+Filename: pool/nautilus-open-any-terminal-0.8.3/nautilus-open-any-terminal_0.8.3-1+trixie_all.deb
+Size: 18504
+MD5sum: 70b261d42aab75cd8e017e0cdb3054e1
+SHA1: f36968e3313a512e5a93476eea10119f0487247a
+SHA256: 7b28e19182d8f231c4612ff5d3977e5a51284448279870a9018a12c50e7b3bfd
 
