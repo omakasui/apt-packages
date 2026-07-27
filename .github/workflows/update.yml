@@ -2,7 +2,7 @@ name: Update APT repo
 
 on:
   repository_dispatch:
-    types: [packages-updated, package-updated, remove-package, rebuild-index, clean-pool]
+    types: [packages-updated]
 
   workflow_dispatch:
     inputs:
@@ -59,23 +59,14 @@ jobs:
         id: params
         run: |
           if [[ "${{ github.event_name }}" == "repository_dispatch" ]]; then
-            echo "action=${{ github.event.action }}"                  >> "$GITHUB_OUTPUT"
-            echo "package=${{ github.event.client_payload.package }}" >> "$GITHUB_OUTPUT"
-            echo "version=${{ github.event.client_payload.version }}" >> "$GITHUB_OUTPUT"
-            echo "suites=${{ github.event.client_payload.suites }}"   >> "$GITHUB_OUTPUT"
-            echo "pattern=${{ github.event.client_payload.pattern }}" >> "$GITHUB_OUTPUT"
-            PRODUCES=$(echo '${{ toJson(github.event.client_payload.produces) }}' | jq -c '.')
-            echo "produces=${PRODUCES}"                               >> "$GITHUB_OUTPUT"
+            echo "action=packages-updated" >> "$GITHUB_OUTPUT"
             PKGS_JSON=$(echo '${{ toJson(github.event.client_payload.packages) }}' | jq -c '. // []')
-            echo "packages_json=${PKGS_JSON}"                         >> "$GITHUB_OUTPUT"
-            CD_CHANNEL='${{ github.event.client_payload.channel }}'
-            echo "channel=${CD_CHANNEL:-stable}"                      >> "$GITHUB_OUTPUT"
+            echo "packages_json=${PKGS_JSON}" >> "$GITHUB_OUTPUT"
           else
             echo "action=package-updated"          >> "$GITHUB_OUTPUT"
             echo "package=${{ inputs.package }}"   >> "$GITHUB_OUTPUT"
             echo "version=${{ inputs.version }}"   >> "$GITHUB_OUTPUT"
             echo "suites=${{ inputs.suites }}"     >> "$GITHUB_OUTPUT"
-            echo "packages_json=[]"                >> "$GITHUB_OUTPUT"
             if [[ -n "${{ inputs.produces }}" ]]; then
               PRODUCES_JSON=$(echo "${{ inputs.produces }}" | tr ' ' '\n' | jq -Rc '[.,inputs]' 2>/dev/null || echo "[]")
               echo "produces=${PRODUCES_JSON}"     >> "$GITHUB_OUTPUT"
@@ -132,24 +123,6 @@ jobs:
             --produces "$PRODUCES" \
             --channel  "${{ steps.params.outputs.channel }}"
 
-      - name: '[remove-package] Remove entries from index manifest'
-        if: steps.params.outputs.action == 'remove-package'
-        run: |
-          bash scripts/remove-entries.sh \
-            --package "${{ steps.params.outputs.package }}" \
-            --suites  "${{ steps.params.outputs.suites }}"
-
-      - name: '[clean-pool] Remove entries matching pattern from index manifest'
-        if: steps.params.outputs.action == 'clean-pool'
-        run: |
-          bash scripts/remove-entries.sh \
-            --pattern "${{ steps.params.outputs.pattern }}" \
-            --suites  "${{ steps.params.outputs.suites }}"
-
-      - name: '[rebuild-index] no-op'
-        if: steps.params.outputs.action == 'rebuild-index'
-        run: echo "Rebuilding index from existing index/packages.tsv."
-
       - name: Regenerate APT metadata
         env:
           GPG_KEY_ID: ${{ steps.setup-apt.outputs.fingerprint }}
@@ -167,23 +140,36 @@ jobs:
           ACTION="${{ steps.params.outputs.action }}"
           PKG="${{ steps.params.outputs.package }}"
           VERSION="${{ steps.params.outputs.version }}"
-          PATTERN="${{ steps.params.outputs.pattern }}"
-          case "$ACTION" in
-            packages-updated)
-              PKGS_LIST=$(echo '${{ steps.params.outputs.packages_json }}' | jq -r '[.[] | "\(.package) \(.version)"] | unique | join(", ")')
-              MSG="apt: ${PKGS_LIST} [$(date '+%Y-%m-%d')]"
-              ;;
-            package-updated)  MSG="apt: ${PKG} ${VERSION} [$(date '+%Y-%m-%d')]" ;;
-            remove-package)   MSG="apt: remove ${PKG} [$(date '+%Y-%m-%d')]" ;;
-            clean-pool)       MSG="apt: clean ${PATTERN} [$(date '+%Y-%m-%d')]" ;;
-            *)                MSG="apt: rebuild index [$(date '+%Y-%m-%d')]" ;;
-          esac
+          DATE="$(date '+%Y-%m-%d')"
+
+          if [[ "$ACTION" == "packages-updated" ]]; then
+            PKGS_JSON='${{ steps.params.outputs.packages_json }}'
+            ENTRIES=$(echo "$PKGS_JSON" | jq -r '[.[] | "\(.package) \(.version)"] | unique | .[]')
+            COUNT=$(echo "$ENTRIES" | grep -c .)
+            if [[ "$COUNT" -le 1 ]]; then
+              MSG="apt: ${ENTRIES} [${DATE}]"
+              BODY=""
+            else
+              MSG="apt: update ${COUNT} packages [${DATE}]"
+              BODY="$ENTRIES"
+            fi
+          else
+            MSG="apt: ${PKG} ${VERSION} [${DATE}]"
+            BODY=""
+          fi
+
           echo "value=${MSG}" >> "$GITHUB_OUTPUT"
+          {
+            echo "body<<COMMIT_BODY_EOF"
+            echo "$BODY"
+            echo "COMMIT_BODY_EOF"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Commit and push
         uses: ./.github/actions/commit-and-push
         with:
           message: ${{ steps.msg.outputs.value }}
+          body: ${{ steps.msg.outputs.body }}
 
       - name: Trigger omakasui.org rebuild
         env:

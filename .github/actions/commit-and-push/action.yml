@@ -4,12 +4,19 @@ description: Snapshot build artifacts then retry fetch+reset+push up to 5 times.
 inputs:
   message:
     required: true
+  body:
+    description: 'Optional commit body (e.g. a package list for multi-package updates)'
+    required: false
+    default: ''
 
 runs:
   using: composite
   steps:
     - name: Commit and push
       shell: bash
+      env:
+        COMMIT_TITLE: ${{ inputs.message }}
+        COMMIT_BODY: ${{ inputs.body }}
       run: |
         git config user.name  "omakasui-bot"
         git config user.email "bot@omakasui.org"
@@ -35,7 +42,11 @@ runs:
             break
           fi
 
-          git commit -m "${{ inputs.message }}"
+          if [[ -n "$COMMIT_BODY" ]]; then
+            git commit -m "$COMMIT_TITLE" -m "$COMMIT_BODY"
+          else
+            git commit -m "$COMMIT_TITLE"
+          fi
           git push && break
           echo "Push failed (attempt ${i}/5), retrying..."
           sleep $((i * 2))
