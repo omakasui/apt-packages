@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# remove-entries.sh — Remove rows from index/packages.tsv by exact name or glob pattern.
-# Usage: remove-entries.sh --package <name> [--suites "<s1> <s2>"]
+# remove-entries.sh — Remove rows from index/packages.tsv by exact name(s) or glob pattern.
+# Usage: remove-entries.sh --package "<name> [<name2> ...]" [--suites "<s1> <s2>"]
 #        remove-entries.sh --pattern <glob> [--suites "<s1> <s2>"]
 
 set -euo pipefail
@@ -31,18 +31,28 @@ BEFORE=$(wc -l < index/packages.tsv)
 
 if [[ -n "$PACKAGE" ]]; then
   # Match field 3 exactly by surrounding the name with spaces.
+  # PACKAGE may hold several space-separated names; drop each in turn.
   if [[ -n "$SUITES" ]]; then
     cp index/packages.tsv /tmp/packages.tmp
     for suite in $SUITES; do
-      # Preserve other suites; remove only the matching suite+name.
-      grep -vF "^${suite} " /tmp/packages.tmp > /tmp/packages.other || true
-      grep -F "^${suite} " /tmp/packages.tmp | grep -vF " ${PACKAGE} " \
-        >> /tmp/packages.other || true
+      # Preserve other suites; remove only the matching suite+name(s).
+      # NB: plain grep (not -F) so ^ is an anchor, not a literal caret.
+      grep -v "^${suite} " /tmp/packages.tmp > /tmp/packages.other || true
+      grep "^${suite} " /tmp/packages.tmp > /tmp/packages.suite || true
+      for pkg in $PACKAGE; do
+        grep -vF " ${pkg} " /tmp/packages.suite > /tmp/packages.suite.tmp || true
+        mv /tmp/packages.suite.tmp /tmp/packages.suite
+      done
+      cat /tmp/packages.suite >> /tmp/packages.other
       mv /tmp/packages.other /tmp/packages.tmp
     done
     mv /tmp/packages.tmp index/packages.tsv
   else
-    grep -vF " ${PACKAGE} " index/packages.tsv > /tmp/packages.tmp || true
+    cp index/packages.tsv /tmp/packages.tmp
+    for pkg in $PACKAGE; do
+      grep -vF " ${pkg} " /tmp/packages.tmp > /tmp/packages.tmp2 || true
+      mv /tmp/packages.tmp2 /tmp/packages.tmp
+    done
     mv /tmp/packages.tmp index/packages.tsv
   fi
 else
@@ -52,8 +62,9 @@ else
     cp index/packages.tsv /tmp/packages.tmp
     for suite in $SUITES; do
       # Preserve other suites; filter matching suite lines by pattern.
-      grep -vF "^${suite} " /tmp/packages.tmp > /tmp/packages.other || true
-      grep -F "^${suite} " /tmp/packages.tmp | grep -vE "${REGEX}" \
+      # NB: plain grep (not -F) so ^ is an anchor, not a literal caret.
+      grep -v "^${suite} " /tmp/packages.tmp > /tmp/packages.other || true
+      grep "^${suite} " /tmp/packages.tmp | grep -vE "${REGEX}" \
         >> /tmp/packages.other || true
       mv /tmp/packages.other /tmp/packages.tmp
     done
