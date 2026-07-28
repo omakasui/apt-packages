@@ -990,22 +990,6 @@ MD5sum: 496111b5a3a005a028e1d7eafd467262
 SHA1: ae7e4ca8be3b6a7693281bb20263e3c83bfa796a
 SHA256: e9188d4e858777097078f45c84ce7716934c77b36aa57d09591807aa60c3c7fe
 
-Package: opencode
-Version: 1.18.7-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 174392
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI and TUI.
- Supports multiple AI providers, MCP tools, and collaborative sessions.
-Filename: pool/opencode-1.18.7/opencode_1.18.7-1+resolute_arm64.deb
-Size: 44858098
-MD5sum: 81a62af283b1de8e97f2abfa6914e44b
-SHA1: 4af057a2ed10fe882443773c37694977729f755b
-SHA256: 5bee6ed3226976f25f922c637063141b0165c23fff1c842930c412250d4a37cc
-
 Package: zed
 Version: 1.12.1-1+resolute
 Architecture: arm64
@@ -1045,4 +1029,20 @@ Size: 18492
 MD5sum: db409eeafa4ec5da54e9a00e418ba702
 SHA1: 8ff72e561238642e867ebb0719df638480ee67d0
 SHA256: 2da053cedadaa6e479ef25e412e301e6ada5270fd0dd4d0f23b9294b6cdb2e30
+
+Package: opencode
+Version: 1.18.8-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 174776
+Section: utils
+Priority: optional
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI and TUI.
+ Supports multiple AI providers, MCP tools, and collaborative sessions.
+Filename: pool/opencode-1.18.8/opencode_1.18.8-1+resolute_arm64.deb
+Size: 44908470
+MD5sum: 30a7bd33d322f078553caa576da46b45
+SHA1: eaa19011fa4ed1ca2641d34c6012c625fcc53950
+SHA256: 839604a24a1fc87933518e4b1e6c6318dd4b67b3d2151e8d082e9a5aed509804
 
