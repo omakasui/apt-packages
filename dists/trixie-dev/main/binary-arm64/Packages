@@ -350,26 +350,6 @@ MD5sum: 8bc59f62105484f12ba29834b9b7b503
 SHA1: 6f7b06d2366e9287089538e24d06da85983ff6f7
 SHA256: a1e31c2e1f6951427999de45c7652e2388bbe08b84cb8d98ba5aa883e8216886
 
-Package: xdg-terminal-exec
-Version: 0.14.2-1+trixie
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 88
-Depends: bash
-Conflicts: xdg-terminal-exec
-Replaces: xdg-terminal-exec
-Section: utils
-Priority: optional
-Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
-Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
- Launches the user's preferred terminal emulator, selected via desktop entries
- and configuration files in the XDG hierarchy.
-Filename: pool/xdg-terminal-exec-0.14.2/xdg-terminal-exec_0.14.2-1+trixie_all.deb
-Size: 15008
-MD5sum: 2ee97eeed8a3211788c36012ac21d0d9
-SHA1: 62ff051fcbc16a37fdeb7f1c3d45aa8058d3936e
-SHA256: 43aab18119890b2bd963f202da0a8b9a1d960316ba44efaf4f7f0dbe6018231c
-
 Package: yaru-theme-gtk
 Version: 25.04.1-0ubuntu1-1+trixie
 Architecture: all
@@ -1141,4 +1121,24 @@ Size: 44840872
 MD5sum: 57bbc0039cb37dd7f5694ba0cb5628d4
 SHA1: 414c29f650dcd2f24ff55fca63503ca50fc7a900
 SHA256: e330111b519fb003df8a9c259f5ebf34f7abe8117c760f09644678d0b332f7bc
+
+Package: xdg-terminal-exec
+Version: 0.14.3-1+trixie
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 88
+Depends: bash
+Conflicts: xdg-terminal-exec
+Replaces: xdg-terminal-exec
+Section: utils
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
+Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
+ Launches the user's preferred terminal emulator, selected via desktop entries
+ and configuration files in the XDG hierarchy.
+Filename: pool/xdg-terminal-exec-0.14.3/xdg-terminal-exec_0.14.3-1+trixie_all.deb
+Size: 15056
+MD5sum: f59f3eed119164ff17e316bbcc049877
+SHA1: 1f524a416f21ae4b4d6026b9673c669e04f97299
+SHA256: e2ec237bb7864da7e1c4f34f8a3348218af8274e6f7b027a13fc5024d43d6e11
 

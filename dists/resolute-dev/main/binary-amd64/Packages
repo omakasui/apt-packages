@@ -350,26 +350,6 @@ MD5sum: e899fbb5ac7ec84aa0e41bb4596cdc41
 SHA1: 3c0223f3ed028d572e24cb5696974cfaab62c437
 SHA256: f2aae4d92b529c595b33a240daf32d887b858e2f0951e321e5767d7e9977d011
 
-Package: xdg-terminal-exec
-Version: 0.14.2-1+resolute
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 88
-Depends: bash
-Conflicts: xdg-terminal-exec
-Replaces: xdg-terminal-exec
-Section: utils
-Priority: optional
-Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
-Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
- Launches the user's preferred terminal emulator, selected via desktop entries
- and configuration files in the XDG hierarchy.
-Filename: pool/xdg-terminal-exec-0.14.2/xdg-terminal-exec_0.14.2-1+resolute_all.deb
-Size: 15002
-MD5sum: 0b1e009a75ce925c1c268f47025a671e
-SHA1: bb4ac33cfca2dfc4445dc7774a469065531e3760
-SHA256: 78d881d49c02724d0b19501e135b679282f521d4a857064ca47d1e1dae4a8708
-
 Package: zellij
 Version: 0.44.3-1+resolute
 Architecture: amd64
@@ -1066,4 +1046,24 @@ Size: 45408166
 MD5sum: 51f829e9a68c359caf5e8b3b2483a3fc
 SHA1: 0af1908ab8e9b27d98eab590b207a02a42abbc4f
 SHA256: ec9907dabd224f39d28604e21d1ed0436aeac8e40709543e5a9890e020106fa3
+
+Package: xdg-terminal-exec
+Version: 0.14.3-1+resolute
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 88
+Depends: bash
+Conflicts: xdg-terminal-exec
+Replaces: xdg-terminal-exec
+Section: utils
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
+Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
+ Launches the user's preferred terminal emulator, selected via desktop entries
+ and configuration files in the XDG hierarchy.
+Filename: pool/xdg-terminal-exec-0.14.3/xdg-terminal-exec_0.14.3-1+resolute_all.deb
+Size: 15044
+MD5sum: aff97c8cb09c0aaf8e77d9da0fee9506
+SHA1: 588ac4dab1324bb3fec36e796970078293ac408b
+SHA256: 94761fe573b66ff26ccfd7a3f48c5d7987a0f38e6e930a30d04bfcbd433c88d9
 
