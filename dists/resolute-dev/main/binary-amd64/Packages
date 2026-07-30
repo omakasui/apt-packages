@@ -900,26 +900,6 @@ MD5sum: 6cc4a304743d6d9c738e78499b4ce99d
 SHA1: 4918257343575e479da2acc302d0dddac170b2f5
 SHA256: 03d4d758b7c87f3bd1fa094dc33e438c806302f8c421142414a87be87ca01722
 
-Package: kitty
-Version: 0.48.1-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 113548
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.48.1/kitty_0.48.1-1+resolute_amd64.deb
-Size: 34946410
-MD5sum: 5034b84e9a48c332f2aade360bc4b973
-SHA1: eaef9184b619a7b5fdc2990d7f87085ed7a68608
-SHA256: b0025e041fcb177869caea929058333012ada31b4b0666e97a817e76e9effa5d
-
 Package: cliamp
 Version: 1.62.0-1+resolute
 Architecture: amd64
@@ -1066,4 +1046,24 @@ Size: 109729490
 MD5sum: 9da4742fd5466022596f4c8865029dd4
 SHA1: b3d34b30a95d589a44b891865082cccd22896dec
 SHA256: c85ca4966478710423d5d90a7c75cd03c1d7f9e83f16407f880eb085a1df3bec
+
+Package: kitty
+Version: 0.48.2-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 113592
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.48.2/kitty_0.48.2-1+resolute_amd64.deb
+Size: 34956472
+MD5sum: 5644542b2b1a8f0e1a254e99380e587d
+SHA1: cb91dc2d55f91a5fef6120b80cf882fb1b431e6f
+SHA256: e9594b925046c2811cd9158e1576543f6b23264ea48454410b249911471c3e76
 
