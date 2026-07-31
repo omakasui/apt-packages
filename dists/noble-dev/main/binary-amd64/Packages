@@ -122,26 +122,6 @@ MD5sum: 24838866df58e1af76702a09e00af5e7
 SHA1: cdedf884224ac62452abc7830b28dd586d3c188c
 SHA256: 8d77285c42e000b1f0767dadc2000d85da336da759d630f9d02bc7c683632a0b
 
-Package: gh
-Version: 2.96.0-1+noble
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40828
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.96.0/gh_2.96.0-1+noble_amd64.deb
-Size: 11595598
-MD5sum: af3d5a95f0f10897d0af82ae8c1c97b9
-SHA1: 73e60da14c9b53b0a64013684f9f368d105250de
-SHA256: fc0cd4ce049052b1ba80c7b4d1fe5fdef4e7470349abc483bc2454e813bc36d7
-
 Package: ghostty
 Version: 1.3.1-1+noble
 Architecture: amd64
@@ -972,6 +952,26 @@ MD5sum: a8395d7e5780832af2db1844d288ed2d
 SHA1: eae17a3707ddba13037505aca56e3d37bb45befd
 SHA256: b47a4b15589d1817699d57efaa1dbaaafe489bc2afc875b823feb5cb7cc932b8
 
+Package: glab
+Version: 1.110.0-1+noble
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 51516
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.110.0/glab_1.110.0-1+noble_amd64.deb
+Size: 14276912
+MD5sum: 70d1c8946158ee19665a139d7cf5d08c
+SHA1: c88c514681dfc63621b0c781bcca2e18853e67d1
+SHA256: 2399428010b9c7f126ece9119931924618c3b9b93b909675fbd13b30d502630a
+
 Package: opencode
 Version: 1.18.9-1+noble
 Architecture: amd64
@@ -1045,23 +1045,23 @@ MD5sum: 15a96287c6fff143dcddfe274471e81a
 SHA1: 633ffd3737c7b87ae90f91408733f4b4238e35dc
 SHA256: b44074a1dd797b45639f8cd90b893548d55a7aa3fde950d22a11070b9689ca28
 
-Package: glab
-Version: 1.111.0-1+noble
+Package: gh
+Version: 2.97.0-1+noble
 Architecture: amd64
 Section: 
 Priority: optional
-Architecture-Variant: amd64v1
+License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 51556
+Installed-Size: 41092
 Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.111.0/glab_1.111.0-1+noble_amd64.deb
-Size: 14282906
-MD5sum: 4bd1a62ad292a16a642081da2a27e910
-SHA1: ccf71afc0293586928a815d0672fd6962e70b454
-SHA256: 1185248289b4063425ba99838b8e6be1a470bb26cd1cef36da38b70bffb1341c
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.97.0/gh_2.97.0-1+noble_amd64.deb
+Size: 11695784
+MD5sum: d82b5ac6809a04d772f846ddf05bc5f9
+SHA1: 56dc05ab2e5fefacfa96f31b3b1cae4b86e25a1f
+SHA256: 2696f463d260dff004a7a36308b0095701805b64ef21cfc701b68b9588cf0166
 
