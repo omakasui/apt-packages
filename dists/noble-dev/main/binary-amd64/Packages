@@ -787,25 +787,6 @@ MD5sum: 84c47cf3f3ad6e05775455dfe05dd0a6
 SHA1: 44ef6367a7a35fe88298db5d0e6cb6b15585a247
 SHA256: d2f4a1040f8f67e772899ab421c097a445492fe302054fd4c8a87a7bcff37daa
 
-Package: dbeaver-ce
-Version: 26.1.3-1+noble
-Architecture: amd64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce, dbeaver
-Installed-Size: 211572
-Maintainer: omakasui <packages@omakasui.org>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.1.3/dbeaver-ce_26.1.3-1+noble_amd64.deb
-Size: 114645290
-MD5sum: 6b79e5707dda73ece6feef4a2e22fd01
-SHA1: 2021c498e530695ee87999436403a8a14fc6cf3a
-SHA256: 87e88f5e434bec1c5eaa5c9671c47f513b2c5103fb092efb7fd1bb17ff94bbb2
-
 Package: bitwarden
 Version: 2026.7.0-1+noble
 Architecture: amd64
@@ -1064,4 +1045,23 @@ Size: 45430660
 MD5sum: 063832e8b09c4272f0e978030079d561
 SHA1: e2d6e4ee77f537953d59362750e7bb3c36898c6f
 SHA256: 1604af26f79651e09b64bfb0d0f42340b00cdc78c0bad3698e5ecde3d78df486
+
+Package: dbeaver-ce
+Version: 26.1.4-1+noble
+Architecture: amd64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce, dbeaver
+Installed-Size: 206012
+Maintainer: omakasui <packages@omakasui.org>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.1.4/dbeaver-ce_26.1.4-1+noble_amd64.deb
+Size: 113127232
+MD5sum: f425d0328cc90e1fc3e3568d56ef5aca
+SHA1: 82b4e73e4871ebc15cfb9eddf1de78d24604733c
+SHA256: 2f76dfeb6e222797aa664b486e8366bfc7a542cea35d416f0c3831cb3a122f88
 
