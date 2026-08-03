@@ -71,23 +71,6 @@ MD5sum: 3f3be44007915c4f1f5dd53f5d2e7d95
 SHA1: 10325ffeceb427582a4807f4e9c2fa2aa8ac9557
 SHA256: 08bb6345540ec4e261d5505e154c8739e403e2e9e0442109898f503191505937
 
-Package: fonts-cascadia-mono-nf
-Version: 3.4.0-1+trixie
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 98212
-Conflicts: font-cascadia-mono-nf
-Replaces: font-cascadia-mono-nf
-Section: fonts
-Priority: optional
-Homepage: https://github.com/ryanoasis/nerd-fonts
-Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
-Filename: pool/cascadia-mono-nf-3.4.0/fonts-cascadia-mono-nf_3.4.0-1+trixie_all.deb
-Size: 6916874
-MD5sum: 7f3e858c53458a52121fce549451f700
-SHA1: 0446c44dd1d309ddfc1eadcc02c7de5a8756360e
-SHA256: 72538c243ad824fe001b14c1614408da13451eaf2c7cd80c62e5043a04a1bf0d
-
 Package: elephant-all
 Version: 2.21.0-1+trixie
 Architecture: all
@@ -885,6 +868,25 @@ MD5sum: 5be45c5606479dbcf410c9cefffe2742
 SHA1: ff3bec0f9e7267f13ad50b00b94497b1068c0b6c
 SHA256: 77c36e25c90cda40f6f2d5fba598cb295dd37b069649aa125ea2ee6e1389b719
 
+Package: dbeaver-ce
+Version: 26.1.3-1+trixie
+Architecture: amd64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce, dbeaver
+Installed-Size: 211572
+Maintainer: omakasui <packages@omakasui.org>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.1.3/dbeaver-ce_26.1.3-1+trixie_amd64.deb
+Size: 114645290
+MD5sum: acaa08b2427cc955ab59f20742a67101
+SHA1: c905086cd32a9f2e798681b4cb824ac273348c09
+SHA256: 19b5c38b7efb69bc0dbb6ed674d4671a8527df059afce3f585f505418b002961
+
 Package: bitwarden
 Version: 2026.7.0-1+trixie
 Architecture: amd64
@@ -1144,22 +1146,20 @@ MD5sum: 5c5e8a2709d7cf9aca933cd5e6375391
 SHA1: 1f4e15bc1bdbdd4d872c04153000214a6ca2aaa9
 SHA256: cb04d46818920782afed91e7ded99f6f7afbe171e66aa20e9e9a7ba127a41b08
 
-Package: dbeaver-ce
-Version: 26.1.4-1+trixie
-Architecture: amd64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce, dbeaver
-Installed-Size: 206012
+Package: fonts-cascadia-mono-nf
+Version: 3.5.0-1+trixie
+Architecture: all
 Maintainer: omakasui <packages@omakasui.org>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.1.4/dbeaver-ce_26.1.4-1+trixie_amd64.deb
-Size: 113127246
-MD5sum: a1a681323d69e5153685020f54980827
-SHA1: 0b4029d240d4b0eacc41a85aeae5437b57e2448e
-SHA256: 882b63d884b53be6448f17d01d4e7307572a12242d227e67f9d287a31e1a1682
+Installed-Size: 98960
+Conflicts: font-cascadia-mono-nf
+Replaces: font-cascadia-mono-nf
+Section: fonts
+Priority: optional
+Homepage: https://github.com/ryanoasis/nerd-fonts
+Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
+Filename: pool/cascadia-mono-nf-3.5.0/fonts-cascadia-mono-nf_3.5.0-1+trixie_all.deb
+Size: 7446316
+MD5sum: d3782856b194204105f3a97f572dd066
+SHA1: bdbf68bd920eb1c45398b1ac2626fa7b9c6389bf
+SHA256: f24d8627bc5ee297ffb1e0899f76b604e245c85d4a5ac6dca6fa732316dca18d
 
