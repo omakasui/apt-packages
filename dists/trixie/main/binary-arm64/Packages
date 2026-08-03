@@ -983,25 +983,6 @@ MD5sum: b17a2fdeb8a2214b282d7920b408576d
 SHA1: ec1945fbdafb495b9c045173b23dd76549b70f4d
 SHA256: 17d7a37aefa0ee80695d97702166ea5c8dc4eeec03130af21846b1afe4a78946
 
-Package: dbeaver-ce
-Version: 26.1.3-1+trixie
-Architecture: arm64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce, dbeaver
-Installed-Size: 210400
-Maintainer: omakasui <packages@omakasui.org>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.1.3/dbeaver-ce_26.1.3-1+trixie_arm64.deb
-Size: 113792462
-MD5sum: bf7210643e407ff4c16a53b6f30b7168
-SHA1: c4eef04604d270a6826c8ea3eeb96580e69558a2
-SHA256: dc9dba9b78bb487c20ec5c8d6d4b454654dd47dbdb35713f1792f2b0e5d96c99
-
 Package: bitwarden-cli
 Version: 2026.7.0-1+trixie
 Architecture: arm64
@@ -1141,4 +1122,23 @@ Size: 105446224
 MD5sum: 86d3b40ac21b6eae2109de1a9194ed70
 SHA1: 9118b57c511e9508af3fb7fba80513d018c3e909
 SHA256: fe889c5319d06d2903a8df553df37231d5c4c85360d437fbcc36d8c4d9983219
+
+Package: dbeaver-ce
+Version: 26.1.4-1+trixie
+Architecture: arm64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce, dbeaver
+Installed-Size: 204872
+Maintainer: omakasui <packages@omakasui.org>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.1.4/dbeaver-ce_26.1.4-1+trixie_arm64.deb
+Size: 112324756
+MD5sum: 9e599dc0d92d8c7b29dd68302629ceea
+SHA1: 907855477b2996260e720663910a772f4c863fd4
+SHA256: ae9a30e504b6be4fa9994cc1d0a7e2f6a4416e93e57dd76feabcddbb984c8328
 
