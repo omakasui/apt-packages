@@ -961,23 +961,6 @@ MD5sum: b8be054670ee07b0bd47c968a6a706ee
 SHA1: 48de7ff7847e2411cf0269953da6664d8f201d20
 SHA256: 52db183c30ae3eae85b6a1f19e39754e12d17658b75e60fac180bab2ed00da40
 
-Package: obsidian
-Version: 1.13.4-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 344352
-Section: utils
-Priority: optional
-Homepage: https://obsidian.md
-Description: Powerful knowledge base that works on top of local Markdown files.
- Supports plugins, themes, and graph view. Installed to /opt/obsidian.
- Updates via the built-in auto-updater.
-Filename: pool/obsidian-1.13.4/obsidian_1.13.4-1+resolute_amd64.deb
-Size: 102380416
-MD5sum: 8b27b53d738a78039be90977807cedec
-SHA1: d271b175c0ed3ecc36de0e903f544985a5afd7a2
-SHA256: 58fd3e50c26cdb048c0727d50789326e505ad57a819f874fc4efc7272997f375
-
 Package: dbeaver-ce
 Version: 26.1.4-1+resolute
 Architecture: amd64
@@ -1066,4 +1049,21 @@ Size: 101522254
 MD5sum: e1319c54ec5a2135c2c829846f147879
 SHA1: 7b7dd4eae05f19f9ac6cdbdd423e2d3e41f370fe
 SHA256: 8675802ec41116aac049620ce7573fac721f5bb96ad6bea1b6eca82889558561
+
+Package: obsidian
+Version: 1.13.6-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 345764
+Section: utils
+Priority: optional
+Homepage: https://obsidian.md
+Description: Powerful knowledge base that works on top of local Markdown files.
+ Supports plugins, themes, and graph view. Installed to /opt/obsidian.
+ Updates via the built-in auto-updater.
+Filename: pool/obsidian-1.13.6/obsidian_1.13.6-1+resolute_amd64.deb
+Size: 103004818
+MD5sum: 4623c11152f600a4b6b4647b9700486e
+SHA1: 35ccdbd19616ece5b113d47177bc995607e9e9b4
+SHA256: ff1028d4ba449c92d4afe1a1dd5c8af6806e64062eaf56ae8ce741cbbad049c2
 
