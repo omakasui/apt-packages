@@ -186,25 +186,6 @@ MD5sum: d40637c90f22e6ba3467b1f9fd5d7d3c
 SHA1: cee6b7521bc96eca21ecd28027078f5e250c4273
 SHA256: 34e7daeada755211a9131d55798b0d60516d41afba5f4b515cd0a335b4cafeb1
 
-Package: localsend
-Version: 1.17.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Section: x11
-Priority: optional
-Essential: no
-Installed-Size: 40080
-Description: An open source cross-platform alternative to AirDrop
-Homepage: https://localsend.org/
-Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Pre-Depends: libc6 (>= 2.31)
-Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
-Filename: pool/localsend-1.17.0/localsend_1.17.0-1+resolute_amd64.deb
-Size: 12981960
-MD5sum: 418b7bb84bd5731fcb10f70a1576cb4a
-SHA1: bc981e2e765fa7e8726444f7936c8c8a27d8e0c1
-SHA256: 19e104ccdbb25aa0b8306eeab7e15de7c736b33a3c38794653e8c75f1da87596
-
 Package: nvim
 Version: 0.12.4-1+resolute
 Architecture: amd64
@@ -1066,4 +1047,23 @@ Size: 103004818
 MD5sum: 4623c11152f600a4b6b4647b9700486e
 SHA1: 35ccdbd19616ece5b113d47177bc995607e9e9b4
 SHA256: ff1028d4ba449c92d4afe1a1dd5c8af6806e64062eaf56ae8ce741cbbad049c2
+
+Package: localsend
+Version: 1.18.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Section: x11
+Priority: optional
+Essential: no
+Installed-Size: 89464
+Description: An open source cross-platform alternative to AirDrop
+Homepage: https://localsend.org/
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Pre-Depends: libc6 (>= 2.31)
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+Filename: pool/localsend-1.18.0/localsend_1.18.0-1+resolute_amd64.deb
+Size: 24373648
+MD5sum: 2920d1689df1684bff5df432184a0a51
+SHA1: c3c8f0532a5f47e606ae0c5aaccdd36077503c08
+SHA256: 6b742a02c75481301d423fa2d00f8b8d0f0fd2bfc73a6f73cd172446c8ff178f
 
