@@ -734,21 +734,6 @@ MD5sum: 3d189d8e8d56a83f6bc37b9bd89cc385
 SHA1: a8e15680148b496c2f338507c677e812b52cc76e
 SHA256: 784d9c50109adef8dfacc3b75a8da76883da4f98ec568e4b50b2c6c32ef3e2f8
 
-Package: cliamp
-Version: 1.62.0-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 31036
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.62.0/cliamp_1.62.0-1+resolute_arm64.deb
-Size: 8614410
-MD5sum: 269544f5fdca4756598f0d2e48f735cb
-SHA1: d5d36387d701e0b00b5896e9008b5e9f02a678b4
-SHA256: 79cb82a4fbb01599205de9a40b96f7db7fe101303d936f96877f953c3e8fe326
-
 Package: python3-terminaltexteffects
 Version: 0.15.0-1+resolute
 Architecture: all
@@ -1045,4 +1030,19 @@ Size: 13017350
 MD5sum: ecf6897809bb6a791a4e605f408abcdd
 SHA1: 68915ec8d68846770dd43376d9ccf1f2fa72defa
 SHA256: 1e19e3e1335edbdabc7d3d6b8213e0782ecd0fcb36d1929b0a2a490710a3ac5e
+
+Package: cliamp
+Version: 1.63.0-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 31036
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.63.0/cliamp_1.63.0-1+resolute_arm64.deb
+Size: 8620384
+MD5sum: 5b29a3d317125e95536d2c672058a037
+SHA1: f05038761acd3195ccdb3b3da481c693a6dfb1ea
+SHA256: 75274b0c9b816434b2d58acbc47802e24560cab8a9889396ede370bc2e38ef76
 
