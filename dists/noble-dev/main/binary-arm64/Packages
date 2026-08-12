@@ -974,25 +974,6 @@ MD5sum: ce9002cf896ab61686ae86f567ec5736
 SHA1: 5089045b66119125678343eab88b526ea1aa8016
 SHA256: 79e1e221cc3ba0b6e73f53ebbf13babf43072b23cd478a798c4c8618b42e07f2
 
-Package: localsend
-Version: 1.18.0-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Section: x11
-Priority: optional
-Essential: no
-Installed-Size: 89288
-Description: An open source cross-platform alternative to AirDrop
-Homepage: https://localsend.org/
-Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Pre-Depends: libc6 (>= 2.31)
-Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
-Filename: pool/localsend-1.18.0/localsend_1.18.0-1+noble_arm64.deb
-Size: 24380436
-MD5sum: 80eb94bdd2f5a6153a5575d8fe53263b
-SHA1: 54075cac9e0d820f6b9c44fa29ef011e004f48c6
-SHA256: 20c62cfaf5d6a5f0ce61d6c1daab50d64735463159faa800d0c1c1f75acf6f5b
-
 Package: glab
 Version: 1.113.0-1+noble
 Architecture: arm64
@@ -1043,4 +1024,23 @@ Size: 4956478
 MD5sum: fe90e1d678d68b3158f00b1186ec0ab9
 SHA1: 2a77e217322004cc6c54f7b3d44a1038aacd5872
 SHA256: 18c5348a48c6f2a2e2e6da78beae457256259628b2fff0815e24cac3aca52fbd
+
+Package: localsend
+Version: 1.18.0-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Section: x11
+Priority: optional
+Essential: no
+Installed-Size: 89288
+Description: An open source cross-platform alternative to AirDrop
+Homepage: https://localsend.org/
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Pre-Depends: libc6 (>= 2.31)
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+Filename: pool/localsend-1.18.0/localsend_1.18.0-1+noble_arm64.deb
+Size: 24380800
+MD5sum: b8e3c43999e7dcaea3ebbf4127dc6272
+SHA1: 2a355f497a5637e4edf4cf182ab45050bd4abdcb
+SHA256: d095ef5c3309a3e29fa26911885f1a68543e1ab04608fdb973a26d8126644fa9
 
