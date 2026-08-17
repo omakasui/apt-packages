@@ -1037,25 +1037,6 @@ MD5sum: 1f6aecf9f94bc1b655e5bf54ef4adae4
 SHA1: 7588970b3656f0a2ba7102ab3af0c3ee038ef955
 SHA256: 9e85febcfb03a4f04b1a71c7d950be533b4d68e95aef226b01d518cfeb5abb5b
 
-Package: dbeaver-ce
-Version: 26.1.4-1+trixie
-Architecture: arm64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce, dbeaver
-Installed-Size: 204872
-Maintainer: omakasui <packages@omakasui.org>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.1.4/dbeaver-ce_26.1.4-1+trixie_arm64.deb
-Size: 112324756
-MD5sum: 9e599dc0d92d8c7b29dd68302629ceea
-SHA1: 907855477b2996260e720663910a772f4c863fd4
-SHA256: ae9a30e504b6be4fa9994cc1d0a7e2f6a4416e93e57dd76feabcddbb984c8328
-
 Package: glab
 Version: 1.113.0-1+trixie
 Architecture: arm64
@@ -1141,4 +1122,23 @@ Size: 88732450
 MD5sum: c64c638cba80b4ac709f4b1bf1b29b94
 SHA1: b126e8ebde83adc8dcaa3031d3d10bd30bb5201e
 SHA256: 28eab192bf20c179ccbffd9db1697750a458bad022f54b2979bea0f516a01c8c
+
+Package: dbeaver-ce
+Version: 26.1.5-1+trixie
+Architecture: arm64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce, dbeaver
+Installed-Size: 205420
+Maintainer: omakasui <packages@omakasui.org>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.1.5/dbeaver-ce_26.1.5-1+trixie_arm64.deb
+Size: 112766352
+MD5sum: 45219761321c41cc986a5b1ae14c8cc4
+SHA1: a3f66a6e5337a82606446c3f19b897ba1e2a7978
+SHA256: beeaa9ac6fd7133b159bb041a0b084839104cdf29edbcd7a3400e3ce807d3b3c
 
