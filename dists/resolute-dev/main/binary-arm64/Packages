@@ -836,26 +836,6 @@ MD5sum: 4fa32873a06a3a06dd126172045f4aea
 SHA1: dc6eb795dd5efb577b6251a4c17027ff16d82800
 SHA256: 4e8076eb3f7bba2baa666a8a8e57c0671b9cb45d930168d3aea279443e84ab22
 
-Package: fzf
-Version: 0.74.2-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4624
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder.
- Interactive filter for files, command history, processes, git commits
- and more.
-Filename: pool/fzf-0.74.2/fzf_0.74.2-1+resolute_arm64.deb
-Size: 1518582
-MD5sum: 56ef216412ff2d7bf0df2bb29f385889
-SHA1: 0d8dc09a120660e954b8025cc5d323818cc7afd2
-SHA256: 5c529b244b37dd61564f6265d3ac15abc5cf365478a1926e802c80a2e36e75ac
-
 Package: fonts-cascadia-mono-nf
 Version: 3.5.0-1+resolute
 Architecture: all
@@ -1045,4 +1025,24 @@ Size: 112766246
 MD5sum: 079e4fba3ab685e4c1e5582b0ebfbc9c
 SHA1: 71ce16f6bd813a69c2829f8ee3ba8aceed917eeb
 SHA256: 77aedb92699f91df1ba6ef600dda7809dcf2feb6b209b018ae02a6d675c71052
+
+Package: fzf
+Version: 0.74.3-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4624
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder.
+ Interactive filter for files, command history, processes, git commits
+ and more.
+Filename: pool/fzf-0.74.3/fzf_0.74.3-1+resolute_arm64.deb
+Size: 1526558
+MD5sum: 8737cad3ef82fe5b3140680a15a30677
+SHA1: 93f0b34ffa20a42a0f3e561a46d653bedbf64136
+SHA256: 570d03f9c9ff0b56f829f1ea41a8e97b87fb4890a9ddcfa7aecf7384c50c4f0f
 
