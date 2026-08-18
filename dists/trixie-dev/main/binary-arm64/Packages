@@ -239,27 +239,6 @@ MD5sum: 49f69ebb4432a27278e63db8a5e88ba2
 SHA1: ddc79b7ddfb42e9fe810d37aea8a9541920489d2
 SHA256: ad193b131dc97d6854fc1aab0632c40680008f30abaa2e6c0340ecf8d4437d8f
 
-Package: tmux
-Version: 3.7b-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1556
-Depends: libc6, libtinfo6 | libncurses6
-Conflicts: tmux
-Replaces: tmux
-Provides: tmux
-Section: admin
-Priority: optional
-Homepage: https://github.com/tmux/tmux
-Description: Terminal multiplexer.
- Allows creating multiple terminal sessions within a single window,
- with persistent sessions that survive disconnections.
-Filename: pool/tmux-3.7b/tmux_3.7b-1+trixie_arm64.deb
-Size: 533970
-MD5sum: 1d52c17a70e62dbb0771fd783e73b548
-SHA1: 13b932deac2c7462810e722c86a5b23828c240a3
-SHA256: a19e8097177fce335143a0dde4f51c0f54a5b97f0e528704fce9547b68a0bfcd
-
 Package: ufw-docker
 Version: 251123-1+trixie
 Architecture: all
@@ -1141,4 +1120,25 @@ Size: 1526534
 MD5sum: 4f1e092d4af3132fe2fb066fce4200fe
 SHA1: e86274ab4d132c391d53d444b57752cf2a4db47d
 SHA256: c1eb1376d75c5f8efd67408c28397c7edd0d49d88b6749ca449a73f88d86b40e
+
+Package: tmux
+Version: 3.7c-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1556
+Depends: libc6, libtinfo6 | libncurses6
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer.
+ Allows creating multiple terminal sessions within a single window,
+ with persistent sessions that survive disconnections.
+Filename: pool/tmux-3.7c/tmux_3.7c-1+trixie_arm64.deb
+Size: 533484
+MD5sum: ee706b0297da08de44efc9cc8a8855b6
+SHA1: c0df1e9c7b6a447afbfbf5fce0149a6b8604de4b
+SHA256: 937aa6fc4a57da82b7879b726f44d9907705e98ff9dc972ccedd6379f7a63f57
 
