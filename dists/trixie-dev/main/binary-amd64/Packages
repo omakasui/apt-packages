@@ -125,22 +125,6 @@ MD5sum: 47a39736018c36546db80931d2e7966b
 SHA1: c769423228f0a0d3cf3a9b8353b362923c6fd2c6
 SHA256: d597c98e1c4c0e26c8fd4f2b8083c7b3b31fe9b7d3d42416370000cca85c83fe
 
-Package: gum
-Version: 0.17.0-1+trixie
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 13564
-Homepage: https://charm.land/
-Description: no description given
-Filename: pool/gum-0.17.0/gum_0.17.0-1+trixie_amd64.deb
-Size: 3808926
-MD5sum: c26fd6aec63b3b5907bb67bbb8955904
-SHA1: e49987317635bad4ccf02a186612b52ae8f01863
-SHA256: 45b3d8caddb774196828cca192a27a6a21023c11043713dbd14c35933ac321b2
-
 Package: fonts-ia-writer-mono
 Version: 20260310-1+trixie
 Architecture: all
@@ -1161,4 +1145,20 @@ Size: 46174186
 MD5sum: 65154a49acf4741105fb82a4d32d7b8d
 SHA1: ed1e4f8a27d79ff896bde5ad735bff204e6667a8
 SHA256: e96d5f73a3b0ff774867a14511aebf0c9870adf8c18f31bab85e2debe9b7a5c2
+
+Package: gum
+Version: 2.0.0-1+trixie
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 14100
+Homepage: https://charm.land/
+Description: no description given
+Filename: pool/gum-2.0.0/gum_2.0.0-1+trixie_amd64.deb
+Size: 4054170
+MD5sum: c574599aacd17446f233aa482d70e7c4
+SHA1: 02c80814c86bc9954f1a6ded5a465cb0a02f959e
+SHA256: d82f86f93e018d813528e1d6583c4d60283fcc22a22aa74ab959b78a032a35d2
 
