@@ -919,26 +919,6 @@ MD5sum: 8987364fb814364c4272e43e6e8cca82
 SHA1: d7877a710a20a158800a2f55ad1bd108d05b8dc7
 SHA256: 5417b8042465e03844f97ca1d262564c9a2c473a0731213a22ecb2c54cbe774f
 
-Package: gh
-Version: 2.97.0-1+noble
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38244
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.97.0/gh_2.97.0-1+noble_arm64.deb
-Size: 10361672
-MD5sum: f07475e44e3278fb8657f1f217e88f33
-SHA1: 5a267753ed2f2b44f979e452f92d8cf55e7439be
-SHA256: 3cbe3a8801085fd078b68838d425f361559001714b0ce3314b507feea19419bc
-
 Package: obsidian
 Version: 1.13.7-1+noble
 Architecture: arm64
@@ -1043,4 +1023,24 @@ Size: 45632788
 MD5sum: 11bc3662acffb59ccd597e043f7eafee
 SHA1: 77bb0faa1cb3ac02eb28f9bbd22c2b1dc74faf03
 SHA256: 534029122da85c074cccd65e6560fae78453fdb974e8c7cd1250013fcd91d73c
+
+Package: gh
+Version: 2.98.0-1+noble
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 38692
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.98.0/gh_2.98.0-1+noble_arm64.deb
+Size: 10436486
+MD5sum: fc275b57ffc808a84ea382e6e3c88a1e
+SHA1: b5b27e34e28c9b2dce2f2bf4b8295346ebc7f44d
+SHA256: ad7c32c61d2eda940f05da3becdb870bd2f7b6721e8c816e022dd6b5d7bac035
 

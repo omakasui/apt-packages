@@ -1037,26 +1037,6 @@ MD5sum: db748befdf218106fffcd3d74e4e1e6f
 SHA1: 7b144a4d8a9d10300b53e2f551e72cf915b68a47
 SHA256: d0f5fcfc00091c969a111284b0dd40ff1c4ca6151ce33a5da251bb18556b58b8
 
-Package: gh
-Version: 2.97.0-1+trixie
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41092
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.97.0/gh_2.97.0-1+trixie_amd64.deb
-Size: 11695434
-MD5sum: 5a748bc25caf54d4d4bdfa9fdc64f65b
-SHA1: f90d5a46b9d65b450db12f44108e50fc83b377dd
-SHA256: 2220b8b9e158b9e5f3971b9970eaaeca143f8ae61ba160010deb4a12e5c33507
-
 Package: obsidian
 Version: 1.13.7-1+trixie
 Architecture: amd64
@@ -1161,4 +1141,24 @@ Size: 46174186
 MD5sum: 65154a49acf4741105fb82a4d32d7b8d
 SHA1: ed1e4f8a27d79ff896bde5ad735bff204e6667a8
 SHA256: e96d5f73a3b0ff774867a14511aebf0c9870adf8c18f31bab85e2debe9b7a5c2
+
+Package: gh
+Version: 2.98.0-1+trixie
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41468
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.98.0/gh_2.98.0-1+trixie_amd64.deb
+Size: 11751008
+MD5sum: 4dc2af1469a37b8fa3b719c41f168bba
+SHA1: f01ed129dcf9e10cb5ff07648b3538e663dc81d5
+SHA256: dc38469948c61d61ceec669dbba6cdccca7dc84bd5f6a68c0066cda9079e16d4
 

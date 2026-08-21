@@ -879,26 +879,6 @@ MD5sum: 9b28a9cfa1f90203f88f6a2828ab129b
 SHA1: 66d65103ea3994e54ea3d0219d1f38334783ef95
 SHA256: d16c8ddcb02107a7c30c37ca4e8d75834cb61df412752fac65214fd39ca30c11
 
-Package: gh
-Version: 2.97.0-1+trixie
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41092
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.97.0/gh_2.97.0-1+trixie_amd64.deb
-Size: 11695434
-MD5sum: 5a748bc25caf54d4d4bdfa9fdc64f65b
-SHA1: f90d5a46b9d65b450db12f44108e50fc83b377dd
-SHA256: 2220b8b9e158b9e5f3971b9970eaaeca143f8ae61ba160010deb4a12e5c33507
-
 Package: fonts-cascadia-mono-nf
 Version: 3.5.0-1+trixie
 Architecture: all
@@ -1161,4 +1141,24 @@ Size: 11435466
 MD5sum: 60c94f525d02e09f5feaf7efbb450e6c
 SHA1: 2d56a5f880cd242ee48c5141cf6ec9c2f17695b9
 SHA256: 76058242a2a0ff8a43bd9d1d42efb8f1bb24126487536ce56bed749cbcd4df9a
+
+Package: gh
+Version: 2.98.0-1+trixie
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41468
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.98.0/gh_2.98.0-1+trixie_amd64.deb
+Size: 11751008
+MD5sum: 4dc2af1469a37b8fa3b719c41f168bba
+SHA1: f01ed129dcf9e10cb5ff07648b3538e663dc81d5
+SHA256: dc38469948c61d61ceec669dbba6cdccca7dc84bd5f6a68c0066cda9079e16d4
 

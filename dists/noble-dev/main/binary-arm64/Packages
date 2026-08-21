@@ -761,26 +761,6 @@ MD5sum: c12319d48774a25ec5e243ca4e571b82
 SHA1: 6437eaddabb6c5bde7472fd6dd175b12f3382600
 SHA256: 2c70c9d5be6c5c6ea0ac7dd1667c35c5d106dbdf55e621a797a562b94714d0ff
 
-Package: gh
-Version: 2.97.0-1+noble
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38244
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.97.0/gh_2.97.0-1+noble_arm64.deb
-Size: 10361672
-MD5sum: f07475e44e3278fb8657f1f217e88f33
-SHA1: 5a267753ed2f2b44f979e452f92d8cf55e7439be
-SHA256: 3cbe3a8801085fd078b68838d425f361559001714b0ce3314b507feea19419bc
-
 Package: fonts-cascadia-mono-nf
 Version: 3.5.0-1+noble
 Architecture: all
@@ -1042,4 +1022,24 @@ Size: 11287626
 MD5sum: 0ca637705293425ff28c0011b753ed4d
 SHA1: 4b104a44550016947dee375feb7f7cda8ff94920
 SHA256: 9210e3ddba61989a50683a530dc6c410b9a9554bd21fe1633fa6da415a0fe432
+
+Package: gh
+Version: 2.98.0-1+noble
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 38692
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.98.0/gh_2.98.0-1+noble_arm64.deb
+Size: 10436486
+MD5sum: fc275b57ffc808a84ea382e6e3c88a1e
+SHA1: b5b27e34e28c9b2dce2f2bf4b8295346ebc7f44d
+SHA256: ad7c32c61d2eda940f05da3becdb870bd2f7b6721e8c816e022dd6b5d7bac035
 
