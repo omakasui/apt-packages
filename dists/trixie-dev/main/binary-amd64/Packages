@@ -762,21 +762,6 @@ MD5sum: 5be45c5606479dbcf410c9cefffe2742
 SHA1: ff3bec0f9e7267f13ad50b00b94497b1068c0b6c
 SHA256: 77c36e25c90cda40f6f2d5fba598cb295dd37b069649aa125ea2ee6e1389b719
 
-Package: bitwarden-cli
-Version: 2026.7.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 138236
-Section: utils
-Priority: optional
-Homepage: https://github.com/bitwarden/clients
-Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
-Filename: pool/bitwarden-cli-2026.7.0/bitwarden-cli_2026.7.0-1+trixie_amd64.deb
-Size: 31716236
-MD5sum: 4931906a4b897626a597faf15bb38b51
-SHA1: cb720896590996d32f4a0a953a9839a39bfdcb8a
-SHA256: c54262958fec03488071701dd4af22223e5380c9a9e7d6f6a67cc870e4d38951
-
 Package: python3-terminaltexteffects
 Version: 0.15.0-1+trixie
 Architecture: all
@@ -1161,4 +1146,19 @@ Size: 112446920
 MD5sum: 296b0d2afed21221479518a4968abf78
 SHA1: 274abdf03119271cb29e14d7f88dba38196d4430
 SHA256: 1592c2aa461599cd72e7cccee14dd96d906c377ceb544c250da7ba9ba8d79769
+
+Package: bitwarden-cli
+Version: 2026.8.0-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 138792
+Section: utils
+Priority: optional
+Homepage: https://github.com/bitwarden/clients
+Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
+Filename: pool/bitwarden-cli-2026.8.0/bitwarden-cli_2026.8.0-1+trixie_amd64.deb
+Size: 31832994
+MD5sum: b9496e9345fb8381f70298e3d56609d5
+SHA1: 5e4b6145206205f5a142711af0eaf290d1b3372a
+SHA256: abe2c6625f1a7f694cc862c6351d8f55f22f09dac011c31497acc79c59b37274
 
