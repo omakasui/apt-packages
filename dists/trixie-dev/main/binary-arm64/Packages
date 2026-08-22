@@ -844,6 +844,23 @@ MD5sum: 3490cfc1e173ee88bfb98273ed708a83
 SHA1: 303e331466f8357f9f05e732c4332995d583b1e3
 SHA256: 5e8427fcbef97058b446a385ea58b811a6b9e83be4c831779644df6eb42c8f3a
 
+Package: fonts-cascadia-mono-nf
+Version: 3.5.0-1+trixie
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 98960
+Conflicts: font-cascadia-mono-nf
+Replaces: font-cascadia-mono-nf
+Section: fonts
+Priority: optional
+Homepage: https://github.com/ryanoasis/nerd-fonts
+Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
+Filename: pool/cascadia-mono-nf-3.5.0/fonts-cascadia-mono-nf_3.5.0-1+trixie_all.deb
+Size: 7446316
+MD5sum: d3782856b194204105f3a97f572dd066
+SHA1: bdbf68bd920eb1c45398b1ac2626fa7b9c6389bf
+SHA256: f24d8627bc5ee297ffb1e0899f76b604e245c85d4a5ac6dca6fa732316dca18d
+
 Package: lazygit
 Version: 0.64.1-1+trixie
 Architecture: arm64
@@ -860,25 +877,6 @@ Size: 4956482
 MD5sum: 807a251ec59e7cc661e6cf98b151908d
 SHA1: 4e87919483de2283e860bc47fc3d635404b8a6bd
 SHA256: 378bf699323d08b399938c826237b4096123714f61b5edecb90125f4353d9308
-
-Package: localsend
-Version: 1.18.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Section: x11
-Priority: optional
-Essential: no
-Installed-Size: 89288
-Description: An open source cross-platform alternative to AirDrop
-Homepage: https://localsend.org/
-Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Pre-Depends: libc6 (>= 2.31)
-Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
-Filename: pool/localsend-1.18.0/localsend_1.18.0-1+trixie_arm64.deb
-Size: 24380744
-MD5sum: 0d09c5173995bc23796f82348a955b71
-SHA1: 7728b3de06968e3cea5f1157d0c458fbb307664f
-SHA256: e99acf9722078600f0319c2754d3f64ae767f0766cf219824f15cbcee60e67d5
 
 Package: obsidian
 Version: 1.13.7-1+trixie
@@ -1124,20 +1122,22 @@ MD5sum: efec0ab86dddc5e7e38aa3c7ae741b2a
 SHA1: 022af1cd2b25fdc8a44f5048a090128c748e8e08
 SHA256: a61438c364d37198026e51c5ee160a6dd41122e80b06ed6118b3942e50ff7ba3
 
-Package: fonts-cascadia-mono-nf
-Version: 3.5.1-1+trixie
-Architecture: all
+Package: localsend
+Version: 1.18.2-1+trixie
+Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 100544
-Conflicts: font-cascadia-mono-nf
-Replaces: font-cascadia-mono-nf
-Section: fonts
+Section: x11
 Priority: optional
-Homepage: https://github.com/ryanoasis/nerd-fonts
-Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
-Filename: pool/cascadia-mono-nf-3.5.1/fonts-cascadia-mono-nf_3.5.1-1+trixie_all.deb
-Size: 7640416
-MD5sum: 1ff393029b0a50d7730e6fe294e32252
-SHA1: 4fd4ec465253727f6edb7172fd30dca88f124985
-SHA256: 4fce0e5f5619620a677017d714f21d5910528d17b9c77dc5c38eaa43648c9d7d
+Essential: no
+Installed-Size: 89588
+Description: An open source cross-platform alternative to AirDrop
+Homepage: https://localsend.org/
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Pre-Depends: libc6 (>= 2.31)
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+Filename: pool/localsend-1.18.2/localsend_1.18.2-1+trixie_arm64.deb
+Size: 24444944
+MD5sum: 5318065ae9944ea9d9833fbadebfc53c
+SHA1: 48e979378e7d0a49e4460d213b503cf3c1f61b9a
+SHA256: b450931275fededf778018b035ed5edd76e547531613ce401f15fcd1b533f3ed
 

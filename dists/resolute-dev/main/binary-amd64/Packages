@@ -748,6 +748,23 @@ MD5sum: 5644542b2b1a8f0e1a254e99380e587d
 SHA1: cb91dc2d55f91a5fef6120b80cf882fb1b431e6f
 SHA256: e9594b925046c2811cd9158e1576543f6b23264ea48454410b249911471c3e76
 
+Package: fonts-cascadia-mono-nf
+Version: 3.5.0-1+resolute
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 98960
+Conflicts: font-cascadia-mono-nf
+Replaces: font-cascadia-mono-nf
+Section: fonts
+Priority: optional
+Homepage: https://github.com/ryanoasis/nerd-fonts
+Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
+Filename: pool/cascadia-mono-nf-3.5.0/fonts-cascadia-mono-nf_3.5.0-1+resolute_all.deb
+Size: 7446510
+MD5sum: 5ae0c26ae878a6343477f69a2285bd1d
+SHA1: 0ba8416e3e1fe6b6be568104dba2edaa41237309
+SHA256: d4c3062240f42f91acd0fbbe16bae71968dc546ca30bea9813b7c35d5911d58b
+
 Package: lazygit
 Version: 0.64.1-1+resolute
 Architecture: amd64
@@ -764,25 +781,6 @@ Size: 5562284
 MD5sum: b63cd9a06265431691f44fc67d7a7b42
 SHA1: 89f61d04fef539fee5c59b5c70a2b1b9ed7eea74
 SHA256: a140c6cfcbd41aa4e5c59af73de537523fd8397f941de38921ead8932bd0edcb
-
-Package: localsend
-Version: 1.18.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Section: x11
-Priority: optional
-Essential: no
-Installed-Size: 89464
-Description: An open source cross-platform alternative to AirDrop
-Homepage: https://localsend.org/
-Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Pre-Depends: libc6 (>= 2.31)
-Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
-Filename: pool/localsend-1.18.0/localsend_1.18.0-1+resolute_amd64.deb
-Size: 24373608
-MD5sum: 548c552cc42ddaeb4c6b9414219570d6
-SHA1: a4209a37fbd5987bcda739510ee7e347a97dac15
-SHA256: c6049bd87db339a064204c21086277bfe2947b7918fe2f3b1dd15e259c8dcd0f
 
 Package: obsidian
 Version: 1.13.7-1+resolute
@@ -1049,20 +1047,22 @@ MD5sum: d5b25b0c3756a6fc76660efd38b1ac69
 SHA1: 48a45d592a79d938e4809cd25c49fabdb619183b
 SHA256: e752f8fb191d4a1477591d95def141f5bca68a45160d5987784d4a109c3c1219
 
-Package: fonts-cascadia-mono-nf
-Version: 3.5.1-1+resolute
-Architecture: all
+Package: localsend
+Version: 1.18.2-1+resolute
+Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 100544
-Conflicts: font-cascadia-mono-nf
-Replaces: font-cascadia-mono-nf
-Section: fonts
+Section: x11
 Priority: optional
-Homepage: https://github.com/ryanoasis/nerd-fonts
-Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
-Filename: pool/cascadia-mono-nf-3.5.1/fonts-cascadia-mono-nf_3.5.1-1+resolute_all.deb
-Size: 7640352
-MD5sum: ed9167b5d51e1b49ca16f1b8f993c402
-SHA1: 217025e0c8e97653a6143bb68b07980f0a93d01e
-SHA256: b9f4340fc15b9815513e45b047428471be9fc986129805d5ea0bff4b3d9f0a06
+Essential: no
+Installed-Size: 89732
+Description: An open source cross-platform alternative to AirDrop
+Homepage: https://localsend.org/
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Pre-Depends: libc6 (>= 2.31)
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+Filename: pool/localsend-1.18.2/localsend_1.18.2-1+resolute_amd64.deb
+Size: 24446144
+MD5sum: 7f9e63cfdb7295a718966d12b7725954
+SHA1: f120a399ff319d4079600c0b20fb191cc41f2989
+SHA256: 7ca29f01e16541a77b6125a917d50f7a12dd3b4d2de349a2902d5d9b4bf85462
 
