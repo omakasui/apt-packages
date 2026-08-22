@@ -746,23 +746,6 @@ MD5sum: c12319d48774a25ec5e243ca4e571b82
 SHA1: 6437eaddabb6c5bde7472fd6dd175b12f3382600
 SHA256: 2c70c9d5be6c5c6ea0ac7dd1667c35c5d106dbdf55e621a797a562b94714d0ff
 
-Package: fonts-cascadia-mono-nf
-Version: 3.5.0-1+noble
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 98960
-Conflicts: font-cascadia-mono-nf
-Replaces: font-cascadia-mono-nf
-Section: fonts
-Priority: optional
-Homepage: https://github.com/ryanoasis/nerd-fonts
-Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
-Filename: pool/cascadia-mono-nf-3.5.0/fonts-cascadia-mono-nf_3.5.0-1+noble_all.deb
-Size: 7446346
-MD5sum: 720e7ba28676f7f77294ff4229667a86
-SHA1: 084a8d32030504822c25ae75b2bb055fd9274d29
-SHA256: 0809c71f8132c2a7b16680b6c6279c0fe15576a8d73ab316cad16f2dac8e91f7
-
 Package: lazygit
 Version: 0.64.1-1+noble
 Architecture: arm64
@@ -1042,4 +1025,21 @@ Size: 31062202
 MD5sum: c9f7cfae008c561a1c7406d64dc8e619
 SHA1: 694fd8d2bfbc62ac5930fb98795b71ec962fcef4
 SHA256: 9e645fd82f4bab69d8954f2d188438104f9c63bec4ea57fb5340eeda0e5cbe92
+
+Package: fonts-cascadia-mono-nf
+Version: 3.5.1-1+noble
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 100544
+Conflicts: font-cascadia-mono-nf
+Replaces: font-cascadia-mono-nf
+Section: fonts
+Priority: optional
+Homepage: https://github.com/ryanoasis/nerd-fonts
+Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
+Filename: pool/cascadia-mono-nf-3.5.1/fonts-cascadia-mono-nf_3.5.1-1+noble_all.deb
+Size: 7640500
+MD5sum: f1cd3267d45fac91da569d7b466648dc
+SHA1: 3c6043973c8e7ee6e753f4219c1bcbbe34654935
+SHA256: 910b191fb63c68c36207e9ce40a18908945340317ddc111f21afa8683a353a40
 
