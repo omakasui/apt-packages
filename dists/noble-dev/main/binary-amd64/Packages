@@ -187,25 +187,6 @@ MD5sum: 686c2bf57745d638ca65d9f10176c31e
 SHA1: 57d2fca834456fe299b549318700adc1601f5dc7
 SHA256: 4ac2c9b2edff6b844e8c08ebd41bf9531b81dac49683d3d7bf02b6fe8706faed
 
-Package: nvim
-Version: 0.12.4-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40956
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor.
- Conflicts with and replaces the distro neovim package.
-Filename: pool/nvim-0.12.4/nvim_0.12.4-1+noble_amd64.deb
-Size: 9067578
-MD5sum: a1a6f455ab460cfcf5ecd81ac51ffc2d
-SHA1: e5b1ca1138f5aea50b8ebb6304b8a972a45ed18f
-SHA256: 5c30993036cbb21e493d8ff4801098f98863c4a1e4e249a75feaddb88505c4dd
-
 Package: starship
 Version: 1.26.0-1+noble
 Architecture: amd64
@@ -1063,4 +1044,23 @@ Size: 46185562
 MD5sum: 0e7e8044e38ff3aafb73cb322aa0794d
 SHA1: 5e45cf64666b24c28a68a8ec40ebfad1fff3f804
 SHA256: 5a7fce395f6c68db21ddb4566f21e8757d2fc94d0c5e3ec06671a2875e9911d1
+
+Package: nvim
+Version: 0.12.5-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40968
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor.
+ Conflicts with and replaces the distro neovim package.
+Filename: pool/nvim-0.12.5/nvim_0.12.5-1+noble_amd64.deb
+Size: 9075262
+MD5sum: b025a40c9b25175e6f2e3c01ea364c5e
+SHA1: cedb5b7ef668f5d2c7b4b00b7d64d337ac4a904f
+SHA256: 1285a9a8946d29f2e5089af0aec2b0f665ae0622768f074d87270e9636cc3fb3
 
