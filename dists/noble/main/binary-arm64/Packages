@@ -940,25 +940,6 @@ MD5sum: 75235a884ad47be5e5d98af91c05aee6
 SHA1: e32e6b2840267083178cfc54bd722991529f02f5
 SHA256: ea4adae9090e4fff440b4850f56be84101ada8125b43d6d578cd1814f35603bf
 
-Package: glab
-Version: 1.114.0-1+noble
-Architecture: arm64
-Section: 
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 48848
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.114.0/glab_1.114.0-1+noble_arm64.deb
-Size: 13026658
-MD5sum: b2908faf7c4716f306da94118bb23a79
-SHA1: 9530a4ab033a22c9946d3b46b9ff4a7690d89fee
-SHA256: 3a94240cccb7f07991046904b86864cf7b63cd66facb4ba51fde5969083fe6e9
-
 Package: zen-browser
 Version: 1.21.15b-1+noble
 Architecture: arm64
@@ -1043,4 +1024,23 @@ Size: 102853754
 MD5sum: 0280280f8bd315f093f1ca0a59ad4467
 SHA1: 07bab79af147f752671f23451716944743d3c8dc
 SHA256: 5894c1cb33036c355472da8f022e52b5a3460d881490dcb7d04a3a03049622fd
+
+Package: glab
+Version: 1.115.0-1+noble
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 47604
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.115.0/glab_1.115.0-1+noble_arm64.deb
+Size: 13063272
+MD5sum: 4178b45df45bd929f5985fd8d22de468
+SHA1: 8634ecb3f9240c450144f6d12f4aee07e3f7780d
+SHA256: c48c4b0a06c04583bebcd7b27feb70f5e1e2096ce06934fd27bf0572d9eafefb
 
