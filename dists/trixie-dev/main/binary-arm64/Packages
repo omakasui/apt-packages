@@ -69,23 +69,6 @@ MD5sum: ebabb541e989a592da22579145bf9e10
 SHA1: deb41344ff8ca14c22706af414cbf20e27ac9d47
 SHA256: 9ac703108a8f6feb65c324bdec8c7d1bfcd73920c7073f1813d81d570598c101
 
-Package: ghostty
-Version: 1.3.1-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38088
-Depends: libgtk-4-1, libadwaita-1-0, libgtk4-layer-shell0 (>= 1.1.0)
-Section: x11
-Priority: optional
-Homepage: https://github.com/ghostty-org/ghostty
-Description: Fast, feature-rich, cross-platform terminal emulator.
- Uses platform-native UI and GPU acceleration.
-Filename: pool/ghostty-1.3.1/ghostty_1.3.1-1+trixie_arm64.deb
-Size: 18832020
-MD5sum: 0fa17ad503103071b7b880d1b2683837
-SHA1: f94450f6cffa8d20caa940a79d5047a02ee57bbe
-SHA256: 507efe0142e58a4a1fffe7875e1ac229bf175356687a6185d67884e799e8a068
-
 Package: fonts-ia-writer-mono
 Version: 20260310-1+trixie
 Architecture: all
@@ -1188,4 +1171,57 @@ Size: 2084998
 MD5sum: 42758d3e051b98d6938d1cdc32782658
 SHA1: ef5c0ff327cf519d1116b06cc1f29a58fcf72897
 SHA256: 508debf08d92c15a2b6f72523a7ca0d95d5d28b1a0db5c9020fe2b558b452b88
+
+Package: ghostty
+Version: 1.3.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 34228
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libglib2.0-0t64 (>= 2.76.0), libgtk-4-1 (>= 4.15.4), libgtk4-layer-shell0 (>= 1.1.0), libwayland-client0 (>= 1.9.91), libx11-6, libegl1, libgl1
+Section: x11
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Fast, feature-rich, cross-platform terminal emulator.
+ Uses platform-native UI and GPU acceleration.
+Filename: pool/ghostty-1.3.1/ghostty_1.3.1-1+trixie_arm64.deb
+Size: 18026526
+MD5sum: 880fb2c6762552ac0bc16d47a34d675b
+SHA1: 8d1027bf271c0263c86e11f881d0bb7bea435e49
+SHA256: 59a1a6f622a58b37cdd5eea3bffc507bbcd57ff4055e4f14de8b718e04161a67
+
+Package: libghostty-vt0
+Version: 1.3.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 3764
+Depends: libc6 (>= 2.34)
+Section: libs
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library.
+ Terminal emulation and escape sequence parsing extracted from Ghostty,
+ usable on its own.
+Filename: pool/ghostty-1.3.1/libghostty-vt0_1.3.1-1+trixie_arm64.deb
+Size: 846472
+MD5sum: 5eac49743ab303a6e58b8c63ca3971c2
+SHA1: 1735571f87e06db3f8647967ae0a5b3ae6636c82
+SHA256: 55029304f1d28b81241194a552306d61c2e34d699d2e55cede792e820ab0c032
+
+Package: libghostty-vt-dev
+Version: 1.3.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 120
+Depends: libghostty-vt0 (= 1.3.1-1+trixie)
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library — development files.
+ Headers, pkg-config metadata and the development symlink for
+ libghostty-vt.
+Filename: pool/ghostty-1.3.1/libghostty-vt-dev_1.3.1-1+trixie_arm64.deb
+Size: 16604
+MD5sum: 42e3dabdf0586e604f995fc3d0bb1470
+SHA1: c002193ff0bf7862ba513baa67c5aaf8787a283d
+SHA256: 73abe1de642be3b88fac06a902e38835a3d4ea9296f8a6ea47a3915d4fa185a1
 
