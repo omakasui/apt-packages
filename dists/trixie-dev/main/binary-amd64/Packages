@@ -1091,25 +1091,6 @@ MD5sum: b338886286ebb613f736df038522315c
 SHA1: aa58749f4c05b360038677fc1ba0c25e28ff1aa8
 SHA256: b74e80b5c21b302caf19252add7a0bbb3933d0a683a7ed6eaf238dbf5ed996b8
 
-Package: alacritty
-Version: 0.17.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 56432
-Depends: libc6 (>= 2.39), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.8), libgcc-s1 (>= 4.2), libwayland-client0, libwayland-egl1, libxkbcommon-x11-0, ncurses-term
-Conflicts: alacritty
-Replaces: alacritty
-Provides: alacritty
-Section: x11
-Priority: optional
-Homepage: https://github.com/alacritty/alacritty
-Description: A fast, cross-platform, OpenGL terminal emulator.
-Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+trixie_amd64.deb
-Size: 9930428
-MD5sum: 0007736f977b4bcef6737c49188ef28e
-SHA1: 4bd3b27dc95d4b3d523440078921cfb9d38fbcb9
-SHA256: 91a4c0f7da70503877807ea15fa50f6ea348fbed9c3931ac5ee2492baecd9245
-
 Package: libgtk4-layer-shell0
 Version: 1.1.0-1+trixie
 Architecture: amd64
@@ -1209,4 +1190,23 @@ Size: 1608780
 MD5sum: 6dc3b4374573de31d554e53a33d01871
 SHA1: 18e7b343eea318d26d7e7e4f158fd8eb691846d2
 SHA256: aa52335ffc0124721ad5c43620822bcfda44e30cb3b114c29a303bb6d39eabdd
+
+Package: alacritty
+Version: 0.17.0-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 56432
+Depends: libc6 (>= 2.39), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.8), libgcc-s1 (>= 4.2), libwayland-client0, libwayland-egl1, libxkbcommon-x11-0, ncurses-term
+Conflicts: alacritty
+Replaces: alacritty
+Provides: alacritty
+Section: x11
+Priority: optional
+Homepage: https://github.com/alacritty/alacritty
+Description: A fast, cross-platform, OpenGL terminal emulator.
+Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+trixie_amd64.deb
+Size: 9930450
+MD5sum: 5a8327ce1c021383834e6e50822da0f9
+SHA1: df651b102b9853b8db5885f3da767f2469d4bbeb
+SHA256: 62770cf553917be357f71c994c0071c92e79c9ffbc7f03a5d5c3aae3ea68ca8a
 
