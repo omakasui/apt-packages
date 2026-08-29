@@ -1162,3 +1162,22 @@ MD5sum: d173d9990b04529acbae06d9adcf55d1
 SHA1: b8e2020b63d368c155be0057b34cda7eb3dd643b
 SHA256: 9568a35b42f7daaed3f2e9e2b49badf44c43a61ed7840fc43f66d749ed52eb7d
 
+Package: xwayland-satellite
+Version: 0.8.2-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 5496
+Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_amd64.deb
+Size: 1608532
+MD5sum: 503e2b82a36b42bce775aa618c654251
+SHA1: 78f63f587216d380830ebe8ff428a108492abbd3
+SHA256: 2eb5958f32196ee5929c1b026f6a775e2e8eabe83fa1f10a59deecbd7f9aef20
+
