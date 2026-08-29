@@ -1125,25 +1125,6 @@ MD5sum: c291a7a5d68709ce72230182f969e27f
 SHA1: 6a72ebc4e7dc72922b71637b3754fe89202b507f
 SHA256: 75302a91308b8c32d0a171472c27ca942ffe25d44de1649774bcf8aa0243b8a7
 
-Package: xwayland-satellite
-Version: 0.8.2-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4916
-Depends: libc6, libsystemd0, libxcb1, libxcb-cursor0, xwayland
-Section: x11
-Priority: optional
-Homepage: https://github.com/Supreeeme/xwayland-satellite
-Description: Rootless Xwayland integration for Wayland compositors.
- Grants rootless Xwayland support to any Wayland compositor implementing
- xdg_wm_base and viewporter, without the compositor having to implement
- Xwayland handling itself.
-Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_arm64.deb
-Size: 1490466
-MD5sum: 0c066a41878f0f717d67da82807009cd
-SHA1: 497d66251d913501d4c448a871f7749d1093d2ac
-SHA256: 9aef93fdd44f6e6aba4c3ea295398f74b0249b4a350aef2f9880430f80f1c7d9
-
 Package: zellij
 Version: 0.45.1-1+trixie
 Architecture: arm64
@@ -1159,4 +1140,23 @@ Size: 11309828
 MD5sum: 1f41849bc2cc1e18705c05e3eb9b94de
 SHA1: 3d5e9e8390943543ed90e0c9d4eda4434eea3dc6
 SHA256: 27a3a6f044578664557ec4be8142da23d25a6c21e7591d103ff10484d2f67d29
+
+Package: xwayland-satellite
+Version: 0.8.2-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4916
+Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_arm64.deb
+Size: 1491802
+MD5sum: 990aaeab1eeb6f9716db858008fadb93
+SHA1: de3e797ebba491c02e79ddfcdf05d81b4d6e40a4
+SHA256: 00242553275f08444961af5124622a16d7c23e636539da494edba4da28280809
 
