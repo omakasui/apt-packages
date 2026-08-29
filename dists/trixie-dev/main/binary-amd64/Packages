@@ -1181,3 +1181,30 @@ MD5sum: 503e2b82a36b42bce775aa618c654251
 SHA1: 78f63f587216d380830ebe8ff428a108492abbd3
 SHA256: 2eb5958f32196ee5929c1b026f6a775e2e8eabe83fa1f10a59deecbd7f9aef20
 
+Package: niri
+Version: 26.04-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 35608
+Depends: libc6, libcairo2, libegl1, libgbm1, libgcc-s1,
+ libglib2.0-0t64 | libglib2.0-0, libinput10, libpango-1.0-0, libpangocairo-1.0-0,
+ libpipewire-0.3-0, libpixman-1-0, libseat1, libudev1, libwayland-server0,
+ libxkbcommon0, libdisplay-info1 | libdisplay-info2
+Recommends: xwayland-satellite, xdg-desktop-portal-gnome | xdg-desktop-portal-gtk,
+ gnome-keyring, libegl-mesa0, libgl1-mesa-dri
+Suggests: fuzzel, mako-notifier, alacritty
+Section: x11
+Priority: optional
+Homepage: https://github.com/niri-wm/niri
+Description: Scrollable-tiling Wayland compositor.
+ Windows are arranged in columns on an infinite horizontal strip; opening a new
+ window never causes the existing ones to resize.
+ .
+ Supports multi-monitor setups, fractional scaling, floating windows, NVIDIA
+ GPUs, touchpads, tablets, and X11 applications via xwayland-satellite.
+Filename: pool/niri-26.04/niri_26.04-1+trixie_amd64.deb
+Size: 7649008
+MD5sum: b338886286ebb613f736df038522315c
+SHA1: aa58749f4c05b360038677fc1ba0c25e28ff1aa8
+SHA256: b74e80b5c21b302caf19252add7a0bbb3933d0a683a7ed6eaf238dbf5ed996b8
+
