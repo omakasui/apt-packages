@@ -103,26 +103,6 @@ MD5sum: e36a19d8c2e9cd49f2ac3ed77da2eaac
 SHA1: d09e465da2b0bf99399fdceea714af85e6c54381
 SHA256: d7840e647c80626c089d7eb7a0282f4373489358ce354fb46e8a92584b73a2d6
 
-Package: libgtk4-layer-shell0
-Version: 1.1.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 260
-Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
-Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
-Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
-Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
-Section: libs
-Priority: optional
-Homepage: https://github.com/wmww/gtk4-layer-shell
-Description: Library for the Wayland Layer Shell protocol with GTK4.
- Provides libgtk4-layer-shell.so and GObject Introspection typelib.
-Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+noble_amd64.deb
-Size: 39954
-MD5sum: 7c191b81b85f178aeb80e14187f98ddc
-SHA1: 0e31217a5359fde1763a78e659004b962bc588c7
-SHA256: 67039360ef937ba8a626b2c058a121be8f7669f50611d8669379ea47ecf7d885
-
 Package: fonts-ia-writer-mono
 Version: 20260310-1+noble
 Architecture: all
@@ -1109,4 +1089,24 @@ Size: 9929670
 MD5sum: 657e0acae8878266f5127300c9b6a826
 SHA1: dee1bc5428081c66359b5dc8bdc35d645fb0c968
 SHA256: 864ab869930d3854b3054293b1e91b3a6f7d464c959af679d3dd4321be4e8407
+
+Package: libgtk4-layer-shell0
+Version: 1.1.0-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 260
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.79.0), libgtk-4-1 (>= 4.0.0), libwayland-client0 (>= 1.11.0)
+Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
+Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: Library for the Wayland Layer Shell protocol with GTK4.
+ Provides libgtk4-layer-shell.so and GObject Introspection typelib.
+Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+noble_amd64.deb
+Size: 40560
+MD5sum: 1b3273baf6de08a8626f8ed4b1f9100e
+SHA1: b30fac7a7f0ae709859877730338fdd18004ff32
+SHA256: ed5ecb148609b92827f652b5cf0f6b709030f2f02555642e07827b66fab2bcc7
 

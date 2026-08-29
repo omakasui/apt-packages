@@ -86,26 +86,6 @@ MD5sum: 0fa17ad503103071b7b880d1b2683837
 SHA1: f94450f6cffa8d20caa940a79d5047a02ee57bbe
 SHA256: 507efe0142e58a4a1fffe7875e1ac229bf175356687a6185d67884e799e8a068
 
-Package: libgtk4-layer-shell0
-Version: 1.1.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 280
-Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
-Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
-Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
-Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
-Section: libs
-Priority: optional
-Homepage: https://github.com/wmww/gtk4-layer-shell
-Description: Library for the Wayland Layer Shell protocol with GTK4.
- Provides libgtk4-layer-shell.so and GObject Introspection typelib.
-Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+trixie_arm64.deb
-Size: 39414
-MD5sum: 3b3c52eb780c22ee2b6bc5f43d648de2
-SHA1: 3f2fc8def44270421c45e16653deee80d2733239
-SHA256: 6cf3e6a5044b70eb94028adda1679b6bbbae570fab1da6d530381d5cfad3a417
-
 Package: fonts-ia-writer-mono
 Version: 20260310-1+trixie
 Architecture: all
@@ -1186,4 +1166,24 @@ Size: 9807430
 MD5sum: 58aad311bf7712c3b79382fafd0fad53
 SHA1: fcde3a5eec6745b74de16f37188379066e0a20f1
 SHA256: 5e42def913cee54cd4b8ed51057f2156725d1515eaa1d0acce7616d35e56a443
+
+Package: libgtk4-layer-shell0
+Version: 1.1.0-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 280
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.80.0), libgtk-4-1 (>= 4.0.0), libwayland-client0 (>= 1.11.0)
+Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
+Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: Library for the Wayland Layer Shell protocol with GTK4.
+ Provides libgtk4-layer-shell.so and GObject Introspection typelib.
+Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+trixie_arm64.deb
+Size: 39958
+MD5sum: 44478f67587c4b029d0862e16420e44d
+SHA1: a7aceb41da21d8f5da1dc4684760f776114e4568
+SHA256: de7dee0697ecbab37198ebbf6e407c31603e03cc93fa5b002038120a469e352a
 
