@@ -294,23 +294,6 @@ MD5sum: f3417296cfbe690739d6729fd592c926
 SHA1: e8a7289f2fbddab610d9da4fe2121afc8db69561
 SHA256: a9b9e00d3081e012ccd7aec48cd451f0b7f8e15f84339ae028545f76ee63af37
 
-Package: walker
-Version: 2.17.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8860
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, elephant, libgtk4-layer-shell0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.0/walker_2.17.0-1+trixie_amd64.deb
-Size: 2201098
-MD5sum: c1d6fb4708f25cf19b61aa6997fbf4db
-SHA1: dc2de9deec2762485ff4cdfcc3ae98c7742bf938
-SHA256: 0aa17e931e4bca2044bf12031419f6b2bd9838f8fbff75f1e609315de323b0dc
-
 Package: elephant
 Version: 2.22.0-1+trixie
 Architecture: amd64
@@ -1209,4 +1192,21 @@ Size: 9930450
 MD5sum: 5a8327ce1c021383834e6e50822da0f9
 SHA1: df651b102b9853b8db5885f3da767f2469d4bbeb
 SHA256: 62770cf553917be357f71c994c0071c92e79c9ffbc7f03a5d5c3aae3ea68ca8a
+
+Package: walker
+Version: 2.17.0-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8916
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.0/walker_2.17.0-1+trixie_amd64.deb
+Size: 2213296
+MD5sum: da1f8ba8b811f2dd30d29ed490ac9235
+SHA1: cbbce1efe7863840bb8c16bf53c676cd09f7bfd7
+SHA256: 3239802a55e488387748d844b5bed6ed604887b3a1d3d9f6b8fa490c40a753ec
 

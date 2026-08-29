@@ -198,23 +198,6 @@ MD5sum: 7abad0e46e7c060be1011b313320ff98
 SHA1: 09146ade80abbc94c852eefa92a76b28c8920888
 SHA256: f5c6afd9c02a0890e3677c4859d95546fda0e4c3e703a43c3bfb79a3f5a1069f
 
-Package: walker
-Version: 2.17.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8860
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, elephant, libgtk4-layer-shell0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.0/walker_2.17.0-1+resolute_amd64.deb
-Size: 2200340
-MD5sum: 0982a494e866c499a2fde455c0109221
-SHA1: a7a139dd128fccea560c64cb5bf0050cb7ba0f90
-SHA256: dc14729e55f49ff5727d9a7a09908decd4593d9f7d5935c7fab455ef8c969e50
-
 Package: elephant
 Version: 2.22.0-1+resolute
 Architecture: amd64
@@ -1113,4 +1096,21 @@ Size: 9929020
 MD5sum: 4099ddb4e39256046377789d62aabd8e
 SHA1: dde2d5209bf9144b98972f184b3f45dff22fa2ce
 SHA256: a9ffc01400277d22c7a502b133c1cb82814e58640df3555013a57fcf231645bf
+
+Package: walker
+Version: 2.17.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8916
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.0/walker_2.17.0-1+resolute_amd64.deb
+Size: 2216108
+MD5sum: bb086c68d10525722b6e3f44aa024d18
+SHA1: fa3505548bf3f6d3aa5e054c81db9e58889b9050
+SHA256: 59ede4813088ce856295f4b62d340c897dd11838dde05dd8373d4179059cf371
 
