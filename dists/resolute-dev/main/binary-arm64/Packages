@@ -15,25 +15,6 @@ MD5sum: f30618dc1c430535996d92de0da0b40c
 SHA1: ec9f87dd0a910a9b3b33aa443e22c4cabea13d5e
 SHA256: 530de7fbb4937551b071ac719511cdc6fee8d3f363cf790b96e4f8937e0f0ee1
 
-Package: alacritty
-Version: 0.17.0-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 53544
-Depends: libfontconfig1, libfreetype6, libxcb1, libxkbcommon0
-Conflicts: alacritty
-Replaces: alacritty
-Provides: alacritty
-Section: x11
-Priority: optional
-Homepage: https://github.com/alacritty/alacritty
-Description: A fast, cross-platform, OpenGL terminal emulator.
-Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+resolute_arm64.deb
-Size: 10138792
-MD5sum: 921b5a8fdb9fcd5f596c78de05cb1a53
-SHA1: 2ab54fbdc9b71e02ecc9e6ce0576c15d2eafa55b
-SHA256: d071fac6779adbc127a5e7eb71d20cb5269391caba5c4f2a51cb6d1a7c674c98
-
 Package: asdcontrol
 Version: 0.6.0-1+resolute
 Architecture: arm64
@@ -1090,4 +1071,23 @@ Size: 1491308
 MD5sum: 34b796b48b68f022639a1db65b045216
 SHA1: 89742a6ad7b238c32e282575e52d2e0f6b99c5e1
 SHA256: bb8dd3f2d750a2970152e6ae6ecd70f7aff9b5b500b59796f9aad5ca471733b0
+
+Package: alacritty
+Version: 0.17.0-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 58676
+Depends: libc6 (>= 2.43), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.8), libgcc-s1 (>= 4.2), libwayland-client0, libwayland-egl1, libxkbcommon-x11-0, ncurses-term
+Conflicts: alacritty
+Replaces: alacritty
+Provides: alacritty
+Section: x11
+Priority: optional
+Homepage: https://github.com/alacritty/alacritty
+Description: A fast, cross-platform, OpenGL terminal emulator.
+Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+resolute_arm64.deb
+Size: 9798902
+MD5sum: abc64af2c361a362ff53db21eb3324f3
+SHA1: 84c59d269acfbd96f62ac08f527e0efdfc02f545
+SHA256: faeb639336aa2ffc2cb049f474942baf53510e1a577da2efaf27e054a1e6e905
 
