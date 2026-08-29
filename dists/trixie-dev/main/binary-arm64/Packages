@@ -294,25 +294,6 @@ MD5sum: 829c6f451d52a1f4fa415600fb4cf08b
 SHA1: eb00ac79a159fd4ec6acf04e5951d7e35cd95e17
 SHA256: de3f5464b84335cf40f905f93592437f37542f4fd998beb0613fa24229253018
 
-Package: eza
-Version: 0.23.5-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2300
-Conflicts: eza
-Replaces: eza
-Provides: eza
-Section: utils
-Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.5/eza_0.23.5-1+trixie_arm64.deb
-Size: 978452
-MD5sum: 016d643daefe3adfcb6c0add7e49bdad
-SHA1: f611e77473d8f34ecc3df7b695a2fab83f5341b9
-SHA256: fd84dcbb5c6b258c10562d0ebb352eae8187add84c3eef6b58a83bf77e59a7ad
-
 Package: walker
 Version: 2.17.0-1+trixie
 Architecture: arm64
@@ -837,6 +818,21 @@ MD5sum: 9a14af42e5e694e125a77482d7480047
 SHA1: 02baf1581da9cbe4c80810382df0197a3a11de7f
 SHA256: b77a0d4130bfae2a5a3b5c40ffff933843c4f2fed6224cd1dc7994b59aaf0693
 
+Package: cliamp
+Version: 1.63.2-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 31164
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+trixie_arm64.deb
+Size: 8633182
+MD5sum: 1d3f91a8e334461b5c265695261c5888
+SHA1: 93e6685aed0746e337b016f87910362ed2f69d79
+SHA256: 96a7e7b05b0ac4b8c7aac32bcf44d19b8c3aa7b3c2665b8076408a99e23791e7
+
 Package: fastfetch
 Version: 2.67.1-1+trixie
 Architecture: arm64
@@ -1000,25 +996,6 @@ MD5sum: 5318065ae9944ea9d9833fbadebfc53c
 SHA1: 48e979378e7d0a49e4460d213b503cf3c1f61b9a
 SHA256: b450931275fededf778018b035ed5edd76e547531613ce401f15fcd1b533f3ed
 
-Package: nvim
-Version: 0.12.5-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41056
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor.
- Conflicts with and replaces the distro neovim package.
-Filename: pool/nvim-0.12.5/nvim_0.12.5-1+trixie_arm64.deb
-Size: 8982440
-MD5sum: b9a0f6047fecd0060064638f141844dd
-SHA1: eabd6b10ef0129335e2c80c690a49072065ff4ae
-SHA256: be6993e60f88215c8b3e099947cfd41e57690eb356b8914ba75b7d1bd66e7f0e
-
 Package: glab
 Version: 1.115.0-1+trixie
 Architecture: arm64
@@ -1172,19 +1149,43 @@ MD5sum: 44478f67587c4b029d0862e16420e44d
 SHA1: a7aceb41da21d8f5da1dc4684760f776114e4568
 SHA256: de7dee0697ecbab37198ebbf6e407c31603e03cc93fa5b002038120a469e352a
 
-Package: cliamp
-Version: 1.63.2-1+trixie
+Package: eza
+Version: 0.23.5-1+trixie
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 31164
-Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
+Installed-Size: 2300
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: eza
+Replaces: eza
+Provides: eza
 Section: utils
 Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+trixie_arm64.deb
-Size: 8633370
-MD5sum: 124aff362e0bd9057180d27ed2a83da6
-SHA1: e90deeb52590a2d3859d285c57ce8af409e5e2ad
-SHA256: 9d15ea8c241658132449a1fc6e4a46f1fcb1afac670cba2ca2aaea4ec796ba4c
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+trixie_arm64.deb
+Size: 978912
+MD5sum: 49bbac7bc42d10488a19eda6ee58eb57
+SHA1: 602dfbe316be7eaa3710dfe4413fa2eda224f829
+SHA256: 278e77e91c71e1f60ef20d48e652ab5d1c140b7e3f7400d45a9b3440dba705ae
+
+Package: nvim
+Version: 0.12.5-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41056
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor.
+ Conflicts with and replaces the distro neovim package.
+Filename: pool/nvim-0.12.5/nvim_0.12.5-1+trixie_arm64.deb
+Size: 9036340
+MD5sum: fa5faa3c2eb5f5c0ea832207690c4d3f
+SHA1: 01d150621e31e19ceb5d74f0ff3c73bea7eae954
+SHA256: af3005ad6710d0230013cfb8ada1917aa3eff2c3148fc1653f850e6fd94a6789
 

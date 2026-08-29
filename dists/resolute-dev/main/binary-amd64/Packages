@@ -198,25 +198,6 @@ MD5sum: 7abad0e46e7c060be1011b313320ff98
 SHA1: 09146ade80abbc94c852eefa92a76b28c8920888
 SHA256: f5c6afd9c02a0890e3677c4859d95546fda0e4c3e703a43c3bfb79a3f5a1069f
 
-Package: eza
-Version: 0.23.5-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2724
-Conflicts: eza
-Replaces: eza
-Provides: eza
-Section: utils
-Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.5/eza_0.23.5-1+resolute_amd64.deb
-Size: 1068654
-MD5sum: c067e49d8c0c9f319374a77567068aaa
-SHA1: b6a6dd7ccb717fde45832f2ed35f760b2d2272e4
-SHA256: a98eaf164c434387a5a6905133d912ae00d5106491a691168429a5cbc1616643
-
 Package: walker
 Version: 2.17.0-1+resolute
 Architecture: amd64
@@ -741,6 +722,21 @@ MD5sum: b86e092c302d54308b966c210421bb1d
 SHA1: d48675ae29d47f5b7e880f641773af9a743ac9e6
 SHA256: 5c51ee1f66977b043c1a3d14077c1cc29dbd52731624d1bdaceb1b7905f78e13
 
+Package: cliamp
+Version: 1.63.2-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 33132
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+resolute_amd64.deb
+Size: 9615998
+MD5sum: d1cbfaa2c7c4bc580d87c9b824e37c80
+SHA1: 10eb6131f2e60b0301b437f6c6315080bd82f94c
+SHA256: 64d20d23433855671f83c90ceb82541d2a36f1f908b46f851fcfeecc7be9ecfd
+
 Package: fastfetch
 Version: 2.67.1-1+resolute
 Architecture: amd64
@@ -925,25 +921,6 @@ MD5sum: 7f9e63cfdb7295a718966d12b7725954
 SHA1: f120a399ff319d4079600c0b20fb191cc41f2989
 SHA256: 7ca29f01e16541a77b6125a917d50f7a12dd3b4d2de349a2902d5d9b4bf85462
 
-Package: nvim
-Version: 0.12.5-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40968
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor.
- Conflicts with and replaces the distro neovim package.
-Filename: pool/nvim-0.12.5/nvim_0.12.5-1+resolute_amd64.deb
-Size: 9075068
-MD5sum: 5fe4d6c5e4c68f6290e202a7bc99a82a
-SHA1: a1f1ab1d316a9551e21cf564a2d9a6ae8c0ac9bf
-SHA256: 077725801227ac86c4fe8bda152af646693b93ff9b223273c5d8b41245590d90
-
 Package: glab
 Version: 1.115.0-1+resolute
 Architecture: amd64
@@ -1097,19 +1074,43 @@ MD5sum: 9bc41de800c2f6ad95d72d48b600b5f2
 SHA1: dffa648342870079c216c82e0a403c4b88aa4e1d
 SHA256: 8b6c58c2e9e7841f6e3ab9394e4ca0a5a0d52e384046102a965bca40e1765052
 
-Package: cliamp
-Version: 1.63.2-1+resolute
+Package: eza
+Version: 0.23.5-1+resolute
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 33132
-Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
+Installed-Size: 2724
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: eza
+Replaces: eza
+Provides: eza
 Section: utils
 Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+resolute_amd64.deb
-Size: 9616870
-MD5sum: b2951eda2b59bbbf6faf349fb98b27e0
-SHA1: db53077437b1ff7f04a45e5fcad7ed64e3090da0
-SHA256: e36301f9034b02779218245adfe9881bb443a6f0688bf4a4c94f2c5a4f2189ce
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+resolute_amd64.deb
+Size: 1067906
+MD5sum: 27f7b057f288dbe36c7a4acc45dccf00
+SHA1: 10618b03ddea82c2cee02630112e2598473fc3be
+SHA256: bc85621eba583a3b979284b726168cabd214d7e69361d5ecad9eb8ca0a2780ef
+
+Package: nvim
+Version: 0.12.5-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40968
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.4)
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor.
+ Conflicts with and replaces the distro neovim package.
+Filename: pool/nvim-0.12.5/nvim_0.12.5-1+resolute_amd64.deb
+Size: 9122922
+MD5sum: bbe6b443842c257376f0f38534dfff76
+SHA1: 36a491dc9921018e616d32abd30d0416c3c64213
+SHA256: 05b27af397495ad4e8df0de636c2af0adb846da9cf41e964c7a4c3dc2b08a4b0
 

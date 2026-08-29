@@ -196,25 +196,6 @@ MD5sum: 6b164af5cfdb5a7af23502fddc950be6
 SHA1: 018a01a6c1abfddfc640f514f8c88413e9d7af94
 SHA256: 4e78ef2b6f06e5a33e22a9c85c2139e20ba73805fe9bee833d2907c38c612490
 
-Package: eza
-Version: 0.23.5-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2300
-Conflicts: eza
-Replaces: eza
-Provides: eza
-Section: utils
-Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.5/eza_0.23.5-1+noble_arm64.deb
-Size: 978460
-MD5sum: 195da9cd320a7cf087cb9a1a6d97eb28
-SHA1: 8237243f6dbad250d6d599b761e53856e835dd36
-SHA256: 8cb266b894fa7a50ceb47ea7afc958c401cf9d61c92ac21de34766a2090e24a0
-
 Package: walker
 Version: 2.17.0-1+noble
 Architecture: arm64
@@ -739,6 +720,21 @@ MD5sum: a6f05ff842977083419c5a34c64497dc
 SHA1: 41c97712b1eed4aaf3eec850a0dc1878bdfea169
 SHA256: 9d4f341cd8a8826f472eb09dcc6e9ea6dce881192ec21f4110d0ce16e5cf0284
 
+Package: cliamp
+Version: 1.63.2-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 31164
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+noble_arm64.deb
+Size: 8633180
+MD5sum: d6158efd85a6698481ea4e97e1c9d2d3
+SHA1: 8cb216276562d83fd7ad8aff428a8dfb702d11ca
+SHA256: ca6089a924556188a91d6c7dffc11067b7b43d534b7af77d61254b80f9a845b5
+
 Package: fastfetch
 Version: 2.67.1-1+noble
 Architecture: arm64
@@ -902,25 +898,6 @@ MD5sum: 5dbdca466cb9b678e1a35f7ff5a5c8cf
 SHA1: 13360e07fb2658934017f14a3b7261c4ce6e0373
 SHA256: 72037a97d89be293208a55da314d86ea6acca9981e798715e3c2d16540fee7b2
 
-Package: nvim
-Version: 0.12.5-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41056
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor.
- Conflicts with and replaces the distro neovim package.
-Filename: pool/nvim-0.12.5/nvim_0.12.5-1+noble_arm64.deb
-Size: 8982782
-MD5sum: ca6ac3bcf3b384259443875ade2e6925
-SHA1: 9bad35f4e38153611e0725475d4f97777a1bc62a
-SHA256: 09641f492d479969bda962abdc8bdea81cb98fa218e9352379c97cf5f7ea819d
-
 Package: glab
 Version: 1.115.0-1+noble
 Architecture: arm64
@@ -1074,19 +1051,43 @@ MD5sum: c1ac12625b641a1df6d386a5239b5fdf
 SHA1: f473ff6d9439f36a3277792505b605230683935b
 SHA256: d053c171f20222de799e4f5458d0d8f46b2e5fc8a25a556c93f3bd1fe3d0265d
 
-Package: cliamp
-Version: 1.63.2-1+noble
+Package: eza
+Version: 0.23.5-1+noble
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 31164
-Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
+Installed-Size: 2300
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: eza
+Replaces: eza
+Provides: eza
 Section: utils
 Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+noble_arm64.deb
-Size: 8633422
-MD5sum: 1e8a1c7e39d878d8315651560a64af29
-SHA1: 8f9b7a6b86b4f13273817da1dd0c80e01fa4f3a1
-SHA256: d02c3cfa718899ecaab2cd243516d2c14700d3b2d85eb8219d7989ae3be74fa2
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+noble_arm64.deb
+Size: 978826
+MD5sum: 9caeba37b35792c41785a7d87259a09b
+SHA1: 107dcff2d36135cfce21191688cebaec8b2df4c3
+SHA256: fb9a5d24f54760742db4d3594d84de8f17e54f008d6dcaa6e59a05bf7448e7e3
+
+Package: nvim
+Version: 0.12.5-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41056
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor.
+ Conflicts with and replaces the distro neovim package.
+Filename: pool/nvim-0.12.5/nvim_0.12.5-1+noble_arm64.deb
+Size: 9036372
+MD5sum: d4fd8245f97fd0ff1df77c966e4ac6cf
+SHA1: 7827756c759bf017908e896067145ba2ead12932
+SHA256: 9b5a0eb85a9803fc17bb86a3b8c3ebae0bb470186d679bd18933884a0211e23a
 
