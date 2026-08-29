@@ -1070,25 +1070,6 @@ MD5sum: cadf124702908347dd48d72f57eb9d68
 SHA1: 850ac2b5173d7eb33162b0cb8afc692c94b7b979
 SHA256: 7258085c0b5b2363a6acc45c47f157817027ae33911b75f4fedfb53416416bca
 
-Package: xwayland-satellite
-Version: 0.8.2-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4916
-Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
-Section: x11
-Priority: optional
-Homepage: https://github.com/Supreeeme/xwayland-satellite
-Description: Rootless Xwayland integration for Wayland compositors.
- Grants rootless Xwayland support to any Wayland compositor implementing
- xdg_wm_base and viewporter, without the compositor having to implement
- Xwayland handling itself.
-Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_arm64.deb
-Size: 1491802
-MD5sum: e3fb7df146359928adfb20fd9cd8bf91
-SHA1: a8f7713b43b08178568b42727a4afb60a0c1130d
-SHA256: 3d0e13e8f2a4cbc1d7748fd652b17f01797f0a48a7aba17e5f7a2b4b71f56320
-
 Package: alacritty
 Version: 0.17.0-1+trixie
 Architecture: arm64
@@ -1188,4 +1169,23 @@ Size: 533614
 MD5sum: 2f50aaf8c7383a6c4f9c1bf34bd1d44d
 SHA1: e63baffccb4b52b3714fe245a9bc224ddb804885
 SHA256: 6477c9c1cdfc378176b7e43cb3d632c4f69500ecedf635a5d93046e850748a59
+
+Package: xwayland-satellite
+Version: 0.8.2-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4916
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_arm64.deb
+Size: 1492066
+MD5sum: f83867c3739146bb9bcac83e8458bd51
+SHA1: 144545136e7aee0d18b7c3d14171106705b42467
+SHA256: 32adb85645c18d10a075393f48db98bf31f9ff40d36f24b279f617b570d31dd0
 

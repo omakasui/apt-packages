@@ -1091,25 +1091,6 @@ MD5sum: b338886286ebb613f736df038522315c
 SHA1: aa58749f4c05b360038677fc1ba0c25e28ff1aa8
 SHA256: b74e80b5c21b302caf19252add7a0bbb3933d0a683a7ed6eaf238dbf5ed996b8
 
-Package: xwayland-satellite
-Version: 0.8.2-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 5496
-Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
-Section: x11
-Priority: optional
-Homepage: https://github.com/Supreeeme/xwayland-satellite
-Description: Rootless Xwayland integration for Wayland compositors.
- Grants rootless Xwayland support to any Wayland compositor implementing
- xdg_wm_base and viewporter, without the compositor having to implement
- Xwayland handling itself.
-Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_amd64.deb
-Size: 1608534
-MD5sum: 4e09fa86ba0e887c9256fc126aed76cf
-SHA1: 3b2eca101c2d0e273bd11e781d39a1de1a061726
-SHA256: bc6c8f804e4f76592c91c024834e172150110b8e3912e0320365606d3d17c3c6
-
 Package: alacritty
 Version: 0.17.0-1+trixie
 Architecture: amd64
@@ -1209,4 +1190,23 @@ Size: 551542
 MD5sum: 5462517c02f4c515eec47921c46a3d2d
 SHA1: 20ccf796ce6c63a29ce7bca54385810f6bc11dc9
 SHA256: 3f023b9e8f979dbd96181ce4beb2026b276afdb537c060b39107d324a2a2c3e1
+
+Package: xwayland-satellite
+Version: 0.8.2-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 5496
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_amd64.deb
+Size: 1608780
+MD5sum: 6dc3b4374573de31d554e53a33d01871
+SHA1: 18e7b343eea318d26d7e7e4f158fd8eb691846d2
+SHA256: aa52335ffc0124721ad5c43620822bcfda44e30cb3b114c29a303bb6d39eabdd
 

@@ -972,25 +972,6 @@ MD5sum: 3e9066ec24254848714d4299b3551f4d
 SHA1: be7de597754de60acb3cf2050db25ce4a04a67fa
 SHA256: bd4527df30cd933be3e31384e4e9905d28a049b75962f7fba3a95a14edfa0224
 
-Package: xwayland-satellite
-Version: 0.8.2-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4916
-Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
-Section: x11
-Priority: optional
-Homepage: https://github.com/Supreeeme/xwayland-satellite
-Description: Rootless Xwayland integration for Wayland compositors.
- Grants rootless Xwayland support to any Wayland compositor implementing
- xdg_wm_base and viewporter, without the compositor having to implement
- Xwayland handling itself.
-Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+noble_arm64.deb
-Size: 1491496
-MD5sum: a6d21cab5276adfe7c712d7cc4d2b8bf
-SHA1: c85cfa3b8165d9ffcbf256fa86ffe7df286e5d87
-SHA256: 0b6bfc9b28754787282c1cfff1075ed72d4fde1e20c1a5f6c2ca7613ab203d72
-
 Package: alacritty
 Version: 0.17.0-1+noble
 Architecture: arm64
@@ -1090,4 +1071,23 @@ Size: 542986
 MD5sum: 199e33b93fe2aa2aa2b6a7ec5dc004a0
 SHA1: 864eba0cf9b9ebbc252eeb7bb711b075e1080464
 SHA256: 565ad5c2a1e6341877542615efd069294b39fffe32ca1390509caeb470c43cc7
+
+Package: xwayland-satellite
+Version: 0.8.2-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4916
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+noble_arm64.deb
+Size: 1491764
+MD5sum: 0ff3c805c9d9e426ff7a6b347ecac003
+SHA1: 1db285985cb514ee90dc3b9eb3cdcda0c2a5ce8a
+SHA256: 0f519aa139cb89b2200a1664b422ae3c9af0cc0034d64fdc0f5b0af68dee19c2
 
