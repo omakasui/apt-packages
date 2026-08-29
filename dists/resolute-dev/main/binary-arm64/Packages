@@ -793,27 +793,6 @@ MD5sum: 8737cad3ef82fe5b3140680a15a30677
 SHA1: 93f0b34ffa20a42a0f3e561a46d653bedbf64136
 SHA256: 570d03f9c9ff0b56f829f1ea41a8e97b87fb4890a9ddcfa7aecf7384c50c4f0f
 
-Package: tmux
-Version: 3.7c-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1556
-Depends: libc6, libtinfo6 | libncurses6
-Conflicts: tmux
-Replaces: tmux
-Provides: tmux
-Section: admin
-Priority: optional
-Homepage: https://github.com/tmux/tmux
-Description: Terminal multiplexer.
- Allows creating multiple terminal sessions within a single window,
- with persistent sessions that survive disconnections.
-Filename: pool/tmux-3.7c/tmux_3.7c-1+resolute_arm64.deb
-Size: 541868
-MD5sum: ccef2259c526b8fa5b43577d4e829c8c
-SHA1: d9f0ef5ebf10567fd60bc9204e45f91d83979542
-SHA256: 4ab31e4ed61088fe9593ce6567a9cb7ea8b79b3c7aad25f822164ef089f73444
-
 Package: zen-browser
 Version: 1.21.15b-1+resolute
 Architecture: arm64
@@ -1092,4 +1071,25 @@ Size: 9035842
 MD5sum: 86c5063585153f98199dd62ac59a67c0
 SHA1: c849323095daf986cc9648944f688296a0de04d3
 SHA256: d0ae14a2ef5bad56deca5c16d397a8653dcd1f7d644245ff41c3d718e0a37940
+
+Package: tmux
+Version: 3.7c-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1556
+Depends: libc6 (>= 2.42), libtinfo6 (>= 6.5)
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer.
+ Allows creating multiple terminal sessions within a single window,
+ with persistent sessions that survive disconnections.
+Filename: pool/tmux-3.7c/tmux_3.7c-1+resolute_arm64.deb
+Size: 542132
+MD5sum: 55e8edaf4d31dd253f3f8347605f25a0
+SHA1: 4c01f2bc1d77c1accad8304d01e420cc98bc3fe3
+SHA256: 23998512a1794c8b4926cd49e23bd46d7dccfb9e9d576f17e1c1d264e66ee129
 
