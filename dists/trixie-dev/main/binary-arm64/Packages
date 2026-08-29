@@ -1000,22 +1000,6 @@ MD5sum: 65b2440b0bbb5765b048e0bf1db0b416
 SHA1: a45f3c5151df49606083c937fcfe80a1e661c85d
 SHA256: c73da651bac324a163a7c0d25a6c67de0e45801a1e3a78ea009dd627e2f5135a
 
-Package: zellij
-Version: 0.45.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 44844
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: A terminal workspace with batteries included.
- Provides layouts, sessions, plugins and a scripting API.
-Filename: pool/zellij-0.45.0/zellij_0.45.0-1+trixie_arm64.deb
-Size: 11287600
-MD5sum: e6456023ef1d3b70c66d0ceaf0939faf
-SHA1: e627f2dabf632aca9380b71fb53d3f5d9e407e47
-SHA256: c0c4b845b73a4541ce3333450c2693c0ad432d6f402582c0d1e6ad88b1d85dd2
-
 Package: gh
 Version: 2.98.0-1+trixie
 Architecture: arm64
@@ -1159,4 +1143,20 @@ Size: 1490466
 MD5sum: 0c066a41878f0f717d67da82807009cd
 SHA1: 497d66251d913501d4c448a871f7749d1093d2ac
 SHA256: 9aef93fdd44f6e6aba4c3ea295398f74b0249b4a350aef2f9880430f80f1c7d9
+
+Package: zellij
+Version: 0.45.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 44904
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: A terminal workspace with batteries included.
+ Provides layouts, sessions, plugins and a scripting API.
+Filename: pool/zellij-0.45.1/zellij_0.45.1-1+trixie_arm64.deb
+Size: 11309828
+MD5sum: 1f41849bc2cc1e18705c05e3eb9b94de
+SHA1: 3d5e9e8390943543ed90e0c9d4eda4434eea3dc6
+SHA256: 27a3a6f044578664557ec4be8142da23d25a6c21e7591d103ff10484d2f67d29
 
