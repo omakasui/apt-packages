@@ -196,6 +196,25 @@ MD5sum: 067f317377d8c5e6fd397a58c8a95178
 SHA1: 849d95eae71ca04ebde69fd5978203a4d3049dda
 SHA256: c82175c25bfaeb4b781b8a5fd918ace53a5e2045bf185e00f0d86702271d0ceb
 
+Package: eza
+Version: 0.23.5-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2724
+Conflicts: eza
+Replaces: eza
+Provides: eza
+Section: utils
+Priority: optional
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+noble_amd64.deb
+Size: 1068646
+MD5sum: f03d934e6d3da9f57e3f442b5f5525af
+SHA1: e8c32ff08cdd6ad0323b7acf17ec02dc073c2fc3
+SHA256: ad8190017c450e791ab9b8fcf4aed92b36c65557c426f554ef5fec163d5e8df3
+
 Package: walker
 Version: 2.17.0-1+noble
 Architecture: amd64
@@ -720,21 +739,6 @@ MD5sum: 3189cadaaf69a783b1d81f051e076174
 SHA1: 81906d6687c9636d41757875a9fda2191937dcb1
 SHA256: 3b746eb57408ec8db07c0e36d4cec92a3899ba53645a045f4b737068bd9eb120
 
-Package: cliamp
-Version: 1.63.2-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 33132
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+noble_amd64.deb
-Size: 9616088
-MD5sum: 9a75b12245c3e4e9ed46876203bdc3e0
-SHA1: 2ec142d0c4ea9c583effb70750a06d20a1acaa4f
-SHA256: ec0bd79ca25a706c34770574aabe6cc0d73baae77f36f234bf7abaa66518f051
-
 Package: fastfetch
 Version: 2.67.1-1+noble
 Architecture: amd64
@@ -1091,23 +1095,19 @@ MD5sum: 1b3273baf6de08a8626f8ed4b1f9100e
 SHA1: b30fac7a7f0ae709859877730338fdd18004ff32
 SHA256: ed5ecb148609b92827f652b5cf0f6b709030f2f02555642e07827b66fab2bcc7
 
-Package: eza
-Version: 0.23.5-1+noble
+Package: cliamp
+Version: 1.63.2-1+noble
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2724
-Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
-Conflicts: eza
-Replaces: eza
-Provides: eza
+Installed-Size: 33132
+Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
 Section: utils
 Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.5/eza_0.23.5-1+noble_amd64.deb
-Size: 1067924
-MD5sum: c4997e47fe9bfc89b2b004a737292ba8
-SHA1: 39f4cdd50b14d5f6854faa8caeaa81bfbaef43f1
-SHA256: a56f9471c19378e0f76cf8653f1a4aa227d673158d389e20f5c0ee9fcec83d5a
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+noble_amd64.deb
+Size: 9616712
+MD5sum: 0bb30e6705a8baf6ae18925d4fb4ce85
+SHA1: a7807cd7888f407241258cc851c1816719d15f18
+SHA256: 9eb31f7f8b9b4569ab4923eefc1e90151376b726bb73d6528572fafb28420c8f
 
