@@ -1141,25 +1141,6 @@ MD5sum: 1f41849bc2cc1e18705c05e3eb9b94de
 SHA1: 3d5e9e8390943543ed90e0c9d4eda4434eea3dc6
 SHA256: 27a3a6f044578664557ec4be8142da23d25a6c21e7591d103ff10484d2f67d29
 
-Package: xwayland-satellite
-Version: 0.8.2-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4916
-Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
-Section: x11
-Priority: optional
-Homepage: https://github.com/Supreeeme/xwayland-satellite
-Description: Rootless Xwayland integration for Wayland compositors.
- Grants rootless Xwayland support to any Wayland compositor implementing
- xdg_wm_base and viewporter, without the compositor having to implement
- Xwayland handling itself.
-Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_arm64.deb
-Size: 1491802
-MD5sum: 990aaeab1eeb6f9716db858008fadb93
-SHA1: de3e797ebba491c02e79ddfcdf05d81b4d6e40a4
-SHA256: 00242553275f08444961af5124622a16d7c23e636539da494edba4da28280809
-
 Package: niri
 Version: 26.04-1+trixie
 Architecture: arm64
@@ -1186,4 +1167,23 @@ Size: 7700596
 MD5sum: cadf124702908347dd48d72f57eb9d68
 SHA1: 850ac2b5173d7eb33162b0cb8afc692c94b7b979
 SHA256: 7258085c0b5b2363a6acc45c47f157817027ae33911b75f4fedfb53416416bca
+
+Package: xwayland-satellite
+Version: 0.8.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4916
+Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.1/xwayland-satellite_0.8.1-1+trixie_arm64.deb
+Size: 1484630
+MD5sum: 268f189167dd3e28782112fc2930b9e1
+SHA1: 70a24c3fd6b34bd7113913c61b9c48aeea4ab55f
+SHA256: 2368e1d4ea6a77575944eefca7dded61d6c7b4217fc1c4707d454256a9ea5fb2
 

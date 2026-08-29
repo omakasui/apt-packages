@@ -1045,25 +1045,6 @@ MD5sum: 0b96ad520f1e2ac5c64834f99bd90175
 SHA1: 8dd2bb7b922140f5654f101b5a9c2b2562fcd3bb
 SHA256: 7a9d10653728a6ccabf57fafdc6ab6c911b7f93ccdc3fa24119e20bd39e042e8
 
-Package: xwayland-satellite
-Version: 0.8.2-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4916
-Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
-Section: x11
-Priority: optional
-Homepage: https://github.com/Supreeeme/xwayland-satellite
-Description: Rootless Xwayland integration for Wayland compositors.
- Grants rootless Xwayland support to any Wayland compositor implementing
- xdg_wm_base and viewporter, without the compositor having to implement
- Xwayland handling itself.
-Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+resolute_arm64.deb
-Size: 1491284
-MD5sum: a71c3264bc655693f3d09e96da643d85
-SHA1: f5bae54fd494a153f025b34a4f0bf7b6a3db4902
-SHA256: ecc8eeedafda1f04d6352c0d0037cf0ccef1afe29990320ef5c3c0ecb4455ed0
-
 Package: niri
 Version: 26.04-1+resolute
 Architecture: arm64
@@ -1090,4 +1071,23 @@ Size: 7715444
 MD5sum: fe6d4bc3ab28492c7c5bbd313ef050eb
 SHA1: 9c361a501547445c531569b38cb4702e3d2c43a3
 SHA256: e5c1e6abb13d46fca74ae3b1eec56ad853c34ec9704f503a76f07cd8f5f2e67f
+
+Package: xwayland-satellite
+Version: 0.8.1-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4916
+Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.1/xwayland-satellite_0.8.1-1+resolute_arm64.deb
+Size: 1484652
+MD5sum: cf4cdd5918ddf69dd98fba55b3dc33c4
+SHA1: 5ec1e7cebc5b63f9cba8e318669ef97334161ac4
+SHA256: fbfe15c21da80a2ad0eef2c8d44afbc2a47b0bdadc5f15872397401284c28469
 

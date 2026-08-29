@@ -1043,25 +1043,6 @@ MD5sum: 31a8f43a685852243147cc6e6e7648f1
 SHA1: 648a16fbc5a032336f52243bc385dbcffe23938a
 SHA256: f0d29258a1552d915d0028b09ba989807819d63770fc9a575ce7f9706fc299d9
 
-Package: xwayland-satellite
-Version: 0.8.2-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4916
-Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
-Section: x11
-Priority: optional
-Homepage: https://github.com/Supreeeme/xwayland-satellite
-Description: Rootless Xwayland integration for Wayland compositors.
- Grants rootless Xwayland support to any Wayland compositor implementing
- xdg_wm_base and viewporter, without the compositor having to implement
- Xwayland handling itself.
-Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+noble_arm64.deb
-Size: 1491498
-MD5sum: 90244b26e6587d434b94929493c395f4
-SHA1: d16d1d3f97176a02f7fda2d1ff40ea4b4236c3ac
-SHA256: 648c3a485a1a636fce1ec0373238d8154f3473ea767f291b39d351c20d750093
-
 Package: niri
 Version: 26.04-1+noble
 Architecture: arm64
@@ -1088,4 +1069,23 @@ Size: 7676272
 MD5sum: 3e9066ec24254848714d4299b3551f4d
 SHA1: be7de597754de60acb3cf2050db25ce4a04a67fa
 SHA256: bd4527df30cd933be3e31384e4e9905d28a049b75962f7fba3a95a14edfa0224
+
+Package: xwayland-satellite
+Version: 0.8.1-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4916
+Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.1/xwayland-satellite_0.8.1-1+noble_arm64.deb
+Size: 1486462
+MD5sum: 3d7f130ab8b41ab54c12ff3796a9b61e
+SHA1: c1d26e566abf6c656fb25dcd21e2120088dbcbdc
+SHA256: 0a9eb67d2c325cdcbe09542141623e8a56bee71ebe645f507ed392dd40a883a4
 
