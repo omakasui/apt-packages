@@ -198,25 +198,6 @@ MD5sum: 618bb4eeb4b90cab0ac136ca652e678a
 SHA1: 89bb7aa5c82613e22d42c1ec8e94e99223f77f78
 SHA256: bd98da790fa102d649dcb997f44bc8bd7a7c2f0c879030a54c24baa7d312055e
 
-Package: eza
-Version: 0.23.5-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2300
-Conflicts: eza
-Replaces: eza
-Provides: eza
-Section: utils
-Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.5/eza_0.23.5-1+resolute_arm64.deb
-Size: 978440
-MD5sum: 19f75c22f435bf18b3872786f79fca65
-SHA1: e3efc91c9475fea4e8c424fe36b33b83dafd38e5
-SHA256: 6df5c3cd0c40d1213b0e8f386a512294cef6c093017c75a0f3f9f5159bceb110
-
 Package: walker
 Version: 2.17.0-1+resolute
 Architecture: arm64
@@ -1090,4 +1071,24 @@ Size: 40266
 MD5sum: 0034a74bf79d6c2d6936b7b8eccc077f
 SHA1: d8358b6e74f02dbe05907768f00e8566631df5e8
 SHA256: 646d91ff9dccbfbcc24b957187fb577473e84f2c8b3e7bff21710930128ad578
+
+Package: eza
+Version: 0.23.5-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2300
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: eza
+Replaces: eza
+Provides: eza
+Section: utils
+Priority: optional
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+resolute_arm64.deb
+Size: 978768
+MD5sum: e713c273dff9bb114dbe57852fad5f2f
+SHA1: 50898d38defec8d0209abee9b1f15325b9c6e51d
+SHA256: d3fc652452054be7a9978f6f600be13aa1da49f98ff755f56ba98b0486300ed5
 
