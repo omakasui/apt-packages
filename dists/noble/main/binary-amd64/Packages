@@ -32,25 +32,6 @@ MD5sum: e23d392f430f09e4b27a19aede1c5bbc
 SHA1: 948058be9ad1c8020ab5f59bd446ecae9cfe9a13
 SHA256: 3bdf75ff43ca736db3c2015f606e993dead30ce7630af3c7929d27c81f691b14
 
-Package: alacritty
-Version: 0.17.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 51492
-Depends: libfontconfig1, libfreetype6, libxcb1, libxkbcommon0
-Conflicts: alacritty
-Replaces: alacritty
-Provides: alacritty
-Section: x11
-Priority: optional
-Homepage: https://github.com/alacritty/alacritty
-Description: A fast, cross-platform, OpenGL terminal emulator.
-Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+noble_amd64.deb
-Size: 10212970
-MD5sum: 1e292c952a17bdd119b20a0cf256acc1
-SHA1: 35ec51d607b4d1751c35a3a08c08c3473ebe797e
-SHA256: 0ed582af39bb8b6e26ca58a6ef4fc24b0f75833b4559faf779fdf2c4eb02f717
-
 Package: asdcontrol
 Version: 0.6.0-1+noble
 Architecture: amd64
@@ -88,23 +69,6 @@ MD5sum: 0c2582ebd7bea238804547958aed8c38
 SHA1: 38b1dae0f4c6246892a4e7960958ed4a3316264c
 SHA256: 05646e8983b9a246fa8d2c48bd636c9a125457eadfa5b8cf14739a5c62c9b24d
 
-Package: fonts-cascadia-mono-nf
-Version: 3.4.0-1+noble
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 98212
-Conflicts: font-cascadia-mono-nf
-Replaces: font-cascadia-mono-nf
-Section: fonts
-Priority: optional
-Homepage: https://github.com/ryanoasis/nerd-fonts
-Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
-Filename: pool/cascadia-mono-nf-3.4.0/fonts-cascadia-mono-nf_3.4.0-1+noble_all.deb
-Size: 6916866
-MD5sum: be63cabef752820becbbdaa171b5ba5f
-SHA1: acaf975a7b8a9a54b2835853e412a14a664b964a
-SHA256: bf4d6d670512d9b1acc890776f2aee9b30640ad123d535b6b5ee84347dc559b9
-
 Package: elephant-all
 Version: 2.21.0-1+noble
 Architecture: all
@@ -121,59 +85,6 @@ Size: 1238
 MD5sum: 24838866df58e1af76702a09e00af5e7
 SHA1: cdedf884224ac62452abc7830b28dd586d3c188c
 SHA256: 8d77285c42e000b1f0767dadc2000d85da336da759d630f9d02bc7c683632a0b
-
-Package: ghostty
-Version: 1.3.1-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40036
-Depends: libgtk-4-1, libadwaita-1-0, libgtk4-layer-shell0 (>= 1.1.0)
-Section: x11
-Priority: optional
-Homepage: https://github.com/ghostty-org/ghostty
-Description: Fast, feature-rich, cross-platform terminal emulator.
- Uses platform-native UI and GPU acceleration.
-Filename: pool/ghostty-1.3.1/ghostty_1.3.1-1+noble_amd64.deb
-Size: 19340734
-MD5sum: e36a19d8c2e9cd49f2ac3ed77da2eaac
-SHA1: d09e465da2b0bf99399fdceea714af85e6c54381
-SHA256: d7840e647c80626c089d7eb7a0282f4373489358ce354fb46e8a92584b73a2d6
-
-Package: libgtk4-layer-shell0
-Version: 1.1.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 260
-Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
-Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
-Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
-Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
-Section: libs
-Priority: optional
-Homepage: https://github.com/wmww/gtk4-layer-shell
-Description: Library for the Wayland Layer Shell protocol with GTK4.
- Provides libgtk4-layer-shell.so and GObject Introspection typelib.
-Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+noble_amd64.deb
-Size: 39954
-MD5sum: 7c191b81b85f178aeb80e14187f98ddc
-SHA1: 0e31217a5359fde1763a78e659004b962bc588c7
-SHA256: 67039360ef937ba8a626b2c058a121be8f7669f50611d8669379ea47ecf7d885
-
-Package: gum
-Version: 0.17.0-1+noble
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 13564
-Homepage: https://charm.land/
-Description: no description given
-Filename: pool/gum-0.17.0/gum_0.17.0-1+noble_amd64.deb
-Size: 3808908
-MD5sum: 105707503186f0e794aa31b34cf3a4f4
-SHA1: fe54338ce7e4134f44d26911995bb8d9cd421872
-SHA256: ade3c450fecd74664f13a0fa1c6565509075a41db134b0fb67880eb2f130c7ed
 
 Package: fonts-ia-writer-mono
 Version: 20260310-1+noble
@@ -205,26 +116,6 @@ MD5sum: 2a4b26ade0d05fd278052ba3946e4b4a
 SHA1: 84ba45b9a5a4fd7d8b48d5a23d146e93436a51d1
 SHA256: 3b34e8e5c62f500cf3eae9b4a1bed5f16c231657e446759cc3794bb49a8ca38b
 
-Package: kitty
-Version: 0.47.4-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 112412
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.47.4/kitty_0.47.4-1+noble_amd64.deb
-Size: 34905576
-MD5sum: 1fd135228403fe0f7fa47b79d7583bb8
-SHA1: 59757da31eec28e50864ec166be17cd89f70fefd
-SHA256: 8449fc37cd36f205a8326460ae5609ed5cb6e3707ccadd0125cdcd7c3f61c6c7
-
 Package: lazydocker
 Version: 0.25.2-1+noble
 Architecture: amd64
@@ -240,67 +131,6 @@ MD5sum: 686c2bf57745d638ca65d9f10176c31e
 SHA1: 57d2fca834456fe299b549318700adc1601f5dc7
 SHA256: 4ac2c9b2edff6b844e8c08ebd41bf9531b81dac49683d3d7bf02b6fe8706faed
 
-Package: localsend
-Version: 1.17.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Section: x11
-Priority: optional
-Essential: no
-Installed-Size: 40080
-Description: An open source cross-platform alternative to AirDrop
-Homepage: https://localsend.org/
-Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Pre-Depends: libc6 (>= 2.31)
-Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
-Filename: pool/localsend-1.17.0/localsend_1.17.0-1+noble_amd64.deb
-Size: 12982224
-MD5sum: c39fbfc261f88e11a3acfa31f52b111c
-SHA1: 0a19a35cd60c8db3d000d1aaf9687b0ab73d8b2b
-SHA256: f837880671a1ed4a1dde96eecc7179a9aa6009670cbd14fbb3c975cb16c8b6be
-
-Package: nautilus-open-any-terminal
-Version: 0.8.1-1+noble
-Architecture: all
-Source: nautilus-open-any-terminal
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 484
-Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
-Section: gnome
-Priority: optional
-Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
-Description: Nautilus extension to open any terminal emulator
- This is an extension for Nautilus which adds a context menu entry
- for opening various terminal emulators instead of being limited
- to gnome-terminal.
-Conflicts: nautilus-extension-any-terminal
-Replaces: nautilus-extension-any-terminal
-Provides: nautilus-extension-any-terminal
-Filename: pool/nautilus-open-any-terminal-0.8.1/nautilus-open-any-terminal_0.8.1-1+noble_all.deb
-Size: 18228
-MD5sum: 2054198fc2ae7cc5c5340e5c94879a25
-SHA1: 427ba3b4631b7b15b781a31bcfd2d510794992df
-SHA256: b640dda2941c3d5a325304f692ae6f4a491d1885285463b9d013a1d37ab164b8
-
-Package: nvim
-Version: 0.12.4-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40956
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor.
- Conflicts with and replaces the distro neovim package.
-Filename: pool/nvim-0.12.4/nvim_0.12.4-1+noble_amd64.deb
-Size: 9067578
-MD5sum: a1a6f455ab460cfcf5ecd81ac51ffc2d
-SHA1: e5b1ca1138f5aea50b8ebb6304b8a972a45ed18f
-SHA256: 5c30993036cbb21e493d8ff4801098f98863c4a1e4e249a75feaddb88505c4dd
-
 Package: starship
 Version: 1.26.0-1+noble
 Architecture: amd64
@@ -315,27 +145,6 @@ Size: 3964782
 MD5sum: d56f2191da6c69f2cb3902aa27b2c8d8
 SHA1: 9eb178adf3dc0ff6d9682a49ed1f974897f92af6
 SHA256: e245e6edbdfae552ffcbd62102a11bf6c3dd501b6b8390b88a1f435a37b372a0
-
-Package: tmux
-Version: 3.7b-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1544
-Depends: libc6, libtinfo6 | libncurses6
-Conflicts: tmux
-Replaces: tmux
-Provides: tmux
-Section: admin
-Priority: optional
-Homepage: https://github.com/tmux/tmux
-Description: Terminal multiplexer.
- Allows creating multiple terminal sessions within a single window,
- with persistent sessions that survive disconnections.
-Filename: pool/tmux-3.7b/tmux_3.7b-1+noble_amd64.deb
-Size: 557144
-MD5sum: 640e22dee0d9579a2cf5c27906ff7551
-SHA1: 95a8e6ef32f4fcaf938dd37935dde9deed1d1c8d
-SHA256: f7d12f725554fabeeec2b170b8f4ffd4814cf1a01528c5cc1f0011d6f0d10e32
 
 Package: ufw-docker
 Version: 251123-1+noble
@@ -354,42 +163,6 @@ MD5sum: cac182350d31a6e77d42d90deaf2a509
 SHA1: 026920a6f40249dfba558eaeafe01e2fdbd30511
 SHA256: cc9292d31eb879a2be104f8b3cb50dc9cd39d4a73a3e98c3c2f26b5bef21e928
 
-Package: xdg-terminal-exec
-Version: 0.14.2-1+noble
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 92
-Depends: bash
-Conflicts: xdg-terminal-exec
-Replaces: xdg-terminal-exec
-Section: utils
-Priority: optional
-Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
-Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
- Launches the user's preferred terminal emulator, selected via desktop entries
- and configuration files in the XDG hierarchy.
-Filename: pool/xdg-terminal-exec-0.14.2/xdg-terminal-exec_0.14.2-1+noble_all.deb
-Size: 15048
-MD5sum: 84beafe3a0964bd802719de6eb9c9e41
-SHA1: f36128f7cc23b538e1258d69ef10ed8593246094
-SHA256: 35e267388db8bf0c38f72c809d514243579a1eee514a8f7094b1cafb10269158
-
-Package: zellij
-Version: 0.44.3-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 50636
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: A terminal workspace with batteries included.
- Provides layouts, sessions, plugins and a scripting API.
-Filename: pool/zellij-0.44.3/zellij_0.44.3-1+noble_amd64.deb
-Size: 11128352
-MD5sum: 200952d23ba081a1691c0d15ca56c181
-SHA1: 316568e57d7ea6f90820c748d879357f47edf67f
-SHA256: a0116a28ba5d3a74e37bc6e6f1664732222ff6186185a411a3e24550487b9c20
-
 Package: zoxide
 Version: 0.10.0-1+noble
 Architecture: amd64
@@ -405,111 +178,6 @@ Size: 498112
 MD5sum: 067f317377d8c5e6fd397a58c8a95178
 SHA1: 849d95eae71ca04ebde69fd5978203a4d3049dda
 SHA256: c82175c25bfaeb4b781b8a5fd918ace53a5e2045bf185e00f0d86702271d0ceb
-
-Package: fzf
-Version: 0.74.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4788
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder.
- Interactive filter for files, command history, processes, git commits
- and more.
-Filename: pool/fzf-0.74.0/fzf_0.74.0-1+noble_amd64.deb
-Size: 1680748
-MD5sum: fb45dfaf491733992bb0a9d47452eb40
-SHA1: 0ed64e350455837daeedfd6a6ba9ceb51b0679ee
-SHA256: bc177c2f3007c133e33905da36d7f6098ab808ff75add92239b9822fc93242c5
-
-Package: eza
-Version: 0.23.5-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2724
-Conflicts: eza
-Replaces: eza
-Provides: eza
-Section: utils
-Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.5/eza_0.23.5-1+noble_amd64.deb
-Size: 1068646
-MD5sum: f03d934e6d3da9f57e3f442b5f5525af
-SHA1: e8c32ff08cdd6ad0323b7acf17ec02dc073c2fc3
-SHA256: ad8190017c450e791ab9b8fcf4aed92b36c65557c426f554ef5fec163d5e8df3
-
-Package: fastfetch
-Version: 2.66.0-1+noble
-Architecture: amd64
-Depends: libc6 (>= 2.35)
-Description: Fast neofetch-like system information tool
- fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Maintainer: omakasui <packages@omakasui.org>
-Priority: optional
-Section: devel
-Installed-Size: 16580
-Filename: pool/fastfetch-2.66.0/fastfetch_2.66.0-1+noble_amd64.deb
-Size: 4755164
-MD5sum: e3defeafea6f1b715a4875cd9ae8a91d
-SHA1: 7b0595d943c44e7a084b72848f8eef84581b1a07
-SHA256: 986d666751979eff79e8d5b7e868b48397005da7d491594c6c368d36fa1d8bc3
-
-Package: lazygit
-Version: 0.63.1-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 18820
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Simple terminal UI for git commands.
- Provides a keyboard-driven git interface inside any terminal.
-Filename: pool/lazygit-0.63.1/lazygit_0.63.1-1+noble_amd64.deb
-Size: 5501376
-MD5sum: a7264320910da4337dad22e3de54a83e
-SHA1: 61948654f537eb8592a2b141785eee1130c78ab2
-SHA256: 91abc0f164e14747462d62a19ac5c12b90ec244a7b1d1bee3598d33a896e6f48
-
-Package: cliamp
-Version: 1.59.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 32724
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.59.0/cliamp_1.59.0-1+noble_amd64.deb
-Size: 9518188
-MD5sum: 7a88f2d1abdfb458cb54277aceca4da3
-SHA1: 0d5bf2427ed3cabf944a833c49f80d2a059a7dac
-SHA256: a12333826a6f1fe44209ec2d7b3b64fb5f004fd5bbb8414ae55a7d434b382f51
-
-Package: walker
-Version: 2.17.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8860
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, elephant, libgtk4-layer-shell0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.0/walker_2.17.0-1+noble_amd64.deb
-Size: 2200390
-MD5sum: 129ea83df80b36547a4a78d6615481bc
-SHA1: d85614327968ba83bf35c3b0574fe554d4dd3e97
-SHA256: 49e750adfc5a928b1679f2e5f361adb2cad5adb6d8915f20a19bec48414813ed
 
 Package: elephant
 Version: 2.22.0-1+noble
@@ -904,6 +572,103 @@ MD5sum: 8987364fb814364c4272e43e6e8cca82
 SHA1: d7877a710a20a158800a2f55ad1bd108d05b8dc7
 SHA256: 5417b8042465e03844f97ca1d262564c9a2c473a0731213a22ecb2c54cbe774f
 
+Package: nautilus-open-any-terminal
+Version: 0.8.3-1+noble
+Architecture: all
+Source: nautilus-open-any-terminal
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 484
+Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
+Section: gnome
+Priority: optional
+Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
+Description: Nautilus extension to open any terminal emulator
+ This is an extension for Nautilus which adds a context menu entry
+ for opening various terminal emulators instead of being limited
+ to gnome-terminal.
+Conflicts: nautilus-extension-any-terminal
+Replaces: nautilus-extension-any-terminal
+Provides: nautilus-extension-any-terminal
+Filename: pool/nautilus-open-any-terminal-0.8.3/nautilus-open-any-terminal_0.8.3-1+noble_all.deb
+Size: 18502
+MD5sum: a8395d7e5780832af2db1844d288ed2d
+SHA1: eae17a3707ddba13037505aca56e3d37bb45befd
+SHA256: b47a4b15589d1817699d57efaa1dbaaafe489bc2afc875b823feb5cb7cc932b8
+
+Package: xdg-terminal-exec
+Version: 0.14.3-1+noble
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 92
+Depends: bash
+Conflicts: xdg-terminal-exec
+Replaces: xdg-terminal-exec
+Section: utils
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
+Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
+ Launches the user's preferred terminal emulator, selected via desktop entries
+ and configuration files in the XDG hierarchy.
+Filename: pool/xdg-terminal-exec-0.14.3/xdg-terminal-exec_0.14.3-1+noble_all.deb
+Size: 15104
+MD5sum: 7c7c948e50c1252ae311936be755c8ba
+SHA1: 6080153bab095e8feb7d689b0fd3aabd094668b6
+SHA256: 0163056fbe8f15ade1cc4b50c18996b7304f79392e37a7b230334647aeaec822
+
+Package: kitty
+Version: 0.48.2-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 113592
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.48.2/kitty_0.48.2-1+noble_amd64.deb
+Size: 34955814
+MD5sum: 15a96287c6fff143dcddfe274471e81a
+SHA1: 633ffd3737c7b87ae90f91408733f4b4238e35dc
+SHA256: b44074a1dd797b45639f8cd90b893548d55a7aa3fde950d22a11070b9689ca28
+
+Package: fonts-cascadia-mono-nf
+Version: 3.5.0-1+noble
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 98960
+Conflicts: font-cascadia-mono-nf
+Replaces: font-cascadia-mono-nf
+Section: fonts
+Priority: optional
+Homepage: https://github.com/ryanoasis/nerd-fonts
+Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
+Filename: pool/cascadia-mono-nf-3.5.0/fonts-cascadia-mono-nf_3.5.0-1+noble_all.deb
+Size: 7446346
+MD5sum: 720e7ba28676f7f77294ff4229667a86
+SHA1: 084a8d32030504822c25ae75b2bb055fd9274d29
+SHA256: 0809c71f8132c2a7b16680b6c6279c0fe15576a8d73ab316cad16f2dac8e91f7
+
+Package: lazygit
+Version: 0.64.1-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 19036
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Simple terminal UI for git commands.
+ Provides a keyboard-driven git interface inside any terminal.
+Filename: pool/lazygit-0.64.1/lazygit_0.64.1-1+noble_amd64.deb
+Size: 5562484
+MD5sum: ae25df6db79ad6e70325486dce714129
+SHA1: 1e37c10993ceb918d61b4f4928c8f8efea7220d4
+SHA256: 00a6a6521b429107f0605011691641996adbedfa41446a829f536cf224a62e24
+
 Package: obsidian
 Version: 1.13.7-1+noble
 Architecture: amd64
@@ -920,6 +685,38 @@ Size: 102972390
 MD5sum: 3189cadaaf69a783b1d81f051e076174
 SHA1: 81906d6687c9636d41757875a9fda2191937dcb1
 SHA256: 3b746eb57408ec8db07c0e36d4cec92a3899ba53645a045f4b737068bd9eb120
+
+Package: cliamp
+Version: 1.63.2-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 33132
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+noble_amd64.deb
+Size: 9616088
+MD5sum: 9a75b12245c3e4e9ed46876203bdc3e0
+SHA1: 2ec142d0c4ea9c583effb70750a06d20a1acaa4f
+SHA256: ec0bd79ca25a706c34770574aabe6cc0d73baae77f36f234bf7abaa66518f051
+
+Package: fastfetch
+Version: 2.67.1-1+noble
+Architecture: amd64
+Depends: libc6 (>= 2.35)
+Description: Fast neofetch-like system information tool
+ fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Maintainer: omakasui <packages@omakasui.org>
+Priority: optional
+Section: devel
+Installed-Size: 16880
+Filename: pool/fastfetch-2.67.1/fastfetch_2.67.1-1+noble_amd64.deb
+Size: 4814230
+MD5sum: 04e2b0f26a5e1c239d8cd8fcf69b91be
+SHA1: 62134fcc5413edf8c646b50181d5328fc7a9caa2
+SHA256: b7650b9cff1d611c5dba59212a379027a748fba3b7696c2242b95a6efab92895
 
 Package: dbeaver-ce
 Version: 26.1.5-1+noble
@@ -940,6 +737,26 @@ MD5sum: e9051940b0bac4f44348b1ae3332f57f
 SHA1: 47ad552d66dbef85b1670f0db541690d191ba65d
 SHA256: 0e67a4229ff083bd3c809cb828aba1ce4e0fe753b2a805de7c24e1276c2f0b6f
 
+Package: fzf
+Version: 0.74.3-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4836
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder.
+ Interactive filter for files, command history, processes, git commits
+ and more.
+Filename: pool/fzf-0.74.3/fzf_0.74.3-1+noble_amd64.deb
+Size: 1700970
+MD5sum: 7ab56a4689ea7c22e63fb627f1a7a78a
+SHA1: 296d8f303debf5af60636e6baf9397af7104483c
+SHA256: 7651f5c9df9975e01a1b96ff17a5ce9ed1fb4f6affbcc46a47011ee17a52891c
+
 Package: zen-browser
 Version: 1.21.15b-1+noble
 Architecture: amd64
@@ -956,6 +773,22 @@ Size: 103314118
 MD5sum: ec2ecac44903604a30d6eb8c44edde55
 SHA1: 75ba5e5db0af158cdf3de1686d099c5348f02f78
 SHA256: 1b27c80daab3dc3f45ec7d80101d7412c9b84f6d14ab8a994e7e813e75b6d78b
+
+Package: gum
+Version: 2.0.0-1+noble
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 14100
+Homepage: https://charm.land/
+Description: no description given
+Filename: pool/gum-2.0.0/gum_2.0.0-1+noble_amd64.deb
+Size: 4054380
+MD5sum: a5af9cb03eed22b0917edb19e4e3df9a
+SHA1: f4a46da62dec606f202426743b87186e9a95ff69
+SHA256: 3b03b6d7d90853efac02549e13173458dfe7dc3d3c33f4ba8fa67fa9a7ca2184
 
 Package: gh
 Version: 2.98.0-1+noble
@@ -1012,6 +845,25 @@ MD5sum: 4e3a7a05892348e8c1154a87e400078f
 SHA1: 96dd23c0efacea5fff9b0bb1bcd416ee42e65f5f
 SHA256: f9591361eddabb29188771a7be23061bd80337d5c988d0fde7f2416a204e5371
 
+Package: localsend
+Version: 1.18.2-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Section: x11
+Priority: optional
+Essential: no
+Installed-Size: 89732
+Description: An open source cross-platform alternative to AirDrop
+Homepage: https://localsend.org/
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Pre-Depends: libc6 (>= 2.31)
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+Filename: pool/localsend-1.18.2/localsend_1.18.2-1+noble_amd64.deb
+Size: 24446192
+MD5sum: 57d8a2b224c65646e0412b05ba94da6e
+SHA1: 9ec0fde45eb9e93607ef256b7df4762210fd6320
+SHA256: dcfa6c7511a10836a04e7914607e91697d0855f3f392321a74a655263cc2a63f
+
 Package: glab
 Version: 1.115.0-1+noble
 Architecture: amd64
@@ -1064,12 +916,109 @@ MD5sum: 857e2441e906979d4083a5c48699a81a
 SHA1: 5611f28b2bca60213ed62ecb4b38b1bbe375d0c8
 SHA256: 7ed40fc35a22404008ac3cc88f4e9bba0f6bfe667105acb611d1d52506ca0e64
 
+Package: zellij
+Version: 0.45.1-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 51328
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: A terminal workspace with batteries included.
+ Provides layouts, sessions, plugins and a scripting API.
+Filename: pool/zellij-0.45.1/zellij_0.45.1-1+noble_amd64.deb
+Size: 11463740
+MD5sum: 1b03ce4a26f2797162b6d4bc431c9cbe
+SHA1: ea398866eeb85ce90a942a139475cbe91527c201
+SHA256: 3b405f8dda616fbba6d237096eea3e69bf7a27f675bb9470524962ec9027474b
+
+Package: libgtk4-layer-shell0
+Version: 1.1.0-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 260
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.79.0), libgtk-4-1 (>= 4.0.0), libwayland-client0 (>= 1.11.0)
+Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
+Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: Library for the Wayland Layer Shell protocol with GTK4.
+ Provides libgtk4-layer-shell.so and GObject Introspection typelib.
+Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+noble_amd64.deb
+Size: 40560
+MD5sum: 1b3273baf6de08a8626f8ed4b1f9100e
+SHA1: b30fac7a7f0ae709859877730338fdd18004ff32
+SHA256: ed5ecb148609b92827f652b5cf0f6b709030f2f02555642e07827b66fab2bcc7
+
+Package: eza
+Version: 0.23.5-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2724
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: eza
+Replaces: eza
+Provides: eza
+Section: utils
+Priority: optional
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+noble_amd64.deb
+Size: 1067924
+MD5sum: c4997e47fe9bfc89b2b004a737292ba8
+SHA1: 39f4cdd50b14d5f6854faa8caeaa81bfbaef43f1
+SHA256: a56f9471c19378e0f76cf8653f1a4aa227d673158d389e20f5c0ee9fcec83d5a
+
+Package: nvim
+Version: 0.12.5-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40972
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.4)
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor.
+ Conflicts with and replaces the distro neovim package.
+Filename: pool/nvim-0.12.5/nvim_0.12.5-1+noble_amd64.deb
+Size: 9122628
+MD5sum: fda21d22219939cdf497a695b92034be
+SHA1: 601356205a325fd690cce968dfeb843c364c1123
+SHA256: e3b1b3dd255e6f25676a0ad54fb6bbd6f0900556484570004132fcfe8f6608cf
+
+Package: tmux
+Version: 3.7c-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1544
+Depends: libc6 (>= 2.38), libtinfo6 (>= 6.4+20230603), libtinfo6 (<< 6.5~)
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer.
+ Allows creating multiple terminal sessions within a single window,
+ with persistent sessions that survive disconnections.
+Filename: pool/tmux-3.7c/tmux_3.7c-1+noble_amd64.deb
+Size: 557210
+MD5sum: 05bdeb02d880824cb11e820cdd24a26d
+SHA1: 4f8fc15e6000ad1176a883a6866edc3f1f3188c6
+SHA256: 44f616a128c764be4fcb3d53df24b7fb852cf1a61534afad39920379f6053504
+
 Package: xwayland-satellite
 Version: 0.8.2-1+noble
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
 Installed-Size: 5496
-Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
 Section: x11
 Priority: optional
 Homepage: https://github.com/Supreeeme/xwayland-satellite
@@ -1078,20 +1027,106 @@ Description: Rootless Xwayland integration for Wayland compositors.
  xdg_wm_base and viewporter, without the compositor having to implement
  Xwayland handling itself.
 Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+noble_amd64.deb
-Size: 1608378
-MD5sum: b9010190e25cc7634371f817c051a3da
-SHA1: cc557e714ca4f3ffd00f278006bb779178957ac7
-SHA256: 07e6a75598c9a01da9090f5bad3c20ea790d679e511c5bd12427f9faa283e284
+Size: 1608626
+MD5sum: eb968c7228e94004d8a07b4041fde6f1
+SHA1: 9e393d926ae75b80d0598d9fdf54dd83b748c1d7
+SHA256: 0a76fed99acddd9a3ff6fc427c6fa7a235654f8e488e17ac6992b88bc1a30fbb
+
+Package: alacritty
+Version: 0.17.0-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 56432
+Depends: libc6 (>= 2.39), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.8), libgcc-s1 (>= 4.2), libwayland-client0, libwayland-egl1, libxkbcommon-x11-0, ncurses-term
+Conflicts: alacritty
+Replaces: alacritty
+Provides: alacritty
+Section: x11
+Priority: optional
+Homepage: https://github.com/alacritty/alacritty
+Description: A fast, cross-platform, OpenGL terminal emulator.
+Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+noble_amd64.deb
+Size: 9929678
+MD5sum: eca4c1dc1e76b42ba41f09aa0a7ead62
+SHA1: a10521d51c6e0e48a2b5d81e4a89a2d69a5aaf1b
+SHA256: 8dc1a679149f1c157cb21d5d5f1c28a1b509c11821f0d177a5d4536c03c969bd
+
+Package: walker
+Version: 2.17.0-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8916
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.79.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.0/walker_2.17.0-1+noble_amd64.deb
+Size: 2216038
+MD5sum: 8a8c00d26579fc78b1c409b27b710124
+SHA1: e10cdd37ca3879dc8c761aeb6841ff6d5228354a
+SHA256: af9b23c4c80f512abbd17e4ecc7bb96ecf04b1a9293809c7e3e353870fb359f7
+
+Package: ghostty
+Version: 1.3.1-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 35672
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libglib2.0-0t64 (>= 2.75.3), libgtk-4-1 (>= 4.14.1), libgtk4-layer-shell0 (>= 1.1.0), libwayland-client0 (>= 1.9.91), libx11-6, libegl1, libgl1
+Section: x11
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Fast, feature-rich, cross-platform terminal emulator.
+ Uses platform-native UI and GPU acceleration.
+Filename: pool/ghostty-1.3.1/ghostty_1.3.1-1+noble_amd64.deb
+Size: 18403850
+MD5sum: c1fc8e8961baa47611f1e8655e7a39ef
+SHA1: 2a723c9c059a031ff073f2778d533113ebf37de8
+SHA256: 5ce249687c8fdfe95ec8d8b7a2ca8fad2e108908cee41976b406757947392673
+
+Package: libghostty-vt0
+Version: 1.3.1-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4268
+Depends: libc6 (>= 2.34)
+Section: libs
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library.
+ Terminal emulation and escape sequence parsing extracted from Ghostty,
+ usable on its own.
+Filename: pool/ghostty-1.3.1/libghostty-vt0_1.3.1-1+noble_amd64.deb
+Size: 963452
+MD5sum: bc1c45297374b85413fa36644938dbd3
+SHA1: 7626fa81603ae3fc69f485b8728fdd80a4b3aa4e
+SHA256: 9f3428225a85f607c1c6904762333b5ca0cf09fb0010731d28eeb38dd42129fd
+
+Package: libghostty-vt-dev
+Version: 1.3.1-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 120
+Depends: libghostty-vt0 (= 1.3.1-1+noble)
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library — development files.
+ Headers, pkg-config metadata and the development symlink for
+ libghostty-vt.
+Filename: pool/ghostty-1.3.1/libghostty-vt-dev_1.3.1-1+noble_amd64.deb
+Size: 16596
+MD5sum: 4f535488a49eae84a4a243f6a8863813
+SHA1: 9e236080a046787c5861664ba473ef4fa1c4433d
+SHA256: 28fef131e38d7cb4a3ccb069c20139e15cbdf727dd9f197ca808427dea89e96f
 
 Package: niri
 Version: 26.04-1+noble
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 35608
-Depends: libc6, libcairo2, libegl1, libgbm1, libgcc-s1,
- libglib2.0-0t64 | libglib2.0-0, libinput10, libpango-1.0-0, libpangocairo-1.0-0,
- libpipewire-0.3-0, libpixman-1-0, libseat1, libudev1, libwayland-server0,
- libxkbcommon0, libdisplay-info1 | libdisplay-info2
+Installed-Size: 35652
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libdisplay-info1 (>= 0.1.1), libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.12.0), libinput10 (>= 1.21.0), libpango-1.0-0 (>= 1.44.3), libpangocairo-1.0-0 (>= 1.14.0), libpipewire-0.3-0t64 (>= 0.3.75), libpixman-1-0 (>= 0.30.0), libseat1 (>= 0.5.0), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0), libegl1, libwayland-server0
 Recommends: xwayland-satellite, xdg-desktop-portal-gnome | xdg-desktop-portal-gtk,
  gnome-keyring, libegl-mesa0, libgl1-mesa-dri
 Suggests: fuzzel, mako-notifier, alacritty
@@ -1105,8 +1140,8 @@ Description: Scrollable-tiling Wayland compositor.
  Supports multi-monitor setups, fractional scaling, floating windows, NVIDIA
  GPUs, touchpads, tablets, and X11 applications via xwayland-satellite.
 Filename: pool/niri-26.04/niri_26.04-1+noble_amd64.deb
-Size: 7648434
-MD5sum: 3650575089b188f548ee3a1cc9ed4bce
-SHA1: d51f210c536bd89982c77a3aa5e6a0702bfc3da3
-SHA256: 6db27715c1de7a0702b7967a3ce204b5266cd8d6aa75db3c7470142ca50b27cb
+Size: 7659986
+MD5sum: f39c69c9ed4d69b9f7f8df144c01679c
+SHA1: 2d352d58bbdc92dfa4563a2fe58fcc4921bf9473
+SHA256: 3e01323f560d7ed07cbb7c7100da2119c1ce6d3acc132495b6d3445f54a859ac
 

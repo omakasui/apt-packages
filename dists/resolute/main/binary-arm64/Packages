@@ -15,25 +15,6 @@ MD5sum: f30618dc1c430535996d92de0da0b40c
 SHA1: ec9f87dd0a910a9b3b33aa443e22c4cabea13d5e
 SHA256: 530de7fbb4937551b071ac719511cdc6fee8d3f363cf790b96e4f8937e0f0ee1
 
-Package: alacritty
-Version: 0.17.0-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 53544
-Depends: libfontconfig1, libfreetype6, libxcb1, libxkbcommon0
-Conflicts: alacritty
-Replaces: alacritty
-Provides: alacritty
-Section: x11
-Priority: optional
-Homepage: https://github.com/alacritty/alacritty
-Description: A fast, cross-platform, OpenGL terminal emulator.
-Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+resolute_arm64.deb
-Size: 10138792
-MD5sum: 921b5a8fdb9fcd5f596c78de05cb1a53
-SHA1: 2ab54fbdc9b71e02ecc9e6ce0576c15d2eafa55b
-SHA256: d071fac6779adbc127a5e7eb71d20cb5269391caba5c4f2a51cb6d1a7c674c98
-
 Package: asdcontrol
 Version: 0.6.0-1+resolute
 Architecture: arm64
@@ -71,23 +52,6 @@ MD5sum: 92756a7d76087e34c8ebbf5e67dda9ff
 SHA1: ab4dec2fde14101f8359e1c203e3f03203687d32
 SHA256: f40343ff8feca01427a8a43c6439657c74978e85afb80e3f626da89abf0b7043
 
-Package: fonts-cascadia-mono-nf
-Version: 3.4.0-1+resolute
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 98212
-Conflicts: font-cascadia-mono-nf
-Replaces: font-cascadia-mono-nf
-Section: fonts
-Priority: optional
-Homepage: https://github.com/ryanoasis/nerd-fonts
-Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
-Filename: pool/cascadia-mono-nf-3.4.0/fonts-cascadia-mono-nf_3.4.0-1+resolute_all.deb
-Size: 6916930
-MD5sum: d859a963f8f2b5603ea9b573935d8bf0
-SHA1: 5a49f63cd595a130ba0dc8556d360c9835c8a7e5
-SHA256: 6fcb1f879221f3cc03d699f1233602748bf291c67e402da08f9c1ad2e79282ab
-
 Package: elephant-all
 Version: 2.21.0-1+resolute
 Architecture: all
@@ -104,59 +68,6 @@ Size: 1240
 MD5sum: ed5b1c85f3c313047a0552aed5b14b60
 SHA1: 3a4385527f58d561a5182300e4983da7466a62eb
 SHA256: 22d169c1760092cda3dd4a3190083c7d213ce13e22adb78eec2531644de4edcf
-
-Package: ghostty
-Version: 1.3.1-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38088
-Depends: libgtk-4-1, libadwaita-1-0, libgtk4-layer-shell0 (>= 1.1.0)
-Section: x11
-Priority: optional
-Homepage: https://github.com/ghostty-org/ghostty
-Description: Fast, feature-rich, cross-platform terminal emulator.
- Uses platform-native UI and GPU acceleration.
-Filename: pool/ghostty-1.3.1/ghostty_1.3.1-1+resolute_arm64.deb
-Size: 18830160
-MD5sum: 5733db13fadc19b519ad2eece94378ba
-SHA1: 04b9899f94dce2b75e9f3a659a65444c4470fbf8
-SHA256: e5f8060c0704137521163bc16966876dfddbfd4f77a829bfa34144d38e6d7212
-
-Package: libgtk4-layer-shell0
-Version: 1.1.0-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 280
-Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
-Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
-Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
-Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
-Section: libs
-Priority: optional
-Homepage: https://github.com/wmww/gtk4-layer-shell
-Description: Library for the Wayland Layer Shell protocol with GTK4.
- Provides libgtk4-layer-shell.so and GObject Introspection typelib.
-Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+resolute_arm64.deb
-Size: 39706
-MD5sum: 9f48c80609ae198e40c5d3ba67951d39
-SHA1: 673a19cc24c878fefa8cd85ebf46e3c3154b73b0
-SHA256: ba1296815116ec6c96ae5dbfdae03072d22396530867cc6f5b6f50ac887eadc5
-
-Package: gum
-Version: 0.17.0-1+resolute
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 12948
-Homepage: https://charm.land/
-Description: no description given
-Filename: pool/gum-0.17.0/gum_0.17.0-1+resolute_arm64.deb
-Size: 3401792
-MD5sum: 67b86276fb77eb997ba04f4b46b1d8cb
-SHA1: 84d891cafad88c89d65500b1b2ad607541030c35
-SHA256: 01c2b30650cce516944452f13b5875085d67a53c143b2d70c25217c9c407facf
 
 Package: fonts-ia-writer-mono
 Version: 20260310-1+resolute
@@ -188,26 +99,6 @@ MD5sum: a47062c8d1250259335519692f3ceb31
 SHA1: e329f2291308bf40a7bf6a9fb48659e42d639b36
 SHA256: a8d83e6555cef66a1b3fad2a113ee480c2500393cc7d9a097d328c3beaf43d89
 
-Package: kitty
-Version: 0.47.4-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 107272
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.47.4/kitty_0.47.4-1+resolute_arm64.deb
-Size: 33287016
-MD5sum: 831a2bf9317b2a2d83e00a11e6d08116
-SHA1: 04e36f9a88dd97eacbeb69132330be26968796aa
-SHA256: 30f9f5ed9b65a6d371c7fc5cd7c58eb9d525c6d1f0bf28454b49f434f819b125
-
 Package: lazydocker
 Version: 0.25.2-1+resolute
 Architecture: arm64
@@ -222,67 +113,6 @@ Size: 3618984
 MD5sum: a4adc502f93befae2226cf48f9257f24
 SHA1: 840090adb800ccef67fcc4601e06e431d68a2975
 SHA256: e9638d8f0093fa8ce47135865a630eee7e83d91a4e8e28c0cef34376ad71119f
-
-Package: localsend
-Version: 1.17.0-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Section: x11
-Priority: optional
-Essential: no
-Installed-Size: 39224
-Description: An open source cross-platform alternative to AirDrop
-Homepage: https://localsend.org/
-Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Pre-Depends: libc6 (>= 2.31)
-Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
-Filename: pool/localsend-1.17.0/localsend_1.17.0-1+resolute_arm64.deb
-Size: 12608258
-MD5sum: f45e41f172e217c950739d6dd81b9ff5
-SHA1: a55f6649a18e342af1bf88c2fac454a6e997e97e
-SHA256: e6367734f52ce86f68cd7181a12baa5a222dfcccdb7af8f320f2b057b4b1e452
-
-Package: nautilus-open-any-terminal
-Version: 0.8.1-1+resolute
-Architecture: all
-Source: nautilus-open-any-terminal
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 484
-Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
-Section: gnome
-Priority: optional
-Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
-Description: Nautilus extension to open any terminal emulator
- This is an extension for Nautilus which adds a context menu entry
- for opening various terminal emulators instead of being limited
- to gnome-terminal.
-Conflicts: nautilus-extension-any-terminal
-Replaces: nautilus-extension-any-terminal
-Provides: nautilus-extension-any-terminal
-Filename: pool/nautilus-open-any-terminal-0.8.1/nautilus-open-any-terminal_0.8.1-1+resolute_all.deb
-Size: 18234
-MD5sum: 299df2a1071e6416b2368995de6b1015
-SHA1: 38fd84012bc946781417ad7f71a162d095e84271
-SHA256: eefc564b4f6427a12f038772f79dc05add9e4f4ddc933a3aa1b178b53c867c8f
-
-Package: nvim
-Version: 0.12.4-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41036
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor.
- Conflicts with and replaces the distro neovim package.
-Filename: pool/nvim-0.12.4/nvim_0.12.4-1+resolute_arm64.deb
-Size: 8967700
-MD5sum: 5e87fb62d220dbf414d3c475dd61cfa8
-SHA1: 7b06d8e3d5b5eb8007caa98b81bfdebe4fe395f2
-SHA256: a99212d13a9b50002dfbc040fdf5d065978e151fc5577bc82159eb0093295c00
 
 Package: pinta
 Version: 3.0.5-1+resolute
@@ -318,27 +148,6 @@ MD5sum: fdf73722121372af9d3d35bbfc200ffe
 SHA1: 6b33cc7d6bfa6072edef03bdc445f73900298a03
 SHA256: dbf5b2b51418ab1d43ec531f200eaf8818327454a85a372be38d1f08708c25ec
 
-Package: tmux
-Version: 3.7b-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1620
-Depends: libc6, libtinfo6 | libncurses6
-Conflicts: tmux
-Replaces: tmux
-Provides: tmux
-Section: admin
-Priority: optional
-Homepage: https://github.com/tmux/tmux
-Description: Terminal multiplexer.
- Allows creating multiple terminal sessions within a single window,
- with persistent sessions that survive disconnections.
-Filename: pool/tmux-3.7b/tmux_3.7b-1+resolute_arm64.deb
-Size: 541598
-MD5sum: c0827ac463d73a200129c323c24a9ba6
-SHA1: db161e1d7809115ef770280853893047f1576888
-SHA256: 7448a9f2c9d9cd7faf7b3318971331d45a3916d899cef0d0fa800eaade9b1c12
-
 Package: ufw-docker
 Version: 251123-1+resolute
 Architecture: all
@@ -356,42 +165,6 @@ MD5sum: e899fbb5ac7ec84aa0e41bb4596cdc41
 SHA1: 3c0223f3ed028d572e24cb5696974cfaab62c437
 SHA256: f2aae4d92b529c595b33a240daf32d887b858e2f0951e321e5767d7e9977d011
 
-Package: xdg-terminal-exec
-Version: 0.14.2-1+resolute
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 88
-Depends: bash
-Conflicts: xdg-terminal-exec
-Replaces: xdg-terminal-exec
-Section: utils
-Priority: optional
-Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
-Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
- Launches the user's preferred terminal emulator, selected via desktop entries
- and configuration files in the XDG hierarchy.
-Filename: pool/xdg-terminal-exec-0.14.2/xdg-terminal-exec_0.14.2-1+resolute_all.deb
-Size: 15002
-MD5sum: 0b1e009a75ce925c1c268f47025a671e
-SHA1: bb4ac33cfca2dfc4445dc7774a469065531e3760
-SHA256: 78d881d49c02724d0b19501e135b679282f521d4a857064ca47d1e1dae4a8708
-
-Package: zellij
-Version: 0.44.3-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 44288
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: A terminal workspace with batteries included.
- Provides layouts, sessions, plugins and a scripting API.
-Filename: pool/zellij-0.44.3/zellij_0.44.3-1+resolute_arm64.deb
-Size: 11018216
-MD5sum: a70d2ac00dfbab7617351a74dbfa3dbb
-SHA1: 6975f7613e2115bff1605dfb73e4d56ec9757f78
-SHA256: 6e065492ed2b4f4d0a87c4299c1fedebea829990bce7999cdaa1bfd82dfcc93a
-
 Package: zoxide
 Version: 0.10.0-1+resolute
 Architecture: arm64
@@ -407,111 +180,6 @@ Size: 462146
 MD5sum: 618bb4eeb4b90cab0ac136ca652e678a
 SHA1: 89bb7aa5c82613e22d42c1ec8e94e99223f77f78
 SHA256: bd98da790fa102d649dcb997f44bc8bd7a7c2f0c879030a54c24baa7d312055e
-
-Package: fzf
-Version: 0.74.0-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4560
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder.
- Interactive filter for files, command history, processes, git commits
- and more.
-Filename: pool/fzf-0.74.0/fzf_0.74.0-1+resolute_arm64.deb
-Size: 1508630
-MD5sum: 4615a7c17219c386de8790916dbc1a4f
-SHA1: 047d6c9f8a5dd6352aeb73b92a8a43326e13f598
-SHA256: 02da944db31d8eceb028af7cc05a1a63672be3403e1a3a33315759d65f102631
-
-Package: eza
-Version: 0.23.5-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2300
-Conflicts: eza
-Replaces: eza
-Provides: eza
-Section: utils
-Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.5/eza_0.23.5-1+resolute_arm64.deb
-Size: 978440
-MD5sum: 19f75c22f435bf18b3872786f79fca65
-SHA1: e3efc91c9475fea4e8c424fe36b33b83dafd38e5
-SHA256: 6df5c3cd0c40d1213b0e8f386a512294cef6c093017c75a0f3f9f5159bceb110
-
-Package: fastfetch
-Version: 2.66.0-1+resolute
-Architecture: arm64
-Depends: libc6 (>= 2.35)
-Description: Fast neofetch-like system information tool
- fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Maintainer: omakasui <packages@omakasui.org>
-Priority: optional
-Section: devel
-Installed-Size: 16656
-Filename: pool/fastfetch-2.66.0/fastfetch_2.66.0-1+resolute_arm64.deb
-Size: 4605114
-MD5sum: 90d07c23f45809a39297d3a7eba4b018
-SHA1: 090b0821a705c39bf082d38bdfe3363f47e71e02
-SHA256: bd0ee1c7ffe7fcaffaa48c884f192cee5741a87afe82ddd09b4c34b6ccc22dcd
-
-Package: lazygit
-Version: 0.63.1-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 17680
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Simple terminal UI for git commands.
- Provides a keyboard-driven git interface inside any terminal.
-Filename: pool/lazygit-0.63.1/lazygit_0.63.1-1+resolute_arm64.deb
-Size: 4898108
-MD5sum: c352caa5ecac0631c080b2036940fecc
-SHA1: a715ae6e75e9ef93018b4e5d1b7292890bffdf83
-SHA256: ff71184624fc803c472f4188bc8a72380816e3d692ef61cbb59336d61e283236
-
-Package: cliamp
-Version: 1.59.0-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 30772
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.59.0/cliamp_1.59.0-1+resolute_arm64.deb
-Size: 8543926
-MD5sum: dc9896278b0b3a8aab957648f077dd97
-SHA1: 674aa3fdd630f17509e43f579ab4d1573bd182a6
-SHA256: e6c317af8262cd909fb8d7145ea721d347d74de1c72756e91444ef6fd06026f3
-
-Package: walker
-Version: 2.17.0-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8332
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, elephant, libgtk4-layer-shell0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.0/walker_2.17.0-1+resolute_arm64.deb
-Size: 2073894
-MD5sum: ef5541baffda586a45188b17c9d3a998
-SHA1: 8e50e20e5021c094ac2597f9b7b95e161a971ab1
-SHA256: a8e69fb23c238a0f80a7344b8dd0affa20f50d4b8c238aca11a3de636ddedfc0
 
 Package: elephant
 Version: 2.22.0-1+resolute
@@ -906,6 +574,103 @@ MD5sum: 496111b5a3a005a028e1d7eafd467262
 SHA1: ae7e4ca8be3b6a7693281bb20263e3c83bfa796a
 SHA256: e9188d4e858777097078f45c84ce7716934c77b36aa57d09591807aa60c3c7fe
 
+Package: nautilus-open-any-terminal
+Version: 0.8.3-1+resolute
+Architecture: all
+Source: nautilus-open-any-terminal
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 484
+Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
+Section: gnome
+Priority: optional
+Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
+Description: Nautilus extension to open any terminal emulator
+ This is an extension for Nautilus which adds a context menu entry
+ for opening various terminal emulators instead of being limited
+ to gnome-terminal.
+Conflicts: nautilus-extension-any-terminal
+Replaces: nautilus-extension-any-terminal
+Provides: nautilus-extension-any-terminal
+Filename: pool/nautilus-open-any-terminal-0.8.3/nautilus-open-any-terminal_0.8.3-1+resolute_all.deb
+Size: 18492
+MD5sum: db409eeafa4ec5da54e9a00e418ba702
+SHA1: 8ff72e561238642e867ebb0719df638480ee67d0
+SHA256: 2da053cedadaa6e479ef25e412e301e6ada5270fd0dd4d0f23b9294b6cdb2e30
+
+Package: xdg-terminal-exec
+Version: 0.14.3-1+resolute
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 88
+Depends: bash
+Conflicts: xdg-terminal-exec
+Replaces: xdg-terminal-exec
+Section: utils
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
+Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
+ Launches the user's preferred terminal emulator, selected via desktop entries
+ and configuration files in the XDG hierarchy.
+Filename: pool/xdg-terminal-exec-0.14.3/xdg-terminal-exec_0.14.3-1+resolute_all.deb
+Size: 15044
+MD5sum: aff97c8cb09c0aaf8e77d9da0fee9506
+SHA1: 588ac4dab1324bb3fec36e796970078293ac408b
+SHA256: 94761fe573b66ff26ccfd7a3f48c5d7987a0f38e6e930a30d04bfcbd433c88d9
+
+Package: kitty
+Version: 0.48.2-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 110416
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.48.2/kitty_0.48.2-1+resolute_arm64.deb
+Size: 34187616
+MD5sum: 7e480d99779fdd7b6d4cafff90525926
+SHA1: 3f35a3af31ddcf24739b7344be781cd4508fdbed
+SHA256: 4915bc1a2210e975022ac85a3669cd1d1bfe3e9da10870e9160d9dee4dab5db4
+
+Package: fonts-cascadia-mono-nf
+Version: 3.5.0-1+resolute
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 98960
+Conflicts: font-cascadia-mono-nf
+Replaces: font-cascadia-mono-nf
+Section: fonts
+Priority: optional
+Homepage: https://github.com/ryanoasis/nerd-fonts
+Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
+Filename: pool/cascadia-mono-nf-3.5.0/fonts-cascadia-mono-nf_3.5.0-1+resolute_all.deb
+Size: 7446510
+MD5sum: 5ae0c26ae878a6343477f69a2285bd1d
+SHA1: 0ba8416e3e1fe6b6be568104dba2edaa41237309
+SHA256: d4c3062240f42f91acd0fbbe16bae71968dc546ca30bea9813b7c35d5911d58b
+
+Package: lazygit
+Version: 0.64.1-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 17872
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Simple terminal UI for git commands.
+ Provides a keyboard-driven git interface inside any terminal.
+Filename: pool/lazygit-0.64.1/lazygit_0.64.1-1+resolute_arm64.deb
+Size: 4956480
+MD5sum: 7b36b0ec4791702ce4483dfcd98d03b4
+SHA1: 0cfbf05d9614d2bfaa2ee3a331a6e7ba71359b13
+SHA256: a9171694546446be823639bd2113806cee737301029785988dcccf1a8cf94cd4
+
 Package: obsidian
 Version: 1.13.7-1+resolute
 Architecture: arm64
@@ -922,6 +687,38 @@ Size: 101070524
 MD5sum: 8d65aea18e01be21875e1ad318b7d0b3
 SHA1: 7c9094f2debde4f21e26b63709a6acad5cfc52e7
 SHA256: 6c8778cbc8bc6fdfaffc90dcde3397d57f406a28b387592b18d3a319fc3bf230
+
+Package: cliamp
+Version: 1.63.2-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 31164
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+resolute_arm64.deb
+Size: 8633178
+MD5sum: 1ca9a5f7b6afa5ab37a5fea8241e0371
+SHA1: 990d79962df49174ad6bff7f301121c6461580f8
+SHA256: 853d737b98237a78eb5086171ff4d9f3023b8ae4d75b3bb1cfda6a34788ebc8e
+
+Package: fastfetch
+Version: 2.67.1-1+resolute
+Architecture: arm64
+Depends: libc6 (>= 2.35)
+Description: Fast neofetch-like system information tool
+ fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Maintainer: omakasui <packages@omakasui.org>
+Priority: optional
+Section: devel
+Installed-Size: 16884
+Filename: pool/fastfetch-2.67.1/fastfetch_2.67.1-1+resolute_arm64.deb
+Size: 4669448
+MD5sum: 8865e0f0c48fcb16f9520704e9cf5664
+SHA1: db2244944876950dbe3630c2eee1c7639cdb94d7
+SHA256: 92e2e1268735f4ebfd4355a62b26cc1812ccc8ac88012ccd32af2f7a1dcffac2
 
 Package: dbeaver-ce
 Version: 26.1.5-1+resolute
@@ -942,6 +739,26 @@ MD5sum: 079e4fba3ab685e4c1e5582b0ebfbc9c
 SHA1: 71ce16f6bd813a69c2829f8ee3ba8aceed917eeb
 SHA256: 77aedb92699f91df1ba6ef600dda7809dcf2feb6b209b018ae02a6d675c71052
 
+Package: fzf
+Version: 0.74.3-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4624
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder.
+ Interactive filter for files, command history, processes, git commits
+ and more.
+Filename: pool/fzf-0.74.3/fzf_0.74.3-1+resolute_arm64.deb
+Size: 1526558
+MD5sum: 8737cad3ef82fe5b3140680a15a30677
+SHA1: 93f0b34ffa20a42a0f3e561a46d653bedbf64136
+SHA256: 570d03f9c9ff0b56f829f1ea41a8e97b87fb4890a9ddcfa7aecf7384c50c4f0f
+
 Package: zen-browser
 Version: 1.21.15b-1+resolute
 Architecture: arm64
@@ -958,6 +775,21 @@ Size: 90285972
 MD5sum: 6bc599097df360f6088991fe147379e9
 SHA1: 65f31e697bfa7a641d33d0e3907b1d0f98634273
 SHA256: 19fef70192aea3ef17c1b987c20b79c772ec0d60803e06569e9d06823f86b5af
+
+Package: gum
+Version: 2.0.0-1+resolute
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 13332
+Homepage: https://charm.land/
+Description: no description given
+Filename: pool/gum-2.0.0/gum_2.0.0-1+resolute_arm64.deb
+Size: 3658894
+MD5sum: 05a01989a48db8fc5e1a81ebafff56b5
+SHA1: 813a302d5f06dfdb2de0c933cb430f40bc4242bc
+SHA256: e834f719b3a0fcbf4e10f77e6b2dc87062738dfeb2fda62d1c4a0c16456988cf
 
 Package: gh
 Version: 2.98.0-1+resolute
@@ -993,6 +825,25 @@ Size: 31062190
 MD5sum: cdf3abe4295cc500ff4c43f0e44def22
 SHA1: fbd53ed06e56d351d65993830f5c9a732175224a
 SHA256: 9d2590e75bf18657c4645349c3edd26d688f00b9d27fb1b389370ebe3f80d251
+
+Package: localsend
+Version: 1.18.2-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Section: x11
+Priority: optional
+Essential: no
+Installed-Size: 89588
+Description: An open source cross-platform alternative to AirDrop
+Homepage: https://localsend.org/
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Pre-Depends: libc6 (>= 2.31)
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+Filename: pool/localsend-1.18.2/localsend_1.18.2-1+resolute_arm64.deb
+Size: 24445188
+MD5sum: 41a13c5c20d0728387a98f246eb8a404
+SHA1: de5e43769fc291de50c2cbfa130859c31a048374
+SHA256: 5098ffdd77f67df5855890a62438e3beac1e61b607b28bcce4903e23a78a5921
 
 Package: glab
 Version: 1.115.0-1+resolute
@@ -1046,12 +897,109 @@ MD5sum: 8e57798ffc4fa948d9aba42f64cc50e7
 SHA1: 73a24f34f1f7031c5404e44b2ffc86b8711c6e2e
 SHA256: c3a19b85796baab6c35f5be550620f39d007ab4e54a8879b5942922a54618151
 
+Package: zellij
+Version: 0.45.1-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 44904
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: A terminal workspace with batteries included.
+ Provides layouts, sessions, plugins and a scripting API.
+Filename: pool/zellij-0.45.1/zellij_0.45.1-1+resolute_arm64.deb
+Size: 11309826
+MD5sum: 0b96ad520f1e2ac5c64834f99bd90175
+SHA1: 8dd2bb7b922140f5654f101b5a9c2b2562fcd3bb
+SHA256: 7a9d10653728a6ccabf57fafdc6ab6c911b7f93ccdc3fa24119e20bd39e042e8
+
+Package: libgtk4-layer-shell0
+Version: 1.1.0-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 280
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.80.0), libgtk-4-1 (>= 4.0.0), libwayland-client0 (>= 1.11.0)
+Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
+Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: Library for the Wayland Layer Shell protocol with GTK4.
+ Provides libgtk4-layer-shell.so and GObject Introspection typelib.
+Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+resolute_arm64.deb
+Size: 40266
+MD5sum: 0034a74bf79d6c2d6936b7b8eccc077f
+SHA1: d8358b6e74f02dbe05907768f00e8566631df5e8
+SHA256: 646d91ff9dccbfbcc24b957187fb577473e84f2c8b3e7bff21710930128ad578
+
+Package: eza
+Version: 0.23.5-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2300
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: eza
+Replaces: eza
+Provides: eza
+Section: utils
+Priority: optional
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+resolute_arm64.deb
+Size: 978768
+MD5sum: e713c273dff9bb114dbe57852fad5f2f
+SHA1: 50898d38defec8d0209abee9b1f15325b9c6e51d
+SHA256: d3fc652452054be7a9978f6f600be13aa1da49f98ff755f56ba98b0486300ed5
+
+Package: nvim
+Version: 0.12.5-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41056
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor.
+ Conflicts with and replaces the distro neovim package.
+Filename: pool/nvim-0.12.5/nvim_0.12.5-1+resolute_arm64.deb
+Size: 9035842
+MD5sum: 86c5063585153f98199dd62ac59a67c0
+SHA1: c849323095daf986cc9648944f688296a0de04d3
+SHA256: d0ae14a2ef5bad56deca5c16d397a8653dcd1f7d644245ff41c3d718e0a37940
+
+Package: tmux
+Version: 3.7c-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1556
+Depends: libc6 (>= 2.42), libtinfo6 (>= 6.5)
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer.
+ Allows creating multiple terminal sessions within a single window,
+ with persistent sessions that survive disconnections.
+Filename: pool/tmux-3.7c/tmux_3.7c-1+resolute_arm64.deb
+Size: 542132
+MD5sum: 55e8edaf4d31dd253f3f8347605f25a0
+SHA1: 4c01f2bc1d77c1accad8304d01e420cc98bc3fe3
+SHA256: 23998512a1794c8b4926cd49e23bd46d7dccfb9e9d576f17e1c1d264e66ee129
+
 Package: xwayland-satellite
 Version: 0.8.2-1+resolute
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
 Installed-Size: 4916
-Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
+Depends: libc6 (>= 2.43), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
 Section: x11
 Priority: optional
 Homepage: https://github.com/Supreeeme/xwayland-satellite
@@ -1060,20 +1008,106 @@ Description: Rootless Xwayland integration for Wayland compositors.
  xdg_wm_base and viewporter, without the compositor having to implement
  Xwayland handling itself.
 Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+resolute_arm64.deb
-Size: 1491284
-MD5sum: a71c3264bc655693f3d09e96da643d85
-SHA1: f5bae54fd494a153f025b34a4f0bf7b6a3db4902
-SHA256: ecc8eeedafda1f04d6352c0d0037cf0ccef1afe29990320ef5c3c0ecb4455ed0
+Size: 1491538
+MD5sum: 5765d13a50a293382a08529a79fe5081
+SHA1: 1e32350e7b873cc1ed79a7cdafd7ff6eee119dbc
+SHA256: ef2e1a0f1b70f7158588e0fb3195bab3794b9fce8e4f91c30b9b8b9e7db21ba0
+
+Package: alacritty
+Version: 0.17.0-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 58676
+Depends: libc6 (>= 2.43), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.8), libgcc-s1 (>= 4.2), libwayland-client0, libwayland-egl1, libxkbcommon-x11-0, ncurses-term
+Conflicts: alacritty
+Replaces: alacritty
+Provides: alacritty
+Section: x11
+Priority: optional
+Homepage: https://github.com/alacritty/alacritty
+Description: A fast, cross-platform, OpenGL terminal emulator.
+Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+resolute_arm64.deb
+Size: 9798912
+MD5sum: 60646fb0a05ffe602f7314c00d7cbda7
+SHA1: 77ca376c80a7a340d49cfcc404c2090cb0bd595a
+SHA256: 186dd864995a8e3acdc9055991b10e27c0a2ec75dbd493e36c4fb192fbe90363
+
+Package: walker
+Version: 2.17.0-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8416
+Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.0/walker_2.17.0-1+resolute_arm64.deb
+Size: 2085032
+MD5sum: a5e70c0976cd03686d2d1ba786d5a3c4
+SHA1: cdd46b547b3321a7a6bcd9711539874dc422ec77
+SHA256: 2341fcf600c53943f925567d70c2c272d99ac0d15567f2c94ed753000f7d7698
+
+Package: ghostty
+Version: 1.3.1-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 34228
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.43), libglib2.0-0t64 (>= 2.76.0), libgtk-4-1 (>= 4.19.3), libgtk4-layer-shell0 (>= 1.1.0), libwayland-client0 (>= 1.9.91), libx11-6, libegl1, libgl1
+Section: x11
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Fast, feature-rich, cross-platform terminal emulator.
+ Uses platform-native UI and GPU acceleration.
+Filename: pool/ghostty-1.3.1/ghostty_1.3.1-1+resolute_arm64.deb
+Size: 18036482
+MD5sum: 5170e5f4879ed93af7860f6f6fbdddea
+SHA1: 570277511394c5ec2a61a008a47111a323df8855
+SHA256: 777d79eff55093952219790c9f9d7d346d77a5e76dd511c622fce5c6e7a34464
+
+Package: libghostty-vt0
+Version: 1.3.1-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 3764
+Depends: libc6 (>= 2.34)
+Section: libs
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library.
+ Terminal emulation and escape sequence parsing extracted from Ghostty,
+ usable on its own.
+Filename: pool/ghostty-1.3.1/libghostty-vt0_1.3.1-1+resolute_arm64.deb
+Size: 846588
+MD5sum: e83e417cdfe2374528d989eda5672f08
+SHA1: dc24096594c594b17e14d3d45cf1f7a71b6f41e7
+SHA256: 07f7a41bb768e26c4e7d70c0102adac0f432b4f91f1ac66cb936066e29d09ba8
+
+Package: libghostty-vt-dev
+Version: 1.3.1-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 120
+Depends: libghostty-vt0 (= 1.3.1-1+resolute)
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library — development files.
+ Headers, pkg-config metadata and the development symlink for
+ libghostty-vt.
+Filename: pool/ghostty-1.3.1/libghostty-vt-dev_1.3.1-1+resolute_arm64.deb
+Size: 16598
+MD5sum: c918149a5233dd3bc90cc6950a6332e9
+SHA1: e96f15362d98bc4fb5c9343924c8466fdeca542e
+SHA256: b26968b75731b8875febebc351b4f8385bf6d4df066a0ba4e251fce27adee403
 
 Package: niri
 Version: 26.04-1+resolute
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 35320
-Depends: libc6, libcairo2, libegl1, libgbm1, libgcc-s1,
- libglib2.0-0t64 | libglib2.0-0, libinput10, libpango-1.0-0, libpangocairo-1.0-0,
- libpipewire-0.3-0, libpixman-1-0, libseat1, libudev1, libwayland-server0,
- libxkbcommon0, libdisplay-info1 | libdisplay-info2
+Installed-Size: 35364
+Depends: libc6 (>= 2.43), libcairo2 (>= 1.4.10), libdisplay-info3 (>= 0.3.0), libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.12.0), libinput10 (>= 1.30.0), libpango-1.0-0 (>= 1.44.3), libpangocairo-1.0-0 (>= 1.14.0), libpipewire-0.3-0t64 (>= 0.3.75), libpixman-1-0 (>= 0.30.0), libseat1 (>= 0.5.0), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0), libegl1, libwayland-server0
 Recommends: xwayland-satellite, xdg-desktop-portal-gnome | xdg-desktop-portal-gtk,
  gnome-keyring, libegl-mesa0, libgl1-mesa-dri
 Suggests: fuzzel, mako-notifier, alacritty
@@ -1087,8 +1121,8 @@ Description: Scrollable-tiling Wayland compositor.
  Supports multi-monitor setups, fractional scaling, floating windows, NVIDIA
  GPUs, touchpads, tablets, and X11 applications via xwayland-satellite.
 Filename: pool/niri-26.04/niri_26.04-1+resolute_arm64.deb
-Size: 7715444
-MD5sum: fe6d4bc3ab28492c7c5bbd313ef050eb
-SHA1: 9c361a501547445c531569b38cb4702e3d2c43a3
-SHA256: e5c1e6abb13d46fca74ae3b1eec56ad853c34ec9704f503a76f07cd8f5f2e67f
+Size: 7726924
+MD5sum: b70266dc6e19b5a48b4928c6f52c2cda
+SHA1: ee3f93c773945ce42e5d984639048674b4e5e934
+SHA256: 47861b4cce5b95e224fe59bafe574d6284d925d53bccc3d9c93b1896b5e2a77b
 

@@ -15,25 +15,6 @@ MD5sum: d02ef781b479175c8410186ec55c2029
 SHA1: 15d858d7775969251f395aea8c8f5332c4cd8ac6
 SHA256: 601f8520510fd3d9231a13c3926d8864193bc83b61b3d9d3c8682510362bb5fb
 
-Package: alacritty
-Version: 0.17.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 51492
-Depends: libfontconfig1, libfreetype6, libxcb1, libxkbcommon0
-Conflicts: alacritty
-Replaces: alacritty
-Provides: alacritty
-Section: x11
-Priority: optional
-Homepage: https://github.com/alacritty/alacritty
-Description: A fast, cross-platform, OpenGL terminal emulator.
-Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+trixie_amd64.deb
-Size: 10212182
-MD5sum: 99d17280ee99d5687ce8fd4b8da8b924
-SHA1: 59594a59aa66dbf26efc5a73c12e99ebbc2caa43
-SHA256: 17b0cab7bfb15aeb600a53ebdaec84f1ebb42cce11b6e6680e7cbedd0385f6f9
-
 Package: asdcontrol
 Version: 0.6.0-1+trixie
 Architecture: amd64
@@ -71,23 +52,6 @@ MD5sum: 3f3be44007915c4f1f5dd53f5d2e7d95
 SHA1: 10325ffeceb427582a4807f4e9c2fa2aa8ac9557
 SHA256: 08bb6345540ec4e261d5505e154c8739e403e2e9e0442109898f503191505937
 
-Package: fonts-cascadia-mono-nf
-Version: 3.4.0-1+trixie
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 98212
-Conflicts: font-cascadia-mono-nf
-Replaces: font-cascadia-mono-nf
-Section: fonts
-Priority: optional
-Homepage: https://github.com/ryanoasis/nerd-fonts
-Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
-Filename: pool/cascadia-mono-nf-3.4.0/fonts-cascadia-mono-nf_3.4.0-1+trixie_all.deb
-Size: 6916874
-MD5sum: 7f3e858c53458a52121fce549451f700
-SHA1: 0446c44dd1d309ddfc1eadcc02c7de5a8756360e
-SHA256: 72538c243ad824fe001b14c1614408da13451eaf2c7cd80c62e5043a04a1bf0d
-
 Package: elephant-all
 Version: 2.21.0-1+trixie
 Architecture: all
@@ -104,59 +68,6 @@ Size: 1236
 MD5sum: ebabb541e989a592da22579145bf9e10
 SHA1: deb41344ff8ca14c22706af414cbf20e27ac9d47
 SHA256: 9ac703108a8f6feb65c324bdec8c7d1bfcd73920c7073f1813d81d570598c101
-
-Package: ghostty
-Version: 1.3.1-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40040
-Depends: libgtk-4-1, libadwaita-1-0, libgtk4-layer-shell0 (>= 1.1.0)
-Section: x11
-Priority: optional
-Homepage: https://github.com/ghostty-org/ghostty
-Description: Fast, feature-rich, cross-platform terminal emulator.
- Uses platform-native UI and GPU acceleration.
-Filename: pool/ghostty-1.3.1/ghostty_1.3.1-1+trixie_amd64.deb
-Size: 19343352
-MD5sum: 588ccac1d205b0208d4f2bc2ac3930a3
-SHA1: 49d4175bff8ebd5c8bfb1bf46f3cef3d0a645f40
-SHA256: 60371818a0ce77d9184ea0f6c330692166dbc40492c2aa6f99c2c2ee99efd6a5
-
-Package: libgtk4-layer-shell0
-Version: 1.1.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 252
-Depends: libgtk-4-1, libwayland-client0, libglib2.0-0
-Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
-Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
-Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
-Section: libs
-Priority: optional
-Homepage: https://github.com/wmww/gtk4-layer-shell
-Description: Library for the Wayland Layer Shell protocol with GTK4.
- Provides libgtk4-layer-shell.so and GObject Introspection typelib.
-Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+trixie_amd64.deb
-Size: 39800
-MD5sum: 47a39736018c36546db80931d2e7966b
-SHA1: c769423228f0a0d3cf3a9b8353b362923c6fd2c6
-SHA256: d597c98e1c4c0e26c8fd4f2b8083c7b3b31fe9b7d3d42416370000cca85c83fe
-
-Package: gum
-Version: 0.17.0-1+trixie
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 13564
-Homepage: https://charm.land/
-Description: no description given
-Filename: pool/gum-0.17.0/gum_0.17.0-1+trixie_amd64.deb
-Size: 3808926
-MD5sum: c26fd6aec63b3b5907bb67bbb8955904
-SHA1: e49987317635bad4ccf02a186612b52ae8f01863
-SHA256: 45b3d8caddb774196828cca192a27a6a21023c11043713dbd14c35933ac321b2
 
 Package: fonts-ia-writer-mono
 Version: 20260310-1+trixie
@@ -188,26 +99,6 @@ MD5sum: 0eb5cbe2f0fcfc27577edfc10e39bf5a
 SHA1: 618d0836408029b956ee3c6ff3393d5e6200c605
 SHA256: e1f43c1faf79957069bb865f941a6da01df12e44e3523155db4959149cdcc07d
 
-Package: kitty
-Version: 0.47.4-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 112412
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.47.4/kitty_0.47.4-1+trixie_amd64.deb
-Size: 34905560
-MD5sum: dc7a12efcaae0ceefbc9bc0bea03ee98
-SHA1: 66cff761c4d0c0f65172b9f049add791cd692fa0
-SHA256: c8ad19c1329c167a958cd4a0c4deefbc9929ba1a6e25943cd9d60e80029c7fc9
-
 Package: lazydocker
 Version: 0.25.2-1+trixie
 Architecture: amd64
@@ -222,67 +113,6 @@ Size: 4028708
 MD5sum: f16b3e623786dc815de7c93703b5eb44
 SHA1: 7284fb83aa7fe671ec223ef6f539d845c4851793
 SHA256: ec26b215e469d6c9cca743018a8aa4d3e72414d379e222389d4c64d20a0d9beb
-
-Package: localsend
-Version: 1.17.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Section: x11
-Priority: optional
-Essential: no
-Installed-Size: 40080
-Description: An open source cross-platform alternative to AirDrop
-Homepage: https://localsend.org/
-Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Pre-Depends: libc6 (>= 2.31)
-Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
-Filename: pool/localsend-1.17.0/localsend_1.17.0-1+trixie_amd64.deb
-Size: 12982088
-MD5sum: eb5368be5f91d802838f1246d96d1690
-SHA1: ef71ee0db336adb70901377cd10c47b71310ffe0
-SHA256: 64b1c799644df4119edafd53d7b54d1f787bd9e038ec7cf65eeed6238794f478
-
-Package: nautilus-open-any-terminal
-Version: 0.8.1-1+trixie
-Architecture: all
-Source: nautilus-open-any-terminal
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 484
-Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
-Section: gnome
-Priority: optional
-Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
-Description: Nautilus extension to open any terminal emulator
- This is an extension for Nautilus which adds a context menu entry
- for opening various terminal emulators instead of being limited
- to gnome-terminal.
-Conflicts: nautilus-extension-any-terminal
-Replaces: nautilus-extension-any-terminal
-Provides: nautilus-extension-any-terminal
-Filename: pool/nautilus-open-any-terminal-0.8.1/nautilus-open-any-terminal_0.8.1-1+trixie_all.deb
-Size: 18226
-MD5sum: 6f7faec27555e14f66709c77d363ba92
-SHA1: c7467cfe0307cfbf6b5b85b58ada140994be3970
-SHA256: b5da3a4714bd485f384e75d3c4024d7552bb37b2e2daf697365cea67b88f524d
-
-Package: nvim
-Version: 0.12.4-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40956
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor.
- Conflicts with and replaces the distro neovim package.
-Filename: pool/nvim-0.12.4/nvim_0.12.4-1+trixie_amd64.deb
-Size: 9067224
-MD5sum: 42d4262ed589d7999e85300e0ccf8102
-SHA1: 83e3841a18260e84a62021b66c13fe75b03f98c0
-SHA256: 6e2c11ae0c48d9bc56e09c91aed087c586ce32a6c535846693bbd594a555d8cc
 
 Package: pinta
 Version: 3.0.5-1+trixie
@@ -318,27 +148,6 @@ MD5sum: 87a7f16148d1507a36897d40b45568bd
 SHA1: 2ba004587510ea58dd2270d89784031b7a7c2afc
 SHA256: 1164e050ffa25630851c5ded36c11c5e6a1467b5e5fc2ba2c184c7d306cdd7ed
 
-Package: tmux
-Version: 3.7b-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1532
-Depends: libc6, libtinfo6 | libncurses6
-Conflicts: tmux
-Replaces: tmux
-Provides: tmux
-Section: admin
-Priority: optional
-Homepage: https://github.com/tmux/tmux
-Description: Terminal multiplexer.
- Allows creating multiple terminal sessions within a single window,
- with persistent sessions that survive disconnections.
-Filename: pool/tmux-3.7b/tmux_3.7b-1+trixie_amd64.deb
-Size: 550964
-MD5sum: fd8eb6751282fb7dc7e6124c03f65bdb
-SHA1: 4261cfbde9fd841e36369fcb4b8c2fbff7fac0f9
-SHA256: 8d703b3a71eb2d027f034a4f6dbf99b0bb352a0fcb61f836e00c4445b7a47710
-
 Package: ufw-docker
 Version: 251123-1+trixie
 Architecture: all
@@ -355,26 +164,6 @@ Size: 8842
 MD5sum: 8bc59f62105484f12ba29834b9b7b503
 SHA1: 6f7b06d2366e9287089538e24d06da85983ff6f7
 SHA256: a1e31c2e1f6951427999de45c7652e2388bbe08b84cb8d98ba5aa883e8216886
-
-Package: xdg-terminal-exec
-Version: 0.14.2-1+trixie
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 88
-Depends: bash
-Conflicts: xdg-terminal-exec
-Replaces: xdg-terminal-exec
-Section: utils
-Priority: optional
-Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
-Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
- Launches the user's preferred terminal emulator, selected via desktop entries
- and configuration files in the XDG hierarchy.
-Filename: pool/xdg-terminal-exec-0.14.2/xdg-terminal-exec_0.14.2-1+trixie_all.deb
-Size: 15008
-MD5sum: 2ee97eeed8a3211788c36012ac21d0d9
-SHA1: 62ff051fcbc16a37fdeb7f1c3d45aa8058d3936e
-SHA256: 43aab18119890b2bd963f202da0a8b9a1d960316ba44efaf4f7f0dbe6018231c
 
 Package: yaru-theme-gtk
 Version: 25.04.1-0ubuntu1-1+trixie
@@ -472,22 +261,6 @@ MD5sum: 11d8a84fff6d4e13316caa80e60d36a1
 SHA1: 8597ab66cbc1e8cd58209d3ff6e904cf1aff86d9
 SHA256: 7d9ac45cf24be58451c4e2d55b870f987f8611e543e2b78ccb9e0f2f773d47b7
 
-Package: zellij
-Version: 0.44.3-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 50636
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: A terminal workspace with batteries included.
- Provides layouts, sessions, plugins and a scripting API.
-Filename: pool/zellij-0.44.3/zellij_0.44.3-1+trixie_amd64.deb
-Size: 11124670
-MD5sum: 05a9ef16d7166a84d8ef7828e4aff964
-SHA1: 36060f2482b72cbf57087f62104d8cad6267082c
-SHA256: 5073acdf17cf0effff570e59224f92fe2b82dc36a89d5b7f65f33bab1ec29dae
-
 Package: zoxide
 Version: 0.10.0-1+trixie
 Architecture: amd64
@@ -503,111 +276,6 @@ Size: 498104
 MD5sum: f3417296cfbe690739d6729fd592c926
 SHA1: e8a7289f2fbddab610d9da4fe2121afc8db69561
 SHA256: a9b9e00d3081e012ccd7aec48cd451f0b7f8e15f84339ae028545f76ee63af37
-
-Package: fzf
-Version: 0.74.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4788
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder.
- Interactive filter for files, command history, processes, git commits
- and more.
-Filename: pool/fzf-0.74.0/fzf_0.74.0-1+trixie_amd64.deb
-Size: 1680858
-MD5sum: f28b2dc7f0ff2f5b41b65ab8a853a09f
-SHA1: 3c01f4cc254a988b2369e46a56c634d38a703ef8
-SHA256: 2b1637578e31c73bfadf7bb01f12a9cb192317fb7a8ab94005f1a74f0384d6be
-
-Package: eza
-Version: 0.23.5-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2724
-Conflicts: eza
-Replaces: eza
-Provides: eza
-Section: utils
-Priority: optional
-Homepage: https://github.com/eza-community/eza
-Description: A modern replacement for ls.
- Colours, Git integration, tree view, and more.
-Filename: pool/eza-0.23.5/eza_0.23.5-1+trixie_amd64.deb
-Size: 1068648
-MD5sum: 9163324509e7be65f434b28ad404a65c
-SHA1: 1d7abdc6795ddcb361d724c7d5283749f8305488
-SHA256: 52e06ff77890f3bf311a1c521957e4ca4883bad5562029c97306105fa936a6ce
-
-Package: fastfetch
-Version: 2.66.0-1+trixie
-Architecture: amd64
-Depends: libc6 (>= 2.35)
-Description: Fast neofetch-like system information tool
- fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Maintainer: omakasui <packages@omakasui.org>
-Priority: optional
-Section: devel
-Installed-Size: 16580
-Filename: pool/fastfetch-2.66.0/fastfetch_2.66.0-1+trixie_amd64.deb
-Size: 4755068
-MD5sum: a8992386a8c09e4b593e85fe7c1103fc
-SHA1: 6f88fecf60ab8ea83da9cf59b9b616fdbae8ba8c
-SHA256: 7f34c696d5df47b30ca299cec6d8022774be50853fe315e686fbfdd79b12916e
-
-Package: lazygit
-Version: 0.63.1-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 18820
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Simple terminal UI for git commands.
- Provides a keyboard-driven git interface inside any terminal.
-Filename: pool/lazygit-0.63.1/lazygit_0.63.1-1+trixie_amd64.deb
-Size: 5501302
-MD5sum: 2ec376e825e2f32cb10a4b2378cffad2
-SHA1: 9742fbfd6ca7d6e7eb7854ef47be7596409d3c07
-SHA256: faceddd5c51b5f9f5d421df6c098ca60b41a6dd9fad28daa105e53f0ebf87f43
-
-Package: cliamp
-Version: 1.59.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 32724
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.59.0/cliamp_1.59.0-1+trixie_amd64.deb
-Size: 9517904
-MD5sum: 1980d79d351c97f0ec04d3e70b1fce24
-SHA1: 8ff25375ce7556f2ee1ec39335ff8e2576150977
-SHA256: 70524680031ff3c7bf4f02e9b19720dfcddd66b648829e57fa5b69f552ea4bcf
-
-Package: walker
-Version: 2.17.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8860
-Depends: libgtk-4-1, libcairo2, libpoppler-glib8, elephant, libgtk4-layer-shell0 (>= 1.1.0)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.0/walker_2.17.0-1+trixie_amd64.deb
-Size: 2201098
-MD5sum: c1d6fb4708f25cf19b61aa6997fbf4db
-SHA1: dc2de9deec2762485ff4cdfcc3ae98c7742bf938
-SHA256: 0aa17e931e4bca2044bf12031419f6b2bd9838f8fbff75f1e609315de323b0dc
 
 Package: elephant
 Version: 2.22.0-1+trixie
@@ -1002,6 +670,103 @@ MD5sum: db748befdf218106fffcd3d74e4e1e6f
 SHA1: 7b144a4d8a9d10300b53e2f551e72cf915b68a47
 SHA256: d0f5fcfc00091c969a111284b0dd40ff1c4ca6151ce33a5da251bb18556b58b8
 
+Package: nautilus-open-any-terminal
+Version: 0.8.3-1+trixie
+Architecture: all
+Source: nautilus-open-any-terminal
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 484
+Depends: dconf-gsettings-backend | gsettings-backend, python3-nautilus, nautilus
+Section: gnome
+Priority: optional
+Homepage: https://github.com/Stunkymonkey/nautilus-open-any-terminal
+Description: Nautilus extension to open any terminal emulator
+ This is an extension for Nautilus which adds a context menu entry
+ for opening various terminal emulators instead of being limited
+ to gnome-terminal.
+Conflicts: nautilus-extension-any-terminal
+Replaces: nautilus-extension-any-terminal
+Provides: nautilus-extension-any-terminal
+Filename: pool/nautilus-open-any-terminal-0.8.3/nautilus-open-any-terminal_0.8.3-1+trixie_all.deb
+Size: 18504
+MD5sum: 70b261d42aab75cd8e017e0cdb3054e1
+SHA1: f36968e3313a512e5a93476eea10119f0487247a
+SHA256: 7b28e19182d8f231c4612ff5d3977e5a51284448279870a9018a12c50e7b3bfd
+
+Package: xdg-terminal-exec
+Version: 0.14.3-1+trixie
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 88
+Depends: bash
+Conflicts: xdg-terminal-exec
+Replaces: xdg-terminal-exec
+Section: utils
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
+Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
+ Launches the user's preferred terminal emulator, selected via desktop entries
+ and configuration files in the XDG hierarchy.
+Filename: pool/xdg-terminal-exec-0.14.3/xdg-terminal-exec_0.14.3-1+trixie_all.deb
+Size: 15056
+MD5sum: f59f3eed119164ff17e316bbcc049877
+SHA1: 1f524a416f21ae4b4d6026b9673c669e04f97299
+SHA256: e2ec237bb7864da7e1c4f34f8a3348218af8274e6f7b027a13fc5024d43d6e11
+
+Package: kitty
+Version: 0.48.2-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 113592
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.48.2/kitty_0.48.2-1+trixie_amd64.deb
+Size: 34956022
+MD5sum: 9b28a9cfa1f90203f88f6a2828ab129b
+SHA1: 66d65103ea3994e54ea3d0219d1f38334783ef95
+SHA256: d16c8ddcb02107a7c30c37ca4e8d75834cb61df412752fac65214fd39ca30c11
+
+Package: fonts-cascadia-mono-nf
+Version: 3.5.0-1+trixie
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 98960
+Conflicts: font-cascadia-mono-nf
+Replaces: font-cascadia-mono-nf
+Section: fonts
+Priority: optional
+Homepage: https://github.com/ryanoasis/nerd-fonts
+Description: Cascadia Mono Nerd Font — patched with Nerd Fonts icons.
+Filename: pool/cascadia-mono-nf-3.5.0/fonts-cascadia-mono-nf_3.5.0-1+trixie_all.deb
+Size: 7446316
+MD5sum: d3782856b194204105f3a97f572dd066
+SHA1: bdbf68bd920eb1c45398b1ac2626fa7b9c6389bf
+SHA256: f24d8627bc5ee297ffb1e0899f76b604e245c85d4a5ac6dca6fa732316dca18d
+
+Package: lazygit
+Version: 0.64.1-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 19036
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Simple terminal UI for git commands.
+ Provides a keyboard-driven git interface inside any terminal.
+Filename: pool/lazygit-0.64.1/lazygit_0.64.1-1+trixie_amd64.deb
+Size: 5562232
+MD5sum: f97f34de82864aa47b73160e1ac8dcbd
+SHA1: 018703bb7fa674af5a93db214d13abf41ffe2975
+SHA256: 82523ae6327d250a500ef2fa644dee0454446f556a5801c4486e031203556ad2
+
 Package: obsidian
 Version: 1.13.7-1+trixie
 Architecture: amd64
@@ -1018,6 +783,38 @@ Size: 102970968
 MD5sum: e5db340a8441c904c02caefd5a68af53
 SHA1: 9e6b3f5f9d2ae97b622fcd6334f93657c232a1a2
 SHA256: 3f5f12824fdeed3ea038a58df16fabb5235255d012c287d0bd1a8ff8113a0c78
+
+Package: cliamp
+Version: 1.63.2-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 33132
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+trixie_amd64.deb
+Size: 9616464
+MD5sum: fb3598c0e2ae1e2b7bfbe131e4b43dde
+SHA1: ded2ee48e9bf30fef3d6fc8b2ebedef77cc9a4da
+SHA256: 4bb4c0c2a0bc758ad5778b017bac956b47842171c72e0209b12fadf1caf652fb
+
+Package: fastfetch
+Version: 2.67.1-1+trixie
+Architecture: amd64
+Depends: libc6 (>= 2.35)
+Description: Fast neofetch-like system information tool
+ fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Maintainer: omakasui <packages@omakasui.org>
+Priority: optional
+Section: devel
+Installed-Size: 16880
+Filename: pool/fastfetch-2.67.1/fastfetch_2.67.1-1+trixie_amd64.deb
+Size: 4814226
+MD5sum: e7edc3d5c616e71115ff7945eb58246b
+SHA1: b1c71f09b3f33a3631c68b24d84a6f0e1bd06bbf
+SHA256: 504ffdd2b4833e62ec33e267031f92713a080ec78876c17e1a273c8d82a9e6c8
 
 Package: dbeaver-ce
 Version: 26.1.5-1+trixie
@@ -1038,6 +835,26 @@ MD5sum: 11fd99ea79d2b2b25c865e4c8eb37356
 SHA1: 3f2af5d18bb4aabd56f5029d0e2b4361b05b9dff
 SHA256: 9ed99e75d8cd35c58b6a85551e085e72216520e8595e8b60f6f323145b9547b7
 
+Package: fzf
+Version: 0.74.3-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4836
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder.
+ Interactive filter for files, command history, processes, git commits
+ and more.
+Filename: pool/fzf-0.74.3/fzf_0.74.3-1+trixie_amd64.deb
+Size: 1700972
+MD5sum: d0e2aab91a28b2326fa1c7db3e87a5cd
+SHA1: 0f522f1a2c9935f82a27f7e18e40407efa70be63
+SHA256: 13bb4af4680669916215caae1e0c52bc53f38ec0eceecad5b5b65f8b22a707ae
+
 Package: zen-browser
 Version: 1.21.15b-1+trixie
 Architecture: amd64
@@ -1054,6 +871,22 @@ Size: 103313200
 MD5sum: 31652b0dacec1344db40edb7e951a3e7
 SHA1: 57a6c2889560b339469a330288aba010e504be0e
 SHA256: 9be3b3642634e14259a6ccc3f82024d779f5999ed428a0af150ed62b0f75bcee
+
+Package: gum
+Version: 2.0.0-1+trixie
+Architecture: amd64
+Section: 
+Priority: optional
+Architecture-Variant: amd64v1
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 14100
+Homepage: https://charm.land/
+Description: no description given
+Filename: pool/gum-2.0.0/gum_2.0.0-1+trixie_amd64.deb
+Size: 4054170
+MD5sum: c574599aacd17446f233aa482d70e7c4
+SHA1: 02c80814c86bc9954f1a6ded5a465cb0a02f959e
+SHA256: d82f86f93e018d813528e1d6583c4d60283fcc22a22aa74ab959b78a032a35d2
 
 Package: gh
 Version: 2.98.0-1+trixie
@@ -1110,6 +943,25 @@ MD5sum: b9496e9345fb8381f70298e3d56609d5
 SHA1: 5e4b6145206205f5a142711af0eaf290d1b3372a
 SHA256: abe2c6625f1a7f694cc862c6351d8f55f22f09dac011c31497acc79c59b37274
 
+Package: localsend
+Version: 1.18.2-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Section: x11
+Priority: optional
+Essential: no
+Installed-Size: 89732
+Description: An open source cross-platform alternative to AirDrop
+Homepage: https://localsend.org/
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Pre-Depends: libc6 (>= 2.31)
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+Filename: pool/localsend-1.18.2/localsend_1.18.2-1+trixie_amd64.deb
+Size: 24446314
+MD5sum: 7247f5a434e90169efd5afdd5dd39552
+SHA1: 55b2b524b489a47e063d9e70437f36556a0dadee
+SHA256: e2bda5d3ba05edf7de8cff8ff8253e3fac182d19d7acb71589d87a36cf501409
+
 Package: glab
 Version: 1.115.0-1+trixie
 Architecture: amd64
@@ -1162,12 +1014,109 @@ MD5sum: d173d9990b04529acbae06d9adcf55d1
 SHA1: b8e2020b63d368c155be0057b34cda7eb3dd643b
 SHA256: 9568a35b42f7daaed3f2e9e2b49badf44c43a61ed7840fc43f66d749ed52eb7d
 
+Package: zellij
+Version: 0.45.1-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 51328
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: A terminal workspace with batteries included.
+ Provides layouts, sessions, plugins and a scripting API.
+Filename: pool/zellij-0.45.1/zellij_0.45.1-1+trixie_amd64.deb
+Size: 11465004
+MD5sum: dacf6bfbb1f0d48f97518482d045e5f3
+SHA1: 1a5e22325f4aea5800e5f744c4123fddf758f534
+SHA256: 750b718c52480efba44e719ec9307b1184f2827e2b76065f63a2f5fffd0f9c44
+
+Package: libgtk4-layer-shell0
+Version: 1.1.0-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 252
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.80.0), libgtk-4-1 (>= 4.0.0), libwayland-client0 (>= 1.11.0)
+Conflicts: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev
+Replaces: gtk4-layer-shell, libgtk4-layer-shell-0, libgtk4-layer-shell-dev, gir1.2-gtk4layershell-1.0
+Provides: gtk4-layer-shell, libgtk4-layer-shell-0, gir1.2-gtk4layershell-1.0
+Section: libs
+Priority: optional
+Homepage: https://github.com/wmww/gtk4-layer-shell
+Description: Library for the Wayland Layer Shell protocol with GTK4.
+ Provides libgtk4-layer-shell.so and GObject Introspection typelib.
+Filename: pool/gtk4-layer-shell-1.1.0/libgtk4-layer-shell0_1.1.0-1+trixie_amd64.deb
+Size: 40344
+MD5sum: b1aa1d05d06e43d10621b95ccbccf9e6
+SHA1: 40c88a271c7e49ead22bcc959410df19cc369667
+SHA256: 2cbb6ca55101d7913dc07cc5fd10173a6c81b7ae71cd414892cf09fca17aa910
+
+Package: eza
+Version: 0.23.5-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2724
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Conflicts: eza
+Replaces: eza
+Provides: eza
+Section: utils
+Priority: optional
+Homepage: https://github.com/eza-community/eza
+Description: A modern replacement for ls.
+ Colours, Git integration, tree view, and more.
+Filename: pool/eza-0.23.5/eza_0.23.5-1+trixie_amd64.deb
+Size: 1067896
+MD5sum: f32144f65402a15f54b76891b887e054
+SHA1: 86a277a03e0683814c2cc451e16ec1212d6704e9
+SHA256: 83e1a3ba42d5eb195ab60e0fb3c03edb5155b7e4c056d8a40fb3dfaaa710cf0b
+
+Package: nvim
+Version: 0.12.5-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40968
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.4)
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor.
+ Conflicts with and replaces the distro neovim package.
+Filename: pool/nvim-0.12.5/nvim_0.12.5-1+trixie_amd64.deb
+Size: 9122528
+MD5sum: 209abcc2e740ad1e897941788baeaedf
+SHA1: 1188dc3a1ed578ce39f1d906fff3d795498ab5fe
+SHA256: f103144cf571046308071e7f553b9ae7f34a140fca9ae5e2ae144cb923b878eb
+
+Package: tmux
+Version: 3.7c-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1532
+Depends: libc6 (>= 2.38), libtinfo6 (>= 6.5)
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer.
+ Allows creating multiple terminal sessions within a single window,
+ with persistent sessions that survive disconnections.
+Filename: pool/tmux-3.7c/tmux_3.7c-1+trixie_amd64.deb
+Size: 551542
+MD5sum: 5462517c02f4c515eec47921c46a3d2d
+SHA1: 20ccf796ce6c63a29ce7bca54385810f6bc11dc9
+SHA256: 3f023b9e8f979dbd96181ce4beb2026b276afdb537c060b39107d324a2a2c3e1
+
 Package: xwayland-satellite
 Version: 0.8.2-1+trixie
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
 Installed-Size: 5496
-Depends: libc6, libgcc-s1, libxcb1, libxcb-cursor0, xwayland
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
 Section: x11
 Priority: optional
 Homepage: https://github.com/Supreeeme/xwayland-satellite
@@ -1176,20 +1125,106 @@ Description: Rootless Xwayland integration for Wayland compositors.
  xdg_wm_base and viewporter, without the compositor having to implement
  Xwayland handling itself.
 Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_amd64.deb
-Size: 1608532
-MD5sum: 503e2b82a36b42bce775aa618c654251
-SHA1: 78f63f587216d380830ebe8ff428a108492abbd3
-SHA256: 2eb5958f32196ee5929c1b026f6a775e2e8eabe83fa1f10a59deecbd7f9aef20
+Size: 1608780
+MD5sum: 6dc3b4374573de31d554e53a33d01871
+SHA1: 18e7b343eea318d26d7e7e4f158fd8eb691846d2
+SHA256: aa52335ffc0124721ad5c43620822bcfda44e30cb3b114c29a303bb6d39eabdd
+
+Package: alacritty
+Version: 0.17.0-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 56432
+Depends: libc6 (>= 2.39), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.8), libgcc-s1 (>= 4.2), libwayland-client0, libwayland-egl1, libxkbcommon-x11-0, ncurses-term
+Conflicts: alacritty
+Replaces: alacritty
+Provides: alacritty
+Section: x11
+Priority: optional
+Homepage: https://github.com/alacritty/alacritty
+Description: A fast, cross-platform, OpenGL terminal emulator.
+Filename: pool/alacritty-0.17.0/alacritty_0.17.0-1+trixie_amd64.deb
+Size: 9930450
+MD5sum: 5a8327ce1c021383834e6e50822da0f9
+SHA1: df651b102b9853b8db5885f3da767f2469d4bbeb
+SHA256: 62770cf553917be357f71c994c0071c92e79c9ffbc7f03a5d5c3aae3ea68ca8a
+
+Package: walker
+Version: 2.17.0-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8916
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.0/walker_2.17.0-1+trixie_amd64.deb
+Size: 2213296
+MD5sum: da1f8ba8b811f2dd30d29ed490ac9235
+SHA1: cbbce1efe7863840bb8c16bf53c676cd09f7bfd7
+SHA256: 3239802a55e488387748d844b5bed6ed604887b3a1d3d9f6b8fa490c40a753ec
+
+Package: ghostty
+Version: 1.3.1-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 35676
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libglib2.0-0t64 (>= 2.76.0), libgtk-4-1 (>= 4.15.4), libgtk4-layer-shell0 (>= 1.1.0), libwayland-client0 (>= 1.9.91), libx11-6, libegl1, libgl1
+Section: x11
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Fast, feature-rich, cross-platform terminal emulator.
+ Uses platform-native UI and GPU acceleration.
+Filename: pool/ghostty-1.3.1/ghostty_1.3.1-1+trixie_amd64.deb
+Size: 18406696
+MD5sum: 5bf2f21aea0c65139cb6c2ccf895460d
+SHA1: 1ff57d5ac27ce910ca8302bf49c46a830ae86292
+SHA256: 978987ee191d541ff97c86305f5ea2608ed73dcd3cfe4fba2ad0621fe7dac563
+
+Package: libghostty-vt0
+Version: 1.3.1-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 4268
+Depends: libc6 (>= 2.34)
+Section: libs
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library.
+ Terminal emulation and escape sequence parsing extracted from Ghostty,
+ usable on its own.
+Filename: pool/ghostty-1.3.1/libghostty-vt0_1.3.1-1+trixie_amd64.deb
+Size: 963660
+MD5sum: 5d4b9c52bdcce0fb2f15ae0ddfffd5d9
+SHA1: 0f6957b4d8b7cccb94c116b8f1fc9428ed709230
+SHA256: 3c9aa68e94d1cca0fa328d3b17d16a3ff37eead11285906248db67e5bfa31519
+
+Package: libghostty-vt-dev
+Version: 1.3.1-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 120
+Depends: libghostty-vt0 (= 1.3.1-1+trixie)
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library — development files.
+ Headers, pkg-config metadata and the development symlink for
+ libghostty-vt.
+Filename: pool/ghostty-1.3.1/libghostty-vt-dev_1.3.1-1+trixie_amd64.deb
+Size: 16586
+MD5sum: f2dee6ffcd7f843e2f572a24b709d85b
+SHA1: b7d92ff13d68a35dc21d524a92fca9893ff51945
+SHA256: 0b7d5eb642b46ceac818dec4ee83944adfa3d78de8d6de721c7706fdd0b45ddc
 
 Package: niri
 Version: 26.04-1+trixie
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 35608
-Depends: libc6, libcairo2, libegl1, libgbm1, libgcc-s1,
- libglib2.0-0t64 | libglib2.0-0, libinput10, libpango-1.0-0, libpangocairo-1.0-0,
- libpipewire-0.3-0, libpixman-1-0, libseat1, libudev1, libwayland-server0,
- libxkbcommon0, libdisplay-info1 | libdisplay-info2
+Installed-Size: 35652
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libdisplay-info2 (>= 0.2.0), libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.12.0), libinput10 (>= 1.21.0), libpango-1.0-0 (>= 1.44.3), libpangocairo-1.0-0 (>= 1.14.0), libpipewire-0.3-0t64 (>= 0.3.75), libpixman-1-0 (>= 0.30.0), libseat1 (>= 0.5.0), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0), libegl1, libwayland-server0
 Recommends: xwayland-satellite, xdg-desktop-portal-gnome | xdg-desktop-portal-gtk,
  gnome-keyring, libegl-mesa0, libgl1-mesa-dri
 Suggests: fuzzel, mako-notifier, alacritty
@@ -1203,8 +1238,8 @@ Description: Scrollable-tiling Wayland compositor.
  Supports multi-monitor setups, fractional scaling, floating windows, NVIDIA
  GPUs, touchpads, tablets, and X11 applications via xwayland-satellite.
 Filename: pool/niri-26.04/niri_26.04-1+trixie_amd64.deb
-Size: 7649008
-MD5sum: b338886286ebb613f736df038522315c
-SHA1: aa58749f4c05b360038677fc1ba0c25e28ff1aa8
-SHA256: b74e80b5c21b302caf19252add7a0bbb3933d0a683a7ed6eaf238dbf5ed996b8
+Size: 7660570
+MD5sum: a7f44358e992ac4fa9c4b2f06bea3fa2
+SHA1: 540b6884b4bf173339d5228ad3bf0bbd3a4b3516
+SHA256: ad64d2873a9e6f3bdbb6a226f4e9d592cdbb3f80621adfa1e8260ca25852a8e3
 
