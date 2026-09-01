@@ -851,26 +851,6 @@ MD5sum: 65b2440b0bbb5765b048e0bf1db0b416
 SHA1: a45f3c5151df49606083c937fcfe80a1e661c85d
 SHA256: c73da651bac324a163a7c0d25a6c67de0e45801a1e3a78ea009dd627e2f5135a
 
-Package: gh
-Version: 2.98.0-1+trixie
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38692
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.98.0/gh_2.98.0-1+trixie_arm64.deb
-Size: 10436484
-MD5sum: 6622c2cdba2186d92e452753ae5818c5
-SHA1: 16d5e70900e879c2b88d6c499b5aef36fdb02063
-SHA256: 8f44ce977d5f9f54e7218674d8f4321442d936c0a26f2d884112ec37726e0afd
-
 Package: bitwarden-cli
 Version: 2026.8.0-1+trixie
 Architecture: arm64
@@ -1221,4 +1201,24 @@ Size: 13068316
 MD5sum: dbb880833e068870415dbd94a9d12e47
 SHA1: af40b09972243fd037a0aede87f8f8a06ff67eed
 SHA256: 421ac12a526a35d974c069b1f894021e1ed33e6e730bb1e35cbfc66f93ab3854
+
+Package: gh
+Version: 2.99.0-1+trixie
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 38828
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.99.0/gh_2.99.0-1+trixie_arm64.deb
+Size: 10476968
+MD5sum: c4aa208d04603ad9bcda770b7e59b80b
+SHA1: ec9465cc650558c6660578783817589c062fe1ca
+SHA256: ffb1d7806971849c18859dee38e8858daf8a55d737f579f0c73a8b3348728408
 

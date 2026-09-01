@@ -754,26 +754,6 @@ MD5sum: a5af9cb03eed22b0917edb19e4e3df9a
 SHA1: f4a46da62dec606f202426743b87186e9a95ff69
 SHA256: 3b03b6d7d90853efac02549e13173458dfe7dc3d3c33f4ba8fa67fa9a7ca2184
 
-Package: gh
-Version: 2.98.0-1+noble
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41468
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.98.0/gh_2.98.0-1+noble_amd64.deb
-Size: 11751998
-MD5sum: 982e8d2f48a14fb1e4cebc23e3dbc5b6
-SHA1: 2b07c3e3aa1a8444265958e9cbeeea52dbcc154f
-SHA256: fecf7398e820718f33a9dbde461cbbc5e3f1f5770d6879b94118cb0c70bcb170
-
 Package: bitwarden
 Version: 2026.8.0-1+noble
 Architecture: amd64
@@ -1144,4 +1124,24 @@ Size: 14461842
 MD5sum: 59d3abee45845908be01a83c2a38a997
 SHA1: 1b0e0e9f03ee9f4f66840ae1d43d77a78efa8491
 SHA256: af2551e864eb3b8da3358b2fee64ceba31934b5dee57a38d581af2eb380da200
+
+Package: gh
+Version: 2.99.0-1+noble
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41612
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.99.0/gh_2.99.0-1+noble_amd64.deb
+Size: 11802582
+MD5sum: 377d0752472ffe8f44835e20da8a7201
+SHA1: 7500af4f0d3f69c83d1926c67b2c7436c30d6104
+SHA256: acab58fd0381dd06c1b90ced48a03aa7c136870c807d7897a25d2c3e1f7a6816
 
