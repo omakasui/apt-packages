@@ -827,22 +827,6 @@ MD5sum: 85a8aad56a73e7d7612e3e879d43ac0d
 SHA1: 5d7e45692009d94e180eaf02b52b4686aff99610
 SHA256: b0806943f38a6f909752f1bf153672ccd6a667be7367e4875c9a4fb810b096c3
 
-Package: opencode
-Version: 1.18.25-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 180368
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI and TUI.
- Supports multiple AI providers, MCP tools, and collaborative sessions.
-Filename: pool/opencode-1.18.25/opencode_1.18.25-1+resolute_amd64.deb
-Size: 46195136
-MD5sum: 964c52e139dc0b72d29562d32d9b97c5
-SHA1: 497308db763878eac210c6806f5a04821898abf7
-SHA256: 0f17f56faccbd79e78984efd37133d8463b24bbb04a625e6f1636c2497632c04
-
 Package: zellij
 Version: 0.45.1-1+resolute
 Architecture: amd64
@@ -1146,4 +1130,21 @@ Size: 11802596
 MD5sum: 9451eccea243bea37327dbda53b93208
 SHA1: c10cf3b6bd7bee8825056a0c6a9c7870faf4232c
 SHA256: 0bfac52a23013d4efa01e3b6bb5dfcc6d21d0ef88461f580adfbb2347dc63693
+
+Package: opencode
+Version: 1.18.26-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 180312
+Depends: libc6 (>= 2.34)
+Section: utils
+Priority: optional
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI and TUI.
+ Supports multiple AI providers, MCP tools, and collaborative sessions.
+Filename: pool/opencode-1.18.26/opencode_1.18.26-1+resolute_amd64.deb
+Size: 46195368
+MD5sum: f64464974ac15fbe152c2774292c3c92
+SHA1: 019edaa5d6a598ae4467c5651f1be371b37ae394
+SHA256: 35f46db76d8b30b591ac1b72d67ff007b253c4046961b5a6253e814faae8c0d8
 
