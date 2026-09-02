@@ -1093,22 +1093,6 @@ MD5sum: 39d429769ec83de41449251e5faf208a
 SHA1: 469f49012bef1704091d933c687f81e4f357bda3
 SHA256: 28345819d875038a7cbf75b5d6069687d4d90c52325731b9f36dc32250a64119
 
-Package: cliamp
-Version: 2.0.0-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 33472
-Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-2.0.0/cliamp_2.0.0-1+noble_arm64.deb
-Size: 9327006
-MD5sum: ab4e786f99f2a382d8252ce2470cfd31
-SHA1: 22dacd0a86c30e721c6e649f964f30feb0eb7968
-SHA256: 64dd00e0f3f5eea7fe2fb99095b226c4118863e47412e605c776dc6a3551c911
-
 Package: opencode
 Version: 1.18.26-1+noble
 Architecture: arm64
@@ -1125,4 +1109,20 @@ Size: 45624364
 MD5sum: 5562435307c466998586a87d9171a19e
 SHA1: 537865948d884215439fe6e83a9a4c84b6fb80e1
 SHA256: 24d082aa28ffc28befba58d74761b03a5e7882aa44d9d9413bf76be530600eac
+
+Package: cliamp
+Version: 2.0.1-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 33408
+Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-2.0.1/cliamp_2.0.1-1+noble_arm64.deb
+Size: 9313162
+MD5sum: c742db5ac84183cc7189c51e4cb80cce
+SHA1: a070136af8dab67e5635c9cd48108b314ec5e54f
+SHA256: ccadf61e71d01799de017bf5087b88b4cfa6af87b9c66d7a0d9f77b7b761378e
 
