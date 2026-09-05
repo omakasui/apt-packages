@@ -1170,23 +1170,6 @@ MD5sum: f75d4b85cc56f2c36bf10c47d24a3a23
 SHA1: 2353142812deb3fc40140fac3613a1d36eba5350
 SHA256: 799318040900f332ec2e888de86f87d0ab761943cd458bd78903f2713651f183
 
-Package: zed
-Version: 1.18.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 445404
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.18.0/zed_1.18.0-1+trixie_arm64.deb
-Size: 104579378
-MD5sum: 37042f9673c2abdeee6103318d9d6c4b
-SHA1: bbe842597878d77c85bb650dd10e6de60ed55797
-SHA256: f130b70adc5d3a427db342b1ab75316da97e175b4b04367c382439b648417a55
-
 Package: gh
 Version: 2.100.0-1+trixie
 Architecture: arm64
@@ -1208,7 +1191,7 @@ SHA1: 83162d9227b4fbacd0a90072dbb121aa061171d8
 SHA256: 8e9720a28bcb5ba29bc2cc63d424ad5725f0944a6d9cdcaa19546c62c115e385
 
 Package: opencode
-Version: 1.18.29-1+trixie
+Version: 1.18.28-1+trixie
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
 Installed-Size: 179896
@@ -1218,9 +1201,26 @@ Priority: optional
 Homepage: https://github.com/anomalyco/opencode
 Description: AI coding agent CLI and TUI.
  Supports multiple AI providers, MCP tools, and collaborative sessions.
-Filename: pool/opencode-1.18.29/opencode_1.18.29-1+trixie_arm64.deb
-Size: 45653196
-MD5sum: 80d99d7290602afc5cda4a693a741968
-SHA1: f29f442da2068549d770106a7ee638c89b5364fd
-SHA256: 39b6f875258d63c51fb38a81712cde6cc676802712e6664e0cb1dc059475a0ca
+Filename: pool/opencode-1.18.28/opencode_1.18.28-1+trixie_arm64.deb
+Size: 45629714
+MD5sum: 702939cd35e0dd6eb4a29ddd5fa1e68a
+SHA1: 003884c956345b50713ae733d0b75956f135c35f
+SHA256: b4bf81b37ca6ca17c1908d46c6b772d3f7eefab60778cb2f346c4271663001d6
+
+Package: zed
+Version: 1.18.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 445416
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.18.1/zed_1.18.1-1+trixie_arm64.deb
+Size: 104572920
+MD5sum: 4030ebfc0e9c312ecba8c2bf97267a15
+SHA1: e62ed9c9a64867743b02f84a0515357ceed608f3
+SHA256: f5e6bf1581bee0030646211224489e181e718521fd239d6f143f18aeffd74d8a
 
