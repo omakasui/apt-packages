@@ -1005,25 +1005,6 @@ MD5sum: e3bd53beca7d37bef52452a4c2508b37
 SHA1: 38dfbc767e465445e448a848bf075051f62a7656
 SHA256: a66b3d3592839b98c24eb2b1fe5e09d7149514c644939fd4d060fff4d17efd0b
 
-Package: glab
-Version: 1.116.0-1+resolute
-Architecture: arm64
-Section: 
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 47608
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.116.0/glab_1.116.0-1+resolute_arm64.deb
-Size: 13068264
-MD5sum: fe9a268297a0b8a944ccc9c282e06503
-SHA1: f5a054c873facc6ea577a4b2ef4b2a0eba851cb9
-SHA256: bbd5cfa75c44edadf72bbf55706bb413914848dd4acc8743b1b9eea16018d722
-
 Package: gh
 Version: 2.100.0-1+resolute
 Architecture: arm64
@@ -1127,4 +1108,23 @@ Size: 9361282
 MD5sum: 3624252d25a08603e3f3b9c4c3c8cfc9
 SHA1: 8fdc0c553b390362b19023c9a87ffe9cd1e7f0f2
 SHA256: 44b43490d1248ecb7bdc54cdc4341cd2f3be3a1df669122700bba3f37327d423
+
+Package: glab
+Version: 1.117.0-1+resolute
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 48008
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.117.0/glab_1.117.0-1+resolute_arm64.deb
+Size: 13173756
+MD5sum: 47a0e64b8743515b009223f3e9b39349
+SHA1: b026395df1139f27a1b41b7c458489ced39d0b22
+SHA256: 68fd64d1a26bc4f7d5debd11a0d53a89341c208d132c2187dee34c46532b2c73
 
