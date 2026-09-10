@@ -1174,23 +1174,6 @@ MD5sum: 58de63e25600cea325b9d0a4d4fd3c35
 SHA1: f78f2a5e12f0aa7604b598299f1197d6670734bf
 SHA256: d6378c465b3eaf83993ce79b2c45344c93eeee967ac80762387b531192ad5e24
 
-Package: zed
-Version: 1.18.1-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 464880
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.18.1/zed_1.18.1-1+trixie_amd64.deb
-Size: 109086172
-MD5sum: 1e9173b78f62fb34bb75e09b33fc10c5
-SHA1: e6a5a0f126b9d25c76decec2ecb0a144465ad464
-SHA256: 04ccdb5ec68a6d8555f967309eb551fb81246094746757c5c93883329837c263
-
 Package: zen-browser
 Version: 1.22b-1+trixie
 Architecture: amd64
@@ -1243,4 +1226,21 @@ Size: 46199178
 MD5sum: 10af1259d899d3fa80c82418460f6df2
 SHA1: c688b2e300911229534b7d8593af191472e01955
 SHA256: 13ecf9180a1839d478d44b9982b3a7c3aabe37a3819ce0cc3e3a0a13937b1765
+
+Package: zed
+Version: 1.19.2-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 438364
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.19.2/zed_1.19.2-1+trixie_amd64.deb
+Size: 103859568
+MD5sum: ce70b84a77015286d003c5ef51363b44
+SHA1: 43fc8073d2a1cd99dd854fd6e7b5ce4be6609504
+SHA256: 4b5a2718306202fb9b10b67638bd9a1c776fa8a59f87ee263a8701f2f83c118b
 
