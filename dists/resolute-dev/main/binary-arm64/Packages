@@ -688,26 +688,6 @@ MD5sum: 8865e0f0c48fcb16f9520704e9cf5664
 SHA1: db2244944876950dbe3630c2eee1c7639cdb94d7
 SHA256: 92e2e1268735f4ebfd4355a62b26cc1812ccc8ac88012ccd32af2f7a1dcffac2
 
-Package: fzf
-Version: 0.74.3-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4624
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder.
- Interactive filter for files, command history, processes, git commits
- and more.
-Filename: pool/fzf-0.74.3/fzf_0.74.3-1+resolute_arm64.deb
-Size: 1526558
-MD5sum: 8737cad3ef82fe5b3140680a15a30677
-SHA1: 93f0b34ffa20a42a0f3e561a46d653bedbf64136
-SHA256: 570d03f9c9ff0b56f829f1ea41a8e97b87fb4890a9ddcfa7aecf7384c50c4f0f
-
 Package: bitwarden-cli
 Version: 2026.8.0-1+resolute
 Architecture: arm64
@@ -1127,4 +1107,24 @@ Size: 3658340
 MD5sum: 563da207f6b658836d458a097b186517
 SHA1: f851f9a72cd4ed4dfdad3e1d1b96edb4d4ef66bd
 SHA256: 23d51c54a5e4a5d18e83c6c81457f1fb0791a297738298aade24beee3ed16829
+
+Package: fzf
+Version: 0.74.4-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 5072
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder.
+ Interactive filter for files, command history, processes, git commits
+ and more.
+Filename: pool/fzf-0.74.4/fzf_0.74.4-1+resolute_arm64.deb
+Size: 1718362
+MD5sum: 9bf3a26cffd19658e4053271f3cf43a8
+SHA1: 9303698ed600098d5fa134ecfd60f40a0d9a7f47
+SHA256: 6ccc0b8c5612651cf2a346051e1af32b5a2c46e11c523f03bcf578d39e50f582
 

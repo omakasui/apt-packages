@@ -686,26 +686,6 @@ MD5sum: 04e2b0f26a5e1c239d8cd8fcf69b91be
 SHA1: 62134fcc5413edf8c646b50181d5328fc7a9caa2
 SHA256: b7650b9cff1d611c5dba59212a379027a748fba3b7696c2242b95a6efab92895
 
-Package: fzf
-Version: 0.74.3-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4836
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder.
- Interactive filter for files, command history, processes, git commits
- and more.
-Filename: pool/fzf-0.74.3/fzf_0.74.3-1+noble_amd64.deb
-Size: 1700970
-MD5sum: 7ab56a4689ea7c22e63fb627f1a7a78a
-SHA1: 296d8f303debf5af60636e6baf9397af7104483c
-SHA256: 7651f5c9df9975e01a1b96ff17a5ce9ed1fb4f6affbcc46a47011ee17a52891c
-
 Package: bitwarden
 Version: 2026.8.0-1+noble
 Architecture: amd64
@@ -1145,4 +1125,24 @@ Size: 4053412
 MD5sum: 4e4819f3d9fc022ada65bdb26b30f4b4
 SHA1: 784c3087a91339ffc1ed6d8cfba4aebad51fddf1
 SHA256: 3b2f2e175713fa4924060bd3f203ad020d7046a9219658d70571582c7377afd9
+
+Package: fzf
+Version: 0.74.4-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 5400
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder.
+ Interactive filter for files, command history, processes, git commits
+ and more.
+Filename: pool/fzf-0.74.4/fzf_0.74.4-1+noble_amd64.deb
+Size: 1924354
+MD5sum: 65e14d9be73d347cf7e5a68dfe752a76
+SHA1: 2d1fe1f945b57995474b99e30e8a07bde3847ad5
+SHA256: 8e7b739450a3b6207095847d2bc4b79096834c18b805a2442b62208812d997b3
 
