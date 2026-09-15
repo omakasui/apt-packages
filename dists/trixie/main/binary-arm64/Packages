@@ -1172,23 +1172,6 @@ MD5sum: b0dfad1f644a65fbc822ec1e488fd144
 SHA1: 0d629b0ff9ab580fb5e57bd3573c9444d1cb0fad
 SHA256: 2fee0e4e991d5ca6809aa03c2c4e935a2ba484053cf12b078ee47bd8de5ffec2
 
-Package: opencode
-Version: 1.18.30-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 180024
-Depends: libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI and TUI.
- Supports multiple AI providers, MCP tools, and collaborative sessions.
-Filename: pool/opencode-1.18.30/opencode_1.18.30-1+trixie_arm64.deb
-Size: 45659002
-MD5sum: 7cb499547fd5e0a163ff5c38bb6a051a
-SHA1: c01dda77d7b62ce88f3995ed734c12d9d438df76
-SHA256: ffcf7a3012b3de712eaa6166cea83dd452aaa7bf3fabad51014df9c5dafbd816
-
 Package: zed
 Version: 1.19.2-1+trixie
 Architecture: arm64
@@ -1222,4 +1205,21 @@ Size: 105697464
 MD5sum: 62e7f865b1a9f8da15acd12fa915687a
 SHA1: b8a03d1f25963a0f3748a931f84da7c44d4bacfe
 SHA256: fda74497d4ae1dcd3fa60855c0640ec2bb52301875c77453a7c8c6cd4d11e828
+
+Package: opencode
+Version: 1.18.31-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 180216
+Depends: libc6 (>= 2.34)
+Section: utils
+Priority: optional
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI and TUI.
+ Supports multiple AI providers, MCP tools, and collaborative sessions.
+Filename: pool/opencode-1.18.31/opencode_1.18.31-1+trixie_arm64.deb
+Size: 45645940
+MD5sum: 3a497a1654f55765e1fd6521362ac823
+SHA1: 72fb533e7342518aba80d6fa8cbc93876ca56f44
+SHA256: 964411d2553fe13f7f590cc295faadb0925a7e9ffab21873c7c9225f49e23214
 
