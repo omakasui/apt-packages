@@ -1086,25 +1086,24 @@ MD5sum: 22b219d2102c4df0091a8182b4978158
 SHA1: b0e1f4a11595ba74a42271fed4f9667befc26777
 SHA256: ab5e484c29b8a0e052aa57fddcd2a8256139b80faa7d19e7b7564cb92271d17a
 
-Package: gh
-Version: 2.100.0-1+trixie
+Package: glab
+Version: 1.117.0-1+trixie
 Architecture: amd64
 Section: 
 Priority: optional
-License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 42268
+Installed-Size: 51268
 Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.100.0/gh_2.100.0-1+trixie_amd64.deb
-Size: 11943936
-MD5sum: 58de63e25600cea325b9d0a4d4fd3c35
-SHA1: f78f2a5e12f0aa7604b598299f1197d6670734bf
-SHA256: d6378c465b3eaf83993ce79b2c45344c93eeee967ac80762387b531192ad5e24
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.117.0/glab_1.117.0-1+trixie_amd64.deb
+Size: 14584278
+MD5sum: 74aa8c56eab33bc8bfafe9b697214bd1
+SHA1: ff27f42c193f0ed7b1f3b4cae651cb7fa785beb8
+SHA256: 4240d5e8f55e911d50b4ea0fa1e14067d77e08756a5745b6db8903f1f06a879f
 
 Package: cliamp
 Version: 2.2.0-1+trixie
@@ -1225,22 +1224,23 @@ MD5sum: 0dac0c49531e8a1b4b9d9a5574bdc91a
 SHA1: 255474d9926f1d076824128d66bb960955d3de8a
 SHA256: 6ceb44929418ac40aa7be1e0c9dc32af624e7e69fb4101ef37fb0072d0b7a476
 
-Package: glab
-Version: 1.118.0-1+trixie
+Package: gh
+Version: 2.101.0-1+trixie
 Architecture: amd64
 Section: 
 Priority: optional
+License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 51496
+Installed-Size: 42056
 Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.118.0/glab_1.118.0-1+trixie_amd64.deb
-Size: 14636474
-MD5sum: d7055b381babd8ddb48ebed9be5d24b6
-SHA1: bf95db37fcb849bf475f8c293f7295cff65fc93d
-SHA256: f9234fd606a2cb74f6679a980b06540e5b5c111b87f53aac59e1dd529ec38620
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.101.0/gh_2.101.0-1+trixie_amd64.deb
+Size: 12093654
+MD5sum: 2f6d673056b92d73c1f8be87d878b9b1
+SHA1: 2bc3f9fb108660a430165d933a040305c3f4d5b9
+SHA256: a29201de505015cfad8d7c989fb8716a560dd2e371e671b1859db93211b0e2f7
 
