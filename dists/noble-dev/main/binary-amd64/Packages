@@ -1146,3 +1146,22 @@ MD5sum: 3cba37b12a3dc71c14d55891e3380e73
 SHA1: 12adbab5bad7f6d94cdc722f50b067e6e2cfb469
 SHA256: abc10af58685f618a7a48caeb987abff1cdc01be965d0267b4b6b685db39ec5d
 
+Package: chezmoi
+Version: 2.72.2-1+noble
+Architecture: amd64
+Section: vcs
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40172
+Homepage: https://chezmoi.io/
+Description: Manage your dotfiles across multiple diverse machines, securely.
+Depends: libc6 (>= 2.34)
+Conflicts: chezmoi
+Replaces: chezmoi
+Provides: chezmoi
+Filename: pool/chezmoi-2.72.2/chezmoi_2.72.2-1+noble_amd64.deb
+Size: 12621586
+MD5sum: 143fb7d01e9934c308d0aa2205f640ef
+SHA1: 45d0090576e561366e4502523a3a602c4fbe3c7a
+SHA256: 2af9293f37f619c2db541d74d62fda83c4628732ff320e4c5c1aa4c3a13e18f9
+
