@@ -1206,6 +1206,25 @@ MD5sum: 17a233e385f1bbde5e7f40cde88d26fc
 SHA1: e15d0129c91d34b22037e0b8240a2a066877e42d
 SHA256: 6a1da77c7371e07244af6694714ab06bcd14a8a82a170472cb356ea6de0b60ed
 
+Package: chezmoi
+Version: 2.72.2-1+trixie
+Architecture: arm64
+Section: vcs
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 36816
+Homepage: https://chezmoi.io/
+Description: Manage your dotfiles across multiple diverse machines, securely.
+Depends: libc6 (>= 2.34)
+Conflicts: chezmoi
+Replaces: chezmoi
+Provides: chezmoi
+Filename: pool/chezmoi-2.72.2/chezmoi_2.72.2-1+trixie_arm64.deb
+Size: 11176594
+MD5sum: 40e173be9513f759d0fa00f271a31c77
+SHA1: 9d286f6d22a33feeec8c6d0bd15eb4e34a44a849
+SHA256: d767492ce42cb1ce2f831b6634fb4ca88a9fa7196ab58bfdfeb72f0700f61c30
+
 Package: zen-browser
 Version: 1.22.2b-1+trixie
 Architecture: arm64
