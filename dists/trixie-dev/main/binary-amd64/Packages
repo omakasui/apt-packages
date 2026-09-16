@@ -1244,3 +1244,22 @@ MD5sum: 2f6d673056b92d73c1f8be87d878b9b1
 SHA1: 2bc3f9fb108660a430165d933a040305c3f4d5b9
 SHA256: a29201de505015cfad8d7c989fb8716a560dd2e371e671b1859db93211b0e2f7
 
+Package: chezmoi
+Version: 2.72.2-1+trixie
+Architecture: amd64
+Section: vcs
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40172
+Homepage: https://chezmoi.io/
+Description: Manage your dotfiles across multiple diverse machines, securely.
+Depends: libc6 (>= 2.34)
+Conflicts: chezmoi
+Replaces: chezmoi
+Provides: chezmoi
+Filename: pool/chezmoi-2.72.2/chezmoi_2.72.2-1+trixie_amd64.deb
+Size: 12621670
+MD5sum: 98119a434d1fcbf64c665a69996957a0
+SHA1: 4382abc2e3c811fffef188e854a68376ec798fb6
+SHA256: 0b930141ed89e2e2f1ce093feda988019b2359cf4914e80393a5ed2efe7eb594
+
