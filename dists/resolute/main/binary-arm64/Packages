@@ -1056,23 +1056,6 @@ MD5sum: 47a0e64b8743515b009223f3e9b39349
 SHA1: b026395df1139f27a1b41b7c458489ced39d0b22
 SHA256: 68fd64d1a26bc4f7d5debd11a0d53a89341c208d132c2187dee34c46532b2c73
 
-Package: zed
-Version: 1.19.2-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 421532
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.19.2/zed_1.19.2-1+resolute_arm64.deb
-Size: 100136008
-MD5sum: d8040d53943aed96bf1edb2955335654
-SHA1: a2a98a174950cf1fda8cd853c359485a8ba4af1e
-SHA256: edf328b09d587e8f61678efd073c16c44acf5288ee5086e6bb50bfbfec9af561
-
 Package: opencode
 Version: 1.18.31-1+resolute
 Architecture: arm64
@@ -1145,4 +1128,21 @@ Size: 106537938
 MD5sum: b0e4d437cec3faedf7c51430f82ecb7e
 SHA1: 8de4c150555b43ab663c6788e791c05ef6a11a6d
 SHA256: bca7785cfa6ecf97a23583d488858f7b68461304efb13eaff5695aefe451b044
+
+Package: zed
+Version: 1.20.1-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 298888
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.20.1/zed_1.20.1-1+resolute_arm64.deb
+Size: 87190880
+MD5sum: 1d58166ac7d6468fedd4953ed689a162
+SHA1: 3f90a6886356af6eaed085fac701f3a5ba033239
+SHA256: 1babd988b4d5faa25a3520166a3c81d721d5638f637ddd5f06b3470a8952fe01
 
