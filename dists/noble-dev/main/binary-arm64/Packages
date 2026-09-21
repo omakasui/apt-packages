@@ -615,26 +615,6 @@ MD5sum: 7c7c948e50c1252ae311936be755c8ba
 SHA1: 6080153bab095e8feb7d689b0fd3aabd094668b6
 SHA256: 0163056fbe8f15ade1cc4b50c18996b7304f79392e37a7b230334647aeaec822
 
-Package: kitty
-Version: 0.48.2-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 110416
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.48.2/kitty_0.48.2-1+noble_arm64.deb
-Size: 34188016
-MD5sum: c12319d48774a25ec5e243ca4e571b82
-SHA1: 6437eaddabb6c5bde7472fd6dd175b12f3382600
-SHA256: 2c70c9d5be6c5c6ea0ac7dd1667c35c5d106dbdf55e621a797a562b94714d0ff
-
 Package: fonts-cascadia-mono-nf
 Version: 3.5.0-1+noble
 Architecture: all
@@ -1144,4 +1124,24 @@ Size: 113712322
 MD5sum: 284304000a1774cb876948a625a518c9
 SHA1: c2e501182877f117d5e66cd2cf8f5ab3d0de78ee
 SHA256: 015ec791a3cd26d2c861fc3ff70c9dd48ba08a1fda98c7570faa039fe54acc58
+
+Package: kitty
+Version: 0.49.0-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 158064
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.49.0/kitty_0.49.0-1+noble_arm64.deb
+Size: 49016128
+MD5sum: 9fe906390aa4c091b32c1f8c56a8833a
+SHA1: b1b17eafbba8665f0d9444cfd79ded836ee7efe5
+SHA256: dae6ead1ee1ac6bce4367241e771c54693441765b248d6dda778433bfbf77e9f
 
