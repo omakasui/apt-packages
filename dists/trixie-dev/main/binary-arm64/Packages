@@ -1119,22 +1119,22 @@ MD5sum: 40e173be9513f759d0fa00f271a31c77
 SHA1: 9d286f6d22a33feeec8c6d0bd15eb4e34a44a849
 SHA256: d767492ce42cb1ce2f831b6634fb4ca88a9fa7196ab58bfdfeb72f0700f61c30
 
-Package: zen-browser
-Version: 1.22.2b-1+trixie
+Package: zed
+Version: 1.20.2-1+trixie
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 368384
-Section: web
+Installed-Size: 298888
+Section: editors
 Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser.
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.22.2b/zen-browser_1.22.2b-1+trixie_arm64.deb
-Size: 106538468
-MD5sum: 384bad0845b2f82de79603e3b06550d1
-SHA1: 54624f0b4285208a84465c97e7b060a6e59076d8
-SHA256: 2d27c0ddda326b646d2619df132f8543d6e5b05d7a62902c3572740008bda4d5
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.20.2/zed_1.20.2-1+trixie_arm64.deb
+Size: 87194136
+MD5sum: 72ed8756bef639cdb27aea9e255479b4
+SHA1: f8ad54b6ab3f61e9ef5c5b8644bd098ce68916cf
+SHA256: 4e7a94a2ac8a7aeeb99f3ec1dda28049db6ca2e4e676fa81a961c8eaeb3d312a
 
 Package: bitwarden-cli
 Version: 2026.9.0-1+trixie
@@ -1226,20 +1226,20 @@ MD5sum: d0eb83e97f6bedf5769ade910686f0af
 SHA1: 6cc629bbc87eddeaa59e47fe0483be18d28b10ac
 SHA256: 0f088081490a8a212d70fdfa09e543ef6ec0105cd565f82f297060b04f63cec1
 
-Package: zed
-Version: 1.21.0-1+trixie
+Package: zen-browser
+Version: 1.22.3b-1+trixie
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 300576
-Section: editors
+Installed-Size: 368280
+Section: web
 Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.21.0/zed_1.21.0-1+trixie_arm64.deb
-Size: 87711124
-MD5sum: 315f7ca1b16997c57962ea8b2d545730
-SHA1: 5e0d3940d243eb55d96b63ffb8ec379357df4e16
-SHA256: 7023b44f057df8fee378089a834e50da28f77b42cb34d111f51628390dda5985
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser.
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.22.3b/zen-browser_1.22.3b-1+trixie_arm64.deb
+Size: 106481870
+MD5sum: 4bcce6cc62a6c1225a052c8e91600591
+SHA1: 877c74c4e1e76a45b588543cc3799068aa361912
+SHA256: c21464bb91e8e1e4e6638468b677eea783d071739a85850e7bb729b7ea978968
 
