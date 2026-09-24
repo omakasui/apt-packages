@@ -784,25 +784,6 @@ MD5sum: 55e8edaf4d31dd253f3f8347605f25a0
 SHA1: 4c01f2bc1d77c1accad8304d01e420cc98bc3fe3
 SHA256: 23998512a1794c8b4926cd49e23bd46d7dccfb9e9d576f17e1c1d264e66ee129
 
-Package: xwayland-satellite
-Version: 0.8.2-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4916
-Depends: libc6 (>= 2.43), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
-Section: x11
-Priority: optional
-Homepage: https://github.com/Supreeeme/xwayland-satellite
-Description: Rootless Xwayland integration for Wayland compositors.
- Grants rootless Xwayland support to any Wayland compositor implementing
- xdg_wm_base and viewporter, without the compositor having to implement
- Xwayland handling itself.
-Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+resolute_arm64.deb
-Size: 1491538
-MD5sum: 5765d13a50a293382a08529a79fe5081
-SHA1: 1e32350e7b873cc1ed79a7cdafd7ff6eee119dbc
-SHA256: ef2e1a0f1b70f7158588e0fb3195bab3794b9fce8e4f91c30b9b8b9e7db21ba0
-
 Package: alacritty
 Version: 0.17.0-1+resolute
 Architecture: arm64
@@ -1146,4 +1127,23 @@ Size: 49011806
 MD5sum: 8f6ab794722f7bbeb0e0d3c0a4d694a7
 SHA1: 6ae2abb363385c4e37f75630b0143f86d7694a94
 SHA256: a289fedd40f2ddc3660774cdad29f0cdf97aeae814c895d5245c6b0651e3387c
+
+Package: xwayland-satellite
+Version: 0.8.3-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 5044
+Depends: libc6 (>= 2.43), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.3/xwayland-satellite_0.8.3-1+resolute_arm64.deb
+Size: 1520116
+MD5sum: 51160e8bfb4264081e6ab2af712fcab7
+SHA1: f9109aa4938a2c695ac32e8aaceb1f9b66c9db27
+SHA256: b7cddc08b564fe81e7470625a05d23942a6a8116f8f94959b9c802c9f006857a
 
