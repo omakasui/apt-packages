@@ -803,23 +803,6 @@ MD5sum: 4099ddb4e39256046377789d62aabd8e
 SHA1: dde2d5209bf9144b98972f184b3f45dff22fa2ce
 SHA256: a9ffc01400277d22c7a502b133c1cb82814e58640df3555013a57fcf231645bf
 
-Package: walker
-Version: 2.17.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8916
-Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.0/walker_2.17.0-1+resolute_amd64.deb
-Size: 2216108
-MD5sum: bb086c68d10525722b6e3f44aa024d18
-SHA1: fa3505548bf3f6d3aa5e054c81db9e58889b9050
-SHA256: 59ede4813088ce856295f4b62d340c897dd11838dde05dd8373d4179059cf371
-
 Package: ghostty
 Version: 1.3.1-1+resolute
 Architecture: amd64
@@ -1166,4 +1149,21 @@ Size: 1645078
 MD5sum: a4a75611e30c199e9b9c96da29371575
 SHA1: bc3f49bce22ca448974ab9acdf993fa8eab47727
 SHA256: dc577004b15a8eb916ff376d2a98224dc618f0156c26c4b20468b2f51238be3c
+
+Package: walker
+Version: 2.17.1-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 9392
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.1/walker_2.17.1-1+resolute_amd64.deb
+Size: 2313458
+MD5sum: 4be2b6771af8b2162a46a203b95cd633
+SHA1: 124617f06637031819dcaff80bbe1f7eea73593d
+SHA256: fb4f25ccd911b655e9dec162658f88659201070896f434c81757b703fe0f235e
 

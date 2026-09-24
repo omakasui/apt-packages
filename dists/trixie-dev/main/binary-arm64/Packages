@@ -899,23 +899,6 @@ MD5sum: 5b0b67c52418a8165f9095127f1437b0
 SHA1: 6b63fb92b583ffc3d25f379f8e535a08b16561a6
 SHA256: ace825a00c6f5eae9539664a95bec1868dd459cae51395e3dcbcd6b5284ac4ed
 
-Package: walker
-Version: 2.17.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8416
-Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpoppler-glib8t64 (>= 0.18.0), elephant
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.0/walker_2.17.0-1+trixie_arm64.deb
-Size: 2084998
-MD5sum: 42758d3e051b98d6938d1cdc32782658
-SHA1: ef5c0ff327cf519d1116b06cc1f29a58fcf72897
-SHA256: 508debf08d92c15a2b6f72523a7ca0d95d5d28b1a0db5c9020fe2b558b452b88
-
 Package: ghostty
 Version: 1.3.1-1+trixie
 Architecture: arm64
@@ -1242,4 +1225,21 @@ Size: 1519502
 MD5sum: 2659dd806dab6fe8ee4bfbba0635b4d6
 SHA1: 08cfa3f30bb4a8b75448fff0dad6af57d2902afc
 SHA256: af0f0be89f2a80aedd0ff5f8313edd69a9ffdb49042c6c5d2ee267cd48d3ec45
+
+Package: walker
+Version: 2.17.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8912
+Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.1/walker_2.17.1-1+trixie_arm64.deb
+Size: 2188140
+MD5sum: b8e073955207cede16f28e8d4b571730
+SHA1: aab41468d0a8717c7a9d6351e312813b7edf8a77
+SHA256: a58757cfc05006de3bb03d4827780baa2333a924a1fe645f9c3f37eddb2931d0
 

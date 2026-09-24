@@ -899,23 +899,6 @@ MD5sum: 5a8327ce1c021383834e6e50822da0f9
 SHA1: df651b102b9853b8db5885f3da767f2469d4bbeb
 SHA256: 62770cf553917be357f71c994c0071c92e79c9ffbc7f03a5d5c3aae3ea68ca8a
 
-Package: walker
-Version: 2.17.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8916
-Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.0/walker_2.17.0-1+trixie_amd64.deb
-Size: 2213296
-MD5sum: da1f8ba8b811f2dd30d29ed490ac9235
-SHA1: cbbce1efe7863840bb8c16bf53c676cd09f7bfd7
-SHA256: 3239802a55e488387748d844b5bed6ed604887b3a1d3d9f6b8fa490c40a753ec
-
 Package: ghostty
 Version: 1.3.1-1+trixie
 Architecture: amd64
@@ -1262,4 +1245,21 @@ Size: 1645028
 MD5sum: fc7702c2f0b1ca7b06d1f4e54991f790
 SHA1: 7afb6048f3ade5f2e02396efe5e64fe17c49d565
 SHA256: a6d572532a5a084e57c3028aa45764345d25c1743fb9bcdfe8147fd0d49047b8
+
+Package: walker
+Version: 2.17.1-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 9392
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.1/walker_2.17.1-1+trixie_amd64.deb
+Size: 2312262
+MD5sum: 5eb7467ee798bcaa4a9e9d14f593ad05
+SHA1: cf37d5789c1bfd2b703af857eda92fb0d2f03a3c
+SHA256: 60b6501e8ba6665672f19f80e00ca5fd69c2c9b1d227bb90d4ce2444e9139839
 
