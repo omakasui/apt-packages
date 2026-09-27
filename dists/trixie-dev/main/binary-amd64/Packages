@@ -1263,3 +1263,44 @@ MD5sum: 5ed3d49f9471139fbbca006615a4bec0
 SHA1: 5622f7c17c575b3c4d4554bafa89976543a6e4c1
 SHA256: 1fc5d6270ea25575a4ecd0c5c4a5bd36c07bbaaa369fb6a43ff145400c06e197
 
+Package: foot
+Version: 1.28.0-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 796
+Depends: libc6 (>= 2.38), libfcft4t64 (>= 3.3.1), libfontconfig1 (>= 2.12.6), libpixman-1-0 (>= 0.30.0), libutf8proc3 (>= 2.9.0), libwayland-client0 (>= 1.20.0), libwayland-cursor0 (>= 1.0.2), libxkbcommon0 (>= 1.0.0), ncurses-term
+Recommends: libutempter0, xdg-utils
+Suggests: foot-themes, foot-extra-terminfo, libnotify-bin
+Provides: x-terminal-emulator
+Section: x11
+Priority: optional
+Homepage: https://codeberg.org/dnkl/foot
+Description: Fast, lightweight and minimalistic Wayland terminal emulator.
+ Supports server/client mode, sixel graphics, scrollback search,
+ URL detection and grapheme shaping.
+Filename: pool/foot-1.28.0/foot_1.28.0-1+trixie_amd64.deb
+Size: 310462
+MD5sum: 28f8b120a733a2de453263c67c26bd17
+SHA1: 3b245d38c9b54a2b468ffd0f25b4cd61c59a1246
+SHA256: 3d7afefade07757d321c1c5bb23a1f81db6869f8d9c96225e1fe6eb6f4d0bbbd
+
+Package: foot-themes
+Version: 1.28.0-1+trixie
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 364
+Enhances: foot
+Section: x11
+Priority: optional
+Homepage: https://codeberg.org/dnkl/foot
+Description: Color themes for the foot terminal emulator.
+ Predefined color schemes for foot. To use one, include it from foot.ini:
+ .
+  [main]
+  include=/usr/share/foot/themes/<theme>
+Filename: pool/foot-themes-1.28.0/foot-themes_1.28.0-1+trixie_all.deb
+Size: 16042
+MD5sum: 25fd1a4dbe3f94399095664483cdd57b
+SHA1: ce2746d2696dc2b2a2ea8abe48cc4466e2e8e63a
+SHA256: 45b792d44e85ca1c63f29eb368cb6847e0c560c2ba9332244972ca479b0236c7
+
