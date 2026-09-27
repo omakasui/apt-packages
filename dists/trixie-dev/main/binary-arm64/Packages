@@ -373,23 +373,6 @@ MD5sum: 9a14af42e5e694e125a77482d7480047
 SHA1: 02baf1581da9cbe4c80810382df0197a3a11de7f
 SHA256: b77a0d4130bfae2a5a3b5c40ffff933843c4f2fed6224cd1dc7994b59aaf0693
 
-Package: fastfetch
-Version: 2.67.1-1+trixie
-Architecture: arm64
-Depends: libc6 (>= 2.35)
-Description: Fast neofetch-like system information tool
- fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Maintainer: omakasui <packages@omakasui.org>
-Priority: optional
-Section: devel
-Installed-Size: 16884
-Filename: pool/fastfetch-2.67.1/fastfetch_2.67.1-1+trixie_arm64.deb
-Size: 4664936
-MD5sum: ec307dfbfee38ace0526ee5691aceb30
-SHA1: 690483a00fa5151dcd6f0ce67ceacd2a4e95daab
-SHA256: 6eca6ed5cf8a3ef42aeffc34ffd843eab5108b3d4ea2775175326e8a89558249
-
 Package: localsend
 Version: 1.18.2-1+trixie
 Architecture: arm64
@@ -1283,4 +1266,21 @@ Size: 16042
 MD5sum: 25fd1a4dbe3f94399095664483cdd57b
 SHA1: ce2746d2696dc2b2a2ea8abe48cc4466e2e8e63a
 SHA256: 45b792d44e85ca1c63f29eb368cb6847e0c560c2ba9332244972ca479b0236c7
+
+Package: fastfetch
+Version: 2.69.0-1+trixie
+Architecture: arm64
+Depends: libc6 (>= 2.35)
+Description: Fast neofetch-like system information tool
+ fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Maintainer: omakasui <packages@omakasui.org>
+Priority: optional
+Section: devel
+Installed-Size: 19628
+Filename: pool/fastfetch-2.69.0/fastfetch_2.69.0-1+trixie_arm64.deb
+Size: 5455338
+MD5sum: 9ef2fe403a9050f0a65bc5c092da4f15
+SHA1: a67b2cb8361155ecf427d17956f6e29848b1e7d2
+SHA256: df8fb5554635e6cbaf3983e6443867b6b37fe7a936ebb7057d5d58bc6e8a6b9b
 
