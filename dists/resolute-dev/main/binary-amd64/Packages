@@ -562,25 +562,6 @@ MD5sum: 1f32b746360aa07e4450b412a5afbf75
 SHA1: b0ea39c4a745f81f749f1187b0c63da09e7c5074
 SHA256: b465bc18773526867415d3355158b0ddaae1404f9e11baca111ffff5b30d175d
 
-Package: chezmoi
-Version: 2.72.2-1+resolute
-Architecture: amd64
-Section: vcs
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40172
-Homepage: https://chezmoi.io/
-Description: Manage your dotfiles across multiple diverse machines, securely.
-Depends: libc6 (>= 2.34)
-Conflicts: chezmoi
-Replaces: chezmoi
-Provides: chezmoi
-Filename: pool/chezmoi-2.72.2/chezmoi_2.72.2-1+resolute_amd64.deb
-Size: 12621672
-MD5sum: ccdfc3a74947592021c2d30289eb72a3
-SHA1: 45167afe304133b779f1e0af39fdf3e1fa21e675
-SHA256: 85ef5abeee234b2164a5f075e81ae6ed4282cefe62a528e20af9c4ce6876ad1a
-
 Package: zed
 Version: 1.20.2-1+resolute
 Architecture: amd64
@@ -1207,4 +1188,23 @@ Size: 46234194
 MD5sum: 4c8a1c15ec02e7b1a57c21632487270b
 SHA1: ea792eb9a7b6474530844851836e26a32ea07904
 SHA256: 25d8b8a99ecd06b59d39cc8406d40006f4dd071cafc7fb8d10421becfdb312d9
+
+Package: chezmoi
+Version: 2.73.0-1+resolute
+Architecture: amd64
+Section: vcs
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41044
+Homepage: https://chezmoi.io/
+Description: Manage your dotfiles across multiple diverse machines, securely.
+Depends: libc6 (>= 2.34)
+Conflicts: chezmoi
+Replaces: chezmoi
+Provides: chezmoi
+Filename: pool/chezmoi-2.73.0/chezmoi_2.73.0-1+resolute_amd64.deb
+Size: 12916108
+MD5sum: 764bf7cbfde33e8b8059e16accaf9f16
+SHA1: 74bdfda3ca0454747ed03827825bb023c3dd0c6e
+SHA256: be4f4528c2ec61b8d907f0b1e69fbaab9f1b9c52bf2f30b23583b33a70b62efb
 
