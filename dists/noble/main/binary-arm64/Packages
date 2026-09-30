@@ -1016,26 +1016,6 @@ MD5sum: e00459d02ce77cffd4f15d54d9a71173
 SHA1: 1b3589fc517dab27859f0dfcaec75dacc76c4615
 SHA256: a8d6cd3aa4fd255f44881e752eb818afd585cbeb507b2e48e292f98e0f0f020b
 
-Package: gh
-Version: 2.101.0-1+noble
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 39084
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.101.0/gh_2.101.0-1+noble_arm64.deb
-Size: 10752824
-MD5sum: fb44ee5c0c250f213ec22507f4b84277
-SHA1: e1424182f369150f0e94d731d6b64d1650d8259b
-SHA256: 619e5f1504ae7548e40f2bb1883f9d5e9c7c64bad9897b5e0f65f5305390cb35
-
 Package: zed
 Version: 1.20.2-1+noble
 Architecture: arm64
@@ -1071,6 +1051,25 @@ Size: 113712322
 MD5sum: 284304000a1774cb876948a625a518c9
 SHA1: c2e501182877f117d5e66cd2cf8f5ab3d0de78ee
 SHA256: 015ec791a3cd26d2c861fc3ff70c9dd48ba08a1fda98c7570faa039fe54acc58
+
+Package: glab
+Version: 1.119.0-1+noble
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 48404
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.119.0/glab_1.119.0-1+noble_arm64.deb
+Size: 13277640
+MD5sum: db1a847af71309fc83fb82de0a5ff9e7
+SHA1: 366e45ef0d21c25bd2cf8dae36b43baf2b84e086
+SHA256: 94c078af4ca26fe3dda5d26f02af4c86c873c5b90e53a1d7f0e32cdceb80bad9
 
 Package: zen-browser
 Version: 1.22.3b-1+noble
@@ -1125,22 +1124,23 @@ MD5sum: 6dcac32b8d782a2a354a7dbe36737935
 SHA1: 3ea2b4658f7c6184618c269de4358c5f8b25451d
 SHA256: 8f759f00645c79606099e4e20da2e47459d548ca07066d9f4f2e4de2559c4759
 
-Package: glab
-Version: 1.120.0-1+noble
+Package: gh
+Version: 2.102.0-1+noble
 Architecture: arm64
 Section: 
 Priority: optional
+License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 48540
+Installed-Size: 39212
 Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.120.0/glab_1.120.0-1+noble_arm64.deb
-Size: 13302060
-MD5sum: 30d1ce44d1512ef76d8f029bb8342cfe
-SHA1: fe5dad6e739cda1ec044ddc148d2fa96449be960
-SHA256: 68da0efcdaa828b515ee2948d91e1a4a08811feaaeae10e9ac63dc395c61b8a9
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.102.0/gh_2.102.0-1+noble_arm64.deb
+Size: 10771004
+MD5sum: 1fb4d70d14040e55f4f1178c951d9567
+SHA1: fa6e2f322d244f58e3ed0b546bd6980cab3322ee
+SHA256: 6719768b67d4a6d33975253a09375415c6fd95f24385d5251b7b38096eaed046
 

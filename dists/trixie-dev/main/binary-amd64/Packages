@@ -622,26 +622,6 @@ MD5sum: a968431597870a4d127171f866977294
 SHA1: 916e5821725bffb69da1266c628b8780f901be9a
 SHA256: d6cfe9b5fa2ea2ac5754470dcb4cbca674db548c95ed3aef54af69e9396d2141
 
-Package: gh
-Version: 2.101.0-1+trixie
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 42056
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.101.0/gh_2.101.0-1+trixie_amd64.deb
-Size: 12093654
-MD5sum: 2f6d673056b92d73c1f8be87d878b9b1
-SHA1: 2bc3f9fb108660a430165d933a040305c3f4d5b9
-SHA256: a29201de505015cfad8d7c989fb8716a560dd2e371e671b1859db93211b0e2f7
-
 Package: zed
 Version: 1.20.2-1+trixie
 Architecture: amd64
@@ -712,6 +692,25 @@ Size: 114608868
 MD5sum: fa3bc43069d0d15fef9aa66ac40b1150
 SHA1: 5748a6ae8745a3f714e93f43b6567623a7fe3737
 SHA256: 43cc8868c693191420edbc2665538f2096f2d0a298b10929140153a3d9f36860
+
+Package: glab
+Version: 1.119.0-1+trixie
+Architecture: amd64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 51696
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.119.0/glab_1.119.0-1+trixie_amd64.deb
+Size: 14692204
+MD5sum: bddc299d6a763c0fb07533364b666c9d
+SHA1: 6f497be495dbad5b8d46d49a2a44c9fd2fc9bb5a
+SHA256: 1ddd1faf6634711e7a5fc7392f0c376e841a06a31850a8a0c3486fe5fd003021
 
 Package: zen-browser
 Version: 1.22.3b-1+trixie
@@ -1285,22 +1284,23 @@ MD5sum: b0ad1064bbdc3eb7ab70d9be6e8df8de
 SHA1: cf12c700c00c2a630fb42f66514dfe7484cf30b5
 SHA256: 87c2c7b26ded8487bec4f11649454e8b4e9d2b9af14c62f617c953df8bd8666b
 
-Package: glab
-Version: 1.120.0-1+trixie
+Package: gh
+Version: 2.102.0-1+trixie
 Architecture: amd64
 Section: 
 Priority: optional
+License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 51820
+Installed-Size: 42168
 Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.120.0/glab_1.120.0-1+trixie_amd64.deb
-Size: 14729620
-MD5sum: b14ffbb9fa0a365c15d3de16bce5341e
-SHA1: 422a8e946d9c8fac8ff33b5b08f9b8a513135530
-SHA256: 54e536d42bf3326ba832c4d05a71c22d9d188f837538558f8a4876ec98d4b514
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.102.0/gh_2.102.0-1+trixie_amd64.deb
+Size: 12121130
+MD5sum: 760d82537ef5036851ddbc31e1dbb6aa
+SHA1: e069d59c96ef6dcc1cf1ddf61236e377ffec5e0b
+SHA256: 6574df01c8006574c5944c7158c06a3c092c48f452b4620cc96e8403a3396c74
 
