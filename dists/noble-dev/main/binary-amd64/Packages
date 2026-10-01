@@ -629,26 +629,6 @@ MD5sum: d79d80d641153769604389fe3d0c0f16
 SHA1: 344e94d3af3c99eb628a43e1754a9368da3b8bf8
 SHA256: 690c0bc97301fe3b33d9ed833f389952d08d537f800b005db01729ae691f749a
 
-Package: kitty
-Version: 0.49.1-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 163316
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.49.1/kitty_0.49.1-1+noble_amd64.deb
-Size: 50170062
-MD5sum: c7944be3c72069721b8763eab3212c86
-SHA1: a1f8062ffe358fd1de254c55da5821ad752d8a61
-SHA256: 1c96e503c327848d537b9d84753551768cc10c327f81d7f5921492814a4f721f
-
 Package: xwayland-satellite
 Version: 0.8.3-1+noble
 Architecture: amd64
@@ -1164,4 +1144,24 @@ Size: 91093184
 MD5sum: 13d188e7983b4d4c499f55d1395d55a2
 SHA1: fefd642f66310cdb0553a09c1e355763fadbd2dc
 SHA256: 1207c202adbc6726a59f5c95a46d50c647ad8972f4c25a7aa14a5ab4e6efb909
+
+Package: kitty
+Version: 0.49.2-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 163592
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.49.2/kitty_0.49.2-1+noble_amd64.deb
+Size: 50201416
+MD5sum: edbd57be3b56e34923d61d70e4391df5
+SHA1: d5ee17dd227f96afbede266a8a0a860c895df97c
+SHA256: 835f577d976cd80cbca86211d5ae5ae60821c948b6b25a7acbb384e44dfa830a
 
