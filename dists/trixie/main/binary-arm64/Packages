@@ -277,380 +277,6 @@ MD5sum: 829c6f451d52a1f4fa415600fb4cf08b
 SHA1: eb00ac79a159fd4ec6acf04e5951d7e35cd95e17
 SHA256: de3f5464b84335cf40f905f93592437f37542f4fd998beb0613fa24229253018
 
-Package: elephant
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 19656
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Data provider daemon for application launchers.
- Communicates via Unix sockets and Protocol Buffers.
- Install provider packages to add functionality.
-Filename: pool/elephant-2.22.0/elephant_2.22.0-1+trixie_arm64.deb
-Size: 5440060
-MD5sum: 47547bb02cc0e9228bea4a4215cbf02e
-SHA1: 78c4b1a383e6c89171018f029bcd3b65ae9fa959
-SHA256: 5bbcc18fa9871ca8ab1be7b759efab7594d80b66ef90a08e0827e520f650edd2
-
-Package: elephant-1password
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20868
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-1password_2.22.0-1+trixie_arm64.deb
-Size: 5431488
-MD5sum: 7bbf0d7a3cd2e18c463b03dd40ed544a
-SHA1: 261ebd01488a87e514d6665c14d510b58b112779
-SHA256: 9b5f5e0de67d72150b9d0ec3c91d398d911d9e6406c650dafb9ff4e9013f527d
-
-Package: elephant-bitwarden
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20868
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-bitwarden_2.22.0-1+trixie_arm64.deb
-Size: 5430392
-MD5sum: 78f6ef28c41b1dd0f8d167bfd15dacbf
-SHA1: 7e6f9c86be0381f25e47fba6ff763e5ec0bcaadc
-SHA256: cce06d32591642720c0248374dfc528a9a357931805c403f759f454e059e3025
-
-Package: elephant-bluetooth
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20868
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-bluetooth_2.22.0-1+trixie_arm64.deb
-Size: 5440220
-MD5sum: 0ed6d0ad128f93ea5fa0e9afe71958df
-SHA1: 14db24fed372699be03482145a79af9df79d76d4
-SHA256: 5f727ce98fe4b84b4463a974863ba8cb045e71277d5fda6e20099390194ac7c8
-
-Package: elephant-bookmarks
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20932
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-bookmarks_2.22.0-1+trixie_arm64.deb
-Size: 5455648
-MD5sum: 2fd308d7ec07693e2a98b1626064695d
-SHA1: 1c9b3e9b6d4c47904cf60d46e87286026be989b2
-SHA256: d73daba3a462516de664982a6b5847a9cd581b957fe1fd93f9edfc252400023e
-
-Package: elephant-calc
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20804
-Depends: elephant (= 2.22.0-1+trixie), qalc
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant calc provider plugin for the walker application launcher.
- Installs calc.so into /usr/lib/elephant/. Requires qalc.
-Filename: pool/elephant-2.22.0/elephant-calc_2.22.0-1+trixie_arm64.deb
-Size: 5427180
-MD5sum: 812e215e6efd4ff85002c20d13022c3a
-SHA1: 5e33fcb67a767042bc03f47a7e78762edfffb8d0
-SHA256: cc73385f91680e4edd1c9c59c1b8f82b8f6a7f15a0d83d2325d158d5a8e93fcd
-
-Package: elephant-clipboard
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 23044
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-clipboard_2.22.0-1+trixie_arm64.deb
-Size: 5631052
-MD5sum: a2ef9418e005d13716ec1753e4f8b8fc
-SHA1: d4b3f3446c8ad11a6bd44f9c821d93b749925ec7
-SHA256: b86103496bc4ef0a184a145b67110ae82ae86712c628cd9002ea4c8d7ddff3e3
-
-Package: elephant-desktopapplications
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21444
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-desktopapplications_2.22.0-1+trixie_arm64.deb
-Size: 5556108
-MD5sum: 9440f2172c36961d521b5201bdcade14
-SHA1: 7bf6da9f2b282931ee5b6e9ce83c1665257a30bc
-SHA256: d65e74e4ba6e761b4466a13043e21e1f64f0ea0b92add462f91959810d0b619e
-
-Package: elephant-files
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22676
-Depends: elephant (= 2.22.0-1+trixie), fd-find
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant files provider plugin for the walker application launcher.
- Installs files.so into /usr/lib/elephant/. Requires fd-find.
-Filename: pool/elephant-2.22.0/elephant-files_2.22.0-1+trixie_arm64.deb
-Size: 6088600
-MD5sum: b1b0644b1c60b23a2509a4cf31fafee2
-SHA1: 623b775e7d46d44e76f0c834f7b262558a807f8b
-SHA256: ee50e7cc08d629a235f21b9514b4b39357ee05f645b096cd8b173ecd95cb46e4
-
-Package: elephant-menus
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20676
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-menus_2.22.0-1+trixie_arm64.deb
-Size: 5396348
-MD5sum: 3195a1af447567475b91b6865f3414e2
-SHA1: 0bd756d366cc1f9f21fd2c4ba55e0d15bfcdd803
-SHA256: 98d1dfae03a40e5ca95aa1d478d5f062706e1801f0c45e5f13fe0c137055bb43
-
-Package: elephant-niriactions
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20868
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-niriactions_2.22.0-1+trixie_arm64.deb
-Size: 5437804
-MD5sum: 9b4281076d140be7b3fc68db50d24982
-SHA1: 1951471076070ffca1f0ad5698745cb193e471f8
-SHA256: c548a317a8bdcecd161d5549462fce77a4407139a7dfc860ab827bcc1bad5463
-
-Package: elephant-nirisessions
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20868
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-nirisessions_2.22.0-1+trixie_arm64.deb
-Size: 5440476
-MD5sum: f55d849ffd7d5f8d80dc2bda58229e2f
-SHA1: ecec29d6e3115f9818dbc6d82958fab5a8fe084d
-SHA256: 764404ccf9d854d7157c61cf04d3509072832753253f8d8f0cc05b8cfc65c9db
-
-Package: elephant-playerctl
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20868
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-playerctl_2.22.0-1+trixie_arm64.deb
-Size: 5434144
-MD5sum: fecfeec78f86f30c9a2626d02c7b0ffc
-SHA1: c81ddd728786009110670998a49a523ba8759a6c
-SHA256: 1b6e283782c09a1ee7ed3ac4d2e279d852d3f46dc665ec1fa3530e82c099f9a2
-
-Package: elephant-providerlist
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20868
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-providerlist_2.22.0-1+trixie_arm64.deb
-Size: 5439728
-MD5sum: 35d903ba127e36994d35bc041012b9a9
-SHA1: 3b0eda3438773e39da0830781ad92a140b18a57e
-SHA256: 71a37a5f09b973e126116e565875e1f2bfc694949fd4d477f57af0363a31131b
-
-Package: elephant-runner
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20868
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-runner_2.22.0-1+trixie_arm64.deb
-Size: 5439216
-MD5sum: be3314bc2c36e15bdde8876bc4e7ec3c
-SHA1: b833afb3517072dd8aa2151a4ffdfd146878de39
-SHA256: 5315651662c48c536ae60b9f306c2c50f38f6f58b0e88835ee51c583258fdbd4
-
-Package: elephant-snippets
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20804
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-snippets_2.22.0-1+trixie_arm64.deb
-Size: 5429936
-MD5sum: 0bca439f7ba1d8cd7b4db4151145b35d
-SHA1: 627f139410368ee0aca5279ae1959de8c942c78a
-SHA256: 35a0d69f2c082413b32f2e280532bbc2f1eff067cb2cc7d8375ddf131ede98f0
-
-Package: elephant-symbols
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 141512
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-symbols_2.22.0-1+trixie_arm64.deb
-Size: 14407320
-MD5sum: 8a09266e9261e8337d71312970ecafdf
-SHA1: 99745837b7aaef788be1a6a434197cdd772da54c
-SHA256: fa486cbd44e13841d3e7595d6a644bf623b5d757edfaa831b840373264976764
-
-Package: elephant-todo
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 29840
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-todo_2.22.0-1+trixie_arm64.deb
-Size: 7231232
-MD5sum: a460c494f5a978aa3108b6377856620f
-SHA1: 49c8e5bf356b7b28b000058b54941bc34d7451b4
-SHA256: 9d26b8cb3032174e8af325b74295c1cc116c12740656bc7052d043b7d221535d
-
-Package: elephant-unicode
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 22980
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-unicode_2.22.0-1+trixie_arm64.deb
-Size: 5624028
-MD5sum: 6083e57e1f4043c38d5cbadfbf769b28
-SHA1: b6dfd898ac7d74f60047b4730dff2b70ce5da655
-SHA256: 6476321e0d275cc0b66f3d4b8d56cc3d6e6414652586ba7d5a28798d260632c4
-
-Package: elephant-websearch
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20932
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-websearch_2.22.0-1+trixie_arm64.deb
-Size: 5442304
-MD5sum: bfb7dc9014103d731a4df81703933bb5
-SHA1: 023abd54ef2396eb38e32b0173e2b2abbeba5035
-SHA256: d0ef8d7c1a9259e619f751e18f60eb3bb126c82c222d589b8bf22b90618a5cc6
-
-Package: elephant-windows
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 21316
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-windows_2.22.0-1+trixie_arm64.deb
-Size: 5521096
-MD5sum: 13e67654c073a1edd46c70c1ac1a31e6
-SHA1: 77a902308933d578de20ebb4a6109d410160527f
-SHA256: 59f75786eded1ecfefc56ce5902584013de4dae285b6b7da21aed0353dfd9d01
-
-Package: elephant-wireplumber
-Version: 2.22.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20868
-Depends: elephant (= 2.22.0-1+trixie)
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/elephant
-Description: Elephant provider plugin for the walker application launcher.
- Installs the .so plugin into /usr/lib/elephant/.
-Filename: pool/elephant-2.22.0/elephant-wireplumber_2.22.0-1+trixie_arm64.deb
-Size: 5447732
-MD5sum: b17a2fdeb8a2214b282d7920b408576d
-SHA1: ec1945fbdafb495b9c045173b23dd76549b70f4d
-SHA256: 17d7a37aefa0ee80695d97702166ea5c8dc4eeec03130af21846b1afe4a78946
-
 Package: python3-terminaltexteffects
 Version: 0.15.0-1+trixie
 Architecture: all
@@ -713,26 +339,6 @@ MD5sum: f59f3eed119164ff17e316bbcc049877
 SHA1: 1f524a416f21ae4b4d6026b9673c669e04f97299
 SHA256: e2ec237bb7864da7e1c4f34f8a3348218af8274e6f7b027a13fc5024d43d6e11
 
-Package: kitty
-Version: 0.48.2-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 110416
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.48.2/kitty_0.48.2-1+trixie_arm64.deb
-Size: 34184976
-MD5sum: 3490cfc1e173ee88bfb98273ed708a83
-SHA1: 303e331466f8357f9f05e732c4332995d583b1e3
-SHA256: 5e8427fcbef97058b446a385ea58b811a6b9e83be4c831779644df6eb42c8f3a
-
 Package: fonts-cascadia-mono-nf
 Version: 3.5.0-1+trixie
 Architecture: all
@@ -750,23 +356,6 @@ MD5sum: d3782856b194204105f3a97f572dd066
 SHA1: bdbf68bd920eb1c45398b1ac2626fa7b9c6389bf
 SHA256: f24d8627bc5ee297ffb1e0899f76b604e245c85d4a5ac6dca6fa732316dca18d
 
-Package: lazygit
-Version: 0.64.1-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 17872
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Simple terminal UI for git commands.
- Provides a keyboard-driven git interface inside any terminal.
-Filename: pool/lazygit-0.64.1/lazygit_0.64.1-1+trixie_arm64.deb
-Size: 4956482
-MD5sum: 807a251ec59e7cc661e6cf98b151908d
-SHA1: 4e87919483de2283e860bc47fc3d635404b8a6bd
-SHA256: 378bf699323d08b399938c826237b4096123714f61b5edecb90125f4353d9308
-
 Package: obsidian
 Version: 1.13.7-1+trixie
 Architecture: arm64
@@ -783,88 +372,6 @@ Size: 101068838
 MD5sum: 9a14af42e5e694e125a77482d7480047
 SHA1: 02baf1581da9cbe4c80810382df0197a3a11de7f
 SHA256: b77a0d4130bfae2a5a3b5c40ffff933843c4f2fed6224cd1dc7994b59aaf0693
-
-Package: cliamp
-Version: 1.63.2-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 31164
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-1.63.2/cliamp_1.63.2-1+trixie_arm64.deb
-Size: 8633182
-MD5sum: 1d3f91a8e334461b5c265695261c5888
-SHA1: 93e6685aed0746e337b016f87910362ed2f69d79
-SHA256: 96a7e7b05b0ac4b8c7aac32bcf44d19b8c3aa7b3c2665b8076408a99e23791e7
-
-Package: fastfetch
-Version: 2.67.1-1+trixie
-Architecture: arm64
-Depends: libc6 (>= 2.35)
-Description: Fast neofetch-like system information tool
- fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Maintainer: omakasui <packages@omakasui.org>
-Priority: optional
-Section: devel
-Installed-Size: 16884
-Filename: pool/fastfetch-2.67.1/fastfetch_2.67.1-1+trixie_arm64.deb
-Size: 4664936
-MD5sum: ec307dfbfee38ace0526ee5691aceb30
-SHA1: 690483a00fa5151dcd6f0ce67ceacd2a4e95daab
-SHA256: 6eca6ed5cf8a3ef42aeffc34ffd843eab5108b3d4ea2775175326e8a89558249
-
-Package: fzf
-Version: 0.74.3-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4624
-Conflicts: fzf
-Replaces: fzf
-Provides: fzf
-Section: utils
-Priority: optional
-Homepage: https://junegunn.github.io/fzf/
-Description: A general-purpose command-line fuzzy finder.
- Interactive filter for files, command history, processes, git commits
- and more.
-Filename: pool/fzf-0.74.3/fzf_0.74.3-1+trixie_arm64.deb
-Size: 1526534
-MD5sum: 4f1e092d4af3132fe2fb066fce4200fe
-SHA1: e86274ab4d132c391d53d444b57752cf2a4db47d
-SHA256: c1eb1376d75c5f8efd67408c28397c7edd0d49d88b6749ca449a73f88d86b40e
-
-Package: gum
-Version: 2.0.0-1+trixie
-Architecture: arm64
-Section: 
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 13332
-Homepage: https://charm.land/
-Description: no description given
-Filename: pool/gum-2.0.0/gum_2.0.0-1+trixie_arm64.deb
-Size: 3658886
-MD5sum: 65b2440b0bbb5765b048e0bf1db0b416
-SHA1: a45f3c5151df49606083c937fcfe80a1e661c85d
-SHA256: c73da651bac324a163a7c0d25a6c67de0e45801a1e3a78ea009dd627e2f5135a
-
-Package: bitwarden-cli
-Version: 2026.8.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 134592
-Section: utils
-Priority: optional
-Homepage: https://github.com/bitwarden/clients
-Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
-Filename: pool/bitwarden-cli-2026.8.0/bitwarden-cli_2026.8.0-1+trixie_arm64.deb
-Size: 31062186
-MD5sum: efec0ab86dddc5e7e38aa3c7ae741b2a
-SHA1: 022af1cd2b25fdc8a44f5048a090128c748e8e08
-SHA256: a61438c364d37198026e51c5ee160a6dd41122e80b06ed6118b3942e50ff7ba3
 
 Package: localsend
 Version: 1.18.2-1+trixie
@@ -982,25 +489,6 @@ MD5sum: 2f50aaf8c7383a6c4f9c1bf34bd1d44d
 SHA1: e63baffccb4b52b3714fe245a9bc224ddb804885
 SHA256: 6477c9c1cdfc378176b7e43cb3d632c4f69500ecedf635a5d93046e850748a59
 
-Package: xwayland-satellite
-Version: 0.8.2-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 4916
-Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
-Section: x11
-Priority: optional
-Homepage: https://github.com/Supreeeme/xwayland-satellite
-Description: Rootless Xwayland integration for Wayland compositors.
- Grants rootless Xwayland support to any Wayland compositor implementing
- xdg_wm_base and viewporter, without the compositor having to implement
- Xwayland handling itself.
-Filename: pool/xwayland-satellite-0.8.2/xwayland-satellite_0.8.2-1+trixie_arm64.deb
-Size: 1492066
-MD5sum: f83867c3739146bb9bcac83e8458bd51
-SHA1: 144545136e7aee0d18b7c3d14171106705b42467
-SHA256: 32adb85645c18d10a075393f48db98bf31f9ff40d36f24b279f617b570d31dd0
-
 Package: alacritty
 Version: 0.17.0-1+trixie
 Architecture: arm64
@@ -1019,23 +507,6 @@ Size: 9808018
 MD5sum: 5b0b67c52418a8165f9095127f1437b0
 SHA1: 6b63fb92b583ffc3d25f379f8e535a08b16561a6
 SHA256: ace825a00c6f5eae9539664a95bec1868dd459cae51395e3dcbcd6b5284ac4ed
-
-Package: walker
-Version: 2.17.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8416
-Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpoppler-glib8t64 (>= 0.18.0), elephant
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.0/walker_2.17.0-1+trixie_arm64.deb
-Size: 2084998
-MD5sum: 42758d3e051b98d6938d1cdc32782658
-SHA1: ef5c0ff327cf519d1116b06cc1f29a58fcf72897
-SHA256: 508debf08d92c15a2b6f72523a7ca0d95d5d28b1a0db5c9020fe2b558b452b88
 
 Package: ghostty
 Version: 1.3.1-1+trixie
@@ -1114,6 +585,75 @@ MD5sum: 4e7badcc441cf13d5ba4aa6d80eec811
 SHA1: 799db80fa3561f156d61c2ead0090acfd12683ce
 SHA256: 6a94f253ebff93db21adb8bb2b03cef3159a52ad2c292bafd463ed866d41fd49
 
+Package: fzf
+Version: 0.74.4-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 5072
+Conflicts: fzf
+Replaces: fzf
+Provides: fzf
+Section: utils
+Priority: optional
+Homepage: https://junegunn.github.io/fzf/
+Description: A general-purpose command-line fuzzy finder.
+ Interactive filter for files, command history, processes, git commits
+ and more.
+Filename: pool/fzf-0.74.4/fzf_0.74.4-1+trixie_arm64.deb
+Size: 1718430
+MD5sum: b7ef2825b9c7c001c96849d8388721f5
+SHA1: 82ca0563e2d86a8208c15f9fe769bba0e0e9f531
+SHA256: 1ebf8178fabdddee5aa7345ddabd7c92f471bd9806b96bb06732f9b47732f959
+
+Package: lazygit
+Version: 0.65.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 18128
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Simple terminal UI for git commands.
+ Provides a keyboard-driven git interface inside any terminal.
+Filename: pool/lazygit-0.65.1/lazygit_0.65.1-1+trixie_arm64.deb
+Size: 4988492
+MD5sum: 62fc6a6e000511a9784db3e4209153bd
+SHA1: 3d8db259985edace2209a7cf94bb16452b89e019
+SHA256: be3aed9b95dbfa88e4d72f003c357c58a3e6192a9d68176502d60b8a26225a3e
+
+Package: zed
+Version: 1.20.2-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 298888
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.20.2/zed_1.20.2-1+trixie_arm64.deb
+Size: 87194136
+MD5sum: 72ed8756bef639cdb27aea9e255479b4
+SHA1: f8ad54b6ab3f61e9ef5c5b8644bd098ce68916cf
+SHA256: 4e7a94a2ac8a7aeeb99f3ec1dda28049db6ca2e4e676fa81a961c8eaeb3d312a
+
+Package: bitwarden-cli
+Version: 2026.9.0-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 135308
+Section: utils
+Priority: optional
+Homepage: https://github.com/bitwarden/clients
+Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
+Filename: pool/bitwarden-cli-2026.9.0/bitwarden-cli_2026.9.0-1+trixie_arm64.deb
+Size: 31177320
+MD5sum: 33086922a83b329861b9c81bb38d5924
+SHA1: 36147817dc73edd2449bfa5099ade9a01c589be1
+SHA256: 67df8db371b71bc9bcb1add3c97e509bf0b37f2f38de276e28db9ab42bb79512
+
 Package: dbeaver-ce
 Version: 26.2.1-1+trixie
 Architecture: arm64
@@ -1169,6 +709,489 @@ MD5sum: 4bcce6cc62a6c1225a052c8e91600591
 SHA1: 877c74c4e1e76a45b588543cc3799068aa361912
 SHA256: c21464bb91e8e1e4e6638468b677eea783d071739a85850e7bb729b7ea978968
 
+Package: gum
+Version: 2.0.2-1+trixie
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 13332
+Homepage: https://charm.land/
+Description: no description given
+Filename: pool/gum-2.0.2/gum_2.0.2-1+trixie_arm64.deb
+Size: 3658864
+MD5sum: a8da173d40bc7b0b59e3f75fe5f85c9a
+SHA1: 9b71d2db795b2d84d386eeb083314bf86ade6595
+SHA256: a794effc56ca4afc76fbb26c36bd435e8dfe50eefe96b5650b37bbf2b92e9154
+
+Package: xwayland-satellite
+Version: 0.8.3-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 5044
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxcb-cursor0 (>= 0.0.99), libxcb1 (>= 1.11.1), xwayland
+Section: x11
+Priority: optional
+Homepage: https://github.com/Supreeeme/xwayland-satellite
+Description: Rootless Xwayland integration for Wayland compositors.
+ Grants rootless Xwayland support to any Wayland compositor implementing
+ xdg_wm_base and viewporter, without the compositor having to implement
+ Xwayland handling itself.
+Filename: pool/xwayland-satellite-0.8.3/xwayland-satellite_0.8.3-1+trixie_arm64.deb
+Size: 1519502
+MD5sum: 2659dd806dab6fe8ee4bfbba0635b4d6
+SHA1: 08cfa3f30bb4a8b75448fff0dad6af57d2902afc
+SHA256: af0f0be89f2a80aedd0ff5f8313edd69a9ffdb49042c6c5d2ee267cd48d3ec45
+
+Package: walker
+Version: 2.17.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8912
+Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.1/walker_2.17.1-1+trixie_arm64.deb
+Size: 2188140
+MD5sum: b8e073955207cede16f28e8d4b571730
+SHA1: aab41468d0a8717c7a9d6351e312813b7edf8a77
+SHA256: a58757cfc05006de3bb03d4827780baa2333a924a1fe645f9c3f37eddb2931d0
+
+Package: elephant
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 21300
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Data provider daemon for application launchers.
+ Communicates via Unix sockets and Protocol Buffers.
+ Install provider packages to add functionality.
+Filename: pool/elephant-2.22.1/elephant_2.22.1-1+trixie_arm64.deb
+Size: 6101920
+MD5sum: 4c25eac3cc3df82e3d16c6e7ba2d1312
+SHA1: 6e7ea9775153a9b98df433c8101bd52e4b73a7e0
+SHA256: d0790b7ed88f9a87066f9200b8b30044703f6971ae3123c329dd4b25b69ca69e
+
+Package: elephant-1password
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22736
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-1password_2.22.1-1+trixie_arm64.deb
+Size: 5905136
+MD5sum: 2cf58ae9cf5962491792114c6ac3dff2
+SHA1: a9bf732e7e8f11b6abf2250e52325decbd1c8770
+SHA256: 6753607360657f4004c8db8354f042b95115ea8928cb68a53f59374ccbc868f7
+
+Package: elephant-bitwarden
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22748
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-bitwarden_2.22.1-1+trixie_arm64.deb
+Size: 5912708
+MD5sum: 2107aa8ad0b33ff31ef0eb94f80ebe3b
+SHA1: 634939ebbbb62b9b2c684d8f450375dfe91d1fd3
+SHA256: 2cb235c3f5314963eabf2fae8d7272976fed9fa4c111ad4544faeecaf979d0ab
+
+Package: elephant-bluetooth
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22760
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-bluetooth_2.22.1-1+trixie_arm64.deb
+Size: 5913452
+MD5sum: cbde9996a65aee430df2b338ac787f05
+SHA1: 8cf5f6e0aa9e1d18d9afc608a6eddee2b5671a6c
+SHA256: 52e2195fcfaec914de3ac3f253e7704d00caa5ae58962dfbef4fc76a6c24f8f0
+
+Package: elephant-bookmarks
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22828
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-bookmarks_2.22.1-1+trixie_arm64.deb
+Size: 5942040
+MD5sum: b138930008c440fe4284f5a3c4da9515
+SHA1: e62eacae52cef00589d9db55e19fcc518040a96b
+SHA256: 300aae92241d85daa49bab1c03cf28fa3fe420e2f3aca314dfff9265f6c51908
+
+Package: elephant-calc
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22716
+Depends: elephant (= 2.22.1-1+trixie), qalc
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant calc provider plugin for the walker application launcher.
+ Installs calc.so into /usr/lib/elephant/. Requires qalc.
+Filename: pool/elephant-2.22.1/elephant-calc_2.22.1-1+trixie_arm64.deb
+Size: 5899664
+MD5sum: eedc93a5403c847fe47c0a743b5ffecc
+SHA1: e00726df2604161a7c1c352a791bbea05fc05ded
+SHA256: bb060431550a7eb5b7d4406b31da06b2c642c2aad9a624050b30a443cc23b336
+
+Package: elephant-clipboard
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 24916
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-clipboard_2.22.1-1+trixie_arm64.deb
+Size: 6113492
+MD5sum: 9372977fa40bfe13bc7fb6e8d9750e10
+SHA1: a5e9f1873ede1031fe7193e02bdf90f6ddba5dd4
+SHA256: c5179ffba30fd3309e01e25a3334e9118252830558879f0667d4da2f6ec8e269
+
+Package: elephant-desktopapplications
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 23308
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-desktopapplications_2.22.1-1+trixie_arm64.deb
+Size: 6029040
+MD5sum: c0d1a65b42b3f6e3aaac9b40d5536150
+SHA1: 3cc7d0821684795e8b8639e7722efb622a86728e
+SHA256: 1ddf5b1e0f48b300569d3ea3872167d45420e439ded0663046f1b4f1993a96e2
+
+Package: elephant-files
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 24596
+Depends: elephant (= 2.22.1-1+trixie), fd-find
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant files provider plugin for the walker application launcher.
+ Installs files.so into /usr/lib/elephant/. Requires fd-find.
+Filename: pool/elephant-2.22.1/elephant-files_2.22.1-1+trixie_arm64.deb
+Size: 6582020
+MD5sum: d6a1fafc5278442728d0643b7c039790
+SHA1: cfdfacd920e76cc103523122a85ff64ecbbea67f
+SHA256: 685bbaea5bc1b9b4cc52ea8af8745ce4e1ca1b48a42e8e5f7274d3947e3573fc
+
+Package: elephant-menus
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22584
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-menus_2.22.1-1+trixie_arm64.deb
+Size: 5864444
+MD5sum: c1a0bff89c0a29a8512e46a31b6afdfe
+SHA1: 2db075a7630450eac5bb0d32f56b314a75971305
+SHA256: d14056c3d93a07405a7f500ad05f7aca51414f342311130cc0b7f8c3544ff110
+
+Package: elephant-niriactions
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22756
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-niriactions_2.22.1-1+trixie_arm64.deb
+Size: 5913792
+MD5sum: 4254cfc183c9f326edda45bba92f8851
+SHA1: 04c63f9e171a7505f1ea0a7f1fc17e5f6f297edb
+SHA256: 09af327e8aedc592b70f4c60df31dcb050b9186acf2fc6cc62947ba06f0e36e2
+
+Package: elephant-nirisessions
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22744
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-nirisessions_2.22.1-1+trixie_arm64.deb
+Size: 5913796
+MD5sum: ccbe19dce0c483486c765e811ab56dc6
+SHA1: 36331e5eca35241115cdc7c6c59001a12b39d910
+SHA256: 65b2d21ebce74522dbee00123935d3b400a88f13fbd73a492f01e9ad1b75e466
+
+Package: elephant-playerctl
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22752
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-playerctl_2.22.1-1+trixie_arm64.deb
+Size: 5910048
+MD5sum: 239ac9c8c775304e4d9080e5a4b29b11
+SHA1: f027d1fc2386cc66f1a6d897056dc3fb55f3387d
+SHA256: 26d565c8a94050f8b3c5a5a14a10001c75cc6cf5e24995973d645c1820c64455
+
+Package: elephant-providerlist
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22776
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-providerlist_2.22.1-1+trixie_arm64.deb
+Size: 5918600
+MD5sum: c2314e15bcac8e7adc5ee7749a034f81
+SHA1: 8111cf3f398a2a2754c0bf4bef00c1a38e5acd7e
+SHA256: 9a24eb9240939d3092b8821b693f4616b3d8e97e15e7f13e1127d888970aa373
+
+Package: elephant-runner
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22760
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-runner_2.22.1-1+trixie_arm64.deb
+Size: 5917516
+MD5sum: fefd51bfcde187028deb5610cbe425a5
+SHA1: 1acd40d60654fe6c0376b18e1a16df6c4f79c4d8
+SHA256: 972bcfb4123f739e3c11fb263ca3ac7d45f1a4e4e9f0a57bb6e1294a894a8479
+
+Package: elephant-snippets
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22732
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-snippets_2.22.1-1+trixie_arm64.deb
+Size: 5903476
+MD5sum: 7dd96093eadde7aea3da9ab4b9f17fee
+SHA1: 159dd9b2c37508a4abaf042f65c732f50d131bf9
+SHA256: e716aea87534ddd65ff85bf03337cc5bce880fb0d210bf6a4c6982078fb8442d
+
+Package: elephant-symbols
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 143364
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-symbols_2.22.1-1+trixie_arm64.deb
+Size: 14876108
+MD5sum: cb7524da9f00aafe6d6d4fa74efa915b
+SHA1: 7f1d4b4589219ee6f80c56b21a41d467f6a91951
+SHA256: c33e25ef9839426abd552544f822ea04853311f06d972eb26e7f3255b0681263
+
+Package: elephant-todo
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 31892
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-todo_2.22.1-1+trixie_arm64.deb
+Size: 7805888
+MD5sum: 00b49118b6df1743a1e9292de1f8386f
+SHA1: b0bb4097d3c669523152f4595ea2ce24dc064eef
+SHA256: 4350afce333008f26cfbec1205f902b0cc767cc1b00c5d8413d746b758a0f3f5
+
+Package: elephant-unicode
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 24876
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-unicode_2.22.1-1+trixie_arm64.deb
+Size: 6102460
+MD5sum: 325942cd6734def3d5bddd6258a348a9
+SHA1: 2de015dacaceec7da95b038928648bc5ddcdba1e
+SHA256: 0aec0f5e1c438e44c0f2e6aa7d4f22b120b422bbfc893fb458a6d7a677f283a9
+
+Package: elephant-websearch
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22804
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-websearch_2.22.1-1+trixie_arm64.deb
+Size: 5934316
+MD5sum: e7725c14e926ad4913c6538011b592b2
+SHA1: f2ac0252f60171fe71650e39adbc9815000d1eb7
+SHA256: c76194a06243d59b9f0e4245bed807a7505d4557c0a4a8d57fba1e2f4c0eab9d
+
+Package: elephant-windows
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 23204
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-windows_2.22.1-1+trixie_arm64.deb
+Size: 5998636
+MD5sum: 6d26df0274e26e3fa5f17944bb3a1a04
+SHA1: 0d9c586732066d0f3f3b05e379368c797fdb1bbe
+SHA256: 20cd1f2b0f5ee1b68c70a8086918c502e76b856ca68e2892f83e65383b0c3006
+
+Package: elephant-wireplumber
+Version: 2.22.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22768
+Depends: elephant (= 2.22.1-1+trixie)
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/elephant
+Description: Elephant provider plugin for the walker application launcher.
+ Installs the .so plugin into /usr/lib/elephant/.
+Filename: pool/elephant-2.22.1/elephant-wireplumber_2.22.1-1+trixie_arm64.deb
+Size: 5921668
+MD5sum: 2ad65fa62dee99f91cfee83807a44d32
+SHA1: 3e5a8ca681eab0ef130b2c9d266ca477c5b73c05
+SHA256: f4a63ea49fa0d0bc1213fdb930a7f626b5d60b1493749a8225bae244389aa664
+
+Package: foot
+Version: 1.28.0-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 876
+Depends: libc6 (>= 2.38), libfcft4t64 (>= 3.3.1), libfontconfig1 (>= 2.12.6), libpixman-1-0 (>= 0.30.0), libutf8proc3 (>= 2.9.0), libwayland-client0 (>= 1.20.0), libwayland-cursor0 (>= 1.0.2), libxkbcommon0 (>= 1.0.0), ncurses-term
+Recommends: libutempter0, xdg-utils
+Suggests: foot-themes, foot-extra-terminfo, libnotify-bin
+Provides: x-terminal-emulator
+Section: x11
+Priority: optional
+Homepage: https://codeberg.org/dnkl/foot
+Description: Fast, lightweight and minimalistic Wayland terminal emulator.
+ Supports server/client mode, sixel graphics, scrollback search,
+ URL detection and grapheme shaping.
+Filename: pool/foot-1.28.0/foot_1.28.0-1+trixie_arm64.deb
+Size: 320276
+MD5sum: 2c176b1bec676fe62026bc6897b49154
+SHA1: 1f83392f2602e32f07d9e5e05e707555a87c2562
+SHA256: 13a52c361794f461b21e8c524c44d32a46f0176182fcd7e21cd3a3c56458780d
+
+Package: foot-themes
+Version: 1.28.0-1+trixie
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 364
+Enhances: foot
+Section: x11
+Priority: optional
+Homepage: https://codeberg.org/dnkl/foot
+Description: Color themes for the foot terminal emulator.
+ Predefined color schemes for foot. To use one, include it from foot.ini:
+ .
+  [main]
+  include=/usr/share/foot/themes/<theme>
+Filename: pool/foot-themes-1.28.0/foot-themes_1.28.0-1+trixie_all.deb
+Size: 16042
+MD5sum: 25fd1a4dbe3f94399095664483cdd57b
+SHA1: ce2746d2696dc2b2a2ea8abe48cc4466e2e8e63a
+SHA256: 45b792d44e85ca1c63f29eb368cb6847e0c560c2ba9332244972ca479b0236c7
+
+Package: fastfetch
+Version: 2.69.0-1+trixie
+Architecture: arm64
+Depends: libc6 (>= 2.35)
+Description: Fast neofetch-like system information tool
+ fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Maintainer: omakasui <packages@omakasui.org>
+Priority: optional
+Section: devel
+Installed-Size: 19628
+Filename: pool/fastfetch-2.69.0/fastfetch_2.69.0-1+trixie_arm64.deb
+Size: 5455338
+MD5sum: 9ef2fe403a9050f0a65bc5c092da4f15
+SHA1: a67b2cb8361155ecf427d17956f6e29848b1e7d2
+SHA256: df8fb5554635e6cbaf3983e6443867b6b37fe7a936ebb7057d5d58bc6e8a6b9b
+
 Package: chezmoi
 Version: 2.73.0-1+trixie
 Architecture: arm64
@@ -1187,6 +1210,22 @@ Size: 11429560
 MD5sum: 1a661bf8211dd12dbcc31b83a3021105
 SHA1: a372a27e3ee526f63c996db357a1e6621983888a
 SHA256: 60357237b6e77997c9100f576a2eeab868ac86dc9a2a7abb0c74b7dfa76f26aa
+
+Package: cliamp
+Version: 2.3.0-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 34920
+Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-2.3.0/cliamp_2.3.0-1+trixie_arm64.deb
+Size: 9815672
+MD5sum: 528469263508a8649f3ff21d2306f813
+SHA1: 4f20450b591b9efec2418447577eb93e27f0170f
+SHA256: 08184dd47bb884ec47c755e1b97f62a436e191b941235613c19b217c8ef265a3
 
 Package: gh
 Version: 2.102.0-1+trixie
@@ -1208,22 +1247,25 @@ MD5sum: eeb26f4e249aff81fa3447669b12f13c
 SHA1: da9cd782b3477dc0388dedb30830b4e241387818
 SHA256: 929d2352f4e605b69b242653f844567efdfe92477d6f67e54e67e6f96b63e098
 
-Package: zed
-Version: 1.22.0-1+trixie
+Package: kitty
+Version: 0.49.2-1+trixie
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 289632
-Section: editors
+Installed-Size: 158376
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
 Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.22.0/zed_1.22.0-1+trixie_arm64.deb
-Size: 85944148
-MD5sum: 0ebec81e21932ab1151e17d496849f21
-SHA1: 6f05ce8922731dfb994ae762114bd49911133721
-SHA256: df283bc3d76ec6d47b1d9de84746a9a0a5228c1e89167ad0200538cf5a36d086
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.49.2/kitty_0.49.2-1+trixie_arm64.deb
+Size: 49081250
+MD5sum: 984cb8b7708f0c9f79837f71676b9ef0
+SHA1: b8c2ca43a740c16b39e869478f1aba983e7bc275
+SHA256: 62852f37e4facd753a2d4ae19afdda0825cf7779f9a686a95766c9fb005bdff5
 
 Package: opencode
 Version: 1.18.34-1+trixie
