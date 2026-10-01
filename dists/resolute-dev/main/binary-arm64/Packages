@@ -1188,3 +1188,21 @@ MD5sum: bed261c9aba0e01d0b9ecd2f3b109607
 SHA1: 039eaaa15b0020780c6c2f2c490257cee5a12b3b
 SHA256: 004216203733fa167a37ee8e7bcb64224d9d718f8b65bf5b4151c0bdd6ff5325
 
+Package: omakasui-archive-keyring
+Version: 1.1.0
+Architecture: all
+Maintainer: Luca Pattocchio <info@lucapattocchio.dev>
+Installed-Size: 11
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/omakasui/keyrings
+Description: GPG keyring for the Omakasui packages repository
+ Provides the public key used to authenticate packages from
+ packages.omakasui.org, installed as /usr/share/keyrings/omakasui-packages.gpg.
+Filename: pool/omakasui-archive-keyring-1.1.0/omakasui-archive-keyring_1.1.0-1+resolute_all.deb
+Size: 2466
+MD5sum: f04b2003cbefcf1c77f4784faa3d1f0c
+SHA1: 023f0bfed98e09fbd9d0081dd6a8c6f07be93eb3
+SHA256: b63159a9fd4eeda24a590eeeed13b397a3b2cf955e5e7fd7c1ba8234f605de1a
+
