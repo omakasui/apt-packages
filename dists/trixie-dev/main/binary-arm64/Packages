@@ -1269,24 +1269,6 @@ MD5sum: 48195b2ca3cedaa06a92260b0587e6bb
 SHA1: 944daf8c83c97de470711b134b8fb77facfa678a
 SHA256: cd26eb1d40a632557a6bc91aac234211a366bed0c09adf020461fdccb8b1efca
 
-Package: omakasui-archive-keyring
-Version: 1.1.0
-Architecture: all
-Maintainer: Luca Pattocchio <info@lucapattocchio.dev>
-Installed-Size: 11
-Section: misc
-Priority: optional
-Multi-Arch: foreign
-Homepage: https://github.com/omakasui/keyrings
-Description: GPG keyring for the Omakasui packages repository
- Provides the public key used to authenticate packages from
- packages.omakasui.org, installed as /usr/share/keyrings/omakasui-packages.gpg.
-Filename: pool/omakasui-archive-keyring-1.1.0/omakasui-archive-keyring_1.1.0-1+trixie_all.deb
-Size: 2568
-MD5sum: 06a8b58e863206bb6d49194763265d38
-SHA1: 34fb694c77583d4e125b5a8f52b5dcf6fbd40998
-SHA256: aac63eb18830d24f555da0e695576186893c75f972df03f0ac2175428b9ece7d
-
 Package: bitwarden-cli
 Version: 2026.9.1-1+trixie
 Architecture: arm64
@@ -1301,4 +1283,23 @@ Size: 31221682
 MD5sum: dd1678831810e09dc9f8ff680b289567
 SHA1: 9aae890d9fd4ba838d321c660ca046d83f5a5d07
 SHA256: 07d58f26a1f55ca80b4281b050fc923e3ef665ef006b14569d11ea4f01b5ec24
+
+Package: omakasui-archive-keyring
+Version: 1.2.0
+Architecture: all
+Maintainer: Luca Pattocchio <info@lucapattocchio.dev>
+Installed-Size: 20
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/omakasui/keyrings
+Description: GPG keyring and APT source for the Omakasui packages repository
+ Provides the public key used to authenticate packages from
+ packages.omakasui.org, installed as /usr/share/keyrings/omakasui-packages.gpg,
+ and the matching source /etc/apt/sources.list.d/omakasui.sources.
+Filename: pool/omakasui-archive-keyring-1.2.0/omakasui-archive-keyring_1.2.0-1+trixie_all.deb
+Size: 3204
+MD5sum: 67bb32107f8fc52f1577a3ec1d5a7a30
+SHA1: 1b6ce23355a7a1c5aaa9a77cdd70f58474e7bdd9
+SHA256: 7de145f81328a5a879c7b06921f8e5b1984bcac5580ee4dbf03a3231ec0f58ab
 
