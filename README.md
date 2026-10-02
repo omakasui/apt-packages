@@ -125,12 +125,9 @@ The `channel` field is `stable` (default) or `dev`. Pass `--channel dev` to `reg
 ## User setup
 
 ```bash
-curl -fsSL https://keyrings.omakasui.org/omakasui-packages.gpg.key \
-  | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/omakasui-packages.gpg
-
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/omakasui-packages.gpg] \
-  https://packages.omakasui.org $(. /etc/os-release && echo $VERSION_CODENAME) main" \
-  | sudo tee /etc/apt/sources.list.d/omakasui.list
-
+CODENAME=$(. /etc/os-release && echo $VERSION_CODENAME)
+wget -qO /tmp/omakasui-archive-keyring.deb \
+  https://packages.omakasui.org/omakasui-archive-keyring/$CODENAME.deb
+sudo dpkg -i /tmp/omakasui-archive-keyring.deb
 sudo apt-get update
 ```
