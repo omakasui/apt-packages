@@ -1,3 +1,11 @@
 name            = "packages-omakasui-org"
 main            = "worker.js"
 compatibility_date = "2025-12-01"
+workers_dev     = false
+
+# Only these paths go through the worker; everything else is served by
+# GitHub Pages directly.
+routes = [
+  { pattern = "packages.omakasui.org/pool/*", zone_name = "omakasui.org" },
+  { pattern = "packages.omakasui.org/omakasui-archive-keyring/*", zone_name = "omakasui.org" },
+]
