@@ -524,21 +524,6 @@ MD5sum: c8753021b2134322a7c1fa3de4a31c89
 SHA1: 71ef6148743f162d3b91543dbc08318dab68ba7b
 SHA256: f66d634374506e61f5325c91fc0f7d1faafb279d35e0ce1fc4a66fdcf25c8650
 
-Package: bitwarden-cli
-Version: 2026.9.0-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 135308
-Section: utils
-Priority: optional
-Homepage: https://github.com/bitwarden/clients
-Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
-Filename: pool/bitwarden-cli-2026.9.0/bitwarden-cli_2026.9.0-1+noble_arm64.deb
-Size: 31177318
-MD5sum: e8dba7f4292461dd3f3454a9cf70a341
-SHA1: ae3354d188bcd244d43bf7b8331784e8ce710225
-SHA256: 32f26825c28cc0f4bd85b103928b5a4a602679d2e5b54e822c992f04b6a5adde
-
 Package: dbeaver-ce
 Version: 26.2.1-1+noble
 Architecture: arm64
@@ -1162,4 +1147,19 @@ Size: 2466
 MD5sum: f04b2003cbefcf1c77f4784faa3d1f0c
 SHA1: 023f0bfed98e09fbd9d0081dd6a8c6f07be93eb3
 SHA256: b63159a9fd4eeda24a590eeeed13b397a3b2cf955e5e7fd7c1ba8234f605de1a
+
+Package: bitwarden-cli
+Version: 2026.9.1-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 135432
+Section: utils
+Priority: optional
+Homepage: https://github.com/bitwarden/clients
+Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
+Filename: pool/bitwarden-cli-2026.9.1/bitwarden-cli_2026.9.1-1+noble_arm64.deb
+Size: 31216106
+MD5sum: 7e171782da763f942edc3306cb070229
+SHA1: ee9d6f8023f4303886ba87612c0122fb4f1af830
+SHA256: dc31bea82d24385e943dbdedcb6272cf441be77f47d1e179f358554b8991cd80
 
