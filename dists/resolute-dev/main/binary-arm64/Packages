@@ -1207,3 +1207,37 @@ MD5sum: 44b7dd0d1ae44bc68a1fc8fbf863746e
 SHA1: 5d7f2cd3dd48192bdaf52c20e750d4e2ddc205cb
 SHA256: 67d87f508ac88fef0326ad234392796f1a8ab5922867e5bb0101edd17f74cbf3
 
+Package: television
+Version: 0.15.9-1+resolute
+Architecture: arm64
+Homepage: https://github.com/alexpasmantier/television
+Section: utils
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7484
+Depends: libc6:arm64 (>= 2.39)
+Description: A very fast, portable and hackable fuzzy finder for the terminal
+ Television is a portable and hackable fuzzy finder for the terminal.
+ .
+ It lets you search in real time through any kind of data source (called
+ "channels") such as:
+ .
+     files and directories
+     code
+     notes
+     processes
+     git repositories
+     environment variables
+     docker containers
+     ...and much more
+ .
+ .
+ with support for previewing results, customizable actions and keybindings, and
+ integration with your favorite
+ shell and editor.
+Filename: pool/television-0.15.9/television_0.15.9-1+resolute_arm64.deb
+Size: 2819436
+MD5sum: 68b71fbcc93f3d5b1517475191c2b2df
+SHA1: 5763ba4656e5ae3128eb76b3b253119d09abe2f5
+SHA256: ee568e0d2419b274b845be4a5253b7c5e713a03ab48aa5c739dbf8adbf5dd950
+

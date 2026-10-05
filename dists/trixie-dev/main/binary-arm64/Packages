@@ -1303,3 +1303,37 @@ MD5sum: 2dd571bef78e3da7db8d11d33b2a0b1e
 SHA1: 949aa8ee49d258a7f822b711a35ff4b95a62daa4
 SHA256: 4e4bc4722d9e06c9c2438010fcb2d53e066b5f275e3e67e5855a0893e0169e0b
 
+Package: television
+Version: 0.15.9-1+trixie
+Architecture: arm64
+Homepage: https://github.com/alexpasmantier/television
+Section: utils
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 7484
+Depends: libc6:arm64 (>= 2.39)
+Description: A very fast, portable and hackable fuzzy finder for the terminal
+ Television is a portable and hackable fuzzy finder for the terminal.
+ .
+ It lets you search in real time through any kind of data source (called
+ "channels") such as:
+ .
+     files and directories
+     code
+     notes
+     processes
+     git repositories
+     environment variables
+     docker containers
+     ...and much more
+ .
+ .
+ with support for previewing results, customizable actions and keybindings, and
+ integration with your favorite
+ shell and editor.
+Filename: pool/television-0.15.9/television_0.15.9-1+trixie_arm64.deb
+Size: 2819324
+MD5sum: dd30679186473471c7855eef928733b7
+SHA1: c76129deb3c1187f37df5f2894c5a5020cf6bc28
+SHA256: a912c8cb067e4d8f5d34d1119d5e4ce4b41637c6b77d3f3639ac2f5b1787aee7
+
