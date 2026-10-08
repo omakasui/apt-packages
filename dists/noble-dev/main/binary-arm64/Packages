@@ -503,23 +503,6 @@ MD5sum: 7507ec292bad2aca2530f0b0c5b3c196
 SHA1: f4def8367bd0eba7f01507d8303ad7c99ba0a994
 SHA256: 4b0962832adc4532bfb9c953db66f26b5e70cca2a39ea085a05213ee170a49b3
 
-Package: walker
-Version: 2.17.1-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8912
-Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.79.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpoppler-glib8t64 (>= 0.18.0), elephant
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.1/walker_2.17.1-1+noble_arm64.deb
-Size: 2187144
-MD5sum: a2febd4c9e8d46924f88a8daa3b25c0b
-SHA1: 0f8a08178f05b6e05e73a74d8bd1120b6d801ca2
-SHA256: 5a92d8c48762168630cc8daa773fbfd0093ded8ab0a6f5c1a2f13fe631156b96
-
 Package: elephant
 Version: 2.22.1-1+noble
 Architecture: arm64
@@ -1197,4 +1180,21 @@ Size: 618606
 MD5sum: eb35f76dee135117698792d948b4db0d
 SHA1: feb6dd4f3df1456217a33ff884ce255670e295ed
 SHA256: 5af69dd478ac8dc7cb8ef2a80c10656fdf4d850556919a62c4d32e043c932dce
+
+Package: walker
+Version: 2.17.2-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8924
+Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.79.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.2/walker_2.17.2-1+noble_arm64.deb
+Size: 2187250
+MD5sum: 00c54773b5177c524eb249a55275781c
+SHA1: 89ca30abd5992cd7423d9b15063162e9d007b4b1
+SHA256: 62d1ececaae8ae53073a28e75d84ff38347133bb6178f973835c8455525b6ec7
 

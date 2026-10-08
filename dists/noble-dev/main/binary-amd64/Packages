@@ -503,23 +503,6 @@ MD5sum: a130cbb2192c7220f6bf00d95da43db9
 SHA1: eef85e2b7b26989ac02e8ca4b7a42d9ba52ff46c
 SHA256: 256301f8b26fd067b18d2af7efaa59d4436b7066681a5700d09fb8008f410403
 
-Package: walker
-Version: 2.17.1-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 9392
-Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.79.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.1/walker_2.17.1-1+noble_amd64.deb
-Size: 2313494
-MD5sum: 066fbdfd179543c405709ad640203469
-SHA1: af5a06707989a2d9d5580f40e2eb19c5173591c1
-SHA256: a434f3ed5983f03d6e66f24483d1b078efeb41f3715600886fb6a7bf0c19087d
-
 Package: elephant
 Version: 2.22.1-1+noble
 Architecture: amd64
@@ -1217,4 +1200,21 @@ Size: 636766
 MD5sum: eb491ffa55972726b56083ec7630752d
 SHA1: f5ac2c8a1ad907231709c131ec4702edc1abba05
 SHA256: 710ca2af6dcd1ef230af76ca9ccec002cb13e056b15d2b83b23a60c585e6ceac
+
+Package: walker
+Version: 2.17.2-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 9460
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.79.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.2/walker_2.17.2-1+noble_amd64.deb
+Size: 2319036
+MD5sum: 1656da72a147cfb2dcf9686083b5d841
+SHA1: 483ef562ff3f1696deaca5468b0646b791e5f116
+SHA256: e72898a1d7878c7707691d45f9bc0df6159006d3d2ad87bbc8086e5ac4e6031b
 

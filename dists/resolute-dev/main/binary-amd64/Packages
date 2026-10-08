@@ -505,23 +505,6 @@ MD5sum: a4a75611e30c199e9b9c96da29371575
 SHA1: bc3f49bce22ca448974ab9acdf993fa8eab47727
 SHA256: dc577004b15a8eb916ff376d2a98224dc618f0156c26c4b20468b2f51238be3c
 
-Package: walker
-Version: 2.17.1-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 9392
-Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.1/walker_2.17.1-1+resolute_amd64.deb
-Size: 2313458
-MD5sum: 4be2b6771af8b2162a46a203b95cd633
-SHA1: 124617f06637031819dcaff80bbe1f7eea73593d
-SHA256: fb4f25ccd911b655e9dec162658f88659201070896f434c81757b703fe0f235e
-
 Package: elephant
 Version: 2.22.1-1+resolute
 Architecture: amd64
@@ -1260,4 +1243,21 @@ Size: 646024
 MD5sum: bc2b05005da590356329af5478f771c1
 SHA1: 2631ffc57e472ed99225f7858aa3d993e37cd804
 SHA256: b768f495d09fdf6993523ae30c7519561f9f8e325585820fef0312d10e6e71d2
+
+Package: walker
+Version: 2.17.2-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 9460
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.2/walker_2.17.2-1+resolute_amd64.deb
+Size: 2319070
+MD5sum: ec81f51d1f523bc6ad375fb6522447a8
+SHA1: 377399d634d52f26319e3c021869f563ec145b4e
+SHA256: 4ae17fa2f0f295e399bcf7ec9846acfe8e12ac34a8d72941aafe0541f38f2efc
 

@@ -505,23 +505,6 @@ MD5sum: 51160e8bfb4264081e6ab2af712fcab7
 SHA1: f9109aa4938a2c695ac32e8aaceb1f9b66c9db27
 SHA256: b7cddc08b564fe81e7470625a05d23942a6a8116f8f94959b9c802c9f006857a
 
-Package: walker
-Version: 2.17.1-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 8912
-Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpoppler-glib8t64 (>= 0.18.0), elephant
-Section: utils
-Priority: optional
-Homepage: https://github.com/abenz1267/walker
-Description: Multi-purpose application launcher for Wayland.
- Fast, highly customizable, GTK4-based.
-Filename: pool/walker-2.17.1/walker_2.17.1-1+resolute_arm64.deb
-Size: 2188708
-MD5sum: 1c383e8edd797c789ff09db4f1699ed3
-SHA1: 2f85baea95a6deca5092913822ea933e9881da50
-SHA256: 7c0fdc7fe24f412309d5096b5b3f40b72593f3442b263517f32071cd180078d0
-
 Package: elephant
 Version: 2.22.1-1+resolute
 Architecture: arm64
@@ -1240,4 +1223,21 @@ Size: 619128
 MD5sum: c41e468d2b71b250da791120e9644659
 SHA1: bcbb807fb54cae2b654b762a39d7c299bf6f1e8d
 SHA256: 49169c6df0534ae693818e8955fcfc2b721d94a8044f212799a60690087a0d5d
+
+Package: walker
+Version: 2.17.2-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 8924
+Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.4.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpoppler-glib8t64 (>= 0.18.0), elephant
+Section: utils
+Priority: optional
+Homepage: https://github.com/abenz1267/walker
+Description: Multi-purpose application launcher for Wayland.
+ Fast, highly customizable, GTK4-based.
+Filename: pool/walker-2.17.2/walker_2.17.2-1+resolute_arm64.deb
+Size: 2186924
+MD5sum: 4092bc90027fa455f4b98a74e7c9b8c7
+SHA1: cc662edb2448569228e0465f7afe5c598f721929
+SHA256: 13dde96bb708dffe1613fc71852031831a855cc44b372ffc447320e37593ed2c
 
