@@ -355,27 +355,6 @@ MD5sum: 86c5063585153f98199dd62ac59a67c0
 SHA1: c849323095daf986cc9648944f688296a0de04d3
 SHA256: d0ae14a2ef5bad56deca5c16d397a8653dcd1f7d644245ff41c3d718e0a37940
 
-Package: tmux
-Version: 3.7c-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 1556
-Depends: libc6 (>= 2.42), libtinfo6 (>= 6.5)
-Conflicts: tmux
-Replaces: tmux
-Provides: tmux
-Section: admin
-Priority: optional
-Homepage: https://github.com/tmux/tmux
-Description: Terminal multiplexer.
- Allows creating multiple terminal sessions within a single window,
- with persistent sessions that survive disconnections.
-Filename: pool/tmux-3.7c/tmux_3.7c-1+resolute_arm64.deb
-Size: 542132
-MD5sum: 55e8edaf4d31dd253f3f8347605f25a0
-SHA1: 4c01f2bc1d77c1accad8304d01e420cc98bc3fe3
-SHA256: 23998512a1794c8b4926cd49e23bd46d7dccfb9e9d576f17e1c1d264e66ee129
-
 Package: alacritty
 Version: 0.17.0-1+resolute
 Architecture: arm64
@@ -1240,4 +1219,25 @@ Size: 86035274
 MD5sum: 9556ff5ac13a1cf778a6a25f56cda0e5
 SHA1: f16f98d6b8c52a7ab5b164924b53d8c04da9860c
 SHA256: 7607079751853b977b102c17a1013ef563a85323a16525e4edc3ba526b8b0442
+
+Package: tmux
+Version: 3.8-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 1828
+Depends: libc6 (>= 2.42), libtinfo6 (>= 6.5)
+Conflicts: tmux
+Replaces: tmux
+Provides: tmux
+Section: admin
+Priority: optional
+Homepage: https://github.com/tmux/tmux
+Description: Terminal multiplexer.
+ Allows creating multiple terminal sessions within a single window,
+ with persistent sessions that survive disconnections.
+Filename: pool/tmux-3.8/tmux_3.8-1+resolute_arm64.deb
+Size: 619128
+MD5sum: c41e468d2b71b250da791120e9644659
+SHA1: bcbb807fb54cae2b654b762a39d7c299bf6f1e8d
+SHA256: 49169c6df0534ae693818e8955fcfc2b721d94a8044f212799a60690087a0d5d
 
