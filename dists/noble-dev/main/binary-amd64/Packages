@@ -333,26 +333,6 @@ MD5sum: c4997e47fe9bfc89b2b004a737292ba8
 SHA1: 39f4cdd50b14d5f6854faa8caeaa81bfbaef43f1
 SHA256: a56f9471c19378e0f76cf8653f1a4aa227d673158d389e20f5c0ee9fcec83d5a
 
-Package: nvim
-Version: 0.12.5-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 40972
-Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.4)
-Conflicts: neovim
-Replaces: neovim
-Provides: neovim
-Section: editors
-Priority: optional
-Homepage: https://github.com/neovim/neovim
-Description: Neovim - hyperextensible Vim-based text editor.
- Conflicts with and replaces the distro neovim package.
-Filename: pool/nvim-0.12.5/nvim_0.12.5-1+noble_amd64.deb
-Size: 9122628
-MD5sum: fda21d22219939cdf497a695b92034be
-SHA1: 601356205a325fd690cce968dfeb843c364c1123
-SHA256: e3b1b3dd255e6f25676a0ad54fb6bbd6f0900556484570004132fcfe8f6608cf
-
 Package: alacritty
 Version: 0.17.0-1+noble
 Architecture: amd64
@@ -1217,4 +1197,24 @@ Size: 14837404
 MD5sum: b833c662cc6eef6fa641a42e10261645
 SHA1: 3d462a5648980d4db38b15a97a808a30465447f5
 SHA256: 28927d3558ad1cd2749ffee50c9d1af0a8adad4b2c6c4d9a2ff36bd1ba75dede
+
+Package: nvim
+Version: 0.12.6-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 40972
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.4)
+Conflicts: neovim
+Replaces: neovim
+Provides: neovim
+Section: editors
+Priority: optional
+Homepage: https://github.com/neovim/neovim
+Description: Neovim - hyperextensible Vim-based text editor.
+ Conflicts with and replaces the distro neovim package.
+Filename: pool/nvim-0.12.6/nvim_0.12.6-1+noble_amd64.deb
+Size: 9124536
+MD5sum: 92ad8b8b9f566c016a2f013d6a50bdee
+SHA1: 5da2cf4fdf3d218b5d24d857c55675874e6a7dd6
+SHA256: ad52f6597e9ead63afe6defeaee2671363f17bd042b0cfcb6d7f22061f0db715
 
