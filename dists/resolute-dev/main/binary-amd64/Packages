@@ -1115,25 +1115,6 @@ MD5sum: ec81f51d1f523bc6ad375fb6522447a8
 SHA1: 377399d634d52f26319e3c021869f563ec145b4e
 SHA256: 4ae17fa2f0f295e399bcf7ec9846acfe8e12ac34a8d72941aafe0541f38f2efc
 
-Package: glab
-Version: 1.122.0-1+resolute
-Architecture: amd64
-Section: 
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 52252
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.122.0/glab_1.122.0-1+resolute_amd64.deb
-Size: 14837626
-MD5sum: ab72392e42bb95ea64a48c66297c6afb
-SHA1: 751833f7908c385a3c2ca6cc0f0610216ba10f41
-SHA256: 6b9bf8dbc30c8e04d99e62f72d91db389ca09392b3fe6a8c4ffa89d8fafe4092
-
 Package: nvim
 Version: 0.12.6-1+resolute
 Architecture: amd64
@@ -1260,4 +1241,23 @@ Size: 91053928
 MD5sum: c8b08b646710b1e849e5346f7989b08d
 SHA1: c21dc21ccbb28b26f35cfadc80bb715f9b1fef4d
 SHA256: 86f79a73e3c714e5cb23f192be5353e554983264bf2f14e82a204340d4319a64
+
+Package: glab
+Version: 1.123.0-1+resolute
+Architecture: amd64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 52292
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.123.0/glab_1.123.0-1+resolute_amd64.deb
+Size: 14846540
+MD5sum: 2d01df6262815a7a079b6f9dfe2efdea
+SHA1: 0539a3cc8356c740288b3eac61bb4b20d6b979b1
+SHA256: 9e1962d576097948ed7f5719609434a8f6e986c2f6ab00461531ffefb685b2cb
 
