@@ -1127,6 +1127,21 @@ MD5sum: 984cb8b7708f0c9f79837f71676b9ef0
 SHA1: b8c2ca43a740c16b39e869478f1aba983e7bc275
 SHA256: 62852f37e4facd753a2d4ae19afdda0825cf7779f9a686a95766c9fb005bdff5
 
+Package: bitwarden-cli
+Version: 2026.9.1-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 135432
+Section: utils
+Priority: optional
+Homepage: https://github.com/bitwarden/clients
+Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
+Filename: pool/bitwarden-cli-2026.9.1/bitwarden-cli_2026.9.1-1+trixie_arm64.deb
+Size: 31221682
+MD5sum: dd1678831810e09dc9f8ff680b289567
+SHA1: 9aae890d9fd4ba838d321c660ca046d83f5a5d07
+SHA256: 07d58f26a1f55ca80b4281b050fc923e3ef665ef006b14569d11ea4f01b5ec24
+
 Package: omakasui-archive-keyring
 Version: 1.2.1
 Architecture: all
@@ -1250,23 +1265,6 @@ MD5sum: ebaa8a7fd6467355a118df44a1c780cd
 SHA1: 2c1c0ecefb550527dbb5f2d8503395b93dda712d
 SHA256: f66fc6d12e5b16f6738ba8382b6125ad8840141e4fbb9862aa866ecf4719ed76
 
-Package: opencode
-Version: 1.19.0-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 180920
-Depends: libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI and TUI.
- Supports multiple AI providers, MCP tools, and collaborative sessions.
-Filename: pool/opencode-1.19.0/opencode_1.19.0-1+trixie_arm64.deb
-Size: 45718076
-MD5sum: dc00b968403c36cfa1a2dd650e851cd9
-SHA1: 76fc0df525343875ffd50cf9b5dd8490f7653683
-SHA256: 95f688b0acbeef38706b480905248d4ffb7a1e57fc835ccceda5fab004e56be2
-
 Package: chezmoi
 Version: 2.73.1-1+trixie
 Architecture: arm64
@@ -1322,18 +1320,20 @@ MD5sum: 2d9478770f69c38188fd23a5a9b17ff9
 SHA1: 82f7b37aff8b8a1a60069b6c9ac17a5ba0a507ad
 SHA256: ed614c8a265bf70bcf96694f04a20a10d4ab286f6c4c6c6fcb044917a54248a4
 
-Package: bitwarden-cli
-Version: 2026.10.0-1+trixie
+Package: opencode
+Version: 1.19.2-1+trixie
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 135824
+Installed-Size: 181176
+Depends: libc6 (>= 2.34)
 Section: utils
 Priority: optional
-Homepage: https://github.com/bitwarden/clients
-Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
-Filename: pool/bitwarden-cli-2026.10.0/bitwarden-cli_2026.10.0-1+trixie_arm64.deb
-Size: 31321788
-MD5sum: e9321469c8c07c94ca212f99eb3efbf1
-SHA1: d3528c6ad62f2e8118f4598d18110b2f0841f3d8
-SHA256: 36861359197112013f570588617e57ae438b760b6add45b3e0c75fa6ab65e77f
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI and TUI.
+ Supports multiple AI providers, MCP tools, and collaborative sessions.
+Filename: pool/opencode-1.19.2/opencode_1.19.2-1+trixie_arm64.deb
+Size: 45722138
+MD5sum: 22d6f7c3d1c0b252def1e52a8e15fc66
+SHA1: f9a63f2e4187e2edd2f83b708820ea4be55d672d
+SHA256: 5ac5c73be7e8d94a8e7e0b480208463b55ca2a16093cf4582500868d83baa351
 

@@ -893,6 +893,21 @@ MD5sum: edbd57be3b56e34923d61d70e4391df5
 SHA1: d5ee17dd227f96afbede266a8a0a860c895df97c
 SHA256: 835f577d976cd80cbca86211d5ae5ae60821c948b6b25a7acbb384e44dfa830a
 
+Package: bitwarden-cli
+Version: 2026.9.1-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 139632
+Section: utils
+Priority: optional
+Homepage: https://github.com/bitwarden/clients
+Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
+Filename: pool/bitwarden-cli-2026.9.1/bitwarden-cli_2026.9.1-1+noble_amd64.deb
+Size: 32002462
+MD5sum: c2c2e0516e040d8fdc26a507b59d5c65
+SHA1: a3eb74ae446cd4e31463dc56ab610ebad275430d
+SHA256: 4d57cf6da38a65cb5dd1dee49dc49fb033dfc721b29bebc13aecf295f8ff61a5
+
 Package: omakasui-archive-keyring
 Version: 1.2.1
 Architecture: all
@@ -1077,23 +1092,6 @@ MD5sum: 520bff05e2df891c44694b678d87b365
 SHA1: f8383d8b00c2a5450620bdef3b4cf00055f04da9
 SHA256: 7b5e4f6f5859acba4f0b9b05872e7e22bec49d77f2f5066382d76b6e097081a9
 
-Package: opencode
-Version: 1.19.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 181408
-Depends: libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI and TUI.
- Supports multiple AI providers, MCP tools, and collaborative sessions.
-Filename: pool/opencode-1.19.0/opencode_1.19.0-1+noble_amd64.deb
-Size: 46255972
-MD5sum: a189f52d2f762ca491e2e4ea717dd2a3
-SHA1: 2057423038ba305aff10ece714687be5a4ed7ccc
-SHA256: 1f8d4fbb7da645b8e9ca97498f424924f40fc1ce35b82c6c528dbbc2c113ff28
-
 Package: lazygit
 Version: 0.66.1-1+noble
 Architecture: amd64
@@ -1203,18 +1201,20 @@ MD5sum: a5e46ba59b17a2a8bf84f1151d15961b
 SHA1: ea728c14d74b98b743ea99d4b412227a8c3dc7df
 SHA256: 54ba285cad2f508423a87c87c17cd6eff63539f1ee3068d91af7a3a5e65f56bc
 
-Package: bitwarden-cli
-Version: 2026.10.0-1+noble
+Package: opencode
+Version: 1.19.2-1+noble
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 140020
+Installed-Size: 181656
+Depends: libc6 (>= 2.34)
 Section: utils
 Priority: optional
-Homepage: https://github.com/bitwarden/clients
-Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
-Filename: pool/bitwarden-cli-2026.10.0/bitwarden-cli_2026.10.0-1+noble_amd64.deb
-Size: 32104106
-MD5sum: e64ff0942972cebaf9f51d713ab001d7
-SHA1: c6caf5381aa9fd2e2d159a1ad9e6c489b42ba0ad
-SHA256: 8e9392bee4371d8c4c6f37b267e6c6089fcd6af0ea35773cfa2b325ff247eee1
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI and TUI.
+ Supports multiple AI providers, MCP tools, and collaborative sessions.
+Filename: pool/opencode-1.19.2/opencode_1.19.2-1+noble_amd64.deb
+Size: 46264534
+MD5sum: 9eb92ded532473af0e18caf380185847
+SHA1: 23b78eb935089915c64d2bfc4d9145c9204db5e2
+SHA256: 37cf8ac2cd7575bb8c1bba481197eb3a13c46bef21d1a22b205fbfd2a562f0a9
 
