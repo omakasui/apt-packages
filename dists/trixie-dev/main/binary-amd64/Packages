@@ -1231,23 +1231,6 @@ MD5sum: c7acf68582f9f22b5d1fb5d58328b22d
 SHA1: 898402b091fa48128e87460381c0e895c08c9369
 SHA256: 967893100d9c272104b9b2145e2662a2608f93119c392bac471a0b0030654c45
 
-Package: lazygit
-Version: 0.66.1-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 19960
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Simple terminal UI for git commands.
- Provides a keyboard-driven git interface inside any terminal.
-Filename: pool/lazygit-0.66.1/lazygit_0.66.1-1+trixie_amd64.deb
-Size: 5798296
-MD5sum: ec46707f4e0d3beb428c04b4a4944a38
-SHA1: 34cbddcddf14b1c577fd4b629e657a35c3a91028
-SHA256: 5eb4eb03bb87f6cf1a761950b68d5d572b5ab7367fe606d4a82db28042fd164e
-
 Package: chezmoi
 Version: 2.73.1-1+trixie
 Architecture: amd64
@@ -1356,4 +1339,21 @@ Size: 46264582
 MD5sum: 92ad08f58cc4eb4f191b164f10c3a02d
 SHA1: 18f1f7ed9b0167e62a19b44f44b5e86e59b93c4d
 SHA256: 2f74acacbac4ac0ca14181d3ab9f5dac16d7b0db2a7fb5e05de300a90672d94b
+
+Package: lazygit
+Version: 0.66.2-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 20156
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Simple terminal UI for git commands.
+ Provides a keyboard-driven git interface inside any terminal.
+Filename: pool/lazygit-0.66.2/lazygit_0.66.2-1+trixie_amd64.deb
+Size: 5870680
+MD5sum: 2421f54b7b1f3d9a127f2840a2911ed6
+SHA1: 3c129b07dd71768eb2c4392306e031b88c73e2a2
+SHA256: 878c66f2d5741c39b3c3b25c4577679245d4b8eb39e7218e5aebe345f27fe841
 
