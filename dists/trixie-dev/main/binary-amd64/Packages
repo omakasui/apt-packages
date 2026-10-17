@@ -133,21 +133,6 @@ MD5sum: 0092f41de03cfaf7740c2ea3bbc5c0ca
 SHA1: 7daa7510d35e979ad750814a5f4a78c0563c3642
 SHA256: 77682c74df88f1d880bb7512843268a4eaa9e75cfc0b83406e4b07eb0257bf83
 
-Package: starship
-Version: 1.26.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 12212
-Section: shells
-Priority: optional
-Homepage: https://starship.rs
-Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell.
-Filename: pool/starship-1.26.0/starship_1.26.0-1+trixie_amd64.deb
-Size: 3964784
-MD5sum: 87a7f16148d1507a36897d40b45568bd
-SHA1: 2ba004587510ea58dd2270d89784031b7a7c2afc
-SHA256: 1164e050ffa25630851c5ded36c11c5e6a1467b5e5fc2ba2c184c7d306cdd7ed
-
 Package: ufw-docker
 Version: 251123-1+trixie
 Architecture: all
@@ -1356,4 +1341,19 @@ Size: 46264084
 MD5sum: 7e781606606f86c86ef53bdbbc6b8b9d
 SHA1: 771dd2b5f67206101aee8c70f7ccaee66eb4c32f
 SHA256: 25dcf1736344082bd8b531315ad8ee3d02ff3543d36c13d354f2c0bdb9bb4158
+
+Package: starship
+Version: 1.27.0-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 12384
+Section: shells
+Priority: optional
+Homepage: https://starship.rs
+Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell.
+Filename: pool/starship-1.27.0/starship_1.27.0-1+trixie_amd64.deb
+Size: 3966348
+MD5sum: d5c21d0839ac93efba92a36b09b190c4
+SHA1: bb2808aa355de6692dd51b71d060f3d191760b1c
+SHA256: cbe56ba9b3999ed32395f6dca7b5a5c6dcf79b27fbfa97b87bdd95d00c5508f3
 

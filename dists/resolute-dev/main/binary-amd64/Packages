@@ -133,21 +133,6 @@ MD5sum: bdc0d083171ffddca16ffec5f3c0343a
 SHA1: 4bce28e9c243a7fc6f1811f7a2b16fdc8bd61e7e
 SHA256: ae32f8985499396f28c3988cbc618da93bc1e9dd352749622d6a67c4b3f012a3
 
-Package: starship
-Version: 1.26.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 12212
-Section: shells
-Priority: optional
-Homepage: https://starship.rs
-Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell.
-Filename: pool/starship-1.26.0/starship_1.26.0-1+resolute_amd64.deb
-Size: 3964470
-MD5sum: e7ab88a5b2a56efb5e67ef9a13db64c5
-SHA1: c4e218c71893a17ba8a8e878b61189199b8207d3
-SHA256: 70d6c28b9644b15e54e3ed5e361859d2ed5726d31a11b694098c5e62b48dd716
-
 Package: ufw-docker
 Version: 251123-1+resolute
 Architecture: all
@@ -1260,4 +1245,19 @@ Size: 46264254
 MD5sum: 787a74233a65e2a37b357dc25c0404ea
 SHA1: 4075d9acee59a355a012de670fb078e557d95be9
 SHA256: fe4a6afe0d02e4c697a3390f1fcbae4e40f3fdea41ae8e06734e4758932d3053
+
+Package: starship
+Version: 1.27.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 12384
+Section: shells
+Priority: optional
+Homepage: https://starship.rs
+Description: The minimal, blazing-fast, and infinitely customizable prompt for any shell.
+Filename: pool/starship-1.27.0/starship_1.27.0-1+resolute_amd64.deb
+Size: 3966304
+MD5sum: 5d10ffa39d808ac5aeb743029d6d1a53
+SHA1: 9a131378c1f6184ac6e0feee6da21aed05796f98
+SHA256: 5b85a4551c918c2dd3df1a20d92eee5009a59e91ea03e049cf1a8fdad7cdc22b
 
