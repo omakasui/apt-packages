@@ -1109,25 +1109,6 @@ MD5sum: 0faec790b0475798d4316103b4371a55
 SHA1: 397bfe336d3e1bbde70e0ea4c038c7042c6b8e6a
 SHA256: 5cce52b406f888d4eda9a508ab356db4e166e7255b3f84f784eebb8c60edc248
 
-Package: chezmoi
-Version: 2.73.1-1+noble
-Architecture: arm64
-Section: vcs
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 37968
-Homepage: https://chezmoi.io/
-Description: Manage your dotfiles across multiple diverse machines, securely.
-Depends: libc6 (>= 2.34)
-Conflicts: chezmoi
-Replaces: chezmoi
-Provides: chezmoi
-Filename: pool/chezmoi-2.73.1/chezmoi_2.73.1-1+noble_arm64.deb
-Size: 11480144
-MD5sum: 7b7de61c094c0b20185f8a4dc6fb2c20
-SHA1: 24ed2484fc034ad4ad4726cf860eff85a8b17bcd
-SHA256: 6008eeaa03a1564b9eccbf37aee9b9dbc5ccb6aa21c977e891aed17a048125ee
-
 Package: glab
 Version: 1.123.0-1+noble
 Architecture: arm64
@@ -1197,4 +1178,23 @@ Size: 112527882
 MD5sum: ef009f6a0bd61fa5e4656c451c013e67
 SHA1: a03f26f4d2eaef132f8c7f0c18e94c2dabdf3b87
 SHA256: e894b90ed44274d7e18c1a1ee37fe51f70a30a5f24e54ac941d3406187013b55
+
+Package: chezmoi
+Version: 2.73.2-1+noble
+Architecture: arm64
+Section: vcs
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 37904
+Homepage: https://chezmoi.io/
+Description: Manage your dotfiles across multiple diverse machines, securely.
+Depends: libc6 (>= 2.34)
+Conflicts: chezmoi
+Replaces: chezmoi
+Provides: chezmoi
+Filename: pool/chezmoi-2.73.2/chezmoi_2.73.2-1+noble_arm64.deb
+Size: 11489924
+MD5sum: 1440006792ac19720e162818d079c36a
+SHA1: 5d2b0e7a844be1c380a2f955016a389a41f6cc92
+SHA256: a22218a683d1cd20916003534f9943e235738d178309cb742474efc6624d002e
 
