@@ -1109,23 +1109,6 @@ MD5sum: 4763846cbf3f9bcaed433dd4ad524642
 SHA1: 90e3479852ea09469c47b194eafa5abb1b7f216d
 SHA256: bf2cfa171c68fc3d67abc021e15f7a6c1d22c767675d44440e257456642d967b
 
-Package: zen-browser
-Version: 1.23.2b-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 409608
-Section: web
-Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser.
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.23.2b/zen-browser_1.23.2b-1+noble_amd64.deb
-Size: 120779594
-MD5sum: eb2db637c10a188aafcfeb3b3b955de7
-SHA1: 11cc9de876d92e67f6c2052d987561c847411249
-SHA256: 2ce22db1d27d8be015d3f91b90dcb450c89cdc8748916a892c91b16fed4ba47c
-
 Package: chezmoi
 Version: 2.73.1-1+noble
 Architecture: amd64
@@ -1217,4 +1200,21 @@ Size: 46264336
 MD5sum: 7571ed9ba27013b3a4811f341c82b661
 SHA1: 83e2fa25b6963ab7c5679067be6ad413b0372a40
 SHA256: 165c261202e2aa2f6fb54c8253e08a73b2357cfb2098306e813450348c6d4571
+
+Package: zen-browser
+Version: 1.23.3b-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 416212
+Section: web
+Priority: optional
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser.
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.23.3b/zen-browser_1.23.3b-1+noble_amd64.deb
+Size: 122656586
+MD5sum: 77e4ae026c95390825266ad0dffb5002
+SHA1: 713f414e6a271e1b17984ea94d0b10c0a32d6562
+SHA256: d4f35e7ff5b70e713834d88728f71426ab1c0f75278c17d6074209427346062e
 
