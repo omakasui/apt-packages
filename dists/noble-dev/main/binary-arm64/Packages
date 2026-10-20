@@ -1181,23 +1181,6 @@ MD5sum: 613d93227717618bd0b444d20c5ae0fb
 SHA1: c809f844b0887f9fe38fd56986968b93076bd0b9
 SHA256: ae9e9e3ebaf8aef3274130dd5ceee8533eccbaf50befb750f948528524558d16
 
-Package: zed
-Version: 1.24.3-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 256192
-Section: editors
-Priority: optional
-Homepage: https://zed.dev
-Description: High-performance, collaborative code editor built in Rust.
- Installed to /opt/zed.app with a symlink at /usr/bin/zed.
- Features AI integration, real-time collaboration, and fast startup.
-Filename: pool/zed-1.24.3/zed_1.24.3-1+noble_arm64.deb
-Size: 81878394
-MD5sum: ab8c037e74f4562d2896d0340b3f9266
-SHA1: a8ed1489c78e25f00043ce3c6cc9a947bc830cdc
-SHA256: 364d43f04e7a90f1e54844d47156ed3fa6f693607da0e0451860abce129bfc9d
-
 Package: forgejo-cli
 Version: 0.7.0-1+noble
 Architecture: arm64
@@ -1218,4 +1201,21 @@ Size: 8066508
 MD5sum: 352476a55f6f3a3ce9c9cdebf8f1dbf7
 SHA1: 0e856f1b6d370b08308e29b0da2225dfb8be7b78
 SHA256: 0a5308b5e4d0d847f7535d3c1c1d557f97d66b153419861542a524d1837af5aa
+
+Package: zed
+Version: 1.24.4-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 256192
+Section: editors
+Priority: optional
+Homepage: https://zed.dev
+Description: High-performance, collaborative code editor built in Rust.
+ Installed to /opt/zed.app with a symlink at /usr/bin/zed.
+ Features AI integration, real-time collaboration, and fast startup.
+Filename: pool/zed-1.24.4/zed_1.24.4-1+noble_arm64.deb
+Size: 81921766
+MD5sum: 9f8bc8b2244882fa1fb3cf3f94aac385
+SHA1: 0e5b1583de6eedb8b7b17afd60914684b5e0c075
+SHA256: 2eb67ebb1534b7106636ed5900e002f901307ae043728d23bc5254831924b697
 
