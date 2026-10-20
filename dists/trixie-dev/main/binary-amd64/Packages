@@ -1302,25 +1302,6 @@ MD5sum: 841ea840f92d0ac2b372969bc9467bae
 SHA1: 485939835049ef8ed726085bca3f5b64ea87aa96
 SHA256: a16a5b0d39a9830bc0e0eae01600fb915dab579d9a2580b8ec67c4615d482e8e
 
-Package: chezmoi
-Version: 2.73.2-1+trixie
-Architecture: amd64
-Section: vcs
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41300
-Homepage: https://chezmoi.io/
-Description: Manage your dotfiles across multiple diverse machines, securely.
-Depends: libc6 (>= 2.34)
-Conflicts: chezmoi
-Replaces: chezmoi
-Provides: chezmoi
-Filename: pool/chezmoi-2.73.2/chezmoi_2.73.2-1+trixie_amd64.deb
-Size: 12994024
-MD5sum: 16bcfe10fb830f03c94e7f8b1cac3450
-SHA1: 6a9f5556acef91169d8fb7b7269344ecdd932f99
-SHA256: 8269d0cbee78e247fa71b704a7e9c2292f656852831115160dc0e3c205352abe
-
 Package: dbeaver-ce
 Version: 26.2.3-1+trixie
 Architecture: amd64
@@ -1377,4 +1358,23 @@ Size: 86812980
 MD5sum: 2c15bcb8319d63f251565ee5ab13d2e2
 SHA1: 88db3753d211636591d724f220daa83fcab1d595
 SHA256: c02157ab48263c0f22a9a1d086c66b960388b7549da1ea70a9b6ea54e9e3f8df
+
+Package: chezmoi
+Version: 2.73.3-1+trixie
+Architecture: amd64
+Section: vcs
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41300
+Homepage: https://chezmoi.io/
+Description: Manage your dotfiles across multiple diverse machines, securely.
+Depends: libc6 (>= 2.34)
+Conflicts: chezmoi
+Replaces: chezmoi
+Provides: chezmoi
+Filename: pool/chezmoi-2.73.3/chezmoi_2.73.3-1+trixie_amd64.deb
+Size: 12988318
+MD5sum: 5570085bb71eced6096531bc51164063
+SHA1: fe294951c169566dd33acdcf8deee888a9c284ec
+SHA256: eec76b4e4ab5c314f2ac0fd4a1a92ee2bf73325b9f55261c9dd94cafb7cb8da0
 
