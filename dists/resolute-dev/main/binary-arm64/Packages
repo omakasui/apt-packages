@@ -1241,3 +1241,24 @@ MD5sum: 989928f2fd702b585734cfbf5eaa5fe3
 SHA1: a362ba49f3138bfefd3d8495fcf640cea4db35c2
 SHA256: 5ebf69e127108f437f0eddfdfcd5099c2dfbc61eb4ed428c0bd025afb8396ea6
 
+Package: forgejo-cli
+Version: 0.7.0-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 23964
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2)
+Conflicts: forgejo-cli
+Replaces: forgejo-cli
+Provides: forgejo-cli
+Section: devel
+Priority: optional
+Homepage: https://codeberg.org/forgejo-contrib/forgejo-cli
+Description: CLI client for Forgejo.
+ Manage issues, pull requests, repositories, organizations and releases
+ on Forgejo instances (e.g. Codeberg) from the command line with fj.
+Filename: pool/forgejo-cli-0.7.0/forgejo-cli_0.7.0-1+resolute_arm64.deb
+Size: 8066534
+MD5sum: cf4a846ff3a64515324a71c29199b4a4
+SHA1: d3978d46baa3d074534083bbc48a397ee42d9b6a
+SHA256: e38722d1739a4b9f32ae1baa4b52d2e4119cdcbaf480d7530da9c5309984c9df
+

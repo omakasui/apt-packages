@@ -1357,3 +1357,24 @@ MD5sum: 63486d417aacaaec3d84983a535c37bb
 SHA1: 71af9f2d04f983deb5b6151d3522b26ffe3eddef
 SHA256: 119f764dcfd741f3c8d4a8c4ecce887e8c0ded7c243ca86a68198128ae936d62
 
+Package: forgejo-cli
+Version: 0.7.0-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 22044
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libssl3t64 (>= 3.0.0), zlib1g (>= 1:1.1.4)
+Conflicts: forgejo-cli
+Replaces: forgejo-cli
+Provides: forgejo-cli
+Section: devel
+Priority: optional
+Homepage: https://codeberg.org/forgejo-contrib/forgejo-cli
+Description: CLI client for Forgejo.
+ Manage issues, pull requests, repositories, organizations and releases
+ on Forgejo instances (e.g. Codeberg) from the command line with fj.
+Filename: pool/forgejo-cli-0.7.0/forgejo-cli_0.7.0-1+trixie_amd64.deb
+Size: 6260856
+MD5sum: ce42410835327505f34260319daa73f6
+SHA1: 5b8706b8ea0a046cfc75869046f909221fc8ead3
+SHA256: 3b3956d04a8f189d8e50eb934043d9bf41abb5f6d3155b6f0397fb6ba4d25ad3
+
