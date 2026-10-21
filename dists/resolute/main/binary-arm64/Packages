@@ -1225,26 +1225,6 @@ MD5sum: 71db62d71d1598423533396b9c22d098
 SHA1: 51bece6b7cb47c38a3347383960d36783dc2b364
 SHA256: b50fe5290402c7300a2fd809f142ceb29a1b6a5c8182a5a29736f8d114338abd
 
-Package: gh
-Version: 2.102.1-1+resolute
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 39212
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.102.1/gh_2.102.1-1+resolute_arm64.deb
-Size: 10777712
-MD5sum: b1ce3ce0a7a691ad5721abe0094cea4e
-SHA1: d3bdebc6f81877eba8571d2354cb0381a6f974c2
-SHA256: d584e3efe996915fa581f395e56770933b29e9e65ac4383c84ea0d9827fe673c
-
 Package: zen-browser
 Version: 1.23.4b-1+resolute
 Architecture: arm64
@@ -1261,4 +1241,24 @@ Size: 112527172
 MD5sum: e30af398d66d24369ad77ab34ddc8567
 SHA1: 4a277bc7be8aa4b1051af941f735ed81f161032f
 SHA256: a543d63c0cdfc8a22de6cce94e4113849995ce1f3e722465be6b8adef0cb2d14
+
+Package: gh
+Version: 2.103.0-1+resolute
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 38348
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.103.0/gh_2.103.0-1+resolute_arm64.deb
+Size: 10578480
+MD5sum: acb8c31b3bda29599bfc0bdafe3bd3aa
+SHA1: d23fe46a444116a6c0e58b7a22c7e29cf6f67589
+SHA256: 02732f5e623d3055392df7e0b844027b0b5e5ff0ba8febfc74bfbe515952f0c9
 
