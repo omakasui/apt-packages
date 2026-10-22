@@ -1113,23 +1113,6 @@ MD5sum: b32760bf48fc8b29cb21ce1ae0e54b7e
 SHA1: ff9ceea93cfd186307af0e8df0c8c83ebb6bbf68
 SHA256: 56955500a750b01f70e9efd4e7b79d7341899378c0c56eb64ba7902e3d976ae9
 
-Package: opencode
-Version: 1.19.3-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 181176
-Depends: libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI and TUI.
- Supports multiple AI providers, MCP tools, and collaborative sessions.
-Filename: pool/opencode-1.19.3/opencode_1.19.3-1+resolute_arm64.deb
-Size: 45691874
-MD5sum: 60f5901972049471f0e0b0ead9ef6544
-SHA1: 59d12528714beb721ae18c8424b0379727aac532
-SHA256: 43468cdc69f79d89f558d873b512dcae04b77016728e1afe768ebaaaebb58ce7
-
 Package: dbeaver-ce
 Version: 26.2.3-1+resolute
 Architecture: arm64
@@ -1261,4 +1244,21 @@ Size: 67897970
 MD5sum: 1dfd0976bae908dd4c8a9d1c40abf235
 SHA1: bc8f31e78bd49243079bbadb779d44e01f864739
 SHA256: ddfdf17a38a9fe7af67025ae19f42ab0fc91cf4b4e0021e05f6f47f0d7b9cbeb
+
+Package: opencode
+Version: 1.19.4-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 206400
+Depends: libc6 (>= 2.34)
+Section: utils
+Priority: optional
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI and TUI.
+ Supports multiple AI providers, MCP tools, and collaborative sessions.
+Filename: pool/opencode-1.19.4/opencode_1.19.4-1+resolute_arm64.deb
+Size: 60420824
+MD5sum: f39f0fdb894f550fcddc7f491e7039ff
+SHA1: 0839620afd4fb3fdd7b7f3cbc0e1084a34472e29
+SHA256: 561e372127433f189587dd257991260e7ce633ab3f568022b5297690041c79a1
 
