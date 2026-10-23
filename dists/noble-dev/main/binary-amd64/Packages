@@ -1038,26 +1038,6 @@ MD5sum: 8a5377afe6a56437296b3126f36bb101
 SHA1: fbd1bf857433408ed06b2c2a633b2ff38ec0e1a6
 SHA256: 9e4901a90b5f2b382dcf026e3020952b5f0777c52431feab5bfdae634427fd2b
 
-Package: bitwarden
-Version: 2026.10.0-1+noble
-Architecture: amd64
-License: GPL-3.0
-Vendor: Bitwarden Inc. <hello@bitwarden.com>
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 416788
-Depends: libnotify4, libxtst6, libnss3, libxss1
-Recommends: libappindicator3-1
-Section: default
-Priority: optional
-Homepage: https://bitwarden.com
-Description: A secure and free password manager for all of your devices.
-  A secure and free password manager for all of your devices.
-Filename: pool/bitwarden-2026.10.0/bitwarden_2026.10.0-1+noble_amd64.deb
-Size: 117161064
-MD5sum: a5e46ba59b17a2a8bf84f1151d15961b
-SHA1: ea728c14d74b98b743ea99d4b412227a8c3dc7df
-SHA256: 54ba285cad2f508423a87c87c17cd6eff63539f1ee3068d91af7a3a5e65f56bc
-
 Package: lazygit
 Version: 0.66.2-1+noble
 Architecture: amd64
@@ -1238,4 +1218,24 @@ Size: 62001916
 MD5sum: 79efa9467effa2a02c45186dc24d1f99
 SHA1: 71a1774f315d5849b8458c477e46e1d1612585b9
 SHA256: f2e14f3fee366f41d00ae870bd32a95a35daa0d14a51981692185b6ea1ca4ae5
+
+Package: bitwarden
+Version: 2026.10.1-1+noble
+Architecture: amd64
+License: GPL-3.0
+Vendor: Bitwarden Inc. <hello@bitwarden.com>
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 416788
+Depends: libnotify4, libxtst6, libnss3, libxss1
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://bitwarden.com
+Description: A secure and free password manager for all of your devices.
+  A secure and free password manager for all of your devices.
+Filename: pool/bitwarden-2026.10.1/bitwarden_2026.10.1-1+noble_amd64.deb
+Size: 117223164
+MD5sum: d5867ee09b9827e2e83a95e24b402b90
+SHA1: 621456c0cf53eee5c01abe71ded4c4d71fb0acac
+SHA256: f30608f2876b27f0d8404acd953782362e2017130e8e6813c4ad893304b7ffee
 

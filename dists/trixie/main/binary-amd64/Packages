@@ -1209,26 +1209,6 @@ MD5sum: 35577d7ae5b3d10edb70163b8ca56ac1
 SHA1: 5a0060a3522921d40f0a27afc93125c925f926dd
 SHA256: b36d264fb182dfc3ca3d36e35fe577ef8cea0cf2631f78d51368c6530093877a
 
-Package: bitwarden
-Version: 2026.10.0-1+trixie
-Architecture: amd64
-License: GPL-3.0
-Vendor: Bitwarden Inc. <hello@bitwarden.com>
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 416788
-Depends: libnotify4, libxtst6, libnss3, libxss1
-Recommends: libappindicator3-1
-Section: default
-Priority: optional
-Homepage: https://bitwarden.com
-Description: A secure and free password manager for all of your devices.
-  A secure and free password manager for all of your devices.
-Filename: pool/bitwarden-2026.10.0/bitwarden_2026.10.0-1+trixie_amd64.deb
-Size: 117178428
-MD5sum: 593298ae82d925c2f4d13674414aa7b0
-SHA1: 91fc8fa86faf4cff090d984845eabae6b91d46d8
-SHA256: f077167fe4446d697acf1770d7a8bf221d81ee19e485f308f68904d613d0fa12
-
 Package: dbeaver-ce
 Version: 26.2.3-1+trixie
 Architecture: amd64
@@ -1377,4 +1357,24 @@ Size: 62001878
 MD5sum: 460a4714c3f036d9d48319f068427e6e
 SHA1: 969728011c386bb8e14d5de59957a99f734f085e
 SHA256: 7254b9e084c319afe6c3827729e04f371fa769540c176f728896d0fd612a54d8
+
+Package: bitwarden
+Version: 2026.10.1-1+trixie
+Architecture: amd64
+License: GPL-3.0
+Vendor: Bitwarden Inc. <hello@bitwarden.com>
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 416788
+Depends: libnotify4, libxtst6, libnss3, libxss1
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://bitwarden.com
+Description: A secure and free password manager for all of your devices.
+  A secure and free password manager for all of your devices.
+Filename: pool/bitwarden-2026.10.1/bitwarden_2026.10.1-1+trixie_amd64.deb
+Size: 117224336
+MD5sum: 5034f8e91aa538fa95338f2ee5415ffa
+SHA1: 98558e28c59bd8487daf8fdbb9ec5c5262fca455
+SHA256: 09e2150e5c0962176b93746b7302ff497b8175fab93b9d05c9d609ac5a5ee2b3
 
