@@ -1282,3 +1282,23 @@ MD5sum: 287a6e4cb788742c9bff651b71f0bde6
 SHA1: 4cc1c5756d7d61b6148a6cf28a85ce83746d6e7b
 SHA256: 12ebe792893d243624734da28cb4668f1b393b0342a0be837b4fc22709932bd1
 
+Package: dust
+Version: 1.2.6-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 3008
+Conflicts: du-dust
+Replaces: du-dust
+Provides: du-dust
+Section: utils
+Priority: optional
+Homepage: https://github.com/bootandy/dust
+Description: A more intuitive version of du.
+ Gives an instant overview of which directories are using disk space,
+ without requiring sort or head.
+Filename: pool/dust-1.2.6/dust_1.2.6-1+resolute_amd64.deb
+Size: 1039380
+MD5sum: dcc8da86735e03a3a7191258d06d0253
+SHA1: b1f6a3f8cdb7d1beec9836ebecbf9d75577fec46
+SHA256: 077d407ff0c1fd28cd3d63e1c2571b796bdb1b4ea9cea09add73d6e7f808fd6c
+
