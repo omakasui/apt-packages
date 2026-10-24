@@ -1148,26 +1148,6 @@ MD5sum: 1bec37a4144f0732a384b711bbeb91f7
 SHA1: 3e3df03ca822c95e4fc40dc178d02f61a2770bf5
 SHA256: 65a6d9d4d2f5f406135c716c59e73858302137deb5c35145600fb8644106e3c3
 
-Package: gh
-Version: 2.103.0-1+noble
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41208
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.103.0/gh_2.103.0-1+noble_amd64.deb
-Size: 11881596
-MD5sum: e3c1837b2a13cac674dbe9860f272d7a
-SHA1: d65c1fa63e71ab2ef82d1cde1719957bf19ca80a
-SHA256: 15f9a7ca0b518b5c74cde8ef021a7b657a9357a37d45975054ec9f4c1e0a53de
-
 Package: opencode
 Version: 1.19.4-1+noble
 Architecture: amd64
@@ -1258,4 +1238,24 @@ Size: 70396736
 MD5sum: 3f2634ed80a93f1b42cd8ba7efbdbe4e
 SHA1: 82c0c9828bf78a5164d7ffd065053359834591ca
 SHA256: bc59abe4e8fcfd5f9958d00895debfa9412b80ff8da9a603044d63bf0f35fab3
+
+Package: gh
+Version: 2.103.2-1+noble
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41208
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.103.2/gh_2.103.2-1+noble_amd64.deb
+Size: 11882568
+MD5sum: 92a83899d3283249b0bdf4aae432fd20
+SHA1: 419696ab76185100a34f62b103e880a5c805a924
+SHA256: e32608af524cf5858b02130ddc912325022561aad7707a870399671f24d306ab
 
