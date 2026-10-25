@@ -33,25 +33,6 @@ MD5sum: c18055104134daa1e2e2237ef747542d
 SHA1: 0bb8d666c549c1768e577bdb63afc2ee03045f6c
 SHA256: 04b8995d1e327d0696903a8ff75e15082298ddc44669c28fac96403933bd47de
 
-Package: btop
-Version: 1.4.7-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2344
-Conflicts: btop
-Replaces: btop
-Provides: btop
-Section: utils
-Priority: optional
-Homepage: https://github.com/aristocratos/btop
-Description: Resource monitor showing usage and stats for processor, memory, disks, network and processes.
- Statically linked musl binary with GPU support.
-Filename: pool/btop-1.4.7/btop_1.4.7-1+trixie_amd64.deb
-Size: 816400
-MD5sum: 3f3be44007915c4f1f5dd53f5d2e7d95
-SHA1: 10325ffeceb427582a4807f4e9c2fa2aa8ac9557
-SHA256: 08bb6345540ec4e261d5505e154c8739e403e2e9e0442109898f503191505937
-
 Package: elephant-all
 Version: 2.21.0-1+trixie
 Architecture: all
@@ -1397,4 +1378,23 @@ Size: 11882558
 MD5sum: b894055cede7ca56156f2acbb8f6ab91
 SHA1: 544b55f64b55ee23d82a3e61bed8f85421bbaabb
 SHA256: 35eecc85ecaf388bad6764800218287a6636b24f258cbf82c3fba2b7b1a366a5
+
+Package: btop
+Version: 1.4.8-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2352
+Conflicts: btop
+Replaces: btop
+Provides: btop
+Section: utils
+Priority: optional
+Homepage: https://github.com/aristocratos/btop
+Description: Resource monitor showing usage and stats for processor, memory, disks, network and processes.
+ Statically linked musl binary with GPU support.
+Filename: pool/btop-1.4.8/btop_1.4.8-1+trixie_amd64.deb
+Size: 845218
+MD5sum: ab8505d0e160e7bdd0a87eacf00f0452
+SHA1: a0efd655fa218cd1611df30cb1ebd4580669b92e
+SHA256: 4934837960664e33ae639e3da902680204652d00140ea2a29138f153fdb05664
 

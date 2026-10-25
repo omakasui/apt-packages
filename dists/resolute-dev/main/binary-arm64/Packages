@@ -33,25 +33,6 @@ MD5sum: 36c8b0143912918aea062969390c6b68
 SHA1: b989caaebce68f977b7a944198a67442701b0622
 SHA256: 9ec4e5b09d3f416c4439b0290ebc1b2bc6828d0b29de20634b869121440fb3de
 
-Package: btop
-Version: 1.4.7-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2148
-Conflicts: btop
-Replaces: btop
-Provides: btop
-Section: utils
-Priority: optional
-Homepage: https://github.com/aristocratos/btop
-Description: Resource monitor showing usage and stats for processor, memory, disks, network and processes.
- Statically linked musl binary with GPU support.
-Filename: pool/btop-1.4.7/btop_1.4.7-1+resolute_arm64.deb
-Size: 765396
-MD5sum: 92756a7d76087e34c8ebbf5e67dda9ff
-SHA1: ab4dec2fde14101f8359e1c203e3f03203687d32
-SHA256: f40343ff8feca01427a8a43c6439657c74978e85afb80e3f626da89abf0b7043
-
 Package: elephant-all
 Version: 2.21.0-1+resolute
 Architecture: all
@@ -1281,4 +1262,23 @@ Size: 10575974
 MD5sum: 1e1b58246ef99e2e665b70519491aaaa
 SHA1: f0570385bfaab51526da2b80fb54d6c835d0cd80
 SHA256: dbafdb667172cf481beccc6b9fcc279f4b1242e7fcf9e4d9d957326ede28ec60
+
+Package: btop
+Version: 1.4.8-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2072
+Conflicts: btop
+Replaces: btop
+Provides: btop
+Section: utils
+Priority: optional
+Homepage: https://github.com/aristocratos/btop
+Description: Resource monitor showing usage and stats for processor, memory, disks, network and processes.
+ Statically linked musl binary with GPU support.
+Filename: pool/btop-1.4.8/btop_1.4.8-1+resolute_arm64.deb
+Size: 768884
+MD5sum: 0995b43a1046191f0f5071f9a75c784f
+SHA1: e707a79125f403e745c64282010164a07745400e
+SHA256: 1c4e31e4741dff2a08e94b3b4e8a3fbb9b6d6b745ebecf0ca35f520cdaa41334
 
