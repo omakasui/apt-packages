@@ -1263,26 +1263,6 @@ MD5sum: dbd6c973e0affc1f7b45793b84d543dc
 SHA1: 5c32bb2647ead90f42f1eb2b96c17966c919cf2d
 SHA256: 61e44890710e7df0dea5afa54aaa6cd61a98bf21e9218b548db20cd9361673ef
 
-Package: gh
-Version: 2.103.2-1+resolute
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41208
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.103.2/gh_2.103.2-1+resolute_amd64.deb
-Size: 11882574
-MD5sum: 51bd2d8d5f7b2eff7fc9dc0df3746acf
-SHA1: 5a85ea4ae43cb204a1c2fafc72969c63d2e68fc6
-SHA256: 67bf5333c3ef2921f05d89834aabdaaa0281cabb7e0c70516f47ef3e8e5e3d39
-
 Package: btop
 Version: 1.4.8-1+resolute
 Architecture: amd64
@@ -1301,4 +1281,24 @@ Size: 845224
 MD5sum: 2ad5562af79ec054ddc5956e6696b536
 SHA1: 55ec75f13160340e6ce9527d3ce5302886be99b8
 SHA256: a5cc2bab7141da0dce3cfc1c382e83a58315d89ca3c5c853009b4eddb3733d7e
+
+Package: gh
+Version: 2.103.3-1+resolute
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41208
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.103.3/gh_2.103.3-1+resolute_amd64.deb
+Size: 11885864
+MD5sum: 567036f53ee1a0a369d9ee1f6443c5ea
+SHA1: da7dad5b90a31b806fa2d8a007014cca9023aa2b
+SHA256: aa7a90f3e7f643f594f3b458f1e199df1a971814589829a7685eaaa4e2f20348
 
