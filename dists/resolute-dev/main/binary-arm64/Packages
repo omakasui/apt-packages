@@ -320,59 +320,6 @@ MD5sum: 60646fb0a05ffe602f7314c00d7cbda7
 SHA1: 77ca376c80a7a340d49cfcc404c2090cb0bd595a
 SHA256: 186dd864995a8e3acdc9055991b10e27c0a2ec75dbd493e36c4fb192fbe90363
 
-Package: ghostty
-Version: 1.3.1-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 34228
-Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.43), libglib2.0-0t64 (>= 2.76.0), libgtk-4-1 (>= 4.19.3), libgtk4-layer-shell0 (>= 1.1.0), libwayland-client0 (>= 1.9.91), libx11-6, libegl1, libgl1
-Section: x11
-Priority: optional
-Homepage: https://github.com/ghostty-org/ghostty
-Description: Fast, feature-rich, cross-platform terminal emulator.
- Uses platform-native UI and GPU acceleration.
-Filename: pool/ghostty-1.3.1/ghostty_1.3.1-1+resolute_arm64.deb
-Size: 18036482
-MD5sum: 5170e5f4879ed93af7860f6f6fbdddea
-SHA1: 570277511394c5ec2a61a008a47111a323df8855
-SHA256: 777d79eff55093952219790c9f9d7d346d77a5e76dd511c622fce5c6e7a34464
-
-Package: libghostty-vt0
-Version: 1.3.1-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 3764
-Depends: libc6 (>= 2.34)
-Section: libs
-Priority: optional
-Homepage: https://github.com/ghostty-org/ghostty
-Description: Ghostty terminal VT library.
- Terminal emulation and escape sequence parsing extracted from Ghostty,
- usable on its own.
-Filename: pool/ghostty-1.3.1/libghostty-vt0_1.3.1-1+resolute_arm64.deb
-Size: 846588
-MD5sum: e83e417cdfe2374528d989eda5672f08
-SHA1: dc24096594c594b17e14d3d45cf1f7a71b6f41e7
-SHA256: 07f7a41bb768e26c4e7d70c0102adac0f432b4f91f1ac66cb936066e29d09ba8
-
-Package: libghostty-vt-dev
-Version: 1.3.1-1+resolute
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 120
-Depends: libghostty-vt0 (= 1.3.1-1+resolute)
-Section: libdevel
-Priority: optional
-Homepage: https://github.com/ghostty-org/ghostty
-Description: Ghostty terminal VT library — development files.
- Headers, pkg-config metadata and the development symlink for
- libghostty-vt.
-Filename: pool/ghostty-1.3.1/libghostty-vt-dev_1.3.1-1+resolute_arm64.deb
-Size: 16598
-MD5sum: c918149a5233dd3bc90cc6950a6332e9
-SHA1: e96f15362d98bc4fb5c9343924c8466fdeca542e
-SHA256: b26968b75731b8875febebc351b4f8385bf6d4df066a0ba4e251fce27adee403
-
 Package: niri
 Version: 26.04-1+resolute
 Architecture: arm64
@@ -1281,4 +1228,57 @@ Size: 13017828
 MD5sum: 3f62f43c88d7ce4f2ed86bdd82e6c49b
 SHA1: 4c66ba4bcee63aa789c53e38fdff5517b81348ae
 SHA256: eeb46fca3970eaa751bc05517fd4ae771733c2713aca6632370d86993533b59c
+
+Package: ghostty
+Version: 1.4.0-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 59988
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.43), libegl1, libglib2.0-0t64 (>= 2.76.0), libgtk-4-1 (>= 4.21.5), libgtk4-layer-shell0 (>= 1.1.0), libwayland-client0 (>= 1.20.0), libx11-6, libegl1, libgl1
+Section: x11
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Fast, feature-rich, cross-platform terminal emulator.
+ Uses platform-native UI and GPU acceleration.
+Filename: pool/ghostty-1.4.0/ghostty_1.4.0-1+resolute_arm64.deb
+Size: 22654066
+MD5sum: 4e19b81dfbd76a6a69767d05a1419521
+SHA1: ecfc6333b5305449156022bcb46f838c6e10aae3
+SHA256: 5b0e6fadc6da876f57db20505ca89807a7b2926801db22e6f2f072ca0022645c
+
+Package: libghostty-vt0
+Version: 1.4.0-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 11076
+Depends: libc6 (>= 2.36)
+Section: libs
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library.
+ Terminal emulation and escape sequence parsing extracted from Ghostty,
+ usable on its own.
+Filename: pool/ghostty-1.4.0/libghostty-vt0_1.4.0-1+resolute_arm64.deb
+Size: 2542480
+MD5sum: 555667a528c47f60c104c89f8b90976c
+SHA1: d7d5f62829a7e1fe0c4bff2ece2aa414279545a6
+SHA256: 5d6325e2ae8ba167fcad1ea9e5118fd2a6eb3594a825dccc662616ea4bc7bfa0
+
+Package: libghostty-vt-dev
+Version: 1.4.0-1+resolute
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 656
+Depends: libghostty-vt0 (= 1.4.0-1+resolute)
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/ghostty-org/ghostty
+Description: Ghostty terminal VT library — development files.
+ Headers, pkg-config metadata and the development symlink for
+ libghostty-vt.
+Filename: pool/ghostty-1.4.0/libghostty-vt-dev_1.4.0-1+resolute_arm64.deb
+Size: 111868
+MD5sum: e62191291f265a39c777995c40195617
+SHA1: 7ca901ea8479a910ccfb78eca429dc3acde94159
+SHA256: af16f7b619f33ded4e52d5937d016c6d782aeaf9f42728bf599f03d23fdbc6ca
 
