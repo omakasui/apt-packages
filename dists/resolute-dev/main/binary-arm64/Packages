@@ -189,26 +189,6 @@ MD5sum: db409eeafa4ec5da54e9a00e418ba702
 SHA1: 8ff72e561238642e867ebb0719df638480ee67d0
 SHA256: 2da053cedadaa6e479ef25e412e301e6ada5270fd0dd4d0f23b9294b6cdb2e30
 
-Package: xdg-terminal-exec
-Version: 0.14.3-1+resolute
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 88
-Depends: bash
-Conflicts: xdg-terminal-exec
-Replaces: xdg-terminal-exec
-Section: utils
-Priority: optional
-Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
-Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
- Launches the user's preferred terminal emulator, selected via desktop entries
- and configuration files in the XDG hierarchy.
-Filename: pool/xdg-terminal-exec-0.14.3/xdg-terminal-exec_0.14.3-1+resolute_all.deb
-Size: 15044
-MD5sum: aff97c8cb09c0aaf8e77d9da0fee9506
-SHA1: 588ac4dab1324bb3fec36e796970078293ac408b
-SHA256: 94761fe573b66ff26ccfd7a3f48c5d7987a0f38e6e930a30d04bfcbd433c88d9
-
 Package: fonts-cascadia-mono-nf
 Version: 3.5.0-1+resolute
 Architecture: all
@@ -1281,4 +1261,24 @@ Size: 111868
 MD5sum: e62191291f265a39c777995c40195617
 SHA1: 7ca901ea8479a910ccfb78eca429dc3acde94159
 SHA256: af16f7b619f33ded4e52d5937d016c6d782aeaf9f42728bf599f03d23fdbc6ca
+
+Package: xdg-terminal-exec
+Version: 0.14.4-1+resolute
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 88
+Depends: bash
+Conflicts: xdg-terminal-exec
+Replaces: xdg-terminal-exec
+Section: utils
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
+Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
+ Launches the user's preferred terminal emulator, selected via desktop entries
+ and configuration files in the XDG hierarchy.
+Filename: pool/xdg-terminal-exec-0.14.4/xdg-terminal-exec_0.14.4-1+resolute_all.deb
+Size: 15284
+MD5sum: 1fad67d7375f2d7c204dba28c9d6294e
+SHA1: ff89b1c63664c79af494e589c98bc29a3619c1c7
+SHA256: dd431885f22a41475a7a4dab39b6d08253b3305d9c70ab664a9c741ac9f22c1e
 

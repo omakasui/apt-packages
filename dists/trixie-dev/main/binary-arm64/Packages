@@ -285,26 +285,6 @@ MD5sum: 70b261d42aab75cd8e017e0cdb3054e1
 SHA1: f36968e3313a512e5a93476eea10119f0487247a
 SHA256: 7b28e19182d8f231c4612ff5d3977e5a51284448279870a9018a12c50e7b3bfd
 
-Package: xdg-terminal-exec
-Version: 0.14.3-1+trixie
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 88
-Depends: bash
-Conflicts: xdg-terminal-exec
-Replaces: xdg-terminal-exec
-Section: utils
-Priority: optional
-Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
-Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
- Launches the user's preferred terminal emulator, selected via desktop entries
- and configuration files in the XDG hierarchy.
-Filename: pool/xdg-terminal-exec-0.14.3/xdg-terminal-exec_0.14.3-1+trixie_all.deb
-Size: 15056
-MD5sum: f59f3eed119164ff17e316bbcc049877
-SHA1: 1f524a416f21ae4b4d6026b9673c669e04f97299
-SHA256: e2ec237bb7864da7e1c4f34f8a3348218af8274e6f7b027a13fc5024d43d6e11
-
 Package: fonts-cascadia-mono-nf
 Version: 3.5.0-1+trixie
 Architecture: all
@@ -1377,4 +1357,24 @@ Size: 111898
 MD5sum: 355b0f64d45e5640f3e6f9fdf1b95f4b
 SHA1: df701df4e1be097233ef2995a43251781651a9f1
 SHA256: dc44ed2d478e8c0944d9266e0889c00061914f55fb091e3759fcb77d1628d847
+
+Package: xdg-terminal-exec
+Version: 0.14.4-1+trixie
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 88
+Depends: bash
+Conflicts: xdg-terminal-exec
+Replaces: xdg-terminal-exec
+Section: utils
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
+Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
+ Launches the user's preferred terminal emulator, selected via desktop entries
+ and configuration files in the XDG hierarchy.
+Filename: pool/xdg-terminal-exec-0.14.4/xdg-terminal-exec_0.14.4-1+trixie_all.deb
+Size: 15274
+MD5sum: ac7b4a4d4b26f3f120ccdef505827c1a
+SHA1: 8c551d776db6f6ec9146f944cba6ff134cc13ae3
+SHA256: 944a705967f7908edc989188d89ad0fa38cdfe1308f91a9efae8a64e76823fa7
 

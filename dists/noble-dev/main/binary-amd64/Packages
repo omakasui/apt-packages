@@ -187,26 +187,6 @@ MD5sum: a8395d7e5780832af2db1844d288ed2d
 SHA1: eae17a3707ddba13037505aca56e3d37bb45befd
 SHA256: b47a4b15589d1817699d57efaa1dbaaafe489bc2afc875b823feb5cb7cc932b8
 
-Package: xdg-terminal-exec
-Version: 0.14.3-1+noble
-Architecture: all
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 92
-Depends: bash
-Conflicts: xdg-terminal-exec
-Replaces: xdg-terminal-exec
-Section: utils
-Priority: optional
-Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
-Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
- Launches the user's preferred terminal emulator, selected via desktop entries
- and configuration files in the XDG hierarchy.
-Filename: pool/xdg-terminal-exec-0.14.3/xdg-terminal-exec_0.14.3-1+noble_all.deb
-Size: 15104
-MD5sum: 7c7c948e50c1252ae311936be755c8ba
-SHA1: 6080153bab095e8feb7d689b0fd3aabd094668b6
-SHA256: 0163056fbe8f15ade1cc4b50c18996b7304f79392e37a7b230334647aeaec822
-
 Package: fonts-cascadia-mono-nf
 Version: 3.5.0-1+noble
 Architecture: all
@@ -1258,4 +1238,24 @@ Size: 14453506
 MD5sum: 36b8061822e5c005a3f941348cd9ddf4
 SHA1: 2da318d13684b6abb10ba4dbc239163063fba27c
 SHA256: c97b02a36e8c7f8c4993e388532a82d564c06364af0db6e596af9f3dc592ba3b
+
+Package: xdg-terminal-exec
+Version: 0.14.4-1+noble
+Architecture: all
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 92
+Depends: bash
+Conflicts: xdg-terminal-exec
+Replaces: xdg-terminal-exec
+Section: utils
+Priority: optional
+Homepage: https://github.com/Vladimir-csp/xdg-terminal-exec
+Description: Shell-based implementation of the XDG Default Terminal Execution Specification.
+ Launches the user's preferred terminal emulator, selected via desktop entries
+ and configuration files in the XDG hierarchy.
+Filename: pool/xdg-terminal-exec-0.14.4/xdg-terminal-exec_0.14.4-1+noble_all.deb
+Size: 15338
+MD5sum: 1714b6ff01a3e2fa0c8c5f4e2e21d380
+SHA1: bb63d2ebd7c087ae92aa44dc24e95d47db1f0718
+SHA256: f3e91358cbc4b4dc126be7bf6c26870265f57bd90079755f0ba5a94a0cdfb42a
 
