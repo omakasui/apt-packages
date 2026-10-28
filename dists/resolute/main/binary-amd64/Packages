@@ -1172,23 +1172,6 @@ MD5sum: 1788fd01757b0b104ba3b9c2764deadb
 SHA1: 810b8c1bca2b8aefd8da26a0b6af8309b59cf2b0
 SHA256: d99b6163ef39d8ee48bcf2fca4ca59b8218514470b2af3c522cb60a151d8381a
 
-Package: opencode
-Version: 1.19.4-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 209508
-Depends: libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/anomalyco/opencode
-Description: AI coding agent CLI and TUI.
- Supports multiple AI providers, MCP tools, and collaborative sessions.
-Filename: pool/opencode-1.19.4/opencode_1.19.4-1+resolute_amd64.deb
-Size: 62001924
-MD5sum: 5e3941d030f8da737c58945dd9713b09
-SHA1: d094caa242d5af13081d9163e482f3c51b553e86
-SHA256: 0825b28ef687aa0eec7eb2ea6e82304207c7effc3fa3743889498847f237b6bd
-
 Package: bitwarden
 Version: 2026.10.1-1+resolute
 Architecture: amd64
@@ -1301,4 +1284,21 @@ Size: 14453528
 MD5sum: e99566b1f6faae449ebd68d124a1dec4
 SHA1: 2a4e220d987ea8e79f80fbc8eb460b3a75ab1fb0
 SHA256: 4c16319393637d516898a3738105e0300b66da781f1dbdb4533cff871653697c
+
+Package: opencode
+Version: 1.19.5-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 209376
+Depends: libc6 (>= 2.34)
+Section: utils
+Priority: optional
+Homepage: https://github.com/anomalyco/opencode
+Description: AI coding agent CLI and TUI.
+ Supports multiple AI providers, MCP tools, and collaborative sessions.
+Filename: pool/opencode-1.19.5/opencode_1.19.5-1+resolute_amd64.deb
+Size: 62007658
+MD5sum: 4c319238c4357f9eda9022359ae802eb
+SHA1: ef81c63be37785c249f9b022b0dc77e8ac862b4d
+SHA256: 6202e9d799ff5bb9dc91994c15e260c90aff236aeee7cb8bb88a1a86e3cfbdfc
 
