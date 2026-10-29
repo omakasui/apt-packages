@@ -1289,25 +1289,6 @@ MD5sum: 02146fc3688c6a18dfd2e08220ac7c93
 SHA1: e720ff6c442542498f37f2108fe22830bc0cfe84
 SHA256: 7e604fd35909ebaf1918dc3f0025fa0a5a6e8197e13751e605c328860ce6a4cd
 
-Package: glab
-Version: 1.125.0-1+trixie
-Architecture: amd64
-Section: 
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 49740
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.125.0/glab_1.125.0-1+trixie_amd64.deb
-Size: 14453640
-MD5sum: 2dbe4a5c870251704011424b9ff406d4
-SHA1: 7417ea029e85e71054fd99cc0c65a98b31432549
-SHA256: fdeaa1bf9fa6a8b9e51ad5a1a393a1e849a2c48faa894ccf31d63d7c9e8cba2b
-
 Package: ghostty
 Version: 1.4.0-1+trixie
 Architecture: amd64
@@ -1397,4 +1378,23 @@ Size: 62007558
 MD5sum: 839c19a2ea13fad750e9368438694b63
 SHA1: 2c1c5a6457c5790d93bd3aa19ee03830bcfba1f9
 SHA256: afa001aa93ccf455530c38cd87200a0df1096532b68ff3a7c38a6a97eaf09c8d
+
+Package: glab
+Version: 1.126.0-1+trixie
+Architecture: amd64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 50164
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.126.0/glab_1.126.0-1+trixie_amd64.deb
+Size: 14588016
+MD5sum: 4ca0327cf72488b0a1554dd187ec169e
+SHA1: 8399cafc115f5da95f797826018d6397af7c9356
+SHA256: 121955a9850e6b4e963d8092c3ea17d63fc92cdee4156e9976e0869c9c9de967
 
