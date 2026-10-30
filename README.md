@@ -125,6 +125,13 @@ The `channel` field is `stable` (default) or `dev`. Pass `--channel dev` to `reg
 ## User setup
 
 ```bash
+curl -fsSL https://omakasui.org/apt.sh | bash               # stable
+curl -fsSL https://omakasui.org/apt.sh | bash -s -- --dev   # dev channel
+```
+
+### Manual setup
+
+```bash
 CODENAME=$(. /etc/os-release && echo $VERSION_CODENAME)
 wget -qO /tmp/omakasui-archive-keyring.deb \
   https://packages.omakasui.org/omakasui-archive-keyring/$CODENAME.deb
