@@ -1037,26 +1037,6 @@ MD5sum: ee88ed9930062f84374a5d75be875f09
 SHA1: d7587a22f35bdcbd85576b1afe22e2fd2aebf7ad
 SHA256: 52447e553da627573bd03a55d2e49031d6fb640b9b4bd16deac2e87b1be28d01
 
-Package: dust
-Version: 1.2.6-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2480
-Conflicts: du-dust
-Replaces: du-dust
-Provides: du-dust
-Section: utils
-Priority: optional
-Homepage: https://github.com/bootandy/dust
-Description: A more intuitive version of du.
- Gives an instant overview of which directories are using disk space,
- without requiring sort or head.
-Filename: pool/dust-1.2.6/dust_1.2.6-1+noble_arm64.deb
-Size: 930122
-MD5sum: b96ad31529dd501be414a8aeabaff697
-SHA1: 16cb4482b5448a5388b34bd5f4c07fa849d3de2e
-SHA256: f4eecccc65d3cdca8c62c7470362a97cc5c6de65880c64bb169d3d70cab45cc4
-
 Package: btop
 Version: 1.4.8-1+noble
 Architecture: arm64
@@ -1238,4 +1218,24 @@ Size: 115688484
 MD5sum: 9ea4096b8609bb271775a12cb83daba9
 SHA1: c7de2ffbf33c9a73f7a60911471a9f19836ecce0
 SHA256: 6814232391c2687e850541ce4e1b32f59d56cdbe0613b0d07ea2bf528ddb6866
+
+Package: dust
+Version: 1.2.7-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2516
+Conflicts: du-dust
+Replaces: du-dust
+Provides: du-dust
+Section: utils
+Priority: optional
+Homepage: https://github.com/bootandy/dust
+Description: A more intuitive version of du.
+ Gives an instant overview of which directories are using disk space,
+ without requiring sort or head.
+Filename: pool/dust-1.2.7/dust_1.2.7-1+noble_arm64.deb
+Size: 929308
+MD5sum: 4760a9f1cce366496445db6b93a7e8ae
+SHA1: 6f496493eed0c24bcda95e31b761ff82fa797991
+SHA256: 90816a5ff865bf61bd390009d582b0f2eeef30a6a0b47bb9765ced858b6a73dd
 

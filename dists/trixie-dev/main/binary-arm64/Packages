@@ -1123,26 +1123,6 @@ MD5sum: faab534269744bc13695511b3cbcd481
 SHA1: 8d792c28f5777d7a00b0909ebc673ddf3fd5a164
 SHA256: 9f0e09604d285ba25331bfde2e718ad28828802d4cef8a52ad08dd3782fdc0ad
 
-Package: dust
-Version: 1.2.6-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 2480
-Conflicts: du-dust
-Replaces: du-dust
-Provides: du-dust
-Section: utils
-Priority: optional
-Homepage: https://github.com/bootandy/dust
-Description: A more intuitive version of du.
- Gives an instant overview of which directories are using disk space,
- without requiring sort or head.
-Filename: pool/dust-1.2.6/dust_1.2.6-1+trixie_arm64.deb
-Size: 930120
-MD5sum: c57f49b507844588b94d5716f46b9153
-SHA1: 26fb424c3d6485a5e373aff05b9c494ca04df066
-SHA256: 9ae7c42c126801887346222c96990c8751731517c5674dc952f22eba1e1c772c
-
 Package: btop
 Version: 1.4.8-1+trixie
 Architecture: arm64
@@ -1377,4 +1357,24 @@ Size: 115687986
 MD5sum: 80a2e54c9f85444bed960ad929fba4c9
 SHA1: 6de8ee3881f7da859bc098b78cd7beafec0e42f6
 SHA256: 962c6c63c61c1f0a3f2d832fcb030a8e6ab28efb7f5bee9eb959d8a43e7b0fd7
+
+Package: dust
+Version: 1.2.7-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 2516
+Conflicts: du-dust
+Replaces: du-dust
+Provides: du-dust
+Section: utils
+Priority: optional
+Homepage: https://github.com/bootandy/dust
+Description: A more intuitive version of du.
+ Gives an instant overview of which directories are using disk space,
+ without requiring sort or head.
+Filename: pool/dust-1.2.7/dust_1.2.7-1+trixie_arm64.deb
+Size: 929314
+MD5sum: aab9ec5ebc0ddcf6e2ce1afe4fd37fb2
+SHA1: 0c576f93fbad8994f55e9bf15fc5f1d2d79e92b2
+SHA256: edc654da0a2833b36c72625dc305d48e31afcd19c274228c499126da0f703078
 
