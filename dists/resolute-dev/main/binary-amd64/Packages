@@ -1029,25 +1029,6 @@ MD5sum: ce29369fb15bd3d12c7f3d221aca3d82
 SHA1: db73d2351cb3f256ba9fb92e94718582d3fd9df5
 SHA256: 75e2e099fc765fe59f42d6842ce9856228f0f7372471161fe6f283aa0df5311a
 
-Package: chezmoi
-Version: 2.73.3-1+resolute
-Architecture: amd64
-Section: vcs
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41300
-Homepage: https://chezmoi.io/
-Description: Manage your dotfiles across multiple diverse machines, securely.
-Depends: libc6 (>= 2.34)
-Conflicts: chezmoi
-Replaces: chezmoi
-Provides: chezmoi
-Filename: pool/chezmoi-2.73.3/chezmoi_2.73.3-1+resolute_amd64.deb
-Size: 12988602
-MD5sum: 64dd25aee7a5a1e858b1e51004f45a68
-SHA1: 9fb6aa9a6533175cbff43364afe49ee9e4163bd0
-SHA256: c039f6c7b62131d0838d238a38d82f1fef16973c8fc45ebb6a96ed6992c7eab2
-
 Package: bitwarden
 Version: 2026.10.1-1+resolute
 Architecture: amd64
@@ -1301,4 +1282,23 @@ Size: 123374126
 MD5sum: 8b2aa877c6be1c4b30b938364d4a04fd
 SHA1: 322acd36d2f7ab02dbe2b7f95828adcf76185cb8
 SHA256: 3c9b6ef5ff7c159f1e94f14360845071cfe5b263f5ef01f52818fb9de49af5c2
+
+Package: chezmoi
+Version: 2.74.0-1+resolute
+Architecture: amd64
+Section: vcs
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41420
+Homepage: https://chezmoi.io/
+Description: Manage your dotfiles across multiple diverse machines, securely.
+Depends: libc6 (>= 2.34)
+Conflicts: chezmoi
+Replaces: chezmoi
+Provides: chezmoi
+Filename: pool/chezmoi-2.74.0/chezmoi_2.74.0-1+resolute_amd64.deb
+Size: 13032390
+MD5sum: 9042f157f739a880c81bcc6bdd958d06
+SHA1: dea586044ed26a54b3086b81106a4f2b9ec2e3f0
+SHA256: c352e32b78eef67482be3819aa0f849724ef09fe158efe4b583283c1c621bcfe
 
