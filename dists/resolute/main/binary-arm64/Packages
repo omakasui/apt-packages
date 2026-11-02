@@ -1081,25 +1081,6 @@ MD5sum: 61d99da9a4a73ca3265e6e8013019e5c
 SHA1: 1bb9c0c82364816e2f7aa87a92ecd04568e9d443
 SHA256: 76aa72c70c1ea23cba5922e2ace92b22e815e5770ae293e0168ba97eb1db8494
 
-Package: dbeaver-ce
-Version: 26.2.3-1+resolute
-Architecture: arm64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce, dbeaver
-Installed-Size: 209296
-Maintainer: omakasui <packages@omakasui.org>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.2.3/dbeaver-ce_26.2.3-1+resolute_arm64.deb
-Size: 114682828
-MD5sum: 42a84d4ffc17080b376ab6da2759cec3
-SHA1: 966a503a2a14127b9217e81a6b2134589abd4cd1
-SHA256: 382f0f42aefcff07ce6f117ee072f183d016441848438aec08326e45f238311f
-
 Package: forgejo-cli
 Version: 0.7.0-1+resolute
 Architecture: arm64
@@ -1281,4 +1262,23 @@ Size: 11527812
 MD5sum: bcbf62395e1c4774f0b4dd3b5fffff47
 SHA1: 3be4b345e70034e7b94a418d040ef0c318056602
 SHA256: 13ae6ea729ca517357c17cb54e816f92749dea1cdfd7932e562a9b1a308b92a0
+
+Package: dbeaver-ce
+Version: 26.2.4-1+resolute
+Architecture: arm64
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce, dbeaver
+Installed-Size: 210496
+Maintainer: omakasui <packages@omakasui.org>
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.2.4/dbeaver-ce_26.2.4-1+resolute_arm64.deb
+Size: 115687858
+MD5sum: ed69b4f71fce579c7a3b4e2a03c61bd0
+SHA1: e7468671c233477faaf7ada0cb7113356cf583d0
+SHA256: 01ddd3b15db7a8b280ff679e62f5c7454b4dc0cbab48cf6b6e2b5217e98c3e88
 
