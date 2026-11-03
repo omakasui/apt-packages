@@ -1246,25 +1246,6 @@ MD5sum: e835528217fe96b2f8a8467991b00c0e
 SHA1: 907ed5ae5af19c7c82eef60177e210afa2f71c8a
 SHA256: 561b5ab05198b81849d2eb0e59cbe8858d2de3cf1df6a7b3ed6f39bd2d44b01e
 
-Package: glab
-Version: 1.127.0-1+resolute
-Architecture: amd64
-Section: 
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 50252
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.127.0/glab_1.127.0-1+resolute_amd64.deb
-Size: 14613642
-MD5sum: 94ebc89fbd8a47dbe49ccca46ea7e495
-SHA1: 9ccf71c65c776866f3f2815ad97e0515b4cce28d
-SHA256: 4101e8cab88dfe4b2f661c59e6c666033b7ec5596708b16db793fc911bedabf5
-
 Package: bitwarden
 Version: 2026.10.3-1+resolute
 Architecture: amd64
@@ -1301,4 +1282,23 @@ Size: 103724702
 MD5sum: 2c71a091ca01bb62e6f787e2c79bac01
 SHA1: a21d239ac7f3cf9a16e617f988c18af96f32d02f
 SHA256: bf4067d8c83c554c43945f95018b4224201c42fa3d15682b87e6557c040fac57
+
+Package: glab
+Version: 1.128.0-1+resolute
+Architecture: amd64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 50332
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.128.0/glab_1.128.0-1+resolute_amd64.deb
+Size: 14634884
+MD5sum: 61a71833afc86d7246ffefc7e9755c77
+SHA1: 6d7b565e661b649856cd3c71fde0411204d1a8ad
+SHA256: e5bcc52b44e75ab4236cc3c781b47dd89f96271a1ecdd9b9fb42c628887a61cd
 

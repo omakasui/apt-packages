@@ -1203,25 +1203,6 @@ MD5sum: 9ea4096b8609bb271775a12cb83daba9
 SHA1: c7de2ffbf33c9a73f7a60911471a9f19836ecce0
 SHA256: 6814232391c2687e850541ce4e1b32f59d56cdbe0613b0d07ea2bf528ddb6866
 
-Package: glab
-Version: 1.127.0-1+noble
-Architecture: arm64
-Section: 
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 46872
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.127.0/glab_1.127.0-1+noble_arm64.deb
-Size: 13167716
-MD5sum: 90900434b33f906470965af8e99486fc
-SHA1: 2046f9ade43e0285a438a08f0ecbbf4fbdf5bb20
-SHA256: 27cfc43dd45ab7c1d4a642441235cd86a5bc2ce43dcc89369203b50815e54fa9
-
 Package: obsidian
 Version: 1.15.0-1+noble
 Architecture: arm64
@@ -1238,4 +1219,23 @@ Size: 103604388
 MD5sum: 7f48bb1603c30f1f38f4619cdc6c8bcd
 SHA1: c37a3e9d5c5fb29198e6c4bd58a3e4fb7b4f81be
 SHA256: 4bc94217c57f7ccd5c0ae889cb47a0717eb1df01d6315dd9cd5963c4e4c244d8
+
+Package: glab
+Version: 1.128.0-1+noble
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 46944
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.128.0/glab_1.128.0-1+noble_arm64.deb
+Size: 13180834
+MD5sum: 1ac66984bb10dac7bb3152ad6b259a47
+SHA1: 5e6b0ff7a4db2887063296349a30c8315f06b07b
+SHA256: 4e81dea539611ba6361788147c0c4f5519241882216aca3cceddf50d1055c56f
 
