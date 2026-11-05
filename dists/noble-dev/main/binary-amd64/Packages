@@ -783,22 +783,6 @@ MD5sum: bf90cb13021c989edd1b95082790c0de
 SHA1: 78fd5258fc0549a3b719b014722aa1facaf251de
 SHA256: d4f0e507bad643ee7b401655c734e9f3c3ee9109af3c621fefbd7db9639634e1
 
-Package: cliamp
-Version: 2.3.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 37184
-Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-2.3.0/cliamp_2.3.0-1+noble_amd64.deb
-Size: 10925438
-MD5sum: 3cbeac2768f8e9ebae7735cbc8f73f19
-SHA1: 4230a2c4043ee5c4d37f4dfe887bbd82d41e93a8
-SHA256: 61aadca4384c82052eb67df69b5374244be67ceec0020f47c1c03f2e484c66bd
-
 Package: omakasui-archive-keyring
 Version: 1.2.1
 Architecture: all
@@ -1166,6 +1150,26 @@ MD5sum: 768a81689b2ba68d9303d4c0e51e1000
 SHA1: ebf3590df90b92595a476756c2355e15ca348d3b
 SHA256: bb401290f18e5a7e08aa40c08258a6f496de1ec9e915efd5448be037ae66b84f
 
+Package: bitwarden
+Version: 2026.10.3-1+noble
+Architecture: amd64
+License: GPL-3.0
+Vendor: Bitwarden Inc. <hello@bitwarden.com>
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 669208
+Depends: libnotify4, libxtst6, libnss3, libxss1
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://bitwarden.com
+Description: A secure and free password manager for all of your devices.
+  A secure and free password manager for all of your devices.
+Filename: pool/bitwarden-2026.10.3/bitwarden_2026.10.3-1+noble_amd64.deb
+Size: 152311358
+MD5sum: 529a7384e9ff0cfca93a997b009ce214
+SHA1: 3a41d49b88daf194319fd53339dc8f1415fa326f
+SHA256: 05857434799d5ad18eced4f6bea2211224d178a1975ed3d9af728c8b78492b25
+
 Package: obsidian
 Version: 1.15.0-1+noble
 Architecture: amd64
@@ -1239,23 +1243,19 @@ MD5sum: 2cacd6678d60db3927affd5bd9e8f4c1
 SHA1: 9a081a189ba4bb75010812eaed72ce8f4cd669a7
 SHA256: e8b937c22ad62fb84a8aa37ded0a64eda4b462448c257740715811f7d0753dcc
 
-Package: bitwarden
-Version: 2026.10.4-1+noble
+Package: cliamp
+Version: 2.4.0-1+noble
 Architecture: amd64
-License: GPL-3.0
-Vendor: Bitwarden Inc. <hello@bitwarden.com>
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 669208
-Depends: libnotify4, libxtst6, libnss3, libxss1
-Recommends: libappindicator3-1
-Section: default
+Installed-Size: 71780
+Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
+Section: utils
 Priority: optional
-Homepage: https://bitwarden.com
-Description: A secure and free password manager for all of your devices.
-  A secure and free password manager for all of your devices.
-Filename: pool/bitwarden-2026.10.4/bitwarden_2026.10.4-1+noble_amd64.deb
-Size: 152307824
-MD5sum: 9ed82d2ab6975d394a2bc8e68486d34d
-SHA1: 92f48fcd089aa4e1ff9e7f43d61f1945c2bd3779
-SHA256: dcddbf7d78345a01a9445e73fd31ae1b5f7af6d0dc17ef4bc146f05c8649fcba
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-2.4.0/cliamp_2.4.0-1+noble_amd64.deb
+Size: 17267592
+MD5sum: f32c28b6f36d5796bd74ea628af1dde5
+SHA1: 82e183480fa2f0db3c6fe0c03e2ee2e54129ea31
+SHA256: 5562482df8229b5d7ae2d5e1e4ba39a9d80a4b0015cd47d83d9426e64b8d1823
 

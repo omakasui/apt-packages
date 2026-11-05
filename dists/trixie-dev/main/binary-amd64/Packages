@@ -869,22 +869,6 @@ MD5sum: 25fd1a4dbe3f94399095664483cdd57b
 SHA1: ce2746d2696dc2b2a2ea8abe48cc4466e2e8e63a
 SHA256: 45b792d44e85ca1c63f29eb368cb6847e0c560c2ba9332244972ca479b0236c7
 
-Package: cliamp
-Version: 2.3.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 37184
-Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-2.3.0/cliamp_2.3.0-1+trixie_amd64.deb
-Size: 10925438
-MD5sum: b0ad1064bbdc3eb7ab70d9be6e8df8de
-SHA1: cf12c700c00c2a630fb42f66514dfe7484cf30b5
-SHA256: 87c2c7b26ded8487bec4f11649454e8b4e9d2b9af14c62f617c953df8bd8666b
-
 Package: omakasui-archive-keyring
 Version: 1.2.1
 Architecture: all
@@ -1305,6 +1289,26 @@ MD5sum: 3a69b4af5439d5cbb7b460f3fd9a0e45
 SHA1: db5b13188c5d3ba87c410e46137a700b48da2bca
 SHA256: ce805cb6c63896d6ceb0dfd435c0e713cd16644826914426f68145f9d2332465
 
+Package: bitwarden
+Version: 2026.10.3-1+trixie
+Architecture: amd64
+License: GPL-3.0
+Vendor: Bitwarden Inc. <hello@bitwarden.com>
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 669208
+Depends: libnotify4, libxtst6, libnss3, libxss1
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://bitwarden.com
+Description: A secure and free password manager for all of your devices.
+  A secure and free password manager for all of your devices.
+Filename: pool/bitwarden-2026.10.3/bitwarden_2026.10.3-1+trixie_amd64.deb
+Size: 152312008
+MD5sum: de77e89ebcf73602610783d60d53f225
+SHA1: 7609b2a596f83e25b91dbb930f536093c63139be
+SHA256: 94183379474562632bd5d37ed78ece1d935e49dabe8cb0d87a4789cd63c9443f
+
 Package: obsidian
 Version: 1.15.0-1+trixie
 Architecture: amd64
@@ -1378,23 +1382,19 @@ MD5sum: 34b4f95fb8eb76532cfe65d59f92482c
 SHA1: 2652e2420f27820ba27d3175623ef48a25841ed6
 SHA256: a44379ee7191f1aea5afa30226b0cac38c91060bb7b1c397b4dda5593fd16c6e
 
-Package: bitwarden
-Version: 2026.10.4-1+trixie
+Package: cliamp
+Version: 2.4.0-1+trixie
 Architecture: amd64
-License: GPL-3.0
-Vendor: Bitwarden Inc. <hello@bitwarden.com>
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 669208
-Depends: libnotify4, libxtst6, libnss3, libxss1
-Recommends: libappindicator3-1
-Section: default
+Installed-Size: 71780
+Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
+Section: utils
 Priority: optional
-Homepage: https://bitwarden.com
-Description: A secure and free password manager for all of your devices.
-  A secure and free password manager for all of your devices.
-Filename: pool/bitwarden-2026.10.4/bitwarden_2026.10.4-1+trixie_amd64.deb
-Size: 152310844
-MD5sum: c9a170abc16c80f15815cb7e59c521ca
-SHA1: 1736c6b201e2a6e4562002c78952487ed509c22b
-SHA256: 8fa3c6bc9c718c539f73e46e3ae4fca948dd103cc3e8182b7c230ca8f64598bf
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-2.4.0/cliamp_2.4.0-1+trixie_amd64.deb
+Size: 17268058
+MD5sum: f3749794ad2604b0a3e8f4501d8c05ab
+SHA1: f8173a186fb2817ebfc919a226b655ac84dd172d
+SHA256: 74bfaf61a029ff220d66c3e7d6e853695356598eba35ccb0977260fbd71c2f9e
 
