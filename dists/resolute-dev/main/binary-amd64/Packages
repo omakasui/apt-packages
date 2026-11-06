@@ -904,23 +904,6 @@ MD5sum: fc0b3c6489f953c3077b9665596e1ec9
 SHA1: ae073eb5cde4d3526c3ceeab95cae8044ebbb4d8
 SHA256: b29a61c7df934558a64effaf2e79870e20413c7e8763cc70c781b297d190356e
 
-Package: fastfetch
-Version: 2.70.0-1+resolute
-Architecture: amd64
-Depends: libc6 (>= 2.35)
-Description: Fast neofetch-like system information tool
- fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Maintainer: omakasui <packages@omakasui.org>
-Priority: optional
-Section: devel
-Installed-Size: 4592
-Filename: pool/fastfetch-2.70.0/fastfetch_2.70.0-1+resolute_amd64.deb
-Size: 958830
-MD5sum: 9f13fd10c6dc2cb0706993b9cd74e9ae
-SHA1: c75fbfd9abb0856f0120b602b997239746890d65
-SHA256: 9e968e53c27c9313b0272d78e68394595a9220235c5f26af2973bcc1878c11df
-
 Package: lazygit
 Version: 0.66.2-1+resolute
 Architecture: amd64
@@ -1301,4 +1284,21 @@ Size: 17267740
 MD5sum: ea0e1cc05367f2d56160315603d18552
 SHA1: 39dc55b8bdb073e75252695a5efcf2c9e8f36697
 SHA256: eb7c18fa6a3b3bdd7d2ad475245dea09c62cfb1d7c834941320592beeb6f8599
+
+Package: fastfetch
+Version: 2.71.0-1+resolute
+Architecture: amd64
+Depends: libc6 (>= 2.35)
+Description: Fast neofetch-like system information tool
+ fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written mostly in C to achieve much better performance.
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Maintainer: omakasui <packages@omakasui.org>
+Priority: optional
+Section: devel
+Installed-Size: 4640
+Filename: pool/fastfetch-2.71.0/fastfetch_2.71.0-1+resolute_amd64.deb
+Size: 982362
+MD5sum: 9f7e972bdded692f56b8a732e242bb86
+SHA1: ab3ad5afea477a561594167c54e504d13efaa26c
+SHA256: f545e0e706ec1f8415d0ce774e3903a2fba0bc2199798cdd7af4b00b6a1539d3
 
