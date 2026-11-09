@@ -894,23 +894,6 @@ MD5sum: 92ad8b8b9f566c016a2f013d6a50bdee
 SHA1: 5da2cf4fdf3d218b5d24d857c55675874e6a7dd6
 SHA256: ad52f6597e9ead63afe6defeaee2671363f17bd042b0cfcb6d7f22061f0db715
 
-Package: lazygit
-Version: 0.66.2-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 20156
-Depends: git
-Section: vcs
-Priority: optional
-Homepage: https://github.com/jesseduffield/lazygit
-Description: Simple terminal UI for git commands.
- Provides a keyboard-driven git interface inside any terminal.
-Filename: pool/lazygit-0.66.2/lazygit_0.66.2-1+noble_amd64.deb
-Size: 5870790
-MD5sum: 9d1626bd7f7a5ce511417c8de929c891
-SHA1: 7f1b4d10a10e0fb745f20a6640337683e4495062
-SHA256: 0f819b1a38d0ae60badf815090d5ecd04e25ae6d4422c40b6bb0a6899257480e
-
 Package: starship
 Version: 1.27.0-1+noble
 Architecture: amd64
@@ -1258,4 +1241,21 @@ Size: 1930198
 MD5sum: 20d512e00422fff4b80ad883897c4a16
 SHA1: 0145be6af192413d3a492df012cbd0d1df6d835a
 SHA256: 826a1b2a06eaf34503b23e76bf5d9e76049873db24ef8bee74d92418da00e978
+
+Package: lazygit
+Version: 0.66.3-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 20160
+Depends: git
+Section: vcs
+Priority: optional
+Homepage: https://github.com/jesseduffield/lazygit
+Description: Simple terminal UI for git commands.
+ Provides a keyboard-driven git interface inside any terminal.
+Filename: pool/lazygit-0.66.3/lazygit_0.66.3-1+noble_amd64.deb
+Size: 5872668
+MD5sum: 52a3a5f351d157ad314b8e9f331f09ca
+SHA1: ae4e59db7ab0b37cc78eb1ff07ce0407facb1a79
+SHA256: 86a604bd466c7ac58d6fb40ae60b0e23f58744f9ae9ed23d3528ac7d07349f80
 
