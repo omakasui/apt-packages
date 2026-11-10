@@ -1309,25 +1309,6 @@ MD5sum: 174cc6e7fa5ecb432fbc80c001159499
 SHA1: 9b39bc7cc93cf2d3b9df0b80268082f85475db13
 SHA256: 607c2278689eaa008c628e10dc9fc5f26eeb57af3b3726ffdc898fbde13fd12a
 
-Package: glab
-Version: 1.128.0-1+trixie
-Architecture: arm64
-Section: 
-Priority: optional
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 46944
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.128.0/glab_1.128.0-1+trixie_arm64.deb
-Size: 13180818
-MD5sum: 3d8b62c212d2c0aa5df25af9f8591d1c
-SHA1: ac8b0908d5429ce1e49b0fc15cb9b2ad70dde4f1
-SHA256: 41736608d1a03bcffc2a44d0be3072e2b9e7c03b2343eb75f0042e3aeaa9cea4
-
 Package: zed
 Version: 1.27.0-1+trixie
 Architecture: arm64
@@ -1377,4 +1358,23 @@ Size: 113070238
 MD5sum: 3bbedb8bbd984f077ab36ae877df4222
 SHA1: 77136ab58da337b46edd494c6c5ddecf4de7e12f
 SHA256: 938fc00d314bfcabc3d56afe80f1e81995321df623081226305d249ddff62567
+
+Package: glab
+Version: 1.130.0-1+trixie
+Architecture: arm64
+Section: 
+Priority: optional
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 52736
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.130.0/glab_1.130.0-1+trixie_arm64.deb
+Size: 14523976
+MD5sum: 361e5dc1932b5c2a535ef740abd8691f
+SHA1: 2449ff3b62b6f5504010b05508ca9b4948a6203e
+SHA256: aab9e0ad2b0df2371498b96a7aa7a63eb6c94680e7af23bc8c0566c8638eb905
 
