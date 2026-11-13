@@ -939,6 +939,26 @@ MD5sum: 2ad5562af79ec054ddc5956e6696b536
 SHA1: 55ec75f13160340e6ce9527d3ce5302886be99b8
 SHA256: a5cc2bab7141da0dce3cfc1c382e83a58315d89ca3c5c853009b4eddb3733d7e
 
+Package: gh
+Version: 2.103.3-1+resolute
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41208
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.103.3/gh_2.103.3-1+resolute_amd64.deb
+Size: 11885864
+MD5sum: 567036f53ee1a0a369d9ee1f6443c5ea
+SHA1: da7dad5b90a31b806fa2d8a007014cca9023aa2b
+SHA256: aa7a90f3e7f643f594f3b458f1e199df1a971814589829a7685eaaa4e2f20348
+
 Package: ghostty
 Version: 1.4.0-1+resolute
 Architecture: amd64
@@ -1140,22 +1160,6 @@ MD5sum: d68fc7ae319bf506cd1dbc25ef20c341
 SHA1: a86719d58dbf597079853dcabed25408cb4e3473
 SHA256: 476f5fcd52ebae86eb1ef47316d99b371b7bfc1a220d44fede9f75c505eef8be
 
-Package: cliamp
-Version: 2.4.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 71780
-Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-2.4.0/cliamp_2.4.0-1+resolute_amd64.deb
-Size: 17267740
-MD5sum: ea0e1cc05367f2d56160315603d18552
-SHA1: 39dc55b8bdb073e75252695a5efcf2c9e8f36697
-SHA256: eb7c18fa6a3b3bdd7d2ad475245dea09c62cfb1d7c834941320592beeb6f8599
-
 Package: fastfetch
 Version: 2.71.0-1+resolute
 Architecture: amd64
@@ -1282,23 +1286,19 @@ MD5sum: 8692c0dff3630b629137d3456e28ee59
 SHA1: 47f04c26b02fa5f4725083ddae4000020d317a41
 SHA256: 62959aa7d7f6f9ab0d0a6464b5212011b570829db3f587332f1b861ffae0a188
 
-Package: gh
-Version: 2.104.0-1+resolute
+Package: cliamp
+Version: 2.4.1-1+resolute
 Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41220
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.104.0/gh_2.104.0-1+resolute_amd64.deb
-Size: 11830436
-MD5sum: 29cd99a03a1264e5cbca2eac9d3cd5e9
-SHA1: f807d896bb0a583595edab8dda275858a367d5e1
-SHA256: 9857bdb150900d889a0eaa022cab372153f46bc37dd8a67f0c6bb3ed7ae6f1c9
+Installed-Size: 71820
+Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-2.4.1/cliamp_2.4.1-1+resolute_amd64.deb
+Size: 17224918
+MD5sum: f9c35d76aeb196845bcb617218729855
+SHA1: 271993d0c38bff1622c8b656f074b7d2cbf91c9e
+SHA256: 6357ae19727722f6594b5692135f77de796eb828537f57c2fe5f9c735b983ad0
 

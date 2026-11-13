@@ -1035,6 +1035,26 @@ MD5sum: ab8505d0e160e7bdd0a87eacf00f0452
 SHA1: a0efd655fa218cd1611df30cb1ebd4580669b92e
 SHA256: 4934837960664e33ae639e3da902680204652d00140ea2a29138f153fdb05664
 
+Package: gh
+Version: 2.103.3-1+trixie
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41208
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.103.3/gh_2.103.3-1+trixie_amd64.deb
+Size: 11885872
+MD5sum: 02146fc3688c6a18dfd2e08220ac7c93
+SHA1: e720ff6c442542498f37f2108fe22830bc0cfe84
+SHA256: 7e604fd35909ebaf1918dc3f0025fa0a5a6e8197e13751e605c328860ce6a4cd
+
 Package: ghostty
 Version: 1.4.0-1+trixie
 Architecture: amd64
@@ -1236,22 +1256,6 @@ MD5sum: 0e531ad50479d22994c4b86155f0b8c9
 SHA1: 65d3cffac21aedb9ee155e34603e85de7b6bff14
 SHA256: d819484a0e85b55383d3bb4adab5957edf465e7afc335b52c831ea21f89dd1c6
 
-Package: cliamp
-Version: 2.4.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 71780
-Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
-Section: utils
-Priority: optional
-Homepage: https://github.com/bjarneo/cliamp
-Description: Command-line audio player for Linux.
-Filename: pool/cliamp-2.4.0/cliamp_2.4.0-1+trixie_amd64.deb
-Size: 17268058
-MD5sum: f3749794ad2604b0a3e8f4501d8c05ab
-SHA1: f8173a186fb2817ebfc919a226b655ac84dd172d
-SHA256: 74bfaf61a029ff220d66c3e7d6e853695356598eba35ccb0977260fbd71c2f9e
-
 Package: fastfetch
 Version: 2.71.0-1+trixie
 Architecture: amd64
@@ -1378,23 +1382,19 @@ MD5sum: 5d15a996c009e028cac9c53fb5f3babd
 SHA1: 95856aaec11fd47a1945bf7c865f72edddf860a3
 SHA256: 9e5788a29514c9ffb46e237c433bab030381abbe9abe994b0c729e7e9d083cc8
 
-Package: gh
-Version: 2.104.0-1+trixie
+Package: cliamp
+Version: 2.4.1-1+trixie
 Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41220
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.104.0/gh_2.104.0-1+trixie_amd64.deb
-Size: 11830484
-MD5sum: 0859943a4f73b905c8203f6b365ec94e
-SHA1: 2b520b2672ae79a86958673d4b7663f89c997c61
-SHA256: 74bc9e882a0aab87b273df4321c04632d0815ec2c89500cf5ebfbfdd44dc040d
+Installed-Size: 71820
+Depends: libasound2t64 (>= 1.0.18), libc6 (>= 2.34)
+Section: utils
+Priority: optional
+Homepage: https://github.com/bjarneo/cliamp
+Description: Command-line audio player for Linux.
+Filename: pool/cliamp-2.4.1/cliamp_2.4.1-1+trixie_amd64.deb
+Size: 17225068
+MD5sum: 54fed9e45905737c429ced8a5021cced
+SHA1: 5c114f979f91f3a37694fb32372668fe9bcb5189
+SHA256: e0af67d0e9d661f1ea409f13134ad0f0704905f84db4c31c10d84a63734aedfc
 
