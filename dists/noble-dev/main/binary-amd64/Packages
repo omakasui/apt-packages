@@ -1064,6 +1064,23 @@ MD5sum: 529a7384e9ff0cfca93a997b009ce214
 SHA1: 3a41d49b88daf194319fd53339dc8f1415fa326f
 SHA256: 05857434799d5ad18eced4f6bea2211224d178a1975ed3d9af728c8b78492b25
 
+Package: obsidian
+Version: 1.15.0-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 347616
+Section: utils
+Priority: optional
+Homepage: https://obsidian.md
+Description: Powerful knowledge base that works on top of local Markdown files.
+ Supports plugins, themes, and graph view. Installed to /opt/obsidian.
+ Updates via the built-in auto-updater.
+Filename: pool/obsidian-1.15.0/obsidian_1.15.0-1+noble_amd64.deb
+Size: 103730468
+MD5sum: d574215cd264a5a528512ee927bb900d
+SHA1: c548e30b9b8e6e4c32b3646009bf2c6e724b5292
+SHA256: d2be1d5f39e0eb8c03819c94d09db399c024caeb55697c09611103f7a708fa17
+
 Package: kitty
 Version: 0.50.0-1+noble
 Architecture: amd64
@@ -1100,23 +1117,6 @@ Size: 982358
 MD5sum: f79f98b7c54b77cd203d4135ac65af73
 SHA1: fdc8ca5107b2035329615ea39c0c94cf9e3b8644
 SHA256: 6ceaeba06d5fb99a4b517d11d3569c3dda89d25bcd2a6a2621d3c7e2a5aafb87
-
-Package: zen-browser
-Version: 1.24.1b-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 418000
-Section: web
-Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser.
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.24.1b/zen-browser_1.24.1b-1+noble_amd64.deb
-Size: 123351544
-MD5sum: f0790b85020c5e5cb83a8d47c41c3170
-SHA1: 9cc054e80929da19a9fb240203b193330d55b803
-SHA256: 033c2f286f85a6d765e0180c5be79f32a05053b43a9bfb90884e73992b9856a6
 
 Package: fzf
 Version: 0.75.0-1+noble
@@ -1242,20 +1242,20 @@ MD5sum: f772215ede849da8cf3cbdfe373e69ac
 SHA1: 3204243cf8d87ac18c79d1a0d28f3e02d9efc562
 SHA256: e833ef14bc65365b2bc28a5506a0c58c9f184201c912f16d1a3dddf1c932a1f1
 
-Package: obsidian
-Version: 1.15.1-1+noble
+Package: zen-browser
+Version: 1.24.2b-1+noble
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 347864
-Section: utils
+Installed-Size: 423428
+Section: web
 Priority: optional
-Homepage: https://obsidian.md
-Description: Powerful knowledge base that works on top of local Markdown files.
- Supports plugins, themes, and graph view. Installed to /opt/obsidian.
- Updates via the built-in auto-updater.
-Filename: pool/obsidian-1.15.1/obsidian_1.15.1-1+noble_amd64.deb
-Size: 103628640
-MD5sum: 8e30be2472c817ab4e141b7afca14297
-SHA1: 4b189dcd85e9ef45519d9f66d6af9e47b2a2f4a4
-SHA256: 35c48d7984788f62530d147ab58f73e55ac66b4f9e5e108fb6af2ed6d995f3ac
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser.
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.24.2b/zen-browser_1.24.2b-1+noble_amd64.deb
+Size: 124344612
+MD5sum: 9ecd8fd76ed065238dce77bafa60ff4d
+SHA1: 9f864395368fd067b845f7bd2677726efae55a45
+SHA256: 054a3de91766ea2bc38b5c93a60be11d93b4fed67538667081aba9328a1f4aba
 

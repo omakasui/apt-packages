@@ -1273,22 +1273,22 @@ MD5sum: 80a2e54c9f85444bed960ad929fba4c9
 SHA1: 6de8ee3881f7da859bc098b78cd7beafec0e42f6
 SHA256: 962c6c63c61c1f0a3f2d832fcb030a8e6ab28efb7f5bee9eb959d8a43e7b0fd7
 
-Package: zen-browser
-Version: 1.24.1b-1+trixie
+Package: obsidian
+Version: 1.15.0-1+trixie
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 391128
-Section: web
+Installed-Size: 352476
+Section: utils
 Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser.
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.24.1b/zen-browser_1.24.1b-1+trixie_arm64.deb
-Size: 113070238
-MD5sum: 3bbedb8bbd984f077ab36ae877df4222
-SHA1: 77136ab58da337b46edd494c6c5ddecf4de7e12f
-SHA256: 938fc00d314bfcabc3d56afe80f1e81995321df623081226305d249ddff62567
+Homepage: https://obsidian.md
+Description: Powerful knowledge base that works on top of local Markdown files.
+ Supports plugins, themes, and graph view. Installed to /opt/obsidian.
+ Updates via the built-in auto-updater.
+Filename: pool/obsidian-1.15.0/obsidian_1.15.0-1+trixie_arm64.deb
+Size: 103605198
+MD5sum: 174cc6e7fa5ecb432fbc80c001159499
+SHA1: 9b39bc7cc93cf2d3b9df0b80268082f85475db13
+SHA256: 607c2278689eaa008c628e10dc9fc5f26eeb57af3b3726ffdc898fbde13fd12a
 
 Package: glab
 Version: 1.130.0-1+trixie
@@ -1361,20 +1361,20 @@ MD5sum: a27ad84254133c8eac3df927269ed4e0
 SHA1: 78a4fbdcd2a000400a80788e1704b6a45ca43473
 SHA256: 4fbdb1a60ac59c534f51f64b40521a0a9235000a9b32770fc17a4b65250f7214
 
-Package: obsidian
-Version: 1.15.1-1+trixie
+Package: zen-browser
+Version: 1.24.2b-1+trixie
 Architecture: arm64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 352700
-Section: utils
+Installed-Size: 396824
+Section: web
 Priority: optional
-Homepage: https://obsidian.md
-Description: Powerful knowledge base that works on top of local Markdown files.
- Supports plugins, themes, and graph view. Installed to /opt/obsidian.
- Updates via the built-in auto-updater.
-Filename: pool/obsidian-1.15.1/obsidian_1.15.1-1+trixie_arm64.deb
-Size: 103512430
-MD5sum: bc186c8fb30f096461e595ee8cef90bb
-SHA1: c09eed441104fe6b8e10928686d94288fa12a07f
-SHA256: 4a83a769711cf4fa58213ff0383560e6bb217fea449fc0082d40afbcf89d3c88
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser.
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.24.2b/zen-browser_1.24.2b-1+trixie_arm64.deb
+Size: 113959032
+MD5sum: 29477ac0d45871256d1b9bf53543b707
+SHA1: 9280e6db9c644586da617f39ecbe33acf4a4d1e6
+SHA256: 8878f5c3d50763813e3d9dbc57e23b7cbd65480e5b0b7e0daa97d6d00a1cc077
 

@@ -1107,6 +1107,23 @@ MD5sum: ab1bf1c9fa38a7cd59ecebda23558eed
 SHA1: a731193c86309de1921872024e73e1d74d21e319
 SHA256: 83842ac196e8b986dbb09dae0531deda808eb2feb1975f4dd8c8184f5dd5cc19
 
+Package: obsidian
+Version: 1.15.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 347616
+Section: utils
+Priority: optional
+Homepage: https://obsidian.md
+Description: Powerful knowledge base that works on top of local Markdown files.
+ Supports plugins, themes, and graph view. Installed to /opt/obsidian.
+ Updates via the built-in auto-updater.
+Filename: pool/obsidian-1.15.0/obsidian_1.15.0-1+resolute_amd64.deb
+Size: 103724702
+MD5sum: 2c71a091ca01bb62e6f787e2c79bac01
+SHA1: a21d239ac7f3cf9a16e617f988c18af96f32d02f
+SHA256: bf4067d8c83c554c43945f95018b4224201c42fa3d15682b87e6557c040fac57
+
 Package: kitty
 Version: 0.50.0-1+resolute
 Architecture: amd64
@@ -1143,23 +1160,6 @@ Size: 982362
 MD5sum: 9f7e972bdded692f56b8a732e242bb86
 SHA1: ab3ad5afea477a561594167c54e504d13efaa26c
 SHA256: f545e0e706ec1f8415d0ce774e3903a2fba0bc2199798cdd7af4b00b6a1539d3
-
-Package: zen-browser
-Version: 1.24.1b-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 418000
-Section: web
-Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser.
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.24.1b/zen-browser_1.24.1b-1+resolute_amd64.deb
-Size: 123352522
-MD5sum: 69986141b64324d573fff99cf3fb3d76
-SHA1: 7339381ed0e1ca8f1d6aa2ecabcf9ddc24add90c
-SHA256: 5e298318733e17d82f0ddeaa7c7de902886ba04d8dba204aa338baa63d5b0365
 
 Package: fzf
 Version: 0.75.0-1+resolute
@@ -1285,20 +1285,20 @@ MD5sum: 83f8368782b3abeb7869ab856f135a2d
 SHA1: 6bfba4089509c8124a4d1f273974c86a1b753d0f
 SHA256: c061974832b48525101d3f6c133b39c6130b3ea43eab9d62bb909b4d9b728214
 
-Package: obsidian
-Version: 1.15.1-1+resolute
+Package: zen-browser
+Version: 1.24.2b-1+resolute
 Architecture: amd64
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 347864
-Section: utils
+Installed-Size: 423428
+Section: web
 Priority: optional
-Homepage: https://obsidian.md
-Description: Powerful knowledge base that works on top of local Markdown files.
- Supports plugins, themes, and graph view. Installed to /opt/obsidian.
- Updates via the built-in auto-updater.
-Filename: pool/obsidian-1.15.1/obsidian_1.15.1-1+resolute_amd64.deb
-Size: 103628716
-MD5sum: f893bf5879ed585802ff1de88dd86791
-SHA1: 0e2d73f0a6bb4c0f4a1bb22e4491440e5b2061df
-SHA256: d5933c09e45d1c715722a4f9bea4bf55532ab4669b634a6ca5d52e74dda0243f
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser.
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.24.2b/zen-browser_1.24.2b-1+resolute_amd64.deb
+Size: 124345258
+MD5sum: b76d26a820153bf4c13a5603bb9071fb
+SHA1: b661b86d91382bdf017d8d5b9e59e4aefef6bd5b
+SHA256: 57c9a67661251e4bb159416bb54aaed2668e2b335ff9184f233bea7e1258e111
 
