@@ -1293,23 +1293,6 @@ MD5sum: de77e89ebcf73602610783d60d53f225
 SHA1: 7609b2a596f83e25b91dbb930f536093c63139be
 SHA256: 94183379474562632bd5d37ed78ece1d935e49dabe8cb0d87a4789cd63c9443f
 
-Package: obsidian
-Version: 1.15.0-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 347616
-Section: utils
-Priority: optional
-Homepage: https://obsidian.md
-Description: Powerful knowledge base that works on top of local Markdown files.
- Supports plugins, themes, and graph view. Installed to /opt/obsidian.
- Updates via the built-in auto-updater.
-Filename: pool/obsidian-1.15.0/obsidian_1.15.0-1+trixie_amd64.deb
-Size: 103730200
-MD5sum: b4893007245a002d840d991aca8cd7df
-SHA1: 2eea8c77fb6773158843b643b5e865a5d131ea08
-SHA256: b8f061e031dd85dcf93cbb6fee840e62cdd53379556b77dc04a4c12938858de6
-
 Package: zen-browser
 Version: 1.24.1b-1+trixie
 Architecture: amd64
@@ -1397,4 +1380,21 @@ Size: 17225068
 MD5sum: 54fed9e45905737c429ced8a5021cced
 SHA1: 5c114f979f91f3a37694fb32372668fe9bcb5189
 SHA256: e0af67d0e9d661f1ea409f13134ad0f0704905f84db4c31c10d84a63734aedfc
+
+Package: obsidian
+Version: 1.15.1-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 347864
+Section: utils
+Priority: optional
+Homepage: https://obsidian.md
+Description: Powerful knowledge base that works on top of local Markdown files.
+ Supports plugins, themes, and graph view. Installed to /opt/obsidian.
+ Updates via the built-in auto-updater.
+Filename: pool/obsidian-1.15.1/obsidian_1.15.1-1+trixie_amd64.deb
+Size: 103626680
+MD5sum: 0d720774cc33dbab271bdfbd290132c3
+SHA1: 405dfc6f409b73dcfea287c67f88b0e594db4d69
+SHA256: 5714b3f26577dfc37753117d82966304ed8ade65dbd20c12970c90fd9df69ae0
 

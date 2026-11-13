@@ -1044,23 +1044,6 @@ MD5sum: 4760a9f1cce366496445db6b93a7e8ae
 SHA1: 6f496493eed0c24bcda95e31b761ff82fa797991
 SHA256: 90816a5ff865bf61bd390009d582b0f2eeef30a6a0b47bb9765ced858b6a73dd
 
-Package: obsidian
-Version: 1.15.0-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 352476
-Section: utils
-Priority: optional
-Homepage: https://obsidian.md
-Description: Powerful knowledge base that works on top of local Markdown files.
- Supports plugins, themes, and graph view. Installed to /opt/obsidian.
- Updates via the built-in auto-updater.
-Filename: pool/obsidian-1.15.0/obsidian_1.15.0-1+noble_arm64.deb
-Size: 103604388
-MD5sum: 7f48bb1603c30f1f38f4619cdc6c8bcd
-SHA1: c37a3e9d5c5fb29198e6c4bd58a3e4fb7b4f81be
-SHA256: 4bc94217c57f7ccd5c0ae889cb47a0717eb1df01d6315dd9cd5963c4e4c244d8
-
 Package: kitty
 Version: 0.50.0-1+noble
 Architecture: arm64
@@ -1238,4 +1221,21 @@ Size: 28128294
 MD5sum: 5280b888b6db91024ee87d1aa816367a
 SHA1: d4ce21440fbb91d98cd56de7fa6530bf2c9febaa
 SHA256: fed68bffb8cdf6db0d174bb7db9b0bf6a0e31ceba37062dca1e7dfdd6b048689
+
+Package: obsidian
+Version: 1.15.1-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 352700
+Section: utils
+Priority: optional
+Homepage: https://obsidian.md
+Description: Powerful knowledge base that works on top of local Markdown files.
+ Supports plugins, themes, and graph view. Installed to /opt/obsidian.
+ Updates via the built-in auto-updater.
+Filename: pool/obsidian-1.15.1/obsidian_1.15.1-1+noble_arm64.deb
+Size: 103515694
+MD5sum: c746a16e54b30b8c6d52fba6c9653b87
+SHA1: 87451646d018c27027cc062b825eaed7100c523c
+SHA256: 53def3d4e1c70c745f917288dbd30e4b1c34dac8d9b8f01351a9116841f926fa
 
