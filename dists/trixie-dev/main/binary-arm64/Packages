@@ -1019,26 +1019,6 @@ MD5sum: 86373bbec0dc9799179ce3c85411779b
 SHA1: cea8fe77c605f6d98c69eee248ca7e2dbd0fcf82
 SHA256: 414c47b32203b72c17009719e930a7722b18ded6863bee78c6ef2aca110e005b
 
-Package: gh
-Version: 2.103.3-1+trixie
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38348
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.103.3/gh_2.103.3-1+trixie_arm64.deb
-Size: 10578432
-MD5sum: 91f5ca968a9c7e15c9c630f2ac4d111a
-SHA1: ef5499943606852d6340315f8b6bf15e6dbbfbd6
-SHA256: e2a4cad5ade148ed3d7f5e31d687b7d63e8b121078b136a10d08110c72b1a2d7
-
 Package: ghostty
 Version: 1.4.0-1+trixie
 Architecture: arm64
@@ -1377,4 +1357,24 @@ Size: 60429426
 MD5sum: c1bfb82f37c994547a242dcda88fe636
 SHA1: 7b429cc05ed02d1c041f6d3be9d52af376940f7d
 SHA256: a1ae096d06e41a89aac3b71847aa88dbbdac195ae67586226f2f8626c7d27a6c
+
+Package: gh
+Version: 2.105.0-1+trixie
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 38444
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.105.0/gh_2.105.0-1+trixie_arm64.deb
+Size: 10571414
+MD5sum: a120bdb35caf7747cd5bd7d419c465d8
+SHA1: 90c794ddbfca86378937a447f11cf3ea0ce5ede9
+SHA256: 8050e6db4e7681cfa8a4dcd443cab8cb0dc6d5f21de2ce4b7a9cb7bd02edd59c
 

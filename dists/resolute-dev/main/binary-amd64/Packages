@@ -923,26 +923,6 @@ MD5sum: 2ad5562af79ec054ddc5956e6696b536
 SHA1: 55ec75f13160340e6ce9527d3ce5302886be99b8
 SHA256: a5cc2bab7141da0dce3cfc1c382e83a58315d89ca3c5c853009b4eddb3733d7e
 
-Package: gh
-Version: 2.103.3-1+resolute
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41208
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.103.3/gh_2.103.3-1+resolute_amd64.deb
-Size: 11885864
-MD5sum: 567036f53ee1a0a369d9ee1f6443c5ea
-SHA1: da7dad5b90a31b806fa2d8a007014cca9023aa2b
-SHA256: aa7a90f3e7f643f594f3b458f1e199df1a971814589829a7685eaaa4e2f20348
-
 Package: ghostty
 Version: 1.4.0-1+resolute
 Architecture: amd64
@@ -1301,4 +1281,24 @@ Size: 62014236
 MD5sum: 723aa7bcd08517ed16d931172d22d3f4
 SHA1: 9c16463cabb7fccdab16f26d252311a6ae2c8ff3
 SHA256: 1147578744f6cffa4f835c80794d4d547a19b87cdb4cc4c45a27027aadd529e4
+
+Package: gh
+Version: 2.105.0-1+resolute
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41356
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.105.0/gh_2.105.0-1+resolute_amd64.deb
+Size: 11864774
+MD5sum: 8df3f99d57d4678d62a0bd85f440702f
+SHA1: ff20f6f0635d147ea613539d88ab5334cba00de6
+SHA256: 7a13f37b06fe1f471128e6e3c7f1f048dde1bc6d82e6aeaa0fc3a5815ba6cf04
 

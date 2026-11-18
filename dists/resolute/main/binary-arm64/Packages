@@ -1106,26 +1106,6 @@ MD5sum: a76fe5a98fc4b4d7b4d72a46f2b0bca6
 SHA1: d3d9a6240387650d75565fea93bbec6e1fd6fe5f
 SHA256: ad5daa8c7eb27cc81794a43863f03ab74c204a810502988dce7dcf72e31cc646
 
-Package: gh
-Version: 2.103.3-1+resolute
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38348
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.103.3/gh_2.103.3-1+resolute_arm64.deb
-Size: 10578442
-MD5sum: e7cb491543b612a7c8bcccbffcf680d8
-SHA1: ad09b9a8fe818db226db90f73f5fa63084c5287d
-SHA256: 673d76e479d2cb03fbc5320bc851d3578f179a6ac1631225ba44ad65f1519707
-
 Package: bitwarden-cli
 Version: 2026.10.1-1+resolute
 Architecture: arm64
@@ -1281,4 +1261,24 @@ Size: 60429540
 MD5sum: ae12a51d4f037fed06fbe1c3180d82d5
 SHA1: bb80f6a2dd88de454e1952b19d495c83e16ce6ef
 SHA256: 380c2a5586a8b927ce3892e176c090c4b893be173bc58194aab89fe9a9a235d1
+
+Package: gh
+Version: 2.105.0-1+resolute
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 38444
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.105.0/gh_2.105.0-1+resolute_arm64.deb
+Size: 10571410
+MD5sum: 2be089991749f6f3c9bf44a1d5dcfa71
+SHA1: 87e9beea06359d8418cca141c3a2fff8488c13fd
+SHA256: 75d1ea137df4bcb16e8fa3a05d495100d13ee981cc0135a1e4613fc88e14c7cf
 
