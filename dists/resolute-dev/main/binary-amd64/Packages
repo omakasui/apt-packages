@@ -1068,26 +1068,6 @@ MD5sum: 2c71a091ca01bb62e6f787e2c79bac01
 SHA1: a21d239ac7f3cf9a16e617f988c18af96f32d02f
 SHA256: bf4067d8c83c554c43945f95018b4224201c42fa3d15682b87e6557c040fac57
 
-Package: kitty
-Version: 0.50.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 166404
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.50.0/kitty_0.50.0-1+resolute_amd64.deb
-Size: 51195600
-MD5sum: d68fc7ae319bf506cd1dbc25ef20c341
-SHA1: a86719d58dbf597079853dcabed25408cb4e3473
-SHA256: 476f5fcd52ebae86eb1ef47316d99b371b7bfc1a220d44fede9f75c505eef8be
-
 Package: fastfetch
 Version: 2.71.0-1+resolute
 Architecture: amd64
@@ -1301,4 +1281,24 @@ Size: 71251524
 MD5sum: 623710db3de8809bc1c2d718397fea4f
 SHA1: 07a04020519519642ae191ffb1bf2ab506a594a6
 SHA256: 4179f4d5e97321da48bb69b3bc0aacf9b0e1aa1abccfb0e464f1d0fff27c9a14
+
+Package: kitty
+Version: 0.51.0-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 167112
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.51.0/kitty_0.51.0-1+resolute_amd64.deb
+Size: 51344134
+MD5sum: 6b21ee35a55facbce1ae8f086f885ff4
+SHA1: 3d94c75881b3974cbd784a75e638144d6fe935d1
+SHA256: cd3f9eeb75bd0534122bd88223bf5ac131aaa61c063adab3466bcd7d0b458d40
 

@@ -1005,26 +1005,6 @@ MD5sum: 7f48bb1603c30f1f38f4619cdc6c8bcd
 SHA1: c37a3e9d5c5fb29198e6c4bd58a3e4fb7b4f81be
 SHA256: 4bc94217c57f7ccd5c0ae889cb47a0717eb1df01d6315dd9cd5963c4e4c244d8
 
-Package: kitty
-Version: 0.50.0-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 160744
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.50.0/kitty_0.50.0-1+noble_arm64.deb
-Size: 50115664
-MD5sum: 30c5a05a73aa8bc8ccaf602c263c6855
-SHA1: 2b2f850144b779b176fd60fb10173712683fada5
-SHA256: 7ecbd08c8b4c72caef6743a4eba5858b1d311bd3b1718a9b3ec24cb5e40ce89e
-
 Package: fastfetch
 Version: 2.71.0-1+noble
 Architecture: arm64
@@ -1238,4 +1218,24 @@ Size: 68734872
 MD5sum: 7b331a1146e2e1f356a15c3e40da9569
 SHA1: 32a3c50fca00e8f3bb52ce1a64d3ab1b441a7e9d
 SHA256: 7c1e93bc5e4ec58ae5dc50c957066ef52f7bb0e2c7e15f14ac14ddff8f4487a2
+
+Package: kitty
+Version: 0.51.0-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 161468
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.51.0/kitty_0.51.0-1+noble_arm64.deb
+Size: 50241524
+MD5sum: 17783480d79eac4cb9e0bd51c8c1ef3b
+SHA1: a02343999a4ed503a4970c27994d0c2cc5b6b376
+SHA256: a64021c02b72463e6b64d8457a9b6b0948e9ff462d6a311679c72de23b53f123
 
