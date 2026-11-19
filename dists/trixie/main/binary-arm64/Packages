@@ -1269,23 +1269,6 @@ MD5sum: a27ad84254133c8eac3df927269ed4e0
 SHA1: 78a4fbdcd2a000400a80788e1704b6a45ca43473
 SHA256: 4fbdb1a60ac59c534f51f64b40521a0a9235000a9b32770fc17a4b65250f7214
 
-Package: zen-browser
-Version: 1.24.2b-1+trixie
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 396824
-Section: web
-Priority: optional
-Homepage: https://zen-browser.app
-Description: Privacy-focused Firefox-based browser.
- Features vertical tabs, workspaces and tab splitting.
- Installed to /opt/zen. Updates via the built-in auto-updater.
-Filename: pool/zen-browser-1.24.2b/zen-browser_1.24.2b-1+trixie_arm64.deb
-Size: 113959032
-MD5sum: 29477ac0d45871256d1b9bf53543b707
-SHA1: 9280e6db9c644586da617f39ecbe33acf4a4d1e6
-SHA256: 8878f5c3d50763813e3d9dbc57e23b7cbd65480e5b0b7e0daa97d6d00a1cc077
-
 Package: dbeaver-ce
 Version: 26.2.5-1+trixie
 Architecture: arm64
@@ -1377,4 +1360,21 @@ Size: 68734874
 MD5sum: 598f7402059af9f11684974c7848829a
 SHA1: b4939340e3fe7a55d1edb0cc57893ca337c44111
 SHA256: 548a4fd60f16b94399d2d33fe060ec21995115139c93d3690f300455b7d21594
+
+Package: zen-browser
+Version: 1.24.3b-1+trixie
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 396724
+Section: web
+Priority: optional
+Homepage: https://zen-browser.app
+Description: Privacy-focused Firefox-based browser.
+ Features vertical tabs, workspaces and tab splitting.
+ Installed to /opt/zen. Updates via the built-in auto-updater.
+Filename: pool/zen-browser-1.24.3b/zen-browser_1.24.3b-1+trixie_arm64.deb
+Size: 113916724
+MD5sum: 6cd08f7e0b29dd8fc95e51fdd983470b
+SHA1: 6112e1592a951ff3e48868171aa1e19665548616
+SHA256: 5cf10d517388f27b54db1623157cb479c2c621040cf22f183efda48dceed43a7
 
