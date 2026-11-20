@@ -1078,26 +1078,6 @@ MD5sum: e305fc45577cc816a85e32a37ef05ee9
 SHA1: 82b1c0aa1f8bdf29052527f068c48e1be3b0c92f
 SHA256: 93981ad038e540a76b5b463594857a4e6297a93a017368bce28b5b59b9b27b33
 
-Package: bitwarden
-Version: 2026.10.3-1+noble
-Architecture: amd64
-License: GPL-3.0
-Vendor: Bitwarden Inc. <hello@bitwarden.com>
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 669208
-Depends: libnotify4, libxtst6, libnss3, libxss1
-Recommends: libappindicator3-1
-Section: default
-Priority: optional
-Homepage: https://bitwarden.com
-Description: A secure and free password manager for all of your devices.
-  A secure and free password manager for all of your devices.
-Filename: pool/bitwarden-2026.10.3/bitwarden_2026.10.3-1+noble_amd64.deb
-Size: 152311358
-MD5sum: 529a7384e9ff0cfca93a997b009ce214
-SHA1: 3a41d49b88daf194319fd53339dc8f1415fa326f
-SHA256: 05857434799d5ad18eced4f6bea2211224d178a1975ed3d9af728c8b78492b25
-
 Package: obsidian
 Version: 1.15.0-1+noble
 Architecture: amd64
@@ -1258,4 +1238,24 @@ Size: 124152246
 MD5sum: 38870770acd9d0f61094de9454e67bff
 SHA1: bfbf6d8911bbaec362ca2f995decd225c8db957f
 SHA256: e1921c2b2e9509d6e18b6f13f212856d9cca880ce79df481cacc1b1a0231e818
+
+Package: bitwarden
+Version: 2026.11.0-1+noble
+Architecture: amd64
+License: GPL-3.0
+Vendor: Bitwarden Inc. <hello@bitwarden.com>
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 443656
+Depends: libnotify4, libxtst6, libnss3, libxss1
+Recommends: libappindicator3-1
+Section: default
+Priority: optional
+Homepage: https://bitwarden.com
+Description: A secure and free password manager for all of your devices.
+  A secure and free password manager for all of your devices.
+Filename: pool/bitwarden-2026.11.0/bitwarden_2026.11.0-1+noble_amd64.deb
+Size: 124456460
+MD5sum: 30d3bbe212c1157bdb647ab461ec6f4d
+SHA1: 37681fd2cae88dd9324bb5f04fd0bbb423b9d2c1
+SHA256: 23b036ccffc748176cbf1150389dda93c868f72b9d5ce6de2a9fabe2a9b3007e
 
