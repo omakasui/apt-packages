@@ -1151,26 +1151,6 @@ MD5sum: 2eb64301778723162dc14d834944a9b1
 SHA1: 8291d6448259a1830813f687f06e65996115e02d
 SHA256: 50d73df347a937858ca9c1c89bab5f535831371524f9d4ac75b21babae01745d
 
-Package: kitty
-Version: 0.51.0-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 167112
-Conflicts: kitty
-Replaces: kitty
-Provides: kitty
-Section: x11
-Priority: optional
-Homepage: https://sw.kovidgoyal.net/kitty/
-Description: GPU-accelerated terminal emulator with advanced features.
- Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
- graphics protocol, and window splits.
-Filename: pool/kitty-0.51.0/kitty_0.51.0-1+noble_amd64.deb
-Size: 51344134
-MD5sum: d953c3c784f509bd0bccdc206bd369c9
-SHA1: 957e1bc6eb5c7c143ab661a73621b3113e07c7f7
-SHA256: b648908b1de3229196a499f5d64345cd33fb64000b94a315eea9c7d7ef0d101d
-
 Package: zen-browser
 Version: 1.24.3b-1+noble
 Architecture: amd64
@@ -1258,4 +1238,24 @@ Size: 13242858
 MD5sum: dca55cd442132ec5a1ad93c08b4ad976
 SHA1: 8a8a8da9a8812c5db5849526ebfbcfa77d178903
 SHA256: 5ded12a454f5504fba99b8354d338db64eadfef017f50d223c2ae9c61635cc70
+
+Package: kitty
+Version: 0.51.1-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 167328
+Conflicts: kitty
+Replaces: kitty
+Provides: kitty
+Section: x11
+Priority: optional
+Homepage: https://sw.kovidgoyal.net/kitty/
+Description: GPU-accelerated terminal emulator with advanced features.
+ Self-contained bundle installed to /opt/kitty. Includes kitten extensions,
+ graphics protocol, and window splits.
+Filename: pool/kitty-0.51.1/kitty_0.51.1-1+noble_amd64.deb
+Size: 51393864
+MD5sum: fd30f66a8899956d274517b7dce7d85f
+SHA1: 5d05659d28e4e7c6456ab67c73c83b13a9aab024
+SHA256: 05b68e698c4424862d00db78af4aadc4e0ad78d46749b4028e947207ff2cbef0
 
