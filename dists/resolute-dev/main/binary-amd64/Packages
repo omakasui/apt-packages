@@ -1103,22 +1103,6 @@ MD5sum: f9c35d76aeb196845bcb617218729855
 SHA1: 271993d0c38bff1622c8b656f074b7d2cbf91c9e
 SHA256: 6357ae19727722f6594b5692135f77de796eb828537f57c2fe5f9c735b983ad0
 
-Package: zellij
-Version: 0.46.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 86792
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: A terminal workspace with batteries included.
- Provides layouts, sessions, plugins and a scripting API.
-Filename: pool/zellij-0.46.0/zellij_0.46.0-1+resolute_amd64.deb
-Size: 28623076
-MD5sum: 83f8368782b3abeb7869ab856f135a2d
-SHA1: 6bfba4089509c8124a4d1f273974c86a1b753d0f
-SHA256: c061974832b48525101d3f6c133b39c6130b3ea43eab9d62bb909b4d9b728214
-
 Package: glab
 Version: 1.131.0-1+resolute
 Architecture: amd64
@@ -1301,4 +1285,20 @@ Size: 116349596
 MD5sum: 9585083e5f92eeed2a9ba469ac1ade0c
 SHA1: da748c28de0ab6cf16173f0a29f9f2f0a1a55200
 SHA256: c08839380090f01acc9aeaa3abd8c7e404a4d970b9160753c75e0b47b41ffb73
+
+Package: zellij
+Version: 0.46.1-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 82068
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: A terminal workspace with batteries included.
+ Provides layouts, sessions, plugins and a scripting API.
+Filename: pool/zellij-0.46.1/zellij_0.46.1-1+resolute_amd64.deb
+Size: 27043332
+MD5sum: d51e73f8490349725857062cce3016ef
+SHA1: 213b5f0e33b17f351d63e8b45da973b10480cf20
+SHA256: e01413911bc40deb06f6aa789061097ea7b8d9810896af57f0fe39af7149d787
 

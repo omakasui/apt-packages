@@ -1060,22 +1060,6 @@ MD5sum: 142f9ab81d99ab327f8d12d21238297b
 SHA1: 2c77aea3331236e30e7bfc4539738b56129c0ec9
 SHA256: 41869b6211f81ff1bd78b60a173b2949679a8b66de7b9985f77883533a40937e
 
-Package: zellij
-Version: 0.46.0-1+noble
-Architecture: arm64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 77512
-Section: utils
-Priority: optional
-Homepage: https://zellij.dev
-Description: A terminal workspace with batteries included.
- Provides layouts, sessions, plugins and a scripting API.
-Filename: pool/zellij-0.46.0/zellij_0.46.0-1+noble_arm64.deb
-Size: 28128294
-MD5sum: 5280b888b6db91024ee87d1aa816367a
-SHA1: d4ce21440fbb91d98cd56de7fa6530bf2c9febaa
-SHA256: fed68bffb8cdf6db0d174bb7db9b0bf6a0e31ceba37062dca1e7dfdd6b048689
-
 Package: glab
 Version: 1.131.0-1+noble
 Architecture: arm64
@@ -1238,4 +1222,20 @@ Size: 115547498
 MD5sum: 43b150449abd939a86e1c54fb826f9a4
 SHA1: 63253b2941523f3658ff3da9cb9e50b38da8a0a5
 SHA256: 7f5b5e6674264c36e06c468c7d28cc8e7a96161538c0a2c1c09427f2edbbaf6a
+
+Package: zellij
+Version: 0.46.1-1+noble
+Architecture: arm64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 73440
+Section: utils
+Priority: optional
+Homepage: https://zellij.dev
+Description: A terminal workspace with batteries included.
+ Provides layouts, sessions, plugins and a scripting API.
+Filename: pool/zellij-0.46.1/zellij_0.46.1-1+noble_arm64.deb
+Size: 26636780
+MD5sum: 5f363466c21d8b3cd674301d4198bc96
+SHA1: 105bd9bddf5c054f9db30d524c54ea1792fc566b
+SHA256: a8a08a3108c1723cec4a5fcd6eb610ce38f88c16d395a72a89c352df612d116c
 
