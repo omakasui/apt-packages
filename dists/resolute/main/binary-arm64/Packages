@@ -1139,24 +1139,24 @@ MD5sum: 8f6b03f01ecc1829f8a064994eb3fcc6
 SHA1: 17a6afc80bcb278ea73b1c98f3639d9cf3871502
 SHA256: 1aed2475ab76d8e4422e2fc4e8ba1ce9f6eec61e4f0f702f1560bba4100b00b1
 
-Package: dbeaver-ce
-Version: 26.2.5-1+resolute
+Package: glab
+Version: 1.131.0-1+resolute
 Architecture: arm64
-Section: devel
-Priority: extra
-Replaces: dbeaver-ce, dbeaver
-Installed-Size: 210372
+Section: 
+Priority: optional
 Maintainer: omakasui <packages@omakasui.org>
-Homepage: https://dbeaver.io/
-Description: DBeaver Community
- Universal Database Manager and SQL Client
-Conflicts: dbeaver-ce, dbeaver
-Provides: dbeaver-ce
-Filename: pool/dbeaver-26.2.5/dbeaver-ce_26.2.5-1+resolute_arm64.deb
-Size: 115533274
-MD5sum: 25ce1c645f007b76437081688b0e9c21
-SHA1: 74aa368b411410170c57b5bacf0e7dc46b94ac05
-SHA256: a1a3ff939be7406d10b08702ee5cee7e1dfdc5420f1fa6c4a63a711a2612a175
+Installed-Size: 51624
+Depends: git
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: An open source GitLab CLI tool
+Conflicts: glab
+Replaces: glab
+Provides: glab
+Filename: pool/glab-1.131.0/glab_1.131.0-1+resolute_arm64.deb
+Size: 14293000
+MD5sum: 4b803937608a38a9e84fa370b5999752
+SHA1: 822c883d502ddcda9f4aa90b7d65458045cc16ec
+SHA256: 052595b7c31f9c321442bce51821900eeb1608ce3ebca264ff731a6971b98e90
 
 Package: opencode
 Version: 1.19.6-1+resolute
@@ -1263,22 +1263,22 @@ MD5sum: 8f77234fb25b9443870bd06f57b1e98a
 SHA1: bd211571dd2d2646c953725c83bea67a75705b67
 SHA256: f731eaad60775de9f1a1e80fa16cbc70e6b85d9b66d89f28140d9a71fdb12074
 
-Package: glab
-Version: 1.132.0-1+resolute
+Package: dbeaver-ce
+Version: 26.2.5.2-1+resolute
 Architecture: arm64
-Section: 
-Priority: optional
+Section: devel
+Priority: extra
+Replaces: dbeaver-ce, dbeaver
+Installed-Size: 210456
 Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 51692
-Depends: git
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: An open source GitLab CLI tool
-Conflicts: glab
-Replaces: glab
-Provides: glab
-Filename: pool/glab-1.132.0/glab_1.132.0-1+resolute_arm64.deb
-Size: 14339358
-MD5sum: 4c731f1ab592ad669a1ccb1a39a8d3ae
-SHA1: 1b4eb43f80e813d0f4c7bcec09684fb94fb31ed6
-SHA256: 3cd188ee297d37927940f4563c430a8bc90259af6ea3da7e931222d14363fe20
+Homepage: https://dbeaver.io/
+Description: DBeaver Community
+ Universal Database Manager and SQL Client
+Conflicts: dbeaver-ce, dbeaver
+Provides: dbeaver-ce
+Filename: pool/dbeaver-26.2.5.2/dbeaver-ce_26.2.5.2-1+resolute_arm64.deb
+Size: 115547502
+MD5sum: f5696dde4a6b8fd7807ff5c61abe8bbb
+SHA1: 8a8ea61189614b70ebd4cbb974eee93c2e92152c
+SHA256: ed6e751af89193d94efbc4a9a3d8b82c7aa9505e481ecaabd05b2d57c3feb19d
 
