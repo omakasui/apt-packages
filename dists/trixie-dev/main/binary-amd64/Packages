@@ -1092,26 +1092,6 @@ MD5sum: ac7b4a4d4b26f3f120ccdef505827c1a
 SHA1: 8c551d776db6f6ec9146f944cba6ff134cc13ae3
 SHA256: 944a705967f7908edc989188d89ad0fa38cdfe1308f91a9efae8a64e76823fa7
 
-Package: dust
-Version: 1.2.7-1+trixie
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 3004
-Conflicts: du-dust
-Replaces: du-dust
-Provides: du-dust
-Section: utils
-Priority: optional
-Homepage: https://github.com/bootandy/dust
-Description: A more intuitive version of du.
- Gives an instant overview of which directories are using disk space,
- without requiring sort or head.
-Filename: pool/dust-1.2.7/dust_1.2.7-1+trixie_amd64.deb
-Size: 1040174
-MD5sum: 3a69b4af5439d5cbb7b460f3fd9a0e45
-SHA1: db5b13188c5d3ba87c410e46137a700b48da2bca
-SHA256: ce805cb6c63896d6ceb0dfd435c0e713cd16644826914426f68145f9d2332465
-
 Package: obsidian
 Version: 1.15.0-1+trixie
 Architecture: amd64
@@ -1397,4 +1377,24 @@ Size: 15938820
 MD5sum: b53acc7262d658d52506c98ad3fd9d49
 SHA1: 6fef9dd7f469d1fade3d19f8fcf98e046acedd42
 SHA256: 274f25e08e124ce73b476303c2819ee97474630b319160296d91e62c03888330
+
+Package: dust
+Version: 1.2.8-1+trixie
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 3000
+Conflicts: du-dust
+Replaces: du-dust
+Provides: du-dust
+Section: utils
+Priority: optional
+Homepage: https://github.com/bootandy/dust
+Description: A more intuitive version of du.
+ Gives an instant overview of which directories are using disk space,
+ without requiring sort or head.
+Filename: pool/dust-1.2.8/dust_1.2.8-1+trixie_amd64.deb
+Size: 1036938
+MD5sum: 820c3f4455e6e97763227cd80ca65aaf
+SHA1: 6210b1aca601f86008762afa4f4e07bc46c0e567
+SHA256: a305fe6ff01401b257a06419e855b6595aa30df2a09d77f69c5cde185bf6dda4
 

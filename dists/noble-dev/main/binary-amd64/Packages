@@ -953,26 +953,6 @@ MD5sum: 1714b6ff01a3e2fa0c8c5f4e2e21d380
 SHA1: bb63d2ebd7c087ae92aa44dc24e95d47db1f0718
 SHA256: f3e91358cbc4b4dc126be7bf6c26870265f57bd90079755f0ba5a94a0cdfb42a
 
-Package: dust
-Version: 1.2.7-1+noble
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 3004
-Conflicts: du-dust
-Replaces: du-dust
-Provides: du-dust
-Section: utils
-Priority: optional
-Homepage: https://github.com/bootandy/dust
-Description: A more intuitive version of du.
- Gives an instant overview of which directories are using disk space,
- without requiring sort or head.
-Filename: pool/dust-1.2.7/dust_1.2.7-1+noble_amd64.deb
-Size: 1040154
-MD5sum: 768a81689b2ba68d9303d4c0e51e1000
-SHA1: ebf3590df90b92595a476756c2355e15ca348d3b
-SHA256: bb401290f18e5a7e08aa40c08258a6f496de1ec9e915efd5448be037ae66b84f
-
 Package: obsidian
 Version: 1.15.0-1+noble
 Architecture: amd64
@@ -1258,4 +1238,24 @@ Size: 15938850
 MD5sum: 980670d52a811a7b23faea7542a80502
 SHA1: 8f2f63759a21da9deee87e404f1423db2a9bd239
 SHA256: f6e5b8e0b85a1be8741b062195fd276076b4ff6bb25ba4dce361ca7720aab6ad
+
+Package: dust
+Version: 1.2.8-1+noble
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 3000
+Conflicts: du-dust
+Replaces: du-dust
+Provides: du-dust
+Section: utils
+Priority: optional
+Homepage: https://github.com/bootandy/dust
+Description: A more intuitive version of du.
+ Gives an instant overview of which directories are using disk space,
+ without requiring sort or head.
+Filename: pool/dust-1.2.8/dust_1.2.8-1+noble_amd64.deb
+Size: 1037436
+MD5sum: bd345e51d282da3b8407ca75d0d2002f
+SHA1: fabf77a86f461d80250a8b109795996ab92bb278
+SHA256: 515b9b4347655661d1b901978f74c5cc02812586830f7e550e3743f477993630
 
