@@ -1232,21 +1232,6 @@ MD5sum: beafb71ee25c451ba8cbb08ca7da678c
 SHA1: e2d5b0fef4b0110e2b86e669ff95cf923df19b07
 SHA256: ebd56dff87f1bb6805af0e44c6983d0f24d9e865732fd368e9b2e1f183088d8c
 
-Package: bitwarden-cli
-Version: 2026.11.0-1+resolute
-Architecture: amd64
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 149940
-Section: utils
-Priority: optional
-Homepage: https://github.com/bitwarden/clients
-Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
-Filename: pool/bitwarden-cli-2026.11.0/bitwarden-cli_2026.11.0-1+resolute_amd64.deb
-Size: 34936254
-MD5sum: f2ee3328b7f7dbce104d8f7af2e9eeb0
-SHA1: 2753d132cc6b59c4559c489aa3c6abcd0f0a1341
-SHA256: 8c03c1a95fb6e783505b3484d159b1797eac1b571f0a49c8a27eabea3ef8d979
-
 Package: zed
 Version: 1.29.3-1+resolute
 Architecture: amd64
@@ -1301,4 +1286,19 @@ Size: 116349596
 MD5sum: 9585083e5f92eeed2a9ba469ac1ade0c
 SHA1: da748c28de0ab6cf16173f0a29f9f2f0a1a55200
 SHA256: c08839380090f01acc9aeaa3abd8c7e404a4d970b9160753c75e0b47b41ffb73
+
+Package: bitwarden-cli
+Version: 2026.11.1-1+resolute
+Architecture: amd64
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 151224
+Section: utils
+Priority: optional
+Homepage: https://github.com/bitwarden/clients
+Description: Bitwarden CLI — command-line interface for the Bitwarden password manager.
+Filename: pool/bitwarden-cli-2026.11.1/bitwarden-cli_2026.11.1-1+resolute_amd64.deb
+Size: 35114254
+MD5sum: 2bd0ed82364a1d0e5312991b7ee5fb60
+SHA1: c929bdb5cf888094a9b78a19cd3be412f72c23cc
+SHA256: 23d9a01186e3b615fdf340a1731a869153b010060bf875d99cd8e14217ee6b7a
 
