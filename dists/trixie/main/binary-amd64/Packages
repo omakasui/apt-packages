@@ -1252,26 +1252,6 @@ MD5sum: ab30646d0aa6eec2fbc5caed380e52ab
 SHA1: 84c318ee995f4bdc8d53d5053fe11dd4d9364484
 SHA256: aa6c3d2cca66ad31bf00591ddb1ba7bcfc1f066bd6ff7b666ecd066e67d8c339
 
-Package: gh
-Version: 2.105.0-1+trixie
-Architecture: amd64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 41356
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.105.0/gh_2.105.0-1+trixie_amd64.deb
-Size: 11864764
-MD5sum: 3c2ae81cf9aa7afe071df374addf09a3
-SHA1: d03471d19689a0a428e10bf5794b0a845c62b22d
-SHA256: ca255bb6fb5ca68390bda934f849604f5b2775e8b18e0103399349a7573968db
-
 Package: zen-browser
 Version: 1.24.3b-1+trixie
 Architecture: amd64
@@ -1397,4 +1377,24 @@ Size: 15938820
 MD5sum: b53acc7262d658d52506c98ad3fd9d49
 SHA1: 6fef9dd7f469d1fade3d19f8fcf98e046acedd42
 SHA256: 274f25e08e124ce73b476303c2819ee97474630b319160296d91e62c03888330
+
+Package: gh
+Version: 2.106.0-1+trixie
+Architecture: amd64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 41536
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.106.0/gh_2.106.0-1+trixie_amd64.deb
+Size: 11903264
+MD5sum: 9efd1c71b02c588a68c8fbe269623733
+SHA1: 2c6f13ce97fe36b8ae3d82008cf1df229ff1f622
+SHA256: 981a749e6b23e47baa67ca998197c90b97c940ebb1892685536c43d82d8494bf
 

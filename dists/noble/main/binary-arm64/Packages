@@ -1113,26 +1113,6 @@ MD5sum: 3e149d2f5143287592e57522307cbc4d
 SHA1: b300b94fb9247c3dd40c9097a8a0fb2edb930788
 SHA256: 0e537621e37cf1e185177393c80df82f285113eb36f7041db19d95eebebf7066
 
-Package: gh
-Version: 2.105.0-1+noble
-Architecture: arm64
-Section: 
-Priority: optional
-License: MIT
-Maintainer: omakasui <packages@omakasui.org>
-Installed-Size: 38444
-Depends: git
-Homepage: https://github.com/cli/cli
-Description: GitHub’s official command line tool.
-Conflicts: gh
-Replaces: gh
-Provides: gh
-Filename: pool/gh-2.105.0/gh_2.105.0-1+noble_arm64.deb
-Size: 10571378
-MD5sum: fb554e4f1a6d7fb9f6a644386ee7ed06
-SHA1: bd3d7773b3beead290397052c69cc1394472f394
-SHA256: 296f8958b45df6f6a78917a09c7039b3362fd948886e1a3de3b6912db5f2ec08
-
 Package: zen-browser
 Version: 1.24.3b-1+noble
 Architecture: arm64
@@ -1238,4 +1218,24 @@ Size: 14345852
 MD5sum: d4e51fdbd01336a0652b75c0e15f8555
 SHA1: 0f00defe62f9401cc779b818f8a7e407cb75cd56
 SHA256: e291bd7d729c4e4a42063bb059b8891d86a4934ea3b65ecdc4f2c40782cb3e99
+
+Package: gh
+Version: 2.106.0-1+noble
+Architecture: arm64
+Section: 
+Priority: optional
+License: MIT
+Maintainer: omakasui <packages@omakasui.org>
+Installed-Size: 38700
+Depends: git
+Homepage: https://github.com/cli/cli
+Description: GitHub’s official command line tool.
+Conflicts: gh
+Replaces: gh
+Provides: gh
+Filename: pool/gh-2.106.0/gh_2.106.0-1+noble_arm64.deb
+Size: 10608188
+MD5sum: d7fa2f3129e68fd75b5334114a7a49b8
+SHA1: 6b402ecf85852eca18527bdc1ec06599cb9fe035
+SHA256: ae3466188c2d9df18e89a7ec505c33d9026adbacf5633c7055d2bda0816ae509
 
